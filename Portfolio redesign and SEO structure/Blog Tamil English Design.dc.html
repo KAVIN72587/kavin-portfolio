@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Designing in Tamil and English Together | Kavin Arulraj</title>
+<meta name="description" content="Tamil runs longer than English and sits differently on the line. Why bilingual layouts fail when Tamil is added last, and how to plan for both from the start." />
+<link rel="canonical" href="https://kavinarulraj.com/blog/tamil-english-design/" />
+<meta property="og:title" content="Designing in Tamil and English Together" />
+<meta property="og:description" content="Why bilingual layouts fail when Tamil is added last." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kavinarulraj.com/blog/tamil-english-design/" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; background: oklch(0.18 0.01 60); color: oklch(0.96 0.01 85); font-family: "Bricolage Grotesque", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: oklch(0.88 0.19 100); text-decoration: none; }
+  a:hover { color: oklch(0.96 0.01 85); }
+  h1, h2, h3, h4, p, ul, ol, li, blockquote { margin: 0; padding: 0; }
+  ul, ol { list-style: none; }
+  ::selection { background: oklch(0.88 0.19 100); color: oklch(0.18 0.01 60); }
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://kavinarulraj.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://kavinarulraj.com/blog/"},{"@type":"ListItem","position":3,"name":"Designing in Tamil and English together","item":"https://kavinarulraj.com/blog/tamil-english-design/"}]},{"@type":"BlogPosting","headline":"Designing in Tamil and English together","description":"Tamil runs longer than English and sits differently on the line. Why bilingual layouts fail when Tamil is added last.","datePublished":"2026-05-21","dateModified":"2026-05-21","author":{"@type":"Person","name":"Kavin Arulraj","url":"https://kavinarulraj.com/about/"},"publisher":{"@type":"Person","name":"Kavin Arulraj"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://kavinarulraj.com/blog/tamil-english-design/"},"articleSection":"Craft"}]}
+</script>
+</helmet>
+
+<header style="position: sticky; top: 0; z-index: 40; background: oklch(0.18 0.01 60 / 0.88); backdrop-filter: blur(14px); border-bottom: 1px solid oklch(0.32 0.01 60);">
+  <div style="max-width: 1240px; margin: 0 auto; padding: 14px 28px; display: flex; align-items: center; gap: 28px;">
+    <a href="/" style="font-size: 20px; font-weight: 800; letter-spacing: -0.03em; color: oklch(0.96 0.01 85); display: flex; align-items: center; gap: 9px;">
+      <span style="width: 28px; height: 28px; border-radius: 50%; background: oklch(0.88 0.19 100); display: flex; align-items: center; justify-content: center; flex: none;"><img src="assets/logo-mark.png" alt="Kavin Arulraj monogram" width="18" height="18" style="width: 18px; height: 18px; display: block;" /></span>
+      Kavin Arulraj
+    </a>
+    <nav style="display: flex; gap: 22px; margin-left: auto; font-size: 15px; font-weight: 600;">
+      <a href="/graphic-design-chennai/" style="color: oklch(0.82 0.01 85);" style-hover="color: oklch(0.88 0.19 100);">Graphic Design</a>
+      <a href="/web-design-chennai/" style="color: oklch(0.82 0.01 85);" style-hover="color: oklch(0.88 0.19 100);">Web Design</a>
+      <a href="/video-editing-chennai/" style="color: oklch(0.82 0.01 85);" style-hover="color: oklch(0.88 0.19 100);">Video Editing</a>
+      <a href="/portfolio/" style="color: oklch(0.82 0.01 85);" style-hover="color: oklch(0.88 0.19 100);">Portfolio</a>
+      <a href="/pricing/" style="color: oklch(0.82 0.01 85);" style-hover="color: oklch(0.88 0.19 100);">Pricing</a>
+      <a href="/blog/" style="color: oklch(0.88 0.19 100); border-bottom: 2px solid oklch(0.88 0.19 100); padding-bottom: 2px;">Blog</a>
+    </nav>
+    <a href="/hire-me/" style="background: oklch(0.88 0.19 100); color: oklch(0.18 0.01 60); padding: 10px 18px; border-radius: 999px; font-weight: 800; font-size: 15px;" style-hover="background: oklch(0.72 0.19 240); color: oklch(0.98 0.01 85);">Hire me →</a>
+  </div>
+</header>
+
+<main>
+
+  <nav aria-label="Breadcrumb" style="max-width: 1240px; margin: 0 auto; padding: 20px 28px 0;">
+    <ol style="display: flex; gap: 10px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: oklch(0.6 0.01 85); flex-wrap: wrap;">
+      <li><a href="/" style="color: oklch(0.72 0.19 240);">Home</a></li>
+      <li>/</li>
+      <li><a href="/blog/" style="color: oklch(0.72 0.19 240);">Blog</a></li>
+      <li>/</li>
+      <li>Tamil &amp; English</li>
+    </ol>
+  </nav>
+
+  <article>
+
+    <section style="max-width: 780px; margin: 0 auto; padding: 40px 28px 34px;">
+      <p style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: oklch(0.72 0.19 240); margin-bottom: 20px;">Craft · 6 min read · May 2026</p>
+      <h1 style="font-size: clamp(38px, 5vw, 62px); line-height: 0.97; letter-spacing: -0.04em; font-weight: 800; text-wrap: balance;">
+        Designing in Tamil and English
+        <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; letter-spacing: -0.01em; color: oklch(0.88 0.19 100);">together</span>
+      </h1>
+      <p style="margin-top: 24px; font-size: 21px; line-height: 1.55; color: oklch(0.82 0.01 85); text-wrap: pretty;">
+        The usual sequence is to design in English, approve it, and then ask for the Tamil version. That request looks small and is not, because the two scripts do not occupy space the same way.
+      </p>
+    </section>
+
+    <section style="max-width: 780px; margin: 0 auto; padding: 0 28px;">
+      <p style="font-size: 19px; line-height: 1.7; color: oklch(0.86 0.01 85); text-wrap: pretty;">
+        Almost every business in Chennai eventually needs both. A signboard, a menu, a government tender document, a flyer going to a mixed neighbourhood. The work goes smoothly when both languages are in the brief on day one and badly when Tamil arrives after the layout is locked.
+      </p>
+    </section>
+
+    <section style="background: oklch(0.96 0.01 85); color: oklch(0.18 0.01 60); padding: 56px 0; margin-top: 44px;">
+      <div style="max-width: 1000px; margin: 0 auto; padding: 0 28px;">
+        <h2 style="font-size: clamp(28px, 3.4vw, 40px); letter-spacing: -0.04em; font-weight: 800;">Four things that differ</h2>
+        <p style="font-size: 18px; line-height: 1.6; color: oklch(0.36 0.01 85); margin-top: 12px; max-width: 64ch;">None of these are opinions. They are properties of the script that a layout either accommodates or fights.</p>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin-top: 30px;">
+          <sc-for list="{{ diffs }}" as="d" hint-placeholder-count="4">
+            <div style="{{ d.style }}">
+              <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: oklch(0.45 0.01 85);">{{ d.num }}</p>
+              <h3 style="font-size: 21px; font-weight: 800; letter-spacing: -0.025em; margin-top: 8px;">{{ d.head }}</h3>
+              <p style="font-size: 16px; line-height: 1.6; color: oklch(0.36 0.01 85); margin-top: 8px;">{{ d.body }}</p>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <section style="max-width: 780px; margin: 0 auto; padding: 52px 28px 0;">
+      <h2 style="font-size: clamp(26px, 3vw, 36px); letter-spacing: -0.035em; font-weight: 800;">What goes wrong when Tamil is added last</h2>
+      <p style="font-size: 19px; line-height: 1.7; color: oklch(0.86 0.01 85); margin-top: 14px; text-wrap: pretty;">
+        The English layout has a headline sized to fill two lines exactly, a button wide enough for the label, a panel tall enough for the paragraph. Tamil arrives thirty per cent longer and taller, and every one of those measurements is now wrong.
+      </p>
+      <p style="font-size: 19px; line-height: 1.7; color: oklch(0.86 0.01 85); margin-top: 22px; text-wrap: pretty;">
+        The temptation is to shrink the Tamil until it fits. This is the single most common failure I see, and it is visible instantly — the Tamil reads as a footnote to the English rather than an equal, which is the opposite of what a bilingual signboard is meant to communicate.
+      </p>
+      <blockquote style="border-left: 3px solid oklch(0.88 0.19 100); padding: 4px 0 4px 22px; font-family: 'Instrument Serif', serif; font-size: 26px; line-height: 1.35; font-style: italic; color: oklch(0.94 0.01 85); margin-top: 26px;">
+        Shrinking the Tamil to fit tells every Tamil reader which language you consider the real one.
+      </blockquote>
+    </section>
+
+    <section style="max-width: 780px; margin: 0 auto; padding: 44px 28px 0;">
+      <h2 style="font-size: clamp(26px, 3vw, 36px); letter-spacing: -0.035em; font-weight: 800;">How to plan for both</h2>
+      <div style="display: grid; gap: 14px; margin-top: 22px;">
+        <sc-for list="{{ rules }}" as="r" hint-placeholder-count="5">
+          <div style="border: 1px solid oklch(0.34 0.01 60); border-radius: 14px; padding: 22px; background: oklch(0.21 0.012 60);">
+            <h3 style="font-size: 20px; font-weight: 800; letter-spacing: -0.025em;">{{ r.head }}</h3>
+            <p style="font-size: 16px; line-height: 1.6; color: oklch(0.8 0.01 85); margin-top: 8px;">{{ r.body }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section style="max-width: 780px; margin: 0 auto; padding: 44px 28px 0;">
+      <h2 style="font-size: clamp(26px, 3vw, 36px); letter-spacing: -0.035em; font-weight: 800;">On the translation itself</h2>
+      <p style="font-size: 19px; line-height: 1.7; color: oklch(0.86 0.01 85); margin-top: 14px; text-wrap: pretty;">
+        Machine translation is fine for understanding a sentence and unusable for anything printed. It produces Tamil that is technically correct and reads as though nobody who speaks the language checked it — which, on a signboard outside your shop, costs you more credibility than having no Tamil at all.
+      </p>
+      <p style="font-size: 19px; line-height: 1.7; color: oklch(0.86 0.01 85); margin-top: 22px; text-wrap: pretty;">
+        Marketing copy in particular does not translate. It gets rewritten. A tagline that works in English usually needs a different idea in Tamil, not the same idea in different words, and that is a writer's job rather than a designer's. I will always tell you when a line needs rewriting rather than converting.
+      </p>
+      <p style="font-size: 19px; line-height: 1.7; color: oklch(0.86 0.01 85); margin-top: 22px; text-wrap: pretty;">
+        One more thing worth checking before print: proper nouns. Business names, place names and people's names are where Tamil typesetting most often goes wrong, and they are also the words your customers will notice first.
+      </p>
+    </section>
+
+    <section style="max-width: 780px; margin: 0 auto; padding: 44px 28px 0;">
+      <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: oklch(0.66 0.01 85); text-transform: uppercase; margin-bottom: 14px;">Related reading</p>
+      <ul style="display: grid; gap: 10px;">
+        <li><a href="/blog/logo-signboard-problems/" style="display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid oklch(0.3 0.01 60); padding-top: 14px; font-size: 18px; font-weight: 700; letter-spacing: -0.02em;">Why your logo looks wrong on the signboard <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: oklch(0.66 0.01 85); white-space: nowrap;">6 min</span></a></li>
+        <li><a href="/blog/print-file-basics/" style="display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid oklch(0.3 0.01 60); padding-top: 14px; font-size: 18px; font-weight: 700; letter-spacing: -0.02em;">CMYK, bleed and outlined fonts explained <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: oklch(0.66 0.01 85); white-space: nowrap;">7 min</span></a></li>
+        <li><a href="/brochure-design-cost-chennai/" style="display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid oklch(0.3 0.01 60); padding-top: 14px; font-size: 18px; font-weight: 700; letter-spacing: -0.02em;">What a Tamil edition costs <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: oklch(0.66 0.01 85); white-space: nowrap;">pricing</span></a></li>
+      </ul>
+    </section>
+
+    <section style="background: oklch(0.88 0.19 100); color: oklch(0.18 0.01 60); padding: 58px 0; margin-top: 52px;">
+      <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 44px; align-items: center;">
+        <div>
+          <h2 style="font-size: clamp(30px, 4vw, 52px); line-height: 0.97; letter-spacing: -0.045em; font-weight: 800; text-wrap: balance;">Need it in both languages?</h2>
+          <p style="font-size: 18px; line-height: 1.55; margin-top: 16px; max-width: 52ch;">Say so at the start and it costs considerably less than adding Tamil to a finished layout. A second-language edition planned from day one is roughly 60% of the original design fee.</p>
+        </div>
+        <div style="display: grid; gap: 10px;">
+          <a href="/hire-me/" style="background: oklch(0.18 0.01 60); color: oklch(0.96 0.01 85); padding: 18px 24px; border-radius: 14px; font-weight: 800; font-size: 19px; display: flex; justify-content: space-between; gap: 14px;" style-hover="background: oklch(0.72 0.19 240);">Send a brief <span>→</span></a>
+          <a href="https://wa.me/917010266975" style="border: 2px solid oklch(0.18 0.01 60); color: oklch(0.18 0.01 60); padding: 16px 24px; border-radius: 14px; font-weight: 700; font-size: 17px; display: flex; justify-content: space-between; gap: 14px; font-family: 'IBM Plex Mono', monospace;">+91 70102 66975 <span>whatsapp</span></a>
+        </div>
+      </div>
+    </section>
+
+  </article>
+
+</main>
+
+<footer style="border-top: 1px solid oklch(0.32 0.01 60);">
+  <div style="max-width: 1240px; margin: 0 auto; padding: 54px 28px 34px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 28px;">
+    <div>
+      <p style="font-size: 19px; font-weight: 800; letter-spacing: -0.03em;">Kavin Arulraj</p>
+      <p style="font-size: 15px; color: oklch(0.7 0.01 85); line-height: 1.55; margin-top: 8px;">Freelance graphic designer, web designer and video editor in Chennai.</p>
+      <ul style="display: flex; gap: 12px; margin-top: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 13px;">
+        <li><a href="https://www.instagram.com/kavinarulraj_0/">IG</a></li>
+        <li><a href="https://www.youtube.com/@KavinArulraj">YT</a></li>
+        <li><a href="https://www.linkedin.com/in/kavin-arulraj/">LI</a></li>
+      </ul>
+    </div>
+    <div>
+      <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: oklch(0.66 0.01 85); text-transform: uppercase;">Graphic design</p>
+      <ul style="display: grid; gap: 8px; margin-top: 12px; font-size: 15px;">
+        <li><a href="/graphic-design-chennai/" style="color: oklch(0.86 0.01 85);">Overview</a></li>
+        <li><a href="/logo-design-chennai/" style="color: oklch(0.86 0.01 85);">Logo design</a></li>
+        <li><a href="/brochure-design-chennai/" style="color: oklch(0.86 0.01 85);">Brochure design</a></li>
+        <li><a href="/packaging-design-chennai/" style="color: oklch(0.86 0.01 85);">Packaging design</a></li>
+        <li><a href="/poster-flyer-design-chennai/" style="color: oklch(0.86 0.01 85);">Poster &amp; flyer</a></li>
+        <li><a href="/business-card-design-chennai/" style="color: oklch(0.86 0.01 85);">Business cards</a></li>
+        <li><a href="/social-media-creatives-chennai/" style="color: oklch(0.86 0.01 85);">Social creatives</a></li>
+        <li><a href="/t-shirt-design-chennai/" style="color: oklch(0.86 0.01 85);">T-shirt design</a></li>
+      </ul>
+    </div>
+    <div>
+      <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: oklch(0.66 0.01 85); text-transform: uppercase;">Web &amp; video</p>
+      <ul style="display: grid; gap: 8px; margin-top: 12px; font-size: 15px;">
+        <li><a href="/web-design-chennai/" style="color: oklch(0.86 0.01 85);">Web design</a></li>
+        <li><a href="/ui-ux-design-chennai/" style="color: oklch(0.86 0.01 85);">UI/UX design</a></li>
+        <li><a href="/ecommerce-website-design-chennai/" style="color: oklch(0.86 0.01 85);">Ecommerce</a></li>
+        <li><a href="/wordpress-website-design-chennai/" style="color: oklch(0.86 0.01 85);">WordPress</a></li>
+        <li><a href="/low-cost-website-design-chennai/" style="color: oklch(0.86 0.01 85);">Low-cost websites</a></li>
+        <li><a href="/video-editing-chennai/" style="color: oklch(0.86 0.01 85);">Video editing</a></li>
+        <li><a href="/reels-shorts-editing-chennai/" style="color: oklch(0.86 0.01 85);">Reels &amp; shorts</a></li>
+        <li><a href="/wedding-video-editing-chennai/" style="color: oklch(0.86 0.01 85);">Wedding films</a></li>
+      </ul>
+    </div>
+    <div>
+      <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: oklch(0.66 0.01 85); text-transform: uppercase;">Pricing</p>
+      <ul style="display: grid; gap: 8px; margin-top: 12px; font-size: 15px;">
+        <li><a href="/pricing/" style="color: oklch(0.86 0.01 85);">All pricing</a></li>
+        <li><a href="/logo-design-cost-chennai/" style="color: oklch(0.86 0.01 85);">Logo design cost</a></li>
+        <li><a href="/brochure-design-cost-chennai/" style="color: oklch(0.86 0.01 85);">Brochure cost</a></li>
+        <li><a href="/website-design-cost-chennai/" style="color: oklch(0.86 0.01 85);">Website cost</a></li>
+        <li><a href="/video-editing-charges-chennai/" style="color: oklch(0.86 0.01 85);">Video editing charges</a></li>
+        <li><a href="/freelancer-vs-agency-chennai/" style="color: oklch(0.86 0.01 85);">Freelancer vs agency</a></li>
+      </ul>
+    </div>
+    <div>
+      <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: oklch(0.66 0.01 85); text-transform: uppercase;">Studio</p>
+      <ul style="display: grid; gap: 8px; margin-top: 12px; font-size: 15px;">
+        <li><a href="/about/" style="color: oklch(0.86 0.01 85);">About</a></li>
+        <li><a href="/portfolio/" style="color: oklch(0.86 0.01 85);">Portfolio</a></li>
+        <li><a href="/blog/" style="color: oklch(0.86 0.01 85);">Blog</a></li>
+        <li><a href="/areas/" style="color: oklch(0.86 0.01 85);">Service areas</a></li>
+        <li><a href="/hire-me/" style="color: oklch(0.86 0.01 85);">Hire me</a></li>
+        <li><a href="/contact/" style="color: oklch(0.86 0.01 85);">Contact</a></li>
+        <li><a href="/privacy/" style="color: oklch(0.86 0.01 85);">Privacy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div style="max-width: 1240px; margin: 0 auto; padding: 18px 28px 40px; border-top: 1px solid oklch(0.28 0.01 60); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: oklch(0.62 0.01 85);">
+    <p>© 2026 Kavin Arulraj · Chennai, Tamil Nadu</p>
+    <p>Designed and built by hand.</p>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  diffList = [
+    { num: "01", head: "Tamil runs longer", body: "The same sentence typically takes 20 to 30% more space. A headline that fits two lines in English will not fit two lines in Tamil at the same size." },
+    { num: "02", head: "It needs more vertical room", body: "Tamil has marks above and below the baseline. Line spacing set tight for English makes those marks collide, which is how bilingual menus become hard to read." },
+    { num: "03", head: "Font pairs are limited", body: "Far fewer Tamil families exist than Latin ones, and fewer still have matching weights. Choosing the Tamil font first and pairing English to it works better than the reverse." },
+    { num: "04", head: "Small sizes fail sooner", body: "Tamil loses legibility below about 9pt in print, where English survives to 7pt. This matters most on business cards and product labels." }
+  ];
+
+  ruleList = [
+    { head: "Set the Tamil font first", body: "Then pick a Latin family that matches its weight and proportions. Doing it the other way round means compromising the script with fewer options." },
+    { head: "Size the layout for the longer language", body: "Build the text areas around the Tamil, and English will always fit comfortably inside them. This costs nothing at the design stage and saves the whole layout later." },
+    { head: "Match visual weight, not point size", body: "The same point size can look lighter in one script than the other. Adjust until they read as equals, which sometimes means different numbers." },
+    { head: "Decide the hierarchy deliberately", body: "Which language sits on top, and does that change by location? A T. Nagar shopfront and an OMR office may want opposite answers. Choose rather than defaulting." },
+    { head: "Get a native speaker to proof it", body: "Not the translator — a second pair of eyes, reading it in place. Typesetting errors in Tamil are invisible to anyone who does not read it fluently." }
+  ];
+
+  renderVals() {
+    return {
+      diffs: this.diffList.map((d, i) => ({
+        ...d,
+        style: "border-top: 3px solid " + (i === 3 ? "oklch(0.88 0.19 100)" : "oklch(0.18 0.01 60)") + "; padding-top: 16px;"
+      })),
+      rules: this.ruleList
+    };
+  }
+}
+</script>
+</body>
+</html>
