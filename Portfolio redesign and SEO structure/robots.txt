@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /*?s=
+Disallow: /*?replytocom=
+
+Allow: /wp-admin/admin-ajax.php
+
+Sitemap: https://kavinarulraj.com/sitemap.xml
