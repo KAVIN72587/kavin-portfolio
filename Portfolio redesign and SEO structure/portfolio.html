@@ -1,13 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
-</head>
-<body>
-<x-dc>
-<helmet>
 <title>Design &amp; Video Portfolio | Freelance Designer Chennai — Kavin Arulraj</title>
 <meta name="description" content="Portfolio of branding, print, packaging, web/UI and video editing work by Kavin Arulraj, freelance designer in Chennai. Browse by category or read the full case studies." />
 <link rel="canonical" href="https://kavinarulraj.com/portfolio/" />
@@ -31,12 +26,21 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://kavinarulraj.com/"},{"@type":"ListItem","position":2,"name":"Portfolio","item":"https://kavinarulraj.com/portfolio/"}]},{"@type":"CollectionPage","name":"Portfolio","url":"https://kavinarulraj.com/portfolio/","about":{"@type":"Person","name":"Kavin Arulraj"}}]}
 </script>
-</helmet>
+
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
 
 <header style="position: sticky; top: 0; z-index: 40; background: oklch(0.18 0.01 60 / 0.88); backdrop-filter: blur(14px); border-bottom: 1px solid oklch(0.32 0.01 60);">
   <div style="max-width: 1240px; margin: 0 auto; padding: 14px 28px; display: flex; align-items: center; gap: 28px;">
     <a href="/" style="font-size: 20px; font-weight: 800; letter-spacing: -0.03em; color: oklch(0.96 0.01 85); display: flex; align-items: center; gap: 9px;">
-      <span style="width: 28px; height: 28px; border-radius: 50%; background: oklch(0.88 0.19 100); display: flex; align-items: center; justify-content: center; flex: none;"><img src="assets/logo-mark.png" alt="Kavin Arulraj monogram" width="18" height="18" style="width: 18px; height: 18px; display: block;" /></span>
+      <span style="width: 28px; height: 28px; border-radius: 50%; background: oklch(0.88 0.19 100); display: flex; align-items: center; justify-content: center; flex: none;"><img src="/assets/logo-mark.png" alt="Kavin Arulraj monogram" width="18" height="18" style="width: 18px; height: 18px; display: block;" /></span>
       Kavin Arulraj
     </a>
     <nav style="display: flex; gap: 22px; margin-left: auto; font-size: 15px; font-weight: 600;">
@@ -74,7 +78,7 @@
       </p>
     </div>
     <ul style="display: grid; gap: 8px; font-family: 'IBM Plex Mono', monospace; font-size: 13px;">
-      <li style="display: flex; justify-content: space-between; gap: 14px; border-bottom: 1px solid oklch(0.3 0.01 60); padding-bottom: 8px;"><span style="color: oklch(0.66 0.01 85);">Projects shown</span><span>{{ shownCount }}</span></li>
+      <li style="display: flex; justify-content: space-between; gap: 14px; border-bottom: 1px solid oklch(0.3 0.01 60); padding-bottom: 8px;"><span style="color: oklch(0.66 0.01 85);">Projects shown</span><span>9</span></li>
       <li style="display: flex; justify-content: space-between; gap: 14px; border-bottom: 1px solid oklch(0.3 0.01 60); padding-bottom: 8px;"><span style="color: oklch(0.66 0.01 85);">Categories</span><span>5</span></li>
       <li style="display: flex; justify-content: space-between; gap: 14px; border-bottom: 1px solid oklch(0.3 0.01 60); padding-bottom: 8px;"><span style="color: oklch(0.66 0.01 85);">Case studies</span><span>3 written</span></li>
     </ul>
@@ -82,33 +86,134 @@
 
   <section style="max-width: 1240px; margin: 0 auto; padding: 10px 28px 0;">
     <div style="display: flex; flex-wrap: wrap; gap: 8px; border-top: 1px solid oklch(0.3 0.01 60); padding-top: 22px;">
-      <sc-for list="{{ filters }}" as="f" hint-placeholder-count="6">
-        <button type="button" onClick="{{ f.select }}" style="{{ f.style }}">{{ f.label }}</button>
-      </sc-for>
+      <a href="/portfolio/" style="border-radius: 999px; padding: 10px 18px; font-size: 15px; font-weight: 600; cursor: pointer; background: oklch(0.88 0.19 100); color: oklch(0.18 0.01 60); border: 1px solid oklch(0.88 0.19 100);">All</a>
+        <a href="/portfolio/branding/" style="border-radius: 999px; padding: 10px 18px; font-size: 15px; font-weight: 600; cursor: pointer; background: transparent; color: oklch(0.9 0.01 85); border: 1px solid oklch(0.4 0.01 60);">Branding</a>
+        <a href="/portfolio/print/" style="border-radius: 999px; padding: 10px 18px; font-size: 15px; font-weight: 600; cursor: pointer; background: transparent; color: oklch(0.9 0.01 85); border: 1px solid oklch(0.4 0.01 60);">Print</a>
+        <a href="/portfolio/case-study-madras-filter-coffee/" style="border-radius: 999px; padding: 10px 18px; font-size: 15px; font-weight: 600; cursor: pointer; background: transparent; color: oklch(0.9 0.01 85); border: 1px solid oklch(0.4 0.01 60);">Packaging</a>
+        <a href="/portfolio/web-ui/" style="border-radius: 999px; padding: 10px 18px; font-size: 15px; font-weight: 600; cursor: pointer; background: transparent; color: oklch(0.9 0.01 85); border: 1px solid oklch(0.4 0.01 60);">Web & UI</a>
+        <a href="/portfolio/video/" style="border-radius: 999px; padding: 10px 18px; font-size: 15px; font-weight: 600; cursor: pointer; background: transparent; color: oklch(0.9 0.01 85); border: 1px solid oklch(0.4 0.01 60);">Video</a>
     </div>
-    <ul style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 13px;">
-      <li><a href="/portfolio/branding/">/branding</a></li>
-      <li><a href="/portfolio/print/">/print</a></li>
-      <li><a href="/portfolio/web-ui/">/web-ui</a></li>
-      <li><a href="/portfolio/video/">/video</a></li>
-    </ul>
   </section>
 
   <section style="max-width: 1240px; margin: 0 auto; padding: 30px 28px 62px;">
-    <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px;">
-      <sc-for list="{{ projects }}" as="p" hint-placeholder-count="9">
-        <a href="{{ p.href }}" style="{{ p.cardStyle }}">
-          <div style="{{ p.mediaStyle }}">
-            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: oklch(0.66 0.01 85); background: oklch(0.18 0.01 60 / 0.75); padding: 5px 8px; border-radius: 6px;">{{ p.slot }}</span>
+    <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px;" id="flt-6">
+      
+        <a data-cat="Packaging" href="/portfolio/case-study-madras-filter-coffee/" style="grid-column: span 3; display: block; color: oklch(0.96 0.01 85);">
+          <div style="aspect-ratio: 4 / 3; border-radius: 16px; border: 1px solid oklch(0.34 0.01 60); background-image: repeating-linear-gradient(135deg, oklch(0.24 0.012 60) 0 9px, oklch(0.2 0.01 60) 9px 18px); display: flex; align-items: flex-end; padding: 14px;">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: oklch(0.66 0.01 85); background: oklch(0.18 0.01 60 / 0.75); padding: 5px 8px; border-radius: 6px;">packaging shots — drop image</span>
           </div>
           <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-top: 14px;">
-            <h2 style="font-size: 20px; font-weight: 800; letter-spacing: -0.025em; color: oklch(0.96 0.01 85);">{{ p.title }}</h2>
-            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: oklch(0.66 0.01 85); white-space: nowrap;">{{ p.year }}</span>
+            <h2 style="font-size: 20px; font-weight: 800; letter-spacing: -0.025em; color: oklch(0.96 0.01 85);">Filter coffee pouch</h2>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: oklch(0.66 0.01 85); white-space: nowrap;">2026</span>
           </div>
-          <p style="font-size: 15px; line-height: 1.5; color: oklch(0.74 0.01 85); margin-top: 5px;">{{ p.blurb }}</p>
-          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: oklch(0.88 0.19 100); margin-top: 12px; text-transform: uppercase;">{{ p.tag }}</p>
+          <p style="font-size: 15px; line-height: 1.5; color: oklch(0.74 0.01 85); margin-top: 5px;">Bilingual label, 60g pouch, shelf-tested against six competitors.</p>
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: oklch(0.88 0.19 100); margin-top: 12px; text-transform: uppercase;">Packaging · retail</p>
         </a>
-      </sc-for>
+      
+
+        <a data-cat="Web & UI" href="/portfolio/case-study-omr-clinic/" style="grid-column: span 3; display: block; color: oklch(0.96 0.01 85);">
+          <div style="aspect-ratio: 4 / 3; border-radius: 16px; border: 1px solid oklch(0.34 0.01 60); background-image: repeating-linear-gradient(135deg, oklch(0.24 0.012 60) 0 9px, oklch(0.2 0.01 60) 9px 18px); display: flex; align-items: flex-end; padding: 14px;">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: oklch(0.66 0.01 85); background: oklch(0.18 0.01 60 / 0.75); padding: 5px 8px; border-radius: 6px;">site screens — drop image</span>
+          </div>
+          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-top: 14px;">
+            <h2 style="font-size: 20px; font-weight: 800; letter-spacing: -0.025em; color: oklch(0.96 0.01 85);">Clinic booking site</h2>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: oklch(0.66 0.01 85); white-space: nowrap;">2026</span>
+          </div>
+          <p style="font-size: 15px; line-height: 1.5; color: oklch(0.74 0.01 85); margin-top: 5px;">Seven pages cut to one decision: book an appointment.</p>
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: oklch(0.88 0.19 100); margin-top: 12px; text-transform: uppercase;">Web & UI · healthcare</p>
+        </a>
+      
+
+        <a data-cat="Video" href="/portfolio/case-study-wedding-film/" style="grid-column: span 2; display: block; color: oklch(0.96 0.01 85);">
+          <div style="aspect-ratio: 1 / 1; border-radius: 16px; border: 1px solid oklch(0.34 0.01 60); background-image: repeating-linear-gradient(135deg, oklch(0.24 0.012 60) 0 9px, oklch(0.2 0.01 60) 9px 18px); display: flex; align-items: flex-end; padding: 14px;">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: oklch(0.66 0.01 85); background: oklch(0.18 0.01 60 / 0.75); padding: 5px 8px; border-radius: 6px;">film still — drop image</span>
+          </div>
+          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-top: 14px;">
+            <h2 style="font-size: 20px; font-weight: 800; letter-spacing: -0.025em; color: oklch(0.96 0.01 85);">Wedding film</h2>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: oklch(0.66 0.01 85); white-space: nowrap;">2025</span>
+          </div>
+          <p style="font-size: 15px; line-height: 1.5; color: oklch(0.74 0.01 85); margin-top: 5px;">Fourteen hours of footage cut to four minutes.</p>
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: oklch(0.88 0.19 100); margin-top: 12px; text-transform: uppercase;">Video · wedding</p>
+        </a>
+      
+
+        <a data-cat="Branding" href="/portfolio/branding/" style="grid-column: span 2; display: block; color: oklch(0.96 0.01 85);">
+          <div style="aspect-ratio: 1 / 1; border-radius: 16px; border: 1px solid oklch(0.34 0.01 60); background-image: repeating-linear-gradient(135deg, oklch(0.24 0.012 60) 0 9px, oklch(0.2 0.01 60) 9px 18px); display: flex; align-items: flex-end; padding: 14px;">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: oklch(0.66 0.01 85); background: oklch(0.18 0.01 60 / 0.75); padding: 5px 8px; border-radius: 6px;">identity board — drop image</span>
+          </div>
+          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-top: 14px;">
+            <h2 style="font-size: 20px; font-weight: 800; letter-spacing: -0.025em; color: oklch(0.96 0.01 85);">Textile identity</h2>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: oklch(0.66 0.01 85); white-space: nowrap;">2025</span>
+          </div>
+          <p style="font-size: 15px; line-height: 1.5; color: oklch(0.74 0.01 85); margin-top: 5px;">Wordmark and woven-label system for a Tiruppur exporter.</p>
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: oklch(0.88 0.19 100); margin-top: 12px; text-transform: uppercase;">Branding</p>
+        </a>
+      
+
+        <a data-cat="Print" href="/portfolio/print/" style="grid-column: span 2; display: block; color: oklch(0.96 0.01 85);">
+          <div style="aspect-ratio: 1 / 1; border-radius: 16px; border: 1px solid oklch(0.34 0.01 60); background-image: repeating-linear-gradient(135deg, oklch(0.24 0.012 60) 0 9px, oklch(0.2 0.01 60) 9px 18px); display: flex; align-items: flex-end; padding: 14px;">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: oklch(0.66 0.01 85); background: oklch(0.18 0.01 60 / 0.75); padding: 5px 8px; border-radius: 6px;">brochure spread — drop image</span>
+          </div>
+          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-top: 14px;">
+            <h2 style="font-size: 20px; font-weight: 800; letter-spacing: -0.025em; color: oklch(0.96 0.01 85);">Company profile</h2>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: oklch(0.66 0.01 85); white-space: nowrap;">2025</span>
+          </div>
+          <p style="font-size: 15px; line-height: 1.5; color: oklch(0.74 0.01 85); margin-top: 5px;">Twenty-four page brochure, press-checked in Sivakasi.</p>
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: oklch(0.88 0.19 100); margin-top: 12px; text-transform: uppercase;">Print</p>
+        </a>
+      
+
+        <a data-cat="Video" href="/portfolio/video/" style="grid-column: span 3; display: block; color: oklch(0.96 0.01 85);">
+          <div style="aspect-ratio: 16 / 10; border-radius: 16px; border: 1px solid oklch(0.34 0.01 60); background-image: repeating-linear-gradient(135deg, oklch(0.24 0.012 60) 0 9px, oklch(0.2 0.01 60) 9px 18px); display: flex; align-items: flex-end; padding: 14px;">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: oklch(0.66 0.01 85); background: oklch(0.18 0.01 60 / 0.75); padding: 5px 8px; border-radius: 6px;">reel frames — drop image</span>
+          </div>
+          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-top: 14px;">
+            <h2 style="font-size: 20px; font-weight: 800; letter-spacing: -0.025em; color: oklch(0.96 0.01 85);">Restaurant reels</h2>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: oklch(0.66 0.01 85); white-space: nowrap;">2025</span>
+          </div>
+          <p style="font-size: 15px; line-height: 1.5; color: oklch(0.74 0.01 85); margin-top: 5px;">A monthly set of twelve short-form edits for a T. Nagar kitchen.</p>
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: oklch(0.88 0.19 100); margin-top: 12px; text-transform: uppercase;">Video · social</p>
+        </a>
+      
+
+        <a data-cat="Web & UI" href="/portfolio/web-ui/" style="grid-column: span 3; display: block; color: oklch(0.96 0.01 85);">
+          <div style="aspect-ratio: 16 / 10; border-radius: 16px; border: 1px solid oklch(0.34 0.01 60); background-image: repeating-linear-gradient(135deg, oklch(0.24 0.012 60) 0 9px, oklch(0.2 0.01 60) 9px 18px); display: flex; align-items: flex-end; padding: 14px;">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: oklch(0.66 0.01 85); background: oklch(0.18 0.01 60 / 0.75); padding: 5px 8px; border-radius: 6px;">dashboard UI — drop image</span>
+          </div>
+          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-top: 14px;">
+            <h2 style="font-size: 20px; font-weight: 800; letter-spacing: -0.025em; color: oklch(0.96 0.01 85);">Fintech dashboard</h2>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: oklch(0.66 0.01 85); white-space: nowrap;">2024</span>
+          </div>
+          <p style="font-size: 15px; line-height: 1.5; color: oklch(0.74 0.01 85); margin-top: 5px;">UI for a lending team that lives in one screen all day.</p>
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: oklch(0.88 0.19 100); margin-top: 12px; text-transform: uppercase;">Web & UI</p>
+        </a>
+      
+
+        <a data-cat="Print" href="/portfolio/print/" style="grid-column: span 2; display: block; color: oklch(0.96 0.01 85);">
+          <div style="aspect-ratio: 1 / 1; border-radius: 16px; border: 1px solid oklch(0.34 0.01 60); background-image: repeating-linear-gradient(135deg, oklch(0.24 0.012 60) 0 9px, oklch(0.2 0.01 60) 9px 18px); display: flex; align-items: flex-end; padding: 14px;">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: oklch(0.66 0.01 85); background: oklch(0.18 0.01 60 / 0.75); padding: 5px 8px; border-radius: 6px;">poster set — drop image</span>
+          </div>
+          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-top: 14px;">
+            <h2 style="font-size: 20px; font-weight: 800; letter-spacing: -0.025em; color: oklch(0.96 0.01 85);">Festival campaign</h2>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: oklch(0.66 0.01 85); white-space: nowrap;">2024</span>
+          </div>
+          <p style="font-size: 15px; line-height: 1.5; color: oklch(0.74 0.01 85); margin-top: 5px;">Pongal poster, flyer and hoarding set for a retail chain.</p>
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: oklch(0.88 0.19 100); margin-top: 12px; text-transform: uppercase;">Print · campaign</p>
+        </a>
+      
+
+        <a data-cat="Branding" href="/portfolio/branding/" style="grid-column: span 4; display: block; color: oklch(0.96 0.01 85);">
+          <div style="aspect-ratio: 16 / 9; border-radius: 16px; border: 1px solid oklch(0.34 0.01 60); background-image: repeating-linear-gradient(135deg, oklch(0.24 0.012 60) 0 9px, oklch(0.2 0.01 60) 9px 18px); display: flex; align-items: flex-end; padding: 14px;">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: oklch(0.66 0.01 85); background: oklch(0.18 0.01 60 / 0.75); padding: 5px 8px; border-radius: 6px;">signage mockup — drop image</span>
+          </div>
+          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-top: 14px;">
+            <h2 style="font-size: 20px; font-weight: 800; letter-spacing: -0.025em; color: oklch(0.96 0.01 85);">Clinic identity</h2>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: oklch(0.66 0.01 85); white-space: nowrap;">2024</span>
+          </div>
+          <p style="font-size: 15px; line-height: 1.5; color: oklch(0.74 0.01 85); margin-top: 5px;">Calm mark and signage for a paediatric practice in Adyar.</p>
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: oklch(0.88 0.19 100); margin-top: 12px; text-transform: uppercase;">Branding</p>
+        </a>
+      
     </div>
   </section>
 
@@ -220,47 +325,9 @@
     <p>Designed and built by hand.</p>
   </div>
 </footer>
-</x-dc>
-<script type="text/x-dc" data-dc-script>
-class Component extends DCLogic {
-  state = { filter: "All" };
 
-  filterList = ["All", "Branding", "Print", "Packaging", "Web & UI", "Video"];
+</body>
+</html>
 
-  projectList = [
-    { title: "Filter coffee pouch", blurb: "Bilingual label, 60g pouch, shelf-tested against six competitors.", tag: "Packaging · retail", year: "2026", cat: "Packaging", href: "/portfolio/case-study-madras-filter-coffee/", span: 3, ratio: "4 / 3", slot: "packaging shots — drop image" },
-    { title: "Clinic booking site", blurb: "Seven pages cut to one decision: book an appointment.", tag: "Web & UI · healthcare", year: "2026", cat: "Web & UI", href: "/portfolio/case-study-omr-clinic/", span: 3, ratio: "4 / 3", slot: "site screens — drop image" },
-    { title: "Wedding film", blurb: "Fourteen hours of footage cut to four minutes.", tag: "Video · wedding", year: "2025", cat: "Video", href: "/portfolio/case-study-wedding-film/", span: 2, ratio: "1 / 1", slot: "film still — drop image" },
-    { title: "Textile identity", blurb: "Wordmark and woven-label system for a Tiruppur exporter.", tag: "Branding", year: "2025", cat: "Branding", href: "/portfolio/branding/", span: 2, ratio: "1 / 1", slot: "identity board — drop image" },
-    { title: "Company profile", blurb: "Twenty-four page brochure, press-checked in Sivakasi.", tag: "Print", year: "2025", cat: "Print", href: "/portfolio/print/", span: 2, ratio: "1 / 1", slot: "brochure spread — drop image" },
-    { title: "Restaurant reels", blurb: "A monthly set of twelve short-form edits for a T. Nagar kitchen.", tag: "Video · social", year: "2025", cat: "Video", href: "/portfolio/video/", span: 3, ratio: "16 / 10", slot: "reel frames — drop image" },
-    { title: "Fintech dashboard", blurb: "UI for a lending team that lives in one screen all day.", tag: "Web & UI", year: "2024", cat: "Web & UI", href: "/portfolio/web-ui/", span: 3, ratio: "16 / 10", slot: "dashboard UI — drop image" },
-    { title: "Festival campaign", blurb: "Pongal poster, flyer and hoarding set for a retail chain.", tag: "Print · campaign", year: "2024", cat: "Print", href: "/portfolio/print/", span: 2, ratio: "1 / 1", slot: "poster set — drop image" },
-    { title: "Clinic identity", blurb: "Calm mark and signage for a paediatric practice in Adyar.", tag: "Branding", year: "2024", cat: "Branding", href: "/portfolio/branding/", span: 4, ratio: "16 / 9", slot: "signage mockup — drop image" }
-  ];
-
-  renderVals() {
-    const active = this.state.filter;
-    const shown = active === "All" ? this.projectList : this.projectList.filter(p => p.cat === active);
-    const btn = "border-radius: 999px; padding: 10px 18px; font-size: 15px; font-weight: 600; cursor: pointer;";
-
-    return {
-      shownCount: shown.length,
-      filters: this.filterList.map(label => ({
-        label,
-        style: btn + (label === active
-          ? " background: oklch(0.88 0.19 100); color: oklch(0.18 0.01 60); border: 1px solid oklch(0.88 0.19 100);"
-          : " background: transparent; color: oklch(0.9 0.01 85); border: 1px solid oklch(0.4 0.01 60);"),
-        select: () => this.setState({ filter: label })
-      })),
-      projects: shown.map(p => ({
-        ...p,
-        cardStyle: `grid-column: span ${p.span}; display: block; color: oklch(0.96 0.01 85);`,
-        mediaStyle: `aspect-ratio: ${p.ratio}; border-radius: 16px; border: 1px solid oklch(0.34 0.01 60); background-image: repeating-linear-gradient(135deg, oklch(0.24 0.012 60) 0 9px, oklch(0.2 0.01 60) 9px 18px); display: flex; align-items: flex-end; padding: 14px;`
-      }))
-    };
-  }
-}
-</script>
 </body>
 </html>
