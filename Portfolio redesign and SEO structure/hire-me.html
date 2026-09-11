@@ -1,13 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
-</head>
-<body>
-<x-dc>
-<helmet>
 <title>Hire a Freelance Designer in Chennai | Kavin Arulraj</title>
 <meta name="description" content="Hire Kavin Arulraj — freelance graphic designer, web designer and video editor in Chennai. Send your brief, get a scope and quote the same day. Call +91 70102 66975." />
 <link rel="canonical" href="https://kavinarulraj.com/hire-me/" />
@@ -32,12 +27,26 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://kavinarulraj.com/"},{"@type":"ListItem","position":2,"name":"Hire Me","item":"https://kavinarulraj.com/hire-me/"}]},{"@type":"ContactPage","url":"https://kavinarulraj.com/hire-me/","about":{"@type":"Person","name":"Kavin Arulraj","jobTitle":"Freelance Graphic Designer and Video Editor","telephone":"+91-7010266975","email":"kavinarulraj72587@gmail.com","areaServed":{"@type":"City","name":"Chennai"}}}]}
 </script>
-</helmet>
+<style>
+  .svc-chip { display: inline-flex; }
+  .svc-chip input { position: absolute; opacity: 0; width: 0; height: 0; }
+  .svc-chip span { border-radius: 999px; padding: 10px 16px; font-size: 15px; font-weight: 600; cursor: pointer; font-family: inherit; transition: background 120ms ease; background: transparent; color: oklch(0.9 0.01 85); border: 1px solid oklch(0.4 0.01 60); display: inline-block; }
+  .svc-chip input:checked + span { background: oklch(0.88 0.19 100); color: oklch(0.18 0.01 60); border-color: oklch(0.88 0.19 100); }
+</style>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
 
 <header style="position: sticky; top: 0; z-index: 40; background: oklch(0.18 0.01 60 / 0.88); backdrop-filter: blur(14px); border-bottom: 1px solid oklch(0.32 0.01 60);">
   <div style="max-width: 1240px; margin: 0 auto; padding: 14px 28px; display: flex; align-items: center; gap: 28px;">
     <a href="/" style="font-size: 20px; font-weight: 800; letter-spacing: -0.03em; color: oklch(0.96 0.01 85); display: flex; align-items: center; gap: 9px;">
-      <span style="width: 28px; height: 28px; border-radius: 50%; background: oklch(0.88 0.19 100); display: flex; align-items: center; justify-content: center; flex: none;"><img src="assets/logo-mark.png" alt="Kavin Arulraj monogram" width="18" height="18" style="width: 18px; height: 18px; display: block;" /></span>
+      <span style="width: 28px; height: 28px; border-radius: 50%; background: oklch(0.88 0.19 100); display: flex; align-items: center; justify-content: center; flex: none;"><img src="/assets/logo-mark.png" alt="Kavin Arulraj monogram" width="18" height="18" style="width: 18px; height: 18px; display: block;" /></span>
       Kavin Arulraj
     </a>
     <nav style="display: flex; gap: 22px; margin-left: auto; font-size: 15px; font-weight: 600;">
@@ -63,7 +72,7 @@
   </nav>
 
   <section style="max-width: 1240px; margin: 0 auto; padding: 34px 28px 20px;">
-    <p style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: oklch(0.72 0.19 240); margin-bottom: 18px;">Taking projects for {{ nextMonth }}</p>
+    <p style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: oklch(0.72 0.19 240); margin-bottom: 18px;">Taking projects for <span id="next-month">next month</span></p>
     <h1 style="font-size: clamp(44px, 6.2vw, 88px); line-height: 0.92; letter-spacing: -0.045em; font-weight: 800; text-wrap: balance; max-width: 18ch;">
       Hire a freelance designer in
       <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; color: oklch(0.88 0.19 100);">Chennai</span>
@@ -75,13 +84,22 @@
 
   <section style="max-width: 1240px; margin: 0 auto; padding: 26px 28px 62px; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 28px; align-items: start;">
 
-    <form onSubmit="{{ onSubmit }}" style="background: oklch(0.23 0.012 60); border: 1px solid oklch(0.34 0.01 60); border-radius: 22px; padding: 32px; display: grid; gap: 22px;">
+    <form id="brief-form" style="background: oklch(0.23 0.012 60); border: 1px solid oklch(0.34 0.01 60); border-radius: 22px; padding: 32px; display: grid; gap: 22px;">
       <div>
         <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: oklch(0.66 0.01 85); text-transform: uppercase; margin-bottom: 14px;">01 · What do you need?</p>
         <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-          <sc-for list="{{ services }}" as="s" hint-placeholder-count="8">
-            <button type="button" onClick="{{ s.toggle }}" style="{{ s.style }}">{{ s.label }}</button>
-          </sc-for>
+          <label class="svc-chip"><input type="checkbox" name="service" value="Logo design"><span>Logo design</span></label>
+          <label class="svc-chip"><input type="checkbox" name="service" value="Brochure"><span>Brochure</span></label>
+          <label class="svc-chip"><input type="checkbox" name="service" value="Packaging"><span>Packaging</span></label>
+          <label class="svc-chip"><input type="checkbox" name="service" value="Posters & flyers"><span>Posters & flyers</span></label>
+          <label class="svc-chip"><input type="checkbox" name="service" value="Business cards"><span>Business cards</span></label>
+          <label class="svc-chip"><input type="checkbox" name="service" value="Social creatives"><span>Social creatives</span></label>
+          <label class="svc-chip"><input type="checkbox" name="service" value="T-shirt design"><span>T-shirt design</span></label>
+          <label class="svc-chip"><input type="checkbox" name="service" value="Website"><span>Website</span></label>
+          <label class="svc-chip"><input type="checkbox" name="service" value="UI/UX"><span>UI/UX</span></label>
+          <label class="svc-chip"><input type="checkbox" name="service" value="Video editing"><span>Video editing</span></label>
+          <label class="svc-chip"><input type="checkbox" name="service" value="Reels & shorts"><span>Reels & shorts</span></label>
+          <label class="svc-chip"><input type="checkbox" name="service" value="Wedding film"><span>Wedding film</span></label>
         </div>
       </div>
 
@@ -127,8 +145,8 @@
       </label>
 
       <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
-        <button type="submit" style="background: oklch(0.88 0.19 100); color: oklch(0.18 0.01 60); border: 0; padding: 17px 30px; border-radius: 999px; font-weight: 800; font-size: 18px; cursor: pointer;" style-hover="background: oklch(0.72 0.19 240); color: oklch(0.98 0.01 85);">Send the brief →</button>
-        <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: oklch(0.64 0.01 85);">{{ statusText }}</p>
+        <button type="submit" style="background: oklch(0.88 0.19 100); color: oklch(0.18 0.01 60); border: 0; padding: 17px 30px; border-radius: 999px; font-weight: 800; font-size: 18px; cursor: pointer;" style-hover="background: oklch(0.72 0.19 240); color: oklch(0.98 0.01 85);">Send via WhatsApp →</button>
+        <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: oklch(0.64 0.01 85);">No spam, no mailing list. Opens WhatsApp with your brief pre-filled.</p>
       </div>
     </form>
 
@@ -267,39 +285,37 @@
     <p>Designed and built by hand.</p>
   </div>
 </footer>
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280}}">
-class Component extends DCLogic {
-  state = { picked: ["Logo design"], sent: false };
 
-  serviceList = ["Logo design", "Brochure", "Packaging", "Posters & flyers", "Business cards", "Social creatives", "T-shirt design", "Website", "UI/UX", "Video editing", "Reels & shorts", "Wedding film"];
+</body>
+</html>
 
-  renderVals() {
-    const picked = this.state.picked;
-    const base = "border-radius: 999px; padding: 10px 16px; font-size: 15px; font-weight: 600; cursor: pointer; font-family: inherit; transition: background 120ms ease;";
-    const now = new Date();
-    const month = new Date(now.getFullYear(), now.getMonth() + 1, 1)
-      .toLocaleDateString("en-GB", { month: "long", year: "numeric" });
-
-    return {
-      nextMonth: month,
-      statusText: this.state.sent ? "Brief sent — reply within one working day." : "No spam, no mailing list.",
-      services: this.serviceList.map(label => {
-        const on = picked.includes(label);
-        return {
-          label,
-          style: base + (on
-            ? " background: oklch(0.88 0.19 100); color: oklch(0.18 0.01 60); border: 1px solid oklch(0.88 0.19 100);"
-            : " background: transparent; color: oklch(0.9 0.01 85); border: 1px solid oklch(0.4 0.01 60);"),
-          toggle: () => this.setState(s => ({
-            picked: s.picked.includes(label) ? s.picked.filter(x => x !== label) : [...s.picked, label]
-          }))
-        };
-      }),
-      onSubmit: (e) => { e.preventDefault(); this.setState({ sent: true }); }
-    };
+<script>
+(function () {
+  var monthEl = document.getElementById('next-month');
+  if (monthEl) {
+    var d = new Date(); d.setMonth(d.getMonth() + 1); d.setDate(1);
+    monthEl.textContent = d.toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
   }
-}
+  var form = document.getElementById('brief-form');
+  if (!form) return;
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var data = new FormData(form);
+    var services = Array.prototype.slice.call(form.querySelectorAll('input[name="service"]:checked')).map(function (i) { return i.value; }).join(', ') || 'Not specified';
+    var lines = [
+      'New project inquiry from kavinarulraj.com',
+      'Name: ' + (data.get('name') || ''),
+      'Business: ' + (data.get('business') || '—'),
+      'Phone: ' + (data.get('phone') || ''),
+      'Email: ' + (data.get('email') || ''),
+      'Services: ' + services,
+      'Budget: ' + (data.get('budget') || ''),
+      'Needed by: ' + (data.get('deadline') || 'Flexible'),
+      'Brief: ' + (data.get('brief') || '')
+    ];
+    window.open('https://wa.me/917010266975?text=' + encodeURIComponent(lines.join('\n')), '_blank');
+  });
+})();
 </script>
 </body>
 </html>
