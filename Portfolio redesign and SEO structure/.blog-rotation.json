@@ -1,0 +1,34 @@
+{
+  "_comment": "Read by the daily blog-post routine. Pick ONE unused item below per run, preferring case-study angles roughly 1-in-3 days and general tips otherwise (avoid two case-study-angle posts about the SAME project back-to-back). After writing the post, set that item's \"used\": true and \"usedDate\": \"YYYY-MM-DD\", \"slug\": \"<slug-you-created>\" in the same PR. Never mark something used without actually publishing the matching post file in that PR. If ALL items are used, add new general-tip topics (same rules as content-brief: generic, no fabricated case studies) rather than repeating a used one.",
+
+  "caseStudyAngles": [
+    { "project": "case-study-madras-filter-coffee", "angle": "Why bilingual Tamil/English packaging is harder to balance than it looks", "category": "Print", "used": false },
+    { "project": "case-study-madras-filter-coffee", "angle": "What FSSAI back-panel compliance actually requires on a small packaging budget", "category": "Print", "used": false },
+    { "project": "case-study-madras-filter-coffee", "angle": "Why we shelf-tested against 6 competitor packs instead of just presenting mockups", "category": "Print", "used": false },
+    { "project": "case-study-omr-clinic", "angle": "Why removing form fields beat redesigning the booking screens", "category": "Web", "used": false },
+    { "project": "case-study-omr-clinic", "angle": "Reading drop-off data before touching a single design decision", "category": "Web", "used": false },
+    { "project": "case-study-wedding-film", "angle": "Editing for emotional narrative instead of chronological order", "category": "Video", "used": false },
+    { "project": "case-study-wedding-film", "angle": "Turning 14 hours of 3-camera footage into a 4-minute film without losing the day", "category": "Video", "used": false }
+  ],
+
+  "generalTipTopics": [
+    { "topic": "What 'brand guidelines' actually needs to contain for a small business (not a 40-page PDF)", "category": "Design", "used": false },
+    { "topic": "Why your WhatsApp Business catalog photos need different crops than Instagram", "category": "Design", "used": false },
+    { "topic": "The difference between a rebrand and a refresh, and which one you actually need", "category": "Design", "used": false },
+    { "topic": "Reading a print quote: what 'GSM' and 'lamination' actually change about cost", "category": "Print", "used": false },
+    { "topic": "Why die-cut packaging costs more than you'd guess, and when it's worth it", "category": "Print", "used": false },
+    { "topic": "Vinyl vs acrylic vs LED signboards: what actually holds up in Chennai weather", "category": "Print", "used": false },
+    { "topic": "Why a ₹15,000 website and a ₹1,50,000 website solve different problems", "category": "Web", "used": false },
+    { "topic": "What actually slows a small-business website down (it's usually not the design)", "category": "Web", "used": false },
+    { "topic": "Domain, hosting, website: what you're actually paying for each year and why", "category": "Web", "used": false },
+    { "topic": "WhatsApp click-to-chat vs a contact form: which converts better for local service businesses", "category": "Web", "used": false },
+    { "topic": "Why your product photos need a tripod more than they need a better phone", "category": "Video", "used": false },
+    { "topic": "How long should a reel actually be? What the data from small-business accounts shows", "category": "Video", "used": false },
+    { "topic": "Filming b-roll for a shop or clinic without disrupting the business for a day", "category": "Video", "used": false },
+    { "topic": "What a video editor needs from you before the first cut (raw footage checklist)", "category": "Video", "used": false },
+    { "topic": "Retainer vs one-off projects: what actually makes sense for a small business's design needs", "category": "Business", "used": false },
+    { "topic": "Reading a designer's portfolio: what to look for besides 'do I like the work'", "category": "Business", "used": false },
+    { "topic": "Why 'make it pop' is the hardest brief to work from, and what to say instead", "category": "Business", "used": false },
+    { "topic": "How much revision is normal, and when extra rounds should cost extra", "category": "Business", "used": false }
+  ]
+}
