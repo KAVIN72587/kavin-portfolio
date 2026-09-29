@@ -1,1 +1,12 @@
-{ "cleanUrls": true, "trailingSlash": true }
+{
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.kavinarulraj.com" }],
+      "destination": "https://kavinarulraj.com/:path*",
+      "permanent": true
+    }
+  ]
+}
