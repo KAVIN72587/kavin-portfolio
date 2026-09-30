@@ -10,7 +10,7 @@ Status: `done` = published, `next` = up next. The daily task picks the first row
 
 | # | Status | Slug | Target keyword | Category | Angle | Links to |
 |---|---|---|---|---|---|---|
-| 1 | done | who-owns-your-website | web designer disappeared / who owns my domain | Web | The 5 logins you must hold before you pay a web designer | /web-design-chennai/, /website-design-cost-chennai/ |
+| 1 | done 2026-09-30 | who-owns-your-website | web designer disappeared / who owns my domain | Web | The 5 logins you must hold before you pay a web designer | /web-design-chennai/, /website-design-cost-chennai/ |
 | 2 | next | canva-logo-trademark | can I trademark a Canva logo India | Design | When a Canva logo is yours and when it legally isn't | /logo-design-chennai/, /logo-design-cost-chennai/ |
 | 3 | | fiverr-vs-local-designer | Fiverr vs local designer India | Business | Resold logos, time zones, and what you actually own | /freelancer-vs-agency-chennai/, /pricing/ |
 | 4 | | website-maintenance-cost | website maintenance cost India per year | Web | What a static site vs WordPress really costs to keep alive | /website-design-cost-chennai/, /wordpress-website-design-chennai/ |
@@ -46,6 +46,7 @@ Status: `done` = published, `next` = up next. The daily task picks the first row
 2. Add a card at the TOP of the list in `blog.html` (correct `data-cat`, "N min · Mon YYYY") and update the "N posts" count.
 3. Add `<url>` to `sitemap.xml` under the blog block with today's lastmod.
 4. Mark the row `done` here and the next row `next`.
-5. Commit `Add blog post: <title>` and push to `main` (Vercel deploys).
+5. Commit `Add blog post: <title>` and `git push origin main` (backup only — GitHub pushes do NOT deploy).
+5b. Deploy: run `vercel --prod --yes` from `Portfolio redesign and SEO structure/`, then confirm the post URL returns 200.
 6. Ping IndexNow with the new URL (key file: `2cc46bbdb1bdeb92ca5fcb9a7a2bce15.txt`).
 7. After 30 posts, re-run keyword research and extend this table.
