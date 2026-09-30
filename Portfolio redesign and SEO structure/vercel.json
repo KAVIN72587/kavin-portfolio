@@ -4,8 +4,283 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.kavinarulraj.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.kavinarulraj.com"
+        }
+      ],
       "destination": "https://kavinarulraj.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/About.dc{.html}?",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/Areas%20Adyar.dc{.html}?",
+      "destination": "/areas/adyar/",
+      "permanent": true
+    },
+    {
+      "source": "/Areas%20Anna%20Nagar.dc{.html}?",
+      "destination": "/areas/anna-nagar/",
+      "permanent": true
+    },
+    {
+      "source": "/Areas%20Guindy%20Nungambakkam.dc{.html}?",
+      "destination": "/areas/guindy-nungambakkam/",
+      "permanent": true
+    },
+    {
+      "source": "/Areas%20T%20Nagar.dc{.html}?",
+      "destination": "/areas/t-nagar/",
+      "permanent": true
+    },
+    {
+      "source": "/Areas%20Velachery%20OMR.dc{.html}?",
+      "destination": "/areas/velachery-omr/",
+      "permanent": true
+    },
+    {
+      "source": "/Areas.dc{.html}?",
+      "destination": "/areas/",
+      "permanent": true
+    },
+    {
+      "source": "/Blog%20How%20Many%20Logo%20Concepts.dc{.html}?",
+      "destination": "/blog/how-many-logo-concepts/",
+      "permanent": true
+    },
+    {
+      "source": "/Blog%20Instagram%20Grid.dc{.html}?",
+      "destination": "/blog/instagram-grid/",
+      "permanent": true
+    },
+    {
+      "source": "/Blog%20Logo%20Signboard%20Problems.dc{.html}?",
+      "destination": "/blog/logo-signboard-problems/",
+      "permanent": true
+    },
+    {
+      "source": "/Blog%20Photos%20For%20Print.dc{.html}?",
+      "destination": "/blog/photos-for-print/",
+      "permanent": true
+    },
+    {
+      "source": "/Blog%20Post.dc{.html}?",
+      "destination": "/blog/logo-signboard-problems/",
+      "permanent": true
+    },
+    {
+      "source": "/Blog%20Tamil%20English%20Design.dc{.html}?",
+      "destination": "/blog/tamil-english-design/",
+      "permanent": true
+    },
+    {
+      "source": "/Blog%20Video%20Captions.dc{.html}?",
+      "destination": "/blog/video-captions/",
+      "permanent": true
+    },
+    {
+      "source": "/Blog%20What%20To%20Send%20For%20A%20Quote.dc{.html}?",
+      "destination": "/blog/what-to-send-for-a-quote/",
+      "permanent": true
+    },
+    {
+      "source": "/Blog.dc{.html}?",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/Brochure%20Design%20Chennai.dc{.html}?",
+      "destination": "/brochure-design-chennai/",
+      "permanent": true
+    },
+    {
+      "source": "/Brochure%20Design%20Cost%20Chennai.dc{.html}?",
+      "destination": "/brochure-design-cost-chennai/",
+      "permanent": true
+    },
+    {
+      "source": "/Business%20Card%20Design%20Chennai.dc{.html}?",
+      "destination": "/business-card-design-chennai/",
+      "permanent": true
+    },
+    {
+      "source": "/Case%20Study%20OMR%20Clinic.dc{.html}?",
+      "destination": "/portfolio/case-study-omr-clinic/",
+      "permanent": true
+    },
+    {
+      "source": "/Case%20Study%20Wedding%20Film.dc{.html}?",
+      "destination": "/portfolio/case-study-wedding-film/",
+      "permanent": true
+    },
+    {
+      "source": "/Case%20Study.dc{.html}?",
+      "destination": "/portfolio/case-study-madras-filter-coffee/",
+      "permanent": true
+    },
+    {
+      "source": "/Contact.dc{.html}?",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/Corporate%20Video%20Editing%20Chennai.dc{.html}?",
+      "destination": "/corporate-video-editing-chennai/",
+      "permanent": true
+    },
+    {
+      "source": "/Ecommerce%20Website%20Design%20Chennai.dc{.html}?",
+      "destination": "/ecommerce-website-design-chennai/",
+      "permanent": true
+    },
+    {
+      "source": "/Freelancer%20vs%20Agency%20Chennai.dc{.html}?",
+      "destination": "/freelancer-vs-agency-chennai/",
+      "permanent": true
+    },
+    {
+      "source": "/Graphic%20Design%20Chennai.dc{.html}?",
+      "destination": "/graphic-design-chennai/",
+      "permanent": true
+    },
+    {
+      "source": "/Hire%20Me.dc{.html}?",
+      "destination": "/hire-me/",
+      "permanent": true
+    },
+    {
+      "source": "/Home.dc{.html}?",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/Logo%20Design%20Chennai.dc{.html}?",
+      "destination": "/logo-design-chennai/",
+      "permanent": true
+    },
+    {
+      "source": "/Logo%20Design%20Cost%20Chennai.dc{.html}?",
+      "destination": "/logo-design-cost-chennai/",
+      "permanent": true
+    },
+    {
+      "source": "/Low%20Cost%20Website%20Design%20Chennai.dc{.html}?",
+      "destination": "/low-cost-website-design-chennai/",
+      "permanent": true
+    },
+    {
+      "source": "/Packaging%20Design%20Chennai.dc{.html}?",
+      "destination": "/packaging-design-chennai/",
+      "permanent": true
+    },
+    {
+      "source": "/Portfolio%20Branding.dc{.html}?",
+      "destination": "/portfolio/branding/",
+      "permanent": true
+    },
+    {
+      "source": "/Portfolio%20Print.dc{.html}?",
+      "destination": "/portfolio/print/",
+      "permanent": true
+    },
+    {
+      "source": "/Portfolio%20Video.dc{.html}?",
+      "destination": "/portfolio/video/",
+      "permanent": true
+    },
+    {
+      "source": "/Portfolio%20Web%20UI.dc{.html}?",
+      "destination": "/portfolio/web-ui/",
+      "permanent": true
+    },
+    {
+      "source": "/Portfolio.dc{.html}?",
+      "destination": "/portfolio/",
+      "permanent": true
+    },
+    {
+      "source": "/Poster%20Flyer%20Design%20Chennai.dc{.html}?",
+      "destination": "/poster-flyer-design-chennai/",
+      "permanent": true
+    },
+    {
+      "source": "/Pricing.dc{.html}?",
+      "destination": "/pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/Privacy%20Policy.dc{.html}?",
+      "destination": "/privacy/",
+      "permanent": true
+    },
+    {
+      "source": "/Reels%20Shorts%20Editing%20Chennai.dc{.html}?",
+      "destination": "/reels-shorts-editing-chennai/",
+      "permanent": true
+    },
+    {
+      "source": "/Social%20Media%20Creatives%20Chennai.dc{.html}?",
+      "destination": "/social-media-creatives-chennai/",
+      "permanent": true
+    },
+    {
+      "source": "/T-Shirt%20Design%20Chennai.dc{.html}?",
+      "destination": "/t-shirt-design-chennai/",
+      "permanent": true
+    },
+    {
+      "source": "/UI%20UX%20Design%20Chennai.dc{.html}?",
+      "destination": "/ui-ux-design-chennai/",
+      "permanent": true
+    },
+    {
+      "source": "/Video%20Editing%20Charges%20Chennai.dc{.html}?",
+      "destination": "/video-editing-charges-chennai/",
+      "permanent": true
+    },
+    {
+      "source": "/Video%20Editing%20Chennai.dc{.html}?",
+      "destination": "/video-editing-chennai/",
+      "permanent": true
+    },
+    {
+      "source": "/Web%20Design%20Chennai.dc{.html}?",
+      "destination": "/web-design-chennai/",
+      "permanent": true
+    },
+    {
+      "source": "/Website%20Design%20Cost%20Chennai.dc{.html}?",
+      "destination": "/website-design-cost-chennai/",
+      "permanent": true
+    },
+    {
+      "source": "/Wedding%20Video%20Editing%20Chennai.dc{.html}?",
+      "destination": "/wedding-video-editing-chennai/",
+      "permanent": true
+    },
+    {
+      "source": "/WordPress%20Website%20Design%20Chennai.dc{.html}?",
+      "destination": "/wordpress-website-design-chennai/",
+      "permanent": true
+    },
+    {
+      "source": "/YouTube%20Video%20Editing%20Chennai.dc{.html}?",
+      "destination": "/youtube-video-editing-chennai/",
+      "permanent": true
+    },
+    {
+      "source": "/%20graphic-design-chennai{.html}?{/}?",
+      "destination": "/graphic-design-chennai/",
+      "permanent": true
+    },
+    {
+      "source": "/privacy-policy{/}?",
+      "destination": "/privacy/",
       "permanent": true
     }
   ]
