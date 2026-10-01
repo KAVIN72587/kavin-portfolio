@@ -1,0 +1,67 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 25, date: "2026-10-25", slug: "slow-website-mobile", cat: "Web",
+  keyword: "why is my website slow on mobile",
+  title: "Why Is My Website Slow on Mobile? The 4 Usual Causes",
+  desc: "Why your website is slow on mobile in India: heavy images, too many plugins and scripts, cheap or distant hosting, and page builders. How to test and what to fix.",
+  short: "Heavy images, plugins and scripts, hosting and page builders: how to test, and what to fix first.",
+  headline: "Why is my website slow on mobile? The four usual causes on Indian mobile networks",
+  crumb: "Slow website on mobile",
+  cardTitle: "Why your website is slow on mobile",
+  card: "Your site is fast on office Wi-Fi and painful on a phone. The four usual causes, and what to fix first.",
+  h1: ["Why your website is slow on", "mobile"],
+  lede: "On your office Wi-Fi, the website opens instantly. On a customer's phone, on mobile data, in a basement shop or a moving auto, it takes eight seconds — and most of them have already gone back to Google.",
+  intro: [
+    "Most of your visitors are on phones, and many are on patchy mobile connections. A site that feels fine to you can be painfully slow for them. The good news is that small business sites are usually slow for the same four reasons, and most of them are fixable without a rebuild.",
+  ],
+  sections: [
+    { h: "First, measure it properly",
+      p: ["Do not judge speed on your own laptop. Open the site on a phone, switch off Wi-Fi, and time how long it takes before you can read and tap something. Then run the page through Google's free PageSpeed Insights tool, which tests a mobile version and lists what is slowing it down. Test the pages people actually land on — home, main service pages, contact — not just the home page."],
+      note: "PageSpeed scores move around between runs. Look at the list of problems, not just the number." },
+    { h: "Cause 1: huge images",
+      p: ["The most common cause, by a long way. Photos uploaded straight from a phone or camera can be several megabytes each, when a properly sized web image would be a small fraction of that. A gallery of twenty such photos can make a page heavier than many entire websites.",
+         "The fix is to resize images to the size they are actually displayed, compress them, use modern formats such as WebP, and load images further down the page only when the visitor scrolls to them."] },
+    { h: "Cause 2: too many plugins and scripts",
+      p: ["Every plugin, chat widget, slider, analytics tag, social feed and pop-up adds code the phone has to download and run. WordPress sites in particular collect plugins over the years, many unused but still loading on every page. Remove what you do not need; replace heavy widgets with simple links where possible — a WhatsApp link instead of a chat widget, for example."] },
+    { h: "Cause 3: cheap or distant hosting",
+      p: ["Very cheap hosting crowds many sites onto one server. If yours is slow to respond before anything even starts loading, the hosting may be the bottleneck. Servers far from India add delay too. For a small business site, good shared hosting with a data centre in or near India, or a content delivery network, is usually enough."] },
+    { h: "Cause 4: heavy themes and page builders",
+      p: ["Multi-purpose themes and drag-and-drop page builders are convenient, but many load large amounts of code for features your site does not use. If images are optimised, plugins trimmed and hosting decent, and the site is still slow, the theme or builder is often the reason. At that point, rebuilding key pages on a lighter foundation can be cheaper than endless tuning."] },
+  ],
+  callout: {
+    h: "Speed is a sales problem, not a technical one",
+    p: "Visitors do not wait. Every extra second of loading loses people who were ready to call, book or buy, and you never see them leave. Google also uses page experience as one of many signals, so a very slow site can be at a disadvantage in search as well.",
+    quote: "Test your site the way your customers use it: on a phone, on mobile data, in a hurry.",
+    after: "Fixing images alone often makes the biggest difference for the least money. It is the first thing I check on any slow site.",
+  },
+  extras: [
+    { h: "If hosting is the problem",
+      intro: "Shared hosting is fine for most small business sites, as long as it is decent quality and close to your visitors.",
+      paras: [
+        "I set most small business sites up on <a href=\"https://www.hostinger.com/in?REFERRALCODE=1KAVIN81\" rel=\"sponsored nofollow noopener\" target=\"_blank\">Hostinger</a>. That is my referral link: if you sign up through it, I may earn a commission or credit at no extra cost to you. Whichever host you choose, check the renewal price rather than the first-year offer, and pick a data centre in or near India.",
+      ] },
+    { h: "What to fix first",
+      list: [
+        ["Resize and compress images.", "Biggest gain, lowest cost."],
+        ["Remove unused plugins and widgets.", "Then replace heavy ones with simple links."],
+        ["Turn on caching.", "Most hosts and WordPress setups offer it; it stops the server rebuilding every page for every visitor."],
+        ["Check hosting response time.", "If the server is slow before anything loads, upgrade or move."],
+        ["Consider rebuilding key pages.", "Only if the theme or builder is still the bottleneck."],
+      ],
+      paras: ["For WordPress sites, I offer a one-off speed rescue — images, plugins, caching and hosting configuration — for ₹7,000."] },
+  ],
+  faq: [
+    ["How do I check if my website is slow on mobile?", "Open it on a phone with Wi-Fi off and time how long it takes to become usable. Then run it through Google's free PageSpeed Insights tool, which tests the mobile version and lists specific problems to fix."],
+    ["Will a faster website help my Google ranking?", "Page experience is one of many signals Google uses, so speed can help at the margin. The bigger benefit is that more visitors stay long enough to call, book or buy."],
+    ["Do I need to rebuild my website to make it faster?", "Usually not. Optimising images, removing unused plugins, enabling caching and fixing hosting solve most cases. A rebuild makes sense only when a heavy theme or page builder is the main cause."],
+  ],
+  related: [
+    ["/web-design-chennai/", "Web design in Chennai", "service"],
+    ["/website-design-cost-chennai/", "What a website really costs in Chennai", "pricing"],
+    ["/blog/website-not-showing-on-google/", "Why your website isn't showing on Google", "5 min"],
+  ],
+  cta: {
+    h: "Fast on a phone, on mobile data.",
+    p: `Every ${ctaLink("/web-design-chennai/", "site I build")} is tested on a phone on mobile data before launch. Is your current site slow? Send me the address and I'll tell you the main cause and what it would take to fix.`,
+  },
+};

@@ -1,0 +1,63 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 8, date: "2026-10-08", slug: "youtube-editor-cost-per-video", cat: "Video",
+  keyword: "how much to pay a YouTube video editor per video",
+  title: "How Much to Pay a YouTube Video Editor per Video",
+  desc: "How much to pay a YouTube video editor per video in India: per-video vs monthly retainer, what changes the price, and why Indian and US rates differ so much.",
+  short: "Per-video vs monthly retainer, what changes the price, and why Indian and global rates differ.",
+  headline: "How much to pay a YouTube video editor per video: per-video vs retainer, India vs global",
+  crumb: "YouTube editor cost",
+  cardTitle: "What a YouTube editor should cost per video",
+  card: "Per video or per month, India or abroad: what moves the price of editing a YouTube video, and how to budget for it.",
+  h1: ["What should a YouTube editor cost per", "video?"],
+  lede: "If you post weekly, editing is the biggest recurring cost of your channel after your own time. Pay too little and you get flat videos nobody finishes. Pay too much and the channel never earns it back.",
+  intro: [
+    "Rates vary enormously. Global rate guides put long-form YouTube editing anywhere from a couple of hundred to over a thousand US dollars per video for experienced editors abroad. In India, most freelancers charge a few thousand rupees per video, and job posts offering much less are common.",
+    "Here is what actually decides the number, and how to choose between paying per video and paying monthly.",
+  ],
+  sections: [
+    { h: "Length is the smallest factor",
+      p: ["A ten-minute video does not cost twice as much as a five-minute one. What costs time is the raw footage and the style. Two hours of rambling recording cut down to twelve tight minutes takes far longer than fifteen minutes of scripted, well-delivered footage cut to ten.",
+         "When you ask for a quote, tell the editor how much raw footage you usually record, not just how long the final video should be."] },
+    { h: "Style is the biggest factor",
+      p: ["A clean talking-head edit — cuts, basic captions, a lower-third, simple music — is quick. A retention-style edit with zooms every few seconds, animated text, B-roll on every point, sound effects, memes and motion graphics can take a full day or more for a single video. Both are legitimate. They are different products at different prices."],
+      note: "Send two reference videos: one for pace, one for graphics. It gets you an accurate quote first time." },
+    { h: "Thumbnails, Shorts and extras",
+      p: ["Check what is included. Some editors include a thumbnail; some charge separately. Cutting two or three Shorts from each long video is a common add-on and good value, because the footage is already sorted. Thumbnail variants for YouTube's built-in title and thumbnail testing are another small extra — I charge ₹500 for each additional variant."] },
+    { h: "Per video: flexible, but you are one of many",
+      p: ["Paying per video suits channels that post irregularly or are still finding their style. You pay only for what you publish. The trade-off is scheduling: one-off jobs go into the editor's queue with everyone else's, so turnaround can vary from week to week."] },
+    { h: "Monthly retainer: cheaper per video, and a fixed slot",
+      p: ["If you post on a schedule, a retainer is usually better for both sides. The editor learns your style, keeps your presets and graphics ready, and reserves time for you every week. In return, the price per video drops. My own rates are ₹3,000 for a single video up to twenty minutes, or ₹10,000 a month for four videos and ₹18,000 for eight."],
+      note: "A retainer only saves money if you actually deliver the footage on time. Ask what happens to unused slots." },
+  ],
+  callout: {
+    h: "Why Indian rates are lower",
+    p: "Editors in India and abroad often use the same software and watch the same tutorials. Rates differ mainly because of cost of living, not skill. That is why many overseas creators hire editors in India, and why good Indian editors raise their rates as they build an international client list.",
+    quote: "Judge an editor by their reel and their reliability, not by the country on their profile.",
+    after: "For a channel in India, the practical question is simple: can the editor deliver the style you want, every week, on time? A cheaper editor who misses two uploads a month is not cheaper.",
+  },
+  extras: [
+    { h: "How to budget for editing",
+      intro: "A rough way to think about it before you commit:",
+      list: [
+        ["Count your real output.", "How many videos did you actually publish in the last three months? Budget for that, not the plan."],
+        ["Start with a paid trial.", "One video at the full rate, with honest feedback, tells both of you more than any test edit."],
+        ["Agree on revisions up front.", "Two rounds is standard with me; after that, long-form rounds are ₹2,000 each. Collect feedback in one message to avoid paying for extra rounds."],
+        ["Review after three months.", "Look at watch time and retention. If they improved, the edit is earning its keep."],
+      ] },
+  ],
+  faq: [
+    ["How much does a YouTube video editor charge in India?", "Most freelancers charge from about ₹1,500 to ₹8,000 per long-form video depending on footage and style, with simple edits at the low end and heavily animated edits at the top. I charge ₹3,000 for a video up to twenty minutes."],
+    ["Should I pay a YouTube editor per video or per hour?", "Per video is easier to budget and puts the risk of slow work on the editor. Hourly makes sense only for open-ended work like fixing old videos or experimenting with a new format."],
+    ["Do YouTube editors make thumbnails?", "Many do, but it is not universal. Ask whether a thumbnail is included, how many options you get, and what extra variants cost. The thumbnail decides whether anyone clicks, so it is worth paying for properly."],
+  ],
+  related: [
+    ["/youtube-video-editing-chennai/", "YouTube video editing in Chennai", "service"],
+    ["/video-editing-charges-chennai/", "Video editing charges, explained", "pricing"],
+    ["/blog/reels-editing-price/", "Why one reel costs ₹300 here and ₹15,000 there", "5 min"],
+  ],
+  cta: {
+    h: "Weekly uploads, edited on schedule.",
+    p: `${ctaLink("/youtube-video-editing-chennai/", "YouTube editing")} from ₹3,000 a video, or a monthly retainer with a fixed slot every week. Send me a link to your channel and one raw recording, and I'll quote for your style.`,
+  },
+};

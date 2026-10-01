@@ -1,0 +1,61 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 12, date: "2026-10-12", slug: "wedding-video-editing-time", cat: "Video",
+  keyword: "how long does wedding video editing take",
+  title: "How Long Does Wedding Video Editing Take, and Why?",
+  desc: "How long wedding video editing really takes, why a highlight film needs weeks not days, what slows it down, and what you can do to get your wedding video sooner.",
+  short: "Why a wedding film takes weeks, what slows it down, and what you can do to speed it up.",
+  headline: "How long does wedding video editing take? Why it takes weeks, and what you can speed up",
+  crumb: "Wedding editing time",
+  cardTitle: "Why your wedding video takes weeks",
+  card: "Hours of footage, several cameras, music and story. Where the editing time goes, and what you can do to get it sooner.",
+  h1: ["Why your wedding video takes", "weeks"],
+  lede: "The wedding was a month ago. The photos arrived last week. The video still has not. Your relatives keep asking, and you are starting to wonder whether anyone is working on it at all.",
+  intro: [
+    "Wedding video is one of the slowest kinds of editing, for reasons that are not obvious from the outside. Knowing where the time goes helps you set fair expectations, ask the right questions before you book, and spot the delays that are not reasonable.",
+    "For reference, I deliver a teaser in two or three days and a highlight film plus full film in two to three weeks, counted from when the footage arrives. Here is why it takes that long.",
+  ],
+  sections: [
+    { h: "There is a lot of footage",
+      p: ["A single South Indian wedding can produce eight to fifteen hours of footage across several cameras, plus a drone, plus phone clips from relatives. Before any creative editing begins, every clip has to be copied, backed up, sorted by event and camera, and watched. Just reviewing footage takes days."],
+      note: "That first watch is not wasted time. It is where the editor finds the moments your film is built on." },
+    { h: "Several cameras have to be lined up",
+      p: ["When two or three cameras film the same ritual, the editor syncs them so they can cut between angles. Audio from separate recorders is matched to the video. Each camera has different colours, so every clip is colour-corrected to match. This invisible work is what makes a film look like one film instead of a collage."] },
+    { h: "The highlight film is written, not assembled",
+      p: ["A good highlight film tells a story in a few minutes, which means choosing perhaps three or four minutes from ten hours. Picking the music, finding the vows or speech lines that carry the story, building the pacing, then reworking it until it feels right — this is the creative part, and it cannot be rushed without showing."] },
+    { h: "The full film needs care, not cleverness",
+      p: ["The full film covers each ceremony in order. It is less creative but long: trimming dead time, choosing the best angle for every moment, cleaning audio so the mantras and speeches are clear, adding titles. An hour-long film means checking an hour of finished video, often more than once."] },
+    { h: "Exporting and revisions take real time",
+      p: ["Long, high-resolution films take hours to export and upload. Then you watch it, send feedback, and the editor makes changes and exports again. Two revision rounds is normal; each adds a few days, mostly waiting for feedback to arrive."] },
+  ],
+  callout: {
+    h: "Season is the hidden delay",
+    p: "Most of the wait you experience is not editing. It is the queue. Wedding seasons cluster around auspicious dates, so every studio and editor receives dozens of weddings in the same few weeks. If someone quotes three months, it is usually because your film is fortieth in line, not because it takes three months to edit.",
+    quote: "Ask for a delivery date, not \"a few weeks\".",
+    after: "A clear date in writing, counted from when the footage is handed over, is fair to both sides. It also tells you early whether the studio has taken on more than it can handle.",
+  },
+  extras: [
+    { h: "What you can do to get it sooner",
+      list: [
+        ["Get the footage to the editor quickly.", "If the photographer shoots and someone else edits, the clock does not start until the drives are handed over. Ask when that will happen."],
+        ["Send your notes in one go.", "Names of key people, moments you care about, songs you like. One clear message beats twenty over a month."],
+        ["Give feedback within a few days.", "Revisions wait for you. Watch the draft together as a family, collect everyone's comments, and send them as one list."],
+        ["Ask for a teaser first.", "A short cut you can share within days takes the pressure off while the full films are made properly."],
+        ["Book editing before the wedding.", "If you hire the editor in peak season after the event, you join the back of the queue."],
+      ] },
+  ],
+  faq: [
+    ["How long does it take to get a wedding video in India?", "It varies widely. A teaser can come within days. A highlight film and full film usually take a few weeks of actual editing, but studio queues in peak season can stretch delivery to a few months. Always agree a date in writing."],
+    ["Why does my wedding photographer deliver photos before the video?", "Photos need selection and colour correction, but each is a single frame. Video means syncing cameras and audio, building a story to music, and checking hours of finished footage. It is simply more work per minute of result."],
+    ["Can I get my wedding video faster if I pay more?", "Sometimes. A rush fee can move you up a queue, but it cannot make a careful edit happen in a day. A teaser first, with the full films on a normal schedule, is often the better compromise."],
+  ],
+  related: [
+    ["/wedding-video-editing-chennai/", "Wedding video editing in Chennai", "service"],
+    ["/video-editing-charges-chennai/", "Video editing charges, explained", "pricing"],
+    ["/blog/wedding-teaser-highlight-full-film/", "Teaser, highlight or full film?", "5 min"],
+  ],
+  cta: {
+    h: "Your wedding film, on a date you can count on.",
+    p: `I edit ${ctaLink("/wedding-video-editing-chennai/", "wedding films")} with a written delivery date: teaser in two to three days, highlight and full film in two to three weeks from handover. Tell me your dates and I'll confirm a slot.`,
+  },
+};

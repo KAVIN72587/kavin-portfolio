@@ -1,0 +1,63 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 21, date: "2026-10-21", slug: "restaurant-website-must-haves", cat: "Web",
+  keyword: "restaurant website Chennai menu online ordering",
+  title: "Restaurant Website Must-Haves: Menu, Orders and Maps",
+  desc: "What a restaurant website in Chennai needs: a readable menu, photos, timings, maps, and how to balance Swiggy and Zomato with direct orders and table bookings.",
+  short: "Menu, photos, maps, and how to balance Swiggy and Zomato with direct orders.",
+  headline: "Restaurant website must-haves: menu, online ordering, photos and maps",
+  crumb: "Restaurant website",
+  cardTitle: "What a restaurant website really needs",
+  card: "A menu people can read on a phone, real photos, timings, maps, and a sensible plan for delivery apps and direct orders.",
+  h1: ["What a restaurant website really", "needs"],
+  lede: "Hungry people do not browse. They open your website on a phone, usually while deciding between you and two other places, and look for three things: the menu, the prices, and how to get the food. Everything else is decoration.",
+  intro: [
+    "Many restaurant sites make those three things hard. The menu is a blurry photo of the printed card, or a PDF that takes ages to load on mobile data. Timings are missing. The address is text that cannot be tapped. Here is what a restaurant site actually needs, and how to think about delivery apps versus direct orders.",
+  ],
+  sections: [
+    { h: "A menu that works on a phone",
+      p: ["Type the menu as text on the page, organised by section, with prices. Not a photographed card, not a PDF. Text loads instantly, can be read on any screen, can be searched by Google, and is easy to update when prices change. Mark vegetarian and non-vegetarian clearly, note spice levels if it helps, and list allergens where you can.",
+         "If you have different menus for lunch, dinner or weekends, label each one with its timings."],
+      note: "Update prices on the website the same day you change them in the restaurant. Out-of-date prices cause awkward moments at the bill." },
+    { h: "Real photos of real food",
+      p: ["Photos of your actual dishes, your dining room and your kitchen. Stock photos of pasta on a marble slab fool nobody and make the place seem less real. A dozen good photos of bestsellers, taken in daylight on a modern phone, are enough. Show the space too — people want to know if it suits a family dinner, a date or a quick lunch."] },
+    { h: "Timings, location and parking up front",
+      p: ["Opening hours for each day, including when the kitchen closes. A tappable phone number. An embedded map and a line like \"opposite the bus stand, first floor\". Parking information if you have it. These should be visible without scrolling on a phone, and identical to your Google Business Profile."] },
+    { h: "Delivery apps and direct orders",
+      p: ["Swiggy and Zomato bring customers you would never reach on your own, but they charge commission on each order. A website can link to your app listings for people who prefer them, and also offer a direct route — WhatsApp ordering, a phone number, or a simple online order form — for regulars who are happy to order from you directly.",
+         "Many restaurants use the apps for discovery and the website plus WhatsApp for repeat customers, often with a small incentive for ordering direct. Check your agreements with the apps before advertising different prices on your own channels."] },
+    { h: "Bookings and events",
+      p: ["If you take table reservations, make it easy: a WhatsApp button with a prefilled message such as \"Table for 4, Saturday 8 pm\" works well and needs no software. If you host birthdays, corporate lunches or catering, give that its own section with capacity, sample menus and a contact button. These enquiries are often worth more than a week of delivery orders."] },
+  ],
+  callout: {
+    h: "Your Google listing gets more visits than your site",
+    p: "For restaurants especially, the Google Business Profile is where most people first see you: photos, reviews, hours, the menu link. Your website supports it. Keep the two consistent, add the website link to the profile, and point the profile's menu link to your website's menu page so people see your current prices.",
+    quote: "The website's job is to answer the questions your Google listing can't.",
+    after: "Event menus, catering packages, the story behind the restaurant, and an easy way to order direct — that is where a website earns its place next to the listing.",
+  },
+  extras: [
+    { h: "If you want online ordering on your own site",
+      intro: "A full ordering system is a bigger project. It usually makes sense when direct orders are already coming in through WhatsApp or phone and becoming hard to manage. It needs:",
+      list: [
+        ["A menu with options.", "Sizes, add-ons, combos — all of which need managing when prices change."],
+        ["Payments.", "UPI and cards through a payment gateway, which charges a fee per transaction."],
+        ["Delivery arrangements.", "Your own staff, a delivery partner, or pickup only."],
+        ["Someone watching orders in real time.", "An order that sits unseen for twenty minutes is worse than no ordering at all."],
+      ],
+      paras: ["For many small restaurants, a well-organised WhatsApp ordering flow with a clear menu page gets most of the benefit at a fraction of the effort. A full store build starts at ₹45,000 with me."] },
+  ],
+  faq: [
+    ["Does a restaurant need a website if it is on Swiggy and Zomato?", "The apps handle delivery orders, but they are not yours: commission applies, the customer relationship belongs to the app, and your listing sits next to competitors. A website gives you a place for direct orders, bookings, events and catering, and supports your Google listing."],
+    ["Should my restaurant menu be a PDF?", "Better not. PDFs are slow to load on phones, hard to read, and harder for Google to understand. A menu typed as text on a web page is faster, easier to update and better for search."],
+    ["How can customers order directly from my restaurant website?", "The simplest way is a WhatsApp ordering button with your menu on the page. For higher volumes, an ordering system with online payments can be built, but it needs someone watching orders in real time."],
+  ],
+  related: [
+    ["/web-design-chennai/", "Web design in Chennai", "service"],
+    ["/website-design-cost-chennai/", "What a website really costs in Chennai", "pricing"],
+    ["/blog/whatsapp-button-on-website/", "The WhatsApp button, done properly", "5 min"],
+  ],
+  cta: {
+    h: "A restaurant site people can order from.",
+    p: `I build ${ctaLink("/web-design-chennai/", "restaurant websites")} with a fast text menu, real photos, maps and WhatsApp ordering — and ${ctaLink("/ecommerce-website-design-chennai/", "full online ordering")} when you are ready. Send me your menu and I'll show you how it would look.`,
+  },
+};

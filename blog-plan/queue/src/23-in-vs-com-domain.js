@@ -1,0 +1,63 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 23, date: "2026-10-23", slug: "in-vs-com-domain", cat: "Web",
+  keyword: ".in vs .com domain for Indian business",
+  title: ".in vs .com Domain for an Indian Business: Which to Buy?",
+  desc: ".in vs .com for an Indian business: which one customers trust, what it means for Google, renewal costs, and why buying both and redirecting one is often smartest.",
+  short: "Which one customers trust, what it means for Google, and why buying both is often smartest.",
+  headline: ".in vs .com domain for an Indian business: which to buy, and why to buy both",
+  crumb: ".in vs .com",
+  cardTitle: ".in or .com: which domain should you buy?",
+  card: "Trust, Google, renewal costs and spelling. Which ending suits your business, and why buying both is often smart.",
+  h1: [".in or .com: which domain should you", "buy?"],
+  lede: "You have chosen a business name. The .com is taken, or costs more than you expected, and the .in is available. Is that a problem? For most Indian businesses, much less than people fear.",
+  intro: [
+    "The domain ending matters less than the name in front of it. But there are real differences in how customers perceive each, and some practical reasons to own both. Here is how to decide.",
+  ],
+  sections: [
+    { h: "What each ending signals",
+      p: [".com is the default ending worldwide. People type it out of habit, and it reads as neutral and established. .in is India's country-code domain, run by the National Internet Exchange of India (NIXI) and sold through accredited registrars. It signals clearly that you are an Indian business serving Indian customers.",
+         "For a clinic in Chennai, a coaching centre in Coimbatore, or a shop that only delivers in India, .in is a natural fit. For a business that sells abroad, or wants to look international, .com is usually better."] },
+    { h: "Google treats them differently, mostly in your favour",
+      p: [".in is a country-code domain, so Google generally treats a .in site as targeted at India. That can help you appear in Indian searches and is no handicap if India is where your customers are. A .com has no country attached; Google works out your audience from your content, address and other signals. For a local business, both work fine — what you write on the site matters far more than the ending."] },
+    { h: "Customers will type .com anyway",
+      p: ["This is the real risk with a .in alone. Someone hears your name, types it with .com out of habit, and lands on someone else's site — maybe a competitor's, maybe an empty page. If your .com is available at a reasonable price, owning it and pointing it at your main site closes that gap."],
+      note: "Say your full address out loud whenever you share it: \"yourshop dot in\". People remember what they hear." },
+    { h: "Renewal prices differ",
+      p: ["At many registrars in India, a .in costs less to renew each year than a .com. First-year offers can make both look nearly free; renewal prices are what you pay every year after. Compare the renewal price, not the offer, and turn on auto-renew so neither lapses. Combined, two domains usually cost less per year than a single dinner out."] },
+    { h: "Avoid the awkward options",
+      p: [".co.in, .net, .org, .biz and newer endings like .shop or .store all exist. Some are perfectly good — .org for genuine non-profits, for example. But for most small businesses, an unusual ending is harder to say, easier to mistype, and sometimes associated with spam. If both .com and .in are unavailable, it is often better to adjust the name slightly than to settle for an odd ending."] },
+  ],
+  callout: {
+    h: "Buy both, use one",
+    p: "If both are available, register both in your own name. Pick one as your main address — the one on your visiting card, signboard and Google listing — and redirect the other to it permanently. Customers who type either reach you, and nobody else can take the other one later.",
+    quote: "A second domain is cheap insurance against a competitor or squatter using your name.",
+    after: "Do not run two separate websites on the two domains. Redirect one to the other, so Google sees a single site and your visitors always land in the same place.",
+  },
+  extras: [
+    { h: "Before you buy any domain",
+      list: [
+        ["Say it out loud to three people.", "Ask them to type it. If they get it wrong, so will customers."],
+        ["Avoid hyphens and numbers if you can.", "\"kavin-designs-2\" is hard to say and easy to forget."],
+        ["Keep it short and close to your business name.", "It goes on signboards, cards and vehicle stickers."],
+        ["Register it in your own name, on your own account.", "Never let a designer or agency register it under theirs."],
+        ["Set a reminder for the renewal date.", "And turn on auto-renew with a card that will not expire first."],
+      ] },
+    { h: "If someone already owns your .com",
+      paras: ["Check what is on it. If it is a parked page with a \"for sale\" notice, you can make an offer, but decide your limit first — a .in plus the right name is usually worth more than an expensive .com. If it is an active business with a similar name, choose something more distinct to avoid confusion and potential trademark disputes."] },
+  ],
+  faq: [
+    ["Is .in or .com better for SEO in India?", "Both can rank well in India. A .in signals Indian targeting to Google automatically; a .com relies on your content and location signals. For a local business, good content and a complete Google Business Profile matter much more than the ending."],
+    ["Can anyone register a .in domain?", ".in is open for registration through accredited registrars, and it is the natural choice for businesses serving Indian customers. Check the current registration policy with your registrar for any specific requirements."],
+    ["Should I buy both .in and .com?", "If both are available at a reasonable price, yes. Use one as your main address and permanently redirect the other to it, so customers reach you whichever they type and nobody else can use your name."],
+  ],
+  related: [
+    ["/web-design-chennai/", "Web design in Chennai", "service"],
+    ["/website-design-cost-chennai/", "What a website really costs in Chennai", "pricing"],
+    ["/blog/who-owns-your-website/", "Who actually owns your website?", "6 min"],
+  ],
+  cta: {
+    h: "The right domain, in your name.",
+    p: `With every ${ctaLink("/web-design-chennai/", "website I build")}, I help you choose and register the domain in your own name, set up redirects, and turn on auto-renew. Not sure which name to pick? Send me your shortlist.`,
+  },
+};
