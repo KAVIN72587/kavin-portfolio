@@ -1,0 +1,62 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 20, date: "2026-10-20", slug: "music-copyright-reels", cat: "Video",
+  keyword: "copyright-free music for business reels and YouTube",
+  title: "Copyright-Free Music for Business Reels and YouTube",
+  desc: "Why business accounts get muted or blocked for music, what \"copyright-free\" really means, and safe sources of music for brand reels and YouTube videos.",
+  short: "Why business reels get muted, what \"copyright-free\" really means, and safe places to find music.",
+  headline: "Copyright-free music for business reels and YouTube: why accounts get muted, and safe sources",
+  crumb: "Music for business reels",
+  cardTitle: "Why your business reel got muted",
+  card: "Business accounts play by different music rules. What \"copyright-free\" means, and where to get music you can safely use.",
+  h1: ["Why your business reel got", "muted"],
+  lede: "A trending song is everywhere on Instagram. You add it to your shop's reel, post it, and a few hours later the audio is muted, or the song is greyed out in your music picker. Meanwhile your personal account uses it freely. What changed?",
+  intro: [
+    "Music rights are licensed separately for personal and commercial use. Platforms negotiate deals that cover ordinary users posting for fun, but promoting a business with a popular song is a different use, and many of those songs are not licensed for it. This post explains the rules in plain language and gives you safe options.",
+    "Platform rules change often, so treat this as a guide and check the current terms in your app before a big campaign. And I am a video editor, not a lawyer — for anything high-stakes, ask one.",
+  ],
+  sections: [
+    { h: "Business accounts get a smaller library",
+      p: ["On Instagram, business accounts generally see a more limited music selection than personal or creator accounts, built around tracks cleared for commercial use. That is why a song you can use on your personal profile may be missing on your shop's profile. Switching to a creator account can bring popular tracks back, but it does not change whether using them to promote a business is allowed."],
+      note: "If a song is not in your business account's music picker, that is usually a sign it is not cleared for business use." },
+    { h: "Why songs get muted or blocked",
+      p: ["Platforms automatically scan uploads for copyrighted audio. If a match is found, the result can be muted audio, a video blocked in some countries, a warning, or on YouTube a claim that sends any advertising money to the rights holder. Repeated issues can restrict an account. Background music playing in a shop or at an event can trigger this too."] },
+    { h: "\"Copyright-free\" usually means \"licensed\"",
+      p: ["Very little music is truly free of copyright. What people call copyright-free music is usually royalty-free: music you are licensed to use, under specific terms, without paying per play. The terms matter. Some allow commercial use, some require credit, some exclude ads. Read the licence for each track, or use a library whose licence covers business use clearly."] },
+    { h: "Safe sources for business videos",
+      p: ["The platforms' own libraries: Meta's Sound Collection for Instagram and Facebook, and YouTube's Audio Library, both made for creators and businesses, each with its own terms. Paid subscription libraries such as Epidemic Sound, Artlist or Envato Elements, which license tracks for commercial use while your subscription terms are met. Or commission original music, which you can use anywhere you have agreed."],
+      note: "Keep a record — a screenshot or download receipt — of where each track came from and under which licence." },
+    { h: "Original audio is underrated",
+      p: ["A clear voiceover, the real sound of your kitchen, workshop or salon, or a short spoken hook often performs as well as a trending track — and it can never be muted. For explainer and testimonial-style reels, a soft licensed background track under a strong voice is usually the best of both."] },
+  ],
+  callout: {
+    h: "Ads are the strictest of all",
+    p: "Once you put money behind a post, it is unmistakably commercial. Music that slipped through on an organic post can get an ad rejected, or create a risk you do not want. For anything you boost or run as an ad, use only tracks you are clearly licensed to use commercially.",
+    quote: "If the reel sells something, the music needs a licence that says so.",
+    after: "It is also worth deciding this before the edit. Cutting a reel to the beat of one song and then swapping it for another means re-cutting the whole thing.",
+  },
+  extras: [
+    { h: "A quick music checklist for business reels",
+      list: [
+        ["Is the account a business account?", "Then use tracks available in its music picker, or your own licensed audio."],
+        ["Will the video be boosted or used as an ad?", "Use music licensed for commercial and advertising use."],
+        ["Is the track from a library?", "Check the licence terms, and keep the receipt or licence record."],
+        ["Is there music playing in the background of the footage?", "Turn it off while filming, or expect it to be detected."],
+        ["Is the same video going to YouTube?", "Check the track is cleared there too; licences differ between platforms."],
+      ] },
+  ],
+  faq: [
+    ["Can a business account use trending songs on Instagram?", "Business accounts usually have access to a limited library of commercially cleared music. Many trending songs are not available, and using them by other means risks muting or restrictions. Use tracks from the account's own music picker or licensed libraries."],
+    ["Is YouTube Audio Library music free for business use?", "YouTube's Audio Library offers music free to use in YouTube videos, including monetised ones. Some tracks require attribution. Check each track's terms, and check separately before using it on other platforms."],
+    ["What happens if I use copyrighted music in a business video?", "Depending on the platform and the rights holder, the audio may be muted, the video blocked or claimed, or the account may receive a warning or restriction. For ads, the ad may be rejected."],
+  ],
+  related: [
+    ["/reels-shorts-editing-chennai/", "Reels &amp; shorts editing in Chennai", "service"],
+    ["/video-editing-charges-chennai/", "Video editing charges, explained", "pricing"],
+    ["/blog/reels-editing-price/", "Why one reel costs ₹300 here and ₹15,000 there", "5 min"],
+  ],
+  cta: {
+    h: "Reels with music you're allowed to use.",
+    p: `Every ${ctaLink("/reels-shorts-editing-chennai/", "reel I edit")} for a business uses licensed or platform-cleared music, chosen before the cut. Had a reel muted? Send it over and I'll re-edit it with safe audio.`,
+  },
+};

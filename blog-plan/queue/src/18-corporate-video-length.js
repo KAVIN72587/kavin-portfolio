@@ -1,0 +1,63 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 18, date: "2026-10-18", slug: "corporate-video-length", cat: "Video",
+  keyword: "how long should a corporate video be",
+  title: "How Long Should a Corporate Video Be? Length by Platform",
+  desc: "How long a corporate video should be depends on where it plays: website, LinkedIn, events, investors or training. Practical lengths for each, and why shorter wins.",
+  short: "Practical lengths for website, LinkedIn, events, investors and training, and why shorter usually wins.",
+  headline: "How long should a corporate video be? Length by where it plays",
+  crumb: "Corporate video length",
+  cardTitle: "How long should your corporate video be?",
+  card: "It depends on where people will watch it. Practical lengths for website, LinkedIn, events, investors and training.",
+  h1: ["How long should your corporate video", "be?"],
+  lede: "Ask a company how long their profile video should be and the answer is usually \"long enough to cover everything\". Ask the people who will watch it and the answer is usually \"shorter than that\".",
+  intro: [
+    "There is no single right length. A corporate video's length should be decided by where it will be watched and what the viewer needs to do next. Here are practical guides for the most common places, followed by how to cut a long brief down to size.",
+  ],
+  sections: [
+    { h: "Website home page: 60 to 90 seconds",
+      p: ["A video on your home page or about page is an introduction. Visitors want to know who you are, what you do and whether you look credible. Ninety seconds is enough to show the facility, the people and the work. Longer, and most people leave before the end."],
+      note: "Put the most important message in the first fifteen seconds, in case that is all they watch." },
+    { h: "LinkedIn and social: 30 to 90 seconds",
+      p: ["On LinkedIn, Instagram and Facebook, your video competes with everything else in the feed. Short, captioned, and to the point works best — one idea per video. A vertical or square crop takes more space on a phone screen than a horizontal one. A two-minute company film can usually be cut into three or four short social videos."] },
+    { h: "Trade shows and events: loop it, 1 to 3 minutes",
+      p: ["Videos playing on a stall screen are watched in passing, often without sound. Strong visuals, big text, and a loop of one to three minutes that makes sense from any point. Nobody stands and watches from the beginning.", "Design it for a glance: your name and what you do should be readable from across the aisle, and every ten-second stretch should make sense on its own. Subtitles or bold on-screen text do the work that a voiceover would do in a quiet room."] },
+    { h: "Investor and client presentations: 2 to 3 minutes",
+      p: ["In a meeting, a short film can set the scene before you speak. Two or three minutes is the limit before it starts eating into the conversation you actually came for. Focus on what the audience cannot easily see on a slide: the people, the facility, the product working.", "Test it in the room you will present in. A film that looks great on a laptop can feel very different on a meeting-room TV with poor speakers, so keep important words on screen as text as well as in the voiceover."] },
+    { h: "Training and onboarding: short modules",
+      p: ["Training videos can be longer in total, but they work best split into short modules of a few minutes, each covering one task. People return to find a specific step; a single forty-minute video makes that painful. Chapters and clear titles help."] },
+  ],
+  callout: {
+    h: "Shorter costs more thinking, not less",
+    p: "Cutting a ten-minute brief into ninety seconds is harder than making the ten-minute version. It forces decisions: which message matters most, which departments get a shot, whose interview stays in. Those decisions are the value of the edit.",
+    quote: "If everything is in the video, nothing stands out.",
+    after: "When stakeholders all want their section included, a good approach is one short main film plus a few short supporting videos — one per department, product or audience.",
+  },
+  extras: [
+    { h: "How to decide the length before the shoot",
+      intro: "Answer these four questions in one meeting with whoever signs off the video:",
+      list: [
+        ["Where will it be watched?", "Website, LinkedIn, event screen, meeting, internal portal. Choose the main one."],
+        ["Who is watching?", "Customers, recruits, investors, staff. Each wants different things."],
+        ["What should they do afterwards?", "Call, apply, visit, remember the name. One action."],
+        ["What three things must they remember?", "Not ten. Three."],
+      ],
+      paras: ["The answers usually make the length obvious. They also make the script much easier to write, and the shoot much easier to plan."] },
+    { h: "One shoot, several lengths",
+      paras: ["Plan the shoot to produce a main film and several short cut-downs from the same footage: a ninety-second website version, a thirty-second social teaser, vertical clips for reels, and a silent loop for events. Editing the variations costs much less than shooting again, and you get far more use out of a single production day."] },
+  ],
+  faq: [
+    ["What is the ideal length for a corporate video?", "For most company profile videos on a website, 60 to 90 seconds. For social media, 30 to 90 seconds. For presentations, two to three minutes. Training content can be longer in total but should be split into short modules."],
+    ["Is a five-minute company video too long?", "For a website or social media, usually yes — most viewers will not reach the end. Five minutes can work for a detailed client presentation or a documentary-style story with a committed audience."],
+    ["How much does corporate video editing cost in Chennai?", "My corporate editing ranges from ₹8,000 to ₹14,000 per finished video depending on type — a company profile is ₹12,000 and an animated explainer ₹14,000. For ongoing work, ₹35,000 a month covers up to eight videos."],
+  ],
+  related: [
+    ["/corporate-video-editing-chennai/", "Corporate video editing in Chennai", "service"],
+    ["/video-editing-charges-chennai/", "Video editing charges, explained", "pricing"],
+    ["/blog/video-captions/", "Most people watch your video with the sound off", "4 min"],
+  ],
+  cta: {
+    h: "One shoot, every length you need.",
+    p: `I edit ${ctaLink("/corporate-video-editing-chennai/", "corporate videos")} into a main film plus the short cuts for web, LinkedIn and events. Send me the brief and where it will be shown, and I'll suggest the right lengths.`,
+  },
+};

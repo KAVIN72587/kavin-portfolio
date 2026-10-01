@@ -1,0 +1,63 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 27, date: "2026-10-27", slug: "signs-website-needs-redesign", cat: "Web",
+  keyword: "signs your website needs a redesign",
+  title: "Signs Your Website Needs a Redesign: 7 Ten-Minute Checks",
+  desc: "Signs your website needs a redesign: seven checks a business owner can do in ten minutes on a phone, and how to tell a quick fix from a real rebuild.",
+  short: "Seven checks you can do in ten minutes on a phone, and how to tell a quick fix from a rebuild.",
+  headline: "Signs your website needs a redesign: seven checks a business owner can do in ten minutes",
+  crumb: "Does your site need a redesign?",
+  cardTitle: "Does your website need a redesign?",
+  card: "Seven checks you can run on your phone in ten minutes, and how to tell a quick fix from a full rebuild.",
+  h1: ["Does your website need a", "redesign?"],
+  lede: "Websites rarely break all at once. They age quietly: a price here, a phone number there, a photo of a team member who left two years ago. One day a customer says \"I almost didn't call, your website looked closed\", and you realise it has been years.",
+  intro: [
+    "Not every tired website needs rebuilding. Some need an afternoon of updates. Others are costing you customers every day. These seven checks, done on your phone in about ten minutes, tell you which you have.",
+  ],
+  sections: [
+    { h: "Is it painful to use on a phone?",
+      p: ["Open it on your phone. Do you have to pinch and zoom to read? Are buttons too small to tap? Does the menu work? Most visitors arrive on mobile, and a site designed for desktop first frustrates them immediately. If the site was not built to be responsive, this alone is a strong reason to redesign."] },
+    { h: "Does it take more than a few seconds to load on mobile data?",
+      p: ["Switch off Wi-Fi and open the home page. If it takes more than a few seconds before you can read and tap, visitors are leaving. Slow sites can often be fixed without a rebuild, but very old themes and heavy page builders sometimes cannot be made fast economically."] },
+    { h: "Is anything out of date?",
+      p: ["Prices, services you no longer offer, staff who have left, an old address or phone number, a \"latest news\" section last updated in 2023, a copyright year from years ago. Each one makes visitors wonder whether you are still in business. If it is just a few details, update them. If you cannot update them because nobody has the login or knows how, that is a bigger problem."] },
+    { h: "Can a visitor tell what you do in five seconds?",
+      p: ["Show the home page to someone who does not know your business, for five seconds on a phone. Ask what you do, where, and for whom. If they cannot say, the problem is the message, not the colours. A redesign that does not fix the message will not help."] },
+    { h: "Does it look like your business today?",
+      p: ["Businesses change: new logo, new services, a move upmarket, a second branch. If the website still shows the business as it was five years ago, it sets the wrong expectations and can put off exactly the customers you want now."] },
+    { h: "Do enquiries actually arrive?",
+      p: ["Send yourself a test enquiry through the form and tap the WhatsApp button and phone number. Broken forms and outdated numbers are common on older sites, and they silently lose leads."] },
+    { h: "Is it secure and can you still update it?",
+      p: ["Does the address show a padlock (HTTPS)? Has the WordPress or plugin software been updated in the last few months? Can you or your designer still log in? An insecure, un-updatable site is a risk to your customers and your reputation, and is often a reason to rebuild on something you can maintain."] },
+  ],
+  callout: {
+    h: "Fix, refresh or rebuild?",
+    p: "If only one or two checks fail and they are about content — prices, photos, a phone number — it is a fix. If the site is slow or dated-looking but structurally sound, a refresh of design and content may be enough. If it fails on mobile, security and the ability to update, a rebuild is usually cheaper in the long run than patching.",
+    quote: "Redesign for the customer you want next year, not the one you had five years ago.",
+    after: "Whatever you decide, keep the same domain and, where possible, the same page addresses for your most important pages, or redirect old addresses to new ones. That protects the search rankings you already have.",
+  },
+  extras: [
+    { h: "Before you redesign",
+      list: [
+        ["Get all your logins.", "Domain, hosting, website admin. You cannot redesign safely without them."],
+        ["Save a copy of the current site.", "Text, images and a list of every page address."],
+        ["Check which pages bring visitors.", "In Search Console or analytics. Those pages must survive the move."],
+        ["Write down what customers ask.", "The new site should answer those questions first."],
+        ["Decide who will update it afterwards.", "That choice decides which platform to build on."],
+      ] },
+  ],
+  faq: [
+    ["How often should a business website be redesigned?", "There is no fixed schedule. Many small business sites need a refresh every few years and a rebuild when they stop working well on mobile, become hard to update, or no longer represent the business. Update content continuously in between."],
+    ["Will a redesign hurt my Google rankings?", "It can if page addresses change without redirects or important content disappears. Keeping the same domain, preserving or redirecting key pages, and keeping useful content protects your rankings during a redesign."],
+    ["How much does a website redesign cost?", "It depends on how much content and how many pages carry over. As a guide, my single-page sites start at ₹9,000 and five-page business sites at ₹20,000; a redesign of an existing site is quoted on the same basis after a look at what is there."],
+  ],
+  related: [
+    ["/web-design-chennai/", "Web design in Chennai", "service"],
+    ["/website-design-cost-chennai/", "What a website really costs in Chennai", "pricing"],
+    ["/blog/slow-website-mobile/", "Why your website is slow on mobile", "5 min"],
+  ],
+  cta: {
+    h: "A website that looks like your business today.",
+    p: `Send me your current site and I'll tell you honestly whether it needs a fix, a refresh or a ${ctaLink("/web-design-chennai/", "rebuild")} — and keep your rankings safe if it does.`,
+  },
+};

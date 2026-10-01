@@ -1,0 +1,67 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 30, date: "2026-10-30", slug: "upi-payments-on-website", cat: "Web",
+  keyword: "accept UPI payments on website India",
+  title: "How to Accept UPI Payments on Your Website in India",
+  desc: "How to accept UPI payments on a small business website in India: payment links, payment buttons and full gateways compared, plus fees, GST and settlement basics.",
+  short: "Payment links, buttons and full gateways compared, plus fees, GST and settlement basics.",
+  headline: "Accept UPI payments on your website in India: payment links, buttons and gateways for small sites",
+  crumb: "UPI payments on your website",
+  cardTitle: "Taking UPI payments on your website",
+  card: "Payment links, buttons or a full gateway: the simplest way to take UPI and card payments on a small site, and what it costs.",
+  h1: ["Taking UPI payments on your", "website"],
+  lede: "Your customers pay by UPI everywhere else. Asking them to transfer money to a bank account, then send a screenshot on WhatsApp, feels clumsy — and you spend evenings matching screenshots to orders.",
+  intro: [
+    "There are three ways to accept UPI (and cards) on a small business website, from a five-minute payment link to a full checkout. Here is how they compare, what they cost in general terms, and what to check before you sign up. Fees and rules change, so confirm the current details with the provider before you decide.",
+  ],
+  sections: [
+    { h: "Option 1: payment links",
+      p: ["Payment gateways such as Razorpay, Cashfree, PayU and others let you create a payment link for a fixed or custom amount and share it on WhatsApp, email or your website. The customer opens it, pays by UPI, card or net banking, and you get a notification. No website changes are needed.",
+         "Best for: service businesses, deposits, bookings, invoices — anything where the amount varies or is agreed in a chat first."],
+      note: "Payment links work well alongside a WhatsApp ordering flow: confirm the order in chat, send the link, receive the payment." },
+    { h: "Option 2: payment buttons or pages",
+      p: ["Most gateways also offer a hosted payment page or a button you can place on your site for fixed amounts: a consultation fee, a course, a workshop seat, a fixed-price package. The visitor clicks, fills in their details on the gateway's secure page, and pays. Your designer adds the button; the gateway handles the payment.", "Because the card and UPI details are entered on the gateway's page, not yours, your website never handles sensitive payment data. That keeps a small site simple and keeps the security burden with the provider whose job it is."] },
+    { h: "Option 3: a full checkout",
+      p: ["For an online store with a cart, product options, shipping and stock, you need a checkout integrated with the gateway — through WooCommerce, Shopify or a custom build. This is a bigger project, with more to test and maintain, and makes sense once you have regular product orders."] },
+    { h: "What it costs",
+      p: ["Gateways generally charge a percentage per successful transaction, with GST on the fee. At the time of writing, standard plans at major gateways are commonly around 2% plus GST on most domestic methods, with different rates for some cards and international payments. UPI itself carries zero MDR under government rules for most merchant payments, but gateways may still charge their own platform fee for UPI. Read the current pricing page carefully, and ask about any setup or annual charges."] },
+    { h: "What you need to sign up",
+      p: ["Gateways are regulated and must verify every merchant (KYC). Expect to provide business details, a PAN, a bank account in the business's name, and in many cases GST registration or other business proof, plus a website or social page that clearly describes what you sell, with contact details and policies. Activation can take a few days; do not launch a campaign the day you apply."] },
+  ],
+  callout: {
+    h: "Your website needs a few policy pages first",
+    p: "Payment providers usually check that your website shows what you sell, your prices, contact details, and clear terms, privacy, refund or cancellation, and (if you ship) shipping policies. Missing pages are a common reason for delayed activation.",
+    quote: "Get the policy pages live before you apply, not after you are rejected.",
+    after: "They do not have to be long. Plain-language pages that match how you actually work are better than copied templates that promise things you do not do.",
+  },
+  extras: [
+    { h: "Which option fits you",
+      list: [
+        ["Amounts vary, orders come through chat:", "payment links."],
+        ["A few fixed-price offerings:", "payment buttons or hosted pages."],
+        ["Many products, regular orders:", "a full checkout on an ecommerce site."],
+      ],
+      paras: ["Many businesses start with links, move to buttons for their most common offering, and only build a full checkout once order volume justifies it. My ecommerce builds start at ₹45,000 for up to fifty products."] },
+    { h: "After you go live",
+      list: [
+        ["Test a real payment.", "Pay a small amount yourself, then check it arrives and settles to your bank."],
+        ["Know your settlement cycle.", "Payments usually reach your bank a day or two later, not instantly."],
+        ["Plan refunds.", "Know how to issue one from the dashboard before a customer asks."],
+        ["Keep records for GST.", "Your gateway's reports help your accountant reconcile fees and sales."],
+      ] },
+  ],
+  faq: [
+    ["Can I accept UPI payments on my website without a payment gateway?", "You can show a UPI ID or QR code, but you then have to match payments to orders manually, and there is no automatic confirmation. A gateway, payment link or payment button confirms each payment and records who paid for what."],
+    ["Are there charges for accepting UPI on a website?", "UPI carries zero MDR under government rules for most merchant payments, but payment gateways may charge their own fee for processing UPI through their platform. Check the gateway's current pricing page."],
+    ["Do I need GST registration to use a payment gateway?", "Requirements vary by gateway and business type. Many ask for GST registration where it applies to your business, along with PAN and a business bank account. Check the provider's KYC list before applying."],
+  ],
+  related: [
+    ["/ecommerce-website-design-chennai/", "Ecommerce website design in Chennai", "service"],
+    ["/website-design-cost-chennai/", "What a website really costs in Chennai", "pricing"],
+    ["/blog/whatsapp-button-on-website/", "The WhatsApp button, done properly", "5 min"],
+  ],
+  cta: {
+    h: "Get paid on your website, simply.",
+    p: `I set up payment links, buttons and full ${ctaLink("/ecommerce-website-design-chennai/", "ecommerce checkouts")}, including the policy pages gateways ask for. Tell me what you sell and how customers order now, and I'll suggest the simplest route.`,
+  },
+};
