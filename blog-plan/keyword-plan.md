@@ -20,7 +20,7 @@ Extra research for October (Sep 30 2026): r/VideoEditor_forhire and Upwork job p
 |---|---|---|---|---|---|---|
 | 0 | done 2026-09-30 | who-owns-your-website | web designer disappeared / who owns my domain | Web | The 5 logins you must hold before you pay a web designer | /web-design-chennai/, /website-design-cost-chennai/ |
 | 1 | done 2026-10-01 | website-maintenance-cost | website maintenance cost India per year | Web | What a static site vs WordPress really costs to keep alive (+ renewal-price trap; Hostinger referral link added at owner request, rel=sponsored + disclosure) | /website-design-cost-chennai/, /wordpress-website-design-chennai/ |
-| 2 | queued 2026-10-02 | reels-editing-price | reels editing price per video India | Video | Why quotes range from ₹300 to ₹15,000 for "one reel" | /reels-shorts-editing-chennai/, /video-editing-charges-chennai/ |
+| 2 | done 2026-10-03 | reels-editing-price | reels editing price per video India | Video | Why quotes range from ₹300 to ₹15,000 for "one reel" | /reels-shorts-editing-chennai/, /video-editing-charges-chennai/ |
 | 3 | queued 2026-10-03 | landing-page-vs-website | landing page vs website | Web | Which one your ads and WhatsApp campaigns should point to | /web-design-chennai/, /website-design-cost-chennai/ |
 | 4 | queued 2026-10-04 | what-to-send-video-editor | how to send raw footage to a video editor | Video | Drive links, file formats, notes with timestamps — the handover that saves a week | /video-editing-chennai/, /video-editing-charges-chennai/ |
 | 5 | queued 2026-10-05 | how-many-pages-website | how many pages does a small business website need | Web | The 5-page site most businesses actually need | /low-cost-website-design-chennai/, /website-design-cost-chennai/ |
