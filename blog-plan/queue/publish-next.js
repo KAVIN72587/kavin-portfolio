@@ -1,6 +1,6 @@
 // Moves the next due queued post into the live site folder: writes blog/<slug>.html,
 // adds its card to blog.html, adds it to sitemap.xml and marks the plan row done.
-// Usage: node blog-plan/queue/publish-next.js [YYYY-MM-DD]   (defaults to today)
+// Usage: node blog-plan/queue/publish-next.js [YYYY-MM-DD] [DUE-BY]   (defaults to today; DUE-BY lets later-scheduled posts publish early, dated today)
 // Prints one JSON line: {"status":"published",...} or {"status":"none"}. Exits 1 on any problem.
 const fs = require("fs");
 const path = require("path");
@@ -14,9 +14,11 @@ const pad = (n) => String(n).padStart(2, "0");
 const now = new Date();
 const today = process.argv[2] || `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
 
+const dueBy = process.argv[3] || today;
+
 const queue = fs.readdirSync(SRC).filter((f) => f.endsWith(".js")).sort().map((f) => require(path.join(SRC, f)));
 const isLive = (d) => fs.existsSync(path.join(SITE, "blog", d.slug + ".html"));
-const due = queue.filter((d) => !isLive(d) && d.date <= today).sort((a, b) => a.date.localeCompare(b.date));
+const due = queue.filter((d) => !isLive(d) && d.date <= dueBy).sort((a, b) => a.date.localeCompare(b.date));
 if (!due.length) { console.log(JSON.stringify({ status: "none", today, remaining: queue.filter((d) => !isLive(d)).length })); process.exit(0); }
 
 const d = { ...due[0], date: today }; // a missed day publishes with the real date
