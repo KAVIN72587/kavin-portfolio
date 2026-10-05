@@ -51,6 +51,91 @@ Extra research for October (Sep 30 2026): r/VideoEditor_forhire and Upwork job p
 | 30 | done 2026-10-05 | upi-payments-on-website | accept UPI payments on website India | Web | Razorpay / payment links / gateways for small sites, fees and GST (verify current fees) | /ecommerce-website-design-chennai/ |
 | 31 | done 2026-10-05 | shopify-vs-woocommerce-india | Shopify vs WooCommerce India | Web | Fees, payment gateways, GST invoices | /ecommerce-website-design-chennai/ |
 
+## October 2026, batch 2: 3 a day (added 2026-10-05)
+
+Owner asked for more posts per day for the rest of October; agreed on 3 a day (30 a day was declined as a scaled-content risk). Rows 49-126 are written and queued in `blog-plan/queue/src/` (39 Web, 39 Video, three per date from 6 to 31 Oct). The daily task publishes every post due that day.
+
+| # | Status | Slug | Target keyword | Category | Angle | Links to |
+|---|---|---|---|---|---|---|
+| 49 | queued 2026-10-06 | web-hosting-explained | which web hosting to buy for small business India | Web | What hosting your website actually needs | /web-design-chennai/, /website-design-cost-chennai/ |
+| 50 | queued 2026-10-06 | colour-correction-vs-grading | colour correction vs colour grading | Video | Colour correction or colour grading? | /video-editing-chennai/, /video-editing-charges-chennai/ |
+| 51 | queued 2026-10-06 | ssl-https-not-secure | website showing not secure how to fix | Web | Why your website says "Not secure" | /web-design-chennai/, /website-design-cost-chennai/ |
+| 52 | queued 2026-10-07 | video-audio-cleanup | how to fix bad audio in video | Video | Your video's real problem is the sound | /video-editing-chennai/, /video-editing-charges-chennai/ |
+| 53 | queued 2026-10-07 | business-email-on-domain | business email with own domain India | Web | Getting email on your own domain | /web-design-chennai/, /website-design-cost-chennai/ |
+| 54 | queued 2026-10-07 | video-hook-first-seconds | how to hook viewers in first 3 seconds reels | Video | Your reel has three seconds | /reels-shorts-editing-chennai/, /video-editing-charges-chennai/ |
+| 55 | queued 2026-10-08 | domain-expired-what-happens | domain expired what happens how to recover | Web | Your domain expired. Now what? | /web-design-chennai/, /website-design-cost-chennai/ |
+| 56 | queued 2026-10-08 | testimonial-video-tips | customer testimonial video tips | Video | Testimonial videos that don't feel scripted | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 57 | queued 2026-10-08 | school-website-must-haves | school website design Chennai must haves | Web | What parents look for on a school website | /wordpress-website-design-chennai/, /website-design-cost-chennai/ |
+| 58 | queued 2026-10-09 | event-recap-video | event highlight video editing | Video | The event recap video, delivered fast | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 59 | queued 2026-10-09 | ca-firm-website | website for chartered accountant firm | Web | A website for your CA practice | /web-design-chennai/, /website-design-cost-chennai/ |
+| 60 | queued 2026-10-09 | explainer-animated-vs-live | animated explainer video vs live action | Video | Animated explainer or live action? | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 61 | queued 2026-10-10 | salon-website-booking | salon website with online booking | Web | A salon website that fills the diary | /low-cost-website-design-chennai/, /website-design-cost-chennai/ |
+| 62 | queued 2026-10-10 | video-script-60-seconds | how to write a 60 second video script | Video | Writing a 60-second script | /reels-shorts-editing-chennai/, /video-editing-charges-chennai/ |
+| 63 | queued 2026-10-10 | gym-website-must-haves | gym website design fitness studio | Web | A gym website that gets people through the door | /low-cost-website-design-chennai/, /website-design-cost-chennai/ |
+| 64 | queued 2026-10-11 | b-roll-explained | what is b-roll footage how much to shoot | Video | B-roll: the footage that makes talking videos watchable | /video-editing-chennai/, /video-editing-charges-chennai/ |
+| 65 | queued 2026-10-11 | interior-designer-website | interior designer website portfolio | Web | An interior design portfolio that wins projects | /web-design-chennai/, /website-design-cost-chennai/ |
+| 66 | queued 2026-10-11 | youtube-chapters-end-screens | how to add chapters and end screens YouTube | Video | Chapters and end screens, done properly | /youtube-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 67 | queued 2026-10-12 | builder-website-must-haves | builder website real estate project website | Web | What home buyers check on a builder's website | /web-design-chennai/, /website-design-cost-chennai/ |
+| 68 | queued 2026-10-12 | shorts-vs-reels | YouTube Shorts vs Instagram Reels for business | Video | Shorts or Reels: where should you post? | /reels-shorts-editing-chennai/, /video-editing-charges-chennai/ |
+| 69 | queued 2026-10-12 | coaching-centre-website | tuition coaching centre website | Web | A coaching centre website parents trust | /low-cost-website-design-chennai/, /website-design-cost-chennai/ |
+| 70 | queued 2026-10-13 | linkedin-video-tips | LinkedIn video tips for business B2B | Video | Video on LinkedIn for B2B businesses | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 71 | queued 2026-10-13 | ngo-website-donations | NGO trust website donations India | Web | An NGO website donors trust | /web-design-chennai/, /website-design-cost-chennai/ |
+| 72 | queued 2026-10-13 | subtitles-srt-vs-burned-in | SRT subtitles vs burned in captions | Video | Subtitle files or burned-in captions? | /video-editing-chennai/, /video-editing-charges-chennai/ |
+| 73 | queued 2026-10-14 | homestay-website-direct-booking | homestay hotel website direct booking India | Web | Direct bookings for your homestay | /web-design-chennai/, /website-design-cost-chennai/ |
+| 74 | queued 2026-10-14 | instagram-export-settings | best export settings for Instagram reels | Video | Why your reel looks blurry after upload | /reels-shorts-editing-chennai/, /video-editing-charges-chennai/ |
+| 75 | queued 2026-10-14 | tamil-english-website | Tamil and English bilingual website | Web | Should your website be in Tamil too? | /web-design-chennai/, /website-design-cost-chennai/ |
+| 76 | queued 2026-10-15 | video-file-formats | MP4 vs MOV video file formats explained | Video | MP4, MOV or ProRes? Video files explained | /video-editing-chennai/, /video-editing-charges-chennai/ |
+| 77 | queued 2026-10-15 | google-analytics-small-business | Google Analytics for small business what to track | Web | The only analytics numbers you need | /web-design-chennai/, /website-design-cost-chennai/ |
+| 78 | queued 2026-10-15 | drone-footage-editing | drone footage editing for business video | Video | Drone shots: less is more | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 79 | queued 2026-10-16 | search-console-setup | Google Search Console setup small business | Web | Search Console: how Google sees your site | /web-design-chennai/, /website-design-cost-chennai/ |
+| 80 | queued 2026-10-16 | talking-head-video-tips | how to film yourself talking to camera | Video | Talking to camera without looking stiff | /video-editing-chennai/, /video-editing-charges-chennai/ |
+| 81 | queued 2026-10-16 | website-privacy-policy-india | does my website need a privacy policy India | Web | Your website's privacy policy, explained | /web-design-chennai/, /website-design-cost-chennai/ |
+| 82 | queued 2026-10-17 | lighting-video-at-home | lighting for video at home or office cheap | Video | Good video light without a studio | /video-editing-chennai/, /video-editing-charges-chennai/ |
+| 83 | queued 2026-10-17 | website-image-sizes | image size for website how to compress | Web | Your photos are slowing your website down | /web-design-chennai/, /website-design-cost-chennai/ |
+| 84 | queued 2026-10-17 | teleprompter-tips | how to use a teleprompter naturally | Video | Reading from a teleprompter, naturally | /video-editing-chennai/, /video-editing-charges-chennai/ |
+| 85 | queued 2026-10-18 | pagespeed-score-explained | PageSpeed Insights score explained | Web | What your PageSpeed score really means | /web-design-chennai/, /website-design-cost-chennai/ |
+| 86 | queued 2026-10-18 | video-editing-turnaround | how long does video editing take | Video | How long your video edit will take | /video-editing-chennai/, /video-editing-charges-chennai/ |
+| 87 | queued 2026-10-18 | website-backups | how to back up a website small business | Web | A backup you have never restored is a hope | /wordpress-website-design-chennai/, /website-design-cost-chennai/ |
+| 88 | queued 2026-10-19 | footage-backup-storage | how to store and back up video footage | Video | Where your footage should live | /video-editing-chennai/, /video-editing-charges-chennai/ |
+| 89 | queued 2026-10-19 | wordpress-hacked-signs | signs WordPress website hacked what to do | Web | Is your WordPress site hacked? | /wordpress-website-design-chennai/, /website-design-cost-chennai/ |
+| 90 | queued 2026-10-19 | video-project-files-ownership | do I get project files from video editor | Video | What you actually own after a video edit | /video-editing-chennai/, /video-editing-charges-chennai/ |
+| 91 | queued 2026-10-20 | too-many-wordpress-plugins | how many WordPress plugins is too many | Web | Your WordPress plugin list needs a clear-out | /wordpress-website-design-chennai/, /website-design-cost-chennai/ |
+| 92 | queued 2026-10-20 | stock-footage-licensing | using stock footage in business videos licensing | Video | Stock footage: useful, risky, often generic | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 93 | queued 2026-10-20 | redesign-without-losing-seo | website redesign without losing SEO rankings | Web | Redesign without disappearing from Google | /web-design-chennai/, /website-design-cost-chennai/ |
+| 94 | queued 2026-10-21 | motion-graphics-vs-editing | motion graphics vs video editing difference | Video | Editing or motion graphics? | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 95 | queued 2026-10-21 | local-seo-near-me | how to show up in near me searches Chennai | Web | Showing up in "near me" searches | /web-design-chennai/, /areas/ |
+| 96 | queued 2026-10-21 | school-annual-day-video | school annual day video editing | Video | The school annual day video parents want | /video-editing-chennai/, /video-editing-charges-chennai/ |
+| 97 | queued 2026-10-22 | website-faq-section | FAQ section on business website | Web | The FAQ section that answers the phone for you | /web-design-chennai/, /website-design-cost-chennai/ |
+| 98 | queued 2026-10-22 | pre-wedding-video-editing | pre-wedding video editing ideas | Video | A pre-wedding video that tells your story | /wedding-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 99 | queued 2026-10-22 | website-call-to-action | call to action buttons website enquiries | Web | The button that turns visits into enquiries | /web-design-chennai/, /website-design-cost-chennai/ |
+| 100 | queued 2026-10-23 | wedding-editor-brief | what to tell your wedding video editor | Video | The brief that gets you the wedding film you want | /wedding-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 101 | queued 2026-10-23 | homepage-structure | what to put on a small business homepage | Web | Your homepage, section by section | /web-design-chennai/, /website-design-cost-chennai/ |
+| 102 | queued 2026-10-23 | youtube-video-length | how long should a YouTube video be for business | Video | The right length for your YouTube videos | /youtube-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 103 | queued 2026-10-24 | about-page-small-business | how to write an about page for small business | Web | An About page that builds trust | /web-design-chennai/, /website-design-cost-chennai/ |
+| 104 | queued 2026-10-24 | reel-ideas-local-business | reel ideas for local business | Video | Reel ideas that don't need dancing | /reels-shorts-editing-chennai/, /video-editing-charges-chennai/ |
+| 105 | queued 2026-10-24 | google-reviews-on-website | show Google reviews on website | Web | Putting your reviews to work on your website | /web-design-chennai/, /website-design-cost-chennai/ |
+| 106 | queued 2026-10-25 | diy-editing-vs-hiring | edit videos yourself or hire an editor | Video | Edit it yourself or hire an editor? | /video-editing-chennai/, /video-editing-charges-chennai/ |
+| 107 | queued 2026-10-25 | stock-photos-vs-own-photos | stock photos vs real photos on business website | Web | Real photos beat stock photos | /web-design-chennai/, /website-design-cost-chennai/ |
+| 108 | queued 2026-10-25 | ai-video-editing-tools | AI video editing tools what they can do | Video | What AI video tools can and can't do | /video-editing-chennai/, /video-editing-charges-chennai/ |
+| 109 | queued 2026-10-26 | web-design-brief-template | how to brief a web designer template | Web | A one-page brief for your web designer | /web-design-chennai/, /website-design-cost-chennai/ |
+| 110 | queued 2026-10-26 | reel-cover-images | Instagram reel cover image design | Video | Reel covers: the shop window of your profile | /reels-shorts-editing-chennai/, /video-editing-charges-chennai/ |
+| 111 | queued 2026-10-26 | website-build-timeline | how long does it take to build a website | Web | How long your website will really take | /web-design-chennai/, /website-design-cost-chennai/ |
+| 112 | queued 2026-10-27 | website-background-video | background video for website hero | Video | The website background video, done right | /video-editing-chennai/, /video-editing-charges-chennai/ |
+| 113 | queued 2026-10-27 | compare-web-design-quotes | how to compare web design quotes | Web | Comparing web design quotes | /web-design-chennai/, /website-design-cost-chennai/ |
+| 114 | queued 2026-10-27 | corporate-video-brief | corporate video brief template | Video | A corporate video brief that works | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 115 | queued 2026-10-28 | website-accessibility-basics | website accessibility basics small business | Web | A website everyone can use | /web-design-chennai/, /website-design-cost-chennai/ |
+| 116 | queued 2026-10-28 | interview-video-editing | interview video two camera setup editing | Video | Interview videos that look professional | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 117 | queued 2026-10-28 | online-appointment-booking | online appointment booking for small business website | Web | Taking appointments through your website | /web-design-chennai/, /website-design-cost-chennai/ |
+| 118 | queued 2026-10-29 | video-podcast-setup | video podcast setup for business | Video | A video podcast setup that works | /youtube-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 119 | queued 2026-10-29 | small-business-blog-worth-it | is a blog worth it for small business | Web | Does your business need a blog? | /web-design-chennai/, /website-design-cost-chennai/ |
+| 120 | queued 2026-10-29 | restaurant-food-reels | food reels for restaurants ideas and tips | Video | Food reels that bring people to your table | /reels-shorts-editing-chennai/, /video-editing-charges-chennai/ |
+| 121 | queued 2026-10-30 | website-launch-checklist | website launch checklist small business | Web | Before your website goes live | /web-design-chennai/, /website-design-cost-chennai/ |
+| 122 | queued 2026-10-30 | clinic-video-content | video content for doctors and clinics | Video | Videos that help patients choose your clinic | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 123 | queued 2026-10-30 | contact-form-spam | stop contact form spam website | Web | Stopping form spam without losing customers | /web-design-chennai/, /website-design-cost-chennai/ |
+| 124 | queued 2026-10-31 | video-retainer-vs-per-video | video editing monthly retainer vs per video | Video | Monthly retainer or pay per video? | /youtube-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 125 | queued 2026-10-31 | website-copy-mistakes | common website copy mistakes small business | Web | The words on your website are losing you customers | /web-design-chennai/, /website-design-cost-chennai/ |
+| 126 | queued 2026-10-31 | youtube-retention-editing | editing for audience retention YouTube | Video | Editing that keeps viewers watching | /youtube-video-editing-chennai/, /video-editing-charges-chennai/ |
+
 ## Later (November onwards) — Design, Print, Business
 
 | # | Status | Slug | Target keyword | Category | Angle | Links to |
