@@ -154,6 +154,10 @@ ${d.related.map(([href, label, tag]) => [href, label, (/^\d+ min$/.test(tag) && 
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>${esc(d.title)}</title>
 <meta name="description" content="${esc(d.desc)}" />
 <link rel="canonical" href="${url}" />
