@@ -60,9 +60,9 @@ Owner asked for more posts per day for the rest of October; agreed on 3 a day (3
 | 49 | done 2026-10-06 | web-hosting-explained | which web hosting to buy for small business India | Web | What hosting your website actually needs | /web-design-chennai/, /website-design-cost-chennai/ |
 | 50 | done 2026-10-06 | colour-correction-vs-grading | colour correction vs colour grading | Video | Colour correction or colour grading? | /video-editing-chennai/, /video-editing-charges-chennai/ |
 | 51 | done 2026-10-06 | ssl-https-not-secure | website showing not secure how to fix | Web | Why your website says "Not secure" | /web-design-chennai/, /website-design-cost-chennai/ |
-| 52 | queued 2026-10-07 | video-audio-cleanup | how to fix bad audio in video | Video | Your video's real problem is the sound | /video-editing-chennai/, /video-editing-charges-chennai/ |
-| 53 | queued 2026-10-07 | business-email-on-domain | business email with own domain India | Web | Getting email on your own domain | /web-design-chennai/, /website-design-cost-chennai/ |
-| 54 | queued 2026-10-07 | video-hook-first-seconds | how to hook viewers in first 3 seconds reels | Video | Your reel has three seconds | /reels-shorts-editing-chennai/, /video-editing-charges-chennai/ |
+| 52 | done 2026-10-07 | video-audio-cleanup | how to fix bad audio in video | Video | Your video's real problem is the sound | /video-editing-chennai/, /video-editing-charges-chennai/ |
+| 53 | done 2026-10-07 | business-email-on-domain | business email with own domain India | Web | Getting email on your own domain | /web-design-chennai/, /website-design-cost-chennai/ |
+| 54 | done 2026-10-07 | video-hook-first-seconds | how to hook viewers in first 3 seconds reels | Video | Your reel has three seconds | /reels-shorts-editing-chennai/, /video-editing-charges-chennai/ |
 | 55 | queued 2026-10-08 | domain-expired-what-happens | domain expired what happens how to recover | Web | Your domain expired. Now what? | /web-design-chennai/, /website-design-cost-chennai/ |
 | 56 | queued 2026-10-08 | testimonial-video-tips | customer testimonial video tips | Video | Testimonial videos that don't feel scripted | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
 | 57 | queued 2026-10-08 | school-website-must-haves | school website design Chennai must haves | Web | What parents look for on a school website | /wordpress-website-design-chennai/, /website-design-cost-chennai/ |

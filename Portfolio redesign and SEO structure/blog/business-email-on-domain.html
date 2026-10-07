@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Business Email on Your Own Domain: Options in India</title>
+<meta name="description" content="How to get email on your own domain in India: hosting email, Google Workspace and Zoho compared, plus the DNS settings that stop your emails landing in spam." />
+<link rel="canonical" href="https://kavinarulraj.com/blog/business-email-on-domain/" />
+<meta property="og:title" content="Business Email on Your Own Domain: Options in India" />
+<meta property="og:description" content="Hosting email, Google Workspace and Zoho compared, plus the settings that keep you out of spam." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kavinarulraj.com/blog/business-email-on-domain/" />
+<meta property="og:site_name" content="Kavin Arulraj" />
+<meta property="og:locale" content="en_IN" />
+<meta property="og:image" content="https://kavinarulraj.com/assets/og-default.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Kavin Arulraj, freelance graphic designer and video editor in Chennai" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Business Email on Your Own Domain: Options in India" />
+<meta name="twitter:description" content="Hosting email, Google Workspace and Zoho compared, plus the settings that keep you out of spam." />
+<meta name="twitter:image" content="https://kavinarulraj.com/assets/og-default.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; background: oklch(0.18 0.01 60); color: oklch(0.96 0.01 85); font-family: "Bricolage Grotesque", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: oklch(0.88 0.19 100); text-decoration: none; }
+  a:hover { color: oklch(0.96 0.01 85); }
+  h1, h2, h3, h4, p, ul, ol, li, blockquote { margin: 0; padding: 0; }
+  ul, ol { list-style: none; }
+  ::selection { background: oklch(0.88 0.19 100); color: oklch(0.18 0.01 60); }
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://kavinarulraj.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://kavinarulraj.com/blog/"},{"@type":"ListItem","position":3,"name":"Business email on your domain","item":"https://kavinarulraj.com/blog/business-email-on-domain/"}]},{"@type":"BlogPosting","headline":"Business email on your own domain: the options for a small business in India","description":"How to get email on your own domain in India: hosting email, Google Workspace and Zoho compared, plus the DNS settings that stop your emails landing in spam.","datePublished":"2026-10-07","dateModified":"2026-10-07","author":{"@type":"Person","name":"Kavin Arulraj","url":"https://kavinarulraj.com/about/"},"publisher":{"@type":"Person","name":"Kavin Arulraj"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://kavinarulraj.com/blog/business-email-on-domain/"},"articleSection":"Web","image":"https://kavinarulraj.com/assets/og-default.jpg"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I get a business email with my own domain in India?","acceptedAnswer":{"@type":"Answer","text":"Buy a domain, then set up email through your hosting plan, Google Workspace or Zoho Mail. Add the provider's MX, SPF, DKIM and DMARC records to your domain's DNS and test that emails arrive."}},{"@type":"Question","name":"Is Zoho Mail or Google Workspace better for a small business?","acceptedAnswer":{"@type":"Answer","text":"Both work well. Google Workspace suits teams already used to Gmail and Google Drive; Zoho is usually cheaper per user and integrates with Zoho's other business apps. Compare current plans for your team size."}},{"@type":"Question","name":"Why do my business emails go to spam?","acceptedAnswer":{"@type":"Answer","text":"Usually because SPF, DKIM or DMARC records are missing or wrong, so receiving servers cannot confirm the email is genuine. Adding the records your provider gives you fixes most cases."}}]}]}
+</script>
+
+</head>
+<body>
+
+<header style="position: sticky; top: 0; z-index: 40; background: oklch(0.18 0.01 60 / 0.88); backdrop-filter: blur(14px); border-bottom: 1px solid oklch(0.32 0.01 60);">
+  <div style="max-width: 1240px; margin: 0 auto; padding: 14px 28px; display: flex; align-items: center; gap: 28px;">
+    <a href="/" style="font-size: 20px; font-weight: 800; letter-spacing: -0.03em; color: oklch(0.96 0.01 85); display: flex; align-items: center; gap: 9px;">
+      <span style="width: 28px; height: 28px; border-radius: 50%; background: oklch(0.88 0.19 100); display: flex; align-items: center; justify-content: center; flex: none;"><img src="/assets/logo-mark.png" alt="Kavin Arulraj monogram" width="18" height="18" style="width: 18px; height: 18px; display: block;" /></span>
+      Kavin Arulraj
+    </a>
+    <nav style="display: flex; gap: 22px; margin-left: auto; font-size: 15px; font-weight: 600;">
+      <a href="/graphic-design-chennai/" style="color: oklch(0.82 0.01 85);" style-hover="color: oklch(0.88 0.19 100);">Graphic Design</a>
+      <a href="/web-design-chennai/" style="color: oklch(0.82 0.01 85);" style-hover="color: oklch(0.88 0.19 100);">Web Design</a>
+      <a href="/video-editing-chennai/" style="color: oklch(0.82 0.01 85);" style-hover="color: oklch(0.88 0.19 100);">Video Editing</a>
+      <a href="/portfolio/" style="color: oklch(0.82 0.01 85);" style-hover="color: oklch(0.88 0.19 100);">Portfolio</a>
+      <a href="/pricing/" style="color: oklch(0.82 0.01 85);" style-hover="color: oklch(0.88 0.19 100);">Pricing</a>
+      <a href="/blog/" style="color: oklch(0.88 0.19 100); border-bottom: 2px solid oklch(0.88 0.19 100); padding-bottom: 2px;">Blog</a>
+    </nav>
+    <a href="/hire-me/" style="background: oklch(0.88 0.19 100); color: oklch(0.18 0.01 60); padding: 10px 18px; border-radius: 999px; font-weight: 800; font-size: 15px;" style-hover="background: oklch(0.72 0.19 240); color: oklch(0.98 0.01 85);">Hire me →</a>
+  </div>
+</header>
+
+<main>
+
+  <nav aria-label="Breadcrumb" style="max-width: 1240px; margin: 0 auto; padding: 20px 28px 0;">
+    <ol style="display: flex; gap: 10px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: oklch(0.6 0.01 85); flex-wrap: wrap;">
+      <li><a href="/" style="color: oklch(0.72 0.19 240);">Home</a></li>
+      <li>/</li>
+      <li><a href="/blog/" style="color: oklch(0.72 0.19 240);">Blog</a></li>
+      <li>/</li>
+      <li>Business email on your domain</li>
+    </ol>
+  </nav>
+
+  <article>
+
+    <section style="max-width: 780px; margin: 0 auto; padding: 40px 28px 34px;">
+      <p style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: oklch(0.72 0.19 240); margin-bottom: 20px;">Web · 5 min read · October 2026</p>
+      <h1 style="font-size: clamp(38px, 5vw, 62px); line-height: 0.97; letter-spacing: -0.04em; font-weight: 800; text-wrap: balance;">
+        Getting email on your own
+        <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; letter-spacing: -0.01em; color: oklch(0.88 0.19 100);">domain</span>
+      </h1>
+      <p style="margin-top: 24px; font-size: 21px; line-height: 1.55; color: oklch(0.82 0.01 85); text-wrap: pretty;">
+        name@yourbusiness.in reads more professionally than yourbusiness123@gmail.com on a quote, an invoice or a visiting card. Setting it up is not hard, but picking the wrong option, or skipping two DNS settings, leads to lost emails.
+      </p>
+    </section>
+
+    <section style="max-width: 780px; margin: 0 auto; padding: 0 28px 8px;">
+      <p style="font-size: 19px; line-height: 1.7; color: oklch(0.86 0.01 85); text-wrap: pretty;">
+        Here are the three common ways small businesses in India get domain email, who each suits, and the settings that decide whether your emails reach the inbox or the spam folder. Plans and prices change, so check current offers before buying.
+      </p>
+    </section>
+
+    <section style="max-width: 780px; margin: 0 auto; padding: 32px 28px 0;">
+
+        <div style="border-top: 1px solid oklch(0.32 0.01 60); padding: 26px 0;">
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: oklch(0.88 0.19 100);">01</p>
+          <h2 style="font-size: 26px; font-weight: 800; letter-spacing: -0.03em; margin-top: 8px;">Option 1: email from your hosting plan</h2>
+          <p style="font-size: 18px; line-height: 1.65; color: oklch(0.82 0.01 85); margin-top: 10px;">Many hosting plans include email accounts at no extra cost. It works, and for one or two addresses that receive the occasional enquiry it may be enough. The downsides are smaller mailbox limits, basic webmail, spam filtering that varies a lot between hosts, and the fact that if the hosting lapses, email goes with it.</p>
+          <p style="font-size: 18px; line-height: 1.65; color: oklch(0.82 0.01 85); margin-top: 10px;">If you move hosting later, email has to move too, which is easy to forget.</p>
+        </div>
+
+        <div style="border-top: 1px solid oklch(0.32 0.01 60); padding: 26px 0;">
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: oklch(0.88 0.19 100);">02</p>
+          <h2 style="font-size: 26px; font-weight: 800; letter-spacing: -0.03em; margin-top: 8px;">Option 2: Google Workspace</h2>
+          <p style="font-size: 18px; line-height: 1.65; color: oklch(0.82 0.01 85); margin-top: 10px;">Google Workspace gives you Gmail, Calendar and Drive on your own domain. If your team already lives in Gmail, it feels familiar immediately, the phone apps are excellent and spam filtering is strong. It is a monthly per-user subscription, so cost grows with team size.</p>
+          <p style="font-size: 18px; line-height: 1.65; color: oklch(0.82 0.01 85); margin-top: 10px;">It suits businesses that send a lot of quotes and invoices by email and want shared calendars and documents.</p>
+        </div>
+
+        <div style="border-top: 1px solid oklch(0.32 0.01 60); padding: 26px 0;">
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: oklch(0.88 0.19 100);">03</p>
+          <h2 style="font-size: 26px; font-weight: 800; letter-spacing: -0.03em; margin-top: 8px;">Option 3: Zoho Mail</h2>
+          <p style="font-size: 18px; line-height: 1.65; color: oklch(0.82 0.01 85); margin-top: 10px;">Zoho is an Indian company with business email plans that are generally cheaper per user than Google Workspace, and it has had a limited free tier for small teams at times. The apps are good, and it integrates with Zoho's invoicing and CRM tools if you use those. Check the current free plan limits before relying on them.</p>
+          <p style="font-size: 16px; line-height: 1.55; color: oklch(0.7 0.01 85); background: oklch(0.23 0.012 60); border-radius: 10px; padding: 12px 16px; margin-top: 14px;">Whichever you choose, keep the admin account on an email you control, not your web designer's.</p>
+        </div>
+
+        <div style="border-top: 1px solid oklch(0.32 0.01 60); padding: 26px 0;">
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: oklch(0.88 0.19 100);">04</p>
+          <h2 style="font-size: 26px; font-weight: 800; letter-spacing: -0.03em; margin-top: 8px;">The settings that keep you out of spam</h2>
+          <p style="font-size: 18px; line-height: 1.65; color: oklch(0.82 0.01 85); margin-top: 10px;">Three DNS records tell other mail servers that your emails are genuine: SPF, DKIM and DMARC. Your email provider gives you the exact values; they are added wherever your domain's DNS is managed. Without them, quotes and invoices you send are much more likely to land in spam, and some large providers now reject unauthenticated email from businesses outright.</p>
+        </div>
+
+        <div style="border-top: 1px solid oklch(0.32 0.01 60); padding: 26px 0;">
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: oklch(0.88 0.19 100);">05</p>
+          <h2 style="font-size: 26px; font-weight: 800; letter-spacing: -0.03em; margin-top: 8px;">Forwarding is not the same as an inbox</h2>
+          <p style="font-size: 18px; line-height: 1.65; color: oklch(0.82 0.01 85); margin-top: 10px;">Some domain providers offer free forwarding, where name@yourbusiness.in forwards to your Gmail. It is fine for receiving. But replies go out from the Gmail address unless you set up sending properly, which confuses customers and looks unprofessional. If you reply to customers by email, get a real mailbox.</p>
+        </div>
+
+        <div style="border-top: 1px solid oklch(0.32 0.01 60); padding: 26px 0;">
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: oklch(0.88 0.19 100);">06</p>
+          <h2 style="font-size: 26px; font-weight: 800; letter-spacing: -0.03em; margin-top: 8px;">Moving from Gmail without losing anything</h2>
+          <p style="font-size: 18px; line-height: 1.65; color: oklch(0.82 0.01 85); margin-top: 10px;">If you have used a Gmail address for years, you do not have to abandon it overnight. Set up the new domain address, then add an auto-reply or signature line on the old one telling people about the change. Both Google Workspace and Zoho can import old emails and contacts, so your history comes with you.</p>
+          <p style="font-size: 18px; line-height: 1.65; color: oklch(0.82 0.01 85); margin-top: 10px;">Update the address gradually: website and Google Business Profile first, then invoices and quote templates, then visiting cards when you next reprint. Keep the old Gmail account active for at least a year, checking it weekly, because suppliers and older customers will keep using it long after you have switched.</p>
+        </div>
+
+    </section>
+
+    <section style="background: oklch(0.96 0.01 85); color: oklch(0.18 0.01 60); padding: 56px 0; margin-top: 52px;">
+      <div style="max-width: 780px; margin: 0 auto; padding: 0 28px;">
+        <h2 style="font-size: clamp(28px, 3.4vw, 40px); letter-spacing: -0.04em; font-weight: 800;">Pick by how you work, not by price alone</h2>
+        <p style="font-size: 19px; line-height: 1.7; color: oklch(0.3 0.01 85); margin-top: 16px; text-wrap: pretty;">
+          A sole proprietor who mostly uses WhatsApp needs one simple address. A team of six sending quotes daily needs reliable delivery, shared calendars and proper spam filtering. The cheapest option for the first is the wrong option for the second.
+        </p>
+        <blockquote style="border-left: 3px solid oklch(0.88 0.19 100); padding: 4px 0 4px 22px; font-family: 'Instrument Serif', serif; font-size: 26px; line-height: 1.35; font-style: italic; color: oklch(0.2 0.01 85); margin-top: 26px;">
+          The email your quotes arrive from is part of your brand.
+        </blockquote>
+        <p style="font-size: 19px; line-height: 1.7; color: oklch(0.3 0.01 85); margin-top: 24px; text-wrap: pretty;">
+          Start with one address such as hello@ or your name, set up SPF, DKIM and DMARC on day one, and add users only when you need them.
+        </p>
+      </div>
+    </section>
+
+    <section style="max-width: 780px; margin: 0 auto; padding: 52px 28px 0;">
+      <h2 style="font-size: clamp(26px, 3vw, 36px); letter-spacing: -0.035em; font-weight: 800;">Setting it up properly</h2>
+      <ol style="display: grid; gap: 14px; margin-top: 20px;">
+        <li style="font-size: 18px; line-height: 1.6; color: oklch(0.86 0.01 85); border-left: 2px solid oklch(0.88 0.19 100); padding-left: 16px;"><strong style="color: oklch(0.96 0.01 85);">Choose a provider.</strong> Hosting email, Google Workspace or Zoho, based on team size and how much you use email.</li>
+        <li style="font-size: 18px; line-height: 1.6; color: oklch(0.86 0.01 85); border-left: 2px solid oklch(0.88 0.19 100); padding-left: 16px;"><strong style="color: oklch(0.96 0.01 85);">Verify the domain.</strong> The provider gives you a DNS record to prove you own it.</li>
+        <li style="font-size: 18px; line-height: 1.6; color: oklch(0.86 0.01 85); border-left: 2px solid oklch(0.88 0.19 100); padding-left: 16px;"><strong style="color: oklch(0.96 0.01 85);">Add MX records.</strong> These route incoming email to the new provider.</li>
+        <li style="font-size: 18px; line-height: 1.6; color: oklch(0.86 0.01 85); border-left: 2px solid oklch(0.88 0.19 100); padding-left: 16px;"><strong style="color: oklch(0.96 0.01 85);">Add SPF, DKIM and DMARC.</strong> Then send a test email to a Gmail address and check it arrives in the inbox.</li>
+        <li style="font-size: 18px; line-height: 1.6; color: oklch(0.86 0.01 85); border-left: 2px solid oklch(0.88 0.19 100); padding-left: 16px;"><strong style="color: oklch(0.96 0.01 85);">Update everywhere.</strong> Website, Google Business Profile, invoices, visiting cards.</li>
+      </ol>
+    </section>
+
+    <section style="max-width: 780px; margin: 0 auto; padding: 52px 28px 0;">
+      <h2 style="font-size: clamp(26px, 3vw, 36px); letter-spacing: -0.035em; font-weight: 800;">Quick answers</h2>
+      <div style="border-top: 1px solid oklch(0.32 0.01 60); padding: 22px 0; margin-top: 18px;">
+        <h3 style="font-size: 20px; font-weight: 800; letter-spacing: -0.02em;">How do I get a business email with my own domain in India?</h3>
+        <p style="font-size: 17px; line-height: 1.65; color: oklch(0.82 0.01 85); margin-top: 8px;">Buy a domain, then set up email through your hosting plan, Google Workspace or Zoho Mail. Add the provider's MX, SPF, DKIM and DMARC records to your domain's DNS and test that emails arrive.</p>
+      </div>
+      <div style="border-top: 1px solid oklch(0.32 0.01 60); padding: 22px 0;">
+        <h3 style="font-size: 20px; font-weight: 800; letter-spacing: -0.02em;">Is Zoho Mail or Google Workspace better for a small business?</h3>
+        <p style="font-size: 17px; line-height: 1.65; color: oklch(0.82 0.01 85); margin-top: 8px;">Both work well. Google Workspace suits teams already used to Gmail and Google Drive; Zoho is usually cheaper per user and integrates with Zoho's other business apps. Compare current plans for your team size.</p>
+      </div>
+      <div style="border-top: 1px solid oklch(0.32 0.01 60); padding: 22px 0;">
+        <h3 style="font-size: 20px; font-weight: 800; letter-spacing: -0.02em;">Why do my business emails go to spam?</h3>
+        <p style="font-size: 17px; line-height: 1.65; color: oklch(0.82 0.01 85); margin-top: 8px;">Usually because SPF, DKIM or DMARC records are missing or wrong, so receiving servers cannot confirm the email is genuine. Adding the records your provider gives you fixes most cases.</p>
+      </div>
+    </section>
+
+    <section style="max-width: 780px; margin: 0 auto; padding: 44px 28px 0;">
+      <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: oklch(0.66 0.01 85); text-transform: uppercase; margin-bottom: 14px;">Related reading</p>
+      <ul style="display: grid; gap: 10px;">
+        <li><a href="/web-design-chennai/" style="display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid oklch(0.3 0.01 60); padding-top: 14px; font-size: 18px; font-weight: 700; letter-spacing: -0.02em;">Web design in Chennai <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: oklch(0.66 0.01 85); white-space: nowrap;">service</span></a></li>
+        <li><a href="/website-design-cost-chennai/" style="display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid oklch(0.3 0.01 60); padding-top: 14px; font-size: 18px; font-weight: 700; letter-spacing: -0.02em;">What a website really costs in Chennai <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: oklch(0.66 0.01 85); white-space: nowrap;">pricing</span></a></li>
+        <li><a href="/blog/in-vs-com-domain/" style="display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid oklch(0.3 0.01 60); padding-top: 14px; font-size: 18px; font-weight: 700; letter-spacing: -0.02em;">.in or .com: which domain should you buy? <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: oklch(0.66 0.01 85); white-space: nowrap;">5 min</span></a></li>
+      </ul>
+    </section>
+
+    <section style="background: oklch(0.88 0.19 100); color: oklch(0.18 0.01 60); padding: 58px 0; margin-top: 52px;">
+      <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 44px; align-items: center;">
+        <div>
+          <h2 style="font-size: clamp(30px, 4vw, 52px); line-height: 0.97; letter-spacing: -0.045em; font-weight: 800; text-wrap: balance;">Email that reaches the inbox.</h2>
+          <p style="font-size: 18px; line-height: 1.55; margin-top: 16px; max-width: 52ch;">When I build <a href="/web-design-chennai/" style="color: oklch(0.18 0.01 60); text-decoration: underline;">your website</a>, I can set up domain email with the right DNS records so your quotes and invoices land where they should. Tell me how many people need an address.</p>
+        </div>
+        <div style="display: grid; gap: 10px;">
+          <a href="/hire-me/" style="background: oklch(0.18 0.01 60); color: oklch(0.96 0.01 85); padding: 18px 24px; border-radius: 14px; font-weight: 800; font-size: 19px; display: flex; justify-content: space-between; gap: 14px;" style-hover="background: oklch(0.72 0.19 240);">Send a brief <span>→</span></a>
+          <a href="https://wa.me/917010266975" style="border: 2px solid oklch(0.18 0.01 60); color: oklch(0.18 0.01 60); padding: 16px 24px; border-radius: 14px; font-weight: 700; font-size: 17px; display: flex; justify-content: space-between; gap: 14px; font-family: 'IBM Plex Mono', monospace;">+91 70102 66975 <span>whatsapp</span></a>
+        </div>
+      </div>
+    </section>
+
+  </article>
+
+</main>
+
+<footer style="border-top: 1px solid oklch(0.32 0.01 60);">
+  <div style="max-width: 1240px; margin: 0 auto; padding: 54px 28px 34px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 28px;">
+    <div>
+      <p style="font-size: 19px; font-weight: 800; letter-spacing: -0.03em;">Kavin Arulraj</p>
+      <p style="font-size: 15px; color: oklch(0.7 0.01 85); line-height: 1.55; margin-top: 8px;">Freelance graphic designer, web designer and video editor in Chennai.</p>
+      <ul style="display: flex; gap: 12px; margin-top: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 13px;">
+        <li><a href="https://www.instagram.com/kavinarulraj_0/">IG</a></li>
+        <li><a href="https://www.youtube.com/@KavinArulraj">YT</a></li>
+        <li><a href="https://www.linkedin.com/in/kavin-arulraj/">LI</a></li>
+      </ul>
+    </div>
+    <div>
+      <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: oklch(0.66 0.01 85); text-transform: uppercase;">Graphic design</p>
+      <ul style="display: grid; gap: 8px; margin-top: 12px; font-size: 15px;">
+        <li><a href="/graphic-design-chennai/" style="color: oklch(0.86 0.01 85);">Overview</a></li>
+        <li><a href="/logo-design-chennai/" style="color: oklch(0.86 0.01 85);">Logo design</a></li>
+        <li><a href="/brochure-design-chennai/" style="color: oklch(0.86 0.01 85);">Brochure design</a></li>
+        <li><a href="/packaging-design-chennai/" style="color: oklch(0.86 0.01 85);">Packaging design</a></li>
+        <li><a href="/poster-flyer-design-chennai/" style="color: oklch(0.86 0.01 85);">Poster &amp; flyer</a></li>
+        <li><a href="/business-card-design-chennai/" style="color: oklch(0.86 0.01 85);">Business cards</a></li>
+        <li><a href="/social-media-creatives-chennai/" style="color: oklch(0.86 0.01 85);">Social creatives</a></li>
+        <li><a href="/t-shirt-design-chennai/" style="color: oklch(0.86 0.01 85);">T-shirt design</a></li>
+      </ul>
+    </div>
+    <div>
+      <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: oklch(0.66 0.01 85); text-transform: uppercase;">Web &amp; video</p>
+      <ul style="display: grid; gap: 8px; margin-top: 12px; font-size: 15px;">
+        <li><a href="/web-design-chennai/" style="color: oklch(0.86 0.01 85);">Web design</a></li>
+        <li><a href="/ui-ux-design-chennai/" style="color: oklch(0.86 0.01 85);">UI/UX design</a></li>
+        <li><a href="/ecommerce-website-design-chennai/" style="color: oklch(0.86 0.01 85);">Ecommerce</a></li>
+        <li><a href="/wordpress-website-design-chennai/" style="color: oklch(0.86 0.01 85);">WordPress</a></li>
+        <li><a href="/low-cost-website-design-chennai/" style="color: oklch(0.86 0.01 85);">Low-cost websites</a></li>
+        <li><a href="/video-editing-chennai/" style="color: oklch(0.86 0.01 85);">Video editing</a></li>
+        <li><a href="/reels-shorts-editing-chennai/" style="color: oklch(0.86 0.01 85);">Reels &amp; shorts</a></li>
+        <li><a href="/wedding-video-editing-chennai/" style="color: oklch(0.86 0.01 85);">Wedding films</a></li>
+      </ul>
+    </div>
+    <div>
+      <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: oklch(0.66 0.01 85); text-transform: uppercase;">Pricing</p>
+      <ul style="display: grid; gap: 8px; margin-top: 12px; font-size: 15px;">
+        <li><a href="/pricing/" style="color: oklch(0.86 0.01 85);">All pricing</a></li>
+        <li><a href="/logo-design-cost-chennai/" style="color: oklch(0.86 0.01 85);">Logo design cost</a></li>
+        <li><a href="/brochure-design-cost-chennai/" style="color: oklch(0.86 0.01 85);">Brochure cost</a></li>
+        <li><a href="/website-design-cost-chennai/" style="color: oklch(0.86 0.01 85);">Website cost</a></li>
+        <li><a href="/video-editing-charges-chennai/" style="color: oklch(0.86 0.01 85);">Video editing charges</a></li>
+        <li><a href="/freelancer-vs-agency-chennai/" style="color: oklch(0.86 0.01 85);">Freelancer vs agency</a></li>
+      </ul>
+    </div>
+    <div>
+      <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: oklch(0.66 0.01 85); text-transform: uppercase;">Studio</p>
+      <ul style="display: grid; gap: 8px; margin-top: 12px; font-size: 15px;">
+        <li><a href="/about/" style="color: oklch(0.86 0.01 85);">About</a></li>
+        <li><a href="/portfolio/" style="color: oklch(0.86 0.01 85);">Portfolio</a></li>
+        <li><a href="/blog/" style="color: oklch(0.86 0.01 85);">Blog</a></li>
+        <li><a href="/areas/" style="color: oklch(0.86 0.01 85);">Service areas</a></li>
+        <li><a href="/hire-me/" style="color: oklch(0.86 0.01 85);">Hire me</a></li>
+        <li><a href="/contact/" style="color: oklch(0.86 0.01 85);">Contact</a></li>
+        <li><a href="/privacy/" style="color: oklch(0.86 0.01 85);">Privacy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div style="max-width: 1240px; margin: 0 auto; padding: 18px 28px 40px; border-top: 1px solid oklch(0.28 0.01 60); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: oklch(0.62 0.01 85);">
+    <p>© 2026 Kavin Arulraj · Chennai, Tamil Nadu</p>
+    <p>Designed and built by hand.</p>
+  </div>
+</footer>
+
+</body>
+</html>
