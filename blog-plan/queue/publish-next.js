@@ -25,14 +25,14 @@ const d = { ...due[0], date: today }; // a missed day publishes with the real da
 const r = render(d, queue, minutesMap(queue));
 if (r.errs.length) { console.error("validation failed: " + r.errs.join("; ")); process.exit(1); }
 
-const crlf = (s) => s.replace(/\r?\n/g, "\r\n");
-fs.writeFileSync(path.join(SITE, "blog", d.slug + ".html"), r.html);
-
-// blog.html card + count
+// blog.html card + count (keep whichever line ending the file currently uses)
 const blogPath = path.join(SITE, "blog.html");
 let blog = fs.readFileSync(blogPath, "utf8");
-const anchor = 'id="flt-1">\r\n';
+const eol = blog.includes("\r\n") ? "\r\n" : "\n";
+const crlf = (s) => s.replace(/\r?\n/g, eol);
+const anchor = 'id="flt-1">' + eol;
 if (!blog.includes(anchor)) throw new Error("blog.html anchor not found");
+fs.writeFileSync(path.join(SITE, "blog", d.slug + ".html"), r.html);
 const [y, m] = today.split("-");
 const card = crlf(`
         <a data-cat="${d.cat}" href="/blog/${d.slug}/" style="display: grid; grid-template-columns: 0.8fr 2.4fr 0.8fr; gap: 28px; align-items: baseline; background: oklch(0.18 0.01 60); padding: 26px 20px; color: oklch(0.96 0.01 85);" style-hover="background: oklch(0.22 0.012 60);">
