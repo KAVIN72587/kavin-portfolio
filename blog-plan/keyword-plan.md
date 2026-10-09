@@ -69,9 +69,9 @@ Owner asked for more posts per day for the rest of October; agreed on 3 a day (3
 | 58 | done 2026-10-09 | event-recap-video | event highlight video editing | Video | The event recap video, delivered fast | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
 | 59 | done 2026-10-09 | ca-firm-website | website for chartered accountant firm | Web | A website for your CA practice | /web-design-chennai/, /website-design-cost-chennai/ |
 | 60 | done 2026-10-09 | explainer-animated-vs-live | animated explainer video vs live action | Video | Animated explainer or live action? | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
-| 61 | queued 2026-10-10 | salon-website-booking | salon website with online booking | Web | A salon website that fills the diary | /low-cost-website-design-chennai/, /website-design-cost-chennai/ |
-| 62 | queued 2026-10-10 | video-script-60-seconds | how to write a 60 second video script | Video | Writing a 60-second script | /reels-shorts-editing-chennai/, /video-editing-charges-chennai/ |
-| 63 | queued 2026-10-10 | gym-website-must-haves | gym website design fitness studio | Web | A gym website that gets people through the door | /low-cost-website-design-chennai/, /website-design-cost-chennai/ |
+| 61 | done 2026-10-10 | salon-website-booking | salon website with online booking | Web | A salon website that fills the diary | /low-cost-website-design-chennai/, /website-design-cost-chennai/ |
+| 62 | done 2026-10-10 | video-script-60-seconds | how to write a 60 second video script | Video | Writing a 60-second script | /reels-shorts-editing-chennai/, /video-editing-charges-chennai/ |
+| 63 | done 2026-10-10 | gym-website-must-haves | gym website design fitness studio | Web | A gym website that gets people through the door | /low-cost-website-design-chennai/, /website-design-cost-chennai/ |
 | 64 | queued 2026-10-11 | b-roll-explained | what is b-roll footage how much to shoot | Video | B-roll: the footage that makes talking videos watchable | /video-editing-chennai/, /video-editing-charges-chennai/ |
 | 65 | queued 2026-10-11 | interior-designer-website | interior designer website portfolio | Web | An interior design portfolio that wins projects | /web-design-chennai/, /website-design-cost-chennai/ |
 | 66 | queued 2026-10-11 | youtube-chapters-end-screens | how to add chapters and end screens YouTube | Video | Chapters and end screens, done properly | /youtube-video-editing-chennai/, /video-editing-charges-chennai/ |
