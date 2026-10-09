@@ -66,9 +66,9 @@ Owner asked for more posts per day for the rest of October; agreed on 3 a day (3
 | 55 | done 2026-10-08 | domain-expired-what-happens | domain expired what happens how to recover | Web | Your domain expired. Now what? | /web-design-chennai/, /website-design-cost-chennai/ |
 | 56 | done 2026-10-08 | testimonial-video-tips | customer testimonial video tips | Video | Testimonial videos that don't feel scripted | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
 | 57 | done 2026-10-08 | school-website-must-haves | school website design Chennai must haves | Web | What parents look for on a school website | /wordpress-website-design-chennai/, /website-design-cost-chennai/ |
-| 58 | queued 2026-10-09 | event-recap-video | event highlight video editing | Video | The event recap video, delivered fast | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
-| 59 | queued 2026-10-09 | ca-firm-website | website for chartered accountant firm | Web | A website for your CA practice | /web-design-chennai/, /website-design-cost-chennai/ |
-| 60 | queued 2026-10-09 | explainer-animated-vs-live | animated explainer video vs live action | Video | Animated explainer or live action? | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 58 | done 2026-10-09 | event-recap-video | event highlight video editing | Video | The event recap video, delivered fast | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 59 | done 2026-10-09 | ca-firm-website | website for chartered accountant firm | Web | A website for your CA practice | /web-design-chennai/, /website-design-cost-chennai/ |
+| 60 | done 2026-10-09 | explainer-animated-vs-live | animated explainer video vs live action | Video | Animated explainer or live action? | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
 | 61 | queued 2026-10-10 | salon-website-booking | salon website with online booking | Web | A salon website that fills the diary | /low-cost-website-design-chennai/, /website-design-cost-chennai/ |
 | 62 | queued 2026-10-10 | video-script-60-seconds | how to write a 60 second video script | Video | Writing a 60-second script | /reels-shorts-editing-chennai/, /video-editing-charges-chennai/ |
 | 63 | queued 2026-10-10 | gym-website-must-haves | gym website design fitness studio | Web | A gym website that gets people through the door | /low-cost-website-design-chennai/, /website-design-cost-chennai/ |
