@@ -180,6 +180,7 @@ ${FONTS_STYLE}
 ${JSON.stringify(ld)}
 </script>
 
+<link rel="stylesheet" href="/assets/responsive.css" />
 </head>
 <body>
 
