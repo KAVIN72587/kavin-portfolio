@@ -226,3 +226,13 @@ img, video, iframe { max-width: 100%; }
   /* "Hire me" sits beside the logo on the first header row */
   header > div > a[href="/hire-me/"] { margin-left: auto; padding: 9px 16px !important; font-size: 14px !important; }
 }
+
+/* Instagram reel embeds: 4 → 2 → 1 across */
+@media (max-width: 960px) {
+  .reel-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+}
+@media (max-width: 640px) {
+  .reel-grid { grid-template-columns: minmax(0, 1fr) !important; max-width: 400px; margin: 0 auto; }
+}
+/* Instagram's script forces min-width: 326px, wider than a 4-up column */
+.reel-grid .instagram-media { min-width: 0 !important; width: 100% !important; margin: 0 !important; }
