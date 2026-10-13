@@ -78,9 +78,9 @@ Owner asked for more posts per day for the rest of October; agreed on 3 a day (3
 | 67 | done 2026-10-12 | builder-website-must-haves | builder website real estate project website | Web | What home buyers check on a builder's website | /web-design-chennai/, /website-design-cost-chennai/ |
 | 68 | done 2026-10-12 | shorts-vs-reels | YouTube Shorts vs Instagram Reels for business | Video | Shorts or Reels: where should you post? | /reels-shorts-editing-chennai/, /video-editing-charges-chennai/ |
 | 69 | done 2026-10-12 | coaching-centre-website | tuition coaching centre website | Web | A coaching centre website parents trust | /low-cost-website-design-chennai/, /website-design-cost-chennai/ |
-| 70 | queued 2026-10-13 | linkedin-video-tips | LinkedIn video tips for business B2B | Video | Video on LinkedIn for B2B businesses | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
-| 71 | queued 2026-10-13 | ngo-website-donations | NGO trust website donations India | Web | An NGO website donors trust | /web-design-chennai/, /website-design-cost-chennai/ |
-| 72 | queued 2026-10-13 | subtitles-srt-vs-burned-in | SRT subtitles vs burned in captions | Video | Subtitle files or burned-in captions? | /video-editing-chennai/, /video-editing-charges-chennai/ |
+| 70 | done 2026-10-13 | linkedin-video-tips | LinkedIn video tips for business B2B | Video | Video on LinkedIn for B2B businesses | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 71 | done 2026-10-13 | ngo-website-donations | NGO trust website donations India | Web | An NGO website donors trust | /web-design-chennai/, /website-design-cost-chennai/ |
+| 72 | done 2026-10-13 | subtitles-srt-vs-burned-in | SRT subtitles vs burned in captions | Video | Subtitle files or burned-in captions? | /video-editing-chennai/, /video-editing-charges-chennai/ |
 | 73 | queued 2026-10-14 | homestay-website-direct-booking | homestay hotel website direct booking India | Web | Direct bookings for your homestay | /web-design-chennai/, /website-design-cost-chennai/ |
 | 74 | queued 2026-10-14 | instagram-export-settings | best export settings for Instagram reels | Video | Why your reel looks blurry after upload | /reels-shorts-editing-chennai/, /video-editing-charges-chennai/ |
 | 75 | queued 2026-10-14 | tamil-english-website | Tamil and English bilingual website | Web | Should your website be in Tamil too? | /web-design-chennai/, /website-design-cost-chennai/ |
