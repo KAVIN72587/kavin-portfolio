@@ -81,9 +81,9 @@ Owner asked for more posts per day for the rest of October; agreed on 3 a day (3
 | 70 | done 2026-10-13 | linkedin-video-tips | LinkedIn video tips for business B2B | Video | Video on LinkedIn for B2B businesses | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
 | 71 | done 2026-10-13 | ngo-website-donations | NGO trust website donations India | Web | An NGO website donors trust | /web-design-chennai/, /website-design-cost-chennai/ |
 | 72 | done 2026-10-13 | subtitles-srt-vs-burned-in | SRT subtitles vs burned in captions | Video | Subtitle files or burned-in captions? | /video-editing-chennai/, /video-editing-charges-chennai/ |
-| 73 | queued 2026-10-14 | homestay-website-direct-booking | homestay hotel website direct booking India | Web | Direct bookings for your homestay | /web-design-chennai/, /website-design-cost-chennai/ |
-| 74 | queued 2026-10-14 | instagram-export-settings | best export settings for Instagram reels | Video | Why your reel looks blurry after upload | /reels-shorts-editing-chennai/, /video-editing-charges-chennai/ |
-| 75 | queued 2026-10-14 | tamil-english-website | Tamil and English bilingual website | Web | Should your website be in Tamil too? | /web-design-chennai/, /website-design-cost-chennai/ |
+| 73 | done 2026-10-14 | homestay-website-direct-booking | homestay hotel website direct booking India | Web | Direct bookings for your homestay | /web-design-chennai/, /website-design-cost-chennai/ |
+| 74 | done 2026-10-14 | instagram-export-settings | best export settings for Instagram reels | Video | Why your reel looks blurry after upload | /reels-shorts-editing-chennai/, /video-editing-charges-chennai/ |
+| 75 | done 2026-10-14 | tamil-english-website | Tamil and English bilingual website | Web | Should your website be in Tamil too? | /web-design-chennai/, /website-design-cost-chennai/ |
 | 76 | queued 2026-10-15 | video-file-formats | MP4 vs MOV video file formats explained | Video | MP4, MOV or ProRes? Video files explained | /video-editing-chennai/, /video-editing-charges-chennai/ |
 | 77 | queued 2026-10-15 | google-analytics-small-business | Google Analytics for small business what to track | Web | The only analytics numbers you need | /web-design-chennai/, /website-design-cost-chennai/ |
 | 78 | queued 2026-10-15 | drone-footage-editing | drone footage editing for business video | Video | Drone shots: less is more | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
