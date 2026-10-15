@@ -84,9 +84,9 @@ Owner asked for more posts per day for the rest of October; agreed on 3 a day (3
 | 73 | done 2026-10-14 | homestay-website-direct-booking | homestay hotel website direct booking India | Web | Direct bookings for your homestay | /web-design-chennai/, /website-design-cost-chennai/ |
 | 74 | done 2026-10-14 | instagram-export-settings | best export settings for Instagram reels | Video | Why your reel looks blurry after upload | /reels-shorts-editing-chennai/, /video-editing-charges-chennai/ |
 | 75 | done 2026-10-14 | tamil-english-website | Tamil and English bilingual website | Web | Should your website be in Tamil too? | /web-design-chennai/, /website-design-cost-chennai/ |
-| 76 | queued 2026-10-15 | video-file-formats | MP4 vs MOV video file formats explained | Video | MP4, MOV or ProRes? Video files explained | /video-editing-chennai/, /video-editing-charges-chennai/ |
-| 77 | queued 2026-10-15 | google-analytics-small-business | Google Analytics for small business what to track | Web | The only analytics numbers you need | /web-design-chennai/, /website-design-cost-chennai/ |
-| 78 | queued 2026-10-15 | drone-footage-editing | drone footage editing for business video | Video | Drone shots: less is more | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 76 | done 2026-10-15 | video-file-formats | MP4 vs MOV video file formats explained | Video | MP4, MOV or ProRes? Video files explained | /video-editing-chennai/, /video-editing-charges-chennai/ |
+| 77 | done 2026-10-15 | google-analytics-small-business | Google Analytics for small business what to track | Web | The only analytics numbers you need | /web-design-chennai/, /website-design-cost-chennai/ |
+| 78 | done 2026-10-15 | drone-footage-editing | drone footage editing for business video | Video | Drone shots: less is more | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
 | 79 | queued 2026-10-16 | search-console-setup | Google Search Console setup small business | Web | Search Console: how Google sees your site | /web-design-chennai/, /website-design-cost-chennai/ |
 | 80 | queued 2026-10-16 | talking-head-video-tips | how to film yourself talking to camera | Video | Talking to camera without looking stiff | /video-editing-chennai/, /video-editing-charges-chennai/ |
 | 81 | queued 2026-10-16 | website-privacy-policy-india | does my website need a privacy policy India | Web | Your website's privacy policy, explained | /web-design-chennai/, /website-design-cost-chennai/ |

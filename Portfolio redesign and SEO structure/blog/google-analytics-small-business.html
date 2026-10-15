@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>Google Analytics for a Small Business: What to Track</title>
+<meta name="description" content="A plain-English guide to Google Analytics for small business websites: the few numbers that matter, tracking enquiries, and the reports you can safely ignore." />
+<link rel="canonical" href="https://kavinarulraj.com/blog/google-analytics-small-business/" />
+<meta property="og:title" content="Google Analytics for a Small Business: What to Track" />
+<meta property="og:description" content="The few numbers that matter, tracking enquiries, and the reports you can safely ignore." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kavinarulraj.com/blog/google-analytics-small-business/" />
+<meta property="og:site_name" content="Kavin Arulraj" />
+<meta property="og:locale" content="en_IN" />
+<meta property="og:image" content="https://kavinarulraj.com/assets/og-default.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Kavin Arulraj, freelance graphic designer and video editor in Chennai" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Google Analytics for a Small Business: What to Track" />
+<meta name="twitter:description" content="The few numbers that matter, tracking enquiries, and the reports you can safely ignore." />
+<meta name="twitter:image" content="https://kavinarulraj.com/assets/og-default.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; background: oklch(0.18 0.01 60); color: oklch(0.96 0.01 85); font-family: "Bricolage Grotesque", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: oklch(0.88 0.19 100); text-decoration: none; }
+  a:hover { color: oklch(0.96 0.01 85); }
+  h1, h2, h3, h4, p, ul, ol, li, blockquote { margin: 0; padding: 0; }
+  ul, ol { list-style: none; }
+  ::selection { background: oklch(0.88 0.19 100); color: oklch(0.18 0.01 60); }
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://kavinarulraj.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://kavinarulraj.com/blog/"},{"@type":"ListItem","position":3,"name":"Google Analytics basics","item":"https://kavinarulraj.com/blog/google-analytics-small-business/"}]},{"@type":"BlogPosting","headline":"Google Analytics for a small business: the few numbers worth watching","description":"A plain-English guide to Google Analytics for small business websites: the few numbers that matter, tracking enquiries, and the reports you can safely ignore.","datePublished":"2026-10-15","dateModified":"2026-10-15","author":{"@type":"Person","name":"Kavin Arulraj","url":"https://kavinarulraj.com/about/"},"publisher":{"@type":"Person","name":"Kavin Arulraj"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://kavinarulraj.com/blog/google-analytics-small-business/"},"articleSection":"Web","image":"https://kavinarulraj.com/assets/og-default.jpg"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What should a small business track in Google Analytics?","acceptedAnswer":{"@type":"Answer","text":"Enquiries from the website, where visitors come from, which pages they view most, and the mobile versus desktop split. Those four cover most decisions a small business needs to make."}},{"@type":"Question","name":"How do I track contact form submissions in Google Analytics?","acceptedAnswer":{"@type":"Answer","text":"Set up the submission, or a visit to a thank-you page after submitting, as a key event in Google Analytics 4. Your web designer can configure this in a few minutes."}},{"@type":"Question","name":"Is Google Analytics free?","acceptedAnswer":{"@type":"Answer","text":"Yes, the standard Google Analytics 4 is free and more than enough for small business websites."}}]}]}
+</script>
+
+<link rel="stylesheet" href="/assets/responsive.css" />
+</head>
+<body>
+
+<header style="position: sticky; top: 0; z-index: 40; background: oklch(0.18 0.01 60 / 0.88); backdrop-filter: blur(14px); border-bottom: 1px solid oklch(0.32 0.01 60);">
+  <div style="max-width: 1240px; margin: 0 auto; padding: 14px 28px; display: flex; align-items: center; gap: 28px;">
+    <a href="/" style="font-size: 20px; font-weight: 800; letter-spacing: -0.03em; color: oklch(0.96 0.01 85); display: flex; align-items: center; gap: 9px;">
+      <span style="width: 28px; height: 28px; border-radius: 50%; background: oklch(0.88 0.19 100); display: flex; align-items: center; justify-content: center; flex: none;"><img src="/assets/logo-mark.png" alt="Kavin Arulraj monogram" width="18" height="18" style="width: 18px; height: 18px; display: block;" /></span>
+      Kavin Arulraj
+    </a>
+    <nav style="display: flex; gap: 22px; margin-left: auto; font-size: 15px; font-weight: 600;">
+      <a href="/graphic-design-chennai/" style="color: oklch(0.82 0.01 85);" style-hover="color: oklch(0.88 0.19 100);">Graphic Design</a>
+      <a href="/web-design-chennai/" style="color: oklch(0.82 0.01 85);" style-hover="color: oklch(0.88 0.19 100);">Web Design</a>
+      <a href="/video-editing-chennai/" style="color: oklch(0.82 0.01 85);" style-hover="color: oklch(0.88 0.19 100);">Video Editing</a>
+      <a href="/portfolio/" style="color: oklch(0.82 0.01 85);" style-hover="color: oklch(0.88 0.19 100);">Portfolio</a>
+      <a href="/pricing/" style="color: oklch(0.82 0.01 85);" style-hover="color: oklch(0.88 0.19 100);">Pricing</a>
+      <a href="/blog/" style="color: oklch(0.88 0.19 100); border-bottom: 2px solid oklch(0.88 0.19 100); padding-bottom: 2px;">Blog</a>
+    </nav>
+    <a href="/hire-me/" style="background: oklch(0.88 0.19 100); color: oklch(0.18 0.01 60); padding: 10px 18px; border-radius: 999px; font-weight: 800; font-size: 15px;" style-hover="background: oklch(0.72 0.19 240); color: oklch(0.98 0.01 85);">Hire me →</a>
+  </div>
+</header>
+
+<main>
+
+  <nav aria-label="Breadcrumb" style="max-width: 1240px; margin: 0 auto; padding: 20px 28px 0;">
+    <ol style="display: flex; gap: 10px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: oklch(0.6 0.01 85); flex-wrap: wrap;">
+      <li><a href="/" style="color: oklch(0.72 0.19 240);">Home</a></li>
+      <li>/</li>
+      <li><a href="/blog/" style="color: oklch(0.72 0.19 240);">Blog</a></li>
+      <li>/</li>
+      <li>Google Analytics basics</li>
+    </ol>
+  </nav>
+
+  <article>
+
+    <section style="max-width: 780px; margin: 0 auto; padding: 40px 28px 34px;">
+      <p style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: oklch(0.72 0.19 240); margin-bottom: 20px;">Web · 5 min read · October 2026</p>
+      <h1 style="font-size: clamp(38px, 5vw, 62px); line-height: 0.97; letter-spacing: -0.04em; font-weight: 800; text-wrap: balance;">
+        The only analytics numbers you
+        <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; letter-spacing: -0.01em; color: oklch(0.88 0.19 100);">need</span>
+      </h1>
+      <p style="margin-top: 24px; font-size: 21px; line-height: 1.55; color: oklch(0.82 0.01 85); text-wrap: pretty;">
+        Open Google Analytics for the first time and you meet dozens of reports, hundreds of metrics and a lot of jargon. Most small business owners close it and never return. That is a shame, because a handful of numbers, checked once a month, tell you whether your website is doing its job.
+      </p>
+    </section>
+
+    <section style="max-width: 780px; margin: 0 auto; padding: 0 28px 8px;">
+      <p style="font-size: 19px; line-height: 1.7; color: oklch(0.86 0.01 85); text-wrap: pretty;">
+        Here are the numbers worth watching, how to track the one that matters most, which is enquiries, and what you can safely ignore. Google Analytics 4 changes its interface from time to time, so menu names may differ slightly from what is described here.
+      </p>
+    </section>
+
+    <section style="max-width: 780px; margin: 0 auto; padding: 32px 28px 0;">
+
+        <div style="border-top: 1px solid oklch(0.32 0.01 60); padding: 26px 0;">
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: oklch(0.88 0.19 100);">01</p>
+          <h2 style="font-size: 26px; font-weight: 800; letter-spacing: -0.03em; margin-top: 8px;">Make sure it is installed properly</h2>
+          <p style="font-size: 18px; line-height: 1.65; color: oklch(0.82 0.01 85); margin-top: 10px;">First, check that Analytics is actually on every page of your site and that the account belongs to you, under your business Google account, not your designer's. Many small business sites have Analytics installed on one account nobody can access, or not installed at all. Ask your web designer to add you as an administrator.</p>
+          <p style="font-size: 18px; line-height: 1.65; color: oklch(0.82 0.01 85); margin-top: 10px;">Also check that your own visits, and your staff's, are not inflating the numbers. If the team opens the website every day to share links with customers, those visits can be a large share of a small site's traffic. Analytics can be set to exclude internal traffic from your office network, which gives you a more honest picture of real visitors.</p>
+        </div>
+
+        <div style="border-top: 1px solid oklch(0.32 0.01 60); padding: 26px 0;">
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: oklch(0.88 0.19 100);">02</p>
+          <h2 style="font-size: 26px; font-weight: 800; letter-spacing: -0.03em; margin-top: 8px;">Number 1: enquiries</h2>
+          <p style="font-size: 18px; line-height: 1.65; color: oklch(0.82 0.01 85); margin-top: 10px;">The most important number is how many people contacted you through the website: form submissions, WhatsApp button clicks and phone number taps. These can be set up as "key events" in Analytics. Once they are tracked, you can see which pages and which traffic sources produce enquiries, not just visits.</p>
+          <p style="font-size: 18px; line-height: 1.65; color: oklch(0.82 0.01 85); margin-top: 10px;">If you only set up one thing in Analytics, set up this.</p>
+          <p style="font-size: 16px; line-height: 1.55; color: oklch(0.7 0.01 85); background: oklch(0.23 0.012 60); border-radius: 10px; padding: 12px 16px; margin-top: 14px;">A thank-you page after the contact form makes form tracking simple and reliable.</p>
+        </div>
+
+        <div style="border-top: 1px solid oklch(0.32 0.01 60); padding: 26px 0;">
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: oklch(0.88 0.19 100);">03</p>
+          <h2 style="font-size: 26px; font-weight: 800; letter-spacing: -0.03em; margin-top: 8px;">Number 2: where visitors come from</h2>
+          <p style="font-size: 18px; line-height: 1.65; color: oklch(0.82 0.01 85); margin-top: 10px;">The traffic acquisition report shows how people arrived: Google search, Google Maps and Business Profile, social media, direct visits or referrals from other websites. Over months, you see which channels are growing. Combined with enquiries, it tells you where to spend time: if Instagram brings visitors but no enquiries, and Google brings fewer but enquiring visitors, that matters.</p>
+        </div>
+
+        <div style="border-top: 1px solid oklch(0.32 0.01 60); padding: 26px 0;">
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: oklch(0.88 0.19 100);">04</p>
+          <h2 style="font-size: 26px; font-weight: 800; letter-spacing: -0.03em; margin-top: 8px;">Number 3: top pages</h2>
+          <p style="font-size: 18px; line-height: 1.65; color: oklch(0.82 0.01 85); margin-top: 10px;">Which pages get the most views, and which ones lead to enquiries. Often a single service or pricing page does most of the work. That page deserves the best photos, the clearest wording and the most prominent contact button. Pages nobody visits may need better links from the home page, or may not be needed at all.</p>
+        </div>
+
+        <div style="border-top: 1px solid oklch(0.32 0.01 60); padding: 26px 0;">
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: oklch(0.88 0.19 100);">05</p>
+          <h2 style="font-size: 26px; font-weight: 800; letter-spacing: -0.03em; margin-top: 8px;">Number 4: mobile vs desktop</h2>
+          <p style="font-size: 18px; line-height: 1.65; color: oklch(0.82 0.01 85); margin-top: 10px;">For most local businesses in India, the majority of visitors use phones. Check the split. If mobile visitors leave quickly or never enquire, while desktop visitors do, the mobile version of the site probably has a problem: slow loading, a hidden button or a form that is hard to fill on a phone.</p>
+        </div>
+
+        <div style="border-top: 1px solid oklch(0.32 0.01 60); padding: 26px 0;">
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: oklch(0.88 0.19 100);">06</p>
+          <h2 style="font-size: 26px; font-weight: 800; letter-spacing: -0.03em; margin-top: 8px;">What you can ignore</h2>
+          <p style="font-size: 18px; line-height: 1.65; color: oklch(0.82 0.01 85); margin-top: 10px;">Real-time visitors, minute-by-minute charts, most demographic reports and the dozens of advanced explorations. Small numbers fluctuate wildly from week to week, so do not react to a single bad week. Compare month to month, or the same month last year, for a fair picture.</p>
+        </div>
+
+        <div style="border-top: 1px solid oklch(0.32 0.01 60); padding: 26px 0;">
+          <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: oklch(0.88 0.19 100);">07</p>
+          <h2 style="font-size: 26px; font-weight: 800; letter-spacing: -0.03em; margin-top: 8px;">Use Search Console alongside it</h2>
+          <p style="font-size: 18px; line-height: 1.65; color: oklch(0.82 0.01 85); margin-top: 10px;">Google Analytics shows what visitors do on your site. Google Search Console shows how you appear in Google search before they click: which searches you show up for, how often, and your average position. Together, they tell the full story. Both are free, and both should be linked to your business Google account.</p>
+        </div>
+
+    </section>
+
+    <section style="background: oklch(0.96 0.01 85); color: oklch(0.18 0.01 60); padding: 56px 0; margin-top: 52px;">
+      <div style="max-width: 780px; margin: 0 auto; padding: 0 28px;">
+        <h2 style="font-size: clamp(28px, 3.4vw, 40px); letter-spacing: -0.04em; font-weight: 800;">A ten-minute monthly check</h2>
+        <p style="font-size: 19px; line-height: 1.7; color: oklch(0.3 0.01 85); margin-top: 16px; text-wrap: pretty;">
+          Once a month, open Analytics and write down four numbers: total enquiries, the top three traffic sources, the top three pages and the mobile share. Keep them in a simple spreadsheet. After six months, you will understand your website better than most business owners ever do.
+        </p>
+        <blockquote style="border-left: 3px solid oklch(0.88 0.19 100); padding: 4px 0 4px 22px; font-family: 'Instrument Serif', serif; font-size: 26px; line-height: 1.35; font-style: italic; color: oklch(0.2 0.01 85); margin-top: 26px;">
+          Track enquiries, not just visitors.
+        </blockquote>
+        <p style="font-size: 19px; line-height: 1.7; color: oklch(0.3 0.01 85); margin-top: 24px; text-wrap: pretty;">
+          If enquiries fall, look at what changed: a source that dropped, a page that stopped working, a form that broke. The numbers point you to the problem.
+        </p>
+      </div>
+    </section>
+
+    <section style="max-width: 780px; margin: 0 auto; padding: 52px 28px 0;">
+      <h2 style="font-size: clamp(26px, 3vw, 36px); letter-spacing: -0.035em; font-weight: 800;">Your monthly website numbers</h2>
+      <div style="border: 1px solid oklch(0.34 0.01 60); border-radius: 16px; padding: 26px; margin-top: 20px; background: oklch(0.21 0.012 60);">
+        <p style="font-family: 'IBM Plex Mono', monospace; font-size: 16px; line-height: 1.75; color: oklch(0.88 0.01 85); white-space: pre-line;">Month: ________
+
+Enquiries (form + WhatsApp + calls):  ____
+Top traffic sources:  1. ____  2. ____  3. ____
+Top pages:            1. ____  2. ____  3. ____
+Mobile share of visitors:  ____ %
+Notes (what changed?):  ________________</p>
+      </div>
+      <p style="font-size: 19px; line-height: 1.7; color: oklch(0.86 0.01 85); margin-top: 22px; text-wrap: pretty;">Copy this into a notebook or spreadsheet and fill it in on the first of each month. It takes ten minutes and replaces hours of staring at dashboards.</p>
+    </section>
+
+    <section style="max-width: 780px; margin: 0 auto; padding: 52px 28px 0;">
+      <h2 style="font-size: clamp(26px, 3vw, 36px); letter-spacing: -0.035em; font-weight: 800;">Quick answers</h2>
+      <div style="border-top: 1px solid oklch(0.32 0.01 60); padding: 22px 0; margin-top: 18px;">
+        <h3 style="font-size: 20px; font-weight: 800; letter-spacing: -0.02em;">What should a small business track in Google Analytics?</h3>
+        <p style="font-size: 17px; line-height: 1.65; color: oklch(0.82 0.01 85); margin-top: 8px;">Enquiries from the website, where visitors come from, which pages they view most, and the mobile versus desktop split. Those four cover most decisions a small business needs to make.</p>
+      </div>
+      <div style="border-top: 1px solid oklch(0.32 0.01 60); padding: 22px 0;">
+        <h3 style="font-size: 20px; font-weight: 800; letter-spacing: -0.02em;">How do I track contact form submissions in Google Analytics?</h3>
+        <p style="font-size: 17px; line-height: 1.65; color: oklch(0.82 0.01 85); margin-top: 8px;">Set up the submission, or a visit to a thank-you page after submitting, as a key event in Google Analytics 4. Your web designer can configure this in a few minutes.</p>
+      </div>
+      <div style="border-top: 1px solid oklch(0.32 0.01 60); padding: 22px 0;">
+        <h3 style="font-size: 20px; font-weight: 800; letter-spacing: -0.02em;">Is Google Analytics free?</h3>
+        <p style="font-size: 17px; line-height: 1.65; color: oklch(0.82 0.01 85); margin-top: 8px;">Yes, the standard Google Analytics 4 is free and more than enough for small business websites.</p>
+      </div>
+    </section>
+
+    <section style="max-width: 780px; margin: 0 auto; padding: 44px 28px 0;">
+      <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: oklch(0.66 0.01 85); text-transform: uppercase; margin-bottom: 14px;">Related reading</p>
+      <ul style="display: grid; gap: 10px;">
+        <li><a href="/web-design-chennai/" style="display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid oklch(0.3 0.01 60); padding-top: 14px; font-size: 18px; font-weight: 700; letter-spacing: -0.02em;">Web design in Chennai <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: oklch(0.66 0.01 85); white-space: nowrap;">service</span></a></li>
+        <li><a href="/website-design-cost-chennai/" style="display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid oklch(0.3 0.01 60); padding-top: 14px; font-size: 18px; font-weight: 700; letter-spacing: -0.02em;">What a website really costs in Chennai <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: oklch(0.66 0.01 85); white-space: nowrap;">pricing</span></a></li>
+        <li><a href="/blog/contact-form-not-working/" style="display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid oklch(0.3 0.01 60); padding-top: 14px; font-size: 18px; font-weight: 700; letter-spacing: -0.02em;">Your contact form might be losing leads <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: oklch(0.66 0.01 85); white-space: nowrap;">5 min</span></a></li>
+      </ul>
+    </section>
+
+    <section style="background: oklch(0.88 0.19 100); color: oklch(0.18 0.01 60); padding: 58px 0; margin-top: 52px;">
+      <div style="max-width: 1240px; margin: 0 auto; padding: 0 28px; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 44px; align-items: center;">
+        <div>
+          <h2 style="font-size: clamp(30px, 4vw, 52px); line-height: 0.97; letter-spacing: -0.045em; font-weight: 800; text-wrap: balance;">Analytics set up to count enquiries.</h2>
+          <p style="font-size: 18px; line-height: 1.55; margin-top: 16px; max-width: 52ch;">Every <a href="/web-design-chennai/" style="color: oklch(0.18 0.01 60); text-decoration: underline;">website I build</a> launches with Google Analytics and Search Console in your name, with form, WhatsApp and call clicks tracked as enquiries. Ask me to check your current setup.</p>
+        </div>
+        <div style="display: grid; gap: 10px;">
+          <a href="/hire-me/" style="background: oklch(0.18 0.01 60); color: oklch(0.96 0.01 85); padding: 18px 24px; border-radius: 14px; font-weight: 800; font-size: 19px; display: flex; justify-content: space-between; gap: 14px;" style-hover="background: oklch(0.72 0.19 240);">Send a brief <span>→</span></a>
+          <a href="https://wa.me/917010266975" style="border: 2px solid oklch(0.18 0.01 60); color: oklch(0.18 0.01 60); padding: 16px 24px; border-radius: 14px; font-weight: 700; font-size: 17px; display: flex; justify-content: space-between; gap: 14px; font-family: 'IBM Plex Mono', monospace;">+91 70102 66975 <span>whatsapp</span></a>
+        </div>
+      </div>
+    </section>
+
+  </article>
+
+</main>
+
+<footer style="border-top: 1px solid oklch(0.32 0.01 60);">
+  <div style="max-width: 1240px; margin: 0 auto; padding: 54px 28px 34px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 28px;">
+    <div>
+      <p style="font-size: 19px; font-weight: 800; letter-spacing: -0.03em;">Kavin Arulraj</p>
+      <p style="font-size: 15px; color: oklch(0.7 0.01 85); line-height: 1.55; margin-top: 8px;">Freelance graphic designer, web designer and video editor in Chennai.</p>
+      <ul style="display: flex; gap: 12px; margin-top: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 13px;">
+        <li><a href="https://www.instagram.com/kavinarulraj_0/">IG</a></li>
+        <li><a href="https://www.youtube.com/@KavinArulraj">YT</a></li>
+        <li><a href="https://www.linkedin.com/in/kavin-arulraj/">LI</a></li>
+      </ul>
+    </div>
+    <div>
+      <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: oklch(0.66 0.01 85); text-transform: uppercase;">Graphic design</p>
+      <ul style="display: grid; gap: 8px; margin-top: 12px; font-size: 15px;">
+        <li><a href="/graphic-design-chennai/" style="color: oklch(0.86 0.01 85);">Overview</a></li>
+        <li><a href="/logo-design-chennai/" style="color: oklch(0.86 0.01 85);">Logo design</a></li>
+        <li><a href="/brochure-design-chennai/" style="color: oklch(0.86 0.01 85);">Brochure design</a></li>
+        <li><a href="/packaging-design-chennai/" style="color: oklch(0.86 0.01 85);">Packaging design</a></li>
+        <li><a href="/poster-flyer-design-chennai/" style="color: oklch(0.86 0.01 85);">Poster &amp; flyer</a></li>
+        <li><a href="/business-card-design-chennai/" style="color: oklch(0.86 0.01 85);">Business cards</a></li>
+        <li><a href="/social-media-creatives-chennai/" style="color: oklch(0.86 0.01 85);">Social creatives</a></li>
+        <li><a href="/t-shirt-design-chennai/" style="color: oklch(0.86 0.01 85);">T-shirt design</a></li>
+      </ul>
+    </div>
+    <div>
+      <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: oklch(0.66 0.01 85); text-transform: uppercase;">Web &amp; video</p>
+      <ul style="display: grid; gap: 8px; margin-top: 12px; font-size: 15px;">
+        <li><a href="/web-design-chennai/" style="color: oklch(0.86 0.01 85);">Web design</a></li>
+        <li><a href="/ui-ux-design-chennai/" style="color: oklch(0.86 0.01 85);">UI/UX design</a></li>
+        <li><a href="/ecommerce-website-design-chennai/" style="color: oklch(0.86 0.01 85);">Ecommerce</a></li>
+        <li><a href="/wordpress-website-design-chennai/" style="color: oklch(0.86 0.01 85);">WordPress</a></li>
+        <li><a href="/low-cost-website-design-chennai/" style="color: oklch(0.86 0.01 85);">Low-cost websites</a></li>
+        <li><a href="/video-editing-chennai/" style="color: oklch(0.86 0.01 85);">Video editing</a></li>
+        <li><a href="/reels-shorts-editing-chennai/" style="color: oklch(0.86 0.01 85);">Reels &amp; shorts</a></li>
+        <li><a href="/wedding-video-editing-chennai/" style="color: oklch(0.86 0.01 85);">Wedding films</a></li>
+      </ul>
+    </div>
+    <div>
+      <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: oklch(0.66 0.01 85); text-transform: uppercase;">Pricing</p>
+      <ul style="display: grid; gap: 8px; margin-top: 12px; font-size: 15px;">
+        <li><a href="/pricing/" style="color: oklch(0.86 0.01 85);">All pricing</a></li>
+        <li><a href="/logo-design-cost-chennai/" style="color: oklch(0.86 0.01 85);">Logo design cost</a></li>
+        <li><a href="/brochure-design-cost-chennai/" style="color: oklch(0.86 0.01 85);">Brochure cost</a></li>
+        <li><a href="/website-design-cost-chennai/" style="color: oklch(0.86 0.01 85);">Website cost</a></li>
+        <li><a href="/video-editing-charges-chennai/" style="color: oklch(0.86 0.01 85);">Video editing charges</a></li>
+        <li><a href="/freelancer-vs-agency-chennai/" style="color: oklch(0.86 0.01 85);">Freelancer vs agency</a></li>
+      </ul>
+    </div>
+    <div>
+      <p style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: oklch(0.66 0.01 85); text-transform: uppercase;">Studio</p>
+      <ul style="display: grid; gap: 8px; margin-top: 12px; font-size: 15px;">
+        <li><a href="/about/" style="color: oklch(0.86 0.01 85);">About</a></li>
+        <li><a href="/portfolio/" style="color: oklch(0.86 0.01 85);">Portfolio</a></li>
+        <li><a href="/blog/" style="color: oklch(0.86 0.01 85);">Blog</a></li>
+        <li><a href="/areas/" style="color: oklch(0.86 0.01 85);">Service areas</a></li>
+        <li><a href="/hire-me/" style="color: oklch(0.86 0.01 85);">Hire me</a></li>
+        <li><a href="/contact/" style="color: oklch(0.86 0.01 85);">Contact</a></li>
+        <li><a href="/privacy/" style="color: oklch(0.86 0.01 85);">Privacy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div style="max-width: 1240px; margin: 0 auto; padding: 18px 28px 40px; border-top: 1px solid oklch(0.28 0.01 60); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: oklch(0.62 0.01 85);">
+    <p>© 2026 Kavin Arulraj · Chennai, Tamil Nadu</p>
+    <p>Designed and built by hand.</p>
+  </div>
+</footer>
+
+</body>
+</html>
