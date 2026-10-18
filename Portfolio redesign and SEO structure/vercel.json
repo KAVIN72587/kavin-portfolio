@@ -282,6 +282,46 @@
       "source": "/privacy-policy{/}?",
       "destination": "/privacy/",
       "permanent": true
+    },
+    {
+      "source": "/case-study-:slug(omr-clinic|madras-filter-coffee|wedding-film){/}?",
+      "destination": "/portfolio/case-study-:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/captions-for-reels{/}?",
+      "destination": "/blog/video-captions/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tamil-english-typography{/}?",
+      "destination": "/blog/tamil-english-design/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/website-vs-instagram{/}?",
+      "destination": "/blog/is-instagram-enough/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs{/}?",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/category/(.*)",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/author/(.*)",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/editing{/}?",
+      "destination": "/video-editing-chennai/",
+      "permanent": true
     }
   ]
 }
