@@ -90,12 +90,12 @@ Owner asked for more posts per day for the rest of October; agreed on 3 a day (3
 | 79 | done 2026-10-16 | search-console-setup | Google Search Console setup small business | Web | Search Console: how Google sees your site | /web-design-chennai/, /website-design-cost-chennai/ |
 | 80 | done 2026-10-16 | talking-head-video-tips | how to film yourself talking to camera | Video | Talking to camera without looking stiff | /video-editing-chennai/, /video-editing-charges-chennai/ |
 | 81 | done 2026-10-16 | website-privacy-policy-india | does my website need a privacy policy India | Web | Your website's privacy policy, explained | /web-design-chennai/, /website-design-cost-chennai/ |
-| 82 | queued 2026-10-17 | lighting-video-at-home | lighting for video at home or office cheap | Video | Good video light without a studio | /video-editing-chennai/, /video-editing-charges-chennai/ |
-| 83 | queued 2026-10-17 | website-image-sizes | image size for website how to compress | Web | Your photos are slowing your website down | /web-design-chennai/, /website-design-cost-chennai/ |
-| 84 | queued 2026-10-17 | teleprompter-tips | how to use a teleprompter naturally | Video | Reading from a teleprompter, naturally | /video-editing-chennai/, /video-editing-charges-chennai/ |
-| 85 | queued 2026-10-18 | pagespeed-score-explained | PageSpeed Insights score explained | Web | What your PageSpeed score really means | /web-design-chennai/, /website-design-cost-chennai/ |
-| 86 | queued 2026-10-18 | video-editing-turnaround | how long does video editing take | Video | How long your video edit will take | /video-editing-chennai/, /video-editing-charges-chennai/ |
-| 87 | queued 2026-10-18 | website-backups | how to back up a website small business | Web | A backup you have never restored is a hope | /wordpress-website-design-chennai/, /website-design-cost-chennai/ |
+| 82 | done 2026-10-18 | lighting-video-at-home | lighting for video at home or office cheap | Video | Good video light without a studio | /video-editing-chennai/, /video-editing-charges-chennai/ |
+| 83 | done 2026-10-18 | website-image-sizes | image size for website how to compress | Web | Your photos are slowing your website down | /web-design-chennai/, /website-design-cost-chennai/ |
+| 84 | done 2026-10-18 | teleprompter-tips | how to use a teleprompter naturally | Video | Reading from a teleprompter, naturally | /video-editing-chennai/, /video-editing-charges-chennai/ |
+| 85 | done 2026-10-18 | pagespeed-score-explained | PageSpeed Insights score explained | Web | What your PageSpeed score really means | /web-design-chennai/, /website-design-cost-chennai/ |
+| 86 | done 2026-10-18 | video-editing-turnaround | how long does video editing take | Video | How long your video edit will take | /video-editing-chennai/, /video-editing-charges-chennai/ |
+| 87 | done 2026-10-18 | website-backups | how to back up a website small business | Web | A backup you have never restored is a hope | /wordpress-website-design-chennai/, /website-design-cost-chennai/ |
 | 88 | queued 2026-10-19 | footage-backup-storage | how to store and back up video footage | Video | Where your footage should live | /video-editing-chennai/, /video-editing-charges-chennai/ |
 | 89 | queued 2026-10-19 | wordpress-hacked-signs | signs WordPress website hacked what to do | Web | Is your WordPress site hacked? | /wordpress-website-design-chennai/, /website-design-cost-chennai/ |
 | 90 | queued 2026-10-19 | video-project-files-ownership | do I get project files from video editor | Video | What you actually own after a video edit | /video-editing-chennai/, /video-editing-charges-chennai/ |
