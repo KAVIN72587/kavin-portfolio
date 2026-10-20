@@ -99,9 +99,9 @@ Owner asked for more posts per day for the rest of October; agreed on 3 a day (3
 | 88 | done 2026-10-19 | footage-backup-storage | how to store and back up video footage | Video | Where your footage should live | /video-editing-chennai/, /video-editing-charges-chennai/ |
 | 89 | done 2026-10-19 | wordpress-hacked-signs | signs WordPress website hacked what to do | Web | Is your WordPress site hacked? | /wordpress-website-design-chennai/, /website-design-cost-chennai/ |
 | 90 | done 2026-10-19 | video-project-files-ownership | do I get project files from video editor | Video | What you actually own after a video edit | /video-editing-chennai/, /video-editing-charges-chennai/ |
-| 91 | queued 2026-10-20 | too-many-wordpress-plugins | how many WordPress plugins is too many | Web | Your WordPress plugin list needs a clear-out | /wordpress-website-design-chennai/, /website-design-cost-chennai/ |
-| 92 | queued 2026-10-20 | stock-footage-licensing | using stock footage in business videos licensing | Video | Stock footage: useful, risky, often generic | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
-| 93 | queued 2026-10-20 | redesign-without-losing-seo | website redesign without losing SEO rankings | Web | Redesign without disappearing from Google | /web-design-chennai/, /website-design-cost-chennai/ |
+| 91 | done 2026-10-20 | too-many-wordpress-plugins | how many WordPress plugins is too many | Web | Your WordPress plugin list needs a clear-out | /wordpress-website-design-chennai/, /website-design-cost-chennai/ |
+| 92 | done 2026-10-20 | stock-footage-licensing | using stock footage in business videos licensing | Video | Stock footage: useful, risky, often generic | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 93 | done 2026-10-20 | redesign-without-losing-seo | website redesign without losing SEO rankings | Web | Redesign without disappearing from Google | /web-design-chennai/, /website-design-cost-chennai/ |
 | 94 | queued 2026-10-21 | motion-graphics-vs-editing | motion graphics vs video editing difference | Video | Editing or motion graphics? | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
 | 95 | queued 2026-10-21 | local-seo-near-me | how to show up in near me searches Chennai | Web | Showing up in "near me" searches | /web-design-chennai/, /areas/ |
 | 96 | queued 2026-10-21 | school-annual-day-video | school annual day video editing | Video | The school annual day video parents want | /video-editing-chennai/, /video-editing-charges-chennai/ |
