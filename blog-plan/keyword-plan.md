@@ -102,12 +102,12 @@ Owner asked for more posts per day for the rest of October; agreed on 3 a day (3
 | 91 | done 2026-10-20 | too-many-wordpress-plugins | how many WordPress plugins is too many | Web | Your WordPress plugin list needs a clear-out | /wordpress-website-design-chennai/, /website-design-cost-chennai/ |
 | 92 | done 2026-10-20 | stock-footage-licensing | using stock footage in business videos licensing | Video | Stock footage: useful, risky, often generic | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
 | 93 | done 2026-10-20 | redesign-without-losing-seo | website redesign without losing SEO rankings | Web | Redesign without disappearing from Google | /web-design-chennai/, /website-design-cost-chennai/ |
-| 94 | queued 2026-10-21 | motion-graphics-vs-editing | motion graphics vs video editing difference | Video | Editing or motion graphics? | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
-| 95 | queued 2026-10-21 | local-seo-near-me | how to show up in near me searches Chennai | Web | Showing up in "near me" searches | /web-design-chennai/, /areas/ |
-| 96 | queued 2026-10-21 | school-annual-day-video | school annual day video editing | Video | The school annual day video parents want | /video-editing-chennai/, /video-editing-charges-chennai/ |
-| 97 | queued 2026-10-22 | website-faq-section | FAQ section on business website | Web | The FAQ section that answers the phone for you | /web-design-chennai/, /website-design-cost-chennai/ |
-| 98 | queued 2026-10-22 | pre-wedding-video-editing | pre-wedding video editing ideas | Video | A pre-wedding video that tells your story | /wedding-video-editing-chennai/, /video-editing-charges-chennai/ |
-| 99 | queued 2026-10-22 | website-call-to-action | call to action buttons website enquiries | Web | The button that turns visits into enquiries | /web-design-chennai/, /website-design-cost-chennai/ |
+| 94 | done 2026-10-22 | motion-graphics-vs-editing | motion graphics vs video editing difference | Video | Editing or motion graphics? | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 95 | done 2026-10-22 | local-seo-near-me | how to show up in near me searches Chennai | Web | Showing up in "near me" searches | /web-design-chennai/, /areas/ |
+| 96 | done 2026-10-22 | school-annual-day-video | school annual day video editing | Video | The school annual day video parents want | /video-editing-chennai/, /video-editing-charges-chennai/ |
+| 97 | done 2026-10-22 | website-faq-section | FAQ section on business website | Web | The FAQ section that answers the phone for you | /web-design-chennai/, /website-design-cost-chennai/ |
+| 98 | done 2026-10-22 | pre-wedding-video-editing | pre-wedding video editing ideas | Video | A pre-wedding video that tells your story | /wedding-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 99 | done 2026-10-22 | website-call-to-action | call to action buttons website enquiries | Web | The button that turns visits into enquiries | /web-design-chennai/, /website-design-cost-chennai/ |
 | 100 | queued 2026-10-23 | wedding-editor-brief | what to tell your wedding video editor | Video | The brief that gets you the wedding film you want | /wedding-video-editing-chennai/, /video-editing-charges-chennai/ |
 | 101 | queued 2026-10-23 | homepage-structure | what to put on a small business homepage | Web | Your homepage, section by section | /web-design-chennai/, /website-design-cost-chennai/ |
 | 102 | queued 2026-10-23 | youtube-video-length | how long should a YouTube video be for business | Video | The right length for your YouTube videos | /youtube-video-editing-chennai/, /video-editing-charges-chennai/ |
