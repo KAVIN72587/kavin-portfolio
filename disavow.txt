@@ -1,0 +1,9 @@
+# Unrelated spam links to kavinarulraj.com
+# Upload at https://search.google.com/search-console/disavow-links
+# Each upload replaces the previous file, so add new domains here and re-upload this whole file.
+domain:plumeriamarketing.com
+domain:lydiaroyrealestate.com
+domain:onlineshoppingidea.com
+domain:missburrg.com
+domain:lawyerinjeddah.com
+domain:libyanatravel.com
