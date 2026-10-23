@@ -108,9 +108,9 @@ Owner asked for more posts per day for the rest of October; agreed on 3 a day (3
 | 97 | done 2026-10-22 | website-faq-section | FAQ section on business website | Web | The FAQ section that answers the phone for you | /web-design-chennai/, /website-design-cost-chennai/ |
 | 98 | done 2026-10-22 | pre-wedding-video-editing | pre-wedding video editing ideas | Video | A pre-wedding video that tells your story | /wedding-video-editing-chennai/, /video-editing-charges-chennai/ |
 | 99 | done 2026-10-22 | website-call-to-action | call to action buttons website enquiries | Web | The button that turns visits into enquiries | /web-design-chennai/, /website-design-cost-chennai/ |
-| 100 | queued 2026-10-23 | wedding-editor-brief | what to tell your wedding video editor | Video | The brief that gets you the wedding film you want | /wedding-video-editing-chennai/, /video-editing-charges-chennai/ |
-| 101 | queued 2026-10-23 | homepage-structure | what to put on a small business homepage | Web | Your homepage, section by section | /web-design-chennai/, /website-design-cost-chennai/ |
-| 102 | queued 2026-10-23 | youtube-video-length | how long should a YouTube video be for business | Video | The right length for your YouTube videos | /youtube-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 100 | done 2026-10-23 | wedding-editor-brief | what to tell your wedding video editor | Video | The brief that gets you the wedding film you want | /wedding-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 101 | done 2026-10-23 | homepage-structure | what to put on a small business homepage | Web | Your homepage, section by section | /web-design-chennai/, /website-design-cost-chennai/ |
+| 102 | done 2026-10-23 | youtube-video-length | how long should a YouTube video be for business | Video | The right length for your YouTube videos | /youtube-video-editing-chennai/, /video-editing-charges-chennai/ |
 | 103 | queued 2026-10-24 | about-page-small-business | how to write an about page for small business | Web | An About page that builds trust | /web-design-chennai/, /website-design-cost-chennai/ |
 | 104 | queued 2026-10-24 | reel-ideas-local-business | reel ideas for local business | Video | Reel ideas that don't need dancing | /reels-shorts-editing-chennai/, /video-editing-charges-chennai/ |
 | 105 | queued 2026-10-24 | google-reviews-on-website | show Google reviews on website | Web | Putting your reviews to work on your website | /web-design-chennai/, /website-design-cost-chennai/ |
