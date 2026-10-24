@@ -114,9 +114,9 @@ Owner asked for more posts per day for the rest of October; agreed on 3 a day (3
 | 103 | done 2026-10-24 | about-page-small-business | how to write an about page for small business | Web | An About page that builds trust | /web-design-chennai/, /website-design-cost-chennai/ |
 | 104 | done 2026-10-24 | reel-ideas-local-business | reel ideas for local business | Video | Reel ideas that don't need dancing | /reels-shorts-editing-chennai/, /video-editing-charges-chennai/ |
 | 105 | done 2026-10-24 | google-reviews-on-website | show Google reviews on website | Web | Putting your reviews to work on your website | /web-design-chennai/, /website-design-cost-chennai/ |
-| 106 | queued 2026-10-25 | diy-editing-vs-hiring | edit videos yourself or hire an editor | Video | Edit it yourself or hire an editor? | /video-editing-chennai/, /video-editing-charges-chennai/ |
-| 107 | queued 2026-10-25 | stock-photos-vs-own-photos | stock photos vs real photos on business website | Web | Real photos beat stock photos | /web-design-chennai/, /website-design-cost-chennai/ |
-| 108 | queued 2026-10-25 | ai-video-editing-tools | AI video editing tools what they can do | Video | What AI video tools can and can't do | /video-editing-chennai/, /video-editing-charges-chennai/ |
+| 106 | done 2026-10-25 | diy-editing-vs-hiring | edit videos yourself or hire an editor | Video | Edit it yourself or hire an editor? | /video-editing-chennai/, /video-editing-charges-chennai/ |
+| 107 | done 2026-10-25 | stock-photos-vs-own-photos | stock photos vs real photos on business website | Web | Real photos beat stock photos | /web-design-chennai/, /website-design-cost-chennai/ |
+| 108 | done 2026-10-25 | ai-video-editing-tools | AI video editing tools what they can do | Video | What AI video tools can and can't do | /video-editing-chennai/, /video-editing-charges-chennai/ |
 | 109 | queued 2026-10-26 | web-design-brief-template | how to brief a web designer template | Web | A one-page brief for your web designer | /web-design-chennai/, /website-design-cost-chennai/ |
 | 110 | queued 2026-10-26 | reel-cover-images | Instagram reel cover image design | Video | Reel covers: the shop window of your profile | /reels-shorts-editing-chennai/, /video-editing-charges-chennai/ |
 | 111 | queued 2026-10-26 | website-build-timeline | how long does it take to build a website | Web | How long your website will really take | /web-design-chennai/, /website-design-cost-chennai/ |
