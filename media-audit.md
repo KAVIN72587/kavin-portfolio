@@ -4,7 +4,7 @@ Generated 2026-10-26 by `node tools/media-audit.mjs`.
 
 | Check | Count |
 |---|---|
-| Empty image slots ("drop image") | 14 |
+| Empty image slots ("drop image") | 13 |
 | Broken media references | 0 |
 | Images missing alt text | 0 |
 | Images reused on >3 pages | 0 |
@@ -21,14 +21,6 @@ Generated 2026-10-26 by `node tools/media-audit.mjs`.
 | Restaurant menu system | menu |
 | Textile export catalogue | textile catalogue |
 
-### /portfolio/branding/ (3)
-
-| Project / section | Image needed |
-|---|---|
-| Cloud kitchen | sub-brand system |
-| Chartered accountancy firm | before / after |
-| Gym chain signage | signage rollout |
-
 ### /portfolio/web-ui/ (3)
 
 | Project / section | Image needed |
@@ -36,6 +28,13 @@ Generated 2026-10-26 by `node tools/media-audit.mjs`.
 | Logistics dashboard | dashboard |
 | Snack brand D2C store | d2c store |
 | Field service app screens | app screen set |
+
+### /portfolio/branding/ (2)
+
+| Project / section | Image needed |
+|---|---|
+| Chartered accountancy firm | before / after |
+| Gym chain signage | signage rollout |
 
 ### /portfolio/case-study-wedding-film/ (2)
 

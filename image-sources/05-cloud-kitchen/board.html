@@ -1,0 +1,163 @@
+<!doctype html>
+<!-- Concept: "Adupu Kitchens" (fictional cloud kitchen). Adupu / அடுப்பு = stove.
+     One parent mark (pot + three flames), three cuisine sub-brands, one shared sticker template.
+     Render: node tools/render-image.mjs image-sources/05-cloud-kitchen/board.html <out.webp> 1440 900 -->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;800;900&family=Noto+Sans+Tamil:wght@700&family=IBM+Plex+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root {
+    --char: #23262b;
+    --cream: #f6efe2;
+    --kraft: #c8a27a;
+    --idli: #3f9b4a;
+    --dum: #e8772e;
+    --kothu: #d63a2f;
+    --bg: #1b1815;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; background: var(--bg); }
+  #stage { position: absolute; left: 0; top: 0; width: 1440px; height: 900px; transform-origin: 0 0; overflow: hidden;
+    font-family: 'Rubik', sans-serif; color: var(--char);
+    background: radial-gradient(ellipse at 30% 20%, #2a2520, transparent 60%), var(--bg); }
+  .abs { position: absolute; }
+  .mono { font-family: 'IBM Plex Mono', monospace; }
+  .ta { font-family: 'Noto Sans Tamil', sans-serif; font-weight: 700; }
+  .panel { position: absolute; border-radius: 10px; overflow: hidden; }
+  .shadow { box-shadow: 0 1px 1px rgba(0,0,0,.2), 0 12px 26px rgba(0,0,0,.32), 0 30px 60px rgba(0,0,0,.2); }
+  .wm { font-weight: 900; letter-spacing: -.035em; line-height: .9; }
+  .cap { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: #8d8579; }
+
+  /* shared sticker template */
+  .sticker { position: absolute; border-radius: 50%; background: var(--c); display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,.25); }
+  .sticker .in { width: 74%; height: 74%; border-radius: 50%; background: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .sticker .nm { font-weight: 900; letter-spacing: -.03em; color: var(--c); line-height: .9; text-align: center; }
+  .sticker .by { font-family: 'IBM Plex Mono', monospace; color: var(--char); letter-spacing: .14em; margin-top: 4%; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <!-- Parent mark: pot with three flames (one per kitchen brand) -->
+  <symbol id="pot" viewBox="0 0 100 100">
+    <path d="M30 36 C 24 26, 30 18, 34 10 C 38 20, 44 26, 38 36 Z" fill="var(--f1, #3f9b4a)"/>
+    <path d="M50 34 C 42 22, 48 12, 50 2 C 54 12, 60 22, 50 34 Z" fill="var(--f2, #e8772e)"/>
+    <path d="M62 36 C 56 26, 62 20, 66 10 C 70 18, 76 26, 70 36 Z" fill="var(--f3, #d63a2f)"/>
+    <rect x="12" y="44" width="76" height="9" rx="4.5" fill="var(--pot, #23262b)"/>
+    <path d="M18 56 H 82 V 64 C 82 82, 68 94, 50 94 C 32 94, 18 82, 18 64 Z" fill="var(--pot, #23262b)"/>
+    <rect x="4" y="60" width="12" height="7" rx="3.5" fill="var(--pot, #23262b)"/>
+    <rect x="84" y="60" width="12" height="7" rx="3.5" fill="var(--pot, #23262b)"/>
+  </symbol>
+  <symbol id="flame" viewBox="0 0 40 50">
+    <path d="M20 48 C 6 40, 8 26, 14 18 C 16 26, 20 28, 22 22 C 24 14, 20 8, 22 2 C 34 14, 38 30, 30 42 C 28 45, 24 47, 20 48 Z" fill="currentColor"/>
+  </symbol>
+</svg>
+
+<div id="stage">
+  <!-- ===== parent lockup ===== -->
+  <div class="panel shadow" style="left:48px; top:48px; width:560px; height:400px; background:var(--cream);">
+    <div class="abs cap" style="left:36px; top:30px;">Parent mark</div>
+    <svg class="abs" style="left:44px; top:104px;" width="170" height="170"><use href="#pot"/></svg>
+    <div class="abs" style="left:232px; top:136px;">
+      <div class="wm" style="font-size:80px;">adupu</div>
+      <div style="font-weight:700; font-size:22px; margin-top:12px; letter-spacing:.02em;">kitchens · <span class="ta" style="font-size:22px;">அடுப்பு</span></div>
+    </div>
+    <div class="abs" style="left:52px; bottom:40px; right:36px; display:flex; justify-content:space-between; align-items:center;">
+      <div style="font-weight:700; font-size:20px;">One kitchen. Three menus.</div>
+      <div style="display:flex; gap:8px;">
+        <i style="width:28px;height:28px;border-radius:50%;background:var(--idli)"></i>
+        <i style="width:28px;height:28px;border-radius:50%;background:var(--dum)"></i>
+        <i style="width:28px;height:28px;border-radius:50%;background:var(--kothu)"></i>
+        <i style="width:28px;height:28px;border-radius:50%;background:var(--char)"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== three sub-marks ===== -->
+  <div class="panel shadow" style="left:632px; top:48px; width:248px; height:400px; background:var(--idli); color:#fff; padding:30px 26px;">
+    <div class="cap" style="color:#d5f0d8;">Tiffin</div>
+    <svg width="54" height="68" style="color:#fff; margin-top:40px;"><use href="#flame"/></svg>
+    <div class="wm" style="font-size:52px; margin-top:16px;">idli<br>street</div>
+    <div class="mono" style="font-size:11px; letter-spacing:.14em; margin-top:18px; opacity:.85;">BY ADUPU</div>
+  </div>
+  <div class="panel shadow" style="left:896px; top:48px; width:248px; height:400px; background:var(--dum); color:#fff; padding:30px 26px;">
+    <div class="cap" style="color:#ffe1cb;">Biryani</div>
+    <svg width="54" height="68" style="color:#fff; margin-top:40px;"><use href="#flame"/></svg>
+    <div class="wm" style="font-size:52px; margin-top:16px;">dum<br>dum</div>
+    <div class="mono" style="font-size:11px; letter-spacing:.14em; margin-top:18px; opacity:.85;">BY ADUPU</div>
+  </div>
+  <div class="panel shadow" style="left:1160px; top:48px; width:232px; height:400px; background:var(--kothu); color:#fff; padding:30px 26px;">
+    <div class="cap" style="color:#ffd3cf;">Parotta</div>
+    <svg width="54" height="68" style="color:#fff; margin-top:40px;"><use href="#flame"/></svg>
+    <div class="wm" style="font-size:52px; margin-top:16px;">kothu<br>club</div>
+    <div class="mono" style="font-size:11px; letter-spacing:.14em; margin-top:18px; opacity:.85;">BY ADUPU</div>
+  </div>
+
+  <!-- ===== sticker template spec ===== -->
+  <div class="panel shadow" style="left:48px; top:476px; width:400px; height:376px; background:#fff;">
+    <div class="abs cap" style="left:30px; top:26px;">One sticker template</div>
+    <div class="sticker" style="--c:var(--dum); left:70px; top:92px; width:200px; height:200px;">
+      <div class="in"><svg width="34" height="42" style="color:var(--dum);"><use href="#flame"/></svg><div class="nm" style="font-size:28px; margin-top:4px;">dum<br>dum</div><div class="by" style="font-size:9px;">BY ADUPU</div></div>
+    </div>
+    <svg class="abs" style="left:0; top:0;" width="400" height="376">
+      <g stroke="#8d8579" stroke-width="1.2" fill="none"><path d="M262 120 L 300 104"/><path d="M220 200 L 300 200"/><path d="M200 268 L 300 292"/></g>
+      <g fill="#8d8579"><circle cx="262" cy="120" r="3"/><circle cx="220" cy="200" r="3"/><circle cx="200" cy="268" r="3"/></g>
+    </svg>
+    <div class="abs mono" style="left:306px; top:96px; font-size:11px; line-height:1.4; color:#5d574e;">brand<br>colour ring</div>
+    <div class="abs mono" style="left:306px; top:192px; font-size:11px; line-height:1.4; color:#5d574e;">flame +<br>name</div>
+    <div class="abs mono" style="left:306px; top:284px; font-size:11px; line-height:1.4; color:#5d574e;">parent<br>sign-off</div>
+    <div class="abs" style="left:30px; bottom:26px; display:flex; gap:12px;">
+      <div class="sticker" style="--c:var(--idli); position:relative; width:46px; height:46px;"><div class="in"><svg width="12" height="15" style="color:var(--idli);"><use href="#flame"/></svg></div></div>
+      <div class="sticker" style="--c:var(--dum); position:relative; width:46px; height:46px;"><div class="in"><svg width="12" height="15" style="color:var(--dum);"><use href="#flame"/></svg></div></div>
+      <div class="sticker" style="--c:var(--kothu); position:relative; width:46px; height:46px;"><div class="in"><svg width="12" height="15" style="color:var(--kothu);"><use href="#flame"/></svg></div></div>
+    </div>
+  </div>
+
+  <!-- ===== packaging ===== -->
+  <div class="panel shadow" style="left:472px; top:476px; width:920px; height:376px; background:#e9e2d6;">
+    <div class="abs cap" style="left:30px; top:26px; color:#7d766b;">Same sticker, every order</div>
+
+    <!-- kraft bag (Idli Street) -->
+    <div class="abs" style="left:56px; top:70px; width:210px; height:270px; background:linear-gradient(90deg, #bf9870, var(--kraft) 30%, #d1ad86 70%, #bf9870); border-radius:3px; box-shadow:0 12px 22px rgba(0,0,0,.18);">
+      <div class="abs" style="left:0; right:0; top:0; height:36px; background:#b48c63; border-bottom:2px dashed rgba(0,0,0,.12);"></div>
+      <div class="abs" style="left:0; right:0; bottom:0; height:30px; background:linear-gradient(transparent, rgba(0,0,0,.08));"></div>
+      <svg class="abs" style="left:68px; top:110px; --pot:#4a3a2a; --f1:#4a3a2a; --f2:#4a3a2a; --f3:#4a3a2a; opacity:.55;" width="74" height="74"><use href="#pot"/></svg>
+      <div class="sticker" style="--c:var(--idli); left:61px; top:6px; width:88px; height:88px;">
+        <div class="in"><svg width="16" height="20" style="color:var(--idli);"><use href="#flame"/></svg><div class="nm" style="font-size:12px;">idli<br>street</div><div class="by" style="font-size:5px;">BY ADUPU</div></div>
+      </div>
+    </div>
+
+    <!-- bowl with band (Dum Dum) -->
+    <div class="abs" style="left:330px; top:56px; width:290px; height:290px; border-radius:50%; background:#fdfcf9; box-shadow:0 14px 26px rgba(0,0,0,.2);">
+      <div class="abs" style="left:20px; top:20px; right:20px; bottom:20px; border-radius:50%; overflow:hidden;
+        background:
+          radial-gradient(circle at 30% 35%, #f3e3b8 0 50px, transparent 51px),
+          radial-gradient(circle at 70% 40%, #e8b25e 0 46px, transparent 47px),
+          radial-gradient(circle at 45% 72%, #d98a3a 0 44px, transparent 45px),
+          radial-gradient(circle at 75% 75%, #7cab5a 0 26px, transparent 27px),
+          #f1e2c0;">
+      </div>
+      <div class="abs" style="left:118px; top:-6px; width:54px; height:302px; background:var(--dum); border-radius:4px;"></div>
+      <div class="sticker" style="--c:#c95f1e; left:96px; top:96px; width:98px; height:98px;">
+        <div class="in"><svg width="18" height="22" style="color:var(--dum);"><use href="#flame"/></svg><div class="nm" style="font-size:14px; color:var(--dum);">dum<br>dum</div><div class="by" style="font-size:5px;">BY ADUPU</div></div>
+      </div>
+    </div>
+
+    <!-- foil tray with lid (Kothu Club) -->
+    <div class="abs" style="left:670px; top:96px; width:210px; height:230px; border-radius:14px; background:linear-gradient(135deg, #e8e8ea, #b9babe 40%, #f2f2f4 60%, #a9aaae); box-shadow:0 12px 22px rgba(0,0,0,.18);">
+      <div class="abs" style="left:10px; top:10px; right:10px; bottom:10px; border-radius:9px; background:#fff;"></div>
+      <div class="abs" style="left:10px; right:10px; bottom:10px; height:46px; border-radius:0 0 9px 9px; background:var(--kothu);"></div>
+      <div class="abs mono" style="left:24px; bottom:26px; font-size:9px; letter-spacing:.16em; color:#fff;">KOTHU · MUTTON · 1</div>
+      <div class="sticker" style="--c:var(--kothu); left:55px; top:30px; width:100px; height:100px;">
+        <div class="in"><svg width="18" height="22" style="color:var(--kothu);"><use href="#flame"/></svg><div class="nm" style="font-size:14px;">kothu<br>club</div><div class="by" style="font-size:5px;">BY ADUPU</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  const k = Math.min(1, innerWidth / 1440, innerHeight / 900);
+  document.getElementById('stage').style.transform = `scale(${k})`;
+</script>
+</body>
+</html>
