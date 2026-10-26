@@ -1,0 +1,250 @@
+<!doctype html>
+<!-- Velan Auto Spares catalogue concept: a 24-page parts catalogue spread plus a loose price insert
+     (prices live only on the insert, so it can be reprinted alone).
+     layout = a (red technical) | b (yellow data) | c (blue industrial)
+     Render: node tools/render-image.mjs image-sources/09-auto-catalogue/catalogue.html <out.webp> 1440 900 <layout> -->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&family=Exo+2:wght@500;600;700;800&family=Noto+Sans+Tamil:wght@600;700&family=IBM+Plex+Mono:wght@400;500;600&display=block" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; background: #000; }
+  #stage { position: absolute; left: 0; top: 0; width: 1440px; height: 900px; transform-origin: 0 0; overflow: hidden; font-family: 'Barlow', sans-serif; color: #1b1b1b; }
+  .abs { position: absolute; }
+  .mono { font-family: 'IBM Plex Mono', monospace; }
+  .ta { font-family: 'Noto Sans Tamil', sans-serif; font-weight: 600; }
+  .page { position: absolute; top: 70px; width: 540px; height: 760px; overflow: hidden; background: #fff; }
+  .page.l { left: 60px; box-shadow: -10px 16px 30px rgba(0,0,0,.25); }
+  .page.r { left: 600px; box-shadow: 10px 16px 30px rgba(0,0,0,.25); }
+  .gutter { position: absolute; left: 570px; top: 70px; width: 60px; height: 760px; pointer-events: none;
+    background: linear-gradient(90deg, transparent, rgba(0,0,0,.16) 45%, rgba(0,0,0,.22) 50%, rgba(0,0,0,.16) 55%, transparent); z-index: 5; }
+  .insert { position: absolute; left: 1148px; top: 120px; width: 250px; height: 640px; transform: rotate(4deg); box-shadow: 0 16px 30px rgba(0,0,0,.3); overflow: hidden; z-index: 6; }
+  table { border-collapse: collapse; width: 100%; }
+  td, th { text-align: left; white-space: nowrap; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <radialGradient id="steel" cx=".4" cy=".35" r=".75"><stop offset="0" stop-color="#f4f5f6"/><stop offset=".55" stop-color="#b9bdc2"/><stop offset="1" stop-color="#7d8288"/></radialGradient>
+    <linearGradient id="steelL" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eceef0"/><stop offset=".5" stop-color="#a7acb2"/><stop offset="1" stop-color="#6f747a"/></linearGradient>
+    <linearGradient id="dark" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a4d52"/><stop offset="1" stop-color="#16171a"/></linearGradient>
+  </defs>
+  <!-- Velan mark (hex nut + vel), from the #3 signage concept -->
+  <symbol id="velan" viewBox="0 0 100 100">
+    <path d="M50 4 L90 27 L90 73 L50 96 L10 73 L10 27 Z" fill="#f6c21c"/>
+    <path d="M50 14 C 60 30, 64 42, 58 52 L 55 56 L 55 84 L 45 84 L 45 56 L 42 52 C 36 42, 40 30, 50 14 Z" fill="#161616"/>
+    <rect x="34" y="58" width="32" height="8" rx="2" fill="#161616"/>
+  </symbol>
+  <!-- parts -->
+  <symbol id="disc" viewBox="0 0 200 200">
+    <circle cx="100" cy="100" r="96" fill="url(#steel)"/>
+    <g stroke="#8a8f95" stroke-width="3" fill="none" stroke-linecap="round" opacity=".8">
+      <path d="M100 12 q 8 8 0 16"/><path d="M162 38 q 2 11 -11 13"/><path d="M188 100 q -8 8 -16 0"/><path d="M162 162 q -11 2 -13 -11"/>
+      <path d="M100 188 q -8 -8 0 -16"/><path d="M38 162 q -2 -11 11 -13"/><path d="M12 100 q 8 -8 16 0"/><path d="M38 38 q 11 -2 13 11"/>
+    </g>
+    <circle cx="100" cy="100" r="50" fill="url(#dark)"/>
+    <circle cx="100" cy="100" r="22" fill="#c62828"/>
+    <g fill="#d7d9dc"><circle cx="100" cy="64" r="6"/><circle cx="134" cy="89" r="6"/><circle cx="121" cy="129" r="6"/><circle cx="79" cy="129" r="6"/><circle cx="66" cy="89" r="6"/></g>
+  </symbol>
+  <symbol id="bearing" viewBox="0 0 200 200">
+    <circle cx="100" cy="100" r="94" fill="url(#steelL)"/>
+    <circle cx="100" cy="100" r="78" fill="#2b2d31"/>
+    <g fill="url(#steel)">
+      <circle cx="100" cy="35" r="12"/><circle cx="146" cy="54" r="12"/><circle cx="165" cy="100" r="12"/><circle cx="146" cy="146" r="12"/>
+      <circle cx="100" cy="165" r="12"/><circle cx="54" cy="146" r="12"/><circle cx="35" cy="100" r="12"/><circle cx="54" cy="54" r="12"/>
+    </g>
+    <circle cx="100" cy="100" r="50" fill="url(#steelL)"/>
+    <circle cx="100" cy="100" r="34" fill="#f2f2f2"/>
+  </symbol>
+  <symbol id="gear" viewBox="0 0 200 200">
+    <g fill="url(#steelL)">
+      <circle cx="100" cy="100" r="74"/>
+      <g id="teeth"><rect x="91" y="6" width="18" height="24" rx="3"/></g>
+      <use href="#teeth" transform="rotate(30 100 100)"/><use href="#teeth" transform="rotate(60 100 100)"/><use href="#teeth" transform="rotate(90 100 100)"/>
+      <use href="#teeth" transform="rotate(120 100 100)"/><use href="#teeth" transform="rotate(150 100 100)"/><use href="#teeth" transform="rotate(180 100 100)"/>
+      <use href="#teeth" transform="rotate(210 100 100)"/><use href="#teeth" transform="rotate(240 100 100)"/><use href="#teeth" transform="rotate(270 100 100)"/>
+      <use href="#teeth" transform="rotate(300 100 100)"/><use href="#teeth" transform="rotate(330 100 100)"/>
+    </g>
+    <circle cx="100" cy="100" r="50" fill="none" stroke="#8a8f95" stroke-width="4"/>
+    <circle cx="100" cy="100" r="24" fill="#2b2d31"/>
+    <rect x="96" y="72" width="8" height="10" fill="#2b2d31"/>
+  </symbol>
+  <symbol id="clutch" viewBox="0 0 200 200">
+    <circle cx="100" cy="100" r="94" fill="#3a2f28"/>
+    <circle cx="100" cy="100" r="86" fill="none" stroke="#6b5a4c" stroke-width="10" stroke-dasharray="14 6"/>
+    <circle cx="100" cy="100" r="62" fill="url(#steelL)"/>
+    <g fill="#2b2d31"><rect x="92" y="44" width="16" height="22" rx="3"/><rect x="92" y="134" width="16" height="22" rx="3"/><rect x="44" y="92" width="22" height="16" rx="3"/><rect x="134" y="92" width="22" height="16" rx="3"/></g>
+    <circle cx="100" cy="100" r="22" fill="#2b2d31"/><circle cx="100" cy="100" r="10" fill="#d7d9dc"/>
+  </symbol>
+  <symbol id="filter" viewBox="0 0 200 200">
+    <rect x="44" y="28" width="112" height="150" rx="14" fill="var(--fc, #1f4ea8)"/>
+    <g fill="rgba(0,0,0,.18)"><rect x="44" y="28" width="112" height="20" rx="10"/><rect x="44" y="160" width="112" height="18" rx="9"/></g>
+    <rect x="60" y="74" width="80" height="54" rx="4" fill="#fff"/>
+    <rect x="68" y="86" width="64" height="8" rx="2" fill="#bbb"/><rect x="68" y="102" width="42" height="8" rx="2" fill="#ddd"/>
+    <rect x="70" y="14" width="60" height="16" rx="4" fill="url(#steelL)"/>
+  </symbol>
+  <symbol id="plug" viewBox="0 0 200 200">
+    <rect x="88" y="6" width="24" height="30" rx="6" fill="#e8e8e8" stroke="#bbb"/>
+    <path d="M78 36 H 122 L 116 96 H 84 Z" fill="#f7f7f5" stroke="#cfcfcf"/>
+    <g fill="#d9d9d9"><rect x="80" y="44" width="40" height="6"/><rect x="81" y="58" width="38" height="6"/><rect x="82" y="72" width="36" height="6"/></g>
+    <path d="M74 96 H 126 V 124 H 74 Z" fill="url(#steelL)"/>
+    <path d="M84 124 H 116 V 172 H 84 Z" fill="url(#steelL)"/>
+    <g stroke="#7d8288" stroke-width="3"><line x1="84" y1="134" x2="116" y2="138"/><line x1="84" y1="146" x2="116" y2="150"/><line x1="84" y1="158" x2="116" y2="162"/></g>
+    <rect x="96" y="172" width="8" height="14" fill="#7d8288"/><path d="M104 186 h 12 v -6" fill="none" stroke="#7d8288" stroke-width="5"/>
+  </symbol>
+</svg>
+
+<div id="stage"></div>
+
+<script>
+const P = [
+  {code:'VAS-BRK-2201', name:'Brake disc', ta:'பிரேக் டிஸ்க்', fits:'Swift · Dzire', d:'Ø256 × 22 mm', wt:'4.6 kg', box:'2', price:'1,850', svg:'disc'},
+  {code:'VAS-CLT-1902', name:'Clutch plate', ta:'கிளட்ச் பிளேட்', fits:'Tata Ace', d:'Ø190 mm · 18T', wt:'1.1 kg', box:'1', price:'2,400', svg:'clutch'},
+  {code:'VAS-BRG-6204', name:'Ball bearing 6204-2RS', ta:'பேரிங்', fits:'Universal', d:'20 × 47 × 14 mm', wt:'0.11 kg', box:'10', price:'145', svg:'bearing'},
+  {code:'VAS-FLT-0415', name:'Oil filter', ta:'ஆயில் ஃபில்டர்', fits:'Bolero · Scorpio', d:'M20 × 1.5', wt:'0.38 kg', box:'12', price:'320', svg:'filter'},
+  {code:'VAS-GRB-3317', name:'Gear, 3rd speed', ta:'கியர்', fits:'Dost · Partner', d:'33T · Ø98 mm', wt:'1.4 kg', box:'1', price:'1,120', svg:'gear'},
+  {code:'VAS-SPK-0072', name:'Spark plug', ta:'ஸ்பார்க் பிளக்', fits:'Splendor · Passion', d:'M14 · 19 mm', wt:'0.05 kg', box:'25', price:'95', svg:'plug'},
+];
+const svg = (id, w, extra='') => `<svg width="${w}" height="${w}" viewBox="0 0 200 200" style="${extra}"><use href="#${id}"/></svg>`;
+const logo = (h, color='#161616') => `<div style="display:flex; align-items:center; gap:${h*.3}px;"><svg width="${h}" height="${h}"><use href="#velan"/></svg><div style="font-family:'Barlow Condensed'; font-weight:800; font-size:${h*.55}px; letter-spacing:.02em; color:${color}; line-height:.95;">VELAN<br><span style="font-weight:600; font-size:${h*.32}px; letter-spacing:.18em;">AUTO SPARES</span></div></div>`;
+const spec = (p, head, rowLine, font='Barlow') => `
+  <table style="font-family:${font}; font-size:11px;">
+    <tr style="${head}"><th style="padding:5px 7px;">CODE</th><th style="padding:5px 7px;">FITS</th><th style="padding:5px 7px;">SIZE</th><th style="padding:5px 7px;">WT</th><th style="padding:5px 7px;">BOX</th></tr>
+    <tr style="${rowLine}"><td class="mono" style="padding:5px 7px; font-size:10.5px;">${p.code}</td><td style="padding:5px 7px;">${p.fits}</td><td style="padding:5px 7px;">${p.d}</td><td style="padding:5px 7px;">${p.wt}</td><td style="padding:5px 7px;">${p.box}</td></tr>
+  </table>`;
+const priceRows = (line, codeColor='#333') => P.map(p => `<tr style="${line}"><td class="mono" style="padding:9px 0; font-size:11px; color:${codeColor};">${p.code}</td><td style="padding:9px 0; text-align:right; font-weight:700; font-size:15px;">₹${p.price}</td></tr>`).join('');
+
+const V = {};
+
+/* ---------- A · RED TECHNICAL ---------- */
+V.a = () => `
+<div class="abs" style="inset:0; background: radial-gradient(ellipse at 40% 30%, #e7e7e7, #bdbdbd);"></div>
+<div class="page l">
+  <div class="abs" style="left:0; top:0; width:540px; height:300px; background:#d32027; clip-path: polygon(0 0, 100% 0, 100% 62%, 0 100%);"></div>
+  <div class="abs" style="left:34px; top:30px;">${logo(38, '#fff')}</div>
+  <div class="abs" style="left:34px; top:96px; font-family:'Zilla Slab'; font-weight:700; font-size:54px; line-height:.92; color:#fff;">BRAKES &amp;<br>CLUTCH.</div>
+  <div class="abs" style="left:36px; top:214px; font-weight:600; font-size:13px; letter-spacing:.14em; color:#ffd6d6;">SECTION 02 · <span class="ta" style="letter-spacing:0;">பிரேக் &amp; கிளட்ச்</span></div>
+  <div class="abs" style="left:290px; top:60px; filter: drop-shadow(0 14px 18px rgba(0,0,0,.35));">${svg('disc', 240)}</div>
+  ${[P[0], P[1]].map((p,i) => `
+    <div class="abs" style="left:34px; top:${330 + i*190}px; width:472px; display:flex; gap:18px; border-top:3px solid #1b1b1b; padding-top:14px;">
+      <div style="width:120px; height:120px; background:#f1f1f1; display:flex; align-items:center; justify-content:center;">${svg(p.svg, 100)}</div>
+      <div style="flex:1;">
+        <div style="font-family:'Zilla Slab'; font-weight:700; font-size:22px; color:#d32027;">${p.name}</div>
+        <div class="ta" style="font-size:12px; color:#555; margin:2px 0 10px;">${p.ta}</div>
+        ${spec(p, 'background:#1b1b1b; color:#fff; font-weight:600;', 'border-bottom:1px solid #ddd;')}
+      </div>
+    </div>`).join('')}
+  <div class="abs" style="left:0; right:0; bottom:0; height:40px; background:#1b1b1b; display:flex; align-items:center; justify-content:space-between; padding:0 34px; color:#fff; font-size:12px; letter-spacing:.12em;"><span>VELAN AUTO SPARES · CATALOGUE 2026</span><span style="font-weight:700;">08</span></div>
+</div>
+<div class="page r" style="background:#efefef;">
+  <div class="abs" style="left:34px; top:30px; font-family:'Zilla Slab'; font-weight:700; font-size:30px;">Bearings, filters &amp; more</div>
+  <div class="abs" style="left:34px; top:72px; width:60px; height:5px; background:#d32027;"></div>
+  <div class="abs" style="left:34px; top:100px; width:472px; display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+    ${[P[2], P[3], P[4], P[5]].map(p => `
+      <div style="background:#fff; height:290px; position:relative; padding:14px; clip-path: polygon(0 0, 100% 0, 100% 92%, 92% 100%, 0 100%);">
+        <div style="display:inline-block; background:#1b1b1b; color:#fff; font-weight:700; font-size:11px; letter-spacing:.1em; padding:4px 10px;">${p.code}</div>
+        <div style="display:flex; justify-content:center; margin:8px 0 6px;">${svg(p.svg, 112, '--fc:#d32027;')}</div>
+        <div style="font-family:'Zilla Slab'; font-weight:700; font-size:18px; line-height:1.1;">${p.name}</div>
+        <div class="ta" style="font-size:11px; color:#666; margin:2px 0 6px;">${p.ta}</div>
+        <div style="font-size:12px; color:#444; line-height:1.55;">Fits <b>${p.fits}</b><br>${p.d} · box of ${p.box}</div>
+      </div>`).join('')}
+  </div>
+  <div class="abs" style="left:0; right:0; bottom:0; height:40px; background:#d32027; display:flex; align-items:center; justify-content:space-between; padding:0 34px; color:#fff; font-size:12px; letter-spacing:.12em;"><span style="font-weight:700;">09</span><span>PRICES → SEE INSERT</span></div>
+</div>
+<div class="gutter"></div>
+<div class="insert" style="background:#fff;">
+  <div style="background:#d32027; color:#fff; padding:22px 20px 18px;">
+    <div style="font-family:'Zilla Slab'; font-weight:700; font-size:30px; line-height:.95;">PRICE<br>LIST</div>
+    <div style="font-size:12px; letter-spacing:.14em; margin-top:8px;">NOV 2026 · <span class="ta" style="letter-spacing:0;">விலைப் பட்டியல்</span></div>
+  </div>
+  <div style="padding:10px 20px;"><table>${priceRows('border-bottom:1px solid #e3e3e3;')}</table></div>
+  <div class="abs" style="left:0; right:0; bottom:0; background:#1b1b1b; color:#fff; padding:14px 20px; font-size:11.5px; line-height:1.5;">Prices change. Pages don't.<br><span style="color:#ff8a8a;">Reprint this sheet only.</span></div>
+</div>`;
+
+/* ---------- B · YELLOW DATA ---------- */
+V.b = () => {
+  const header = (num, left) => `
+    <div class="abs" style="left:34px; right:34px; top:28px; display:flex; justify-content:space-between; align-items:baseline;">
+      <span style="font-family:'Barlow Condensed'; font-weight:800; font-size:24px; color:#f0b400;">${left ? 'Catalogue 2026' : 'Filters &amp; ignition'}</span>
+      <span style="font-family:'Barlow Condensed'; font-weight:800; font-size:24px; color:#f0b400;">${num}</span>
+    </div>
+    <div class="abs" style="left:34px; right:34px; top:62px; height:9px; background:#111;"></div>`;
+  const row = (p, top) => `
+    <div class="abs" style="left:34px; right:34px; top:${top}px;">
+      <div style="font-family:'Barlow'; font-weight:700; font-size:19px;">${p.name} <span class="ta" style="font-size:12px; color:#777; font-weight:600;">· ${p.ta}</span></div>
+      <div style="display:flex; gap:16px; margin-top:8px; align-items:center;">
+        <div style="width:118px; flex:none;">${svg(p.svg, 118, '--fc:#f0b400;')}</div>
+        <table style="font-size:11px;">
+          <tr style="background:#111; color:#f0b400; font-weight:700; letter-spacing:.06em;"><th style="padding:6px 8px;">TECHNICAL DATA</th><th style="padding:6px 8px;"></th></tr>
+          ${[['Part code', `<span class="mono">${p.code}</span>`], ['Fits', p.fits], ['Size', p.d], ['Weight', p.wt], ['Box qty', p.box]].map(([k,v]) => `<tr style="border-bottom:1px solid #ddd;"><td style="padding:5px 8px; color:#555;">${k}</td><td style="padding:5px 8px; font-weight:600;">${v}</td></tr>`).join('')}
+        </table>
+      </div>
+    </div>
+    <div class="abs" style="left:34px; right:34px; top:${top + 212}px; height:6px; background:#111;"></div>`;
+  return `
+<div class="abs" style="inset:0; background: radial-gradient(ellipse at 50% 20%, #f3f1ea, #cfcac0);"></div>
+<div class="page l">${header('14', true)}${row(P[2], 92)}${row(P[0], 320)}${row(P[4], 548)}</div>
+<div class="page r">${header('15', false)}${row(P[3], 92)}${row(P[5], 320)}${row(P[1], 548)}</div>
+<div class="gutter"></div>
+<div class="insert" style="background:#f0b400;">
+  <div style="padding:22px 20px 14px;">${logo(34)}</div>
+  <div style="background:#111; color:#f0b400; padding:12px 20px; font-family:'Barlow Condensed'; font-weight:800; font-size:26px; letter-spacing:.02em;">PRICE INSERT · 11/26</div>
+  <div style="padding:6px 20px; background:#fff; margin:14px 14px 0;"><table>${priceRows('border-bottom:1px solid #e9e2c8;')}</table></div>
+  <div class="abs" style="left:20px; right:20px; bottom:20px; font-size:12px; line-height:1.5; font-weight:600;">Loose sheet. Reprint when prices change, keep the catalogue.</div>
+</div>`;
+};
+
+/* ---------- C · BLUE INDUSTRIAL ---------- */
+V.c = () => `
+<div class="abs" style="inset:0; background: linear-gradient(180deg, #f4f6f9, #d9dee6);"></div>
+<div class="page l" style="background:#1d4fa6; color:#fff; font-family:'Exo 2';">
+  <div class="abs" style="left:34px; top:28px; font-size:11px; letter-spacing:.18em; opacity:.8;">PRODUCT INTRODUCTION | 12</div>
+  <div class="abs" style="left:34px; top:62px; font-weight:800; font-size:44px; line-height:1;">Transmission<br>series</div>
+  <div class="abs ta" style="left:36px; top:160px; font-size:16px; opacity:.85;">டிரான்ஸ்மிஷன் பாகங்கள்</div>
+  <div class="abs" style="right:-30px; top:40px; writing-mode: vertical-rl; font-weight:800; font-size:150px; line-height:1; color:rgba(255,255,255,.08); letter-spacing:-.02em;">GEARS</div>
+  <div class="abs" style="left:110px; top:200px; filter: drop-shadow(0 18px 20px rgba(0,0,0,.35));">${svg('gear', 300)}</div>
+  <div class="abs" style="left:34px; top:540px; width:250px; font-size:12px; line-height:1.6; opacity:.9;">Case-hardened, ground teeth. Matched in sets so a single replaced gear doesn't whine against old ones.</div>
+  <div class="abs" style="left:34px; right:34px; bottom:40px;">
+    <table style="font-size:11px; color:#fff;">
+      <tr style="border-bottom:1px solid rgba(255,255,255,.5); font-weight:700;"><th style="padding:6px 4px;">Code</th><th style="padding:6px 4px;">Fits</th><th style="padding:6px 4px;">Teeth</th><th style="padding:6px 4px;">Ø mm</th><th style="padding:6px 4px;">Box</th></tr>
+      <tr style="border-bottom:1px solid rgba(255,255,255,.25);"><td class="mono" style="padding:6px 4px;">VAS-GRB-3317</td><td style="padding:6px 4px;">Dost · Partner</td><td style="padding:6px 4px;">33</td><td style="padding:6px 4px;">98</td><td style="padding:6px 4px;">1</td></tr>
+      <tr style="border-bottom:1px solid rgba(255,255,255,.25);"><td class="mono" style="padding:6px 4px;">VAS-GRB-2914</td><td style="padding:6px 4px;">Dost · Partner</td><td style="padding:6px 4px;">29</td><td style="padding:6px 4px;">86</td><td style="padding:6px 4px;">1</td></tr>
+      <tr><td class="mono" style="padding:6px 4px;">VAS-GRB-2408</td><td style="padding:6px 4px;">Tata Ace</td><td style="padding:6px 4px;">24</td><td style="padding:6px 4px;">72</td><td style="padding:6px 4px;">1</td></tr>
+    </table>
+  </div>
+</div>
+<div class="page r" style="background:#f5f6f8; font-family:'Exo 2';">
+  <div class="abs" style="right:34px; top:28px; font-size:11px; letter-spacing:.18em; color:#6b7385;">PRODUCT INTRODUCTION | 13</div>
+  <div class="abs" style="left:34px; top:58px; display:grid; grid-template-columns: 1fr 1fr; gap:16px; width:472px;">
+    ${[P[0], P[1], P[2], P[3]].map(p => `
+      <div>
+        <div style="font-weight:700; font-size:13px; color:#1d4fa6; margin-bottom:6px;"><span style="display:inline-block; width:3px; height:12px; background:#1d4fa6; margin-right:6px; vertical-align:-1px;"></span>${p.name}</div>
+        <div style="background:#fff; height:178px; display:flex; align-items:center; justify-content:center; border:1px solid #e1e5ec;">${svg(p.svg, 140, '--fc:#1d4fa6;')}</div>
+        <table style="font-size:10.5px; margin-top:8px;">
+          <tr style="background:#1d4fa6; color:#fff;"><th style="padding:4px 6px;">Code</th><th style="padding:4px 6px;">Fits</th><th style="padding:4px 6px;">Size</th></tr>
+          <tr style="border-bottom:1px solid #d8dde6;"><td class="mono" style="padding:4px 6px;">${p.code}</td><td style="padding:4px 6px;">${p.fits}</td><td style="padding:4px 6px;">${p.d}</td></tr>
+        </table>
+      </div>`).join('')}
+  </div>
+  <div class="abs" style="left:34px; right:34px; bottom:34px; display:flex; justify-content:space-between; align-items:center;">${logo(30, '#1d4fa6')}<span style="font-size:11px; letter-spacing:.14em; color:#6b7385;">PRICES ON INSERT</span></div>
+</div>
+<div class="gutter"></div>
+<div class="insert" style="background:#fff; font-family:'Exo 2';">
+  <div style="background:#1d4fa6; color:#fff; padding:22px 20px;">
+    <div style="font-size:11px; letter-spacing:.2em; opacity:.8;">LOOSE INSERT</div>
+    <div style="font-weight:800; font-size:28px; margin-top:4px;">Price list</div>
+    <div style="font-size:12px; margin-top:4px;">Effective 1 Nov 2026</div>
+  </div>
+  <div style="padding:10px 20px;"><table>${priceRows('border-bottom:1px solid #e1e5ec;', '#1d4fa6')}</table></div>
+  <div class="abs" style="left:20px; right:20px; bottom:20px; font-size:11.5px; line-height:1.5; color:#4b5468;">One sheet to reprint each quarter. The 24 catalogue pages stay the same.</div>
+</div>`;
+
+const layout = new URLSearchParams(location.search).get('layout') || 'a';
+const stage = document.getElementById('stage');
+stage.innerHTML = V[layout]();
+stage.style.transform = `scale(${Math.min(1, innerWidth / 1440, innerHeight / 900)})`;
+</script>
+</body>
+</html>

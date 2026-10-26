@@ -40,7 +40,7 @@ Use your real client work for every image here. If a client can't be shown, mock
 | # | Project | Ratio | Concept |
 |---|---|---|---|
 | 8 ✅ | **Done:** original *Ponni Silks* Deepavali concept (kolam magenta/teal/marigold, Coiny + Kumar One), tile retitled "(concept)". Source: `image-sources/08-diwali-campaign/campaign.html` → `print-ponni-deepavali.webp`. Original plan: **Diwali retail campaign** (Tamil + English) | 1:1 | Campaign set: hoarding, standee, window poster and handout arranged together so the one offer reads across all four. Warm, festive, no clutter. |
-| 9 | **Auto parts catalogue** (24 pp + price insert) | 16:10 | Open spread showing code and dimension tables, with the separate price insert pulled half out. |
+| 9 ✅ | **Done:** *Velan Auto Spares* catalogue concept (same client as #3), three versions: A red technical (placed), B yellow data, C blue industrial. Source: `image-sources/09-auto-catalogue/catalogue.html` (layouts a/b/c, renders saved as `version-a/b/c.webp`) → `print-velan-catalogue.webp`. Original plan: **Auto parts catalogue** (24 pp + price insert) | 16:10 | Open spread showing code and dimension tables, with the separate price insert pulled half out. |
 | 10 | **Restaurant menu system** | 16:10 | Menu open on a restaurant table with one table card beside it. Real table and lighting beat a flat mockup. |
 | 11 | **Textile export catalogue** | 21:9 | Long banner: catalogue spread on the left, the real fabric swatches beside it to show the printed colour matches the cloth. Daylight-balanced light is essential. |
 
