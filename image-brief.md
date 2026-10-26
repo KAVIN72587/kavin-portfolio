@@ -32,7 +32,7 @@ Use your real client work for every image here. If a client can't be shown, mock
 | 3 ✅ | **Done:** original *Velan Auto Spares* concept, tile retitled "(concept)". Source: `image-sources/03-auto-parts/shopfront.html` → `branding-velan-auto-spares.webp`. Original plan: **Auto parts distributor** | 1:1 | Bilingual (Tamil + English) wordmark on a rolling shutter: a photo of the real sign, or a vinyl-cut mockup at shutter width. Show the full sign width so "built for shutter width" reads. |
 | 4 ✅ | **Done:** original *Padi* (படி) concept, tile retitled "(concept)". Source: `image-sources/04-tuition/logo-sheet.html` → `branding-padi-tuition.webp`. Original plan: **Tuition centre** | 1:1 | Logo sheet: the mark at three sizes, on a board, a notebook cover and a round WhatsApp display picture. Grid layout. |
 | 5 ✅ | **Done:** original *Adupu Kitchens* (அடுப்பு) concept, tile retitled "(concept)". Source: `image-sources/05-cloud-kitchen/board.html` → `branding-adupu-kitchens.webp`. Original plan: **Cloud kitchen** | 16:10 | Parent mark in the centre, three cuisine sub-marks around it, all applied to the shared sticker template on delivery boxes or bags. |
-| 6 | **Chartered accountancy firm** | 16:10 | Split before / after: old letterhead and logo on the left, new on the right, same angle and light. Small "Before" / "After" labels. |
+| 6 ✅ | **Done:** original *Raman & Associates* before/after concept, tile retitled "(concept)". Source: `image-sources/06-ca-firm/before-after.html` → `branding-raman-associates.webp`. Original plan: **Chartered accountancy firm** | 16:10 | Split before / after: old letterhead and logo on the left, new on the right, same angle and light. Small "Before" / "After" labels. |
 | 7 | **Gym chain signage** | 21:9 | Four branch boards side by side, each a different width, ideally photographed at night to show the different lighting. A row of four night photos works well. |
 
 ## /portfolio/print/ (4)
@@ -81,3 +81,14 @@ Use your real client work for every image here. If a client can't be shown, mock
 Priority: branding page (#1–7), then the four main-page tiles (#12–15), because the main portfolio page is the one most visitors see.
 
 When files are ready, drop them in `assets/slots/` and I'll wire them into the pages with alt text, then re-run `node tools/media-audit.mjs` to confirm zero empty slots.
+
+## Extra rebrand concepts (added on request)
+
+Four more before/after concepts for the branding page's "Rebrand" filter, one per reference style. Source: `image-sources/06b-rebrands/before-after.html` (layouts `inippu`, `kaapi`, `marina`, `thiru`).
+
+| Tile | Style from | File |
+|---|---|---|
+| Sweet shop rebrand: *Inippu Sweets* | Postobon | `branding-rebrand-inippu.webp` |
+| Café rebrand: *Kaapi Corner* | Bistro | `branding-rebrand-kaapi.webp` |
+| Gym rebrand: *Marina Fitness* | Forever Fitness | `branding-rebrand-marina.webp` |
+| Movers rebrand: *Thiru Packers & Movers* | Flexy | `branding-rebrand-thiru.webp` |
