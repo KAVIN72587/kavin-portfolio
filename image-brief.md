@@ -57,7 +57,7 @@ Use your real client work for every image here. If a client can't be shown, mock
 
 | # | Project | Ratio | Concept |
 |---|---|---|---|
-| 16 | **Logistics dashboard** | 4:3 | Main shipment dashboard in a laptop or browser frame, with a small inset of the empty or error state (the caption brags about those). |
+| 16 ✅ | **Done:** *Kaveri Freight* dashboard concept with Unsplash truck/cargo/driver photos (credits in `image-sources/16-logistics-dashboard/photos/CREDITS.md`), three versions: A coral (placed), B violet glass, C mono + lime. Source: `image-sources/16-logistics-dashboard/dashboard.html` (layouts a/b/c) → `webui-kaveri-dashboard.webp`. Original plan: **Logistics dashboard** | 4:3 | Main shipment dashboard in a laptop or browser frame, with a small inset of the empty or error state (the caption brags about those). |
 | 17 | **Snack brand D2C store** | 4:3 | Phone mockups: product page, subscription box picker and checkout, side by side. Mobile-first is the point. |
 | 18 | **Field service app** | 21:9 | Row of 4–5 phone screens including the offline state. A bright, sunlit background or a hand holding the phone outdoors reinforces "one hand, bright sunlight". |
 
