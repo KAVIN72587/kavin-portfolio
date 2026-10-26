@@ -4,7 +4,7 @@ Generated 2026-10-26 by `node tools/media-audit.mjs`.
 
 | Check | Count |
 |---|---|
-| Empty image slots ("drop image") | 12 |
+| Empty image slots ("drop image") | 11 |
 | Broken media references | 0 |
 | Images missing alt text | 0 |
 | Images reused on >3 pages | 0 |
@@ -42,12 +42,6 @@ Generated 2026-10-26 by `node tools/media-audit.mjs`.
 |---|---|
 | Restaurant reels | reel frames |
 | Diwali campaign | festival campaign |
-
-### /portfolio/branding/ (1)
-
-| Project / section | Image needed |
-|---|---|
-| Gym chain signage | signage rollout |
 
 ## 2. Broken media references
 

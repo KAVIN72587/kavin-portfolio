@@ -33,7 +33,7 @@ Use your real client work for every image here. If a client can't be shown, mock
 | 4 ✅ | **Done:** original *Padi* (படி) concept, tile retitled "(concept)". Source: `image-sources/04-tuition/logo-sheet.html` → `branding-padi-tuition.webp`. Original plan: **Tuition centre** | 1:1 | Logo sheet: the mark at three sizes, on a board, a notebook cover and a round WhatsApp display picture. Grid layout. |
 | 5 ✅ | **Done:** original *Adupu Kitchens* (அடுப்பு) concept, tile retitled "(concept)". Source: `image-sources/05-cloud-kitchen/board.html` → `branding-adupu-kitchens.webp`. Original plan: **Cloud kitchen** | 16:10 | Parent mark in the centre, three cuisine sub-marks around it, all applied to the shared sticker template on delivery boxes or bags. |
 | 6 ✅ | **Done:** original *Raman & Associates* before/after concept, tile retitled "(concept)". Source: `image-sources/06-ca-firm/before-after.html` → `branding-raman-associates.webp`. Original plan: **Chartered accountancy firm** | 16:10 | Split before / after: old letterhead and logo on the left, new on the right, same angle and light. Small "Before" / "After" labels. |
-| 7 | **Gym chain signage** | 21:9 | Four branch boards side by side, each a different width, ideally photographed at night to show the different lighting. A row of four night photos works well. |
+| 7 ✅ | **Done:** original *Irumbu Gym* (இரும்பு) four-branch concept, tile retitled "(concept)". Source: `image-sources/07-gym-signage/rollout.html` → `branding-irumbu-gym.webp`. Original plan: **Gym chain signage** | 21:9 | Four branch boards side by side, each a different width, ideally photographed at night to show the different lighting. A row of four night photos works well. |
 
 ## /portfolio/print/ (4)
 
