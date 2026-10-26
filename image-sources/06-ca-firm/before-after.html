@@ -1,0 +1,164 @@
+<!doctype html>
+<!-- Concept: "Raman & Associates, Chartered Accountants" (fictional, est. 1984). Before / after rebrand.
+     Kept: navy + the R&A initials. Changed: everything around them.
+     Render: node tools/render-image.mjs image-sources/06-ca-firm/before-after.html <out.webp> 1440 900 -->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Great+Vibes&family=Inter+Tight:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1d2b5a;
+    --navy-old: #23306b;
+    --maroon: #7a1f2b;
+    --bg: #1b1815;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; background: var(--bg); }
+  #stage { position: absolute; left: 0; top: 0; width: 1440px; height: 900px; transform-origin: 0 0; overflow: hidden;
+    background: radial-gradient(ellipse at 50% 0%, #2a2520, transparent 60%), var(--bg); }
+  .abs { position: absolute; }
+  .mono { font-family: 'IBM Plex Mono', monospace; }
+  .serif { font-family: 'Libre Baskerville', serif; }
+  .script { font-family: 'Great Vibes', cursive; }
+  .sans { font-family: 'Inter Tight', sans-serif; }
+  .panel { position: absolute; top: 48px; width: 656px; height: 760px; border-radius: 12px; overflow: hidden; }
+  .tag { position: absolute; left: 28px; top: 24px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: .22em; text-transform: uppercase; }
+  .page { position: absolute; width: 400px; height: 566px; box-shadow: 0 2px 3px rgba(0,0,0,.15), 0 18px 36px rgba(0,0,0,.25); }
+  .card { position: absolute; width: 252px; height: 144px; box-shadow: 0 2px 3px rgba(0,0,0,.15), 0 14px 26px rgba(0,0,0,.25); }
+  .lines span { display: block; height: 3px; border-radius: 2px; margin-bottom: 9px; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <!-- Old monogram: R&A in a double ring with dotted inner ring -->
+  <symbol id="old-mark" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="46" fill="none" stroke="#23306b" stroke-width="3"/>
+    <circle cx="50" cy="50" r="40" fill="none" stroke="#23306b" stroke-width="1"/>
+    <circle cx="50" cy="50" r="35" fill="none" stroke="#7a1f2b" stroke-width="1" stroke-dasharray="1.5 3"/>
+    <text x="50" y="60" text-anchor="middle" font-family="Libre Baskerville" font-weight="700" font-size="26" fill="#23306b">R<tspan font-style="italic" font-weight="400" fill="#7a1f2b" font-size="22">&amp;</tspan>A</text>
+    <text x="50" y="80" text-anchor="middle" font-family="Libre Baskerville" font-size="6.5" letter-spacing="1.5" fill="#23306b">EST. 1984</text>
+  </symbol>
+  <!-- New monogram: same R&A initials, geometric, on a navy tile -->
+  <symbol id="new-mark" viewBox="0 0 100 100">
+    <rect width="100" height="100" rx="22" fill="#1d2b5a"/>
+    <text x="50" y="64" text-anchor="middle" font-family="Inter Tight" font-weight="800" font-size="40" letter-spacing="-2" fill="#fff">R<tspan fill="#8fb3ff" font-weight="500">&amp;</tspan>A</text>
+  </symbol>
+</svg>
+
+<div id="stage">
+  <!-- ================= BEFORE ================= -->
+  <div class="panel" style="left:48px; background:#cfc6b4;">
+    <div class="abs sans" style="left:32px; top:26px; font-weight:800; font-size:40px; letter-spacing:-.02em; color:#2b2722;">Before</div>
+    <div class="abs mono" style="right:32px; top:44px; font-size:13px; letter-spacing:.2em; color:#5e5546;">1984 – 2025</div>
+    <div class="abs" style="left:0; right:0; top:96px; height:170px; display:flex; align-items:center; justify-content:center; gap:22px;">
+      <svg width="130" height="130"><use href="#old-mark"/></svg>
+      <div>
+        <div class="serif" style="font-weight:700; font-size:34px; letter-spacing:.1em; color:var(--navy-old); line-height:1.1;">RAMAN &amp;<br>ASSOCIATES</div>
+        <div class="script" style="font-size:36px; color:var(--maroon); line-height:1.1;">Chartered Accountants</div>
+      </div>
+    </div>
+
+    <!-- old letterhead -->
+    <div class="page" style="left:70px; top:292px; background:#f3ecd9; transform-origin:0 0; transform:rotate(-2.5deg) scale(.76); padding:28px 30px;">
+      <div style="display:flex; align-items:center; gap:14px; justify-content:center;">
+        <svg width="70" height="70"><use href="#old-mark"/></svg>
+        <div style="text-align:center;">
+          <div class="serif" style="font-weight:700; font-size:21px; letter-spacing:.12em; color:var(--navy-old);">RAMAN &amp; ASSOCIATES</div>
+          <div class="script" style="font-size:24px; color:var(--maroon); line-height:1.1;">Chartered Accountants</div>
+        </div>
+      </div>
+      <div class="serif" style="text-align:center; font-size:7.5px; line-height:1.6; color:#3b3a3a; margin-top:8px;">
+        "Sri Lakshmi Nilayam", No. 14/2, 3rd Cross Street, Off. Luz Church Road, Mylapore, Madras - 600 004.<br>
+        Phone: 4937xx, 4938xx, 4940xx &nbsp;·&nbsp; Telex: 041-xxxx &nbsp;·&nbsp; Gram: "RAMANCA" &nbsp;·&nbsp; Fax: 4941xx
+      </div>
+      <div style="border-top:3px double var(--maroon); border-bottom:1px solid var(--maroon); height:6px; margin:10px 0 14px;"></div>
+      <div class="serif" style="display:flex; justify-content:space-between; font-size:8px; color:#3b3a3a;"><span>Ref. No. RA/AUD/84/____</span><span>Date: ___/___/19___</span></div>
+      <div class="lines" style="margin-top:26px;">
+        <span style="width:30%; background:#d9cfb8;"></span><span style="width:44%; background:#d9cfb8; margin-bottom:22px;"></span>
+        <span style="width:96%; background:#e1d8c3;"></span><span style="width:100%; background:#e1d8c3;"></span><span style="width:91%; background:#e1d8c3;"></span><span style="width:97%; background:#e1d8c3;"></span><span style="width:62%; background:#e1d8c3; margin-bottom:22px;"></span>
+        <span style="width:100%; background:#e1d8c3;"></span><span style="width:88%; background:#e1d8c3;"></span><span style="width:94%; background:#e1d8c3;"></span><span style="width:40%; background:#e1d8c3;"></span>
+      </div>
+      <div class="serif" style="position:absolute; left:30px; right:30px; bottom:22px; border-top:1px solid var(--maroon); padding-top:6px; text-align:center; font-size:7px; color:#5a5450; font-style:italic;">
+        Branches: Tambaram · Madurai · Coimbatore &nbsp;|&nbsp; Partners: S. Raman B.Com., F.C.A. · K. Venkatesh B.Com., A.C.A. · R. Lakshmi M.Com., A.C.A.
+      </div>
+    </div>
+
+    <!-- old visiting card -->
+    <div class="card" style="left:356px; top:540px; background:#fbf7ec; transform:rotate(4deg); padding:16px 18px;">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <svg width="40" height="40"><use href="#old-mark"/></svg>
+        <div>
+          <div class="serif" style="font-weight:700; font-size:11px; letter-spacing:.1em; color:var(--navy-old);">RAMAN &amp; ASSOCIATES</div>
+          <div class="script" style="font-size:15px; color:var(--maroon);">Chartered Accountants</div>
+        </div>
+      </div>
+      <div class="serif" style="font-size:9px; font-weight:700; color:#222; margin-top:8px;">S. RAMAN, <span style="font-weight:400; font-size:7.5px;">B.Com., F.C.A.</span></div>
+      <div class="serif" style="font-size:6.5px; line-height:1.55; color:#444; margin-top:3px;">Mylapore, Madras - 600 004 · Ph: 4937xx, 4938xx<br>Res: 4919xx · Telex: 041-xxxx · Gram: "RAMANCA"</div>
+    </div>
+  </div>
+
+  <!-- ================= AFTER ================= -->
+  <div class="panel" style="left:736px; background:#e9edf4;">
+    <div class="abs sans" style="left:32px; top:26px; font-weight:800; font-size:40px; letter-spacing:-.02em; color:#1d2b5a;">After</div>
+    <div class="abs mono" style="right:32px; top:44px; font-size:13px; letter-spacing:.2em; color:#55607a;">2026</div>
+    <div class="abs" style="left:0; right:0; top:96px; height:170px; display:flex; align-items:center; justify-content:center; gap:24px;">
+      <svg width="120" height="120"><use href="#new-mark"/></svg>
+      <div>
+        <div class="sans" style="font-weight:700; font-size:44px; letter-spacing:-.03em; color:var(--navy); line-height:1;">Raman &amp; Associates</div>
+        <div class="mono" style="font-size:13px; letter-spacing:.2em; color:#6a7390; margin-top:10px;">CHARTERED ACCOUNTANTS · SINCE 1984</div>
+      </div>
+    </div>
+
+    <!-- new letterhead -->
+    <div class="page" style="left:70px; top:292px; background:#fff; transform-origin:0 0; transform:rotate(-1.5deg) scale(.76); padding:34px 34px;">
+      <div style="display:flex; align-items:center; gap:14px;">
+        <svg width="54" height="54"><use href="#new-mark"/></svg>
+        <div>
+          <div class="sans" style="font-weight:700; font-size:20px; letter-spacing:-.02em; color:var(--navy);">Raman &amp; Associates</div>
+          <div class="mono" style="font-size:8px; letter-spacing:.18em; color:#6a7390; margin-top:3px;">CHARTERED ACCOUNTANTS · SINCE 1984</div>
+        </div>
+      </div>
+      <div class="sans" style="display:flex; justify-content:space-between; font-size:8.5px; color:#6a7390; margin-top:38px;"><span>Ref RA/AUD/26/014</span><span>14 March 2026</span></div>
+      <div class="lines" style="margin-top:26px;">
+        <span style="width:30%; background:#dfe4ee;"></span><span style="width:44%; background:#dfe4ee; margin-bottom:22px;"></span>
+        <span style="width:96%; background:#eceff5;"></span><span style="width:100%; background:#eceff5;"></span><span style="width:91%; background:#eceff5;"></span><span style="width:97%; background:#eceff5;"></span><span style="width:62%; background:#eceff5; margin-bottom:22px;"></span>
+        <span style="width:100%; background:#eceff5;"></span><span style="width:88%; background:#eceff5;"></span><span style="width:94%; background:#eceff5;"></span><span style="width:40%; background:#eceff5;"></span>
+      </div>
+      <div style="position:absolute; left:34px; right:34px; bottom:28px; display:flex; justify-content:space-between; align-items:flex-end;">
+        <div class="sans" style="font-size:8px; line-height:1.6; color:#55607a;">14/2, 3rd Cross Street, Mylapore<br>Chennai 600 004</div>
+        <div class="sans" style="font-size:8px; line-height:1.6; color:#55607a; text-align:right;">+91 44 2499 0000<br>Tambaram · Madurai · Coimbatore</div>
+      </div>
+      <div style="position:absolute; left:0; right:0; bottom:0; height:8px; background:var(--navy);"></div>
+    </div>
+
+    <!-- new card -->
+    <div class="card" style="left:356px; top:540px; background:var(--navy); transform:rotate(3deg); padding:20px 22px; border-radius:6px;">
+      <svg width="34" height="34"><use href="#new-mark" style="--x:0"/></svg>
+      <div class="sans" style="position:absolute; left:22px; bottom:40px; font-weight:700; font-size:15px; color:#fff;">S. Raman</div>
+      <div class="mono" style="position:absolute; left:22px; bottom:22px; font-size:7.5px; letter-spacing:.14em; color:#8fb3ff;">FOUNDING PARTNER · FCA</div>
+      <div class="sans" style="position:absolute; right:22px; top:22px; font-size:8px; line-height:1.6; color:#c9d3ea; text-align:right;">+91 44 2499 0000<br>Mylapore, Chennai</div>
+    </div>
+  </div>
+
+  <!-- what was kept -->
+  <div class="abs" style="left:48px; right:48px; top:828px; height:40px; display:flex; align-items:center; justify-content:center; gap:18px;">
+    <span class="mono" style="font-size:12px; letter-spacing:.2em; color:#8d8579;">KEPT</span>
+    <i style="width:22px; height:22px; border-radius:6px; background:var(--navy); display:inline-block;"></i>
+    <span class="sans" style="font-size:16px; color:#e9e4da;">the navy</span>
+    <span class="sans" style="font-size:16px; color:#6d665c;">+</span>
+    <span class="serif" style="font-size:16px; color:#e9e4da; font-weight:700;">R<i style="color:#c9786f;">&amp;</i>A</span>
+    <span class="sans" style="font-size:16px; color:#e9e4da;">initials</span>
+    <span class="mono" style="font-size:12px; letter-spacing:.2em; color:#8d8579; margin-left:18px;">DROPPED</span>
+    <span class="sans" style="font-size:16px; color:#a39b8f; text-decoration:line-through;">script · telex · gram · three phone numbers</span>
+  </div>
+
+  <!-- arrow between -->
+  <div class="abs" style="left:700px; top:214px; width:40px; height:40px; border-radius:50%; background:#f2c94c; display:flex; align-items:center; justify-content:center; font-family:'Inter Tight'; font-weight:800; font-size:18px; color:#1b1815;">→</div>
+</div>
+<script>
+  const k = Math.min(1, innerWidth / 1440, innerHeight / 900);
+  document.getElementById('stage').style.transform = `scale(${k})`;
+</script>
+</body>
+</html>
