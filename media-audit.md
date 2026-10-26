@@ -4,7 +4,7 @@ Generated 2026-10-26 by `node tools/media-audit.mjs`.
 
 | Check | Count |
 |---|---|
-| Empty image slots ("drop image") | 7 |
+| Empty image slots ("drop image") | 6 |
 | Broken media references | 0 |
 | Images missing alt text | 0 |
 | Images reused on >3 pages | 0 |
@@ -26,12 +26,6 @@ Generated 2026-10-26 by `node tools/media-audit.mjs`.
 |---|---|
 | Outcome | graded, cameras matched |
 | Wedding footage you've never watched? | third row, watching |
-
-### /portfolio/print/ (1)
-
-| Project / section | Image needed |
-|---|---|
-| Textile export catalogue | textile catalogue |
 
 ### /portfolio/ (1)
 
