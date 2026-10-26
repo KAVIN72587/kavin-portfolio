@@ -242,7 +242,7 @@
     document.body.classList.add(p.get('layout') || 'wide');
     // Design canvas is 1200x900 (wide) or 1000x1000 (square); scale to the window.
     const [W, H] = (p.get('layout') === 'square') ? [1000, 1000] : [1200, 900];
-    const k = Math.min(innerWidth / W, innerHeight / H);
+    const k = Math.min(1, innerWidth / W, innerHeight / H);
     document.querySelectorAll('.only-wide, .only-square').forEach(el => {
       el.style.cssText += `position:absolute;left:0;top:0;width:${W}px;height:${H}px;transform:scale(${k});transform-origin:0 0;`;
     });

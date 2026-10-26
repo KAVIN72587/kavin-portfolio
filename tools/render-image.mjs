@@ -28,8 +28,9 @@ const url = pathToFileURL(resolve(page)).href + (layout ? `?layout=${layout}` : 
 execFileSync(chrome, [
   '--headless=new', '--hide-scrollbars', '--disable-gpu', '--no-first-run',
   `--user-data-dir=${join(tmp, 'profile')}`,
-  // Headless window chrome eats some height, so render taller and crop to size below.
-  `--window-size=${w},${Number(h) + 200}`, '--force-device-scale-factor=2',
+  // Headless window chrome eats some width and height, so render larger and crop to size below.
+  // Layouts should draw at 1:1 (never scale up to the window).
+  `--window-size=${Number(w) + 40},${Number(h) + 200}`, '--force-device-scale-factor=2',
   '--virtual-time-budget=5000', `--screenshot=${png}`, url,
 ], { stdio: 'ignore', timeout: 60000 });
 
