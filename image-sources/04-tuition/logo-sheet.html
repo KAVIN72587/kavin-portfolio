@@ -1,0 +1,142 @@
+<!doctype html>
+<!-- Concept: "Padi Tuition Centre" (fictional). Padi / படி = "study" and "step" in Tamil.
+     Logo sheet: primary lockup on a construction grid, then board, notebook and chat display picture.
+     Render: node tools/render-image.mjs image-sources/04-tuition/logo-sheet.html <out.webp> 1000 1000 -->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700;800&family=Noto+Sans+Tamil:wght@600;700&family=IBM+Plex+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1f2a6b;
+    --orange: #f28c28;
+    --sky: #4aa8e8;
+    --paper: #f6f3ec;
+    --ink: #1b1d2a;
+    --line: #dcd6ca;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; background: var(--paper); }
+  #stage { position: absolute; left: 0; top: 0; width: 1000px; height: 1000px; transform-origin: 0 0; overflow: hidden;
+    background: var(--paper); font-family: 'Lexend', sans-serif; color: var(--ink); }
+  .abs { position: absolute; }
+  .mono { font-family: 'IBM Plex Mono', monospace; }
+  .ta { font-family: 'Noto Sans Tamil', sans-serif; font-weight: 700; }
+  .label { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: #8a8478; }
+  .wm { font-weight: 800; letter-spacing: -.04em; color: var(--navy); line-height: .9; }
+  .card { position: absolute; border-radius: 18px; overflow: hidden; }
+  .grid-lines { position: absolute; inset: 0; pointer-events: none; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <!-- Mark: three rising steps + a sun/student dot on the top step -->
+  <symbol id="mark" viewBox="0 0 88 88">
+    <path d="M6 84 V 66 a6 6 0 0 1 6 -6 H 32 V 50 a6 6 0 0 1 6 -6 H 58 V 34 a6 6 0 0 1 6 -6 H 76 a6 6 0 0 1 6 6 V 84 Z" fill="var(--steps, #1f2a6b)"/>
+    <circle cx="70" cy="13" r="10" fill="var(--dot, #f28c28)"/>
+  </symbol>
+</svg>
+
+<div id="stage">
+  <!-- ===== primary lockup on construction grid ===== -->
+  <div class="card" style="left:40px; top:40px; width:920px; height:470px; background:#fff; border:1px solid var(--line);">
+    <div class="abs label" style="left:32px; top:28px;">Primary lockup · construction</div>
+    <svg class="grid-lines" viewBox="0 0 920 470">
+      <g stroke="#cfd6ee" stroke-width="1.2" fill="none">
+        <!-- verticals at step edges: mark at x=110..370 (scale 260/88) -->
+        <line x1="128" y1="60" x2="128" y2="420"/><line x1="204" y1="60" x2="204" y2="420"/>
+        <line x1="281" y1="60" x2="281" y2="420"/><line x1="352" y1="60" x2="352" y2="420"/>
+        <!-- horizontals at step tops + base -->
+        <line x1="70" y1="344" x2="860" y2="344"/><line x1="70" y1="273" x2="420" y2="273"/>
+        <line x1="70" y1="226" x2="420" y2="226"/><line x1="70" y1="179" x2="420" y2="179"/>
+        <circle cx="317" cy="134" r="30"/><circle cx="317" cy="134" r="52"/>
+        <line x1="420" y1="226" x2="860" y2="226"/>
+      </g>
+      <g fill="var(--orange)"><circle cx="70" cy="344" r="5"/><circle cx="860" cy="226" r="5"/></g>
+      <g fill="var(--navy)"><circle cx="128" cy="420" r="5"/></g>
+    </svg>
+    <svg class="abs" style="left:110px; top:96px;" width="260" height="260"><use href="#mark"/></svg>
+    <div class="abs" style="left:420px; top:150px;">
+      <div class="wm" style="font-size:190px;">padi</div>
+    </div>
+    <div class="abs" style="left:428px; top:372px; display:flex; align-items:baseline; gap:18px;">
+      <span style="font-weight:600; font-size:28px; color:var(--orange); letter-spacing:.02em;">tuition centre</span>
+      <span class="ta" style="font-size:30px; color:var(--navy);">படி</span>
+    </div>
+  </div>
+
+  <!-- ===== applications ===== -->
+  <div class="abs label" style="left:42px; top:532px;">One mark, three places</div>
+
+  <!-- board -->
+  <div class="card" style="left:40px; top:560px; width:290px; height:250px; background:#e4ddd0;">
+    <div class="abs" style="left:0; right:0; top:0; bottom:0; background: repeating-linear-gradient(0deg, rgba(0,0,0,.03) 0 1px, transparent 1px 22px);"></div>
+    <div class="abs" style="left:30px; right:30px; top:56px; height:120px; background:var(--navy); border-radius:8px; box-shadow:0 10px 18px rgba(0,0,0,.22); display:flex; align-items:center; gap:14px; padding:0 20px;">
+      <svg width="64" height="64" style="--steps:#fff;"><use href="#mark"/></svg>
+      <div>
+        <div style="font-weight:800; font-size:46px; letter-spacing:-.04em; color:#fff; line-height:.9;">padi</div>
+        <div style="font-size:12px; color:#f6c9a0; margin-top:6px;">tuition centre · <span class="ta">படி</span></div>
+      </div>
+    </div>
+    <div class="abs" style="left:58px; top:176px; width:6px; height:40px; background:#6b6458;"></div>
+    <div class="abs" style="right:58px; top:176px; width:6px; height:40px; background:#6b6458;"></div>
+    <div class="abs label" style="left:18px; bottom:14px; color:#6f685c;">Board</div>
+  </div>
+
+  <!-- notebook -->
+  <div class="card" style="left:355px; top:560px; width:290px; height:250px; background:#e9eef6;">
+    <div class="abs" style="left:72px; top:12px; width:156px; height:192px; background:var(--orange); border-radius:4px 10px 10px 4px; box-shadow:0 10px 18px rgba(0,0,0,.18); transform:rotate(-4deg);">
+      <div class="abs" style="left:-6px; top:10px; bottom:10px; width:12px; background: repeating-linear-gradient(180deg, #2b2b2b 0 4px, transparent 4px 13px);"></div>
+      <svg class="abs" style="left:52px; top:28px; --steps:#fff; --dot:var(--navy);" width="58" height="58"><use href="#mark"/></svg>
+      <div class="abs" style="left:0; right:0; top:92px; text-align:center; font-weight:800; font-size:24px; color:#fff; letter-spacing:-.03em;">padi</div>
+      <div class="abs" style="left:18px; right:18px; top:132px; height:52px; background:#fff; border-radius:6px; padding:8px 10px;">
+        <div class="mono" style="font-size:8px; color:#8a8478; line-height:1.9;">NAME ______________<br>CLASS ____ SUBJ ____</div>
+      </div>
+    </div>
+    <div class="abs label" style="left:18px; bottom:14px; color:#6f7a8c;">Notebook</div>
+  </div>
+
+  <!-- chat display picture -->
+  <div class="card" style="left:670px; top:560px; width:290px; height:250px; background:#dfe9e4;">
+    <div class="abs" style="left:46px; top:14px; width:198px; height:196px; background:#fff; border-radius:22px; box-shadow:0 10px 18px rgba(0,0,0,.14); overflow:hidden;">
+      <div style="height:62px; background:#2f4f46; display:flex; align-items:center; gap:10px; padding:0 14px;">
+        <div style="width:38px; height:38px; border-radius:50%; background:var(--navy); display:flex; align-items:center; justify-content:center;">
+          <svg width="24" height="24" style="--steps:#fff;"><use href="#mark"/></svg>
+        </div>
+        <div>
+          <div style="font-weight:600; font-size:12px; color:#fff;">Padi Tuition</div>
+          <div style="font-size:9px; color:#b9d3c9;">online</div>
+        </div>
+      </div>
+      <div style="padding:12px;">
+        <div style="background:#f1f1ee; border-radius:10px 10px 10px 2px; padding:7px 9px; font-size:10px; width:78%;">Class 10 maths at 6pm today</div>
+        <div style="background:#d9f2df; border-radius:10px 10px 2px 10px; padding:7px 9px; font-size:10px; width:56%; margin:8px 0 0 auto;">Coming 👍</div>
+        <div style="background:#f1f1ee; border-radius:10px 10px 10px 2px; padding:7px 9px; font-size:10px; width:70%; margin-top:8px;">Bring last week's sheet</div>
+      </div>
+    </div>
+    <div class="abs label" style="left:18px; bottom:14px; color:#5f7068;">Chat display picture</div>
+  </div>
+
+  <!-- ===== sizes + colour ===== -->
+  <div class="abs" style="left:40px; top:836px; width:920px; height:124px; border-top:1px solid var(--line); display:flex; align-items:center; gap:34px; padding-top:10px;">
+    <div style="display:flex; align-items:flex-end; gap:22px;">
+      <svg width="72" height="72"><use href="#mark"/></svg>
+      <svg width="40" height="40"><use href="#mark"/></svg>
+      <svg width="24" height="24"><use href="#mark"/></svg>
+      <svg width="16" height="16"><use href="#mark"/></svg>
+    </div>
+    <div class="label" style="line-height:1.8;">Holds at 16px<br>no thin lines</div>
+    <div style="margin-left:auto; display:flex; gap:12px; align-items:center;">
+      <i style="width:44px;height:44px;border-radius:10px;background:var(--navy)"></i>
+      <i style="width:44px;height:44px;border-radius:10px;background:var(--orange)"></i>
+      <i style="width:44px;height:44px;border-radius:10px;background:var(--sky)"></i>
+      <span class="label" style="margin-left:8px;">Padi · logo concept</span>
+    </div>
+  </div>
+</div>
+<script>
+  const k = Math.min(1, innerWidth / 1000, innerHeight / 1000);
+  document.getElementById('stage').style.transform = `scale(${k})`;
+</script>
+</body>
+</html>
