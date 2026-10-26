@@ -1,0 +1,156 @@
+<!doctype html>
+<!-- Concept: Noyyal Weaves (fictional Tiruppur exporter, same client as #1) export catalogue.
+     Fabric photographed and printed so the printed colour matches the cloth: catalogue spread, swatch card, colour-match proof.
+     Photos (Unsplash License, in ./photos, credits in ./photos/CREDITS.md).
+     Render: node tools/render-image.mjs image-sources/11-textile-catalogue/catalogue.html <out.webp> 1600 686 -->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@600&family=IBM+Plex+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root { --navy: #1f2b5c; --gold: #b8893a; --cream: #f6f0e4; --terra: #b5532f; --ink: #24262e; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; background: #000; }
+  #stage { position: absolute; left: 0; top: 0; width: 1600px; height: 686px; transform-origin: 0 0; overflow: hidden; font-family: 'Montserrat', sans-serif; color: var(--ink);
+    background: radial-gradient(ellipse at 30% 20%, #efe8dc, #d9cfbf 80%); }
+  .abs { position: absolute; }
+  .serif { font-family: 'Cormorant Garamond', serif; font-weight: 700; }
+  .script { font-family: 'Great Vibes', cursive; }
+  .mono { font-family: 'IBM Plex Mono', monospace; }
+  .photo { object-fit: cover; display: block; }
+  .page { position: absolute; top: 74px; width: 360px; height: 540px; overflow: hidden; }
+  .lbl { font-size: 9px; letter-spacing: .18em; text-transform: uppercase; color: #6d6a63; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <!-- Noyyal mark from #1: river waves through a woven square -->
+  <symbol id="mark" viewBox="0 0 48 48">
+    <rect x="0" y="0" width="48" height="48" rx="10" fill="currentColor"/>
+    <g fill="none" stroke="var(--mark-fg, #f6f0e4)" stroke-width="3.6" stroke-linecap="round">
+      <path d="M9 16 q 7.5 -6 15 0 t 15 0"/><path d="M9 25 q 7.5 -6 15 0 t 15 0"/><path d="M9 34 q 7.5 -6 15 0 t 15 0"/>
+    </g>
+  </symbol>
+</svg>
+
+<div id="stage">
+  <div class="abs mono" style="left:40px; top:28px; font-size:12px; letter-spacing:.22em; color:#6d6458;">NOYYAL WEAVES · EXPORT CATALOGUE CONCEPT</div>
+  <div class="abs mono" style="right:40px; top:28px; font-size:12px; letter-spacing:.22em; color:#6d6458;">PRINTED COLOUR = CLOTH COLOUR</div>
+
+  <!-- ===== catalogue: cover-style left page ===== -->
+  <div class="page" style="left:40px; background: var(--navy); box-shadow:-8px 16px 30px rgba(0,0,0,.28);">
+    <img class="photo abs" src="photos/towels-blue.jpg" alt="" style="left:0; top:0; width:360px; height:320px; object-position: 50% 40%;">
+    <div class="abs" style="left:0; right:0; top:0; height:320px; background: linear-gradient(180deg, rgba(31,43,92,.55), transparent 45%);"></div>
+    <div class="abs" style="left:26px; top:24px; display:flex; align-items:center; gap:10px; color:#f6f0e4;">
+      <svg width="32" height="32" style="color:#f6f0e4; --mark-fg:#1f2b5c;"><use href="#mark"/></svg>
+      <div><div class="serif" style="font-size:26px; line-height:1;">noyyal</div><div style="font-size:8px; letter-spacing:.32em;">WEAVES · TIRUPPUR</div></div>
+    </div>
+    <div class="abs" style="left:26px; right:26px; top:338px; color: var(--cream); text-align:center;">
+      <div style="font-size:10px; letter-spacing:.3em; color: var(--gold);">EXPORT COLLECTION 2026</div>
+      <div class="serif" style="font-size:38px; line-height:1; margin-top:8px;">Terry &amp; Woven</div>
+      <div style="width:120px; height:1px; background: var(--gold); margin:12px auto;"></div>
+      <div style="font-size:10.5px; letter-spacing:.14em;">BATH · KITCHEN · HOME TEXTILES</div>
+    </div>
+    <div class="abs" style="left:0; right:0; bottom:0; height:78px; background:#172149; display:flex; justify-content:space-around; align-items:center; color: var(--cream); text-align:center;">
+      <div><div class="serif" style="font-size:20px; color: var(--gold);">100%</div><div style="font-size:8px; letter-spacing:.14em;">COMBED COTTON</div></div>
+      <div><div class="serif" style="font-size:20px; color: var(--gold);">480</div><div style="font-size:8px; letter-spacing:.14em;">GSM TERRY</div></div>
+      <div><div class="serif" style="font-size:20px; color: var(--gold);">ΔE&lt;1</div><div style="font-size:8px; letter-spacing:.14em;">COLOUR MATCHED</div></div>
+    </div>
+  </div>
+
+  <!-- ===== catalogue: product page ===== -->
+  <div class="page" style="left:400px; background: var(--cream); padding:24px 24px; box-shadow:8px 16px 30px rgba(0,0,0,.28);">
+    <div class="abs" style="left:0; top:0; bottom:0; width:16px; background: linear-gradient(90deg, rgba(0,0,0,.16), transparent);"></div>
+    <div class="abs" style="right:22px; top:0; width:40px; height:52px; background: var(--navy); color: var(--gold); display:flex; align-items:center; justify-content:center; clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 82%, 0 100%);" ><span class="serif" style="font-size:18px;">02</span></div>
+    <div style="text-align:center;">
+      <div class="serif" style="font-size:32px; color: var(--navy); line-height:1;">TERRY</div>
+      <div class="script" style="font-size:26px; color: var(--gold); line-height:1;">Collection</div>
+    </div>
+    <div style="margin-top:12px; display:flex; flex-direction:column; gap:10px;">
+      <div style="display:flex; height:118px; background:#fff; border:1px solid #e3d9c6;">
+        <img class="photo" src="photos/towels-blue.jpg" alt="" style="width:120px; height:116px; object-position: 50% 70%;">
+        <div style="padding:12px 12px; flex:1;">
+          <div class="serif" style="font-size:15px; color: var(--navy); white-space:nowrap;">ART NO. 28023</div><div style="font-size:10px; font-weight:600; color: var(--terra);">Indigo stripe</div>
+          <div style="font-size:10px; color:#555; margin-top:4px; line-height:1.6;">70×140 cm · 480 GSM · CTN 40<br>35×75 cm · 480 GSM · CTN 80</div>
+          <div style="display:flex; gap:5px; margin-top:6px;"><i style="width:16px;height:16px;background:#2f4a86;"></i><i style="width:16px;height:16px;background:#f3f1ec; border:1px solid #ddd;"></i></div>
+        </div>
+      </div>
+      <div style="display:flex; height:118px; background:#fff; border:1px solid #e3d9c6;">
+        <img class="photo" src="photos/towels-multi.jpg" alt="" style="width:120px; height:116px; object-position: 50% 40%;">
+        <div style="padding:12px 12px; flex:1;">
+          <div class="serif" style="font-size:15px; color: var(--navy); white-space:nowrap;">ART NO. 28024</div><div style="font-size:10px; font-weight:600; color: var(--terra);">Pondy stripe</div>
+          <div style="font-size:10px; color:#555; margin-top:4px; line-height:1.6;">76×152 cm · 420 GSM · CTN 36<br>Beach / pool</div>
+          <div style="display:flex; gap:5px; margin-top:6px;"><i style="width:16px;height:16px;background:#e8572a;"></i><i style="width:16px;height:16px;background:#f2b51b;"></i><i style="width:16px;height:16px;background:#3c9b4a;"></i><i style="width:16px;height:16px;background:#2a7bc0;"></i></div>
+        </div>
+      </div>
+      <div style="display:flex; height:118px; background:#fff; border:1px solid #e3d9c6;">
+        <img class="photo" src="photos/cloth-bluegreen.jpg" alt="" style="width:120px; height:116px;">
+        <div style="padding:12px 12px; flex:1;">
+          <div class="serif" style="font-size:15px; color: var(--navy); white-space:nowrap;">ART NO. 28031</div><div style="font-size:10px; font-weight:600; color: var(--terra);">Kitchen roll</div>
+          <div style="font-size:10px; color:#555; margin-top:4px; line-height:1.6;">50×70 cm · 280 GSM · CTN 120<br>Dobby weave</div>
+          <div style="display:flex; gap:5px; margin-top:6px;"><i style="width:16px;height:16px;background:#2b55b6;"></i><i style="width:16px;height:16px;background:#7fb9a6;"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="abs" style="left:24px; right:24px; bottom:18px; display:flex; justify-content:space-between; font-size:9px; letter-spacing:.14em; color:#8a8170;"><span>NOYYAL WEAVES</span><span>11</span></div>
+  </div>
+
+  <!-- ===== swatch card ===== -->
+  <div class="abs" style="left:800px; top:84px; width:300px; height:520px; background:#fbf8f2; box-shadow: 0 16px 28px rgba(0,0,0,.25); transform: rotate(-2deg); padding:20px 20px;">
+    <div class="abs" style="left:136px; top:-10px; width:28px; height:28px; border-radius:50%; background:#cfc6b6; box-shadow: inset 0 2px 4px rgba(0,0,0,.3);"></div>
+    <div style="display:flex; justify-content:space-between; align-items:baseline;">
+      <div class="serif" style="font-size:24px; color: var(--navy);">Swatch card</div>
+      <div class="mono" style="font-size:10px; color: var(--terra);">SC-26/04</div>
+    </div>
+    <div style="font-size:9.5px; color:#6d6a63; margin-top:2px;">Real cloth, stapled. Printed chip beside each.</div>
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-top:14px;">
+    </div>
+  </div>
+
+  <!-- ===== colour match proof ===== -->
+  <div class="abs" style="left:1130px; top:74px; width:430px; height:540px; overflow:hidden; box-shadow: 0 16px 30px rgba(0,0,0,.28);">
+    <img class="photo" src="photos/cloth-bright.jpg" alt="" style="width:430px; height:540px; object-position: 50% 45%;">
+    <div class="abs" style="left:0; right:0; bottom:0; height:240px; background: linear-gradient(transparent, rgba(23,33,73,.85) 35%, rgba(23,33,73,.95));"></div>
+    <div class="abs" style="left:24px; bottom:24px; right:24px; color: var(--cream);">
+      <div style="font-size:10px; letter-spacing:.3em; color: var(--gold);">PROOFED AGAINST THE CLOTH</div>
+      <div class="serif" style="font-size:30px; line-height:1.05; margin-top:6px;">Shot under D50 daylight.<br>Printed to ΔE under 1.</div>
+    </div>
+  </div>
+  <!-- printed chips laid on the cloth -->
+  <div id="chips"></div>
+  <!-- loom inset -->
+  <div class="abs" style="left:930px; top:548px; width:170px; height:110px; border:5px solid #fbf8f2; box-shadow: 0 10px 18px rgba(0,0,0,.3); transform: rotate(3deg); overflow:hidden;">
+    <img class="photo" src="photos/loom.jpg" alt="" style="width:160px; height:100px; object-position: 60% 50%;">
+  </div>
+</div>
+<script>
+  // swatch card: real cloth crops + printed chip + Lab values
+  const sw = [
+    ['cloth-bright.jpg', '62% 7%', '#d24a24', 'Madder', '48 · 52 · 46'],
+    ['cloth-bright.jpg', '70% 27%', '#efa21c', 'Manjal', '74 · 18 · 72'],
+    ['cloth-bright.jpg', '62% 49%', '#3aa39c', 'Peacock', '60 · -32 · -6'],
+    ['cloth-bluegreen.jpg', '12% 80%', '#2c55b8', 'Royal', '38 · 16 · -58'],
+    ['towels-blue.jpg', '55% 52%', '#3d527f', 'Indigo', '35 · 4 · -28'],
+    ['cloth-bluegreen.jpg', '38% 34%', '#7cb6a2', 'Sea glass', '70 · -24 · 4'],
+  ];
+  const card = document.querySelector('[style*="grid-template-columns: 1fr 1fr; gap:12px"]');
+  card.innerHTML = sw.map(([img, pos, chip, name, lab]) => `
+    <div>
+      <div style="display:flex; height:84px; border:1px solid #e3d9c6;">
+        <div style="width:62%; height:82px; background: url(photos/${img}) ${pos} / 520% auto no-repeat;"></div>
+        <div style="flex:1; background:${chip};"></div>
+      </div>
+      <div style="margin-top:4px;"><div style="font-weight:600; font-size:11px;">${name}</div><div class="mono" style="font-size:8.5px; color:#8a8170;">L*a*b* ${lab}</div></div>
+    </div>`).join('');
+  // printed chips over the cloth photo
+  const chips = [[1176, 120, '#d24a24', '0.6'], [1176, 250, '#efa21c', '0.8'], [1176, 384, '#3aa39c', '0.7']];
+  document.getElementById('chips').innerHTML = chips.map(([x, y, c, de]) => `
+    <div class="abs" style="left:${x}px; top:${y}px; width:92px; background:#fbf8f2; padding:6px 6px 5px; box-shadow:0 6px 12px rgba(0,0,0,.3);">
+      <div style="height:46px; background:${c};"></div>
+      <div class="mono" style="font-size:9px; margin-top:4px; color:#333;">PRINT · ΔE ${de}</div>
+    </div>`).join('');
+  const k = Math.min(1, innerWidth / 1600, innerHeight / 686);
+  document.getElementById('stage').style.transform = `scale(${k})`;
+</script>
+</body>
+</html>
