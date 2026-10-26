@@ -4,22 +4,13 @@ Generated 2026-10-26 by `node tools/media-audit.mjs`.
 
 | Check | Count |
 |---|---|
-| Empty image slots ("drop image") | 15 |
+| Empty image slots ("drop image") | 14 |
 | Broken media references | 0 |
 | Images missing alt text | 0 |
 | Images reused on >3 pages | 0 |
 | Unused files in /assets | 0 |
 
 ## 1. Empty image slots — media to add
-
-### /portfolio/branding/ (4)
-
-| Project / section | Image needed |
-|---|---|
-| Tuition centre | logo sheet |
-| Cloud kitchen | sub-brand system |
-| Chartered accountancy firm | before / after |
-| Gym chain signage | signage rollout |
 
 ### /portfolio/print/ (4)
 
@@ -29,6 +20,14 @@ Generated 2026-10-26 by `node tools/media-audit.mjs`.
 | Auto parts catalogue | catalogue spread |
 | Restaurant menu system | menu |
 | Textile export catalogue | textile catalogue |
+
+### /portfolio/branding/ (3)
+
+| Project / section | Image needed |
+|---|---|
+| Cloud kitchen | sub-brand system |
+| Chartered accountancy firm | before / after |
+| Gym chain signage | signage rollout |
 
 ### /portfolio/web-ui/ (3)
 
