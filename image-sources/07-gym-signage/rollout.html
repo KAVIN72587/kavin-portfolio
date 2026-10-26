@@ -1,0 +1,124 @@
+<!doctype html>
+<!-- Concept: "Irumbu Gym" (fictional chain). Irumbu / இரும்பு = iron.
+     One weight-plate mark, four branch signs at night, each a different width and lighting.
+     Render: node tools/render-image.mjs image-sources/07-gym-signage/rollout.html <out.webp> 1600 686 -->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Noto+Sans+Tamil:wght@800&family=IBM+Plex+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root { --yellow: #ffd400; --red: #e3262f; --ink: #0e0e10; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; background: #000; }
+  #stage { position: absolute; left: 0; top: 0; width: 1600px; height: 686px; transform-origin: 0 0; overflow: hidden;
+    background: #000; display: flex; gap: 8px; font-family: 'Oswald', sans-serif; }
+  .panel { position: relative; height: 100%; overflow: hidden; flex: none; }
+  .abs { position: absolute; }
+  .cap { position: absolute; left: 18px; bottom: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .18em; color: rgba(255,255,255,.75); text-transform: uppercase; }
+  .cap b { color: #fff; font-weight: 500; }
+  .wm { font-weight: 700; text-transform: uppercase; line-height: .9; letter-spacing: .01em; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <!-- Mark: weight plate seen face-on -->
+  <symbol id="plate" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="48" fill="currentColor"/>
+    <circle cx="50" cy="50" r="33" fill="none" stroke="var(--cut, #0e0e10)" stroke-width="5"/>
+    <circle cx="50" cy="50" r="11" fill="var(--cut, #0e0e10)"/>
+    <rect x="46" y="4" width="8" height="12" rx="2" fill="var(--cut, #0e0e10)"/>
+    <rect x="46" y="84" width="8" height="12" rx="2" fill="var(--cut, #0e0e10)"/>
+  </symbol>
+</svg>
+
+<div id="stage">
+  <!-- ===== 1. ANNA NAGAR: square lightbox ===== -->
+  <div class="panel" style="width:336px; background: linear-gradient(180deg, #1d1d22, #2b2b31 60%, #15151a);">
+    <div class="abs" style="left:0; right:0; bottom:0; height:120px; background: linear-gradient(#141418, #0b0b0d);"></div>
+    <div class="abs" style="left:48px; top:150px; width:240px; height:240px; border-radius:50%; background: radial-gradient(circle, rgba(255,212,0,.32), transparent 70%); filter: blur(10px);"></div>
+    <div class="abs" style="left:58px; top:160px; width:220px; height:220px; background:#0b0b0c; border:14px solid var(--yellow);
+         box-shadow: 0 0 28px rgba(255,212,0,.65), 0 0 70px rgba(255,212,0,.25), inset 0 0 18px rgba(255,212,0,.35);
+         display:flex; flex-direction:column; align-items:center; justify-content:center;">
+      <svg width="64" height="64" style="color:var(--yellow); filter: drop-shadow(0 0 8px rgba(255,212,0,.8));"><use href="#plate"/></svg>
+      <div class="wm" style="font-size:50px; color:var(--yellow); margin-top:10px; text-shadow: 0 0 12px rgba(255,212,0,.8);">Irumbu</div>
+      <div class="wm" style="font-size:18px; letter-spacing:.42em; color:var(--yellow); margin-top:6px; text-shadow: 0 0 8px rgba(255,212,0,.7);">Gym</div>
+    </div>
+    <div class="cap"><b>Anna Nagar</b><br>Lightbox · 1.2 m</div>
+  </div>
+
+  <!-- ===== 2. VELACHERY: red projecting blade sign ===== -->
+  <div class="panel" style="width:356px; background: #0a0a0b;">
+    <div class="abs" style="inset:0; background:
+      repeating-linear-gradient(0deg, rgba(227,38,47,.18) 0 1px, transparent 1px 86px),
+      repeating-linear-gradient(90deg, rgba(227,38,47,.14) 0 1px, transparent 1px 110px),
+      linear-gradient(90deg, #2a0d0f, #0a0a0b 70%);"></div>
+    <div class="abs" style="left:0; top:180px; width:24px; height:200px; background:#1a1a1c; box-shadow: 4px 0 10px rgba(0,0,0,.6);"></div>
+    <div class="abs" style="left:24px; top:220px; width:20px; height:120px; background:#2a2a2e;"></div>
+    <div class="abs" style="left:44px; top:190px; width:290px; height:180px; background: linear-gradient(160deg, #ff3b44, #c4141d);
+         border-radius:4px; box-shadow: 0 0 40px rgba(227,38,47,.75), 0 0 110px rgba(227,38,47,.35);
+         display:flex; align-items:center; gap:16px; padding:0 26px;">
+      <svg width="78" height="78" style="color:#fff; --cut:#d81d27;"><use href="#plate"/></svg>
+      <div>
+        <div class="wm" style="font-size:52px; color:#fff;">Irumbu</div>
+        <div class="wm" style="font-size:22px; letter-spacing:.38em; color:#fff; margin-top:6px;">Gym</div>
+      </div>
+    </div>
+    <div class="abs" style="left:44px; top:370px; width:290px; height:22px; background: linear-gradient(#a8101a, #6e0a10); transform: skewX(-30deg); transform-origin: top left;"></div>
+    <div class="cap"><b>Velachery</b><br>Blade sign · double-sided</div>
+  </div>
+
+  <!-- ===== 3. OMR: wide channel letters over a glass front ===== -->
+  <div class="panel" style="width:540px; background: linear-gradient(180deg, #050814 0%, #0b1226 40%, #1a1d26 100%);">
+    <div class="abs mono" style="left:22px; top:20px; font-family:'IBM Plex Mono'; font-size:12px; letter-spacing:.22em; color:rgba(255,255,255,.55);">IRUMBU GYM · SIGNAGE ROLLOUT CONCEPT</div>
+    <div class="abs" style="left:30px; right:30px; top:150px; height:200px; background: linear-gradient(#5d5a55, #4a4743); border-radius:2px;"></div>
+    <div class="abs" style="left:58px; top:192px; display:flex; align-items:center; gap:20px;">
+      <svg width="104" height="104" style="color:var(--yellow); --cut:#4f4c47; filter: drop-shadow(0 0 14px rgba(255,212,0,.85));"><use href="#plate"/></svg>
+      <div>
+        <div class="wm" style="font-size:80px; color:#fff; letter-spacing:.03em; text-shadow: 0 0 10px rgba(255,255,255,.9), 0 0 30px rgba(190,220,255,.55), 3px 4px 0 #2a2826;">Irumbu</div>
+        <div class="wm" style="font-size:30px; color:var(--yellow); letter-spacing:.5em; margin-top:8px; text-shadow: 0 0 10px rgba(255,212,0,.8);">Gym · 24/7</div>
+      </div>
+    </div>
+    <!-- glass storefront -->
+    <div class="abs" style="left:30px; right:30px; top:350px; height:250px; background:#2c2a27;"></div>
+    <div class="abs" style="left:46px; right:46px; top:372px; height:216px; display:grid; grid-template-columns: repeat(5, 1fr); gap:6px;">
+      <i style="background: linear-gradient(180deg, #f2e4c4, #c8b48d); opacity:.9;"></i>
+      <i style="background: linear-gradient(180deg, #f2e4c4, #bfa982); opacity:.9;"></i>
+      <i style="background: linear-gradient(180deg, #fff1d2, #d2bd94);"></i>
+      <i style="background: linear-gradient(180deg, #f2e4c4, #bfa982); opacity:.9;"></i>
+      <i style="background: linear-gradient(180deg, #f2e4c4, #c8b48d); opacity:.9;"></i>
+    </div>
+    <div class="abs" style="left:46px; right:46px; top:470px; height:6px; background: var(--yellow); opacity:.85;"></div>
+    <div class="abs" style="left:242px; top:420px; width:56px; height:56px; color:#1a1a1a;"><svg width="56" height="56" style="color:#1a1a1a; --cut:#e8d6b0;"><use href="#plate"/></svg></div>
+    <div class="abs" style="left:0; right:0; bottom:0; height:86px; background: linear-gradient(#2a2c33, #16171b);"></div>
+    <div class="cap"><b>OMR</b><br>Channel letters · 6 m fascia</div>
+  </div>
+
+  <!-- ===== 4. ADYAR: weight-plate wall sign ===== -->
+  <div class="panel" style="width:344px; background: radial-gradient(ellipse at 50% 8%, #5a4535 0%, #2a2724 45%, #1b1a19 100%);">
+    <div class="abs" style="left:170px; top:0; width:2px; height:40px; background:#111;"></div>
+    <div class="abs" style="left:161px; top:38px; width:20px; height:26px; border-radius:10px 10px 12px 12px; background: radial-gradient(circle at 50% 60%, #fff3c8, #ffb347 60%, #c77a1e); box-shadow: 0 0 30px rgba(255,190,90,.9), 0 0 90px rgba(255,170,70,.45);"></div>
+    <svg class="abs" style="left:32px; top:150px; filter: drop-shadow(0 18px 24px rgba(0,0,0,.6));" width="280" height="280" viewBox="0 0 280 280">
+      <defs>
+        <path id="top" d="M40 140 A 100 100 0 0 1 240 140"/>
+        <path id="bot" d="M30 140 A 110 110 0 0 0 250 140"/>
+        <radialGradient id="rg" cx=".5" cy=".3" r=".8"><stop offset="0" stop-color="#f23a42"/><stop offset="1" stop-color="#a5121a"/></radialGradient>
+      </defs>
+      <circle cx="140" cy="140" r="136" fill="url(#rg)"/>
+      <circle cx="140" cy="140" r="128" fill="none" stroke="#c51b23" stroke-width="3"/>
+      <circle cx="140" cy="140" r="64" fill="#d01f28" stroke="#9e1018" stroke-width="4"/>
+      <circle cx="140" cy="140" r="26" fill="#222"/>
+      <circle cx="140" cy="140" r="26" fill="none" stroke="#9aa0a6" stroke-width="4"/>
+      <text font-family="Oswald" font-weight="700" font-size="34" fill="#1d1d1f" letter-spacing="4"><textPath href="#top" startOffset="50%" text-anchor="middle">IRUMBU GYM</textPath></text>
+      <text font-family="Oswald" font-weight="700" font-size="26" fill="#1d1d1f" letter-spacing="4"><textPath href="#bot" startOffset="50%" text-anchor="middle" dominant-baseline="hanging">NO EXCUSES</textPath></text>
+      <rect x="22" y="137" width="22" height="6" rx="2" fill="#1d1d1f"/><rect x="236" y="137" width="22" height="6" rx="2" fill="#1d1d1f"/>
+    </svg>
+    <div class="abs" style="left:0; right:0; top:470px; text-align:center; font-family:'Noto Sans Tamil'; font-weight:800; font-size:30px; color:#e8e1d6; opacity:.85;">இரும்பு</div>
+    <div class="cap"><b>Adyar</b><br>Wall plate · lit by one bulb</div>
+  </div>
+</div>
+<script>
+  const k = Math.min(1, innerWidth / 1600, innerHeight / 686);
+  document.getElementById('stage').style.transform = `scale(${k})`;
+</script>
+</body>
+</html>
