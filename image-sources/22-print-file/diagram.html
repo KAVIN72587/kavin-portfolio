@@ -1,0 +1,162 @@
+<!doctype html>
+<!-- Blog diagram: print-ready file anatomy + the three files.
+     Render: node tools/render-image.mjs image-sources/22-print-file/diagram.html <out.webp> 1600 900 -->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root {
+    --bg: oklch(0.18 0.01 60);
+    --panel: oklch(0.22 0.01 60);
+    --line: oklch(0.34 0.01 60);
+    --text: oklch(0.96 0.01 85);
+    --muted: oklch(0.70 0.01 85);
+    --accent: oklch(0.88 0.19 100);
+    --bleed: oklch(0.68 0.2 15);
+    --trim: oklch(0.96 0.01 85);
+    --safe: oklch(0.78 0.13 220);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; background: var(--bg); }
+  #stage { position: absolute; left: 0; top: 0; width: 1600px; height: 900px; transform-origin: 0 0;
+    font-family: 'Bricolage Grotesque', sans-serif; color: var(--text); }
+  .mono { font-family: 'IBM Plex Mono', monospace; }
+  .abs { position: absolute; }
+  .eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 20px; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); }
+
+  /* ---- artwork anatomy ---- */
+  .sheet { left: 120px; top: 150px; width: 520px; height: 680px; }   /* bleed edge */
+  .art {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(circle at 78% 22%, oklch(0.82 0.17 75) 0 120px, transparent 121px),
+      linear-gradient(160deg, oklch(0.55 0.19 30), oklch(0.42 0.16 20));
+  }
+  .art .head { position: absolute; left: 70px; top: 300px; right: 70px; color: oklch(0.97 0.02 85);
+    font-weight: 800; font-size: 74px; line-height: .92; letter-spacing: -.035em; }
+  .art .head em { font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; color: oklch(0.9 0.15 90); }
+  .art .foot { position: absolute; left: 70px; bottom: 70px; right: 70px; display: flex; justify-content: space-between;
+    font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: oklch(0.97 0.02 85 / .9); }
+  /* outside trim gets a faint wash so the bleed zone reads as "cut away" */
+  .bleedwash { position: absolute; inset: 0; pointer-events: none;
+    box-shadow: inset 0 0 0 30px oklch(0.18 0.01 60 / .45); }
+  .box { position: absolute; pointer-events: none; }
+  .bleedbox { inset: 0; border: 2px dashed var(--bleed); }
+  .trimbox { inset: 30px; border: 2px solid var(--trim); }
+  .safebox { inset: 54px; border: 2px dotted var(--safe); }
+
+  /* crop marks, sitting outside the bleed */
+  .crop { position: absolute; background: var(--trim); }
+  .crop.h { height: 2px; width: 34px; }
+  .crop.v { width: 2px; height: 34px; }
+
+  /* callouts */
+  .callout { position: absolute; display: flex; align-items: center; gap: 14px; white-space: nowrap; }
+  .callout .ln { height: 2px; }
+  .callout b { font-weight: 800; font-size: 30px; letter-spacing: -.01em; }
+  .callout span.d { display: block; font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: var(--muted); margin-top: 3px; font-size: 20px; }
+
+  /* ---- right column: three files ---- */
+  .files { left: 1010px; top: 150px; width: 500px; }
+  .file { display: flex; gap: 20px; align-items: flex-start; padding: 22px 24px; border: 1px solid var(--line);
+    border-radius: 16px; background: var(--panel); margin-bottom: 18px; }
+  .ico { flex: none; width: 58px; height: 72px; border-radius: 6px; position: relative;
+    display: flex; align-items: flex-end; justify-content: center; padding-bottom: 9px;
+    font-family: 'IBM Plex Mono', monospace; font-weight: 500; font-size: 13px; color: oklch(0.18 0.01 60); }
+  .ico::after { content: ""; position: absolute; right: 0; top: 0; width: 16px; height: 16px;
+    background: linear-gradient(225deg, var(--bg) 50%, oklch(0 0 0 / .25) 50%); }
+  .file h3 { font-weight: 800; font-size: 32px; letter-spacing: -.02em; }
+  .file p { font-family: 'IBM Plex Mono', monospace; font-size: 20px; color: var(--muted); margin-top: 6px; line-height: 1.5; }
+  .file .tags { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+  .file .tags i { font-style: normal; font-family: 'IBM Plex Mono', monospace; font-size: 16px; letter-spacing: .06em;
+    text-transform: uppercase; padding: 4px 9px; border-radius: 999px; border: 1px solid var(--line); color: var(--text); }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div class="abs eyebrow" style="left:120px; top:66px;">Anatomy of a print-ready file</div>
+  <div class="abs eyebrow" style="left:1010px; top:66px;">The three files to ask for</div>
+
+  <!-- crop marks: at trim lines, outside the bleed -->
+  <div class="crop h" style="left:72px;  top:179px;"></div>
+  <div class="crop v" style="left:149px; top:102px;"></div>
+  <div class="crop h" style="left:654px; top:179px;"></div>
+  <div class="crop v" style="left:609px; top:102px;"></div>
+  <div class="crop h" style="left:72px;  top:799px;"></div>
+  <div class="crop v" style="left:149px; top:844px;"></div>
+  <div class="crop h" style="left:654px; top:799px;"></div>
+  <div class="crop v" style="left:609px; top:844px;"></div>
+
+  <div class="abs sheet">
+    <div class="art">
+      <div class="head">Grand<br><em>opening</em><br>this Friday</div>
+      <div class="foot"><span>T. Nagar</span><span>10am – 9pm</span></div>
+    </div>
+    <div class="bleedwash"></div>
+    <div class="box bleedbox"></div>
+    <div class="box trimbox"></div>
+    <div class="box safebox"></div>
+  </div>
+
+  <!-- callouts -->
+  <div class="callout" style="left:642px; top:230px;">
+    <div class="ln" style="width:70px; background:var(--bleed)"></div>
+    <div><b style="color:var(--bleed)">Bleed · 3mm</b><span class="d">Runs past the edge</span></div>
+  </div>
+  <div class="callout" style="left:612px; top:430px;">
+    <div class="ln" style="width:100px; background:var(--trim)"></div>
+    <div><b>Trim line</b><span class="d">Where it is cut</span></div>
+  </div>
+  <div class="callout" style="left:588px; top:630px;">
+    <div class="ln" style="width:124px; background:var(--safe)"></div>
+    <div><b style="color:var(--safe)">Safe area</b><span class="d">Keep text inside</span></div>
+  </div>
+  <div class="callout" style="left:700px; top:770px;">
+    <div class="ln" style="width:30px; background:var(--trim)"></div>
+    <div><b>Crop marks</b><span class="d">Guide the cutter</span></div>
+  </div>
+
+  <!-- RGB vs CMYK -->
+  <div class="abs" style="left:1010px; top:690px; width:500px;">
+    <div class="eyebrow" style="margin-bottom:14px;">Same blue, two systems</div>
+    <div style="display:flex; gap:14px;">
+      <div style="flex:1;"><div style="height:74px; border-radius:12px; background:oklch(0.62 0.24 262);"></div><div class="mono" style="font-size:19px; color:var(--muted); margin-top:8px;">Screen · RGB</div></div>
+      <div style="flex:1;"><div style="height:74px; border-radius:12px; background:oklch(0.52 0.12 255);"></div><div class="mono" style="font-size:19px; color:var(--muted); margin-top:8px;">Paper · CMYK</div></div>
+    </div>
+  </div>
+
+  <!-- three files -->
+  <div class="abs files">
+    <div class="file">
+      <div class="ico" style="background:var(--bleed)">PDF</div>
+      <div>
+        <h3>For the press</h3>
+        <p>Print-ready PDF</p>
+        <div class="tags"><i>CMYK</i><i>3mm bleed</i><i>Crop marks</i></div>
+      </div>
+    </div>
+    <div class="file">
+      <div class="ico" style="background:var(--accent)">AI</div>
+      <div>
+        <h3>For changes</h3>
+        <p>Editable source file</p>
+        <div class="tags"><i>Layered</i><i>Fonts outlined</i></div>
+      </div>
+    </div>
+    <div class="file">
+      <div class="ico" style="background:var(--safe)">JPG</div>
+      <div>
+        <h3>For WhatsApp</h3>
+        <p>Screen-friendly export</p>
+        <div class="tags"><i>sRGB</i><i>No bleed</i><i>Small file</i></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  const k = Math.min(innerWidth / 1600, innerHeight / 900);
+  document.getElementById('stage').style.transform = `scale(${k})`;
+</script>
+</body>
+</html>

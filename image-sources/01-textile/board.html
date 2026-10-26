@@ -1,0 +1,251 @@
+<!doctype html>
+<!-- Concept identity board for "Noyyal Weaves" (fictional Tiruppur exporter).
+     Render: node tools/render-image.mjs image-sources/01-textile/board.html <out.webp> <w> <h> [layout]
+     layout = "wide" (4:3 branding tile) or "square" (1:1 main portfolio tile) -->
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Archivo:wght@500;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root {
+    --indigo: #1f2b5c;
+    --indigo-2: #2c3b78;
+    --cotton: #efe6d3;
+    --cotton-2: #e4d8c0;
+    --madder: #b5432a;
+    --turmeric: #e3a427;
+    --ink: #191612;
+    --bg: #1b1815;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; }
+  body {
+    background:
+      radial-gradient(ellipse at 30% 20%, #2a2520 0%, transparent 60%),
+      repeating-linear-gradient(0deg, rgba(255,255,255,.018) 0 1px, transparent 1px 3px),
+      repeating-linear-gradient(90deg, rgba(0,0,0,.08) 0 1px, transparent 1px 3px),
+      var(--bg);
+    font-family: 'Archivo', sans-serif;
+    position: relative;
+  }
+  .abs { position: absolute; }
+  .shadow { box-shadow: 0 1px 1px rgba(0,0,0,.25), 0 10px 24px rgba(0,0,0,.35), 0 30px 60px rgba(0,0,0,.25); }
+
+  /* ---- mark ---- */
+  .wordmark { display: flex; align-items: center; gap: 0.32em; color: var(--indigo); }
+  .wordmark svg { width: 1.05em; height: 1.05em; flex: none; }
+  .wordmark b { font-family: 'Fraunces', serif; font-weight: 600; letter-spacing: -0.03em; line-height: 1; }
+
+  /* ---- woven texture shared by labels ---- */
+  .weave::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background:
+      repeating-linear-gradient(0deg, rgba(255,255,255,.07) 0 1px, transparent 1px 2.5px),
+      repeating-linear-gradient(90deg, rgba(0,0,0,.12) 0 1px, transparent 1px 2.5px);
+    mix-blend-mode: overlay;
+  }
+
+  /* ---- woven labels (50 x 60 proportion, folded ends) ---- */
+  .label {
+    width: 200px; height: 240px; position: absolute;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+  }
+  .label::before {               /* fold-under ends */
+    content: ""; position: absolute; left: 0; right: 0; top: 0; bottom: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,.28) 0 14px, transparent 14px calc(100% - 14px), rgba(0,0,0,.28) calc(100% - 14px));
+    pointer-events: none;
+  }
+  .label .sub { font-family: 'IBM Plex Mono', monospace; font-size: 9px; letter-spacing: .22em; text-transform: uppercase; }
+  .label .name { font-weight: 900; font-size: 46px; letter-spacing: -0.02em; line-height: 1; margin: 10px 0 8px; }
+  .label .rule { width: 60%; height: 2px; margin: 8px 0; }
+
+  .kora { background: var(--cotton); color: var(--ink); }
+  .kora .name { font-family: 'Fraunces', serif; font-weight: 600; font-size: 50px; color: #3c5a3a; }
+  .kora .rule { background: #3c5a3a; }
+  .thari { background: var(--indigo); color: var(--cotton); }
+  .thari .name { letter-spacing: .08em; font-size: 40px; }
+  .thari .rule { background: var(--turmeric); }
+  .chinna { background: var(--turmeric); color: var(--indigo); }
+  .chinna .name { font-size: 44px; }
+  .chinna .rule { background: var(--madder); }
+  .label .tiny-mark { width: 22px; height: 22px; }
+
+  /* ---- madras check ---- */
+  .madras {
+    background:
+      repeating-linear-gradient(90deg, rgba(181,67,42,.55) 0 10px, transparent 10px 16px, rgba(227,164,39,.55) 16px 20px, transparent 20px 34px, rgba(31,43,92,.6) 34px 46px, transparent 46px 56px),
+      repeating-linear-gradient(0deg, rgba(181,67,42,.55) 0 10px, transparent 10px 16px, rgba(227,164,39,.55) 16px 20px, transparent 20px 34px, rgba(31,43,92,.6) 34px 46px, transparent 46px 56px),
+      var(--cotton);
+  }
+
+  /* ---- letterhead ---- */
+  .letter { width: 330px; height: 467px; background: #f6f1e6; overflow: hidden; }
+  .letter .band { position: absolute; left: 0; top: 0; bottom: 0; width: 58px; }
+  .letter .body { position: absolute; left: 84px; right: 28px; top: 34px; }
+  .letter .meta { font-family: 'IBM Plex Mono', monospace; font-size: 6.5px; line-height: 1.6; color: #6b6458; }
+  .letter .lines span { display: block; height: 3px; background: #ddd5c5; margin: 0 0 8px; border-radius: 2px; }
+
+  /* ---- business cards ---- */
+  .card { width: 252px; height: 144px; border-radius: 3px; overflow: hidden; }
+  .card .tag {
+    position: absolute; left: 50%; top: 0; transform: translateX(-50%);
+    width: 96px; padding: 16px 0 14px; background: var(--indigo); color: var(--cotton);
+    display: flex; flex-direction: column; align-items: center; gap: 4px;
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 50% 100%, 0 82%);
+  }
+  .card .tag b { font-family: 'Fraunces', serif; font-weight: 600; font-size: 20px; letter-spacing: -.02em; }
+  .card .tag i { font-style: normal; font-family: 'IBM Plex Mono', monospace; font-size: 6px; letter-spacing: .22em; }
+  .card.back { background: #f6f1e6; padding: 18px 20px; }
+  .card.back .who { font-weight: 800; font-size: 13px; color: var(--ink); }
+  .card.back .role { font-family: 'IBM Plex Mono', monospace; font-size: 7px; letter-spacing: .14em; text-transform: uppercase; color: var(--madder); margin-top: 3px; }
+  .card.back .meta { font-family: 'IBM Plex Mono', monospace; font-size: 7px; line-height: 1.7; color: #6b6458; position: absolute; left: 20px; bottom: 16px; }
+  .card.back .strip { position: absolute; right: 0; top: 0; bottom: 0; width: 22px; }
+
+  /* ---- palette ---- */
+  .swatches { display: flex; gap: 10px; }
+  .sw { width: 64px; }
+  .sw i { display: block; height: 64px; border-radius: 4px; }
+  .sw span { display: block; margin-top: 7px; font-family: 'IBM Plex Mono', monospace; font-size: 9px; letter-spacing: .1em; color: #b9b0a2; text-transform: uppercase; }
+
+  .caption { font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: #8d8579; }
+
+  /* layouts */
+  body:not(.wide) .only-wide { display: none; }
+  body:not(.square) .only-square { display: none; }
+</style>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute">
+    <!-- Mark: river waves running through a woven square -->
+    <symbol id="mark" viewBox="0 0 48 48">
+      <rect x="0" y="0" width="48" height="48" rx="10" fill="currentColor"/>
+      <g fill="none" stroke="var(--mark-fg, #efe6d3)" stroke-width="3.6" stroke-linecap="round">
+        <path d="M9 16 q 7.5 -6 15 0 t 15 0"/>
+        <path d="M9 25 q 7.5 -6 15 0 t 15 0"/>
+        <path d="M9 34 q 7.5 -6 15 0 t 15 0"/>
+      </g>
+      <g stroke="currentColor" stroke-width="5">
+        <line x1="16.5" y1="12" x2="16.5" y2="17"/>
+        <line x1="31.5" y1="21" x2="31.5" y2="26"/>
+        <line x1="16.5" y1="30" x2="16.5" y2="35"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <!-- ================= WIDE (4:3) ================= -->
+  <div class="only-wide">
+    <!-- wordmark card -->
+    <div class="abs shadow" style="left:56px; top:60px; width:470px; height:300px; background:var(--cotton); padding:40px 44px;">
+      <div class="wordmark" style="font-size:72px;"><svg><use href="#mark"/></svg><b>noyyal</b></div>
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.34em; color:var(--indigo); margin:16px 0 0 4px;">WEAVES · TIRUPPUR · EST. 1998</div>
+      <div style="position:absolute; left:44px; right:44px; bottom:40px; display:flex; justify-content:space-between; align-items:flex-end;">
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:10px; line-height:1.7; color:#6b6458;">Knit &amp; woven garments<br>for export since 1998</div>
+        <div class="wordmark" style="font-size:30px; color:var(--madder); --mark-fg:#f6f1e6;"><svg><use href="#mark"/></svg></div>
+      </div>
+    </div>
+
+    <!-- palette -->
+    <div class="abs" style="left:56px; top:400px;">
+      <div class="caption" style="margin-bottom:14px;">Colour · from the loom</div>
+      <div class="swatches">
+        <div class="sw"><i style="background:var(--indigo)"></i><span>Indigo</span></div>
+        <div class="sw"><i style="background:var(--cotton)"></i><span>Kora</span></div>
+        <div class="sw"><i style="background:var(--madder)"></i><span>Madder</span></div>
+        <div class="sw"><i style="background:var(--turmeric)"></i><span>Manjal</span></div>
+        <div class="sw"><i class="madras" style="background-size:auto;"></i><span>Check</span></div>
+      </div>
+    </div>
+
+    <!-- labels -->
+    <div class="label weave kora shadow" style="left:600px; top:58px; transform:rotate(-3deg);">
+      <span class="sub">noyyal · organic</span>
+      <span class="name">kora</span>
+      <span class="rule"></span>
+      <span class="sub">100% organic cotton</span>
+    </div>
+    <div class="label weave thari shadow" style="left:810px; top:78px; transform:rotate(2deg);">
+      <span class="sub">the loom line</span>
+      <span class="name">THARI</span>
+      <span class="rule"></span>
+      <span class="sub">woven in tiruppur</span>
+    </div>
+    <div class="label weave chinna shadow" style="left:705px; top:300px; transform:rotate(-1deg); z-index:2;">
+      <span class="sub">noyyal · kids</span>
+      <span class="name">chinna</span>
+      <span class="rule"></span>
+      <span class="sub">soft for small ones</span>
+    </div>
+
+    <!-- letterhead -->
+    <div class="abs letter shadow" style="left:930px; top:350px; transform:rotate(5deg); z-index:1;">
+      <div class="band madras"></div>
+      <div class="body">
+        <div class="wordmark" style="font-size:26px;"><svg><use href="#mark"/></svg><b>noyyal</b></div>
+        <div class="meta" style="margin:14px 0 26px;">Noyyal Weaves Pvt. Ltd.<br>Avinashi Road, Tiruppur 641 603</div>
+        <div class="lines"><span style="width:40%"></span><span style="width:96%; margin-top:20px"></span><span></span><span style="width:88%"></span><span></span><span style="width:70%"></span><span style="width:94%; margin-top:20px"></span><span></span><span style="width:60%"></span></div>
+      </div>
+    </div>
+
+    <!-- business cards -->
+    <div class="abs card madras shadow" style="left:430px; top:560px; transform:rotate(-6deg); z-index:3;">
+      <div class="tag"><b>noyyal</b><i>WEAVES</i></div>
+    </div>
+    <div class="abs card back shadow" style="left:610px; top:640px; transform:rotate(3deg); z-index:4;">
+      <div class="who">Meena Raghavan</div>
+      <div class="role">Export merchandising</div>
+      <div class="meta">Avinashi Road, Tiruppur<br>+91 421 000 0000</div>
+      <div class="strip madras"></div>
+    </div>
+
+    <div class="abs caption" style="left:56px; bottom:44px;">Noyyal Weaves — identity concept</div>
+  </div>
+
+  <!-- ================= SQUARE (1:1) ================= -->
+  <div class="only-square">
+    <div class="abs shadow" style="left:70px; top:120px; width:520px; height:330px; background:var(--cotton); padding:46px 48px;">
+      <div class="wordmark" style="font-size:80px;"><svg><use href="#mark"/></svg><b>noyyal</b></div>
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:13px; letter-spacing:.34em; color:var(--indigo); margin:18px 0 0 4px;">WEAVES · TIRUPPUR</div>
+      <div class="swatches" style="position:absolute; left:48px; bottom:44px; gap:8px;">
+        <i style="width:34px;height:34px;border-radius:3px;background:var(--indigo)"></i>
+        <i style="width:34px;height:34px;border-radius:3px;background:var(--madder)"></i>
+        <i style="width:34px;height:34px;border-radius:3px;background:var(--turmeric)"></i>
+        <i class="madras" style="width:34px;height:34px;border-radius:3px;"></i>
+      </div>
+    </div>
+
+    <div class="label weave thari shadow" style="left:640px; top:150px; transform:rotate(4deg) scale(1.25); transform-origin:top left;">
+      <span class="sub">the loom line</span>
+      <span class="name">THARI</span>
+      <span class="rule"></span>
+      <span class="sub">woven in tiruppur</span>
+    </div>
+    <div class="label weave kora shadow" style="left:130px; top:560px; transform:rotate(-5deg) scale(1.15); transform-origin:top left;">
+      <span class="sub">noyyal · organic</span>
+      <span class="name">kora</span>
+      <span class="rule"></span>
+      <span class="sub">100% organic cotton</span>
+    </div>
+    <div class="label weave chinna shadow" style="left:395px; top:585px; transform:rotate(2deg) scale(1.15); transform-origin:top left; z-index:2;">
+      <span class="sub">noyyal · kids</span>
+      <span class="name">chinna</span>
+      <span class="rule"></span>
+      <span class="sub">soft for small ones</span>
+    </div>
+    <div class="abs card madras shadow" style="left:665px; top:700px; transform:rotate(-8deg); z-index:3;">
+      <div class="tag"><b>noyyal</b><i>WEAVES</i></div>
+    </div>
+  </div>
+
+  <script>
+    const p = new URLSearchParams(location.search);
+    document.body.classList.add(p.get('layout') || 'wide');
+    // Design canvas is 1200x900 (wide) or 1000x1000 (square); scale to the window.
+    const [W, H] = (p.get('layout') === 'square') ? [1000, 1000] : [1200, 900];
+    const k = Math.min(innerWidth / W, innerHeight / H);
+    document.querySelectorAll('.only-wide, .only-square').forEach(el => {
+      el.style.cssText += `position:absolute;left:0;top:0;width:${W}px;height:${H}px;transform:scale(${k});transform-origin:0 0;`;
+    });
+  </script>
+</body>
+</html>
