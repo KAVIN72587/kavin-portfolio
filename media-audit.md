@@ -4,7 +4,7 @@ Generated 2026-10-26 by `node tools/media-audit.mjs`.
 
 | Check | Count |
 |---|---|
-| Empty image slots ("drop image") | 5 |
+| Empty image slots ("drop image") | 4 |
 | Broken media references | 0 |
 | Images missing alt text | 0 |
 | Images reused on >3 pages | 0 |
@@ -19,11 +19,10 @@ Generated 2026-10-26 by `node tools/media-audit.mjs`.
 | Outcome | graded, cameras matched |
 | Wedding footage you've never watched? | third row, watching |
 
-### /portfolio/web-ui/ (2)
+### /portfolio/web-ui/ (1)
 
 | Project / section | Image needed |
 |---|---|
-| Snack brand D2C store | d2c store |
 | Field service app screens | app screen set |
 
 ### /portfolio/ (1)
