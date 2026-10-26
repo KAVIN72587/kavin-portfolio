@@ -59,13 +59,13 @@ Use your real client work for every image here. If a client can't be shown, mock
 |---|---|---|---|
 | 16 ✅ | **Done:** *Kaveri Freight* dashboard concept with Unsplash truck/cargo/driver photos (credits in `image-sources/16-logistics-dashboard/photos/CREDITS.md`), three versions: A coral (placed), B violet glass, C mono + lime. Source: `image-sources/16-logistics-dashboard/dashboard.html` (layouts a/b/c) → `webui-kaveri-dashboard.webp`. Original plan: **Logistics dashboard** | 4:3 | Main shipment dashboard in a laptop or browser frame, with a small inset of the empty or error state (the caption brags about those). |
 | 17 ✅ | **Done:** *Kurum Kurum* (குறும் குறும்) snack store concept with Unsplash snack photos (credits in `image-sources/17-snack-store/photos/CREDITS.md`), three versions: A sunny yellow (placed), B bold red, C fresh green. Source: `image-sources/17-snack-store/store.html` (layouts a/b/c) → `webui-kurum-kurum-store.webp`. Original plan: **Snack brand D2C store** | 4:3 | Phone mockups: product page, subscription box picker and checkout, side by side. Mobile-first is the point. |
-| 18 | **Field service app** | 21:9 | Row of 4–5 phone screens including the offline state. A bright, sunlit background or a hand holding the phone outdoors reinforces "one hand, bright sunlight". |
+| 18 ✅ | **Done:** *CoolKart Service Pro* technician app concept with Unsplash photos (credits in `image-sources/18-field-service/photos/CREDITS.md`), three versions: A bright blue (placed), B forest + gold, C fresh green. Source: `image-sources/18-field-service/app.html` (layouts a/b/c) → `webui-coolkart-field-app.webp`. Original plan: **Field service app** | 21:9 | Row of 4–5 phone screens including the offline state. A bright, sunlit background or a hand holding the phone outdoors reinforces "one hand, bright sunlight". |
 
 ## /portfolio/case-study-wedding-film/ (2)
 
 | # | Spot | Ratio | Concept |
 |---|---|---|---|
-| 19 | Outcome: "graded, cameras matched" | 16:9 | Split-frame still from the film: ungraded and mismatched cameras on the left, final grade on the right. Same moment from two cameras is ideal. |
+| 19 ✅ | **Done:** the case study's own ungraded frame, colour-graded three ways with a palette strip: A teal & tungsten (placed), B soft ivory, C gold in mono. Source: `image-sources/19-wedding-grade/grade.mjs` → `case-study-wedding-film-graded.webp`. Original plan: Outcome: "graded, cameras matched" | 16:9 | Split-frame still from the film: ungraded and mismatched cameras on the left, final grade on the right. Same moment from two cameras is ideal. |
 | 20 | Closing CTA: "third row, watching" | 4:3 | Family watching the finished film on a TV at home, shot from behind (backs of heads, screen glowing). Needs the client's OK if anyone is identifiable. |
 
 ## Blog posts (2)
