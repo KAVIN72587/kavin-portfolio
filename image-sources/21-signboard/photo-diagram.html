@@ -1,0 +1,167 @@
+<!doctype html>
+<!-- Blog header: the same logo on a real laptop screen vs on a real shopfront sign (fictional "Kalai Bakes").
+     Photos (Unsplash License, in ./photos, credits in ./photos/CREDITS.md). Real shop names are cropped or covered.
+     layout = a (neon night) | b (maroon & mustard) | c (red block)
+     Render: node tools/render-image.mjs image-sources/21-signboard/photo-diagram.html <out.webp> 1600 900 <layout> -->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700;800&family=Lobster&family=Baloo+2:wght@600;700;800&family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root { --bg: #0d1220; --ink: #f4f1ea; --muted: #a9adb8; --accent: #ff3b3b; --accent2: #3aa0ff; --pin: #ff3b3b; --card: #161c2e; --line: #26304a;
+          --head: 'Anton', sans-serif; --body: 'Poppins', sans-serif; }
+  body.b { --bg: #2a0d10; --ink: #fbf0e0; --muted: #d8b9a4; --accent: #f2b23a; --accent2: #f2b23a; --pin: #f2b23a; --card: #3a1418; --line: #57232a;
+           --head: 'Lobster', cursive; }
+  body.c { --bg: #121212; --ink: #ffffff; --muted: #b5b5b5; --accent: #c4161c; --accent2: #f5b301; --pin: #f5b301; --card: #1e1e1e; --line: #2e2e2e;
+           --head: 'Bebas Neue', sans-serif; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; background: #000; }
+  #stage { position: absolute; left: 0; top: 0; width: 1600px; height: 900px; transform-origin: 0 0; overflow: hidden; background: var(--bg); color: var(--ink); font-family: var(--body); }
+  .abs { position: absolute; }
+  .eyebrow { position: absolute; top: 30px; font-family: 'IBM Plex Mono', monospace; font-size: 15px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent2); }
+  body.a .eyebrow { color: #7cc2ff; }
+  .panel { position: absolute; top: 66px; border-radius: 18px; overflow: hidden; box-shadow: 0 18px 40px rgba(0,0,0,.45); }
+  .crop { position: absolute; left: 0; top: 0; transform-origin: 0 0; overflow: hidden; }
+  .crop > img.base { position: absolute; display: block; }
+  .pin { position: absolute; width: 40px; height: 40px; border-radius: 50%; background: var(--pin); color: #111; font-family: 'IBM Plex Mono', monospace; font-weight: 500; font-size: 15px;
+         display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 4px rgba(0,0,0,.45); z-index: 5; }
+  body.a .pin { color: #fff; }
+  .legend { position: absolute; left: 40px; right: 40px; top: 704px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  .legend > div { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; display: flex; gap: 14px; }
+  .legend .pin { position: static; flex: none; width: 34px; height: 34px; font-size: 13px; box-shadow: none; }
+  .legend b { display: block; font-size: 22px; font-weight: 700; letter-spacing: -.01em; }
+  .legend p span { display: block; font-size: 15px; color: var(--muted); margin-top: 5px; line-height: 1.4; }
+  body.b .legend b, body.c .legend b { font-family: var(--body); }
+  .spec { position: absolute; left: 40px; top: 582px; width: 640px; height: 96px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; display: flex; align-items: center; gap: 18px; padding: 0 20px; }
+  .spec .sw { width: 38px; height: 38px; border-radius: 8px; box-shadow: inset 0 0 0 1px rgba(255,255,255,.25); }
+  .spec .t { font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: var(--muted); line-height: 1.6; }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script>
+const L = new URLSearchParams(location.search).get('layout') || 'a';
+document.body.className = L;
+
+/* ---- perspective map: element of size w×h onto quad TL,TR,BR,BL ---- */
+function quad(w, h, [[x0,y0],[x1,y1],[x2,y2],[x3,y3]]) {
+  const dx1 = x1 - x2, dx2 = x3 - x2, dx3 = x0 - x1 + x2 - x3, dy1 = y1 - y2, dy2 = y3 - y2, dy3 = y0 - y1 + y2 - y3;
+  const den = dx1 * dy2 - dx2 * dy1, g = (dx3 * dy2 - dx2 * dy3) / den, k = (dx1 * dy3 - dx3 * dy1) / den;
+  const a = x1 - x0 + g * x1, b = x3 - x0 + k * x3, d = y1 - y0 + g * y1, e = y3 - y0 + k * y3;
+  return `matrix3d(${a / w},${d / w},0,${g / w},${b / h},${e / h},0,${k / h},0,0,1,0,${x0},${y0},0,1)`;
+}
+
+/* ---- the logo, per version; screen = crisp file, sign = fabricated ---- */
+const LOGO = {
+  a: (sign) => `
+    <div style="display:flex; align-items:center; gap:26px;">
+      <div style="width:120px; height:120px; border-radius:50%; flex:none; position:relative;
+        background:${sign ? '#ff2a2a' : 'linear-gradient(140deg,#ffb347,#ff3b3b 55%,#c4006b)'};
+        ${sign ? 'box-shadow:0 0 28px 6px rgba(255,40,40,.75), 0 0 70px rgba(255,40,40,.5);' : ''}">
+        <span style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-family:Anton; font-size:78px; color:#fff; padding-top:4px;
+          ${sign ? '-webkit-text-stroke:5px #fff; filter: blur(.6px);' : ''}">K</span></div>
+      <div>
+        <div style="font-family:Anton; font-size:112px; line-height:.88; letter-spacing:.02em; color:${sign ? '#fff' : '#1b1b1f'};
+          ${sign ? '-webkit-text-stroke:7px #fff; text-shadow:0 0 18px rgba(130,190,255,.95), 0 0 46px rgba(60,140,255,.7); filter: blur(.7px);' : ''}">KALAI</div>
+        <div style="height:${sign ? '3px' : '2px'}; margin-top:10px; background:${sign ? 'repeating-linear-gradient(90deg,#ff5050 0 18px,transparent 18px 44px)' : '#ff3b3b'};"></div>
+        <div style="font-family:Poppins; font-weight:500; font-size:15px; letter-spacing:.34em; margin-top:10px; color:${sign ? 'rgba(220,230,255,.55)' : '#555'};
+          ${sign ? 'filter: blur(2.4px);' : ''}">FRESH BAKES · SINCE 1987</div>
+      </div>
+    </div>`,
+  b: (sign) => `
+    <div style="text-align:center;">
+      <div style="width:96px; height:96px; margin:0 auto 6px; border-radius:50%; position:relative;
+        background:${sign ? '#e7a52a' : 'radial-gradient(circle at 35% 30%,#ffd76a,#f2b23a 55%,#b9771a)'};">
+        <span style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-family:Lobster; font-size:60px; color:#5a1218; ${sign ? '-webkit-text-stroke:3px #5a1218;' : ''}">K</span></div>
+      <div style="font-family:Lobster; font-size:88px; line-height:1; color:${sign ? '#f6c25a' : '#f2b23a'}; ${sign ? '-webkit-text-stroke:5px #f6c25a; filter: blur(.5px);' : ''}">Kalai Bakes</div>
+      <div style="height:2px; width:62%; margin:8px auto 0; background:${sign ? 'repeating-linear-gradient(90deg,#f6c25a 0 14px,transparent 14px 36px)' : '#f2b23a'};"></div>
+      <div style="font-family:Poppins; font-size:13px; letter-spacing:.32em; margin-top:8px; color:${sign ? 'rgba(251,240,224,.45)' : '#fbf0e0'}; ${sign ? 'filter: blur(2.2px);' : ''}">FRESH BAKES · SINCE 1987</div>
+    </div>`,
+  c: (sign) => `
+    <div style="display:flex; align-items:center; gap:22px;">
+      <div style="width:116px; height:116px; border-radius:22px; flex:none; position:relative; transform:rotate(-6deg);
+        background:${sign ? '#f5b301' : 'linear-gradient(150deg,#ffd84d,#f5b301 50%,#e07a00)'};">
+        <span style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-family:'Baloo 2'; font-weight:800; font-size:84px; color:#121212; padding-top:10px; ${sign ? '-webkit-text-stroke:4px #121212;' : ''}">K</span></div>
+      <div>
+        <div style="font-family:'Baloo 2'; font-weight:800; font-size:110px; line-height:.8; color:#fff; ${sign ? '-webkit-text-stroke:6px #fff; filter: blur(.5px);' : ''}">Kalai</div>
+        <div style="font-family:'Bebas Neue'; font-size:46px; letter-spacing:.24em; color:#f5b301; margin-top:6px; ${sign ? '-webkit-text-stroke:2.5px #f5b301;' : ''}">BAKES</div>
+        <div style="height:2px; width:86%; margin:4px 0 6px; background:${sign ? 'repeating-linear-gradient(90deg,#f5b301 0 14px,transparent 14px 36px)' : '#f5b301'};"></div>
+        <div style="font-family:Poppins; font-size:13px; letter-spacing:.3em; margin-top:2px; color:${sign ? 'rgba(255,255,255,.45)' : '#fff'}; ${sign ? 'filter: blur(2.2px);' : ''}">FRESH BAKES · SINCE 1987</div>
+      </div>
+    </div>`,
+};
+
+/* ---- screen side: real laptop photo, logo mapped onto its display ---- */
+const SCREEN_BG = { a: '#ffffff', b: '#5a1218', c: '#c4161c' };
+const screenSide = `
+  <div class="eyebrow" style="left:40px;">On screen · the file you approved</div>
+  <div class="panel" style="left:40px; width:640px; height:500px;">
+    <div class="crop" style="width:1150px; height:900px; transform:scale(${640 / 1150});">
+      <img class="base" src="photos/laptop-white.jpg" alt="" style="left:-450px; top:0; width:1600px; height:900px;">
+      <div class="abs" style="left:0; top:0; width:1000px; height:620px; background:${SCREEN_BG[L]}; transform-origin:0 0;
+        transform:${quad(1000, 620, [[810-450,142],[1430-450,136],[1298-450,622],[744-450,485]])};
+        display:flex; align-items:center; justify-content:center; overflow:hidden;">
+        <div style="transform:scale(1.15);">${LOGO[L](false)}</div>
+        <div class="abs" style="left:22px; top:16px; font-family:'IBM Plex Mono'; font-size:18px; color:${L==='a' ? '#999' : 'rgba(255,255,255,.55)'};">kalai-logo-final-v3.png · 100%</div>
+      </div>
+      <div class="abs" style="left:0; top:0; width:1150px; height:900px; background:linear-gradient(115deg, transparent 52%, rgba(255,255,255,.10) 60%, transparent 68%); pointer-events:none;"></div>
+    </div>
+  </div>
+  <div class="spec">
+    ${({a:['#ffb347','#ff3b3b','#c4006b','#1b1b1f'], b:['#ffd76a','#f2b23a','#b9771a','#5a1218'], c:['#ffd84d','#f5b301','#e07a00','#c4161c']})[L].map(c => `<i class="sw" style="background:${c};"></i>`).join('')}
+    <div class="t">Screen file · RGB gradient<br>0.6 pt underline · 9 pt tagline</div>
+  </div>`;
+
+/* ---- sign side: real shopfront photo with the fabricated sign ---- */
+const SIGN = {
+  a: { photo: 'store-night-2.jpg', pw: 1600, ph: 1067, cx: 360, cy: 160, cw: 900, scale: 840 / 900,
+       sign: `<div class="abs" style="left:540px; top:200px; width:470px; height:230px; background:#0a0d1a; border:5px solid #2b3550;
+                box-shadow: 0 0 0 3px #3aa0ff, 0 0 30px 6px rgba(58,160,255,.55), 0 20px 30px rgba(0,0,0,.6); display:flex; align-items:center; justify-content:center;">
+                <div style="transform:scale(.62);">${LOGO.a(true)}</div></div>
+              <div class="abs" style="left:530px; top:430px; width:490px; height:40px; background:radial-gradient(ellipse at 50% 0, rgba(80,150,255,.35), transparent 70%);"></div>`,
+       pins: [['01', 950, 318], ['02', 885, 222], ['03', 590, 252], ['07', 780, 372]] },
+  b: { photo: 'store-plants.jpg', pw: 1600, ph: 2133, cx: 0, cy: 0, cw: 1380, scale: 840 / 1380,
+       sign: `<div class="abs" style="left:470px; top:40px; width:560px; height:330px; background:linear-gradient(#6a161d,#4c0e14); border-bottom:10px solid #f2b23a;
+                box-shadow:0 18px 30px rgba(0,0,0,.45); display:flex; align-items:center; justify-content:center;">
+                <div style="transform:scale(.82);">${LOGO.b(true)}</div></div>
+              <div class="abs" style="left:1050px; top:300px; width:150px; height:22px; background:#2a2a2a; border-radius:4px;"></div>
+              <div class="abs" style="left:1060px; top:270px; width:22px; height:80px; background:#2a2a2a; border-radius:4px;"></div>
+              <div class="abs" style="left:1110px; top:322px; width:280px; height:280px; border-radius:50%; background:#5a1218; border:12px solid #2b2b2b;
+                box-shadow:0 20px 30px rgba(0,0,0,.45); display:flex; align-items:center; justify-content:center;">
+                <div style="transform:scale(.4); white-space:nowrap;">${LOGO.b(true)}</div></div>`,
+       pins: [['01', 520, 250], ['02', 940, 172], ['03', 822, 92], ['07', 720, 296]] },
+  c: { photo: 'store-lantern.jpg', pw: 1600, ph: 1067, cx: 50, cy: 0, cw: 1500, scale: 840 / 1500,
+       sign: `<div class="abs" style="left:60px; top:30px; width:1480px; height:230px; background:#c4161c; border-bottom:14px solid #121212;
+                box-shadow:0 14px 26px rgba(0,0,0,.4); display:flex; align-items:center; justify-content:center; gap:60px;">
+                <div style="transform:scale(.78);">${LOGO.c(true)}</div>
+                <div style="font-family:'Bebas Neue'; font-size:70px; color:#fff; letter-spacing:.04em; -webkit-text-stroke:2px #fff;">OVEN-FRESH DAILY</div></div>
+              <div class="abs" style="left:60px; top:274px; width:1480px; height:330px; backdrop-filter: blur(9px) saturate(1.1); -webkit-backdrop-filter: blur(9px);"></div>`,
+       pins: [['01', 770, 166], ['02', 735, 40], ['03', 330, 100], ['07', 610, 214]] },
+};
+const S = SIGN[L];
+const ch = 600 / S.scale;
+const signSide = `
+  <div class="eyebrow" style="left:720px;">On the shopfront · twenty feet away</div>
+  <div class="panel" style="left:720px; width:840px; height:600px;">
+    <div class="crop" style="width:${S.cw}px; height:${ch}px; transform:scale(${S.scale});">
+      <img class="base" src="photos/${S.photo}" alt="" style="left:${-S.cx}px; top:${-S.cy}px; width:${S.pw}px; height:${S.ph}px;">
+      <div class="abs" style="left:${-S.cx}px; top:${-S.cy}px; width:${S.pw}px; height:${S.ph}px;">${S.sign}</div>
+      ${S.pins.map(([n, x, y]) => `<div class="pin" style="left:${x - S.cx}px; top:${y - S.cy}px; transform:scale(${1 / S.scale}); transform-origin:0 0;">${n}</div>`).join('')}
+    </div>
+  </div>`;
+
+const legend = `
+  <div class="legend">
+    ${[['01','Hairlines peel off','The fine underline is too thin to cut or stick.'],
+       ['02','Gaps close up','Paint, edges and glow fatten every letter.'],
+       ['03','Gradients go flat','Vinyl and acrylic are one colour each.'],
+       ['07','Taglines smear','Small text turns to a blur at distance.']].map(([n,b,s]) => `
+      <div><span class="pin">${n}</span><p><b>${b}</b><span>${s}</span></p></div>`).join('')}
+  </div>`;
+
+const stage = document.getElementById('stage');
+stage.innerHTML = screenSide + signSide + legend;
+stage.style.transform = `scale(${Math.min(1, innerWidth / 1600, innerHeight / 900)})`;
+</script>
+</body>
+</html>

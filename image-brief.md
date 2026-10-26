@@ -72,7 +72,7 @@ Use your real client work for every image here. If a client can't be shown, mock
 
 | # | Post | Ratio | Concept |
 |---|---|---|---|
-| 21 ✅ | **Done:** diagram with fictional "Kalai" logo, `image-sources/21-signboard/diagram.html` → `blog-logo-screen-vs-sign.webp`. Post: **Why your logo looks wrong on the signboard** | 16:9 | Side by side: the logo file on a laptop screen next to a photo of the same logo on a fabricated sign, showing thin strokes lost or colour shifted. Your own example; a simple diagram also works. |
+| 21 ✅ | **Done (photo version):** real laptop and shopfront photos (credits in `image-sources/21-signboard/photos/CREDITS.md`), three versions: A neon night (placed), B maroon & mustard, C red block. Source: `image-sources/21-signboard/photo-diagram.html` → `blog-logo-screen-vs-sign-photo.webp`. Replaces the earlier drawn diagram (`diagram.html`). Post: **Why your logo looks wrong on the signboard** | 16:9 | Side by side: the logo file on a laptop screen next to a photo of the same logo on a fabricated sign, showing thin strokes lost or colour shifted. Your own example; a simple diagram also works. |
 | 22 ✅ | **Done:** `image-sources/22-print-file/diagram.html` → `blog-print-file-anatomy.webp`. Post: **CMYK, bleed and the three files every printer wants** | 16:9 | Print-ready artwork with the bleed area shaded and crop marks visible, with labels for "bleed", "trim" and "safe area". A clean annotated diagram is better than a photo here. |
 
 ---
