@@ -1,10 +1,10 @@
 # Media audit
 
-Generated 2026-10-23 by `node tools/media-audit.mjs`.
+Generated 2026-10-26 by `node tools/media-audit.mjs`.
 
 | Check | Count |
 |---|---|
-| Empty image slots ("drop image") | 22 |
+| Empty image slots ("drop image") | 18 |
 | Broken media references | 0 |
 | Images missing alt text | 0 |
 | Images reused on >3 pages | 0 |
@@ -12,11 +12,10 @@ Generated 2026-10-23 by `node tools/media-audit.mjs`.
 
 ## 1. Empty image slots — media to add
 
-### /portfolio/branding/ (7)
+### /portfolio/branding/ (6)
 
 | Project / section | Image needed |
 |---|---|
-| Textile exporter identity | identity board |
 | Paediatric clinic | clinic identity |
 | Auto parts distributor | shutter signage |
 | Tuition centre | logo sheet |
@@ -33,15 +32,6 @@ Generated 2026-10-23 by `node tools/media-audit.mjs`.
 | Restaurant menu system | menu |
 | Textile export catalogue | textile catalogue |
 
-### /portfolio/ (4)
-
-| Project / section | Image needed |
-|---|---|
-| Textile identity | identity board |
-| Restaurant reels | reel frames |
-| Festival campaign | poster set |
-| Clinic identity | signage mockup |
-
 ### /portfolio/web-ui/ (3)
 
 | Project / section | Image needed |
@@ -50,24 +40,20 @@ Generated 2026-10-23 by `node tools/media-audit.mjs`.
 | Snack brand D2C store | d2c store |
 | Field service app screens | app screen set |
 
+### /portfolio/ (3)
+
+| Project / section | Image needed |
+|---|---|
+| Restaurant reels | reel frames |
+| Diwali campaign | festival campaign |
+| Clinic identity | signage mockup |
+
 ### /portfolio/case-study-wedding-film/ (2)
 
 | Project / section | Image needed |
 |---|---|
 | Outcome | graded, cameras matched |
 | Wedding footage you've never watched? | third row, watching |
-
-### /blog/logo-signboard-problems/ (1)
-
-| Project / section | Image needed |
-|---|---|
-| Thin strokes disappear | screen file vs fabricated sign |
-
-### /blog/print-file-basics/ (1)
-
-| Project / section | Image needed |
-|---|---|
-| CMYK, not RGB | print-ready file with bleed and crop marks |
 
 ## 2. Broken media references
 

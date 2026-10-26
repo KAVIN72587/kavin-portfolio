@@ -27,7 +27,7 @@ Use your real client work for every image here. If a client can't be shown, mock
 
 | # | Project | Ratio | Concept |
 |---|---|---|---|
-| 1 | **Textile exporter identity** (Tiruppur, 3 sub-brands) | 4:3 | Identity board flat-lay: wordmark on top, the three sub-brand woven labels laid out below, letterhead and business card at the edge. Real woven labels if possible; fabric texture sells it. *Also used on /portfolio/ at 1:1.* |
+| 1 ✅ | **Done:** original *Noyyal Weaves* concept, tile retitled "(concept)". Source: `image-sources/01-textile/board.html` → `branding-noyyal-identity.webp`. Original plan: **Textile exporter identity** (Tiruppur, 3 sub-brands) | 4:3 | Identity board flat-lay: wordmark on top, the three sub-brand woven labels laid out below, letterhead and business card at the edge. Real woven labels if possible; fabric texture sells it. *Also used on /portfolio/ at 1:1.* |
 | 2 | **Paediatric clinic** (Adyar) | 4:3 | Calm mark on clinic signage or reception wall, with appointment card in front. Soft, friendly light; no children's faces needed. *Also used on /portfolio/ at 16:9.* |
 | 3 | **Auto parts distributor** | 1:1 | Bilingual (Tamil + English) wordmark on a rolling shutter: a photo of the real sign, or a vinyl-cut mockup at shutter width. Show the full sign width so "built for shutter width" reads. |
 | 4 | **Tuition centre** | 1:1 | Logo sheet: the mark at three sizes, on a board, a notebook cover and a round WhatsApp display picture. Grid layout. |
@@ -48,7 +48,7 @@ Use your real client work for every image here. If a client can't be shown, mock
 
 | # | Project | Ratio | Concept |
 |---|---|---|---|
-| 12 | **Textile identity** | 1:1 | Square crop of image #1, centred on the wordmark and one woven label. |
+| 12 ✅ | **Textile identity** | 1:1 | **Done:** square layout of the same board → `portfolio-noyyal-identity.webp`. |
 | 13 | **Restaurant reels** (T. Nagar, 12 a month) | 16:10 | Three or four vertical reel frames side by side (9:16 phone frames) on a dark background, showing the dish shots and on-screen text style. |
 | 14 | **Diwali campaign** (2025) | 1:1 | Same image as #8. Both tiles are square, so no second crop is needed. |
 | 15 | **Clinic identity** | 16:9 | Wide crop of image #2, signage mockup with room around it. |
@@ -72,8 +72,8 @@ Use your real client work for every image here. If a client can't be shown, mock
 
 | # | Post | Ratio | Concept |
 |---|---|---|---|
-| 21 | **Why your logo looks wrong on the signboard** | 16:9 | Side by side: the logo file on a laptop screen next to a photo of the same logo on a fabricated sign, showing thin strokes lost or colour shifted. Your own example; a simple diagram also works. |
-| 22 | **CMYK, bleed and the three files every printer wants** | 16:9 | Print-ready artwork with the bleed area shaded and crop marks visible, with labels for "bleed", "trim" and "safe area". A clean annotated diagram is better than a photo here. |
+| 21 ✅ | **Done:** diagram with fictional "Kalai" logo, `image-sources/21-signboard/diagram.html` → `blog-logo-screen-vs-sign.webp`. Post: **Why your logo looks wrong on the signboard** | 16:9 | Side by side: the logo file on a laptop screen next to a photo of the same logo on a fabricated sign, showing thin strokes lost or colour shifted. Your own example; a simple diagram also works. |
+| 22 ✅ | **Done:** `image-sources/22-print-file/diagram.html` → `blog-print-file-anatomy.webp`. Post: **CMYK, bleed and the three files every printer wants** | 16:9 | Print-ready artwork with the bleed area shaded and crop marks visible, with labels for "bleed", "trim" and "safe area". A clean annotated diagram is better than a photo here. |
 
 ---
 
