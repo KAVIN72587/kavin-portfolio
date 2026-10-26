@@ -39,7 +39,7 @@ Use your real client work for every image here. If a client can't be shown, mock
 
 | # | Project | Ratio | Concept |
 |---|---|---|---|
-| 8 | **Diwali retail campaign** (Tamil + English) | 1:1 | Campaign set: hoarding, standee, window poster and handout arranged together so the one offer reads across all four. Warm, festive, no clutter. |
+| 8 ✅ | **Done:** original *Ponni Silks* Deepavali concept (kolam magenta/teal/marigold, Coiny + Kumar One), tile retitled "(concept)". Source: `image-sources/08-diwali-campaign/campaign.html` → `print-ponni-deepavali.webp`. Original plan: **Diwali retail campaign** (Tamil + English) | 1:1 | Campaign set: hoarding, standee, window poster and handout arranged together so the one offer reads across all four. Warm, festive, no clutter. |
 | 9 | **Auto parts catalogue** (24 pp + price insert) | 16:10 | Open spread showing code and dimension tables, with the separate price insert pulled half out. |
 | 10 | **Restaurant menu system** | 16:10 | Menu open on a restaurant table with one table card beside it. Real table and lighting beat a flat mockup. |
 | 11 | **Textile export catalogue** | 21:9 | Long banner: catalogue spread on the left, the real fabric swatches beside it to show the printed colour matches the cloth. Daylight-balanced light is essential. |
@@ -50,7 +50,7 @@ Use your real client work for every image here. If a client can't be shown, mock
 |---|---|---|---|
 | 12 ✅ | **Textile identity** | 1:1 | **Done:** square layout of the same board → `portfolio-noyyal-identity.webp`. |
 | 13 | **Restaurant reels** (T. Nagar, 12 a month) | 16:10 | Three or four vertical reel frames side by side (9:16 phone frames) on a dark background, showing the dish shots and on-screen text style. |
-| 14 | **Diwali campaign** (2025) | 1:1 | Same image as #8. Both tiles are square, so no second crop is needed. |
+| 14 ✅ | **Diwali campaign** | 1:1 | **Done:** same file as #8 → `print-ponni-deepavali.webp`. |
 | 15 ✅ | **Clinic identity** | 16:9 | **Done:** reception-wall signage scene → `portfolio-chellam-clinic.webp`. |
 
 ## /portfolio/web-ui/ (3)

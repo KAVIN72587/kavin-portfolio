@@ -4,7 +4,7 @@ Generated 2026-10-26 by `node tools/media-audit.mjs`.
 
 | Check | Count |
 |---|---|
-| Empty image slots ("drop image") | 11 |
+| Empty image slots ("drop image") | 9 |
 | Broken media references | 0 |
 | Images missing alt text | 0 |
 | Images reused on >3 pages | 0 |
@@ -12,11 +12,10 @@ Generated 2026-10-26 by `node tools/media-audit.mjs`.
 
 ## 1. Empty image slots — media to add
 
-### /portfolio/print/ (4)
+### /portfolio/print/ (3)
 
 | Project / section | Image needed |
 |---|---|
-| Diwali retail campaign | festival campaign |
 | Auto parts catalogue | catalogue spread |
 | Restaurant menu system | menu |
 | Textile export catalogue | textile catalogue |
@@ -36,12 +35,11 @@ Generated 2026-10-26 by `node tools/media-audit.mjs`.
 | Outcome | graded, cameras matched |
 | Wedding footage you've never watched? | third row, watching |
 
-### /portfolio/ (2)
+### /portfolio/ (1)
 
 | Project / section | Image needed |
 |---|---|
 | Restaurant reels | reel frames |
-| Diwali campaign | festival campaign |
 
 ## 2. Broken media references
 

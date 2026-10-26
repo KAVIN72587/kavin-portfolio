@@ -1,0 +1,166 @@
+<!doctype html>
+<!-- Concept: "Ponni Silks" (fictional Tamil retail chain) Deepavali campaign.
+     One offer across hoarding, window poster, standee and handout, in Tamil and English.
+     Palette avoids the usual maroon/gold/purple: kolam magenta, peacock teal, marigold, rice-flour cream.
+     Render: node tools/render-image.mjs image-sources/08-diwali-campaign/campaign.html <out.webp> 1000 1000 -->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Coiny&family=Baloo+Thambi+2:wght@600;800&family=IBM+Plex+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root {
+    --magenta: #d81b6a;
+    --magenta-d: #a80f50;
+    --teal: #0d7377;
+    --teal-d: #08555a;
+    --marigold: #ffb703;
+    --cream: #fff4dc;
+    --leaf: #2f9e44;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; background: #000; }
+  #stage { position: absolute; left: 0; top: 0; width: 1000px; height: 1000px; transform-origin: 0 0; overflow: hidden;
+    font-family: 'Baloo Thambi 2', sans-serif; }
+  .abs { position: absolute; }
+  .cap { position: absolute; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: #3d3a36; background: rgba(255,244,220,.88); padding: 4px 7px; border-radius: 4px; }
+
+  /* shared artwork */
+  .art { position: absolute; overflow: hidden; }
+  .kolam { position: absolute; inset: 0;
+    background-image: radial-gradient(circle, rgba(255,244,220,.28) 2px, transparent 2.5px);
+    background-size: 22px 22px; }
+  .thoranam { position: absolute; left: 0; right: 0; top: 0; height: 30px; display: flex; justify-content: space-around; }
+  .thoranam i { width: 22px; height: 30px; background: var(--leaf); border-radius: 0 0 50% 50% / 0 0 100% 100%; clip-path: polygon(50% 100%, 0 0, 100% 0); }
+  .thoranam i:nth-child(3n+2) { background: var(--marigold); width: 14px; height: 16px; border-radius: 50%; clip-path: none; margin-top: 2px; }
+  .ta { font-family: 'Coiny', 'Baloo Thambi 2', sans-serif; line-height: 1.05; }
+  .en { font-family: 'Kumar One', serif; line-height: 1; letter-spacing: .01em; }
+  .store { font-weight: 800; letter-spacing: .02em; color: var(--cream); }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <!-- Flat geometric diya -->
+  <symbol id="diya" viewBox="0 0 200 150">
+    <path d="M100 6 C 82 34, 82 58, 100 74 C 118 58, 118 34, 100 6 Z" fill="#ffb703"/>
+    <path d="M100 30 C 92 44, 92 58, 100 66 C 108 58, 108 44, 100 30 Z" fill="#fff4dc"/>
+    <path d="M10 82 H 190 C 184 120, 150 144, 100 144 C 50 144, 16 120, 10 82 Z" fill="var(--bowl, #0d7377)"/>
+    <path d="M10 82 H 190 L 182 98 H 18 Z" fill="#ffb703"/>
+    <g fill="#fff4dc">
+      <path d="M40 104 l 12 18 l 12 -18 Z"/><path d="M76 104 l 12 18 l 12 -18 Z"/><path d="M112 104 l 12 18 l 12 -18 Z"/><path d="M148 104 l 12 18 l 12 -18 Z"/>
+    </g>
+    <g fill="#d81b6a"><circle cx="58" cy="132" r="4"/><circle cx="100" cy="136" r="4"/><circle cx="142" cy="132" r="4"/></g>
+  </symbol>
+  <!-- Sparkler burst for the offer -->
+  <symbol id="burst" viewBox="0 0 100 100">
+    <path d="M50 2 L58 22 L78 10 L74 32 L96 34 L80 50 L96 66 L74 68 L78 90 L58 78 L50 98 L42 78 L22 90 L26 68 L4 66 L20 50 L4 34 L26 32 L22 10 L42 22 Z" fill="currentColor"/>
+  </symbol>
+  <!-- Line kolam corner -->
+  <symbol id="kolam" viewBox="0 0 100 100">
+    <g fill="none" stroke="#fff4dc" stroke-width="2.4" stroke-linecap="round">
+      <path d="M50 10 C 70 30, 70 30, 90 50 C 70 70, 70 70, 50 90 C 30 70, 30 70, 10 50 C 30 30, 30 30, 50 10 Z"/>
+      <path d="M50 26 C 62 38, 62 38, 74 50 C 62 62, 62 62, 50 74 C 38 62, 38 62, 26 50 C 38 38, 38 38, 50 26 Z"/>
+      <circle cx="50" cy="50" r="6"/>
+    </g>
+    <g fill="#fff4dc"><circle cx="50" cy="2" r="2.4"/><circle cx="98" cy="50" r="2.4"/><circle cx="50" cy="98" r="2.4"/><circle cx="2" cy="50" r="2.4"/></g>
+  </symbol>
+</svg>
+
+<!-- Portrait artwork (400 x 560), cloned into poster, standee and handout -->
+<template id="portrait">
+  <div class="art" style="width:400px; height:560px; background: var(--magenta);">
+    <div class="kolam"></div>
+    <svg class="abs" style="left:-40px; bottom:-40px; opacity:.5;" width="180" height="180"><use href="#kolam"/></svg>
+    <svg class="abs" style="right:-40px; bottom:-40px; opacity:.5;" width="180" height="180"><use href="#kolam"/></svg>
+    <div class="thoranam"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="abs store" style="left:0; right:0; top:42px; text-align:center; font-size:17px;">ponni silks · பொன்னி சில்க்ஸ்</div>
+    <div class="abs ta" style="left:0; right:0; top:74px; text-align:center; font-size:66px; color: var(--marigold);">தீபாவளி</div>
+    <div class="abs en" style="left:0; right:0; top:150px; text-align:center; font-size:52px; color: var(--cream);">Deepavali</div>
+    <svg class="abs" style="left:90px; top:236px;" width="220" height="165"><use href="#diya"/></svg>
+    <div class="abs" style="left:126px; top:384px; width:148px; height:148px; color: var(--teal);">
+      <svg width="148" height="148"><use href="#burst"/></svg>
+      <div class="abs" style="inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; color: var(--cream); text-align:center;">
+        <div style="font-weight:800; font-size:13px; letter-spacing:.12em;">FLAT</div>
+        <div class="en" style="font-size:36px; color: var(--marigold);">30%</div>
+        <div style="font-weight:800; font-size:13px; letter-spacing:.12em;">OFF SILKS</div>
+      </div>
+    </div>
+    <div class="abs coupon" style="display:none; left:14px; right:14px; bottom:12px; border-top:2px dashed rgba(255,244,220,.75); padding-top:8px; text-align:center; color: var(--cream); font-size:14px; font-weight:600;">✂ Show this card · extra 5% · தள்ளுபடி கூப்பன்</div>
+  </div>
+</template>
+
+<div id="stage">
+  <!-- sky + hoarding -->
+  <div class="abs" style="left:0; top:0; width:1000px; height:500px; background: linear-gradient(180deg, #8fd3d1 0%, #cdeee6 55%, #f8ecd4 100%);"></div>
+  <div class="abs" style="left:150px; top:360px; width:26px; height:150px; background:#6b6f73;"></div>
+  <div class="abs" style="left:824px; top:360px; width:26px; height:150px; background:#6b6f73;"></div>
+  <div class="abs" style="left:40px; top:352px; width:920px; height:12px; background:#55595d;"></div>
+  <!-- lamps -->
+  <div class="abs" style="left:130px; top:26px; width:740px; display:flex; justify-content:space-between;">
+    <i style="width:36px; height:10px; background:#3f4245; border-radius:3px;"></i><i style="width:36px; height:10px; background:#3f4245; border-radius:3px;"></i><i style="width:36px; height:10px; background:#3f4245; border-radius:3px;"></i><i style="width:36px; height:10px; background:#3f4245; border-radius:3px;"></i>
+  </div>
+  <!-- hoarding artwork -->
+  <div class="art" style="left:40px; top:40px; width:920px; height:312px; background: var(--teal); box-shadow: 0 0 0 8px #3a3d40, 0 18px 30px rgba(0,0,0,.25);">
+    <div class="kolam" style="background-image: radial-gradient(circle, rgba(255,244,220,.2) 2px, transparent 2.5px);"></div>
+    <div class="thoranam" style="height:34px;"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="abs store" style="left:40px; top:50px; font-size:20px;">ponni silks · பொன்னி சில்க்ஸ்</div>
+    <div class="abs ta" style="left:38px; top:82px; font-size:84px; color: var(--marigold);">தீபாவளி</div>
+    <div class="abs en" style="left:42px; top:188px; font-size:56px; color: var(--cream);">Deepavali Sale</div>
+    <svg class="abs" style="left:528px; top:92px; --bowl:#d81b6a;" width="180" height="136"><use href="#diya"/></svg>
+    <div class="abs" style="right:0; top:0; bottom:0; width:200px; background: var(--magenta);"></div>
+    <div class="abs" style="right:22px; top:66px; width:170px; height:170px; color: var(--teal-d);">
+      <svg width="170" height="170"><use href="#burst"/></svg>
+      <div class="abs" style="inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; color: var(--cream); text-align:center;">
+        <div style="font-weight:800; font-size:14px; letter-spacing:.12em;">FLAT</div>
+        <div class="en" style="font-size:42px; color: var(--marigold);">30%</div>
+        <div style="font-weight:800; font-size:14px; letter-spacing:.12em;">OFF SILKS</div>
+      </div>
+    </div>
+    <div class="abs" style="right:14px; bottom:18px; width:180px; text-align:center; color: var(--cream); font-size:14px; font-weight:600; line-height:1.3;">15 Oct – 2 Nov<br>all 6 stores</div>
+  </div>
+  <div class="cap" style="left:52px; top:372px;">Hoarding · 40 × 14 ft</div>
+
+  <!-- street level -->
+  <div class="abs" style="left:0; top:500px; width:1000px; height:500px; background: linear-gradient(#efe4cf, #e3d5bb);"></div>
+  <div class="abs" style="left:0; top:930px; width:1000px; height:70px; background: repeating-linear-gradient(90deg, #b8b0a3 0 96px, #a9a194 96px 98px);"></div>
+  <!-- glass window -->
+  <div class="abs" style="left:30px; top:520px; width:470px; height:410px; background:#3b3f43;"></div>
+  <div class="abs" style="left:42px; top:532px; width:446px; height:398px; background: linear-gradient(135deg, #a9c4c8 0%, #d7e6e6 35%, #9fb8bd 60%, #c9dcdc 100%);"></div>
+  <div class="abs" style="left:262px; top:532px; width:6px; height:398px; background:#3b3f43;"></div>
+  <div class="abs" id="poster" style="left:94px; top:566px;"></div>
+  <div class="abs" style="left:42px; top:532px; width:446px; height:398px; background: linear-gradient(115deg, transparent 30%, rgba(255,255,255,.28) 42%, transparent 52%); pointer-events:none;"></div>
+  <div class="cap" style="left:46px; top:906px;">Window poster</div>
+
+  <!-- roll-up standee -->
+  <div class="abs" style="left:556px; top:540px; width:236px; height:10px; background:#5b5f63; border-radius:3px;"></div>
+  <div class="abs" id="standee" style="left:562px; top:550px;"></div>
+  <div class="abs" style="left:546px; top:880px; width:256px; height:22px; background: linear-gradient(#7b7f83, #4f5357); border-radius:4px;"></div>
+  <div class="abs" style="left:556px; top:902px; width:20px; height:20px; background:#3f4245;"></div>
+  <div class="abs" style="left:772px; top:902px; width:20px; height:20px; background:#3f4245;"></div>
+  <div class="cap" style="left:600px; top:944px;">Standee</div>
+
+  <!-- handouts -->
+  <div class="abs" id="handout2" style="left:820px; top:700px; transform: rotate(-9deg);"></div>
+  <div class="abs" id="handout" style="left:830px; top:660px; transform: rotate(7deg);"></div>
+  <div class="cap" style="left:846px; top:944px;">Handout A5</div>
+</div>
+<script>
+  const tpl = document.getElementById('portrait');
+  function place(id, scale, coupon) {
+    const host = document.getElementById(id);
+    const node = tpl.content.firstElementChild.cloneNode(true);
+    node.style.position = 'relative';
+    if (coupon) node.querySelector('.coupon').style.display = 'block';
+    const wrap = document.createElement('div');
+    wrap.style.cssText = `width:${400*scale}px; height:${560*scale}px; overflow:hidden; position:relative; box-shadow:0 10px 22px rgba(0,0,0,.28);`;
+    node.style.transform = `scale(${scale})`; node.style.transformOrigin = '0 0';
+    wrap.appendChild(node); host.appendChild(wrap);
+  }
+  place('poster', 0.58, false);
+  place('standee', 0.56, false);
+  place('handout2', 0.36, true);
+  place('handout', 0.36, true);
+  const k = Math.min(1, innerWidth / 1000, innerHeight / 1000);
+  document.getElementById('stage').style.transform = `scale(${k})`;
+</script>
+</body>
+</html>
