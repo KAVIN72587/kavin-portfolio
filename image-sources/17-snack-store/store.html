@@ -1,0 +1,188 @@
+<!doctype html>
+<!-- Concept: Kurum Kurum (fictional Tamil snack brand) D2C store. Kurum kurum / குறும் குறும் = crunchy.
+     Brief: six SKUs, subscription boxes and a checkout that survives a shaky mobile connection.
+     Photos (Unsplash License, in ./photos, credits in ./photos/CREDITS.md).
+     layout = a (sunny yellow) | b (bold red) | c (fresh green)
+     Render: node tools/render-image.mjs image-sources/17-snack-store/store.html <out.webp> 1200 900 <layout> -->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Noto+Sans+Tamil:wght@600;700&display=block" rel="stylesheet">
+<style>
+  :root {
+    --font: 'Urbanist', sans-serif; --display: 'Urbanist', sans-serif; --dw: 800; --dls: -.02em; --upper: none;
+    --bg: linear-gradient(160deg, #e9e9ec, #dcdce1); --screen: #f6f6f4; --card: #ffffff; --ink: #121212; --muted: #8b8b8b;
+    --accent: #ffd02b; --accent-2: #f6a23c; --accent-ink: #121212; --btn: #121212; --btn-ink: #ffffff;
+    --hero: #ffd02b; --chip-on: #121212; --chip-on-ink: #fff; --chip: #ffffff; --heart: #121212;
+    --frame: #ffffff; --frame-w: 6px; --r: 26px; --r-sm: 18px; --warn: #fff1c2; --warn-ink: #7a5300;
+  }
+  body.b {
+    --font: 'Barlow', sans-serif; --display: 'Bebas Neue', sans-serif; --dw: 400; --dls: .01em; --upper: uppercase;
+    --bg: linear-gradient(160deg, #ececec, #dedede); --screen: #f7f7f7; --card: #ffffff; --ink: #111111; --muted: #8a8a8a;
+    --accent: #e53935; --accent-2: #f57c00; --accent-ink: #ffffff; --btn: #111111; --btn-ink: #ffffff;
+    --hero: #e53935; --chip-on: #e53935; --chip-on-ink: #fff; --chip: #ffffff; --heart: #e53935;
+    --frame: #ffffff; --r: 30px; --r-sm: 14px; --warn: #fde7e6; --warn-ink: #b3261e;
+  }
+  body.c {
+    --font: 'DM Sans', sans-serif; --display: 'DM Sans', sans-serif; --dw: 700; --dls: -.02em; --upper: none;
+    --bg: linear-gradient(180deg, #e8f4ef 0%, #a9cfc0 55%, #1d4a3a 100%); --screen: #ffffff; --card: #f6f8f7; --ink: #10231c; --muted: #7c8a84;
+    --accent: #1d4a3a; --accent-2: #2e9b5f; --accent-ink: #ffffff; --btn: #1d4a3a; --btn-ink: #ffffff;
+    --hero: #eef5f1; --chip-on: #1d4a3a; --chip-on-ink: #fff; --chip: #f1f4f3; --heart: #e0407a;
+    --frame: #111111; --frame-w: 10px; --r: 22px; --r-sm: 16px; --warn: #fff4d6; --warn-ink: #7a5300;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; background: #000; }
+  #stage { position: absolute; left: 0; top: 0; width: 1200px; height: 900px; transform-origin: 0 0; overflow: hidden; background: var(--bg); font-family: var(--font); color: var(--ink); }
+  .abs { position: absolute; }
+  .phone { position: absolute; width: 338px; height: 720px; border-radius: 48px; background: var(--frame); padding: var(--frame-w); box-shadow: 0 30px 60px rgba(0,0,0,.18); }
+  .scr { position: relative; width: 100%; height: 100%; border-radius: 42px; overflow: hidden; background: var(--screen); }
+  body.c .scr { border-radius: 38px; }
+  .status { position: relative; z-index: 2; display: flex; justify-content: space-between; align-items: center; padding: 16px 26px 0; font-weight: 700; font-size: 13px; height: 40px; }
+  .island { z-index: 3; position: absolute; left: 50%; top: 10px; transform: translateX(-50%); width: 92px; height: 26px; border-radius: 20px; background: #111; }
+  .disp { font-family: var(--display); font-weight: var(--dw); letter-spacing: var(--dls); text-transform: var(--upper); line-height: 1; }
+  .ta { font-family: 'Noto Sans Tamil', sans-serif; font-weight: 700; }
+  .ph { display: block; object-fit: cover; }
+  .pill { display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; font-weight: 600; font-size: 11.5px; padding: 7px 14px; white-space: nowrap; }
+  .btn { display: flex; align-items: center; justify-content: center; height: 50px; border-radius: 999px; background: var(--btn); color: var(--btn-ink); font-weight: 700; font-size: 14px; }
+  body.b .btn { border-radius: 12px; font-family: 'Bebas Neue'; font-size: 20px; letter-spacing: .04em; font-weight: 400; }
+  .mut { color: var(--muted); font-size: 11px; }
+  .navbar { position: absolute; left: 14px; right: 14px; bottom: 16px; height: 56px; border-radius: 999px; background: #fff; display: flex; align-items: center; justify-content: space-around; box-shadow: 0 6px 18px rgba(0,0,0,.08); }
+  body.c .navbar { left: 0; right: 0; bottom: 0; border-radius: 0; height: 64px; box-shadow: 0 -1px 0 #eee; }
+  .label { position: absolute; font-weight: 700; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: #3a3a3a; }
+  body.c .label { color: #eef5f1; }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script>
+const L = new URLSearchParams(location.search).get('layout') || 'a';
+document.body.className = L;
+const I = {
+  heart: '<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>',
+  back: '<path d="M15 5l-7 7 7 7"/>',
+  cart: '<path d="M4 5h2l2 10h10l2-7H7M9 19a1 1 0 1 0 0 .1M17 19a1 1 0 1 0 0 .1"/>',
+  home: '<path d="M4 11l8-6 8 6v8H4z"/>',
+  compass: '<circle cx="12" cy="12" r="8"/><path d="M15 9l-2 4-4 2 2-4z"/>',
+  user: '<circle cx="12" cy="9" r="3.5"/><path d="M5 20c1.5-3.5 4-5 7-5s5.5 1.5 7 5"/>',
+  wifi: '<path d="M3 9a14 14 0 0 1 18 0M6 12.5a9 9 0 0 1 12 0M9 16a4 4 0 0 1 6 0M4 4l16 16"/>',
+  check: '<path d="M5 12l5 5 9-10"/>',
+  star: '<path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/>',
+  pin: '<path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/>',
+};
+const ic = (n, s = 18, sw = 2, fill = 'none') => `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="${fill}" stroke="currentColor" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round">${I[n]}</svg>`;
+const status = `<div class="island"></div><div class="status"><span>9:41</span><span style="display:flex; gap:5px; align-items:center;"><i style="width:16px;height:9px;border-radius:2px;background:currentColor;opacity:.8"></i><i style="width:20px;height:10px;border-radius:3px;border:1.5px solid currentColor"></i></span></div>`;
+
+const SKU = [
+  ['banana-chips.jpg', 'Nendran banana chips', 'நேந்திரன் சிப்ஸ்', '120', '50% 60%'],
+  ['star-fry.jpg', 'Achu murukku', 'அச்சு முறுக்கு', '140', '50% 50%'],
+  ['peanuts.jpg', 'Masala peanuts', 'மசாலா கடலை', '90', '50% 80%'],
+  ['pretzels.jpg', 'Jangiri', 'ஜாங்கிரி', '160', '50% 50%'],
+  ['steel-bowl.jpg', 'Ribbon pakoda', 'ரிப்பன் பக்கோடா', '110', '50% 70%'],
+  ['sweets.jpg', 'Mixed sweet box', 'இனிப்பு பெட்டி', '260', '50% 60%'],
+];
+const brand = `<div style="display:flex; align-items:center; gap:8px;"><span style="width:30px; height:30px; border-radius:${L==='b'?'8px':'50%'}; background:var(--accent); color:var(--accent-ink); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:13px;" class="ta">கு</span><span class="disp" style="font-size:${L==='b'?'22px':'17px'};">Kurum Kurum</span></div>`;
+const nav = (on) => `<div class="navbar">${['home','compass','cart','user'].map((n,i) => i===on ? (L==='c' ? `<span style="color:var(--accent); display:flex; flex-direction:column; align-items:center; font-size:10px; font-weight:700; gap:2px;">${ic(n,20,2,'currentColor')}${['Home','Explore','Cart','Profile'][i]}</span>` : `<span class="pill" style="background:var(--btn); color:var(--btn-ink); gap:6px; padding:9px 16px;">${ic(n,16)}${['Home','Box','Cart','Me'][i]}</span>`) : `<span style="color:${L==='c'?'#9aa59f':'#121212'}; ${L==='c'?'display:flex; flex-direction:column; align-items:center; font-size:10px; gap:2px;':''}">${ic(n,19)}${L==='c' ? ['Home','Explore','Cart','Profile'][i] : ''}</span>`).join('')}</div>`;
+
+/* ---------- phone 1: product page ---------- */
+const p = SKU[0];
+const phone1 = `
+<div class="scr">
+  ${status}
+  <div style="padding:10px 20px 0; display:flex; justify-content:space-between; align-items:center;">
+    <span style="width:38px; height:38px; border-radius:50%; background:var(--card); display:flex; align-items:center; justify-content:center;">${ic('back',18)}</span>
+    ${brand}
+    <span style="position:relative; width:38px; height:38px; border-radius:50%; background:var(--card); display:flex; align-items:center; justify-content:center;">${ic('cart',18)}<b style="position:absolute; right:-2px; top:-2px; background:var(--accent); color:var(--accent-ink); font-size:9px; border-radius:99px; padding:1px 5px;">3</b></span>
+  </div>
+  <div style="margin:16px 20px 0; height:260px; border-radius:var(--r); overflow:hidden; position:relative; background:var(--hero);">
+    <img class="ph" src="photos/${p[0]}" alt="" style="position:absolute; inset:${L==='a' ? '46px 16px 16px' : '0'}; width:${L==='a' ? 'calc(100% - 32px)' : '100%'}; height:${L==='a' ? 'calc(100% - 62px)' : '100%'}; border-radius:${L==='a' ? '18px' : '0'}; object-position:${p[4]};">
+    ${L==='a' ? '<div class="disp" style="position:absolute; left:18px; top:14px; font-size:22px;">Crunchy · Kerala</div>' : ''}
+    <span style="position:absolute; right:12px; top:${L==='a' ? '6px' : '12px'}; width:36px; height:36px; border-radius:50%; background:#fff; color:var(--heart); display:flex; align-items:center; justify-content:center;">${ic('heart',18,2,'currentColor')}</span>
+    <span class="pill" style="position:absolute; left:${L==='a' ? '28px' : '12px'}; top:${L==='a' ? '58px' : '12px'}; background:${L==='c' ? '#e3f1ff' : 'var(--accent)'}; color:${L==='c' ? '#1f5fa8' : 'var(--accent-ink)'}; padding:4px 10px; font-size:10px;">200 g</span>
+  </div>
+  <div style="${L==='b' ? 'margin:-26px 14px 0; position:relative; background:#fff; border-radius:24px; padding:18px 18px; box-shadow:0 10px 24px rgba(0,0,0,.08);' : 'padding:16px 20px 0;'}">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+      <div><div class="disp" style="font-size:${L==='b'?'34px':'24px'};">${L==='b' ? 'Banana chips' : p[1]}</div><div class="ta" style="font-size:12px; color:${L==='b'?'var(--accent)':'var(--muted)'}; margin-top:4px;">${p[2]}</div></div>
+      <span style="display:flex; align-items:center; gap:3px; font-weight:700; font-size:12px;"><span style="color:${L==='c'?'#f2a900':'var(--accent)'};">${ic('star',14,1.5,'currentColor')}</span>4.8</span>
+    </div>
+    <div style="display:flex; gap:6px; margin-top:12px;">${[['Coconut oil'],['No palm oil'],['Kerala']].map(([t]) => `<span class="pill" style="background:${L==='b' ? '#fde7e6' : 'var(--card)'}; color:${L==='b' ? 'var(--accent)' : 'var(--ink)'}; font-size:10.5px; padding:5px 10px; border-radius:${L==='b'?'8px':'999px'};">${t}</span>`).join('')}</div>
+    <div class="mut" style="margin-top:14px; font-size:${L==='b'?'14px':'11px'}; ${L==='b'?'font-family:Bebas Neue; letter-spacing:.06em; color:#111;':''}">Pack size</div>
+    <div style="display:flex; gap:8px; margin-top:8px;">${['100 g','200 g','500 g'].map((t,i) => `<span class="pill" style="flex:1; ${i===1 ? 'background:var(--chip-on); color:var(--chip-on-ink);' : 'background:var(--card); border:1px solid #e6e6e6;'} border-radius:${L==='b'?'8px':'999px'};">${t}</span>`).join('')}</div>
+  </div>
+  <div style="position:absolute; left:20px; right:20px; bottom:${L==='c'?'84px':'90px'}; display:flex; align-items:center; gap:14px;">
+    <div><div class="mut">Price</div><div class="disp" style="font-size:${L==='b'?'30px':'22px'};">₹${p[3]}</div></div>
+    <div class="btn" style="flex:1;">Add to cart</div>
+  </div>
+  ${nav(0)}
+</div>`;
+
+/* ---------- phone 2: subscription box picker ---------- */
+const picked = [0, 1, 3];
+const phone2 = `
+<div class="scr">
+  ${status}
+  ${L==='a' ? '<div style="position:absolute; left:0; right:0; top:0; height:236px; background:linear-gradient(180deg, #ffd02b, #ffe27a 70%, rgba(255,226,122,0)); z-index:0;"></div>' : ''}<div style="padding:8px 20px 0; position:relative;">
+    <div class="mut" style="${L==='a' ? 'color:#5c4a00;' : ''}">Monthly box</div>
+    <div class="disp" style="font-size:${L==='b'?'34px':'24px'}; margin-top:2px;">Build your box</div>
+    <div style="display:flex; gap:6px; margin-top:12px; background:var(--card); padding:4px; border-radius:999px;">${['Every 2 weeks','Monthly','Festive'].map((t,i) => `<span class="pill" style="flex:1; ${i===1 ? 'background:var(--chip-on); color:var(--chip-on-ink);' : 'color:var(--muted);'}">${t}</span>`).join('')}</div>
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-top:14px;"><span style="font-weight:700; font-size:13px;">Pick 4 of 6</span><span style="font-weight:700; font-size:12px; color:${L==='c'?'var(--accent-2)':L==='b'?'var(--accent)':'#b47b00'};">3 picked</span></div>
+    <div style="height:6px; border-radius:9px; background:#ececec; margin-top:6px;"><div style="width:75%; height:100%; border-radius:9px; background:${L==='a'?'#121212':'var(--accent)'};"></div></div>
+  </div>
+  <div style="display:grid; grid-template-columns: 1fr 1fr; gap:8px; padding:12px 20px 0; position:relative;">
+    ${SKU.map(([img, name, ta, price, pos], i) => `
+      <div style="position:relative; background:var(--card); border-radius:var(--r-sm); overflow:hidden; ${picked.includes(i) ? `outline:2.5px solid ${L==='a'?'#121212':'var(--accent)'}; outline-offset:-2.5px;` : ''}">
+        <img class="ph" src="photos/${img}" alt="" style="width:100%; height:62px; object-position:${pos};">
+        <div style="padding:5px 9px 6px;"><div style="font-weight:700; font-size:11px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${name}</div><div style="font-size:10px; color:var(--muted);">₹${price}</div></div>
+        <span style="position:absolute; right:7px; top:7px; width:22px; height:22px; border-radius:50%; display:flex; align-items:center; justify-content:center; ${picked.includes(i) ? `background:${L==='a'?'#121212':'var(--accent)'}; color:#fff;` : 'background:rgba(255,255,255,.9); color:#bbb;'}">${picked.includes(i) ? ic('check',13,3) : ic('heart',12,2)}</span>
+      </div>`).join('')}
+  </div>
+  <div style="position:absolute; left:20px; right:20px; bottom:${L==='c'?'84px':'90px'}; display:flex; align-items:center; gap:14px;">
+    <div><div class="mut">Box of 4 · save 15%</div><div class="disp" style="font-size:${L==='b'?'30px':'22px'};">₹449<span style="font-size:12px; color:var(--muted); font-weight:500; font-family:var(--font);">/mo</span></div></div>
+    <div class="btn" style="flex:1; opacity:.45;">Pick 1 more</div>
+  </div>
+  ${nav(1)}
+</div>`;
+
+/* ---------- phone 3: checkout that survives offline ---------- */
+const cart = [SKU[0], SKU[1], SKU[3]];
+const phone3 = `
+<div class="scr">
+  ${status}
+  <div style="padding:8px 20px 0; display:flex; align-items:center; gap:12px;">
+    <span style="width:38px; height:38px; border-radius:50%; background:var(--card); display:flex; align-items:center; justify-content:center;">${ic('back',18)}</span>
+    <span class="disp" style="font-size:${L==='b'?'30px':'22px'};">Checkout</span>
+  </div>
+  <div style="margin:14px 16px 0; background:var(--warn); color:var(--warn-ink); border-radius:16px; padding:12px 14px; display:flex; gap:10px;">
+    <span style="flex:none; margin-top:1px;">${ic('wifi',20)}</span>
+    <div><div style="font-weight:800; font-size:12.5px;">You're offline</div><div style="font-size:11px; line-height:1.45; margin-top:2px;">Your cart and address are saved on this phone. We'll send the order the moment you're back.</div></div>
+  </div>
+  <div style="padding:12px 20px 0;">
+    ${cart.map(([img, name, ta, price, pos]) => `
+      <div style="display:flex; align-items:center; gap:12px; padding:9px 0; border-bottom:1px solid #eee;">
+        <img class="ph" src="photos/${img}" alt="" style="width:54px; height:54px; border-radius:14px; object-position:${pos};">
+        <div style="flex:1;"><div style="font-weight:700; font-size:12.5px; ${L==='b'?'font-family:Bebas Neue; font-size:18px; font-weight:400; letter-spacing:.02em;':''}">${name}</div><div style="font-size:10.5px; color:var(--muted);">200 g · ₹${price}</div></div>
+        <div style="display:flex; align-items:center; gap:8px; font-weight:700; font-size:12px;"><span style="width:22px;height:22px;border-radius:50%;border:1.5px solid #ccc;display:flex;align-items:center;justify-content:center;">–</span>1<span style="width:22px;height:22px;border-radius:50%;background:${L==='a'?'#121212':'var(--accent)'};color:#fff;display:flex;align-items:center;justify-content:center;">+</span></div>
+      </div>`).join('')}
+    <div style="display:flex; align-items:center; gap:10px; margin-top:12px; background:var(--card); border-radius:14px; padding:10px 12px;"><span style="color:${L==='c'?'var(--accent-2)':'var(--accent)'};">${ic('pin',18)}</span><div style="font-size:11px; line-height:1.4;"><b>Home</b> · 12 Bharathi St, Mylapore<br><span class="mut">Saved offline ✓</span></div></div>
+    <div style="display:flex; justify-content:space-between; margin-top:12px; font-size:12px;"><span class="mut" style="font-size:12px;">Subtotal</span><b>₹420</b></div>
+    <div style="display:flex; justify-content:space-between; margin-top:4px; font-size:12px;"><span class="mut" style="font-size:12px;">Delivery</span><b style="color:var(--accent-2);">Free</b></div>
+  </div>
+  <div style="position:absolute; left:20px; right:20px; bottom:${L==='c'?'84px':'90px'};">
+    <div class="btn">Place order when online · ₹420</div>
+    <div style="display:flex; align-items:center; justify-content:center; gap:6px; margin-top:8px; font-size:10.5px; color:var(--muted);"><span style="width:7px; height:7px; border-radius:50%; background:#f2a900;"></span>Retrying in 5 s · COD and UPI both work</div>
+  </div>
+  ${nav(2)}
+</div>`;
+
+const stage = document.getElementById('stage');
+stage.innerHTML = `
+  ${L==='c' ? '<div class="abs disp" style="left:0; right:0; top:-14px; text-align:center; font-size:170px; color:rgba(29,74,58,.10); letter-spacing:-.04em;">Kurum Kurum</div>' : ''}
+  <div class="phone" style="left:48px; top:${L==='b'?'120px':'104px'};">${phone1}</div>
+  <div class="phone" style="left:431px; top:${L==='b'?'60px':'76px'};">${phone2}</div>
+  <div class="phone" style="left:814px; top:${L==='b'?'120px':'104px'};">${phone3}</div>
+  <div class="label" style="left:48px; top:${L==='b'?'854px':'838px'};">01 · Product</div>
+  <div class="label" style="left:431px; top:${L==='b'?'34px':'838px'};">02 · Subscription box</div>
+  <div class="label" style="left:814px; top:${L==='b'?'854px':'838px'};">03 · Checkout, offline</div>`;
+stage.style.transform = `scale(${Math.min(1, innerWidth / 1200, innerHeight / 900)})`;
+</script>
+</body>
+</html>
