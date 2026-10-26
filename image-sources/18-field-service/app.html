@@ -1,0 +1,209 @@
+<!doctype html>
+<!-- Concept: CoolKart Service Pro (fictional Chennai AC-service firm), the technician's app.
+     Brief: designed for one hand, bright sunlight and patchy signal; offline state specified throughout.
+     Photos (Unsplash License, in ./photos, credits in ./photos/CREDITS.md).
+     layout = a (bright blue) | b (forest + gold) | c (fresh green)
+     Render: node tools/render-image.mjs image-sources/18-field-service/app.html <out.webp> 1600 686 <layout> -->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Figtree:wght@400;500;600;700;800&family=Noto+Sans+Tamil:wght@600&family=IBM+Plex+Mono:wght@500&display=block" rel="stylesheet">
+<style>
+  :root {
+    --font: 'Plus Jakarta Sans', sans-serif;
+    --bg: linear-gradient(160deg, #eef2f7, #dde5ef); --screen: #ffffff; --soft: #f2f6fb; --ink: #13171f; --muted: #8a93a3; --line: #edf0f4;
+    --accent: #1e88f0; --accent-soft: #e3f0fe; --accent-ink: #fff; --tag: #ff7a2f; --tag-soft: #ffe9dc;
+    --hero: #1e88f0; --btn: #1e88f0; --btn-ink: #fff; --frame: #111; --ok: #1fa35b; --warn: #c27a00; --warn-bg: #fff4d9;
+  }
+  body.b {
+    --font: 'Outfit', sans-serif;
+    --bg: linear-gradient(160deg, #f3f2ee, #e3e2dc); --screen: #ffffff; --soft: #f4f6f4; --ink: #10241b; --muted: #7d8a83; --line: #edf0ee;
+    --accent: #0f3d2e; --accent-soft: #e4efe9; --accent-ink: #fff; --tag: #f2b705; --tag-soft: #fff4cf;
+    --hero: #0f3d2e; --btn: #0f3d2e; --btn-ink: #fff; --frame: #fafafa;
+  }
+  body.c {
+    --font: 'Figtree', sans-serif;
+    --bg: radial-gradient(ellipse at 30% 30%, #d6f5dc, #9fe0ae 70%, #7fd394); --screen: #ffffff; --soft: #f3f6f4; --ink: #0f1a13; --muted: #7c8a80; --line: #eef1ef;
+    --accent: #18b04a; --accent-soft: #e2f7e8; --accent-ink: #fff; --tag: #111; --tag-soft: #e9ece9;
+    --hero: #18b04a; --btn: #111111; --btn-ink: #fff; --frame: #fafafa;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; background: #000; }
+  #stage { position: absolute; left: 0; top: 0; width: 1600px; height: 686px; transform-origin: 0 0; overflow: hidden; background: var(--bg); font-family: var(--font); color: var(--ink); }
+  .abs { position: absolute; }
+  .phone { position: absolute; top: 46px; width: 290px; height: 600px; border-radius: 44px; background: var(--frame); padding: 8px; box-shadow: 0 24px 50px rgba(0,0,0,.16); }
+  body.b .phone, body.c .phone { box-shadow: 0 24px 50px rgba(0,0,0,.12), inset 0 0 0 1px rgba(0,0,0,.06); }
+  .scr { position: relative; width: 100%; height: 100%; border-radius: 37px; overflow: hidden; background: var(--screen); }
+  .island { position: absolute; left: 50%; top: 9px; transform: translateX(-50%); width: 82px; height: 23px; border-radius: 20px; background: #111; z-index: 5; }
+  .status { position: relative; z-index: 4; display: flex; justify-content: space-between; align-items: center; padding: 13px 22px 0; height: 36px; font-weight: 700; font-size: 12px; }
+  .ph { display: block; object-fit: cover; }
+  .av { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; object-position: 50% 20%; flex: none; }
+  .h1 { font-weight: 800; font-size: 19px; letter-spacing: -.02em; }
+  .mut { color: var(--muted); font-size: 10.5px; }
+  .tag { display: inline-flex; align-items: center; gap: 4px; font-size: 9.5px; font-weight: 700; padding: 3px 8px; border-radius: 999px; background: var(--tag-soft); color: var(--tag); white-space: nowrap; }
+  body.c .tag { background: #111; color: #fff; }
+  .chip { display: inline-flex; align-items: center; gap: 5px; font-size: 10px; font-weight: 700; padding: 4px 9px; border-radius: 999px; white-space: nowrap; }
+  .sync { background: var(--accent-soft); color: var(--accent); }
+  body.c .sync { color: #0c7a32; }
+  .off { background: var(--warn-bg); color: var(--warn); }
+  .bigbtn { position: absolute; left: 14px; right: 14px; bottom: 16px; height: 54px; border-radius: 18px; background: var(--btn); color: var(--btn-ink); display: flex; align-items: center; justify-content: center; gap: 8px; font-weight: 800; font-size: 14.5px; }
+  body.a .bigbtn { border-radius: 16px; }
+  body.c .bigbtn { border-radius: 999px; }
+  .card { background: var(--soft); border-radius: 18px; }
+  .cap { position: absolute; top: 18px; font-size: 11px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: #4b5563; }
+  body.b .cap { color: #3d4a43; }
+  body.c .cap { color: #0d4a22; }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script>
+const L = new URLSearchParams(location.search).get('layout') || 'a';
+document.body.className = L;
+const I = {
+  back: '<path d="M15 5l-7 7 7 7"/>', phone: '<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/>',
+  pin: '<path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/>',
+  check: '<path d="M5 12l5 5 9-10"/>', cam: '<path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/>',
+  sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/>',
+  nosig: '<path d="M2 20h2M7 20v-4M12 20v-8M17 20V8M3 3l18 18"/>', cloud: '<path d="M7 18h10a4 4 0 0 0 .5-8A6 6 0 0 0 6 9a4.5 4.5 0 0 0 1 9z"/><path d="M12 11v5M9.5 13.5L12 16l2.5-2.5"/>',
+  nav: '<path d="M3 11l18-8-8 18-2-8z"/>', clock: '<circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/>', home: '<path d="M4 11l8-6 8 6v8H4z"/>',
+  list: '<path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"/>', user: '<circle cx="12" cy="9" r="3.5"/><path d="M5 20c1.5-3.5 4-5 7-5s5.5 1.5 7 5"/>',
+  wrench: '<path d="M14 6a4 4 0 0 0 5 5l-9 9-3-3 9-9a4 4 0 0 0-2-2z"/>', pen: '<path d="M4 20l4-1 11-11-3-3L5 16z"/>',
+};
+const ic = (n, s = 16, sw = 2, fill = 'none') => `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="${fill}" stroke="currentColor" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round">${I[n]}</svg>`;
+const status = (dark) => `<div class="island"></div><div class="status" style="${dark ? 'color:#fff;' : ''}"><span>9:41</span><span style="display:flex; gap:4px; align-items:center;"><i style="width:14px;height:8px;border-radius:2px;background:currentColor;opacity:.8"></i><i style="width:18px;height:9px;border-radius:3px;border:1.5px solid currentColor"></i></span></div>`;
+const syncChip = `<span class="chip sync">${ic('cloud',12,2.2)}Synced 2 min ago</span>`;
+const offChip = `<span class="chip off">${ic('nosig',12,2.2)}No signal · 3 queued</span>`;
+const thumbNav = (on) => `<div class="abs" style="left:14px; right:14px; bottom:16px; height:54px; border-radius:${L==='c'?'999px':'18px'}; background:${L==='c'?'#111':'var(--soft)'}; display:flex; align-items:center; justify-content:space-around;">${['home','list','clock','user'].map((n,i) => `<span style="width:42px; height:42px; border-radius:${L==='c'?'999px':'14px'}; display:flex; align-items:center; justify-content:center; ${i===on ? `background:${L==='c'?'var(--accent)':'var(--accent)'}; color:#fff;` : `color:${L==='c'?'#9aa79e':'var(--muted)'};`}">${ic(n,20)}</span>`).join('')}</div>`;
+
+/* 1 · Today's jobs */
+const s1 = `
+<div class="scr">
+  ${status(false)}
+  <div style="padding:8px 18px 0;">
+    <div style="display:flex; align-items:center; gap:10px;"><img class="av" src="photos/tech-avatar.jpg" alt=""><div style="flex:1;"><div class="mut">Vanakkam,</div><div style="font-weight:800; font-size:14px;">Karthik</div></div>${syncChip}</div>
+    <div style="display:flex; justify-content:space-between; align-items:baseline; margin-top:14px;"><span class="h1">Today · 4 jobs</span><span class="mut">Thu 14 May</span></div>
+    <div class="card" style="margin-top:10px; overflow:hidden; background:var(--hero); color:#fff;">
+      <img class="ph" src="photos/apartment.jpg" alt="" style="width:100%; height:96px; object-position:50% 60%;">
+      <div style="padding:10px 12px 12px;">
+        <div style="display:flex; justify-content:space-between; align-items:center;"><span style="font-weight:800; font-size:13.5px;">Gas top-up + service</span><span class="tag" style="${L==='a' ? 'background:#fff; color:var(--tag);' : L==='b' ? 'background:var(--tag); color:#10241b;' : 'background:#fff; color:#111;'}">Next · 10:30</span></div>
+        <div style="font-size:10.5px; opacity:.85; margin-top:4px; display:flex; align-items:center; gap:4px;">${ic('pin',12)}Adyar · 2.4 km · 1.5 ton split</div>
+      </div>
+    </div>
+    ${[['12:15','Indoor unit leaking','Besant Nagar','Repair'],['3:00','Install 1 ton split','Thiruvanmiyur','Install'],['5:30','Annual service','Kottivakkam','AMC']].map(([t,j,a,k]) => `
+      <div style="display:flex; align-items:center; gap:10px; padding:10px 2px; border-bottom:1px solid var(--line);">
+        <span style="font-weight:800; font-size:12px; width:38px;">${t}</span>
+        <div style="flex:1;"><div style="font-weight:700; font-size:12px;">${j}</div><div class="mut">${a}</div></div>
+        <span class="tag">${k}</span>
+      </div>`).join('')}
+  </div>
+  ${thumbNav(0)}
+</div>`;
+
+/* 2 · Job detail */
+const s2 = `
+<div class="scr">
+  <div class="abs" style="left:0; right:0; top:0; height:206px;">
+    <img class="ph" src="photos/living-ac.jpg" alt="" style="width:100%; height:100%; object-position:50% 30%;">
+    <div class="abs" style="inset:0; background:linear-gradient(180deg, rgba(0,0,0,.35), transparent 45%);"></div>
+  </div>
+  ${status(true)}
+  <div class="abs" style="left:16px; top:44px; width:36px; height:36px; border-radius:12px; background:rgba(255,255,255,.92); display:flex; align-items:center; justify-content:center;">${ic('back',18)}</div>
+  <div class="abs" style="left:0; right:0; top:184px; bottom:0; background:var(--screen); border-radius:24px 24px 0 0; padding:16px 18px 0;">
+    <span class="tag">${ic('wrench',11,2.4)}Gas top-up + service</span>
+    <div class="h1" style="margin-top:8px; font-size:17px;">Flat 4B, Sea Breeze Apts</div>
+    <div class="mut" style="display:flex; align-items:center; gap:4px; margin-top:4px;">${ic('pin',12)}3rd Main Rd, Adyar · gate code 2419</div>
+    <div class="card" style="display:flex; align-items:center; gap:10px; padding:10px 12px; margin-top:12px;">
+      <img class="av" src="photos/customer.jpg" alt="">
+      <div style="flex:1;"><div style="font-weight:700; font-size:12.5px;">Mrs. Valli R.</div><div class="mut">Prefers Tamil · AMC customer</div></div>
+      <span style="width:38px; height:38px; border-radius:12px; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center;">${ic('phone',17)}</span>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:10px;">
+      ${[['Unit','1.5 ton split'],['Last service','Nov 2025'],['Parts in van','R32 · 2 kg'],['Window','10:30 – 11:30']].map(([k,v]) => `<div class="card" style="padding:9px 11px;"><div class="mut" style="font-size:9.5px;">${k}</div><div style="font-weight:700; font-size:12px; margin-top:2px;">${v}</div></div>`).join('')}
+    </div>
+    <div class="mut" style="margin-top:10px; display:flex; align-items:center; gap:5px;">${ic('check',12,2.5)}Address and notes saved for offline</div>
+  </div>
+  <div class="bigbtn">${ic('nav',18)}I've arrived</div>
+</div>`;
+
+/* 3 · Checklist + photo proof, sunlight mode */
+const items = [['Isolate power, check MCB', 1], ['Clean filters and coil', 1], ['Gas pressure 65 psi', 1], ['Check drain line', 0], ['Test cooling 30 min', 0]];
+const s3 = `
+<div class="scr" style="background:#ffffff;">
+  ${status(false)}
+  <div style="padding:6px 18px 0;">
+    <div style="display:flex; justify-content:space-between; align-items:center;"><span class="h1">Checklist</span>
+      <span class="chip" style="background:#111; color:#ffd400;">${ic('sun',12,2.4)}Sunlight mode</span></div>
+    <div style="height:8px; border-radius:9px; background:#e6e6e6; margin-top:10px;"><div style="width:60%; height:100%; border-radius:9px; background:#111;"></div></div>
+    <div style="font-weight:700; font-size:11px; margin-top:5px;">3 of 5 done</div>
+    ${items.map(([t, d]) => `
+      <div style="display:flex; align-items:center; gap:12px; padding:10px 0; border-bottom:1.5px solid #e5e5e5;">
+        <span style="width:28px; height:28px; border-radius:9px; flex:none; display:flex; align-items:center; justify-content:center; ${d ? 'background:#111; color:#fff;' : 'border:2.5px solid #111;'}">${d ? ic('check',16,3) : ''}</span>
+        <span style="font-weight:${d ? 600 : 800}; font-size:13px; color:#000; ${d ? 'opacity:.55; text-decoration:line-through;' : ''}">${t}</span>
+      </div>`).join('')}
+    <div style="font-weight:800; font-size:12px; margin-top:12px; color:#000;">Photo proof</div>
+    <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:8px; margin-top:8px;">
+      <div style="position:relative;"><img class="ph" src="photos/ac-indoor.jpg" alt="" style="width:100%; height:64px; border-radius:12px; object-position:40% 40%;"><span class="abs" style="left:5px; bottom:5px; background:#000; color:#fff; font-size:8.5px; font-weight:700; padding:2px 6px; border-radius:6px;">Before</span></div>
+      <div style="position:relative;"><img class="ph" src="photos/ac-wall.jpg" alt="" style="width:100%; height:64px; border-radius:12px; object-position:30% 45%;"><span class="abs" style="left:5px; bottom:5px; background:#000; color:#fff; font-size:8.5px; font-weight:700; padding:2px 6px; border-radius:6px;">Outdoor</span></div>
+      <div style="height:64px; border-radius:12px; border:2.5px dashed #111; display:flex; align-items:center; justify-content:center; color:#111;">${ic('cam',22,2.2)}</div>
+    </div>
+  </div>
+  <div class="bigbtn" style="background:#111;">Next step ${ic('check',16,3)}</div>
+</div>`;
+
+/* 4 · Offline queue */
+const q = [['cam','2 photos','Before + outdoor unit','Waiting'],['check','Checklist','3 of 5 steps','Waiting'],['pen','Note to office','Drain pipe cracked, quote sent','Waiting'],['cloud','Job started','10:34 am','Sent']];
+const s4 = `
+<div class="scr">
+  ${status(false)}
+  <div style="margin:4px 12px 0; border-radius:20px; padding:14px; background:var(--warn-bg); color:#5c3d00;">
+    <div style="display:flex; align-items:center; gap:8px; font-weight:800; font-size:14px;">${ic('nosig',20,2.2)}No signal here</div>
+    <div style="font-size:11px; line-height:1.45; margin-top:6px;">Keep working. Everything is saved on the phone and sends by itself when signal comes back.</div>
+    <div style="display:flex; gap:6px; margin-top:10px;"><span class="chip" style="background:#5c3d00; color:#fff3d6;">3 waiting</span><span class="chip" style="background:rgba(92,61,0,.1);">Last try 20 s ago</span></div>
+  </div>
+  <div style="padding:14px 18px 0;">
+    <div style="font-weight:800; font-size:13px;">Waiting to send</div>
+    ${q.map(([i, t, d, s]) => `
+      <div style="display:flex; align-items:center; gap:10px; padding:11px 0; border-bottom:1px solid var(--line);">
+        <span style="width:36px; height:36px; border-radius:12px; flex:none; display:flex; align-items:center; justify-content:center; ${s==='Sent' ? 'background:var(--accent-soft); color:var(--accent);' : 'background:var(--soft); color:var(--ink);'}">${ic(i,17)}</span>
+        <div style="flex:1;"><div style="font-weight:700; font-size:12px;">${t}</div><div class="mut">${d}</div></div>
+        <span class="chip" style="${s==='Sent' ? 'background:var(--accent-soft); color:var(--accent);' : 'background:var(--warn-bg); color:var(--warn);'}">${s==='Sent' ? ic('check',11,3) : ic('clock',11,2.4)}${s}</span>
+      </div>`).join('')}
+    <div class="card" style="margin-top:12px; padding:11px 12px; display:flex; gap:10px; align-items:center;">
+      <span style="color:var(--accent);">${ic('phone',18)}</span><div style="font-size:10.5px; line-height:1.4;"><b>Urgent?</b> SMS fallback sends the job status over 2G.</div>
+    </div>
+  </div>
+  ${thumbNav(2)}
+</div>`;
+
+/* 5 · Customer sign-off */
+const s5 = `
+<div class="scr">
+  ${status(false)}
+  <div style="padding:6px 18px 0;">
+    <div style="display:flex; justify-content:space-between; align-items:center;"><span class="h1">Sign-off</span>${offChip}</div>
+    <div class="card" style="display:flex; gap:10px; align-items:center; padding:10px 12px; margin-top:12px;">
+      <img class="ph" src="photos/ac-indoor.jpg" alt="" style="width:52px; height:52px; border-radius:12px; object-position:40% 40%;">
+      <div style="flex:1;"><div style="font-weight:700; font-size:12.5px;">Gas top-up + service</div><div class="mut">Flat 4B · 54 min on site</div></div>
+    </div>
+    ${[['Service charge','₹650'],['R32 gas, 0.8 kg','₹720'],['Drain clip','₹80']].map(([k,v]) => `<div style="display:flex; justify-content:space-between; font-size:12px; padding:7px 2px; border-bottom:1px solid var(--line);"><span style="color:#4b5563;">${k}</span><b>${v}</b></div>`).join('')}
+    <div style="display:flex; justify-content:space-between; align-items:baseline; margin-top:8px;"><span style="font-weight:700; font-size:12px;">Total</span><span style="font-weight:800; font-size:22px; letter-spacing:-.02em;">₹1,450</span></div>
+    <div style="display:flex; gap:6px; margin-top:8px;">${['Cash','UPI later','AMC'].map((t,i) => `<span class="chip" style="flex:1; justify-content:center; padding:7px; ${i===0 ? 'background:var(--accent); color:#fff;' : 'background:var(--soft); color:var(--ink);'}">${t}</span>`).join('')}</div>
+    <div style="margin-top:12px; height:88px; border-radius:16px; border:1.5px dashed ${L==='c'?'#111':'var(--accent)'}; position:relative; background:var(--soft);">
+      <svg class="abs" style="left:20px; top:14px;" width="210" height="56" viewBox="0 0 210 56"><path d="M6 40 C 20 8, 34 8, 30 34 S 52 50, 62 22 S 80 6, 86 30 S 104 48, 118 26 C 126 14, 138 14, 140 30 S 160 44, 176 20 L 200 16" fill="none" stroke="#1b2a4a" stroke-width="2.6" stroke-linecap="round"/></svg>
+      <div class="abs" style="left:14px; bottom:8px; display:flex; align-items:center; gap:6px;"><img class="av" src="photos/customer.jpg" alt="" style="width:20px; height:20px;"><span class="mut" style="font-size:9.5px;">Valli R. · signed 11:28 am</span></div>
+    </div>
+  </div>
+  <div class="bigbtn">${ic('check',18,3)}Complete job · saved offline</div>
+</div>`;
+
+const caps = ['01 · Today', '02 · Job detail', '03 · Checklist, sunlight mode', '04 · No signal', '05 · Sign-off'];
+const xs = [42, 352, 662, 972, 1282];
+const stage = document.getElementById('stage');
+stage.innerHTML = [s1, s2, s3, s4, s5].map((s, i) => `
+  <div class="cap" style="left:${xs[i] + 6}px;">${caps[i]}</div>
+  <div class="phone" style="left:${xs[i]}px;">${s}</div>`).join('');
+stage.style.transform = `scale(${Math.min(1, innerWidth / 1600, innerHeight / 686)})`;
+</script>
+</body>
+</html>
