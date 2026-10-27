@@ -1,0 +1,115 @@
+<!doctype html>
+<!-- Four rebrand concepts on real photos: top row shows the same real object with the old logo (before)
+     and the new logo (after); bottom row is a real photo of where the business works.
+     Replaces the drawn before-after.html. Photos (Unsplash License), credits in ./photos/CREDITS.md.
+     layout = inippu | kaapi | marina | thiru
+     Render: node tools/render-image.mjs image-sources/06b-rebrands/photo-before-after.html <out.webp> 1200 900 <layout> -->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800;900&family=Fredoka:wght@500;600;700&family=Great+Vibes&family=Archivo+Black&family=Noto+Sans+Tamil:wght@700&family=IBM+Plex+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; background: #111; }
+  #stage { position: absolute; left: 0; top: 0; width: 1200px; height: 900px; transform-origin: 0 0; overflow: hidden; background: #111;
+    display: grid; gap: 10px; grid-template-columns: 595px 595px; grid-template-rows: 445px 445px; grid-template-areas: 'a b' 'c c'; font-family: 'Inter Tight', sans-serif; }
+  .tile { position: relative; overflow: hidden; }
+  .scene { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+  .scene > img { position: absolute; left: 0; top: 0; display: block; }
+  .print { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+  .ink { mix-blend-mode: multiply; }
+  .tag { position: absolute; left: 14px; top: 14px; z-index: 3; font-weight: 800; font-size: 20px; letter-spacing: .06em; color: #fff; background: rgba(15,15,15,.7); padding: 6px 12px; border-radius: 6px; }
+  .tag.after { background: #f5d547; color: #111; }
+  .chip { position: absolute; left: 14px; bottom: 14px; z-index: 3; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
+          color: #fff; background: rgba(15,15,15,.62); padding: 6px 10px; border-radius: 6px; }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script>
+function quad(w, h, [[x0,y0],[x1,y1],[x2,y2],[x3,y3]]) {
+  const dx1 = x1 - x2, dx2 = x3 - x2, dx3 = x0 - x1 + x2 - x3, dy1 = y1 - y2, dy2 = y3 - y2, dy3 = y0 - y1 + y2 - y3;
+  const den = dx1 * dy2 - dx2 * dy1, g = (dx3 * dy2 - dx2 * dy3) / den, k = (dx1 * dy3 - dx3 * dy1) / den;
+  const a = x1 - x0 + g * x1, b = x3 - x0 + k * x3, d = y1 - y0 + g * y1, e = y3 - y0 + k * y3;
+  return `matrix3d(${a / w},${d / w},0,${g / w},${b / h},${e / h},0,${k / h},0,0,1,0,${x0},${y0},0,1)`;
+}
+const on = (w, h, pts, html, cls = 'ink', extra = '') => `<div class="print ${cls}" style="width:${w}px; height:${h}px; transform:${quad(w, h, pts)}; ${extra}">${html}</div>`;
+const center = (html) => `<div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;">${html}</div>`;
+
+/* ---------- logos: [before, after], drawn into the given box ---------- */
+const LOGO = {
+  inippu: [
+    center(`<svg width="560" height="300" viewBox="0 0 560 300"><defs><path id="arc" d="M20 250 Q 280 20 540 250"/><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff3b3b"/><stop offset="1" stop-color="#a8001a"/></linearGradient></defs>
+      <text font-family="Archivo Black" font-size="58" fill="url(#g1)" stroke="#ffd23f" stroke-width="6" paint-order="stroke" letter-spacing="2"><textPath href="#arc" startOffset="50%" text-anchor="middle">INIPPU SWEETS</textPath></text>
+      <text x="280" y="215" text-anchor="middle" font-family="Great Vibes" font-size="42" fill="#6b2a00">since 1972</text>
+      <path d="M90 270 C 200 230, 360 230, 470 262 C 440 290, 380 280, 330 290 C 300 296, 296 320, 284 320 C 272 320, 276 296, 250 294 C 200 290, 150 310, 120 302 Z" fill="#c4001f"/></svg>`),
+    center(`<div style="position:relative; font-family:Fredoka; font-weight:700; font-size:150px; color:#c8102e; line-height:1;">ınıppu
+        <i style="position:absolute; left:12px; top:-4px; width:34px; height:34px; border-radius:50%; background:#f39a1e;"></i><i style="position:absolute; left:118px; top:-4px; width:34px; height:34px; border-radius:50%; background:#f39a1e;"></i></div>
+      <svg width="260" height="60" viewBox="0 0 230 56" style="margin-top:6px;"><path d="M12 10 Q 115 70 218 10" fill="none" stroke="#c8102e" stroke-width="12" stroke-linecap="round"/></svg>
+      <div style="font-weight:600; font-size:22px; letter-spacing:.24em; color:#5b5b5b; margin-top:16px;">SWEETS &amp; SAVOURIES · <span style="font-family:'Noto Sans Tamil'; letter-spacing:0;">இனிப்பு</span></div>`),
+  ],
+  kaapi: [
+    center(`<svg width="120" height="110" viewBox="0 0 110 100" style="display:block; margin-bottom:6px;"><path d="M38 8 c-8 10 8 14 0 24 M56 4 c-8 10 8 14 0 24 M74 8 c-8 10 8 14 0 24" fill="none" stroke="#9aa" stroke-width="4" stroke-linecap="round"/><path d="M18 40 H 92 V 62 C 92 82, 76 94, 55 94 C 34 94, 18 82, 18 62 Z" fill="#8b4a1f" stroke="#5a2b0c" stroke-width="3"/><path d="M92 50 c 18 0, 18 24, 0 24" fill="none" stroke="#5a2b0c" stroke-width="7"/></svg>
+      <div style="font-family:Fredoka; font-weight:600; font-size:68px; line-height:1;"><span style="color:#1565d8;">K</span><span style="color:#2fa84f;">a</span><span style="color:#f4511e;">a</span><span style="color:#f7a400;">p</span><span style="color:#8bc34a;">i</span></div>
+      <div style="font-family:Fredoka; font-weight:600; font-size:40px;"><span style="color:#e91e63;">C</span><span style="color:#1565d8;">o</span><span style="color:#f7a400;">r</span><span style="color:#2fa84f;">n</span><span style="color:#f4511e;">e</span><span style="color:#8bc34a;">r</span></div>`),
+    center(`<svg width="170" height="170" viewBox="0 0 100 100"><rect x="14" y="8" width="14" height="84" fill="#111"/><path d="M28 52 L 66 8 H 84 L 42 56 Z" fill="#111"/><path d="M36 58 H 80 V 74 C 80 86, 72 92, 58 92 C 44 92, 36 86, 36 74 Z" fill="#111"/><path d="M80 62 h 6 a 7 7 0 0 1 0 14 h -6" fill="none" stroke="#111" stroke-width="5"/></svg>
+      <div style="font-weight:600; font-size:30px; letter-spacing:.16em; color:#111; margin-top:16px;">KAAPI CORNER</div>`),
+  ],
+  marina: [
+    center(`<div style="font-family:'Archivo Black'; font-size:110px; line-height:1; transform:skewX(-14deg); letter-spacing:-6px;"><span style="color:#8a3fe0; text-shadow:3px 3px 0 #3d1470;">M</span><span style="color:#ff9a2e; text-shadow:3px 3px 0 #a3530a;">F</span></div>
+      <div style="font-family:'Archivo Black'; font-size:40px; color:#8a3fe0; margin-top:10px; text-shadow:2px 2px 0 #3d1470;">MARINA</div><div style="font-family:'Archivo Black'; font-size:26px; color:#ff9a2e; letter-spacing:.14em;">FITNESS</div>`),
+    center(`<svg width="170" height="150" viewBox="0 0 170 150"><path d="M14 116 V 50 C 14 26, 46 26, 50 50 L 62 116" fill="none" stroke="#f2f4f7" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/><path d="M86 116 V 50 C 86 26, 118 26, 122 50 L 134 116" fill="none" stroke="#7fd35a" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 140 q 19 -12 38 0 t 38 0 t 38 0 t 38 0" fill="none" stroke="#7fd35a" stroke-width="7" stroke-linecap="round"/></svg>
+      <div style="font-weight:800; font-size:48px; color:#f2f4f7; letter-spacing:.04em; margin-top:12px;">MARINA</div><div style="font-weight:800; font-size:22px; color:#7fd35a; letter-spacing:.3em;">FITNESS</div>`),
+  ],
+  thiru: [
+    `<div style="position:absolute; inset:0; display:flex; align-items:center; gap:22px; padding-left:30px;">
+       <svg width="200" height="110" viewBox="0 0 230 120"><defs><linearGradient id="tg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe066"/><stop offset="1" stop-color="#f08c00"/></linearGradient></defs><rect x="10" y="20" width="130" height="66" rx="4" fill="url(#tg)" stroke="#333" stroke-width="3"/><path d="M140 42 H 182 L 212 66 V 86 H 140 Z" fill="#d62828" stroke="#333" stroke-width="3"/><circle cx="46" cy="92" r="16" fill="#333"/><circle cx="176" cy="92" r="16" fill="#333"/></svg>
+       <div><div style="font-family:'Archivo Black'; font-style:italic; font-size:74px; line-height:1; background:linear-gradient(#e63946,#7b0d1e); -webkit-background-clip:text; color:transparent;">THIRU</div>
+       <div style="font-family:'Archivo Black'; font-size:30px; color:#1d3557;">PACKERS &amp; MOVERS</div><div style="font-family:'Great Vibes'; font-size:32px; color:#555;">"We Move With Care"</div></div></div>`,
+    `<div style="position:absolute; inset:0; display:flex; align-items:center; gap:26px; padding-left:40px;">
+       <svg width="150" height="150" viewBox="0 0 100 100"><path d="M0 22 A 22 22 0 0 1 22 0 H 100 V 78 A 22 22 0 0 1 78 100 H 0 Z" fill="#0b1c8c"/><rect x="22" y="22" width="56" height="16" fill="#fff"/><path d="M42 38 H 58 V 60 C 58 72, 66 78, 78 78 V 94 C 56 94, 42 82, 42 62 Z" fill="#fff"/></svg>
+       <div><div style="font-weight:700; font-size:130px; letter-spacing:-.04em; color:#0b1c8c; line-height:.9;">thiru</div><div style="font-weight:600; font-size:34px; color:#0b1c8c; margin-top:8px;">Packers &amp; Movers · 044 2499 0000</div></div></div>`,
+  ],
+};
+
+/* ---------- where each logo goes on the real object ---------- */
+const SET = {
+  inippu: { obj: { src: 'box-white-1.jpg', w: 1600, h: 1067, crop: [230, 20, 1200], box: [722, 483], pts: [[337,302],[1025,83],[1309,400],[502,756]], label: 'Sweet box lid', inner: 0.72 },
+            ctx: { src: 'ctx-sweets.jpg', w: 1000, h: 1333, crop: [0, 520, 1000], label: 'Inippu Sweets · the counter' } },
+  kaapi:  { obj: { src: 'cup-wood.jpg', w: 1600, h: 1086, crop: [0, 360, 900], box: [292, 460], pts: [[258,500],[550,500],[535,960],[272,960]], label: 'Takeaway cup', inner: 1 },
+            ctx: { src: 'ctx-coffee.jpg', w: 1200, h: 800, crop: [0, 200, 1200], label: 'Kaapi Corner · tiffin and kaapi' } },
+  marina: { obj: { src: 'tee-black.jpg', w: 1600, h: 1071, crop: [290, 220, 1000], box: [250, 260], pts: [[655,380],[905,380],[905,640],[655,640]], label: 'Member T-shirt', inner: 0.95, screen: true },
+            ctx: { src: 'ctx-gym.jpg', w: 1600, h: 1200, crop: [0, 280, 1600], label: 'Marina Fitness · the floor' } },
+  thiru:  { obj: { src: 'van-dirt.jpg', w: 1600, h: 901, crop: [0, 120, 900], box: [900, 300], pts: [[282,300],[660,312],[660,456],[282,428]], label: 'Van side panel', inner: 1 },
+            ctx: { src: 'ctx-boxes.jpg', w: 1400, h: 788, crop: [0, 130, 1400], label: 'Thiru · a move in progress' } },
+};
+
+const L = new URLSearchParams(location.search).get('layout') || 'inippu';
+const S = SET[L];
+const objTile = (which, area) => {
+  const o = S.obj, [cx, cy, cw] = o.crop, s = 595 / cw;
+  const [bw, bh] = o.box;
+  const art = `<div style="position:absolute; inset:0; transform:scale(${o.inner}); transform-origin:center;">${LOGO[L][which]}</div>`;
+  const cls = o.screen ? '' : 'ink';
+  const extra = o.screen ? 'filter: blur(.5px) brightness(.9); opacity:.93;' : '';
+  return `<div class="tile" style="grid-area:${area};">
+    <div class="scene" style="transform: scale(${s}) translate(${-cx}px, ${-cy}px); width:${o.w}px; height:${o.h}px;">
+      <img src="photos/${o.src}" alt="" width="${o.w}" height="${o.h}">${on(bw, bh, o.pts, art, cls, extra)}
+    </div>
+    <div class="tag ${which ? 'after' : ''}">${which ? 'AFTER' : 'BEFORE'}</div>
+    <div class="chip">${o.label}</div>
+  </div>`;
+};
+const ctxTile = () => {
+  const c = S.ctx, [cx, cy, cw] = c.crop, s = 1200 / cw;
+  return `<div class="tile" style="grid-area:c;">
+    <div class="scene" style="transform: scale(${s}) translate(${-cx}px, ${-cy}px); width:${c.w}px; height:${c.h}px;"><img src="photos/${c.src}" alt="" width="${c.w}" height="${c.h}"></div>
+    <div class="chip">${c.label}</div>
+  </div>`;
+};
+const stage = document.getElementById('stage');
+stage.innerHTML = objTile(0, 'a') + objTile(1, 'b') + ctxTile();
+stage.style.transform = `scale(${Math.min(1, innerWidth / 1200, innerHeight / 900)})`;
+</script>
+</body>
+</html>

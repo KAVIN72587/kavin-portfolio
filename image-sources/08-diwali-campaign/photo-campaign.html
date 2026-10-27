@@ -1,0 +1,109 @@
+<!doctype html>
+<!-- Ponni Silks Deepavali campaign on real photos: one 30% offer on a city hoarding, a shop-window poster,
+     a bus-shelter lightbox and a handout in someone's hands. Replaces the drawn campaign.html.
+     Photos (Unsplash License, in ./photos, credits in ./photos/CREDITS.md).
+     Render: node tools/render-image.mjs image-sources/08-diwali-campaign/photo-campaign.html <out.webp> 1000 1000 -->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Coiny&family=Baloo+Thambi+2:wght@600;800&family=IBM+Plex+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root { --magenta: #d81b6a; --teal: #0d7377; --teal-d: #08555a; --marigold: #ffb703; --cream: #fff4dc; --leaf: #2f9e44; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; background: #111; }
+  #stage { position: absolute; left: 0; top: 0; width: 1000px; height: 1000px; transform-origin: 0 0; overflow: hidden; background: #111;
+    display: grid; gap: 10px; grid-template-columns: 495px 495px; grid-template-rows: 495px 495px; font-family: 'Baloo Thambi 2', sans-serif; }
+  .tile { position: relative; overflow: hidden; }
+  .scene { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+  .scene > img { position: absolute; left: 0; top: 0; display: block; }
+  .print { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+  .ink { mix-blend-mode: multiply; }
+  .chip { position: absolute; left: 14px; bottom: 14px; z-index: 3; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
+          color: #fff; background: rgba(15,15,15,.62); padding: 6px 10px; border-radius: 6px; }
+  .ta { font-family: 'Coiny', 'Baloo Thambi 2', sans-serif; line-height: 1.05; }
+  .en { font-family: 'Kumar One', serif; line-height: 1; letter-spacing: .01em; }
+  .kolam { position: absolute; inset: 0; background-image: radial-gradient(circle, rgba(255,244,220,.28) 2px, transparent 2.5px); background-size: 22px 22px; }
+  .thoranam { position: absolute; left: 0; right: 0; top: 0; height: 30px; display: flex; justify-content: space-around; }
+  .thoranam i { width: 22px; height: 30px; background: var(--leaf); clip-path: polygon(50% 100%, 0 0, 100% 0); }
+  .thoranam i:nth-child(3n+2) { background: var(--marigold); width: 14px; height: 16px; border-radius: 50%; clip-path: none; margin-top: 2px; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="burst" viewBox="0 0 100 100"><path d="M50 2 L58 22 L78 10 L74 32 L96 34 L80 50 L96 66 L74 68 L78 90 L58 78 L50 98 L42 78 L22 90 L26 68 L4 66 L20 50 L4 34 L26 32 L22 10 L42 22 Z" fill="currentColor"/></symbol>
+</svg>
+<div id="stage"></div>
+<script>
+function quad(w, h, [[x0,y0],[x1,y1],[x2,y2],[x3,y3]]) {
+  const dx1 = x1 - x2, dx2 = x3 - x2, dx3 = x0 - x1 + x2 - x3, dy1 = y1 - y2, dy2 = y3 - y2, dy3 = y0 - y1 + y2 - y3;
+  const den = dx1 * dy2 - dx2 * dy1, g = (dx3 * dy2 - dx2 * dy3) / den, k = (dx1 * dy3 - dx3 * dy1) / den;
+  const a = x1 - x0 + g * x1, b = x3 - x0 + k * x3, d = y1 - y0 + g * y1, e = y3 - y0 + k * y3;
+  return `matrix3d(${a / w},${d / w},0,${g / w},${b / h},${e / h},0,${k / h},0,0,1,0,${x0},${y0},0,1)`;
+}
+const on = (w, h, pts, html, cls = '', extra = '') => `<div class="print ${cls}" style="width:${w}px; height:${h}px; transform:${quad(w, h, pts)}; ${extra}">${html}</div>`;
+const offer = (size, ring) => `<div style="position:relative; width:${size}px; height:${size}px; color:${ring};"><svg width="${size}" height="${size}"><use href="#burst"/></svg>
+  <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#fff4dc; text-align:center;">
+    <div style="font-weight:800; font-size:${size*.09}px; letter-spacing:.12em;">FLAT</div><div class="en" style="font-size:${size*.25}px; color:#ffb703;">30%</div><div style="font-weight:800; font-size:${size*.09}px; letter-spacing:.12em;">OFF SILKS</div></div></div>`;
+
+/* portrait artwork 400 x 560 */
+const portrait = (coupon, band) => `
+  <div style="position:absolute; inset:0; background:var(--magenta); overflow:hidden;">
+    <div class="kolam"></div>
+    ${band ? '<div style="position:absolute; left:0; right:0; top:0; height:150px; background:#fff4dc;"></div><div style="position:absolute; left:0; right:0; top:150px; height:10px; background:repeating-linear-gradient(90deg,#2f9e44 0 18px,#ffb703 18px 30px);"></div>' : '<div class="thoranam">' + '<i></i>'.repeat(13) + '</div>'}
+    <div style="position:absolute; left:0; right:0; top:${band ? 108 : 42}px; text-align:center; font-weight:800; font-size:17px; color:${band ? '#d81b6a' : 'var(--cream)'};">ponni silks · பொன்னி சில்க்ஸ்</div>
+    <div class="ta" style="position:absolute; left:0; right:0; top:${band ? 172 : 76}px; text-align:center; font-size:${band ? 54 : 66}px; color:var(--marigold);">தீபாவளி</div>
+    <div class="en" style="position:absolute; left:0; right:0; top:${band ? 232 : 152}px; text-align:center; font-size:52px; color:var(--cream);">Deepavali</div>
+    <div style="position:absolute; left:${band ? 120 : 100}px; top:${band ? 290 : 236}px;">${offer(band ? 160 : 200, 'var(--teal)')}</div>
+    <div style="position:absolute; left:0; right:0; top:450px; text-align:center; color:var(--cream); font-weight:600; font-size:17px; line-height:1.4;">15 Oct – 2 Nov · all 6 stores</div>
+    ${coupon ? '<div style="position:absolute; left:16px; right:16px; bottom:14px; border-top:2px dashed rgba(255,244,220,.75); padding-top:8px; text-align:center; color:#fff4dc; font-size:15px; font-weight:600;">✂ Show this card · extra 5%</div>' : ''}
+  </div>`;
+const square = `
+  <div style="position:absolute; inset:0; background:var(--teal); overflow:hidden;">
+    <div class="kolam" style="background-image: radial-gradient(circle, rgba(255,244,220,.2) 2px, transparent 2.5px);"></div>
+    <div class="thoranam" style="height:34px;">${'<i></i>'.repeat(25)}</div>
+    <div style="position:absolute; left:0; right:0; top:56px; text-align:center; font-weight:800; font-size:24px; color:var(--cream);">ponni silks · பொன்னி சில்க்ஸ்</div>
+    <div class="ta" style="position:absolute; left:0; right:0; top:96px; text-align:center; font-size:104px; color:var(--marigold);">தீபாவளி</div>
+    <div class="en" style="position:absolute; left:0; right:0; top:222px; text-align:center; font-size:70px; color:var(--cream);">Deepavali Sale</div>
+    <div style="position:absolute; left:0; right:0; bottom:0; height:300px; background:var(--magenta);"></div>
+    <div style="position:absolute; left:60px; top:352px;">${offer(260, 'var(--teal-d)')}</div>
+    <div style="position:absolute; left:350px; top:440px; color:var(--cream); font-weight:800; font-size:34px; line-height:1.25;">15 Oct – 2 Nov<br><span style="font-weight:600; font-size:26px;">all 6 stores</span></div>
+  </div>`;
+const landscape = `
+  <div style="position:absolute; inset:0; background:var(--teal); overflow:hidden;">
+    <div class="kolam" style="background-image: radial-gradient(circle, rgba(255,244,220,.2) 2px, transparent 2.5px);"></div>
+    <div class="thoranam" style="height:34px;">${'<i></i>'.repeat(27)}</div>
+    <div style="position:absolute; left:40px; top:52px; font-weight:800; font-size:22px; color:var(--cream);">ponni silks · பொன்னி சில்க்ஸ்</div>
+    <div class="ta" style="position:absolute; left:38px; top:88px; font-size:96px; color:var(--marigold);">தீபாவளி</div>
+    <div class="en" style="position:absolute; left:42px; top:200px; font-size:64px; color:var(--cream);">Deepavali Sale</div>
+    <div style="position:absolute; right:0; top:0; bottom:0; width:240px; background:var(--magenta);"></div>
+    <div style="position:absolute; right:22px; top:66px;">${offer(200, 'var(--teal-d)')}</div>
+    <div style="position:absolute; right:14px; bottom:22px; width:220px; text-align:center; color:var(--cream); font-size:17px; font-weight:600; line-height:1.3;">15 Oct – 2 Nov<br>all 6 stores</div>
+  </div>`;
+
+const P = [
+  { src: 'billboard-city.jpg', w: 1600, h: 1600, crop: [380, 220, 820], label: 'City hoarding',
+    prints: on(645, 662, [[440,280],[1085,276],[1085,945],[442,948]], square, '', 'filter: brightness(.95) saturate(.95);') },
+  { src: 'shop-night.jpg', w: 1600, h: 1061, crop: [600, 250, 650], label: 'Shop window poster',
+    prints: on(400, 560, [[810,315],[958,316],[958,598],[810,600]], portrait(false), '', 'filter: brightness(.9);') +
+      `<div class="print" style="left:810px; top:315px; width:148px; height:285px; background:linear-gradient(110deg, transparent 35%, rgba(255,255,255,.22) 48%, transparent 60%);"></div>` },
+  { src: 'lightbox-bus.jpg', w: 1600, h: 2133, crop: [460, 600, 760], label: 'Bus-shelter lightbox',
+    prints: `<div class="print" style="left:752px; top:760px; width:120px; height:20px; background:#141414;"></div>` +
+      on(400, 560, [[589,777],[999,777],[999,1353],[589,1353]], portrait(false), '', 'filter: brightness(1.1) drop-shadow(0 0 20px rgba(255,220,240,.3));') },
+  { src: 'flyer-hand-1.jpg', w: 1600, h: 1259, crop: [320, 200, 960], label: 'Handout A5',
+    prints: on(400, 560, [[558,267],[1047,253],[1043,973],[541,970]], portrait(true, true), 'ink', 'filter: saturate(1.05);') },
+];
+
+const stage = document.getElementById('stage');
+stage.innerHTML = P.map((p) => {
+  const [cx, cy, cw] = p.crop, s = 495 / cw;
+  return `<div class="tile">
+    <div class="scene" style="transform: scale(${s}) translate(${-cx}px, ${-cy}px); width:${p.w}px; height:${p.h}px;">
+      <img src="photos/${p.src}" alt="" width="${p.w}" height="${p.h}">${p.prints}
+    </div>
+    <div class="chip">${p.label}</div>
+  </div>`;
+}).join('');
+stage.style.transform = `scale(${Math.min(1, innerWidth / 1000, innerHeight / 1000)})`;
+</script>
+</body>
+</html>

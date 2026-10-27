@@ -1,0 +1,99 @@
+<!doctype html>
+<!-- Adupu Kitchens on real photos: the shared round sticker on real kraft boxes and takeaway containers,
+     plus the parent mark and three sub-brands as a printed card. Replaces the drawn board.html.
+     Photos (Unsplash License, in ./photos, credits in ./photos/CREDITS.md).
+     Render: node tools/render-image.mjs image-sources/05-cloud-kitchen/photo-board.html <out.webp> 1440 900 -->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;800;900&family=Noto+Sans+Tamil:wght@700&family=IBM+Plex+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root { --char: #23262b; --cream: #f6efe2; --idli: #3f9b4a; --dum: #e8772e; --kothu: #d63a2f; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; background: #1b1815; }
+  #stage { position: absolute; left: 0; top: 0; width: 1440px; height: 900px; transform-origin: 0 0; overflow: hidden; background: #1b1815;
+    display: grid; gap: 10px; grid-template-columns: 860px 570px; grid-template-rows: 445px 445px; grid-template-areas: 'a b' 'c d'; font-family: 'Rubik', sans-serif; color: var(--char); }
+  .tile { position: relative; overflow: hidden; }
+  .scene { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+  .scene > img { position: absolute; left: 0; top: 0; display: block; }
+  .print { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+  .chip { position: absolute; left: 14px; bottom: 14px; z-index: 3; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
+          color: #fff; background: rgba(20,18,16,.62); padding: 6px 10px; border-radius: 6px; }
+  .wm { font-weight: 900; letter-spacing: -.035em; line-height: .9; }
+  .sticker { position: absolute; border-radius: 50%; background: var(--c); display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 3px rgba(0,0,0,.28); }
+  .sticker .in { width: 74%; height: 74%; border-radius: 50%; background: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .sticker .nm { font-weight: 900; letter-spacing: -.03em; color: var(--c); line-height: .9; text-align: center; }
+  .sticker .by { font-family: 'IBM Plex Mono', monospace; color: var(--char); letter-spacing: .14em; margin-top: 5%; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="pot" viewBox="0 0 100 100">
+    <path d="M30 36 C 24 26, 30 18, 34 10 C 38 20, 44 26, 38 36 Z" fill="#3f9b4a"/>
+    <path d="M50 34 C 42 22, 48 12, 50 2 C 54 12, 60 22, 50 34 Z" fill="#e8772e"/>
+    <path d="M62 36 C 56 26, 62 20, 66 10 C 70 18, 76 26, 70 36 Z" fill="#d63a2f"/>
+    <rect x="12" y="44" width="76" height="9" rx="4.5" fill="var(--pot, #23262b)"/>
+    <path d="M18 56 H 82 V 64 C 82 82, 68 94, 50 94 C 32 94, 18 82, 18 64 Z" fill="var(--pot, #23262b)"/>
+    <rect x="4" y="60" width="12" height="7" rx="3.5" fill="var(--pot, #23262b)"/><rect x="84" y="60" width="12" height="7" rx="3.5" fill="var(--pot, #23262b)"/>
+  </symbol>
+  <symbol id="flame" viewBox="0 0 40 50"><path d="M20 48 C 6 40, 8 26, 14 18 C 16 26, 20 28, 22 22 C 24 14, 20 8, 22 2 C 34 14, 38 30, 30 42 C 28 45, 24 47, 20 48 Z" fill="currentColor"/></symbol>
+</svg>
+<div id="stage"></div>
+<script>
+function quad(w, h, [[x0,y0],[x1,y1],[x2,y2],[x3,y3]]) {
+  const dx1 = x1 - x2, dx2 = x3 - x2, dx3 = x0 - x1 + x2 - x3, dy1 = y1 - y2, dy2 = y3 - y2, dy3 = y0 - y1 + y2 - y3;
+  const den = dx1 * dy2 - dx2 * dy1, g = (dx3 * dy2 - dx2 * dy3) / den, k = (dx1 * dy3 - dx3 * dy1) / den;
+  const a = x1 - x0 + g * x1, b = x3 - x0 + k * x3, d = y1 - y0 + g * y1, e = y3 - y0 + k * y3;
+  return `matrix3d(${a / w},${d / w},0,${g / w},${b / h},${e / h},0,${k / h},0,0,1,0,${x0},${y0},0,1)`;
+}
+const on = (w, h, pts, html, extra = '') => `<div class="print" style="width:${w}px; height:${h}px; transform:${quad(w, h, pts)}; ${extra}">${html}</div>`;
+/* sticker drawn flat at 300px, then mapped onto the box face */
+const sticker = (c, name) => `<div class="sticker" style="--c:${c}; left:0; top:0; width:300px; height:300px;"><div class="in">
+  <svg width="54" height="68" style="color:${c};"><use href="#flame"/></svg>
+  <div class="nm" style="font-size:52px; margin-top:6px;">${name}</div><div class="by" style="font-size:13px;">BY ADUPU</div></div></div>`;
+const on300 = (pts, c, name, extra = '') => on(300, 300, pts, sticker(c, name), 'filter: brightness(.94) saturate(.95);' + extra);
+
+const P = {
+  boxes: { src: 'box-table.jpg', w: 1600, h: 1167, area: 'a', tw: 860, crop: [60, 180, 1340], label: 'Same sticker · kraft boxes',
+    prints:
+      on300([[250,430],[470,422],[478,630],[258,640]], 'var(--idli)', 'idli<br>street') +
+      on300([[640,712],[790,712],[790,862],[640,862]], 'var(--dum)', 'dum<br>dum') },
+  take: { src: 'takeout-hand.jpg', w: 1600, h: 1067, area: 'c', tw: 860, crop: [150, 380, 1340], label: 'Same sticker · takeaway tubs',
+    prints:
+      on300([[392,690],[492,690],[494,790],[394,790]], 'var(--idli)', 'idli<br>street') +
+      on300([[590,665],[700,665],[700,765],[590,765]], 'var(--dum)', 'dum<br>dum') +
+      on300([[920,655],[1050,650],[1052,770],[922,775]], 'var(--kothu)', 'kothu<br>club') },
+  delivery: { src: 'box-white.jpg', w: 1600, h: 1067, area: 'd', tw: 570, crop: [330, 200, 940], label: 'Same sticker · delivery box',
+    prints: on300([[590,590],[790,575],[790,775],[590,790]], 'var(--kothu)', 'kothu<br>club', 'filter: brightness(1) saturate(.95);') },
+  card: { src: '../01-textile/photos/paper-black.jpg', w: 1600, h: 964, area: 'b', tw: 570, crop: [440, 180, 860], label: 'Parent mark + sub-brands',
+    prints: on(780, 572, [[485,253],[1252,236],[1266,804],[492,848]], `
+      <div style="position:absolute; inset:0; background:#f6efe2;">
+        <div style="position:absolute; left:60px; top:48px; display:flex; align-items:center; gap:20px;">
+          <svg width="130" height="130"><use href="#pot"/></svg>
+          <div><div class="wm" style="font-size:86px;">adupu</div><div style="font-weight:700; font-size:22px; margin-top:8px;">kitchens · <span style="font-family:'Noto Sans Tamil';">அடுப்பு</span></div></div>
+        </div>
+        <div style="position:absolute; left:60px; right:60px; top:240px; display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px;">
+          ${[['var(--idli)','idli<br>street','Tiffin'],['var(--dum)','dum<br>dum','Biryani'],['var(--kothu)','kothu<br>club','Parotta']].map(([c,n,t]) => `
+            <div style="background:${c}; color:#fff; border-radius:10px; padding:18px 18px 16px; height:250px; position:relative;">
+              <div style="font-family:'IBM Plex Mono'; font-size:13px; letter-spacing:.18em; opacity:.85;">${t.toUpperCase()}</div>
+              <svg width="40" height="50" style="color:#fff; margin-top:28px;"><use href="#flame"/></svg>
+              <div class="wm" style="font-size:42px; margin-top:12px;">${n}</div>
+            </div>`).join('')}
+        </div>
+      </div>`, 'filter: brightness(.97);') },
+};
+
+const stage = document.getElementById('stage');
+stage.innerHTML = Object.values(P).map((p) => {
+  const [cx, cy, cw] = p.crop, s = p.tw / cw;
+  return `<div class="tile" style="grid-area:${p.area};">
+    <div class="scene" style="transform: scale(${s}) translate(${-cx}px, ${-cy}px); width:${p.w}px; height:${p.h}px;">
+      <img src="${p.src.includes('/') ? p.src : 'photos/' + p.src}" alt="" width="${p.w}" height="${p.h}">${p.prints}
+    </div>
+    <div class="chip">${p.label}</div>
+  </div>`;
+}).join('');
+stage.style.transform = `scale(${Math.min(1, innerWidth / 1440, innerHeight / 900)})`;
+</script>
+</body>
+</html>
