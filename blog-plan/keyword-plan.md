@@ -120,9 +120,9 @@ Owner asked for more posts per day for the rest of October; agreed on 3 a day (3
 | 109 | done 2026-10-26 | web-design-brief-template | how to brief a web designer template | Web | A one-page brief for your web designer | /web-design-chennai/, /website-design-cost-chennai/ |
 | 110 | done 2026-10-26 | reel-cover-images | Instagram reel cover image design | Video | Reel covers: the shop window of your profile | /reels-shorts-editing-chennai/, /video-editing-charges-chennai/ |
 | 111 | done 2026-10-26 | website-build-timeline | how long does it take to build a website | Web | How long your website will really take | /web-design-chennai/, /website-design-cost-chennai/ |
-| 112 | queued 2026-10-27 | website-background-video | background video for website hero | Video | The website background video, done right | /video-editing-chennai/, /video-editing-charges-chennai/ |
-| 113 | queued 2026-10-27 | compare-web-design-quotes | how to compare web design quotes | Web | Comparing web design quotes | /web-design-chennai/, /website-design-cost-chennai/ |
-| 114 | queued 2026-10-27 | corporate-video-brief | corporate video brief template | Video | A corporate video brief that works | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 112 | done 2026-10-27 | website-background-video | background video for website hero | Video | The website background video, done right | /video-editing-chennai/, /video-editing-charges-chennai/ |
+| 113 | done 2026-10-27 | compare-web-design-quotes | how to compare web design quotes | Web | Comparing web design quotes | /web-design-chennai/, /website-design-cost-chennai/ |
+| 114 | done 2026-10-27 | corporate-video-brief | corporate video brief template | Video | A corporate video brief that works | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
 | 115 | queued 2026-10-28 | website-accessibility-basics | website accessibility basics small business | Web | A website everyone can use | /web-design-chennai/, /website-design-cost-chennai/ |
 | 116 | queued 2026-10-28 | interview-video-editing | interview video two camera setup editing | Video | Interview videos that look professional | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
 | 117 | queued 2026-10-28 | online-appointment-booking | online appointment booking for small business website | Web | Taking appointments through your website | /web-design-chennai/, /website-design-cost-chennai/ |
