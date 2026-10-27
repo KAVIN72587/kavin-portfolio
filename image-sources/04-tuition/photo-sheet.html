@@ -1,0 +1,107 @@
+<!doctype html>
+<!-- Padi Tuition Centre logo on real photos: classroom board, notebook cover, chat display picture on a phone,
+     and the construction sheet printed on paper. Replaces the drawn logo-sheet.html.
+     Photos (Unsplash License, in ./photos and ../01-textile/photos, credits in ./photos/CREDITS.md).
+     Render: node tools/render-image.mjs image-sources/04-tuition/photo-sheet.html <out.webp> 1000 1000 -->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700;800&family=Noto+Sans+Tamil:wght@700&family=IBM+Plex+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root { --navy: #1f2a6b; --orange: #f28c28; --sky: #4aa8e8; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; background: #1b1815; }
+  #stage { position: absolute; left: 0; top: 0; width: 1000px; height: 1000px; transform-origin: 0 0; overflow: hidden; background: #1b1815;
+    display: grid; gap: 10px; grid-template-columns: 495px 495px; grid-template-rows: 495px 495px; font-family: 'Lexend', sans-serif; }
+  .tile { position: relative; overflow: hidden; }
+  .scene { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+  .scene > img { position: absolute; left: 0; top: 0; display: block; }
+  .print { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+  .ink { mix-blend-mode: multiply; }
+  .chip { position: absolute; left: 14px; bottom: 14px; z-index: 3; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
+          color: #fff; background: rgba(20,18,16,.62); padding: 6px 10px; border-radius: 6px; }
+  .wm { font-weight: 800; letter-spacing: -.04em; line-height: .9; }
+  .ta { font-family: 'Noto Sans Tamil', sans-serif; font-weight: 700; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="mark" viewBox="0 0 88 88">
+    <path d="M6 84 V 66 a6 6 0 0 1 6 -6 H 32 V 50 a6 6 0 0 1 6 -6 H 58 V 34 a6 6 0 0 1 6 -6 H 76 a6 6 0 0 1 6 6 V 84 Z" fill="var(--steps, #1f2a6b)"/>
+    <circle cx="70" cy="13" r="10" fill="var(--dot, #f28c28)"/>
+  </symbol>
+</svg>
+<div id="stage"></div>
+<script>
+function quad(w, h, [[x0,y0],[x1,y1],[x2,y2],[x3,y3]]) {
+  const dx1 = x1 - x2, dx2 = x3 - x2, dx3 = x0 - x1 + x2 - x3, dy1 = y1 - y2, dy2 = y3 - y2, dy3 = y0 - y1 + y2 - y3;
+  const den = dx1 * dy2 - dx2 * dy1, g = (dx3 * dy2 - dx2 * dy3) / den, k = (dx1 * dy3 - dx3 * dy1) / den;
+  const a = x1 - x0 + g * x1, b = x3 - x0 + k * x3, d = y1 - y0 + g * y1, e = y3 - y0 + k * y3;
+  return `matrix3d(${a / w},${d / w},0,${g / w},${b / h},${e / h},0,${k / h},0,0,1,0,${x0},${y0},0,1)`;
+}
+const on = (w, h, pts, html, cls = 'ink', extra = '') => `<div class="print ${cls}" style="width:${w}px; height:${h}px; transform:${quad(w, h, pts)}; ${extra}">${html}</div>`;
+const mark = (s, steps = '#1f2a6b', dot = '#f28c28') => `<svg width="${s}" height="${s}" style="--steps:${steps}; --dot:${dot}; flex:none;"><use href="#mark"/></svg>`;
+
+const P = {
+  board: { src: 'photos/classroom.jpg', w: 1600, h: 900, label: 'Classroom board',
+    prints: on(500, 456, [[76,207],[327,224],[327,432],[76,436]], `
+      <div style="position:absolute; inset:0; background:#1f2a6b; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#fff;">
+        ${mark(150, '#fff')}
+        <div class="wm" style="font-size:120px; margin-top:18px;">padi</div>
+        <div style="font-size:26px; color:#f6c9a0; margin-top:14px;">tuition centre · <span class="ta">படி</span></div>
+      </div>`, '', 'filter: brightness(.86) contrast(.95);') },
+  notebook: { src: 'photos/notebook-dark.jpg', w: 1600, h: 988, label: 'Notebook cover',
+    prints: on(900, 657, [[342,178],[1240,174],[1240,830],[342,835]], `
+      <div style="position:absolute; inset:0; background:#f28c28;">
+        <div style="position:absolute; right:90px; top:80px; display:flex; flex-direction:column; align-items:center;">${mark(210, '#fff', '#1f2a6b')}<div class="wm" style="font-size:110px; color:#fff; margin-top:14px;">padi</div></div>
+        <div style="position:absolute; left:250px; bottom:70px; width:520px; background:#fff; border-radius:16px; padding:22px 26px; font-family:'IBM Plex Mono'; font-size:22px; color:#6b6458; line-height:2.2;">
+          NAME ______________________<br>CLASS ______ SUBJECT ______
+        </div>
+      </div>`) },
+  phone: { src: 'photos/phone-hand-2.jpg', w: 1600, h: 1349, label: 'Chat display picture',
+    prints: on(410, 880, [[735,62],[1108,230],[712,968],[338,800]], `
+      <div style="position:absolute; inset:0; background:#efeae2; border-radius:46px; overflow:hidden;">
+        <div style="height:190px; background:#2f4f46; display:flex; align-items:flex-end; gap:16px; padding:0 22px 22px;">
+          <div style="width:74px; height:74px; border-radius:50%; background:#1f2a6b; display:flex; align-items:center; justify-content:center;">${mark(46, '#fff')}</div>
+          <div><div style="font-weight:600; font-size:26px; color:#fff;">Padi Tuition</div><div style="font-size:17px; color:#b9d3c9; margin-top:2px;">online</div></div>
+        </div>
+        <div style="padding:26px 22px; display:flex; flex-direction:column; gap:16px; font-size:20px;">
+          <div style="background:#fff; border-radius:16px 16px 16px 4px; padding:14px 16px; width:82%;">Class 10 maths at 6pm today</div>
+          <div style="background:#d9fdd3; border-radius:16px 16px 4px 16px; padding:14px 16px; width:52%; align-self:flex-end;">Coming 👍</div>
+          <div style="background:#fff; border-radius:16px 16px 16px 4px; padding:14px 16px; width:76%;">Bring last week's sheet</div>
+          <div style="background:#fff; border-radius:16px 16px 16px 4px; padding:14px 16px; width:70%;"><span class="ta" style="font-size:19px;">நாளை விடுமுறை இல்லை</span></div>
+        </div>
+      </div>`, '', 'filter: brightness(.97);') },
+  sheet: { src: '../01-textile/photos/flatlay.jpg', w: 1600, h: 1067, label: 'Logo construction',
+    prints: on(524, 754, [[472,258],[996,258],[996,1012],[472,1012]], `
+      <svg style="position:absolute; inset:0;" width="524" height="754" viewBox="0 0 524 754">
+        <g stroke="#9fb3e8" stroke-width="1.5" fill="none">
+          <line x1="96" y1="80" x2="96" y2="440"/><line x1="166" y1="80" x2="166" y2="440"/><line x1="236" y1="80" x2="236" y2="440"/><line x1="300" y1="80" x2="300" y2="440"/>
+          <line x1="40" y1="400" x2="490" y2="400"/><line x1="40" y1="335" x2="490" y2="335"/><line x1="40" y1="270" x2="490" y2="270"/><line x1="40" y1="205" x2="490" y2="205"/>
+          <circle cx="266" cy="140" r="28"/><circle cx="266" cy="140" r="46"/>
+        </g>
+      </svg>
+      <div style="position:absolute; left:84px; top:140px;">${mark(260)}</div>
+      <div class="wm" style="position:absolute; left:84px; top:470px; font-size:120px; color:#1f2a6b;">padi</div>
+      <div style="position:absolute; left:90px; top:600px; font-size:24px; color:#f28c28;">tuition centre · <span class="ta" style="color:#1f2a6b;">படி</span></div>
+      <div style="position:absolute; left:90px; top:668px; display:flex; gap:10px;">
+        <i style="width:36px; height:36px; border-radius:8px; background:#1f2a6b;"></i><i style="width:36px; height:36px; border-radius:8px; background:#f28c28;"></i><i style="width:36px; height:36px; border-radius:8px; background:#4aa8e8;"></i>
+        <span style="font-family:'IBM Plex Mono'; font-size:13px; color:#7b7a85; margin-left:8px; align-self:center;">holds at 16 px</span>
+      </div>`) },
+};
+
+const tiles = [['board', 0, 120, 640], ['notebook', 290, 0, 1000], ['phone', 230, 20, 1020], ['sheet', 320, 210, 830]];
+const stage = document.getElementById('stage');
+stage.innerHTML = tiles.map(([key, cx, cy, cw]) => {
+  const p = P[key], s = 495 / cw;
+  return `<div class="tile">
+    <div class="scene" style="transform: scale(${s}) translate(${-cx}px, ${-cy}px); width:${p.w}px; height:${p.h}px;">
+      <img src="${p.src}" alt="" width="${p.w}" height="${p.h}">${p.prints}
+    </div>
+    <div class="chip">${p.label}</div>
+  </div>`;
+}).join('');
+stage.style.transform = `scale(${Math.min(1, innerWidth / 1000, innerHeight / 1000)})`;
+</script>
+</body>
+</html>

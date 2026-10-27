@@ -1,6 +1,6 @@
 # Media audit
 
-Generated 2026-10-26 by `node tools/media-audit.mjs`.
+Generated 2026-10-27 by `node tools/media-audit.mjs`.
 
 | Check | Count |
 |---|---|

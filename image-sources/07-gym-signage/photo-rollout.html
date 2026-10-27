@@ -1,0 +1,95 @@
+<!doctype html>
+<!-- Irumbu Gym signage rollout on real photos: one weight-plate mark across four real sign sites,
+     each a different size and lit differently. Replaces the drawn rollout.html.
+     Photos (Unsplash License, in ./photos, credits in ./photos/CREDITS.md).
+     Render: node tools/render-image.mjs image-sources/07-gym-signage/photo-rollout.html <out.webp> 1600 686 -->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Noto+Sans+Tamil:wght@800&family=IBM+Plex+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root { --yellow: #ffd400; --red: #e3262f; --ink: #0e0e10; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; background: #000; }
+  #stage { position: absolute; left: 0; top: 0; width: 1600px; height: 686px; transform-origin: 0 0; overflow: hidden; background: #0b0b0c; display: flex; gap: 10px; font-family: 'Oswald', sans-serif; }
+  .tile { position: relative; overflow: hidden; height: 100%; flex: none; }
+  .scene { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+  .scene > img { position: absolute; left: 0; top: 0; display: block; }
+  .print { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+  .ink { mix-blend-mode: multiply; }
+  .cap { position: absolute; left: 14px; bottom: 14px; z-index: 3; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .16em; text-transform: uppercase;
+         color: rgba(255,255,255,.85); background: rgba(10,10,12,.62); padding: 7px 10px; border-radius: 6px; line-height: 1.5; }
+  .cap b { color: #fff; font-weight: 500; }
+  .wm { font-weight: 700; text-transform: uppercase; line-height: .9; letter-spacing: .01em; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="plate" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="48" fill="currentColor"/>
+    <circle cx="50" cy="50" r="33" fill="none" stroke="var(--cut, #0e0e10)" stroke-width="5"/>
+    <circle cx="50" cy="50" r="11" fill="var(--cut, #0e0e10)"/>
+    <rect x="46" y="4" width="8" height="12" rx="2" fill="var(--cut, #0e0e10)"/><rect x="46" y="84" width="8" height="12" rx="2" fill="var(--cut, #0e0e10)"/>
+  </symbol>
+</svg>
+<div id="stage"></div>
+<script>
+function quad(w, h, [[x0,y0],[x1,y1],[x2,y2],[x3,y3]]) {
+  const dx1 = x1 - x2, dx2 = x3 - x2, dx3 = x0 - x1 + x2 - x3, dy1 = y1 - y2, dy2 = y3 - y2, dy3 = y0 - y1 + y2 - y3;
+  const den = dx1 * dy2 - dx2 * dy1, g = (dx3 * dy2 - dx2 * dy3) / den, k = (dx1 * dy3 - dx3 * dy1) / den;
+  const a = x1 - x0 + g * x1, b = x3 - x0 + k * x3, d = y1 - y0 + g * y1, e = y3 - y0 + k * y3;
+  return `matrix3d(${a / w},${d / w},0,${g / w},${b / h},${e / h},0,${k / h},0,0,1,0,${x0},${y0},0,1)`;
+}
+const on = (w, h, pts, html, cls = '', extra = '') => `<div class="print ${cls}" style="width:${w}px; height:${h}px; transform:${quad(w, h, pts)}; ${extra}">${html}</div>`;
+const plate = (s, color = '#ffd400', cut = '#0e0e10', extra = '') => `<svg width="${s}" height="${s}" style="color:${color}; --cut:${cut}; flex:none; ${extra}"><use href="#plate"/></svg>`;
+
+const P = {
+  /* backlit lightbox: the poster glows, so it sits on top with a little bloom */
+  lightbox: { src: 'lightbox-bus.jpg', w: 1600, h: 2133, crop: [500, 560, 1180], width: 330, cap: '<b>Anna Nagar</b><br>Bus-shelter lightbox',
+    prints: `<div class="print" style="left:752px; top:760px; width:120px; height:20px; background:#141414;"></div>` + on(410, 576, [[589,777],[999,777],[999,1353],[589,1353]], `
+        <div style="position:absolute; inset:0; background:#0e0e10; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;">
+          ${plate(170, '#ffd400', '#0e0e10', 'filter: drop-shadow(0 0 14px rgba(255,212,0,.6));')}
+          <div class="wm" style="font-size:96px; color:#ffd400; margin-top:24px;">Irumbu</div>
+          <div class="wm" style="font-size:30px; letter-spacing:.42em; color:#fff; margin-top:12px;">Gym</div>
+          <div style="width:180px; height:6px; background:#e3262f; margin:26px 0;"></div>
+          <div class="wm" style="font-size:34px; color:#fff;">First month ₹999</div>
+          <div style="font-family:'Noto Sans Tamil'; font-weight:800; font-size:21px; color:#ffd400; margin-top:10px; white-space:nowrap;">இரும்பு ஜிம் · அண்ணா நகர்</div>
+        </div>`, '', 'filter: brightness(1.12) drop-shadow(0 0 22px rgba(255,240,210,.35));') },
+  dusk: { src: 'billboard-dusk.jpg', w: 1600, h: 1065, crop: [618, 317, 748], width: 330, cap: '<b>Velachery</b><br>Rooftop board at dusk',
+    prints: on(332, 136, [[626,784],[959,782],[959,915],[626,920]], `
+      <div style="position:absolute; inset:0; background:#e3262f; display:flex; align-items:center; gap:14px; padding:0 18px;">
+        ${plate(88, '#fff', '#e3262f')}
+        <div><div class="wm" style="font-size:52px; color:#fff;">Irumbu</div><div class="wm" style="font-size:15px; letter-spacing:.24em; color:#ffd400; margin-top:6px; white-space:nowrap;">Gym · Velachery</div></div>
+      </div>`, '', 'filter: brightness(.86) saturate(.95);') },
+  hoarding: { src: 'sign-off.jpg', w: 1600, h: 1067, crop: [250, 0, 1067], width: 640, cap: '<b>OMR</b><br>Highway hoarding · 40 ft',
+    prints: on(1100, 520, [[313,430],[1325,97],[1383,622],[258,905]], `
+      <div style="position:absolute; inset:0; background:#0e0e10;">
+        <div style="position:absolute; left:0; top:0; bottom:0; width:420px; background:#ffd400;"></div>
+        <div style="position:absolute; left:70px; top:110px;">${plate(300, '#0e0e10', '#ffd400')}</div>
+        <div style="position:absolute; left:450px; top:90px;">
+          <div class="wm" style="font-size:122px; color:#fff;">Irumbu</div>
+          <div class="wm" style="font-size:44px; letter-spacing:.26em; color:#ffd400; margin-top:16px;">Gym · 24/7</div>
+          <div class="wm" style="font-size:52px; color:#e3262f; margin-top:30px;">No excuses.</div>
+        </div>
+      </div>`, '', 'filter: brightness(.9) contrast(1.02);') },
+  wall: { src: 'gym-floor.jpg', w: 1600, h: 1200, crop: [90, 330, 650], width: 270, cap: '<b>Adyar</b><br>Wall plate inside',
+    prints: `<div class="print" style="left:150px; top:540px; width:150px; height:150px; filter: drop-shadow(5px 8px 7px rgba(0,0,0,.6));">${plate(150, '#e3262f', '#0e0e10')}</div>` +
+      `<div class="print wm" style="left:115px; top:700px; width:220px; text-align:center; font-size:36px; color:#f2f2f2; mix-blend-mode:screen; opacity:.9;">Irumbu</div>` },
+};
+
+const order = ['lightbox', 'dusk', 'hoarding', 'wall'];
+const stage = document.getElementById('stage');
+stage.innerHTML = order.map((key) => {
+  const p = P[key];
+  const [cx, cy, ch] = p.crop, s = 686 / ch;
+  return `<div class="tile" style="width:${p.width}px;">
+    <div class="scene" style="transform: scale(${s}) translate(${-cx}px, ${-cy}px); width:${p.w}px; height:${p.h}px;">
+      <img src="photos/${p.src}" alt="" width="${p.w}" height="${p.h}">${p.prints}
+    </div>
+    <div class="cap">${p.cap}</div>
+  </div>`;
+}).join('');
+stage.style.transform = `scale(${Math.min(1, innerWidth / 1600, innerHeight / 686)})`;
+</script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<!-- Velan Auto Spares catalogue (version A, red technical) printed onto real photos: the open spread on a real
+     booklet held on a stone desk, and the loose price insert on a real sheet. Product shots are real photos.
+     Replaces the drawn catalogue.html for the site image. Photos (Unsplash License), credits in ./photos/CREDITS.md.
+     Render: node tools/render-image.mjs image-sources/09-auto-catalogue/photo-catalogue.html <out.webp> 1440 900 -->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&family=Noto+Sans+Tamil:wght@600&family=IBM+Plex+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; background: #111; }
+  #stage { position: absolute; left: 0; top: 0; width: 1440px; height: 900px; transform-origin: 0 0; overflow: hidden; background: #111;
+    display: grid; gap: 10px; grid-template-columns: 900px 530px; font-family: 'Barlow', sans-serif; color: #1b1b1b; }
+  .tile { position: relative; overflow: hidden; height: 900px; }
+  .scene { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+  .scene > img { position: absolute; left: 0; top: 0; display: block; }
+  .print { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+  .ink { mix-blend-mode: multiply; }
+  .chip { position: absolute; left: 14px; bottom: 14px; z-index: 3; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
+          color: #fff; background: rgba(20,18,16,.62); padding: 6px 10px; border-radius: 6px; }
+  .mono { font-family: 'IBM Plex Mono', monospace; }
+  .ta { font-family: 'Noto Sans Tamil', sans-serif; font-weight: 600; }
+  .zs { font-family: 'Zilla Slab', serif; font-weight: 700; }
+  table { border-collapse: collapse; width: 100%; }
+  td, th { text-align: left; white-space: nowrap; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="velan" viewBox="0 0 100 100">
+    <path d="M50 4 L90 27 L90 73 L50 96 L10 73 L10 27 Z" fill="#f6c21c"/>
+    <path d="M50 14 C 60 30, 64 42, 58 52 L 55 56 L 55 84 L 45 84 L 45 56 L 42 52 C 36 42, 40 30, 50 14 Z" fill="#161616"/>
+    <rect x="34" y="58" width="32" height="8" rx="2" fill="#161616"/>
+  </symbol>
+</svg>
+<div id="stage"></div>
+<script>
+function quad(w, h, [[x0,y0],[x1,y1],[x2,y2],[x3,y3]]) {
+  const dx1 = x1 - x2, dx2 = x3 - x2, dx3 = x0 - x1 + x2 - x3, dy1 = y1 - y2, dy2 = y3 - y2, dy3 = y0 - y1 + y2 - y3;
+  const den = dx1 * dy2 - dx2 * dy1, g = (dx3 * dy2 - dx2 * dy3) / den, k = (dx1 * dy3 - dx3 * dy1) / den;
+  const a = x1 - x0 + g * x1, b = x3 - x0 + k * x3, d = y1 - y0 + g * y1, e = y3 - y0 + k * y3;
+  return `matrix3d(${a / w},${d / w},0,${g / w},${b / h},${e / h},0,${k / h},0,0,1,0,${x0},${y0},0,1)`;
+}
+const on = (w, h, pts, html, cls = 'ink', extra = '') => `<div class="print ${cls}" style="width:${w}px; height:${h}px; transform:${quad(w, h, pts)}; ${extra}">${html}</div>`;
+const logo = (h, color) => `<div style="display:flex; align-items:center; gap:${h*.3}px;"><svg width="${h}" height="${h}"><use href="#velan"/></svg><div style="font-family:'Barlow Condensed'; font-weight:800; font-size:${h*.55}px; letter-spacing:.02em; color:${color}; line-height:.95;">VELAN<br><span style="font-weight:600; font-size:${h*.32}px; letter-spacing:.18em;">AUTO SPARES</span></div></div>`;
+/* real product photos, cropped from the stock set */
+const shot = (src, pos, size) => `<div style="width:100%; height:100%; background:url(${src}) ${pos} / ${size} no-repeat;"></div>`;
+const PRODUCTS = [
+  ['VAS-BRK-2201', 'Brake disc', 'பிரேக் டிஸ்க்', 'Swift · Dzire', 'Ø256 × 22 mm', 'photos/part-disc.jpg', '60% 50%', 'cover'],
+  ['VAS-CLT-1902', 'Clutch kit', 'கிளட்ச் பிளேட்', 'Tata Ace', 'Ø190 mm · 18T', 'photos/part-discs.jpg', '60% 40%', 'cover'],
+];
+
+/* left page 600x820 and right page 600x820 of the open booklet */
+const leftPage = `
+  <div style="position:absolute; left:0; top:0; width:600px; height:330px; background:#d32027; clip-path: polygon(0 0, 100% 0, 100% 62%, 0 100%);"></div>
+  <div style="position:absolute; left:40px; top:34px;">${logo(46, '#fff')}</div>
+  <div class="zs" style="position:absolute; left:40px; top:112px; font-size:64px; line-height:.92; color:#fff;">BRAKES &amp;<br>CLUTCH.</div>
+  <div style="position:absolute; left:42px; top:248px; font-weight:600; font-size:15px; letter-spacing:.14em; color:#ffd6d6;">SECTION 02 · <span class="ta" style="letter-spacing:0;">பிரேக் &amp; கிளட்ச்</span></div>
+  ${PRODUCTS.map(([code, name, ta, fits, d, src, pos, size], i) => `
+    <div style="position:absolute; left:40px; top:${370 + i * 205}px; width:520px; display:flex; gap:18px; border-top:3px solid #1b1b1b; padding-top:14px;">
+      <div style="width:150px; height:140px; flex:none; overflow:hidden;">${shot(src, pos, size)}</div>
+      <div style="flex:1;">
+        <div class="zs" style="font-size:26px; color:#d32027;">${name}</div>
+        <div class="ta" style="font-size:14px; color:#555; margin:2px 0 10px;">${ta}</div>
+        <table style="font-size:12.5px;">
+          <tr style="background:#1b1b1b; color:#fff; font-weight:600;"><th style="padding:6px 8px;">CODE</th><th style="padding:6px 8px;">FITS</th><th style="padding:6px 8px;">SIZE</th></tr>
+          <tr style="border-bottom:1px solid #ddd;"><td class="mono" style="padding:6px 8px; font-size:12px;">${code}</td><td style="padding:6px 8px;">${fits}</td><td style="padding:6px 8px;">${d}</td></tr>
+        </table>
+      </div>
+    </div>`).join('')}
+  <div style="position:absolute; left:0; right:0; bottom:0; height:44px; background:#1b1b1b; display:flex; align-items:center; justify-content:space-between; padding:0 40px; color:#fff; font-size:13px; letter-spacing:.12em;"><span>VELAN · CATALOGUE 2026</span><span style="font-weight:700;">08</span></div>`;
+const rightPage = `
+  <div class="zs" style="position:absolute; left:40px; top:40px; font-size:36px;">Bearings, filters &amp; more</div>
+  <div style="position:absolute; left:40px; top:90px; width:70px; height:6px; background:#d32027;"></div>
+  <div style="position:absolute; left:40px; top:124px; width:520px; display:grid; grid-template-columns:1fr 1fr; gap:18px;">
+    ${[['VAS-BRG-6204','Taper roller bearing','Universal · box of 10','photos/part-bearing.jpg','55% 72%','170%'],
+       ['VAS-CLT-2014','Clutch hub disc','Bolero · Scorpio','photos/part-discs.jpg','85% 30%','150%'],
+       ['VAS-GRB-3317','Gear, 3rd speed','Dost · Partner','photos/part-gear.jpg','80% 40%','150%'],
+       ['VAS-SPK-0072','Spark plug','Splendor · box of 25','photos/part-plug.jpg','50% 45%','100% auto']].map(([c,n,f,src,pos,size]) => `
+      <div style="background:#f3f3f3; height:300px; padding:14px; position:relative;">
+        <div style="display:inline-block; background:#1b1b1b; color:#fff; font-weight:700; font-size:12px; letter-spacing:.1em; padding:4px 10px;">${c}</div>
+        <div style="height:140px; margin:12px 0 10px; overflow:hidden;">${shot(src, pos, size)}</div>
+        <div class="zs" style="font-size:20px; line-height:1.1;">${n}</div>
+        <div style="font-size:13px; color:#555; margin-top:6px;">Fits <b>${f}</b></div>
+      </div>`).join('')}
+  </div>
+  <div style="position:absolute; left:0; right:0; bottom:0; height:44px; background:#d32027; display:flex; align-items:center; justify-content:space-between; padding:0 40px; color:#fff; font-size:13px; letter-spacing:.12em;"><span style="font-weight:700;">09</span><span>PRICES → SEE INSERT</span></div>`;
+const insert = `
+  <div style="background:#d32027; color:#fff; padding:34px 34px 26px;">
+    <div class="zs" style="font-size:52px; line-height:.95;">PRICE<br>LIST</div>
+    <div style="font-size:16px; letter-spacing:.14em; margin-top:12px;">NOV 2026 · <span class="ta" style="letter-spacing:0;">விலைப் பட்டியல்</span></div>
+  </div>
+  <div style="padding:14px 34px;"><table style="width:auto;">${[['VAS-BRK-2201','1,850'],['VAS-CLT-1902','2,400'],['VAS-BRG-6204','145'],['VAS-CLT-2014','1,640'],['VAS-GRB-3317','1,120'],['VAS-SPK-0072','95']].map(([c,p]) => `<tr style="border-bottom:1.5px solid #e3e3e3;"><td class="mono" style="padding:20px 0 12px; font-size:17px; color:#333; vertical-align:bottom;">${c}</td><td style="padding:20px 0 12px 22px; text-align:left; font-weight:700; font-size:24px; vertical-align:bottom;">₹${p}</td></tr>`).join('')}</table></div>
+  <div style="position:absolute; left:0; right:0; bottom:0; background:#1b1b1b; color:#fff; padding:22px 34px; font-size:18px; line-height:1.5;">Prices change. Pages don't.<br><span style="color:#ff8a8a;">Reprint this sheet only.</span></div>`;
+
+const tiles = [
+  { src: 'photos/book-blank.jpg', w: 1600, h: 1600, crop: [170, 250, 1350], tw: 900, label: 'Catalogue spread',
+    prints:
+      on(600, 820, [[178,812],[597,612],[952,1130],[453,1291]], `<div style="position:absolute; inset:0; overflow:hidden;">${leftPage}</div>`) +
+      on(600, 820, [[606,612],[1068,529],[1460,982],[952,1130]], `<div style="position:absolute; inset:0; overflow:hidden;">${rightPage}</div>`) },
+  { src: 'photos/sheets-two.jpg', w: 1600, h: 1600, crop: [250, 0, 940], tw: 530, label: 'Loose price insert',
+    prints: on(600, 860, [[465,277],[1208,397],[1035,1290],[293,1158]], `<div style="position:absolute; inset:0; overflow:hidden;">${insert}</div>`) },
+];
+
+const stage = document.getElementById('stage');
+stage.innerHTML = tiles.map((p) => {
+  const [cx, cy, cw] = p.crop, s = p.tw / cw;
+  return `<div class="tile">
+    <div class="scene" style="transform: scale(${s}) translate(${-cx}px, ${-cy}px); width:${p.w}px; height:${p.h}px;">
+      <img src="${p.src}" alt="" width="${p.w}" height="${p.h}">${p.prints}
+    </div>
+    <div class="chip">${p.label}</div>
+  </div>`;
+}).join('');
+stage.style.transform = `scale(${Math.min(1, innerWidth / 1440, innerHeight / 900)})`;
+</script>
+</body>
+</html>

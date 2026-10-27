@@ -1,0 +1,101 @@
+<!doctype html>
+<!-- Blog header for "CMYK, bleed and the three files every printer wants", on real photos:
+     a press sheet printed onto real paper (bleed, trim, safe area, crop marks), the WhatsApp JPG on a real phone,
+     and the three files over a real cutting mat. Replaces the drawn diagram.html.
+     Photos (Unsplash License, in ./photos and sibling folders, credits in ./photos/CREDITS.md).
+     Render: node tools/render-image.mjs image-sources/22-print-file/photo-diagram.html <out.webp> 1600 900 -->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root { --bleed: #ff4d6d; --trim: #ffffff; --safe: #5ec8ff; --accent: oklch(0.88 0.19 100); }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; background: #111; }
+  #stage { position: absolute; left: 0; top: 0; width: 1600px; height: 900px; transform-origin: 0 0; overflow: hidden; background: #111;
+    display: grid; gap: 10px; grid-template-columns: 1000px 590px; grid-template-rows: 445px 445px; grid-template-areas: 'a b' 'a c'; font-family: 'Bricolage Grotesque', sans-serif; color: #fff; }
+  .tile { position: relative; overflow: hidden; }
+  .scene { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+  .scene > img { position: absolute; left: 0; top: 0; display: block; }
+  .print { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+  .ink { mix-blend-mode: multiply; }
+  .callout { position: absolute; z-index: 4; display: flex; align-items: center; gap: 12px; white-space: nowrap; }
+  .callout .ln { height: 2px; }
+  .callout b { font-weight: 800; font-size: 26px; letter-spacing: -.01em; text-shadow: 0 2px 10px rgba(0,0,0,.6); }
+  .callout span { display: block; font-family: 'IBM Plex Mono', monospace; font-size: 15px; color: rgba(255,255,255,.8); margin-top: 3px; }
+  .eyebrow { position: absolute; z-index: 4; left: 26px; top: 22px; font-family: 'IBM Plex Mono', monospace; font-size: 15px; letter-spacing: .16em; text-transform: uppercase; color: var(--accent);
+             background: rgba(10,10,10,.55); padding: 6px 10px; border-radius: 6px; }
+  .file { display: flex; gap: 14px; align-items: center; background: rgba(12,12,12,.72); backdrop-filter: blur(4px); border-radius: 14px; padding: 14px 16px; }
+  .ico { flex: none; width: 46px; height: 58px; border-radius: 5px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 7px;
+         font-family: 'IBM Plex Mono', monospace; font-weight: 500; font-size: 12px; color: #111; }
+  .file h3 { font-weight: 800; font-size: 22px; letter-spacing: -.02em; }
+  .file p { font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: rgba(255,255,255,.75); margin-top: 3px; }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script>
+function quad(w, h, [[x0,y0],[x1,y1],[x2,y2],[x3,y3]]) {
+  const dx1 = x1 - x2, dx2 = x3 - x2, dx3 = x0 - x1 + x2 - x3, dy1 = y1 - y2, dy2 = y3 - y2, dy3 = y0 - y1 + y2 - y3;
+  const den = dx1 * dy2 - dx2 * dy1, g = (dx3 * dy2 - dx2 * dy3) / den, k = (dx1 * dy3 - dx3 * dy1) / den;
+  const a = x1 - x0 + g * x1, b = x3 - x0 + k * x3, d = y1 - y0 + g * y1, e = y3 - y0 + k * y3;
+  return `matrix3d(${a / w},${d / w},0,${g / w},${b / h},${e / h},0,${k / h},0,0,1,0,${x0},${y0},0,1)`;
+}
+const on = (w, h, pts, html, cls = 'ink', extra = '') => `<div class="print ${cls}" style="width:${w}px; height:${h}px; transform:${quad(w, h, pts)}; ${extra}">${html}</div>`;
+
+/* the flyer artwork itself (used on paper and on the phone) */
+const flyer = (pad) => `
+  <div style="position:absolute; inset:${pad}px; background:linear-gradient(160deg, #d9462f, #a8261c); overflow:hidden;">
+    <div style="position:absolute; right:-40px; top:-30px; width:260px; height:260px; border-radius:50%; background:#f2b23a;"></div>
+    <div style="position:absolute; left:11%; top:38%; right:10%; color:#fff4e2; font-weight:800; font-size:66px; line-height:.92; letter-spacing:-.035em;">Grand<br><em style="font-family:'Instrument Serif'; font-weight:400;">opening</em><br>this Friday</div>
+    <div style="position:absolute; left:11%; right:10%; bottom:9%; display:flex; justify-content:space-between; font-family:'IBM Plex Mono'; font-size:15px; color:#fff4e2;"><span>T. Nagar</span><span>10am – 9pm</span></div>
+  </div>`;
+
+/* paper 524 x 754: crop marks in the margin, artwork incl. 3mm bleed, trim and safe guides */
+const sheet = `
+  <div style="position:absolute; inset:0; background:transparent;">
+    ${flyer(56)}
+    <div style="position:absolute; inset:56px; box-shadow: inset 0 0 0 9999px transparent;"></div>
+    <div style="position:absolute; inset:56px; border:3px dashed var(--bleed);"></div>
+    <div style="position:absolute; inset:74px; border:2.5px solid #222;"></div>
+    <div style="position:absolute; inset:102px; border:2.5px dotted var(--safe);"></div>
+    ${[[74,20,'v'],[450,20,'v'],[74,700,'v'],[450,700,'v'],[20,74,'h'],[470,74,'h'],[20,680,'h'],[470,680,'h']].map(([x,y,o]) =>
+      `<div style="position:absolute; left:${x - (o==='v'?1:0)}px; top:${y - (o==='h'?1:0)}px; width:${o==='v'?2:34}px; height:${o==='v'?34:2}px; background:#111;"></div>`).join('')}
+    <div style="position:absolute; left:220px; top:14px; width:84px; height:16px; display:flex;">${['#00aeef','#ec008c','#fff200','#111'].map(c => `<i style="flex:1; background:${c};"></i>`).join('')}</div>
+  </div>`;
+
+const P = {
+  paper: { src: '../01-textile/photos/flatlay.jpg', w: 1600, h: 1067, area: 'a', tw: 1000, crop: [150, 32, 1150],
+    prints: on(524, 754, [[472,258],[996,258],[996,1012],[472,1012]], sheet),
+    over: `<div class="eyebrow">Anatomy of a print-ready file</div>
+      <div class="callout" style="left:752px; top:190px;"><div class="ln" style="width:44px; background:var(--bleed);"></div><div><b style="color:var(--bleed);">Bleed · 3 mm</b><span>Past the cut line</span></div></div>
+      <div class="callout" style="left:752px; top:330px;"><div class="ln" style="width:44px; background:#fff;"></div><div><b>Trim line</b><span>Where it is cut</span></div></div>
+      <div class="callout" style="left:752px; top:470px;"><div class="ln" style="width:44px; background:var(--safe);"></div><div><b style="color:var(--safe);">Safe area</b><span>Keep text inside</span></div></div>
+      <div class="callout" style="left:752px; top:610px;"><div class="ln" style="width:44px; background:#fff;"></div><div><b>Crop marks</b><span>Guide the cutter</span></div></div>
+      <div class="callout" style="left:752px; top:750px;"><div class="ln" style="width:44px; background:#ffd84d;"></div><div><b style="color:#ffd84d;">CMYK strip</b><span>Checks the ink</span></div></div>` },
+  phone: { src: '../04-tuition/photos/phone-hand-1.jpg', w: 1600, h: 1067, area: 'b', tw: 590, crop: [480, 300, 820],
+    prints: on(246, 486, [[760,358],[1004,352],[992,842],[757,838]], `<div style="position:absolute; inset:0; border-radius:26px; overflow:hidden; background:#111;">${flyer(0)}</div>`, '', 'filter: brightness(.95);'),
+    over: `<div class="eyebrow">For WhatsApp</div>
+      <div class="callout" style="left:400px; top:170px;"><div><b>Screen JPG</b><span>sRGB · no bleed<br>small file</span></div></div>` },
+  mat: { src: 'photos/mat-grid.jpg', w: 1600, h: 1067, area: 'c', tw: 590, crop: [300, 100, 900], prints: '',
+    over: `<div class="eyebrow">The three files to ask for</div>
+      <div style="position:absolute; z-index:4; left:26px; right:26px; top:74px; display:flex; flex-direction:column; gap:12px;">
+        <div class="file"><div class="ico" style="background:#ff4d6d;">PDF</div><div><h3>For the press</h3><p>CMYK · 3 mm bleed · crop marks · 300 DPI</p></div></div>
+        <div class="file"><div class="ico" style="background:#ffd84d;">AI</div><div><h3>For changes</h3><p>Layered source · fonts outlined</p></div></div>
+        <div class="file"><div class="ico" style="background:#5ec8ff;">JPG</div><div><h3>For phones</h3><p>sRGB · no bleed · under 1 MB</p></div></div>
+      </div>` },
+};
+
+const stage = document.getElementById('stage');
+stage.innerHTML = Object.values(P).map((p) => {
+  const [cx, cy, cw] = p.crop, s = p.tw / cw;
+  return `<div class="tile" style="grid-area:${p.area};">
+    <div class="scene" style="transform: scale(${s}) translate(${-cx}px, ${-cy}px); width:${p.w}px; height:${p.h}px;">
+      <img src="${p.src}" alt="" width="${p.w}" height="${p.h}">${p.prints}
+    </div>${p.over}
+  </div>`;
+}).join('');
+stage.style.transform = `scale(${Math.min(1, innerWidth / 1600, innerHeight / 900)})`;
+</script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<!-- Chellam Children's Clinic identity on real photos: wall sign and desk graphic in a real reception,
+     posters in a real waiting room and frame, appointment card on fabric.
+     Photos (Unsplash License, in ./photos, credits in ./photos/CREDITS.md). Replaces the drawn board.html.
+     layout = board (4:3 branding tile, 1200x900) | scene (16:9 main portfolio tile, 1600x900)
+     Render: node tools/render-image.mjs image-sources/02-clinic/photo-board.html <out.webp> <w> <h> <layout> -->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root { --sage: #86ad94; --peach: #f0a487; --butter: #f2cb74; --lilac: #b5a2d1; --teal: #77c0bb; --ink: #3b3a4a; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; background: #1b1815; }
+  #stage { position: absolute; left: 0; top: 0; transform-origin: 0 0; overflow: hidden; background: #1b1815; display: grid; gap: 10px; font-family: 'Baloo Thambi 2', sans-serif; }
+  .tile { position: relative; overflow: hidden; }
+  .scene { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+  .scene > img { position: absolute; left: 0; top: 0; display: block; }
+  .print { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+  .ink { mix-blend-mode: multiply; }
+  .chip { position: absolute; left: 14px; bottom: 14px; z-index: 3; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
+          color: #fff; background: rgba(20,18,16,.62); padding: 6px 10px; border-radius: 6px; }
+  .wm { display: inline-flex; align-items: center; gap: .18em; line-height: 1; font-weight: 800; letter-spacing: -.02em; }
+  .wm i { font-style: normal; }
+  .wm i:nth-child(5n+1) { color: var(--sage); } .wm i:nth-child(5n+2) { color: var(--peach); } .wm i:nth-child(5n+3) { color: var(--butter); }
+  .wm i:nth-child(5n+4) { color: var(--lilac); } .wm i:nth-child(5n+5) { color: var(--teal); }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="mark" viewBox="0 0 64 64">
+    <path d="M32 16 C 30 9, 24 6, 18 7 C 19 13, 24 17, 32 16 Z" fill="#86ad94"/>
+    <path d="M32 16 C 35 8, 42 5, 48 7 C 46 14, 40 17, 32 16 Z" fill="#77c0bb"/>
+    <path d="M32 16 V 22" stroke="#86ad94" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="32" cy="41" r="21" fill="#f0a487"/>
+    <circle cx="25" cy="38" r="2.6" fill="#3b3a4a"/><circle cx="39" cy="38" r="2.6" fill="#3b3a4a"/>
+    <path d="M24 46 Q 32 53 40 46" fill="none" stroke="#3b3a4a" stroke-width="3" stroke-linecap="round"/>
+  </symbol>
+</svg>
+<div id="stage"></div>
+<script>
+function quad(w, h, [[x0,y0],[x1,y1],[x2,y2],[x3,y3]]) {
+  const dx1 = x1 - x2, dx2 = x3 - x2, dx3 = x0 - x1 + x2 - x3, dy1 = y1 - y2, dy2 = y3 - y2, dy3 = y0 - y1 + y2 - y3;
+  const den = dx1 * dy2 - dx2 * dy1, g = (dx3 * dy2 - dx2 * dy3) / den, k = (dx1 * dy3 - dx3 * dy1) / den;
+  const a = x1 - x0 + g * x1, b = x3 - x0 + k * x3, d = y1 - y0 + g * y1, e = y3 - y0 + k * y3;
+  return `matrix3d(${a / w},${d / w},0,${g / w},${b / h},${e / h},0,${k / h},0,0,1,0,${x0},${y0},0,1)`;
+}
+const on = (w, h, pts, html, cls = 'ink', extra = '') => `<div class="print ${cls}" style="width:${w}px; height:${h}px; transform:${quad(w, h, pts)}; ${extra}">${html}</div>`;
+const word = (txt) => `<span class="wm">${[...txt].map(c => `<i>${c}</i>`).join('')}</span>`;
+const mark = (s) => `<svg width="${s}" height="${s}" style="flex:none;"><use href="#mark"/></svg>`;
+const poster = (bg, line1, line2, motif) => `
+  <div style="position:absolute; inset:0; background:${bg}; display:flex; flex-direction:column; justify-content:space-between; padding:9% 9% 8%;">
+    <div style="font-weight:800; color:#fff; line-height:.95; font-size:118px;">${line1}<br>${line2}</div>
+    <div style="display:flex; justify-content:space-between; align-items:flex-end;">${motif}<div style="display:flex; align-items:center; gap:10px;">${mark(56)}</div></div>
+  </div>`;
+const sun = `<div style="width:170px; height:170px; border-radius:50%; background:#ffe08a; box-shadow:0 0 0 22px rgba(255,224,138,.35);"></div>`;
+const arch = `<div style="width:200px; height:100px; border-radius:200px 200px 0 0; background:#fbf6ec;"></div>`;
+
+/* real photos + what is printed or mounted on them (photo pixel coordinates) */
+const P = {
+  reception: { src: 'reception.jpg', w: 1600, h: 2400, label: 'Reception wall + desk',
+    prints:
+      /* 3D acrylic wall letters: opaque, with a soft drop shadow on the wall */
+      `<div class="print" style="left:420px; top:870px; width:640px; height:280px; display:flex; flex-direction:column; align-items:center; justify-content:center;
+          filter: brightness(.82) saturate(.92) drop-shadow(6px 8px 6px rgba(40,30,20,.35));">
+         <div style="display:flex; align-items:center; gap:16px;">${mark(112)}<div style="font-size:112px;">${word('chellam')}</div></div>
+         <div style="font-weight:700; font-size:32px; color:#4a4756; margin-top:6px; letter-spacing:.02em;">children's clinic · செல்லம்</div>
+       </div>` +
+      /* printed graphic on the desk front */
+      on(1080, 280, [[212,1336],[1290,1336],[1290,1616],[212,1616]], `
+        <div style="position:absolute; left:80px; bottom:0; width:240px; height:120px; border-radius:240px 240px 0 0; background:var(--peach);"></div>
+        <div style="position:absolute; left:360px; bottom:40px; width:84px; height:84px; border-radius:50%; background:var(--butter);"></div>
+        <div style="position:absolute; left:500px; bottom:0; width:200px; height:100px; border-radius:200px 200px 0 0; border:34px solid var(--sage); border-bottom:0;"></div>
+        <div style="position:absolute; left:760px; bottom:34px; width:70px; height:70px; border-radius:16px; transform:rotate(45deg); background:var(--lilac);"></div>
+        <div style="position:absolute; left:880px; bottom:0; width:150px; height:75px; border-radius:150px 150px 0 0; background:var(--teal);"></div>`, 'ink', 'opacity:.92;') },
+  waiting: { src: 'red-chairs.jpg', w: 1600, h: 2133, label: 'Waiting room poster',
+    prints: on(500, 700, [[331,236],[500,250],[500,590],[331,580]], poster('var(--teal)', 'Be', 'brave', sun) + '<div style="position:absolute; inset:0; background:linear-gradient(115deg, rgba(255,255,255,0) 40%, rgba(255,255,255,.18) 52%, rgba(255,255,255,0) 64%);"></div>', '', 'filter: brightness(.86) saturate(.9);') },
+  card: { src: 'card-fabric.jpg', w: 1600, h: 1067, label: 'Appointment card',
+    prints: on(560, 360, [[659,239],[1110,555],[905,845],[440,548]], `
+      <div style="position:absolute; left:40px; top:30px; display:flex; align-items:center; gap:10px;">${mark(50)}<div style="font-size:44px;">${word('chellam')}</div></div>
+      <div style="position:absolute; left:42px; top:112px; font-weight:800; font-size:26px; color:var(--ink);">Your next visit</div>
+      <div style="position:absolute; left:42px; top:160px; width:430px; font-family:'IBM Plex Mono'; font-size:14px; color:#6d6a63; line-height:2.6;">
+        NAME <span style="display:inline-block; width:330px; border-bottom:2px solid #c9bfb0;"></span><br>
+        DATE <span style="display:inline-block; width:120px; border-bottom:2px solid #c9bfb0;"></span>&nbsp; TIME <span style="display:inline-block; width:110px; border-bottom:2px solid #c9bfb0;"></span>
+      </div>
+      <div style="position:absolute; right:0; top:0; bottom:0; width:22px; background:linear-gradient(var(--sage) 0 20%, var(--peach) 20% 40%, var(--butter) 40% 60%, var(--lilac) 60% 80%, var(--teal) 80%);"></div>`) },
+  frame: { src: 'frame-wall.jpg', w: 1600, h: 1067, label: 'Framed print',
+    prints: on(560, 590, [[517,242],[1081,242],[1079,832],[517,830]], poster('var(--peach)', 'You did', 'great!', arch), 'ink', 'filter: brightness(.97);') },
+  room: { src: 'empty-room.jpg', w: 1600, h: 2535, label: 'Canvas print',
+    prints: on(525, 810, [[538,403],[1061,401],[1061,1211],[538,1211]], poster('var(--lilac)', 'Rest', 'well', `<div style="width:150px; height:150px; border-radius:50%; background:#ffe7a8; box-shadow: -40px 0 0 0 var(--lilac) inset;"></div>`)) },
+};
+
+const L = new URLSearchParams(location.search).get('layout') || 'board';
+/* tiles: [photo, crop-x, crop-y, crop-w, grid-area] */
+const LAY = L === 'scene'
+  ? { W: 1600, H: 900, cols: '1000px 590px', rows: '445px 445px', areas: "'a b' 'a c'",
+      tiles: [['reception', 120, 760, 1180, 'a'], ['waiting', 120, 120, 820, 'b'], ['frame', 300, 160, 1060, 'c']] }
+  : { W: 1200, H: 900, cols: '595px 595px', rows: '445px 445px', areas: "'a b' 'c d'",
+      tiles: [['reception', 120, 770, 1320, 'a'], ['waiting', 140, 120, 820, 'b'], ['card', 330, 140, 1020, 'c'], ['room', 200, 360, 1200, 'd']] };
+
+const stage = document.getElementById('stage');
+stage.style.cssText += `width:${LAY.W}px; height:${LAY.H}px; grid-template-columns:${LAY.cols}; grid-template-rows:${LAY.rows}; grid-template-areas:${LAY.areas};`;
+const colW = LAY.cols.split(' ').map(parseFloat);
+stage.innerHTML = LAY.tiles.map(([key, cx, cy, cw, area]) => {
+  const p = P[key];
+  const w = area === 'a' ? colW[0] : colW[1];
+  const s = w / cw;
+  return `<div class="tile" style="grid-area:${area};">
+    <div class="scene" style="transform: scale(${s}) translate(${-cx}px, ${-cy}px); width:${p.w}px; height:${p.h}px;">
+      <img src="photos/${p.src}" alt="" width="${p.w}" height="${p.h}">${p.prints}
+    </div>
+    <div class="chip">${p.label}</div>
+  </div>`;
+}).join('');
+stage.style.transform = `scale(${Math.min(1, innerWidth / LAY.W, innerHeight / LAY.H)})`;
+</script>
+</body>
+</html>
