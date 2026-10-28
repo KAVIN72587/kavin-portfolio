@@ -2,6 +2,7 @@
 // Usage: node blog-plan/queue/build.js   (validates every post; exits 1 on any problem)
 const fs = require("fs");
 const path = require("path");
+const headerImage = require("./header-image");
 
 const ROOT = path.resolve(__dirname, "..", "..");
 const SITE = path.join(ROOT, "Portfolio redesign and SEO structure");
@@ -207,7 +208,9 @@ ${FOOTER}`;
   if (!["Design", "Print", "Web", "Video", "Business"].includes(d.cat)) errs.push("bad cat");
   if (/REFERRALCODE/.test(body) && !/rel="sponsored/.test(body)) errs.push("referral without rel=sponsored");
   JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
-  return { html: html.replace(/\n/g, "\r\n"), words, minutes, errs };
+  // header photo: a missing one is only a warning, so the post still publishes with the default share image
+  const warns = headerImage.check(d.slug);
+  return { html: headerImage.apply(html, d.slug).replace(/\n/g, "\r\n"), words, minutes, errs, warns };
 }
 
 if (require.main === module) {
@@ -221,7 +224,7 @@ if (require.main === module) {
     const r = render(d, queue, mins);
     fs.writeFileSync(path.join(OUT, d.slug + ".html"), r.html);
     manifest.push({ row: d.row, date: d.date, slug: d.slug, cat: d.cat, title: d.title, cardTitle: d.cardTitle, card: d.card, minutes: r.minutes, words: r.words });
-    console.log(`${d.date} ${d.slug.padEnd(36)} ${r.words}w ${r.minutes}min ${r.errs.length ? "ERR " + r.errs.join("; ") : "ok"}`);
+    console.log(`${d.date} ${d.slug.padEnd(36)} ${r.words}w ${r.minutes}min ${r.errs.length ? "ERR " + r.errs.join("; ") : "ok"}${r.warns.length ? " WARN " + r.warns.join("; ") : ""}`);
     if (r.errs.length) bad++;
   }
   fs.writeFileSync(path.join(__dirname, "manifest.json"), JSON.stringify(manifest, null, 2).replace(/\n/g, "\r\n"));
