@@ -1,0 +1,94 @@
+<!doctype html>
+<!-- Designed blog header: real photo + editorial type in the site's fonts and colours.
+     Render: node tools/render-image.mjs image-sources/blog-headers/designed/template.html <out> 1600 900 header:<slug>
+             node tools/render-image.mjs image-sources/blog-headers/designed/template.html <out> 1200 630 og:<slug>
+     Photos are image-sources/blog-headers/photos/<slug>.jpg (Unsplash License, see CREDITS.md). -->
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root { --ink: oklch(0.18 0.01 60); --paper: oklch(0.96 0.01 85); --muted: oklch(0.82 0.01 85); --acid: oklch(0.88 0.19 100); --blue: oklch(0.72 0.19 240); }
+  html, body { width: var(--w); height: var(--h); overflow: hidden; background: var(--ink); }
+  body { font-family: 'Bricolage Grotesque', sans-serif; color: var(--paper); position: relative; }
+  .photo { position: absolute; inset: 0; background-size: cover; filter: saturate(0.86) contrast(1.06) brightness(0.9) sepia(0.1); }
+  .shade { position: absolute; inset: 0; background:
+      linear-gradient(to top, oklch(0.14 0.01 60 / 0.96) 0%, oklch(0.14 0.01 60 / 0.7) 30%, oklch(0.14 0.01 60 / 0) 62%),
+      linear-gradient(to right, oklch(0.14 0.01 60 / 0.55) 0%, oklch(0.14 0.01 60 / 0) 55%),
+      linear-gradient(to bottom, oklch(0.14 0.01 60 / 0.55) 0%, oklch(0.14 0.01 60 / 0) 22%); }
+  .grain { position: absolute; inset: 0; opacity: 0.16; mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+  .frame { position: absolute; inset: var(--m); border: 1px solid oklch(0.96 0.01 85 / 0.28); border-radius: 14px; }
+  .bar { position: absolute; left: calc(var(--m) + var(--pad)); right: calc(var(--m) + var(--pad)); top: calc(var(--m) + var(--pad) * 0.7);
+    display: flex; justify-content: space-between; align-items: center; font-family: 'IBM Plex Mono', monospace; font-size: var(--mono); letter-spacing: 0.18em; text-transform: uppercase; }
+  .bar .tag { display: flex; align-items: center; gap: 14px; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--acid); box-shadow: 0 0 0 5px oklch(0.88 0.19 100 / 0.22); }
+  .copy { position: absolute; left: calc(var(--m) + var(--pad)); right: calc(var(--m) + var(--pad)); bottom: calc(var(--m) + var(--pad)); }
+  h1 { font-weight: 800; font-size: var(--big); line-height: 0.9; letter-spacing: -0.045em; text-wrap: balance; max-width: var(--maxw); text-shadow: 0 2px 30px oklch(0.1 0.01 60 / 0.45); }
+  h1 em { font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; letter-spacing: -0.01em; color: var(--acid); }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; margin-top: calc(var(--pad) * 0.6); }
+  .chips span { font-family: 'IBM Plex Mono', monospace; font-size: var(--mono); letter-spacing: 0.08em; padding: 9px 16px; border-radius: 999px;
+    border: 1px solid oklch(0.96 0.01 85 / 0.4); background: oklch(0.14 0.01 60 / 0.45); backdrop-filter: blur(6px); }
+  .chips span:first-child { background: var(--acid); color: var(--ink); border-color: var(--acid); font-weight: 500; }
+  .foot { margin-top: calc(var(--pad) * 0.55); font-family: 'IBM Plex Mono', monospace; font-size: var(--mono); letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
+  .foot b { color: var(--acid); font-weight: 500; }
+  .seal { position: absolute; width: var(--seal); height: var(--seal); right: calc(var(--m) + var(--pad)); top: var(--sealtop); transform: rotate(-12deg); }
+  .seal svg { width: 100%; height: 100%; overflow: visible; }
+  .seal .disc { fill: var(--acid); }
+  .seal text { font-family: 'IBM Plex Mono', monospace; font-size: 15.5px; letter-spacing: 3.2px; text-transform: uppercase; fill: var(--ink); font-weight: 500; }
+  .seal .mid { font-family: 'Instrument Serif', serif; font-style: italic; font-size: 46px; letter-spacing: 0; text-transform: none; }
+  .seal .sub { font-size: 13px; letter-spacing: 2.4px; }
+</style></head>
+<body>
+  <div class="photo"></div><div class="shade"></div><div class="grain"></div><div class="frame"></div>
+  <div class="bar"><div class="tag"><span class="dot"></span><span id="tag"></span></div><span>kavinarulraj.com</span></div>
+  <div class="seal"><svg viewBox="0 0 200 200">
+    <defs><path id="ring" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
+    <circle class="disc" cx="100" cy="100" r="96"/>
+    <circle cx="100" cy="100" r="54" fill="none" stroke="oklch(0.18 0.01 60)" stroke-width="1.2"/>
+    <text><textPath href="#ring" id="ringtext" textLength="458" lengthAdjust="spacing"></textPath></text>
+    <text class="mid" x="100" y="106" text-anchor="middle" id="sealmid"></text>
+    <text class="sub" x="100" y="130" text-anchor="middle" id="sealsub"></text>
+  </svg></div>
+  <div class="copy"><h1 id="h"></h1><div class="chips" id="chips"></div><p class="foot" id="foot"></p></div>
+<script>
+const POSTS = {
+  "video-podcast-setup": {
+    cat: "Video", pos: "62% 40%", ogpos: "62% 35%",
+    pull: "Audio <em>first,</em><br>video <em>second.</em>",
+    title: "A video podcast setup that <em>works</em>",
+    chips: ["The room", "A mic each", "2–3 cameras", "Soft light", "Clip-ready"],
+    seal: ["setup", "checklist"],
+  },
+  "small-business-blog-worth-it": {
+    cat: "Web", pos: "50% 30%", ogpos: "50% 28%",
+    pull: "Write <em>answers,</em><br>not news.",
+    title: "Does your business need a <em>blog?</em>",
+    chips: ["Answer questions", "Link to services", "Post steadily", "Measure enquiries"],
+    seal: ["honest", "answer"],
+  },
+  "restaurant-food-reels": {
+    cat: "Video", pos: "50% 45%", ogpos: "50% 45%",
+    pull: "Make them <em>hungry.</em><br>Then tell them <em>where.</em>",
+    title: "Food reels that bring people to your <em>table</em>",
+    chips: ["Good light", "Real sound", "Show the price", "Weekly plan"],
+    seal: ["shot", "list"],
+  },
+};
+const [kind, slug] = (new URLSearchParams(location.search).get("layout") || "header:video-podcast-setup").split(":");
+const p = POSTS[slug], og = kind === "og";
+const S = og
+  ? { w: 1200, h: 630, m: 22, pad: 44, big: 82, mono: 15, maxw: 860, seal: 170, sealtop: 96 }
+  : { w: 1600, h: 900, m: 28, pad: 62, big: 132, mono: 17, maxw: 1150, seal: 210, sealtop: 128 };
+for (const [k, v] of Object.entries(S)) document.documentElement.style.setProperty("--" + k, k === "maxw" || k === "w" || k === "h" ? v + "px" : v + "px");
+const photo = document.querySelector(".photo");
+photo.style.backgroundImage = `url(../photos/${slug}.jpg)`;
+photo.style.backgroundPosition = og ? p.ogpos : p.pos;
+document.getElementById("tag").textContent = `${p.cat} · Field notes`;
+document.getElementById("h").innerHTML = og ? p.title : p.pull;
+document.getElementById("chips").innerHTML = (og ? p.chips.slice(0, 3) : p.chips).map((c) => `<span>${c}</span>`).join("");
+document.getElementById("foot").innerHTML = og ? "Read it on <b>kavinarulraj.com/blog</b> · 5 min" : "Kavin Arulraj · Designer &amp; video editor, Chennai";
+document.getElementById("ringtext").textContent = "Kavin Arulraj · Chennai · Field notes ·";
+document.getElementById("sealmid").textContent = p.seal[0];
+document.getElementById("sealsub").textContent = p.seal[1];
+</script>
+</body></html>

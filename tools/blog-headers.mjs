@@ -37,6 +37,8 @@ const done = [];
 for (const slug of slugs) {
   const e = MAP[slug];
   if (!e) { console.log('no entry', slug); continue; }
+  // Designed headers (photo + type) are rendered from image-sources/blog-headers/designed/template.html instead.
+  if (e.designed) { console.log('designed, skipped', slug); continue; }
   let input;
   if (e.file) input = join(SITE, e.file);
   else {
