@@ -1,10 +1,10 @@
 # Media audit
 
-Generated 2026-10-28 by `node tools/media-audit.mjs`.
+Generated 2026-10-29 by `node tools/media-audit.mjs`.
 
 | Check | Count |
 |---|---|
-| Empty image slots ("drop image") | 2 |
+| Empty image slots ("drop image") | 0 |
 | Broken media references | 0 |
 | Images missing alt text | 0 |
 | Images reused on >3 pages | 0 |
@@ -12,17 +12,7 @@ Generated 2026-10-28 by `node tools/media-audit.mjs`.
 
 ## 1. Empty image slots — media to add
 
-### /portfolio/case-study-wedding-film/ (1)
-
-| Project / section | Image needed |
-|---|---|
-| Wedding footage you've never watched? | third row, watching |
-
-### /portfolio/ (1)
-
-| Project / section | Image needed |
-|---|---|
-| Restaurant reels | reel frames |
+None.
 
 ## 2. Broken media references
 
