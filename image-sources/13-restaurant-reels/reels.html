@@ -1,0 +1,85 @@
+<!doctype html>
+<!-- #13 Restaurant reels: four 9:16 reel frames from one month's set for "Vaazhai Ilai Mess" (the fictional T. Nagar
+     meals kitchen from 10-menu), showing the dish shots and the on-screen text style. Brand fonts and colours from
+     10-menu/menu.html layout a (Fraunces + Kaushan Script, leaf green / yellow / cream).
+     Photos (Unsplash License): ./photos/chef2.jpg (Ashwini Chaudhary), ../10-menu/photos dosa-leaf, idli-coffee,
+     tiffin-plate (credits in ../10-menu/photos/CREDITS.md and ./photos/CREDITS.md).
+     Render: node tools/render-image.mjs image-sources/13-restaurant-reels/reels.html <out.webp> 1600 1000 -->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,700..900,100&family=Kaushan+Script&family=Poppins:wght@500;600;700&family=Noto+Sans+Tamil:wght@700&family=IBM+Plex+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root { --leaf: #1f5f43; --cream: #fbf3e2; --yellow: #f6c026; --orange: #f07c1e; --ink: #1e1c18; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; background: #12110f; }
+  #stage { position: absolute; left: 0; top: 0; width: 1600px; height: 1000px; transform-origin: 0 0; overflow: hidden;
+    background: radial-gradient(120% 90% at 50% 30%, #1d1a16 0%, #12110f 60%, #0c0b0a 100%); }
+  .row { position: absolute; left: 0; right: 0; top: 112px; display: flex; justify-content: center; gap: 44px; }
+  .phone { position: relative; width: 322px; height: 698px; border-radius: 40px; background: #050505; padding: 9px;
+    box-shadow: 0 30px 60px rgba(0,0,0,.55), 0 0 0 1.5px #3a3630 inset; }
+  .phone:nth-child(odd) { transform: translateY(26px); }
+  .scr { position: relative; width: 100%; height: 100%; border-radius: 32px; overflow: hidden; background: #222; }
+  .scr > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.62) 0%, rgba(0,0,0,.25) 34%, rgba(0,0,0,0) 46%, rgba(0,0,0,0) 52%, rgba(0,0,0,.72) 100%); }
+  .top { position: absolute; left: 16px; right: 16px; top: 14px; display: flex; justify-content: space-between; font: 600 12px Poppins; color: #fff; }
+  .bars { position: absolute; left: 14px; right: 14px; top: 40px; height: 3px; border-radius: 2px; background: rgba(255,255,255,.3); overflow: hidden; }
+  .bars i { display: block; height: 100%; background: #fff; }
+  .side { position: absolute; right: 12px; bottom: 120px; display: grid; gap: 18px; justify-items: center; color: #fff; font: 600 11px Poppins; }
+  .side span { width: 30px; height: 30px; display: block; }
+  .acct { position: absolute; left: 14px; bottom: 58px; display: flex; align-items: center; gap: 8px; color: #fff; font: 600 13px Poppins; }
+  .acct b { width: 28px; height: 28px; border-radius: 50%; background: var(--leaf); border: 2px solid var(--yellow); display: grid; place-items: center; font: 400 14px 'Kaushan Script'; color: var(--yellow); }
+  .acct em { font-style: normal; border: 1px solid rgba(255,255,255,.7); border-radius: 6px; padding: 2px 8px; font-size: 11px; }
+  .cap { position: absolute; left: 14px; right: 60px; bottom: 22px; color: rgba(255,255,255,.88); font: 500 12px Poppins; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  /* on-screen text, the reel series style */
+  .hook { position: absolute; left: 18px; right: 18px; text-align: left; }
+  .k { font-family: 'Kaushan Script', cursive; color: var(--yellow); font-size: 30px; line-height: 1; text-shadow: 0 2px 10px rgba(0,0,0,.5); }
+  .f { font-family: 'Fraunces', serif; font-weight: 900; font-variation-settings: 'SOFT' 100; color: var(--cream); font-size: 44px; line-height: .95; letter-spacing: -.01em; text-shadow: 0 3px 14px rgba(0,0,0,.45); }
+  .pill { display: inline-block; background: var(--yellow); color: var(--ink); font: 700 14px Poppins; padding: 6px 12px; border-radius: 999px; margin-top: 12px; }
+  .pill.g { background: var(--leaf); color: var(--cream); }
+  .ta { font-family: 'Noto Sans Tamil', sans-serif; font-weight: 700; }
+  .sub { position: absolute; left: 16px; right: 64px; text-align: left; font: 700 15px Poppins; color: #fff; }
+  .sub span { background: rgba(20,18,15,.78); padding: 4px 9px; border-radius: 6px; box-decoration-break: clone; -webkit-box-decoration-break: clone; line-height: 1.75; }
+  .sub span b { color: var(--yellow); }
+  .label { position: absolute; left: 0; right: 0; top: 724px; text-align: center; font: 500 12px 'IBM Plex Mono', monospace; letter-spacing: .14em; text-transform: uppercase; color: #8d867b; }
+  .phone:nth-child(odd) .label { top: 724px; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div class="row" id="row"></div>
+</div>
+<script>
+const heart = '<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.5-9.2C1 8.2 3.4 4.5 7 4.5c2.1 0 3.6 1.2 5 3 1.4-1.8 2.9-3 5-3 3.6 0 6 3.7 4.5 7.3C19.5 16.4 12 21 12 21z" fill="none" stroke="#fff" stroke-width="2"/></svg>';
+const bubble = '<svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg>';
+const send = '<svg viewBox="0 0 24 24"><path d="M3 11l18-7-7 18-3-8z" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg>';
+const R = [
+  { img: 'photos/chef2.jpg', pos: '62% 50%', prog: 22, likes: '2.4k', com: 86, label: '01 · Hook in 1 sec',
+    text: `<div class="hook" style="top:70px;"><div class="k">7 am at the counter</div><div class="f" style="margin-top:6px;">Poori,<br>straight<br>from the kadai</div></div>
+           <div class="sub" style="bottom:300px;"><span>"First batch is gone by <b>7:40</b>"</span></div>`,
+    cap: 'Every morning, same kadai, same oil discipline 🔥 #tnagar' },
+  { img: '../10-menu/photos/dosa-leaf.jpg', pos: '50% 50%', prog: 48, likes: '5.1k', com: 212, label: '02 · Dish of the week',
+    text: `<div class="hook" style="top:70px;"><div class="k">dish of the week</div><div class="f" style="margin-top:6px;">Ghee roast<br>dosa</div><span class="pill">₹ 90 · till Sunday</span></div>`,
+    cap: 'Crisp edge, soft centre, two chutneys. Worth the queue?' },
+  { img: '../10-menu/photos/idli-coffee.jpg', pos: '38% 50%', prog: 71, likes: '3.8k', com: 141, label: '03 · Combo offer',
+    text: `<div class="hook" style="top:70px;"><div class="f" style="font-size:40px;">Idli + filter<br>coffee</div><div class="k" style="margin-top:8px;">the 7 to 10 combo</div><span class="pill g">4 idli · 2 chutney · coffee = ₹ 70</span></div>`,
+    cap: 'Breakfast that is out the door in under 5 minutes ☕' },
+  { img: '../10-menu/photos/tiffin-plate.jpg', pos: '50% 60%', prog: 90, likes: '6.2k', com: 307, label: '04 · Regulars',
+    text: `<div class="hook" style="top:70px;"><div class="ta" style="font-size:22px; color:var(--yellow); text-shadow:0 2px 10px rgba(0,0,0,.5);">வாழை இலை மெஸ்</div><div class="f" style="margin-top:6px; font-size:40px;">Sunday<br>tiffin plate</div></div>
+           <div class="sub" style="bottom:300px;"><span>"We come here <b>every week</b>"</span></div>`,
+    cap: 'Dosa, idli, vada, three chutneys. Ask for extra sambar.' },
+];
+document.getElementById('row').innerHTML = R.map((r) => `<div class="phone"><div class="scr">
+  <img src="${r.img}" style="object-position:${r.pos};" alt="">
+  <div class="shade"></div>
+  <div class="top"><span>Reels</span><span>9:41</span></div>
+  <div class="bars"><i style="width:${r.prog}%"></i></div>
+  ${r.text}
+  <div class="side"><div><span>${heart}</span>${r.likes}</div><div><span>${bubble}</span>${r.com}</div><div><span>${send}</span></div></div>
+  <div class="acct"><b>v</b>vaazhaiilai.mess <em>Follow</em></div>
+  <div class="cap">${r.cap}</div>
+</div><div class="label">${r.label}</div></div>`).join('');
+document.getElementById('stage').style.transform = `scale(${Math.min(1, innerWidth / 1600, innerHeight / 1000)})`;
+</script>
+</body>
+</html>
