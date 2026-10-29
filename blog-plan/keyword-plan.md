@@ -126,9 +126,9 @@ Owner asked for more posts per day for the rest of October; agreed on 3 a day (3
 | 115 | done 2026-10-28 | website-accessibility-basics | website accessibility basics small business | Web | A website everyone can use | /web-design-chennai/, /website-design-cost-chennai/ |
 | 116 | done 2026-10-28 | interview-video-editing | interview video two camera setup editing | Video | Interview videos that look professional | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
 | 117 | done 2026-10-28 | online-appointment-booking | online appointment booking for small business website | Web | Taking appointments through your website | /web-design-chennai/, /website-design-cost-chennai/ |
-| 118 | queued 2026-10-29 | video-podcast-setup | video podcast setup for business | Video | A video podcast setup that works | /youtube-video-editing-chennai/, /video-editing-charges-chennai/ |
-| 119 | queued 2026-10-29 | small-business-blog-worth-it | is a blog worth it for small business | Web | Does your business need a blog? | /web-design-chennai/, /website-design-cost-chennai/ |
-| 120 | queued 2026-10-29 | restaurant-food-reels | food reels for restaurants ideas and tips | Video | Food reels that bring people to your table | /reels-shorts-editing-chennai/, /video-editing-charges-chennai/ |
+| 118 | done 2026-10-29 | video-podcast-setup | video podcast setup for business | Video | A video podcast setup that works | /youtube-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 119 | done 2026-10-29 | small-business-blog-worth-it | is a blog worth it for small business | Web | Does your business need a blog? | /web-design-chennai/, /website-design-cost-chennai/ |
+| 120 | done 2026-10-29 | restaurant-food-reels | food reels for restaurants ideas and tips | Video | Food reels that bring people to your table | /reels-shorts-editing-chennai/, /video-editing-charges-chennai/ |
 | 121 | queued 2026-10-30 | website-launch-checklist | website launch checklist small business | Web | Before your website goes live | /web-design-chennai/, /website-design-cost-chennai/ |
 | 122 | queued 2026-10-30 | clinic-video-content | video content for doctors and clinics | Video | Videos that help patients choose your clinic | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
 | 123 | queued 2026-10-30 | contact-form-spam | stop contact form spam website | Web | Stopping form spam without losing customers | /web-design-chennai/, /website-design-cost-chennai/ |
