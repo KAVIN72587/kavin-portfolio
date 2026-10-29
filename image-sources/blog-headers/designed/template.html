@@ -73,6 +73,48 @@ const POSTS = {
     chips: ["Good light", "Real sound", "Show the price", "Weekly plan"],
     seal: ["shot", "list"],
   },
+  "website-launch-checklist": {
+    cat: "Web", pos: "50% 30%", ogpos: "50% 25%",
+    pull: "Check <em>twice.</em><br>Launch <em>once.</em>",
+    title: "Before your website goes <em>live</em>",
+    chips: ["Content", "Forms", "Mobile", "Speed", "Tracking"],
+    seal: ["20", "checks"],
+  },
+  "clinic-video-content": {
+    cat: "Video", pos: "50% 35%", ogpos: "50% 30%",
+    pull: "Reassure, <em>inform,</em><br><em>respect.</em>",
+    title: "Videos that help patients choose your <em>clinic</em>",
+    chips: ["Meet the doctor", "First visit", "Common questions", "Privacy first"],
+    seal: ["calm", "& clear"],
+  },
+  "contact-form-spam": {
+    cat: "Web", pos: "50% 30%", ogpos: "50% 30%",
+    pull: "Stop the <em>bots.</em><br>Keep the <em>leads.</em>",
+    title: "Stopping form spam without losing <em>customers</em>",
+    chips: ["Honeypot", "Bot checks", "Filtering", "Rate limits"],
+    seal: ["4", "layers"],
+  },
+  "video-retainer-vs-per-video": {
+    cat: "Video", pos: "50% 40%", ogpos: "50% 40%",
+    pull: "Match the price<br>to your <em>rhythm.</em>",
+    title: "Monthly retainer or pay per <em>video?</em>",
+    chips: ["Per video", "Monthly retainer", "Trial month", "Plan together"],
+    seal: ["fair", "pricing"],
+  },
+  "website-copy-mistakes": {
+    cat: "Web", pos: "50% 64%", ogpos: "50% 62%",
+    pull: "Read it like<br>a <em>stranger</em> would.",
+    title: "The words on your website are losing you <em>customers</em>",
+    chips: ["Clear headline", "Real proof", "Customer first", "One next step"],
+    seal: ["8", "mistakes"],
+  },
+  "youtube-retention-editing": {
+    cat: "Video", pos: "40% 45%", ogpos: "40% 45%",
+    pull: "Don't waste<br>their <em>time.</em>",
+    title: "Editing that keeps viewers <em>watching</em>",
+    chips: ["First 30 seconds", "Cut dead air", "Show, don't tell", "Read the graph"],
+    seal: ["keep", "watching"],
+  },
 };
 const [kind, slug] = (new URLSearchParams(location.search).get("layout") || "header:video-podcast-setup").split(":");
 const p = POSTS[slug], og = kind === "og";
