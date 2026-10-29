@@ -1,0 +1,256 @@
+<!doctype html>
+<!-- Photo bands for the pages that had no images: cost and service pages, area pages, about, contact, hire-me.
+     Every layout is a real Unsplash photo (./photos, credits in ./photos/CREDITS.md) with a new design printed onto a
+     real card, page or booklet (ink blend) or shown on a real screen, plus site-style cards (Bricolage Grotesque,
+     Instrument Serif, IBM Plex Mono, the site's yellow and warm darks). Prices and facts are taken from each page.
+     Render: node tools/render-image.mjs image-sources/pages/page-images.html <out.webp> 1600 800 <layout>
+     layouts: website lowcost logo brochure video youtube freelancer pricing contact hire about
+              areas tnagar adyar annanagar guindy velachery -->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600;700;800&family=Caveat:wght@500;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Noto+Sans+Tamil:wght@600;700&display=block" rel="stylesheet">
+<style>
+  :root { --y: oklch(0.88 0.19 100); --blue: oklch(0.72 0.19 240); --cream: oklch(0.96 0.01 85); --dark: oklch(0.18 0.01 60); --mut: oklch(0.74 0.01 85); }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; background: #171512; }
+  #stage { position: absolute; left: 0; top: 0; width: 1600px; height: 800px; transform-origin: 0 0; overflow: hidden; background: #171512; font-family: 'Bricolage Grotesque', sans-serif; color: var(--cream); }
+  .scene { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+  .scene > img { position: absolute; left: 0; top: 0; display: block; }
+  .print { position: absolute; left: 0; top: 0; transform-origin: 0 0; overflow: hidden; }
+  .ink { mix-blend-mode: multiply; }
+  .fill { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .card { position: absolute; z-index: 5; background: rgba(23,21,18,.84); border: 1px solid rgba(255,255,255,.13); border-radius: 22px; padding: 22px 26px;
+          backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 24px 50px rgba(0,0,0,.35); }
+  .lbl { font-family: 'IBM Plex Mono', monospace; font-size: 15px; letter-spacing: .14em; text-transform: uppercase; color: var(--y); }
+  .big { font-size: 46px; font-weight: 800; letter-spacing: -.04em; line-height: 1; margin-top: 10px; }
+  .sm { font-size: 19px; line-height: 1.4; color: var(--mut); margin-top: 8px; }
+  .serif { font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; }
+  .rows { margin-top: 12px; display: grid; gap: 9px; }
+  .rows div { display: flex; justify-content: space-between; gap: 28px; font-size: 21px; padding-bottom: 9px; border-bottom: 1px solid rgba(255,255,255,.1); }
+  .rows div:last-child { border-bottom: 0; padding-bottom: 0; }
+  .rows b { font-weight: 800; color: var(--cream); white-space: nowrap; }
+  .rows span { color: var(--mut); }
+  .pill { display: inline-block; font-family: 'IBM Plex Mono', monospace; font-size: 14px; letter-spacing: .1em; text-transform: uppercase; padding: 7px 12px; border-radius: 999px; background: var(--y); color: #1b1a17; }
+  .blurfix { position: absolute; backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-radius: 8px; }
+  .shade-b { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,9,8,0) 35%, rgba(10,9,8,.78) 100%); }
+  .shade-l { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10,9,8,.8) 0%, rgba(10,9,8,.35) 45%, rgba(10,9,8,0) 70%); }
+  .area { position: absolute; left: 56px; bottom: 50px; z-index: 5; }
+  .area h1 { font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; font-size: 118px; line-height: .9; letter-spacing: -.01em; color: #fff; text-shadow: 0 6px 30px rgba(0,0,0,.4); }
+  .area p { font-family: 'IBM Plex Mono', monospace; font-size: 18px; letter-spacing: .16em; text-transform: uppercase; color: var(--y); margin-bottom: 14px; display: flex; align-items: center; gap: 12px; }
+  .pin { width: 22px; height: 22px; }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script>
+function quad(w, h, [[x0,y0],[x1,y1],[x2,y2],[x3,y3]]) {
+  const dx1 = x1 - x2, dx2 = x3 - x2, dx3 = x0 - x1 + x2 - x3, dy1 = y1 - y2, dy2 = y3 - y2, dy3 = y0 - y1 + y2 - y3;
+  const den = dx1 * dy2 - dx2 * dy1, g = (dx3 * dy2 - dx2 * dy3) / den, k = (dx1 * dy3 - dx3 * dy1) / den;
+  const a = x1 - x0 + g * x1, b = x3 - x0 + k * x3, d = y1 - y0 + g * y1, e = y3 - y0 + k * y3;
+  return `matrix3d(${a / w},${d / w},0,${g / w},${b / h},${e / h},0,${k / h},0,0,1,0,${x0},${y0},0,1)`;
+}
+const on = (w, h, pts, html, cls = '', extra = '') => `<div class="print ${cls}" style="width:${w}px; height:${h}px; transform:${quad(w, h, pts)}; ${extra}">${html}</div>`;
+const rect = (x0, y0, x1, y1) => [[x0, y0], [x1, y0], [x1, y1], [x0, y1]];
+// photo scene: crop [cx, cy, cw] of a w x h photo fills the 1600 x 800 stage
+const scene = (src, w, h, [cx, cy, cw], inner = '') => `<div class="scene" style="width:${w}px; height:${h}px; transform: scale(${1600 / cw}) translate(${-cx}px, ${-cy}px);">
+  <img src="photos/${src}" width="${w}" height="${h}" alt="">${inner}</div>`;
+const PIN = '<svg class="pin" viewBox="0 0 24 24"><path d="M12 22s7-7.2 7-12.5A7 7 0 0 0 5 9.5C5 14.8 12 22 12 22z" fill="currentColor"/><circle cx="12" cy="9.5" r="2.6" fill="#171512"/></svg>';
+
+/* ---------- screen and print designs ---------- */
+// Raman & Associates (the CA firm rebrand) as a business website, 1280 x 770
+const RAMAN_SITE = `<div style="position:absolute; inset:0; background:#f6f7fb; font-family:'Inter Tight'; color:#1d2b5a;">
+  <div style="height:78px; display:flex; align-items:center; justify-content:space-between; padding:0 56px; background:#fff; border-bottom:1px solid #e3e6ef;">
+    <div style="display:flex; align-items:center; gap:14px;"><div style="width:44px; height:44px; border-radius:11px; background:#1d2b5a; color:#fff; font-weight:800; font-size:19px; display:flex; align-items:center; justify-content:center; letter-spacing:-1px; white-space:nowrap; font-size:16px;">R<span style="color:#8fb3ff; font-weight:500;">&amp;</span>A</div><b style="font-size:21px;">Raman &amp; Associates</b></div>
+    <div style="display:flex; gap:34px; font-size:16px; color:#55607a; font-weight:500;"><span>Services</span><span>About</span><span>Team</span><span>Insights</span></div>
+    <div style="background:#1d2b5a; color:#fff; padding:12px 20px; border-radius:10px; font-weight:600; font-size:15px;">Book a consultation</div></div>
+  <div style="display:grid; grid-template-columns:1.1fr .9fr; gap:40px; padding:54px 56px 0;">
+    <div><div style="font-family:'IBM Plex Mono'; font-size:13px; letter-spacing:.16em; color:#6a7390;">CHARTERED ACCOUNTANTS · MYLAPORE · SINCE 1984</div>
+      <div style="font-size:58px; font-weight:800; letter-spacing:-.035em; line-height:1.02; margin-top:18px;">Audit, tax and advice for growing Chennai businesses.</div>
+      <div style="font-size:19px; line-height:1.55; color:#55607a; margin-top:20px; max-width:30ch;">Three partners, forty years of filings, and one person who answers your call.</div>
+      <div style="display:flex; gap:14px; margin-top:28px;"><div style="background:#1d2b5a; color:#fff; padding:15px 24px; border-radius:11px; font-weight:600; font-size:16px;">Talk to a partner</div><div style="border:1.5px solid #1d2b5a; padding:14px 22px; border-radius:11px; font-weight:600; font-size:16px;">GST &amp; filings →</div></div></div>
+    <div style="position:relative; border-radius:22px; overflow:hidden; height:390px;"><img src="photos/website-team.jpg" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;">
+      <div style="position:absolute; left:18px; bottom:18px; background:#fff; border-radius:14px; padding:14px 18px; box-shadow:0 10px 24px rgba(0,0,0,.18);"><div style="font-size:30px; font-weight:800;">1,200+</div><div style="font-size:13px; color:#6a7390;">returns filed last year</div></div></div></div>
+  <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px; padding:34px 56px;">
+    ${['Statutory audit','GST & income tax','Company formation'].map((s, i) => `<div style="background:#fff; border:1px solid #e3e6ef; border-radius:16px; padding:20px 22px;"><div style="width:34px; height:34px; border-radius:9px; background:${['#e7edff','#fff1dc','#e4f5ec'][i]};"></div><div style="font-weight:700; font-size:19px; margin-top:12px;">${s}</div><div style="height:7px; width:80%; background:#e6e9f1; border-radius:4px; margin-top:12px;"></div></div>`).join('')}</div>
+</div>`;
+
+// one-page site on a phone, 390 x 841
+const TAILOR_SITE = `<div style="position:absolute; inset:0; background:#fff8f1; font-family:'Inter Tight'; color:#3b1d2e; overflow:hidden;">
+  <div style="height:44px;"></div>
+  <div style="padding:10px 22px; display:flex; justify-content:space-between; align-items:center;"><b style="font-family:'Fraunces'; font-size:21px; color:#8a1f4b;">Kanmani</b><span style="font-size:12px; font-weight:600; background:#8a1f4b; color:#fff; padding:6px 11px; border-radius:99px;">Call</span></div>
+  <div style="margin:10px 16px 0; border-radius:22px; background:linear-gradient(160deg,#8a1f4b,#c2416f); color:#fff; padding:26px 22px 24px; position:relative; overflow:hidden;">
+    <div style="position:absolute; right:-30px; top:-30px; width:150px; height:150px; border-radius:50%; border:18px solid rgba(255,255,255,.12);"></div>
+    <div style="font-family:'IBM Plex Mono'; font-size:10px; letter-spacing:.16em; opacity:.85;">LADIES' TAILORING · MYLAPORE</div>
+    <div style="font-family:'Fraunces'; font-weight:800; font-size:34px; line-height:1.02; margin-top:10px;">Blouses that fit the first time.</div>
+    <div style="font-size:13px; line-height:1.5; opacity:.9; margin-top:10px;">Measurements at the shop or at home. Ready in 5 days.</div>
+    <div style="margin-top:16px; background:#25d366; color:#06371b; font-weight:700; font-size:14px; padding:12px 14px; border-radius:12px; text-align:center;">WhatsApp to book a fitting</div></div>
+  <div style="padding:18px 16px 0; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+    ${['Blouse stitching','Salwar & kurti','Alterations','Bridal blouses'].map((s, i) => `<div style="background:#fff; border:1px solid #f0dfe6; border-radius:14px; padding:12px;"><div style="width:26px; height:26px; border-radius:8px; background:${['#fde4ee','#fff0d6','#e8f2ff','#efe7ff'][i]};"></div><div style="font-weight:700; font-size:13px; margin-top:8px;">${s}</div></div>`).join('')}</div>
+  <div style="margin:14px 16px 0; background:#fff; border:1px solid #f0dfe6; border-radius:14px; padding:14px; display:flex; justify-content:space-between; font-size:12px;"><div><b style="font-size:13px;">Open today</b><div style="color:#8a6b79; margin-top:3px;">10 am – 8 pm · Sunday closed</div></div><div style="text-align:right;"><b style="font-size:13px;">Directions</b><div style="color:#8a6b79; margin-top:3px;">Near Luz Corner</div></div></div>
+  <div style="margin:12px 16px 0; height:120px; border-radius:14px; background:#efe9e3; position:relative; overflow:hidden;">
+    <div style="position:absolute; inset:0; background-image:linear-gradient(#e2d9cf 2px, transparent 2px), linear-gradient(90deg, #e2d9cf 2px, transparent 2px); background-size:38px 38px; transform:rotate(-12deg) scale(1.4);"></div>
+    <div style="position:absolute; left:46%; top:34%; width:22px; height:22px; border-radius:50% 50% 50% 0; background:#8a1f4b; transform:rotate(-45deg);"></div></div>
+  <div style="margin:12px 16px 0; background:#3b1d2e; color:#fff; border-radius:14px; padding:14px;"><div style="color:#f4c26b; font-size:13px; letter-spacing:2px;">★★★★★</div><div style="font-size:13px; line-height:1.45; margin-top:6px;">"Third blouse from Kanmani and not one alteration needed."</div><div style="font-size:11px; opacity:.7; margin-top:6px;">Google review · Priya S.</div></div>
+</div>`;
+
+// video platform studio page (unbranded), 1280 x 850
+const THUMBS = [['thumb-1.jpg','₹500 vs ₹5,000','I tried both. Here is what changed'],['thumb-2.jpg','KASIMEDU 5AM','Chennai fish market, start to finish'],['thumb-3.jpg','MY DESK','The setup I edit 40 videos a month on'],
+  ['thumb-4.jpg','NO MORE 1AM','How I batch a week of edits in a day'],['thumb-5.jpg','RIPON BUILDING','100 years of Chennai in 9 minutes'],['thumb-6.jpg','WORTH IT?','Hiring an editor: the honest numbers']];
+const STUDIO = `<div style="position:absolute; inset:0; background:#0f0f10; font-family:'Inter Tight'; color:#eee; display:grid; grid-template-columns:200px 1fr;">
+  <div style="background:#151517; padding:26px 18px; border-right:1px solid #222;"><div style="display:flex; align-items:center; gap:10px;"><div style="width:34px; height:24px; border-radius:7px; background:#e8453c;"></div><b style="font-size:17px;">Studio</b></div>
+    ${['Dashboard','Content','Analytics','Comments','Subtitles'].map((s, i) => `<div style="margin-top:${i ? 8 : 30}px; padding:10px 12px; border-radius:9px; font-size:15px; ${i === 1 ? 'background:#26262a; color:#fff; font-weight:600;' : 'color:#9a9aa0;'}">${s}</div>`).join('')}</div>
+  <div style="padding:26px 30px;"><div style="display:flex; justify-content:space-between; align-items:flex-end;"><div><div style="font-size:13px; color:#8c8c93; letter-spacing:.08em;">CHANNEL CONTENT</div><div style="font-size:28px; font-weight:800; margin-top:4px;">Videos</div></div>
+      <div style="display:flex; gap:12px;">${[['Avg. view duration','6:42','+38%'],['Subscribers','+1,204','this month']].map(([a,b,c]) => `<div style="background:#18181b; border:1px solid #26262a; border-radius:12px; padding:10px 14px;"><div style="font-size:11px; color:#8c8c93;">${a}</div><div style="font-size:21px; font-weight:800; margin-top:2px;">${b} <span style="font-size:12px; color:#4ade80; font-weight:600;">${c}</span></div></div>`).join('')}</div></div>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:22px;">
+      ${THUMBS.map(([src, t, s], i) => `<div><div style="position:relative; aspect-ratio:16/9; border-radius:12px; overflow:hidden;"><img src="photos/${src}" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;">
+        <div style="position:absolute; inset:0; background:linear-gradient(90deg, rgba(0,0,0,.55), rgba(0,0,0,0) 70%);"></div>
+        <div style="position:absolute; left:12px; bottom:12px; font-weight:800; font-size:${t.length > 11 ? 22 : 27}px; line-height:.95; color:${i % 2 ? '#fff' : '#ffe14a'}; text-shadow:0 2px 6px rgba(0,0,0,.6); max-width:70%;">${t}</div>
+        <div style="position:absolute; right:8px; bottom:8px; background:rgba(0,0,0,.8); font-size:11px; padding:2px 6px; border-radius:4px;">${['12:08','9:41','14:20','11:02','9:07','16:33'][i]}</div></div>
+        <div style="font-size:14px; font-weight:600; margin-top:8px; line-height:1.3;">${s}</div><div style="font-size:12px; color:#8c8c93; margin-top:3px;">${['48K','31K','22K','67K','19K','40K'][i]} views · ${i + 1} week${i ? 's' : ''} ago</div></div>`).join('')}</div>
+    <div style="margin-top:22px; background:#18181b; border:1px solid #26262a; border-radius:14px; padding:16px 20px; display:grid; grid-template-columns:220px 1fr; gap:20px; align-items:center;">
+      <div><div style="font-size:12px; color:#8c8c93; letter-spacing:.08em;">AUDIENCE RETENTION</div><div style="font-size:30px; font-weight:800; margin-top:4px;">58% <span style="font-size:13px; color:#4ade80; font-weight:600;">at 3:00</span></div><div style="font-size:12px; color:#8c8c93; margin-top:4px;">vs 31% before the re-cut</div></div>
+      <svg viewBox="0 0 600 110" width="100%" height="110"><path d="M0 8 C40 30 70 34 110 40 S200 50 260 52 S380 58 440 62 S540 70 600 74" fill="none" stroke="#e8453c" stroke-width="4"/><path d="M0 8 C30 60 60 70 100 76 S200 86 260 90 S380 96 440 98 S540 102 600 104" fill="none" stroke="#55555c" stroke-width="3" stroke-dasharray="6 6"/></svg></div></div>
+</div>`;
+
+// editing software (unbranded), 1280 x 714
+const NLE = `<div style="position:absolute; inset:0; background:#1b1c1f; font-family:'Inter Tight'; color:#cfd2d8; font-size:12px; padding-left:34px;"><div style="position:relative; width:100%; height:100%;">
+  <div style="height:30px; background:#232428; display:flex; align-items:center; gap:22px; padding:0 14px; color:#8d9099;"><span style="color:#fff; font-weight:600;">Edit</span><span>Color</span><span>Fairlight</span><span>Deliver</span><span style="margin-left:auto;">Corporate_profile_v3 · 4K · 25 fps</span></div>
+  <div style="display:grid; grid-template-columns:260px 1fr 250px; height:400px; gap:2px; background:#111;">
+    <div style="background:#202125; padding:10px;"><div style="color:#8d9099; margin-bottom:8px;">MEDIA POOL</div><div style="display:grid; grid-template-columns:1fr 1fr; gap:7px;">${[1,2,3,4,5,6].map(i => `<div style="aspect-ratio:16/10; border-radius:4px; background:url(photos/thumb-${i}.jpg) center/cover;"></div>`).join('')}</div></div>
+    <div style="background:#0d0d0f; position:relative; display:grid; place-items:center;"><div style="width:92%; aspect-ratio:16/9; background:url(photos/video-frame.jpg) center/cover; position:relative;">
+      <div style="position:absolute; left:6%; bottom:9%; font-family:'Bricolage Grotesque'; color:#fff;"><div style="font-size:13px; letter-spacing:.2em; opacity:.85;">NOYYAL TEXTILES · TIRUPPUR</div><div style="font-size:30px; font-weight:800; margin-top:4px;">Woven since 1962</div></div></div>
+      <div style="position:absolute; bottom:8px; left:0; right:0; text-align:center; color:#8d9099;">00:00:41:12</div></div>
+    <div style="background:#202125; padding:10px; color:#8d9099;"><div style="margin-bottom:10px;">INSPECTOR</div>${['Zoom','Position','Rotation','Opacity','Speed'].map(s => `<div style="display:flex; justify-content:space-between; padding:7px 0; border-bottom:1px solid #2b2c31;"><span>${s}</span><span style="color:#cfd2d8;">${{Zoom:'1.08',Position:'0, 0',Rotation:'0.0°',Opacity:'100%',Speed:'100%'}[s]}</span></div>`).join('')}</div></div>
+  <div style="position:absolute; left:0; right:0; top:432px; bottom:0; background:#18191c; padding:10px 0 0 70px;">
+    <div style="position:absolute; left:0; top:0; bottom:0; width:66px; background:#1f2024; color:#8d9099; padding:12px 8px; line-height:2.3;">V3<br>V2<br>V1<br>A1<br>A2</div>
+    <div style="position:absolute; left:470px; top:0; bottom:0; width:2px; background:#e8453c;"></div>
+    ${[[0, [[0,180,'#6b5bd6'],[620,160,'#6b5bd6']]], [1, [[60,240,'#d68a3c'],[420,160,'#d68a3c'],[700,260,'#d68a3c']]], [2, [[0,300,'#3c8ad6'],[302,250,'#3c8ad6'],[554,330,'#3c8ad6'],[886,300,'#3c8ad6']]], [3, [[0,560,'#3cb37a'],[562,620,'#3cb37a']]], [4, [[0,1180,'#2e8b6a']]]]
+      .map(([r, cl]) => cl.map(([x, w, c]) => `<div style="position:absolute; left:${70 + x}px; top:${12 + r * 50}px; width:${w}px; height:40px; border-radius:5px; background:${c}; opacity:.85; overflow:hidden;">${r > 2 ? `<div style="position:absolute; inset:6px 4px; background:repeating-linear-gradient(90deg, rgba(255,255,255,.55) 0 2px, transparent 2px 5px); mask:linear-gradient(transparent 30%, #000 30% 70%, transparent 70%);"></div>` : ''}</div>`).join('')).join('')}
+  </div>
+</div></div>`;
+
+// Thenral Organics: logo card front and back, 700 x 385, ink on white card
+const THENRAL_MARK = (c) => `<svg viewBox="0 0 120 120" width="100%" height="100%"><path d="M60 14c22 18 30 44 18 70-6 13-14 20-18 22-4-2-12-9-18-22C30 58 38 32 60 14z" fill="${c}"/><path d="M60 30v72" stroke="#fbf6ea" stroke-width="5" stroke-linecap="round"/><path d="M60 58c10-4 16-11 18-20M60 76c-10-4-16-11-18-20" stroke="#fbf6ea" stroke-width="4.5" fill="none" stroke-linecap="round"/><path d="M8 92c22-10 40 6 58-2s26-14 46-6" stroke="${c}" stroke-width="5" fill="none" stroke-linecap="round"/></svg>`;
+const CARD_FRONT = `<div style="position:absolute; inset:0; background:#2f5d3a; display:flex; align-items:center; justify-content:center; gap:30px;">
+  <div style="width:130px; height:130px;">${THENRAL_MARK('#e9c46a')}</div>
+  <div><div style="font-family:'Fraunces'; font-weight:800; font-size:66px; color:#fbf6ea; letter-spacing:-.02em; line-height:.9;">thenral</div><div style="font-family:'IBM Plex Mono'; font-size:17px; letter-spacing:.42em; color:#e9c46a; margin-top:12px;">ORGANICS</div><div style="font-family:'Noto Sans Tamil'; font-size:21px; color:#fbf6ea; opacity:.85; margin-top:8px;">தென்றல்</div></div></div>`;
+const CARD_BACK = `<div style="position:absolute; inset:0; background:#fff; padding:44px 50px; font-family:'Inter Tight'; color:#2f5d3a;">
+  <div style="position:absolute; right:44px; top:40px; width:70px; height:70px;">${THENRAL_MARK('#2f5d3a')}</div>
+  <div style="font-family:'Fraunces'; font-weight:800; font-size:38px;">Meenakshi R.</div><div style="font-size:19px; color:#6b7f6f; margin-top:4px;">Founder · Cold-pressed oils &amp; millets</div>
+  <div style="position:absolute; left:50px; bottom:42px; font-size:18px; line-height:1.6; color:#3d4a40;">+91 98400 00000<br>hello@thenral.in<br>12, Kutchery Road, Mylapore</div>
+  <div style="position:absolute; right:0; bottom:0; width:120px; height:16px; background:#e9c46a;"></div></div>`;
+
+// 8-page booklet spread for a physiotherapy clinic: left and right pages 600 x 800, ink
+const BOOK_L = `<div style="position:absolute; inset:0; background:#fff; padding:56px 50px; font-family:'Inter Tight'; color:#0f3d4c;">
+  <div style="font-family:'IBM Plex Mono'; font-size:15px; letter-spacing:.2em; color:#e07a5f;">02 — HOW WE TREAT</div>
+  <div style="font-family:'Fraunces'; font-weight:800; font-size:62px; line-height:.98; margin-top:18px;">Pain has a reason. We find it first.</div>
+  <div style="font-size:21px; line-height:1.55; color:#4a6670; margin-top:22px;">Every first visit starts with a 40-minute assessment, so the plan is built on what is actually wrong.</div>
+  <div style="position:absolute; left:50px; right:50px; bottom:56px; height:250px; border-radius:18px; background:#0f3d4c; overflow:hidden;">
+    <div style="position:absolute; right:-40px; top:-40px; width:230px; height:230px; border-radius:50%; background:#e07a5f;"></div>
+    <div style="position:absolute; left:28px; bottom:26px; color:#fff;"><div style="font-family:'Fraunces'; font-weight:800; font-size:64px;">92%</div><div style="font-size:18px; opacity:.85;">of patients back at work within 6 weeks</div></div></div></div>`;
+const BOOK_R = `<div style="position:absolute; inset:0; background:#fff; padding:56px 50px; font-family:'Inter Tight'; color:#0f3d4c;">
+  <div style="font-family:'IBM Plex Mono'; font-size:15px; letter-spacing:.2em; color:#e07a5f;">03 — SERVICES</div>
+  ${[['Back & neck pain','Posture, disc and desk-work injuries'],['Sports rehab','Return-to-play plans for runners and cricketers'],['Post-surgery','Knee and hip replacement recovery'],['Home visits','For patients who cannot travel']].map(([a, b], i) => `<div style="display:grid; grid-template-columns:62px 1fr; gap:14px; margin-top:${i ? 26 : 34}px;"><div style="width:62px; height:62px; border-radius:16px; background:${['#fde7df','#dff0f2','#fdf1d6','#e7e9fb'][i]}; display:grid; place-items:center; font-family:'Fraunces'; font-weight:800; font-size:26px; color:#0f3d4c;">${i + 1}</div><div><div style="font-weight:700; font-size:25px;">${a}</div><div style="font-size:18px; color:#4a6670; margin-top:4px;">${b}</div></div></div>`).join('')}
+  <div style="position:absolute; left:50px; right:50px; bottom:50px; display:flex; justify-content:space-between; font-size:16px; color:#4a6670; border-top:2px solid #0f3d4c; padding-top:14px;"><b style="color:#0f3d4c;">Aram Physio · Anna Nagar</b><span>Page 3</span></div></div>`;
+
+// handwritten starting prices, 600 x 800 notebook page (blue ink)
+const hand = (lines, title) => `<div style="position:absolute; inset:0; padding:56px 46px; font-family:'Caveat', cursive; color:#1d3a8a;">
+  <div style="font-size:58px; font-weight:700; line-height:1;">${title}</div><div style="width:240px; height:5px; background:#1d3a8a; border-radius:3px; margin-top:6px; transform:rotate(-1.5deg); opacity:.8;"></div>
+  ${lines.map(([a, b], i) => `<div style="display:flex; align-items:baseline; gap:8px; font-size:40px; font-weight:500; margin-top:${i ? 6 : 22}px;"><span style="white-space:nowrap;">${a}</span><span style="flex:1; border-bottom:3px dotted rgba(29,58,138,.55); transform:translateY(-8px);"></span><span style="font-weight:700; white-space:nowrap;">${b}</span></div>`).join('')}</div>`;
+const PRICES = hand([['Logo', '₹8,000'], ['One-page site', '₹9,000'], ['Website', '₹20,000'], ['Reel', '₹1,500'], ['YouTube video', '₹3,000']], 'Starting prices');
+const BRIEF = `<div style="position:absolute; inset:0; padding:54px 56px 40px 70px; font-family:'Caveat', cursive; color:#22223b;">
+  <div style="font-size:60px; font-weight:700; line-height:1;">Project brief</div><div style="width:250px; height:5px; background:#e85d4a; border-radius:3px; margin-top:8px; transform:rotate(-1deg);"></div>
+  ${[['What I need', 'logo + shop signboard', true], ['Business', 'Velan Hardware, Ambattur', true], ['Budget', '₹10,000 – ₹25,000', true], ['Needed by', 'before Pongal', true], ['The brief', 'old logo looks dated, keep the blue', false]].map(([a, b, d], i) => `<div style="display:grid; grid-template-columns:44px 1fr; gap:10px; margin-top:${i ? 22 : 34}px; align-items:start;">
+    <div style="width:34px; height:34px; border:3.5px solid #22223b; border-radius:6px; margin-top:8px; position:relative;">${d ? '<div style="position:absolute; left:4px; top:-12px; font-size:48px; color:#e85d4a; font-weight:700; line-height:1;">✓</div>' : ''}</div>
+    <div><div style="font-size:30px; color:#6b6b80; line-height:1;">${a}</div><div style="font-size:42px; font-weight:600; line-height:1.05; margin-top:4px;">${b}</div></div></div>`).join('')}</div>`;
+
+// Kavin's own card, 700 x 395, ink on the card in hand (lower right left clear for the thumb)
+const MY_CARD = `<div style="position:absolute; inset:0; background:#fff; padding:44px 48px; font-family:'Bricolage Grotesque'; color:#1b1a17;">
+  <div style="position:absolute; left:0; top:0; bottom:0; width:16px; background:oklch(0.88 0.19 100);"></div>
+  <div style="font-size:46px; font-weight:800; letter-spacing:-.04em;">Kavin Arulraj</div>
+  <div style="font-family:'Instrument Serif'; font-style:italic; font-size:30px; color:#4b4740; margin-top:2px;">design &amp; video editing, Chennai</div>
+  <div style="margin-top:40px; font-family:'IBM Plex Mono'; font-size:19px; line-height:1.75; color:#2b2924;">WhatsApp +91 70102 66975<br>kavinarulraj72587@gmail.com<br>kavinarulraj.com</div></div>`;
+
+/* ---------- layouts ---------- */
+const L = {
+  website: () => scene('website.jpg', 2400, 1600, [150, 250, 2100],
+      on(1280, 770, rect(690, 445, 1620, 1005), RAMAN_SITE, '', 'filter: brightness(.9) contrast(1.02);') +
+      `<div class="print" style="left:690px; top:445px; width:930px; height:560px; background:linear-gradient(115deg, rgba(255,255,255,.07) 0%, rgba(255,255,255,0) 40%);"></div>
+       <div class="blurfix" style="left:1080px; top:1022px; width:160px; height:40px;"></div>`) +
+    `<div class="card" style="left:56px; bottom:56px;"><div class="lbl">Business website</div><div class="big">₹20,000 – ₹32,000</div><div class="sm">Designed, built and online in 2–3 weeks</div></div>
+     <div class="card" style="right:56px; top:56px; padding:16px 20px;"><div class="lbl" style="color:var(--blue);">Running cost</div><div style="font-size:30px; font-weight:800; margin-top:6px;">≈ ₹5,000 <span style="font-size:18px; color:var(--mut); font-weight:400;">a year</span></div></div>`,
+
+  lowcost: () => scene('lowcost.jpg', 2400, 1572, [0, 150, 2400],
+      on(390, 841, rect(913, 200, 1437, 1330), TAILOR_SITE, '', 'border-radius:36px;') +
+      `<div class="print" style="left:1083px; top:200px; width:184px; height:40px; background:#0b0b0c; border-radius:0 0 20px 20px;"></div>`) +
+    `<div class="card" style="left:70px; top:250px; width:420px;"><div class="lbl">One page, built properly</div><div class="big">₹9,000</div><div class="sm">For a new business that needs to be findable this month</div></div>
+     <div class="card" style="right:80px; top:200px; width:360px;"><div class="lbl" style="color:var(--blue);">Included</div><div class="rows"><div><span>Mobile-first layout</span><b>✓</b></div><div><span>WhatsApp button</span><b>✓</b></div><div><span>Map &amp; timings</span><b>✓</b></div><div><span>Hosting setup help</span><b>✓</b></div></div></div>
+     <div class="card" style="right:150px; bottom:90px; padding:14px 20px;"><span class="pill">Live in 1 week</span></div>`,
+
+  logo: () => scene('logo.jpg', 2400, 1600, [0, 200, 2400],
+      on(700, 385, rect(867, 323, 1535, 690), CARD_FRONT, 'ink') + on(700, 385, rect(867, 910, 1535, 1277), CARD_BACK, 'ink')) +
+    `<div class="card" style="left:56px; top:56px; width:400px;"><div class="lbl">My logo packages</div><div class="rows"><div><span>Starter logo</span><b>₹8,000</b></div><div><span>Logo + essentials</span><b>₹14,000</b></div><div><span>Identity system</span><b>₹22,000</b></div></div></div>
+     <div class="card" style="right:56px; bottom:56px; width:380px;"><div class="lbl" style="color:var(--blue);">Every package</div><div class="sm" style="color:var(--cream);">3 concepts · 2 revision rounds · vector files you own</div></div>`,
+
+  brochure: () => scene('brochure.jpg', 2400, 2400, [0, 740, 2400],
+      on(600, 800, [[269, 1128], [996, 888], [1464, 1632], [648, 1932]], BOOK_L, 'ink') +
+      on(600, 800, [[996, 888], [1596, 629], [2160, 1332], [1464, 1632]], BOOK_R, 'ink', 'filter: brightness(1.02);')) +
+    `<div class="card" style="left:56px; top:56px;"><div class="lbl">8-page booklet</div><div class="big">₹12,000</div><div class="sm">Design only · about a week</div></div>
+     <div class="card" style="right:56px; top:56px; width:330px;"><div class="lbl" style="color:var(--blue);">Other formats</div><div class="rows"><div><span>Tri-fold</span><b>₹5,500</b></div><div><span>12-page profile</span><b>₹22,000</b></div><div><span>Per page</span><b>₹1,500</b></div></div></div>`,
+
+  video: () => scene('video.jpg', 2400, 1600, [0, 100, 2400],
+      on(1280, 714, rect(629, 366, 1777, 1006), NLE, '', 'filter: brightness(.88);') +
+      `<div class="print" style="left:1150px; top:1075px; width:96px; height:80px; border-radius:40px; background:radial-gradient(closest-side, rgb(80,73,61) 55%, rgba(80,73,61,0)); filter: blur(4px);"></div>`) +
+    `<div class="card" style="left:56px; top:56px; width:380px;"><div class="lbl">Rate card, starting at</div><div class="rows"><div><span>Reel or short</span><b>₹1,500</b></div><div><span>YouTube video</span><b>₹3,000</b></div><div><span>Corporate video</span><b>₹8,000</b></div><div><span>Wedding, full</span><b>₹25,000</b></div></div></div>
+     <div class="card" style="right:56px; bottom:56px; padding:16px 20px;"><span class="pill">Editing only · shoot by your photographer</span></div>`,
+
+  youtube: () => scene('youtube.jpg', 2400, 1600, [0, 200, 2400],
+      on(1280, 850, rect(625, 361, 1776, 1125), STUDIO, '', 'filter: brightness(.95);') +
+      `<div class="print" style="left:1122px; top:356px; width:156px; height:28px; background:#0a0a0a; border-radius:0 0 10px 10px;"></div>`) +
+    `<div class="card" style="left:56px; top:56px; width:330px;"><div class="lbl">Single video</div><div class="big">₹3,000</div><div class="sm">Up to 20 minutes, thumbnail included</div></div>
+     <div class="card" style="left:56px; bottom:56px; width:330px;"><div class="lbl" style="color:var(--blue);">Retainers</div><div class="rows"><div><span>4 videos / mo</span><b>₹10,000</b></div><div><span>8 videos / mo</span><b>₹18,000</b></div></div></div>
+     <div class="card" style="right:56px; bottom:56px; padding:16px 20px;"><span class="pill">48–72 hr turnaround</span></div>`,
+
+  freelancer: () => `<div style="position:absolute; left:0; top:0; width:795px; height:800px; overflow:hidden;"><img class="fill" src="photos/freelancer.jpg" style="object-position:60% 50%;"><div class="shade-b"></div></div>
+    <div style="position:absolute; right:0; top:0; width:795px; height:800px; overflow:hidden;"><img class="fill" src="photos/agency.jpg" style="object-position:40% 50%;"><div class="shade-b"></div></div>
+    <div style="position:absolute; left:795px; top:0; width:10px; height:800px; background:#171512;"></div>
+    <div style="position:absolute; left:740px; top:340px; width:120px; height:120px; border-radius:50%; background:var(--y); color:#1b1a17; display:grid; place-items:center; font-family:'Instrument Serif'; font-style:italic; font-size:58px; z-index:6; box-shadow:0 14px 30px rgba(0,0,0,.35);">vs</div>
+    <div class="card" style="left:46px; bottom:46px; width:560px;"><div class="lbl">Freelancer</div><div style="font-size:36px; font-weight:800; letter-spacing:-.03em; margin-top:8px;">You talk to the person doing the work.</div></div>
+    <div class="card" style="right:46px; bottom:46px; width:560px;"><div class="lbl" style="color:var(--blue);">Agency</div><div style="font-size:36px; font-weight:800; letter-spacing:-.03em; margin-top:8px;">A team, a process, and more people to pay.</div></div>`,
+
+  pricing: () => scene('pricing.jpg', 2400, 1600, [0, 200, 2400],
+      on(600, 800, [[768, 216], [1632, 408], [1440, 1536], [504, 1368]], PRICES, 'ink', 'opacity:.93;')) +
+    `<div class="card" style="right:56px; top:56px; width:380px;"><div class="lbl">Fixed quotes</div><div style="font-size:34px; font-weight:800; letter-spacing:-.03em; margin-top:8px; line-height:1.1;">Agreed before work starts.</div><div class="sm">50% to book, the rest on delivery.</div></div>`,
+
+  contact: () => scene('contact.jpg', 2400, 2400, [0, 600, 2400],
+      on(700, 395, [[702, 936], [1629, 939], [1635, 1461], [702, 1462]], MY_CARD, 'ink')) +
+    `<div class="card" style="right:56px; top:70px; width:360px;"><div class="lbl">Fastest reply</div><div style="font-size:34px; font-weight:800; letter-spacing:-.03em; margin-top:8px;">WhatsApp</div><div class="sm">Send a photo of what you have and what you need.</div></div>`,
+
+  hire: () => scene('hire.jpg', 2400, 1600, [0, 200, 2400],
+      on(600, 780, [[756, 398], [1542, 314], [1686, 1328], [846, 1424]], BRIEF, 'ink', 'opacity:.95;')) +
+    `<div class="card" style="right:56px; top:56px; width:380px;"><div class="lbl">Five answers</div><div style="font-size:34px; font-weight:800; letter-spacing:-.03em; margin-top:8px; line-height:1.1;">That is all a quote needs.</div><div class="sm">What, for whom, budget, deadline, and the brief.</div></div>`,
+
+  about: () => `<img class="fill" src="photos/about.jpg" style="object-position:50% 45%;"><div class="shade-l"></div>
+    <div class="area" style="bottom:auto; top:60px;"><p>${PIN} Chennai, Tamil Nadu</p><h1 style="font-size:96px;">One desk,<br>three disciplines.</h1></div>
+    <div class="card" style="left:56px; bottom:56px; display:flex; gap:40px; padding:22px 32px;">${[['6+','years'],['450+','projects'],['120+','clients']].map(([a, b]) => `<div><div style="font-size:46px; font-weight:800; letter-spacing:-.04em; color:var(--y);">${a}</div><div class="sm" style="margin-top:2px;">${b}</div></div>`).join('')}</div>`,
+};
+const AREAS = {
+  areas: ['areas.jpg', '50% 30%', 'Chennai', 'Same rates in every part of the city', ['Anna Nagar', 'T. Nagar', 'Adyar', 'Guindy & Nungambakkam', 'Velachery & OMR']],
+  tnagar: ['tnagar.jpg', '50% 45%', 'T. Nagar', 'Chennai 600 017', ['Festival and offer campaigns', 'Daily offer creatives', 'Wholesale catalogues']],
+  adyar: ['adyar.jpg', '50% 60%', 'Adyar', 'Chennai 600 020', ['Café and restaurant identity', 'Retail packaging', 'Reels for food & retail']],
+  annanagar: ['annanagar.jpg', '50% 35%', 'Anna Nagar', 'Chennai 600 040', ['Clinic and practice branding', 'Offer posters & flyers', 'Monthly social sets']],
+  guindy: ['guindy.jpg', '50% 55%; filter: brightness(1.08) contrast(1.12) saturate(1.1)', 'Guindy &amp; Nungambakkam', 'Chennai 600 032 · 600 034', ['Company profiles & catalogues', 'Corporate video', 'Identity systems']],
+  velachery: ['velachery.jpg', '50% 50%', 'Velachery &amp; OMR', 'Chennai 600 042 · IT corridor', ['Product UI your team can build', 'Product & explainer video', 'Startup identity']],
+};
+const areaLayout = ([src, pos, name, sub, work]) => `<img class="fill" src="photos/${src}" style="filter: saturate(.92) brightness(.92); object-position:${pos};"><div class="shade-b"></div><div class="shade-l" style="opacity:.75;"></div>
+  <div class="area"><p>${PIN} ${sub}</p><h1 style="${name.length > 14 ? 'font-size:92px;' : ''}">${name}</h1></div>
+  <div class="card" style="right:56px; bottom:56px; width:430px;"><div class="lbl">${src === 'areas.jpg' ? 'Areas I cover' : 'Work I do most here'}</div><div class="rows">${work.map(w => `<div><span style="color:var(--cream);">${w}</span><b style="color:var(--y);">→</b></div>`).join('')}</div></div>`;
+
+const layout = new URLSearchParams(location.search).get('layout') || 'website';
+const stage = document.getElementById('stage');
+stage.innerHTML = L[layout] ? L[layout]() : areaLayout(AREAS[layout]);
+stage.style.transform = `scale(${Math.min(1, innerWidth / 1600, innerHeight / 800)})`;
+</script>
+</body>
+</html>
