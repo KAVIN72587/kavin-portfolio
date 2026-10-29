@@ -114,9 +114,9 @@ All photos from Unsplash under the Unsplash License (free to use, no permission 
 | video-podcast-setup | Austin Distel | https://unsplash.com/photos/1559523161-0fc0d8b38a7a |
 | small-business-blog-worth-it | Vitaly Gariev | https://unsplash.com/photos/1753164597612-5e71b83fda91 |
 | restaurant-food-reels | Jonathan Borba | https://unsplash.com/photos/1551218372-063893c540ce |
-| website-launch-checklist | Estée Janssens | https://unsplash.com/photos/1506784365847-bbad939e9335 |
-| clinic-video-content | Unsplash contributor | https://unsplash.com/photos/1758691463000-08b98131daf3 |
-| contact-form-spam | Viva Reella | https://unsplash.com/photos/1773158742082-6f26389f7492 |
-| video-retainer-vs-per-video | Amina Atar | https://unsplash.com/photos/1681505531034-8d67054e07f6 |
-| website-copy-mistakes | Maria Lupan | https://unsplash.com/photos/1792830047526-e692ed52a905 |
-| youtube-retention-editing | Nubelson Fernandes | https://unsplash.com/photos/1627244714766-94dab62ed964 |
+| website-launch-checklist | Vitaly Gariev | https://unsplash.com/photos/1758691737138-7b9b1884b1db |
+| clinic-video-content | Vitaly Gariev | https://unsplash.com/photos/1758691462321-9b6c98c40f7e |
+| contact-form-spam | Vitaly Gariev | https://unsplash.com/photos/1758874572670-63042c5448c6 |
+| video-retainer-vs-per-video | Amy Hirschi | https://unsplash.com/photos/1551836022-d5d88e9218df |
+| website-copy-mistakes | Josh Duke | https://unsplash.com/photos/1598221860132-5eab9a635a42 |
+| youtube-retention-editing | Mark Cruz | https://unsplash.com/photos/1490810194309-344b3661ba39 |
