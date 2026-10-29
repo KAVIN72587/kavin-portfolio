@@ -1,28 +1,28 @@
 # Image gap analysis
 
-Generated 2026-10-28 by `node tools/image-gap-audit.mjs`.
+Generated 2026-10-29 by `node tools/image-gap-audit.mjs`.
 
 "Longest text run" = most words in a row with no image. Over ~600 reads as a wall of text.
 
 ## Main and service pages (37)
 
-No images: **11** · 1 image: **1** · 2+ images: **25**
+No images: **1** · 1 image: **10** · 2+ images: **26**
 
 | Page | Images | Empty slots | Words | Longest text run | Heading |
 |---|---|---|---|---|---|
-| /blog/ | 0 |  | 3573 | 3573 | Things clients keep asking me |
-| /website-design-cost-chennai/ | 0 |  | 834 | 834 | Website design cost in Chennai |
-| /video-editing-charges-chennai/ | 0 |  | 828 | 828 | Video editing charges in Chennai |
-| /low-cost-website-design-chennai/ | 0 |  | 798 | 798 | Low cost website design in Chennai |
-| /brochure-design-cost-chennai/ | 0 |  | 791 | 791 | Brochure design cost in Chennai |
-| /youtube-video-editing-chennai/ | 0 |  | 775 | 775 | YouTube video editing in Chennai |
-| /logo-design-cost-chennai/ | 0 |  | 767 | 767 | Logo design cost in Chennai |
-| /freelancer-vs-agency-chennai/ | 0 |  | 760 | 760 | Freelancer or agency in Chennai ? |
-| /pricing/ | 0 |  | 690 | 690 | What design costs in Chennai |
-| /hire-me/ | 0 |  | 271 | 271 | Hire a freelance designer in Chennai |
-| /contact/ | 0 |  | 169 | 169 | Talk to me directly . |
-| /about/ | 1 |  | 464 | 405 | One person, from the brief to the final file . |
+| /blog/ | 0 |  | 3669 | 3669 | Things clients keep asking me |
+| /website-design-cost-chennai/ | 1 |  | 834 | 774 | Website design cost in Chennai |
+| /video-editing-charges-chennai/ | 1 |  | 828 | 742 | Video editing charges in Chennai |
+| /low-cost-website-design-chennai/ | 1 |  | 798 | 723 | Low cost website design in Chennai |
+| /brochure-design-cost-chennai/ | 1 |  | 791 | 717 | Brochure design cost in Chennai |
+| /youtube-video-editing-chennai/ | 1 |  | 775 | 699 | YouTube video editing in Chennai |
+| /freelancer-vs-agency-chennai/ | 1 |  | 760 | 698 | Freelancer or agency in Chennai ? |
+| /logo-design-cost-chennai/ | 1 |  | 767 | 694 | Logo design cost in Chennai |
+| /pricing/ | 1 |  | 690 | 625 | What design costs in Chennai |
+| /hire-me/ | 1 |  | 271 | 220 | Hire a freelance designer in Chennai |
+| /contact/ | 1 |  | 169 | 104 | Talk to me directly . |
 | /reels-shorts-editing-chennai/ | 2 |  | 636 | 580 | Reels &amp; shorts editing in Chennai |
+| /about/ | 2 |  | 464 | 393 | One person, from the brief to the final file . |
 | /graphic-design-chennai/ | 3 |  | 582 | 342 | Graphic design services in Chennai |
 | /web-design-chennai/ | 3 |  | 649 | 339 | Web design in Chennai that loads on a two-bar signal. |
 | /ui-ux-design-chennai/ | 4 |  | 729 | 438 | UI/UX design in Chennai your developer can actually build. |
@@ -39,31 +39,31 @@ No images: **11** · 1 image: **1** · 2+ images: **25**
 | /business-card-design-chennai/ | 6 |  | 635 | 300 | Business card design in Chennai |
 | /brochure-design-chennai/ | 6 |  | 619 | 281 | Brochure design in Chennai that gets read past page two. |
 | /portfolio/video/ | 6 |  | 361 | 218 | Cuts judged by what people finish |
-| /portfolio/case-study-wedding-film/ | 7 |  | 642 | 455 | Fourteen hours of footage, four minutes anyone rewatches |
+| /portfolio/case-study-wedding-film/ | 8 |  | 639 | 455 | Fourteen hours of footage, four minutes anyone rewatches |
 | /portfolio/case-study-omr-clinic/ | 8 |  | 723 | 417 | Seven pages of booking form, cut to one decision |
 | /portfolio/case-study-madras-filter-coffee/ | 8 |  | 601 | 305 | A coffee brand that had to work on a 60g pouch |
-| /portfolio/ | 8 | 1 | 330 | 135 | The work , not the adjectives. |
 | /packaging-design-chennai/ | 9 |  | 784 | 315 | Packaging design in Chennai that survives the shelf. |
 | /portfolio/print/ | 9 |  | 415 | 181 | Work that had to survive a printer |
 | /portfolio/web-ui/ | 9 |  | 390 | 167 | Sites people open on a phone |
+| /portfolio/ | 9 |  | 325 | 135 | The work , not the adjectives. |
 | /portfolio/branding/ | 13 |  | 487 | 152 | Marks that have to work on a shutter |
 
 ## Area pages (6)
 
-No images: **6** · 1 image: **0** · 2+ images: **0**
+No images: **0** · 1 image: **6** · 2+ images: **0**
 
 | Page | Images | Empty slots | Words | Longest text run | Heading |
 |---|---|---|---|---|---|
-| /areas/velachery-omr/ | 0 |  | 553 | 553 | Designer for Velachery &amp; OMR teams |
-| /areas/t-nagar/ | 0 |  | 551 | 551 | Graphic designer in T. Nagar |
-| /areas/guindy-nungambakkam/ | 0 |  | 550 | 550 | Designer for Guindy &amp; Nungambakkam |
-| /areas/anna-nagar/ | 0 |  | 538 | 538 | Graphic designer in Anna Nagar |
-| /areas/adyar/ | 0 |  | 508 | 508 | Graphic designer in Adyar |
-| /areas/ | 0 |  | 325 | 325 | Working across Chennai |
+| /areas/t-nagar/ | 1 |  | 551 | 481 | Graphic designer in T. Nagar |
+| /areas/velachery-omr/ | 1 |  | 553 | 479 | Designer for Velachery &amp; OMR teams |
+| /areas/guindy-nungambakkam/ | 1 |  | 550 | 477 | Designer for Guindy &amp; Nungambakkam |
+| /areas/anna-nagar/ | 1 |  | 538 | 474 | Graphic designer in Anna Nagar |
+| /areas/adyar/ | 1 |  | 508 | 441 | Graphic designer in Adyar |
+| /areas/ | 1 |  | 325 | 264 | Working across Chennai |
 
-## Blog posts (108)
+## Blog posts (111)
 
-No images: **0** · 1 image: **108** · 2+ images: **0**
+No images: **0** · 1 image: **111** · 2+ images: **0**
 
 | Page | Images | Empty slots | Words | Longest text run | Heading |
 |---|---|---|---|---|---|
@@ -139,14 +139,17 @@ No images: **0** · 1 image: **108** · 2+ images: **0**
 | /blog/corporate-video-brief/ | 1 |  | 917 | 854 | A corporate video brief that works |
 | /blog/redesign-without-losing-seo/ | 1 |  | 920 | 854 | Redesign without disappearing from Google |
 | /blog/video-audio-cleanup/ | 1 |  | 921 | 853 | Your video's real problem is the sound |
+| /blog/small-business-blog-worth-it/ | 1 |  | 936 | 852 | Does your business need a blog? |
 | /blog/video-hook-first-seconds/ | 1 |  | 913 | 852 | Your reel has three seconds |
 | /blog/video-editing-turnaround/ | 1 |  | 923 | 851 | How long your video edit will take |
+| /blog/video-podcast-setup/ | 1 |  | 920 | 851 | A video podcast setup that works |
 | /blog/wedding-editor-brief/ | 1 |  | 930 | 851 | The brief that gets you the wedding film you want |
 | /blog/web-design-brief-template/ | 1 |  | 918 | 850 | A one-page brief for your web designer |
 | /blog/wordpress-hacked-signs/ | 1 |  | 918 | 850 | Is your WordPress site hacked? |
 | /blog/youtube-thumbnail-tips/ | 1 |  | 919 | 850 | Thumbnails that work at phone size |
 | /blog/explainer-animated-vs-live/ | 1 |  | 910 | 849 | Animated explainer or live action? |
 | /blog/reel-ideas-local-business/ | 1 |  | 916 | 849 | Reel ideas that don't need dancing |
+| /blog/restaurant-food-reels/ | 1 |  | 926 | 849 | Food reels that bring people to your table |
 | /blog/salon-website-booking/ | 1 |  | 923 | 849 | A salon website that fills the diary |
 | /blog/too-many-wordpress-plugins/ | 1 |  | 920 | 849 | Your WordPress plugin list needs a clear-out |
 | /blog/event-recap-video/ | 1 |  | 916 | 848 | The event recap video, delivered fast |
