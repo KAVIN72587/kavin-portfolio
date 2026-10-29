@@ -111,9 +111,9 @@ All photos from Unsplash under the Unsplash License (free to use, no permission 
 | photos-for-print | Mika Baumeister | https://unsplash.com/photos/1581079289196-67865ea83118 |
 | tamil-english-design | Bruno Martins | https://unsplash.com/photos/1436918898788-ebce04d38e46 |
 | what-to-send-for-a-quote | Romain Dancre | https://unsplash.com/photos/1603796846097-bee99e4a601f |
-| video-podcast-setup | Klim Musalimov | https://unsplash.com/photos/1660631228116-b3643559f611 |
-| small-business-blog-worth-it | Devin Pickell | https://unsplash.com/photos/1597673030062-0a0f1a801a31 |
-| restaurant-food-reels | Unsplash contributor | https://unsplash.com/photos/1729394405518-eaf2a0203aa7 |
+| video-podcast-setup | Austin Distel | https://unsplash.com/photos/1559523161-0fc0d8b38a7a |
+| small-business-blog-worth-it | Vitaly Gariev | https://unsplash.com/photos/1753164597612-5e71b83fda91 |
+| restaurant-food-reels | Jonathan Borba | https://unsplash.com/photos/1551218372-063893c540ce |
 | website-launch-checklist | Estée Janssens | https://unsplash.com/photos/1506784365847-bbad939e9335 |
 | clinic-video-content | Unsplash contributor | https://unsplash.com/photos/1758691463000-08b98131daf3 |
 | contact-form-spam | Viva Reella | https://unsplash.com/photos/1773158742082-6f26389f7492 |
