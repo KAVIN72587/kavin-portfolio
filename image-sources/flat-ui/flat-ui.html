@@ -1,0 +1,132 @@
+<!doctype html>
+<!-- The 11 flat UI boards, now shown on real devices in real photos (./photos, Unsplash License, credits in
+     ./photos/CREDITS.md). The screens are the existing designs: crops of the original boards (./screens, made from
+     assets/slots) or, for the before/after booking steps, the same Mira Care screens rebuilt sharp in HTML.
+     Green-screen phones are keyed with ./masks so fingers stay in front of the screen.
+     Render: node tools/render-image.mjs image-sources/flat-ui/flat-ui.html <out.webp> <w> <h> <layout>
+     layouts (w x h): omr1 1200x514 · omr2 782x1388 · omr3 782x1388 · omr4 1200x751 · omr6 740x740 · omr7 740x740 ·
+                      omr8 740x740 · corp1 872x654 · uiux1 1200x751 · uiux3 1124x703 · uiux4 1124x703 -->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Tamil:wght@600&display=block" rel="stylesheet">
+<style>
+  :root { --y: oklch(0.88 0.19 100); --blue: oklch(0.72 0.19 240); --cream: oklch(0.96 0.01 85); --mut: oklch(0.74 0.01 85); --mira: #1747d6; --mira-pink: #ee3d6b; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; background: #171512; }
+  #stage { position: absolute; left: 0; top: 0; transform-origin: 0 0; overflow: hidden; background: #171512; font-family: 'Bricolage Grotesque', sans-serif; color: var(--cream); }
+  .scene { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+  .scene > img { position: absolute; left: 0; top: 0; display: block; }
+  .print { position: absolute; left: 0; top: 0; transform-origin: 0 0; overflow: hidden; }
+  .layer { position: absolute; left: 0; top: 0; }
+  .shot { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+  .card { position: absolute; z-index: 5; background: rgba(23,21,18,.84); border: 1px solid rgba(255,255,255,.13); border-radius: 20px; padding: 20px 24px;
+          backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 24px 50px rgba(0,0,0,.35); }
+  .lbl { font-family: 'IBM Plex Mono', monospace; font-size: 14px; letter-spacing: .14em; text-transform: uppercase; color: var(--y); }
+  .big { font-size: 40px; font-weight: 800; letter-spacing: -.04em; line-height: 1; margin-top: 10px; }
+  .sm { font-size: 17px; line-height: 1.4; color: var(--mut); margin-top: 8px; }
+  .steps { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+  .steps span { font-size: 15px; padding: 6px 11px; border-radius: 99px; background: rgba(255,255,255,.08); color: var(--cream); }
+  .steps span b { color: var(--y); margin-right: 6px; font-family: 'IBM Plex Mono', monospace; }
+  .blurfix { position: absolute; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-radius: 12px; }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script>
+function quad(w, h, [[x0,y0],[x1,y1],[x2,y2],[x3,y3]]) {
+  const dx1 = x1 - x2, dx2 = x3 - x2, dx3 = x0 - x1 + x2 - x3, dy1 = y1 - y2, dy2 = y3 - y2, dy3 = y0 - y1 + y2 - y3;
+  const den = dx1 * dy2 - dx2 * dy1, g = (dx3 * dy2 - dx2 * dy3) / den, k = (dx1 * dy3 - dx3 * dy1) / den;
+  const a = x1 - x0 + g * x1, b = x3 - x0 + k * x3, d = y1 - y0 + g * y1, e = y3 - y0 + k * y3;
+  return `matrix3d(${a / w},${d / w},0,${g / w},${b / h},${e / h},0,${k / h},0,0,1,0,${x0},${y0},0,1)`;
+}
+const on = (w, h, pts, html, extra = '') => `<div class="print" style="width:${w}px; height:${h}px; transform:${quad(w, h, pts)}; ${extra}">${html}</div>`;
+const rect = (x0, y0, x1, y1) => [[x0, y0], [x1, y0], [x1, y1], [x0, y1]];
+// grow a quad outward from its centre (green screens: the key mask trims it back to the real screen edge)
+const grow = (pts, f) => { const cx = pts.reduce((s, p) => s + p[0], 0) / 4, cy = pts.reduce((s, p) => s + p[1], 0) / 4; return pts.map(([x, y]) => [cx + (x - cx) * f, cy + (y - cy) * f]); };
+let W = 1200, H = 800;
+const scene = (src, w, h, [cx, cy, cw], inner = '') => `<div class="scene" style="width:${w}px; height:${h}px; transform: scale(${W / cw}) translate(${-cx}px, ${-cy}px);">
+  <img src="photos/${src}" width="${w}" height="${h}" alt="">${inner}</div>`;
+const img = (src) => `<img class="shot" src="${src}">`;
+// green-screen photos: the screen design goes underneath, the keyed photo (green made transparent) on top
+const keyed = (src, w, h, crop, under) => `<div class="scene" style="width:${w}px; height:${h}px; transform: scale(${W / crop[2]}) translate(${-crop[0]}px, ${-crop[1]}px);">
+  ${under}<img src="photos/${src}" width="${w}" height="${h}" alt="" style="position:absolute; left:0; top:0;"></div>`;
+const notch = (w) => `<div style="position:absolute; left:50%; top:10px; width:${w}px; height:${w * .28}px; margin-left:${-w / 2}px; border-radius:${w}px; background:#050505; z-index:3;"></div>`;
+
+/* Mira Care booking steps, rebuilt sharp from the case study boards: 390 x 844 */
+const MIRA_MARK = '<svg width="22" height="22" viewBox="0 0 24 24"><path d="M9 2h6v7h7v6h-7v7H9v-7H2V9h7z" fill="#ee3d6b"/><path d="M9 9h6v6H9z" fill="#1747d6"/></svg>';
+const miraTop = (step, of, title, sub) => `<div style="height:46px; display:flex; justify-content:space-between; align-items:flex-end; padding:0 26px 6px; font:600 15px Inter;"><span>9:41</span><span style="font-size:12px;">●●● ▮</span></div>
+  <div style="display:flex; align-items:center; justify-content:space-between; padding:10px 18px;"><span style="font-size:20px;">←</span><span style="display:flex; align-items:center; gap:6px; font:700 15px Inter; color:#0f1b4c;">${MIRA_MARK} MIRA CARE</span><span style="font:500 11px Inter; border:1px solid #f3c6d3; border-radius:8px; padding:4px 7px;">English <b style="color:#ee3d6b; font-family:'Noto Sans Tamil';">தமிழ்</b></span></div>
+  <div style="padding:6px 20px 0;"><div style="display:flex; justify-content:space-between; font:600 12px Inter; color:#55607a;"><span>Step ${step} of ${of}</span><span>${Math.round(step / of * 100)}%</span></div>
+    <div style="height:6px; border-radius:6px; background:#e7ebf5; margin-top:6px; overflow:hidden;"><div style="height:100%; width:${step / of * 100}%; background:#1747d6; border-radius:6px;"></div></div></div>
+  <div style="text-align:center; padding:20px 20px 0;"><div style="font:800 23px Inter; color:#0f1b4c;">${title}</div><div style="font:400 13px Inter; color:#6b7590; margin-top:5px;">${sub}</div></div>`;
+const field = (label, value, chevron = true) => `<div style="margin:12px 18px 0; border:1px solid #e3e7f0; border-radius:12px; padding:10px 13px; font-family:Inter;"><div style="font-size:11px; color:#8a93ab;">${label}</div><div style="display:flex; justify-content:space-between; font-size:14px; font-weight:600; color:#0f1b4c; margin-top:3px;"><span>${value}</span>${chevron ? '<span style="color:#9aa3bb;">›</span>' : ''}</div></div>`;
+const BEFORE = `<div style="position:absolute; inset:0; background:#fff; color:#0f1b4c;">${miraTop(3, 7, 'Choose a department', 'Then a doctor, then a date, then a time…')}
+  ${field('Department', 'Select department')}${field('Visit type', 'New consultation')}${field('Referred by', 'Optional')}${field('Insurance', 'Select provider')}${field('Preferred language', 'English')}
+  <div style="margin:14px 18px 0; padding:10px 12px; border-radius:10px; background:#fff4e5; font:500 12px Inter; color:#9a5b00;">4 more steps before you see a time slot</div>
+  <div style="position:absolute; left:18px; right:18px; bottom:34px; background:#1747d6; color:#fff; text-align:center; font:700 16px Inter; padding:15px; border-radius:12px;">Next</div></div>`;
+const AFTER = `<div style="position:absolute; inset:0; background:#fff; color:#0f1b4c;">${miraTop(1, 3, 'Select Date & Time', 'Choose a convenient slot')}
+  <div style="margin:16px 18px 0; display:flex; gap:12px; align-items:center; border:1px solid #e3e7f0; border-radius:14px; padding:12px;"><div style="width:46px; height:46px; border-radius:50%; background:linear-gradient(135deg,#f6d3c4,#c98c6f);"></div><div style="font-family:Inter;"><div style="font-weight:700; font-size:15px;">Dr. Ananya Rao</div><div style="font-size:12px; color:#6b7590;">General Physician · MBBS, MD</div></div></div>
+  ${field('Date', 'Thu, 15 May')}
+  <div style="margin:14px 18px 6px; font:600 12px Inter; color:#6b7590;">Available slots</div>
+  ${[['10:30 AM', 'Available', '#16a34a', '#eaf7ee'], ['11:00 AM', 'Filling fast', '#ea7a12', '#fff3e6'], ['11:30 AM', 'Available', '#16a34a', '#eaf7ee'], ['04:00 PM', 'Available', '#16a34a', '#eaf7ee']].map(([t, s, c, bg], i) => `<div style="margin:8px 18px 0; display:flex; justify-content:space-between; align-items:center; padding:11px 14px; border-radius:11px; background:${bg}; border:1.5px solid ${i ? 'transparent' : c}; font:600 14px Inter;"><span>${t}</span><span style="color:${c}; font-size:12px;">${s} ${i ? '' : '✓'}</span></div>`).join('')}
+  <div style="position:absolute; left:18px; right:18px; bottom:34px; background:#1747d6; color:#fff; text-align:center; font:700 16px Inter; padding:15px; border-radius:12px;">Continue</div></div>`;
+
+/* design-tool window around the Flowbase board: 1600 x 700 */
+const TOOL = `<div style="position:absolute; inset:0; background:#1e1e20; font-family:Inter; color:#c9cbd1; font-size:12px; display:grid; grid-template-columns:230px 1fr 270px;">
+  <div style="border-right:1px solid #2c2c30; padding:14px;"><div style="font-weight:700; color:#fff; font-size:13px;">Flowbase · Design system</div>
+    ${['Foundations', '  Colour', '  Typography', '  Spacing', 'Components', '  Buttons', '  Inputs', '  Navigation', '  Cards', 'Templates'].map((s, i) => `<div style="padding:7px 8px; margin-top:${i ? 2 : 14}px; border-radius:6px; ${i === 5 ? 'background:#2f3b66; color:#fff;' : ''} white-space:pre;">${s.startsWith('  ') ? '▢ ' + s.trim() : '▾ ' + s}</div>`).join('')}</div>
+  <div style="background:#2a2a2e; position:relative; display:grid; place-items:center;"><div style="width:94%; aspect-ratio:1124/703; background:url('original-boards/ui-ux-design-chennai-4.webp') center/contain no-repeat; box-shadow:0 10px 30px rgba(0,0,0,.4);"></div>
+    <div style="position:absolute; top:10px; left:50%; transform:translateX(-50%); background:#1e1e20; border-radius:8px; padding:6px 14px;">Components / Buttons · 100%</div></div>
+  <div style="border-left:1px solid #2c2c30; padding:14px;"><div style="font-weight:700; color:#fff; font-size:13px;">Button / Primary</div>
+    ${[['Fill', '#2F5BFF'], ['Radius', '10'], ['Padding', '12 · 20'], ['Text', 'Inter Semibold 14'], ['State', 'Default · Hover · Disabled']].map(([a, b]) => `<div style="display:flex; justify-content:space-between; padding:9px 0; border-bottom:1px solid #2c2c30;"><span>${a}</span><span style="color:#fff;">${b}</span></div>`).join('')}
+    <div style="margin-top:16px; display:flex; gap:8px;">${['#2F5BFF', '#18B26B', '#F59E0B', '#EF4444', '#111827'].map(c => `<div style="width:30px; height:30px; border-radius:7px; background:${c};"></div>`).join('')}</div></div></div>`;
+
+const SLOTS = 'original-boards/'; // the flat boards these scenes replaced
+const L = {
+  omr1: [1200, 514, () => keyed('H4-keyed.png', 2400, 1350, [0, 100, 2400],
+      on(434, 900, grow([[862, 226], [1228, 150], [1432, 910], [1062, 986]], 1.06), img('screens/omr6-available.png'))) +
+    `<div class="card" style="right:40px; top:44px; width:380px;"><div class="lbl">Mira Care · clinic booking</div><div class="big">7 steps → 1 screen</div><div class="sm">Doctor, date and live slots on one page.</div></div>
+     <div class="card" style="right:40px; bottom:40px; padding:14px 18px;"><div class="steps" style="margin-top:0;"><span><b>●</b>Available</span><span><b style="color:#f59e0b;">●</b>Filling fast</span><span><b style="color:#ef4444;">●</b>Full</span></div></div>`],
+  omr2: [782, 1388, () => scene('H1.jpg', 2400, 1601, [700, 0, 902],
+      on(390, 844, [[1125, 590], [1425, 610], [1330, 1300], [975, 1230]], BEFORE + notch(110), 'border-radius:44px;')) +
+    `<div class="card" style="left:36px; top:40px;"><div class="lbl">Before</div><div class="big" style="font-size:52px;">7 steps</div><div class="sm">Form after form before a time slot.</div></div>`],
+  omr3: [782, 1388, () => keyed('H5-keyed.png', 2400, 1350, [780, 0, 760],
+      on(390, 844, grow([[944, 176], [1354, 172], [1374, 976], [980, 1044]], 1.06), AFTER)) +
+    `<div class="card" style="left:36px; top:40px;"><div class="lbl">After</div><div class="big" style="font-size:52px;">3 steps</div><div class="sm">The slot is the first thing you pick.</div></div>`],
+  omr4: [1200, 751, () => scene('LP2.jpg', 2400, 1349, [120, 0, 2158],
+      on(1200, 718, rect(841, 294, 1835, 889), img(SLOTS + 'case-study-omr-clinic-4.webp')) + on(390, 670, rect(454, 598, 659, 950), img('screens/omr6-filling.png')) +
+      `<div class="blurfix" style="left:1250px; top:908px; width:150px; height:34px;"></div>`) +
+    `<div class="card" style="left:36px; bottom:36px; width:400px;"><div class="lbl">Less screens, less friction</div><div class="sm" style="color:var(--cream);">The same booking on desktop and phone: 7 screens became 3.</div></div>`],
+  omr6: [740, 740, () => scene('T2.jpg', 2400, 1600, [150, 0, 1600],
+      `<div class="layer" style="width:2400px; height:1600px; -webkit-mask-image: radial-gradient(ellipse 62px 40px at 1172px 690px, transparent 92%, #000 100%); mask-image: radial-gradient(ellipse 62px 40px at 1172px 690px, transparent 92%, #000 100%);">` +
+      on(600, 900, [[400, 426], [916, 198], [1318, 918], [748, 1200]], `<div style="position:absolute; inset:0; background:#f7f8fc; display:grid; place-items:center;"><img src="${SLOTS}case-study-omr-clinic-6.webp" style="width:100%;"></div>`, 'filter: brightness(.97);') + '</div>')],
+  omr7: [740, 740, () => scene('H2.jpg', 2400, 2023, [190, 0, 2023],
+      on(390, 780, [[1132, 126], [1665, 336], [1087, 1428], [555, 1120]], img('screens/omr7-offline.png') + notch(120), 'border-radius:46px;')) +
+    `<div class="card" style="left:30px; bottom:30px; padding:14px 18px;"><div class="lbl">When the signal drops</div><div class="sm" style="color:var(--cream); margin-top:6px;">Clear offline and error states, no lost booking.</div></div>`],
+  omr8: [740, 740, () => scene('T1.jpg', 2400, 3600, [370, 980, 1700],
+      on(750, 1000, [[671, 1077], [1793, 1083], [1799, 2581], [641, 2571]], `<div style="position:absolute; inset:0; background:#f7f8fc; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:26px; font-family:Inter;">
+        <div style="display:flex; align-items:center; gap:10px; font:700 22px Inter; color:#0f1b4c;">${MIRA_MARK} Mira Care · Design system v1.0</div>
+        <img src="${SLOTS}case-study-omr-clinic-8.webp" style="width:96%; border-radius:14px; box-shadow:0 8px 24px rgba(15,27,76,.12);"><div style="font:500 15px Inter; color:#6b7590;">Buttons · Inputs · Slot states · Cards · Type · Colour</div></div>`, 'border-radius:22px;'))],
+  corp1: [872, 654, () => scene('T4.jpg', 2400, 3600, [0, 1000, 2400],
+      on(872, 654, rect(417, 1299, 2037, 2505), img(SLOTS + 'corporate-video-editing-chennai-1.webp'), 'border-radius:26px;'))],
+  uiux1: [1200, 751, () => scene('LP4.jpg', 2400, 1903, [0, 210, 2400],
+      on(452, 1100, rect(505, 295, 1095, 1630), img('screens/tripora-home.png'), 'border-radius:56px;')) +
+    `<div class="card" style="right:36px; top:40px; width:380px;"><div class="lbl">Tripora · travel app</div><div class="big">Find. Book. Go.</div><div class="sm">Six screens from search to booking confirmed.</div></div>
+     <div class="card" style="right:36px; bottom:40px; width:380px;"><div class="steps" style="margin-top:0;">${['Search', 'Dates', 'Hotel', 'Room', 'Pay', 'Confirmed'].map((s, i) => `<span><b>${i + 1}</b>${s}</span>`).join('')}</div></div>`],
+  uiux3: [1124, 703, () => scene('MO1.jpg', 2400, 2400, [0, 200, 2400],
+      on(1124, 703, [[597, 400], [1775, 677], [1857, 1397], [662, 1363]], img(SLOTS + 'ui-ux-design-chennai-3.webp')) +
+      `<div class="blurfix" style="left:1290px; top:1490px; width:130px; height:110px; border-radius:50%;"></div>`)],
+  uiux4: [1124, 703, () => scene('MO3.jpg', 2400, 1800, [0, 0, 2400],
+      on(1600, 700, rect(370, 250, 2085, 1000), TOOL))],
+};
+const layout = new URLSearchParams(location.search).get('layout') || 'omr1';
+const [w, h, fn] = L[layout];
+W = w; H = h;
+const stage = document.getElementById('stage');
+stage.style.width = w + 'px'; stage.style.height = h + 'px';
+stage.innerHTML = fn();
+stage.style.transform = `scale(${Math.min(1, innerWidth / w, innerHeight / h)})`;
+</script>
+</body>
+</html>

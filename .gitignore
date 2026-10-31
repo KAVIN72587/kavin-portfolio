@@ -1,2 +1,5 @@
 .claude/
 node_modules/
+
+# working renders for share images and phone bands (rebuilt by tools/page-og.mjs and tools/page-bands-phone.mjs)
+image-sources/og/
