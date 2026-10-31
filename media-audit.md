@@ -1,6 +1,6 @@
 # Media audit
 
-Generated 2026-10-29 by `node tools/media-audit.mjs`.
+Generated 2026-10-31 by `node tools/media-audit.mjs`.
 
 | Check | Count |
 |---|---|
@@ -8,7 +8,7 @@ Generated 2026-10-29 by `node tools/media-audit.mjs`.
 | Broken media references | 0 |
 | Images missing alt text | 0 |
 | Images reused on >3 pages | 0 |
-| Unused files in /assets | 12 |
+| Unused files in /assets | 6 |
 
 ## 1. Empty image slots — media to add
 
@@ -30,15 +30,9 @@ None.
 
 ## 5. Unused files in /assets
 
-- `/assets/blog/clinic-video-content.webp`
-- `/assets/blog/contact-form-spam.webp`
-- `/assets/blog/og/clinic-video-content.jpg`
-- `/assets/blog/og/contact-form-spam.jpg`
 - `/assets/blog/og/video-retainer-vs-per-video.jpg`
 - `/assets/blog/og/website-copy-mistakes.jpg`
-- `/assets/blog/og/website-launch-checklist.jpg`
 - `/assets/blog/og/youtube-retention-editing.jpg`
 - `/assets/blog/video-retainer-vs-per-video.webp`
 - `/assets/blog/website-copy-mistakes.webp`
-- `/assets/blog/website-launch-checklist.webp`
 - `/assets/blog/youtube-retention-editing.webp`

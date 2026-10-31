@@ -57,10 +57,9 @@ async function flatness(file) {
 }
 
 // Older assets were checked by eye (contact sheets): almost all are photographic mockups.
-// These few are flat UI screen boards: interface designs, tracked separately from illustrations.
-const FLAT_UI = ['case-study-omr-clinic-1', 'case-study-omr-clinic-2', 'case-study-omr-clinic-3', 'case-study-omr-clinic-4',
-  'case-study-omr-clinic-6', 'case-study-omr-clinic-7', 'case-study-omr-clinic-8', 'ui-ux-design-chennai-1',
-  'ui-ux-design-chennai-3', 'ui-ux-design-chennai-4', 'corporate-video-editing-chennai-1'];
+// Flat UI screen boards (interface designs) are tracked separately from illustrations. The 11 there were
+// (Mira Care, Nexora, Tripora, AI Metrics, Flowbase) now sit on real device photos: image-sources/flat-ui.
+const FLAT_UI = [];
 
 // A source counts as photo-based when it reads real photos (a photos/ folder, or an existing photo asset).
 function photoBased(src) {

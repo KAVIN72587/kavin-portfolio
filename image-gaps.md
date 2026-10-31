@@ -1,6 +1,6 @@
 # Image gap analysis
 
-Generated 2026-10-29 by `node tools/image-gap-audit.mjs`.
+Generated 2026-10-31 by `node tools/image-gap-audit.mjs`.
 
 "Longest text run" = most words in a row with no image. Over ~600 reads as a wall of text.
 
@@ -10,7 +10,7 @@ No images: **1** · 1 image: **10** · 2+ images: **26**
 
 | Page | Images | Empty slots | Words | Longest text run | Heading |
 |---|---|---|---|---|---|
-| /blog/ | 0 |  | 3669 | 3669 | Things clients keep asking me |
+| /blog/ | 0 |  | 3762 | 3762 | Things clients keep asking me |
 | /website-design-cost-chennai/ | 1 |  | 834 | 774 | Website design cost in Chennai |
 | /video-editing-charges-chennai/ | 1 |  | 828 | 742 | Video editing charges in Chennai |
 | /low-cost-website-design-chennai/ | 1 |  | 798 | 723 | Low cost website design in Chennai |
@@ -61,9 +61,9 @@ No images: **0** · 1 image: **6** · 2+ images: **0**
 | /areas/adyar/ | 1 |  | 508 | 441 | Graphic designer in Adyar |
 | /areas/ | 1 |  | 325 | 264 | Working across Chennai |
 
-## Blog posts (111)
+## Blog posts (114)
 
-No images: **0** · 1 image: **111** · 2+ images: **0**
+No images: **0** · 1 image: **114** · 2+ images: **0**
 
 | Page | Images | Empty slots | Words | Longest text run | Heading |
 |---|---|---|---|---|---|
@@ -168,8 +168,11 @@ No images: **0** · 1 image: **111** · 2+ images: **0**
 | /blog/stock-footage-licensing/ | 1 |  | 914 | 840 | Stock footage: useful, risky, often generic |
 | /blog/website-accessibility-basics/ | 1 |  | 918 | 840 | A website everyone can use |
 | /blog/school-website-must-haves/ | 1 |  | 908 | 839 | What parents look for on a school website |
+| /blog/clinic-video-content/ | 1 |  | 910 | 838 | Videos that help patients choose your clinic |
 | /blog/youtube-video-length/ | 1 |  | 915 | 837 | The right length for your YouTube videos |
 | /blog/website-backups/ | 1 |  | 912 | 835 | A backup you have never restored is a hope |
+| /blog/website-launch-checklist/ | 1 |  | 909 | 835 | Before your website goes live |
+| /blog/contact-form-spam/ | 1 |  | 908 | 832 | Stopping form spam without losing customers |
 | /blog/logo-signboard-problems/ | 1 |  | 801 | 742 | Why your logo looks wrong on the signboard |
 | /blog/print-file-basics/ | 1 |  | 803 | 737 | CMYK, bleed and the three files every printer wants |
 | /blog/tamil-english-design/ | 1 |  | 746 | 690 | Designing in Tamil and English together |

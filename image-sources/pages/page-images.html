@@ -247,7 +247,12 @@ const areaLayout = ([src, pos, name, sub, work]) => `<img class="fill" src="phot
   <div class="area"><p>${PIN} ${sub}</p><h1 style="${name.length > 14 ? 'font-size:92px;' : ''}">${name}</h1></div>
   <div class="card" style="right:56px; bottom:56px; width:430px;"><div class="lbl">${src === 'areas.jpg' ? 'Areas I cover' : 'Work I do most here'}</div><div class="rows">${work.map(w => `<div><span style="color:var(--cream);">${w}</span><b style="color:var(--y);">→</b></div>`).join('')}</div></div>`;
 
-const layout = new URLSearchParams(location.search).get('layout') || 'website';
+const raw = new URLSearchParams(location.search).get('layout') || 'website';
+// "<layout>-clean": the photo and printed design only, no cards or area titles (used for share images)
+// "<layout>-phone": no cards, area titles kept (cropped to 4:3 for phones by tools/page-bands-phone.mjs)
+const layout = raw.replace(/-(clean|phone)$/, '');
+if (raw.endsWith('-clean')) document.head.insertAdjacentHTML('beforeend', '<style>.card, .area { display: none !important; }</style>');
+if (raw.endsWith('-phone')) document.head.insertAdjacentHTML('beforeend', '<style>.card { display: none !important; } .area { left: 300px !important; }</style>');
 const stage = document.getElementById('stage');
 stage.innerHTML = L[layout] ? L[layout]() : areaLayout(AREAS[layout]);
 stage.style.transform = `scale(${Math.min(1, innerWidth / 1600, innerHeight / 800)})`;

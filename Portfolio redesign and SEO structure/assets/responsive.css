@@ -236,3 +236,9 @@ img, video, iframe { max-width: 100%; }
 }
 /* Instagram's script forces min-width: 326px, wider than a 4-up column */
 .reel-grid .instagram-media { min-width: 0 !important; width: 100% !important; margin: 0 !important; }
+
+/* Page image bands: 2:1 with price cards on wider screens, a 4:3 card-free crop on phones (tools/page-bands-phone.mjs) */
+.band picture { display: contents; }
+@media (max-width: 640px) {
+  .band { aspect-ratio: 4 / 3 !important; }
+}
