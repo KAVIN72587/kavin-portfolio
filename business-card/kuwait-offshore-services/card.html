@@ -10,8 +10,8 @@
   /* Card = 3.5in x 2in -> 1050 x 600 CSS px (300 px/in) */
   :root{
     --deep:#0E2B30; --deep-2:#16404A; --abyss:#081B1F;
-    --mist:#EEF2EF; --mist-2:#E2E9E5; --seaglass:#8FB0A9;
-    --copper:#B8734A; --copper-dk:#7E4A2B;
+    --mist:#EEF2EF; --mist-2:#E2E9E5; --seaglass:#8FB0A9; --slate:#3D5A5F;
+    --copper:#B8734A;
     --foil:linear-gradient(110deg,#7E4A2B 0%,#C98558 20%,#F3C9A4 36%,#B8734A 54%,#8A522F 70%,#E2A97E 86%,#A9643C 100%);
   }
   *{box-sizing:border-box;margin:0;padding:0}
@@ -20,41 +20,36 @@
   .card{width:1050px;height:600px;position:relative;overflow:hidden;flex:none;box-shadow:0 30px 60px rgba(0,0,0,.45)}
   .foil{background:var(--foil);-webkit-background-clip:text;background-clip:text;color:transparent}
   .contours{position:absolute;inset:0;width:100%;height:100%}
+  .bar{position:absolute;left:0;top:0;bottom:0;width:14px;background:var(--foil)}
 
-  /* ---------- FRONT : brand side ---------- */
-  .front{background:radial-gradient(130% 120% at 85% 100%, var(--deep-2) 0%, var(--deep) 45%, var(--abyss) 100%);color:var(--mist)}
-  .brand{position:absolute;left:96px;top:50%;transform:translateY(-50%)}
-  .mono{font-family:"Bodoni Moda",serif;font-weight:400;font-size:132px;line-height:.9;letter-spacing:.04em}
-  .mono i{font-style:italic}
-  .hair{width:64px;height:1px;background:var(--copper);margin:30px 0 26px}
-  .wm{font-weight:400;font-size:25px;letter-spacing:.46em;line-height:1.55}
-  .wm span{display:block;font-weight:300;color:var(--seaglass)}
-  .tag{font-weight:300;font-size:13px;letter-spacing:.24em;color:rgba(238,242,239,.62);margin-top:22px;max-width:520px;line-height:1.7;text-transform:uppercase}
-  .coords{position:absolute;right:64px;top:56px;font-weight:300;font-size:12.5px;letter-spacing:.3em;color:var(--seaglass);text-align:right;line-height:1.8}
+  /* ---------- SIDE 1 : contact ---------- */
+  .contact{background:linear-gradient(160deg,#F5F8F6 0%,var(--mist) 50%,var(--mist-2) 100%);color:var(--deep)}
+  .rows{position:absolute;left:92px;top:76px;display:grid;grid-template-columns:52px 1fr;row-gap:20px;align-items:baseline}
+  .rows dt{font-weight:500;font-size:12px;letter-spacing:.22em;color:var(--copper)}
+  .rows dd{font-size:22px;letter-spacing:.01em;color:var(--deep)}
+  .rows dd.sep{grid-column:1/-1;height:1px;background:rgba(14,43,48,.12);margin:-6px 0 -6px}
+  .qr{position:absolute;right:84px;top:118px;width:200px;text-align:center}
+  .qr .box{padding:14px;background:#fff;border:1px solid rgba(184,115,74,.65);box-shadow:0 10px 26px rgba(14,43,48,.08)}
+  .qr img{display:block;width:100%}
+  .qr .cap{margin-top:14px;height:1px;background:linear-gradient(90deg,transparent,var(--copper),transparent)}
+  .addr{position:absolute;left:0;right:0;bottom:0;height:86px;background:var(--deep);display:flex;align-items:center;justify-content:center}
+  .addr p{font-weight:400;font-size:17px;letter-spacing:.42em;color:var(--mist)}
+  .addr p span{color:var(--copper)}
 
-  /* ---------- BACK : details side ---------- */
-  .back{background:linear-gradient(160deg,#F5F8F6 0%,var(--mist) 50%,var(--mist-2) 100%);color:var(--deep)}
-  .back .bar{position:absolute;left:0;top:0;bottom:0;width:14px;background:var(--foil)}
-  .left{position:absolute;left:84px;top:66px;width:470px}
-  .name{font-family:"Bodoni Moda",serif;font-weight:500;font-size:50px;line-height:1.05;letter-spacing:-.005em}
-  .name small{font-family:"Jost";font-weight:500;font-size:17px;letter-spacing:.2em;margin-left:10px;vertical-align:middle}
-  .role{font-weight:500;font-size:15px;letter-spacing:.34em;color:var(--copper);margin-top:14px}
-  .co{font-family:"Bodoni Moda",serif;font-style:italic;font-size:21px;margin-top:4px;color:var(--deep-2)}
-  .quals{font-weight:400;font-size:13px;letter-spacing:.04em;line-height:1.75;color:#3d5a5f;margin-top:20px}
-  .quals span{color:var(--copper);padding:0 6px}
-  .exp{list-style:none;margin-top:22px;padding-top:18px;border-top:1px solid rgba(14,43,48,.15);display:flex;flex-direction:column;gap:7px}
-  .exp li{font-size:13.5px;letter-spacing:.03em;color:var(--deep);display:flex;gap:14px;align-items:baseline}
-  .exp li::before{content:"";width:16px;height:1px;background:var(--copper);flex:none;transform:translateY(-4px)}
-  .divider{position:absolute;left:600px;top:66px;bottom:66px;width:1px;background:linear-gradient(var(--copper),rgba(184,115,74,.15))}
-  .right{position:absolute;left:640px;top:66px;right:60px}
-  .rows{display:grid;grid-template-columns:34px 1fr;row-gap:12px;align-items:baseline}
-  .rows dt{font-weight:500;font-size:11px;letter-spacing:.2em;color:var(--copper)}
-  .rows dd{font-size:15.5px;letter-spacing:.01em;color:var(--deep)}
-  .foot{position:absolute;left:640px;right:60px;bottom:58px;display:flex;align-items:flex-end;gap:20px}
-  .qr{width:104px;height:104px;padding:8px;background:#fff;border:1px solid rgba(184,115,74,.6);flex:none}
-  .qr img{width:100%;height:100%;display:block}
-  .addr{font-size:12px;letter-spacing:.2em;line-height:1.85;color:#3d5a5f;text-transform:uppercase}
-  .addr b{display:block;font-weight:500;color:var(--copper);font-size:10.5px;letter-spacing:.3em;margin-bottom:2px}
+  /* ---------- SIDE 2 : profile ---------- */
+  .profile{background:radial-gradient(130% 120% at 90% 100%, var(--deep-2) 0%, var(--deep) 45%, var(--abyss) 100%);color:var(--mist)}
+  .p-body{position:absolute;left:84px;top:62px;width:760px}
+  .name{font-family:"Bodoni Moda",serif;font-weight:500;font-size:68px;line-height:1.05;letter-spacing:-.005em}
+  .name small{font-family:"Jost";font-weight:500;font-size:20px;letter-spacing:.2em;margin-left:4px}
+  .quals{font-weight:300;font-size:15px;letter-spacing:.05em;line-height:1.8;color:rgba(238,242,239,.82);margin-top:14px}
+  .quals span{color:var(--copper);padding:0 9px}
+  .role{display:flex;align-items:center;gap:18px;margin-top:22px}
+  .role p{font-weight:500;font-size:17px;letter-spacing:.24em;text-transform:uppercase;white-space:nowrap}
+  .role i{flex:1;height:1px;background:linear-gradient(90deg,var(--copper),transparent)}
+  .exp{list-style:none;margin-top:22px;display:flex;flex-direction:column;gap:9px}
+  .exp li{font-weight:300;font-size:16.5px;letter-spacing:.03em;color:var(--mist);display:flex;gap:16px;align-items:baseline}
+  .exp li::before{content:"";width:18px;height:1px;background:var(--copper);flex:none;transform:translateY(-5px)}
+  .tag{position:absolute;left:84px;right:60px;bottom:40px;padding-top:16px;border-top:1px solid rgba(184,115,74,.45);font-weight:400;font-size:13px;letter-spacing:.34em;color:var(--seaglass)}
 
   @media print{
     @page{size:3.5in 2in;margin:0}
@@ -66,54 +61,43 @@
 </head>
 <body>
 
-<p class="label">Front</p>
-<section class="card front" id="front">
-  <svg class="contours" viewBox="0 0 1050 600" data-cx="980" data-cy="640" data-n="17" data-color="#C98558" data-op=".5"></svg>
-  <div class="coords">29°22′ N<br>47°58′ E</div>
-  <div class="brand">
-    <div class="mono foil">K<i>o</i>S</div>
-    <div class="hair"></div>
-    <div class="wm">KUWAIT OFFSHORE<span>SERVICES</span></div>
-    <p class="tag">Certified marine &amp; offshore expertise<br>with clustered solutions</p>
+<p class="label">Side 1 — Contact</p>
+<section class="card contact" id="side1">
+  <svg class="contours" viewBox="0 0 1050 600" data-cx="1100" data-cy="-40" data-n="10" data-color="#B8734A" data-op=".26"></svg>
+  <div class="bar"></div>
+  <dl class="rows">
+    <dt>M</dt><dd>+965 9745 5756</dd>
+    <dt>T</dt><dd>+965 9406 0642 / 0649 / 0650</dd>
+    <dd class="sep"></dd>
+    <dt>E</dt><dd>info@kuwaitoffshoreservices.com</dd>
+    <dt>E</dt><dd>kuwaitoffshoreservices@gmail.com</dd>
+    <dd class="sep"></dd>
+    <dt>IN</dt><dd>linkedin.com/in/raja-rathinam-27414a20a/</dd>
+    <dt>W</dt><dd>www.kuwaitoffshoreservices.com</dd>
+  </dl>
+  <div class="qr">
+    <div class="box"><img src="qr-website.svg" alt="QR code linking to kuwaitoffshoreservices.com"></div>
+    <div class="cap"></div>
   </div>
+  <div class="addr"><p>P.O. BOX 12075<span>,</span> SHAMIYA 71651<span>,</span> KUWAIT</p></div>
 </section>
 
-<p class="label">Back</p>
-<section class="card back" id="back">
-  <svg class="contours" viewBox="0 0 1050 600" data-cx="1080" data-cy="-60" data-n="9" data-color="#B8734A" data-op=".22"></svg>
-  <div class="bar"></div>
-
-  <div class="left">
-    <h1 class="name">Dr. Raja Rathinam<small>FIII</small></h1>
-    <p class="role">MANAGING DIRECTOR</p>
-    <p class="co">Kuwait Offshore Services</p>
-    <p class="quals">PhD<span>/</span>MBA (Shipping &amp; Logistics)<span>/</span>B.E. (Marine Engineering)<br>Maritime Auditing<span>/</span>Maritime Law<span>/</span>Marine Surveying – Lloyd’s</p>
+<p class="label">Side 2 — Profile</p>
+<section class="card profile" id="side2">
+  <svg class="contours" viewBox="0 0 1050 600" data-cx="1060" data-cy="660" data-n="15" data-color="#C98558" data-op=".42"></svg>
+  <div class="p-body">
+    <h1 class="name foil">Dr. Raja Rathinam,<small>FIII</small></h1>
+    <p class="quals">PhD<span>|</span>MBA (Shipping and Logistics)<span>|</span>B.E. (Marine Engineering)<br>Maritime Auditing<span>|</span>Maritime Law<span>|</span>Marine Surveying – Lloyd’s</p>
+    <div class="role"><p>Managing Director – <span class="foil">Kuwait Offshore Services</span></p><i></i></div>
     <ul class="exp">
       <li>Fellow, Insurance Institute of India</li>
-      <li>Certified Principal Marine Surveyor</li>
-      <li>Marine Insurance &amp; Claims Specialist</li>
-      <li>Maritime Risk &amp; Compliance Support</li>
-      <li>Offshore &amp; Marine Technical Consultant</li>
+      <li>Cert. Principal Marine Surveyor</li>
+      <li>Marine Insurance and Claims Specialist</li>
+      <li>Maritime Risk and Compliance Support</li>
+      <li>Offshore and Marine Technical Consultant</li>
     </ul>
   </div>
-
-  <div class="divider"></div>
-
-  <div class="right">
-    <dl class="rows">
-      <dt>M</dt><dd>+965 9745 5756</dd>
-      <dt>T</dt><dd>+965 9406 0642 / 0649 / 0650</dd>
-      <dt>E</dt><dd>info@kuwaitoffshoreservices.com</dd>
-      <dt>E</dt><dd>kuwaitoffshoreservices@gmail.com</dd>
-      <dt>IN</dt><dd>linkedin.com/in/raja-rathinam-27414a20a</dd>
-      <dt>W</dt><dd>www.kuwaitoffshoreservices.com</dd>
-    </dl>
-  </div>
-
-  <div class="foot">
-    <div class="qr"><img src="qr-website.svg" alt="QR code linking to kuwaitoffshoreservices.com"></div>
-    <p class="addr"><b>ADDRESS</b>P.O. Box 12075<br>Shamiya 71651<br>Kuwait</p>
-  </div>
+  <p class="tag">CERTIFIED MARINE AND OFFSHORE EXPERTISE WITH CLUSTERED SOLUTIONS</p>
 </section>
 
 <script>
