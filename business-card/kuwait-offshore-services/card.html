@@ -5,64 +5,57 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kuwait Offshore Services Card</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Cinzel:wght@500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-  /* Card = 3.5in x 2in  ->  1050 x 600 CSS px (300 px/in) */
+  /* Card = 3.5in x 2in -> 1050 x 600 CSS px (300 px/in) */
   :root{
-    --navy:#0A1830; --navy-2:#11264A; --ink:#0B1A30;
-    --ivory:#FBF6EA; --ivory-2:#F3EAD3;
-    --gold:#C9A24B; --gold-lt:#F1DC9C; --gold-dk:#8E6A22;
-    --foil:linear-gradient(115deg,#8E6A22 0%,#D9B65E 22%,#F6E7B0 38%,#C9A24B 55%,#9B7429 72%,#E9CF85 88%,#B88C35 100%);
+    --deep:#0E2B30; --deep-2:#16404A; --abyss:#081B1F;
+    --mist:#EEF2EF; --mist-2:#E2E9E5; --seaglass:#8FB0A9;
+    --copper:#B8734A; --copper-dk:#7E4A2B;
+    --foil:linear-gradient(110deg,#7E4A2B 0%,#C98558 20%,#F3C9A4 36%,#B8734A 54%,#8A522F 70%,#E2A97E 86%,#A9643C 100%);
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{background:#2a2d33;font-family:"Montserrat",sans-serif;display:flex;flex-direction:column;align-items:center;gap:48px;padding:48px 16px}
+  body{background:#1d2224;font-family:"Jost",sans-serif;display:flex;flex-direction:column;align-items:center;gap:48px;padding:48px 16px}
+  .label{color:#aab3b1;font-size:13px;letter-spacing:.3em;text-transform:uppercase;margin-bottom:-36px}
   .card{width:1050px;height:600px;position:relative;overflow:hidden;flex:none;box-shadow:0 30px 60px rgba(0,0,0,.45)}
   .foil{background:var(--foil);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .contours{position:absolute;inset:0;width:100%;height:100%}
 
-  /* ---------- FRONT (navy) ---------- */
-  .front{background:
-      radial-gradient(120% 140% at 15% 0%, #15305A 0%, var(--navy) 55%, #060F1F 100%);
-      color:var(--ivory)}
-  .front::before{content:"";position:absolute;inset:22px;border:1.2px solid rgba(201,162,75,.55);pointer-events:none}
-  .front::after{content:"";position:absolute;inset:28px;border:.6px solid rgba(201,162,75,.25);pointer-events:none}
-  .compass{position:absolute;right:-120px;top:50%;transform:translateY(-50%);width:560px;height:560px;opacity:.95}
-  .f-body{position:absolute;left:76px;top:70px;width:640px}
-  .eyebrow{font-family:"Cinzel",serif;font-size:15px;letter-spacing:.42em;color:var(--gold);display:flex;align-items:center;gap:14px}
-  .eyebrow i{display:block;width:46px;height:1px;background:var(--gold)}
-  .name{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:76px;line-height:1;margin-top:22px;letter-spacing:.005em}
-  .name sup{font-size:24px;font-weight:600;letter-spacing:.14em;vertical-align:34px;margin-left:10px}
-  .quals{font-size:14.5px;letter-spacing:.06em;color:rgba(251,246,234,.86);margin-top:16px;line-height:1.75}
-  .quals b{color:var(--gold);font-weight:400;padding:0 8px}
-  .rule{display:flex;align-items:center;gap:10px;margin:22px 0 18px;width:560px}
-  .rule span{flex:1;height:1px;background:linear-gradient(90deg,var(--gold),rgba(201,162,75,.15))}
-  .rule em{width:9px;height:9px;transform:rotate(45deg);background:var(--foil);flex:none}
-  .role{font-family:"Cinzel",serif;font-size:19px;letter-spacing:.24em;color:var(--ivory)}
-  .co{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:600;font-size:34px;margin-top:4px}
-  .spec{position:absolute;left:76px;bottom:58px;display:grid;grid-template-columns:auto auto;gap:7px 34px;font-size:13px;letter-spacing:.05em;color:rgba(251,246,234,.80)}
-  .spec li{list-style:none;display:flex;align-items:center;gap:10px}
-  .spec li::before{content:"";width:6px;height:6px;transform:rotate(45deg);background:var(--gold);flex:none}
+  /* ---------- FRONT : brand side ---------- */
+  .front{background:radial-gradient(130% 120% at 85% 100%, var(--deep-2) 0%, var(--deep) 45%, var(--abyss) 100%);color:var(--mist)}
+  .brand{position:absolute;left:96px;top:50%;transform:translateY(-50%)}
+  .mono{font-family:"Bodoni Moda",serif;font-weight:400;font-size:132px;line-height:.9;letter-spacing:.04em}
+  .mono i{font-style:italic}
+  .hair{width:64px;height:1px;background:var(--copper);margin:30px 0 26px}
+  .wm{font-weight:400;font-size:25px;letter-spacing:.46em;line-height:1.55}
+  .wm span{display:block;font-weight:300;color:var(--seaglass)}
+  .tag{font-weight:300;font-size:13px;letter-spacing:.24em;color:rgba(238,242,239,.62);margin-top:22px;max-width:520px;line-height:1.7;text-transform:uppercase}
+  .coords{position:absolute;right:64px;top:56px;font-weight:300;font-size:12.5px;letter-spacing:.3em;color:var(--seaglass);text-align:right;line-height:1.8}
 
-  /* ---------- BACK (ivory) ---------- */
-  .back{background:
-      radial-gradient(120% 120% at 80% 0%, #FFFDF6 0%, var(--ivory) 45%, var(--ivory-2) 100%);color:var(--ink)}
-  .back::before{content:"";position:absolute;inset:22px;border:1.2px solid rgba(142,106,34,.45);pointer-events:none}
-  .skyline{position:absolute;left:0;top:34px;width:1050px;height:190px}
-  .contacts{position:absolute;left:78px;top:214px;list-style:none;display:flex;flex-direction:column;gap:11px}
-  .contacts li{display:flex;align-items:center;gap:18px;font-size:21px;letter-spacing:.01em;color:var(--ink)}
-  .ic{width:36px;height:36px;border-radius:50%;background:var(--navy);display:grid;place-items:center;flex:none;box-shadow:inset 0 0 0 1.4px var(--gold)}
-  .ic svg{width:18px;height:18px;stroke:var(--gold-lt);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-  .qrbox{position:absolute;right:82px;top:238px;width:186px;text-align:center}
-  .qrbox .frame{padding:13px;background:#fff;border:1.2px solid var(--gold);position:relative}
-  .qrbox .frame::before,.qrbox .frame::after{content:"";position:absolute;width:16px;height:16px;border:2px solid var(--gold-dk)}
-  .qrbox .frame::before{top:-6px;left:-6px;border-right:0;border-bottom:0}
-  .qrbox .frame::after{bottom:-6px;right:-6px;border-left:0;border-top:0}
-  .qrbox img{display:block;width:100%}
-  .qrbox p{font-family:"Cinzel",serif;font-size:11.5px;letter-spacing:.3em;color:var(--gold-dk);margin-top:12px}
-  .addr{position:absolute;left:0;right:0;bottom:44px;text-align:center}
-  .addr .rule{width:auto;margin:0 64px 14px}
-  .addr .rule span:first-child{background:linear-gradient(270deg,var(--gold),rgba(201,162,75,.1))}
-  .addr p{font-family:"Cinzel",serif;font-size:16px;letter-spacing:.42em;color:var(--navy);font-weight:600}
-  .label{color:#c9ccd2;font-size:13px;letter-spacing:.3em;text-transform:uppercase;margin-bottom:-36px}
+  /* ---------- BACK : details side ---------- */
+  .back{background:linear-gradient(160deg,#F5F8F6 0%,var(--mist) 50%,var(--mist-2) 100%);color:var(--deep)}
+  .back .bar{position:absolute;left:0;top:0;bottom:0;width:14px;background:var(--foil)}
+  .left{position:absolute;left:84px;top:66px;width:470px}
+  .name{font-family:"Bodoni Moda",serif;font-weight:500;font-size:50px;line-height:1.05;letter-spacing:-.005em}
+  .name small{font-family:"Jost";font-weight:500;font-size:17px;letter-spacing:.2em;margin-left:10px;vertical-align:middle}
+  .role{font-weight:500;font-size:15px;letter-spacing:.34em;color:var(--copper);margin-top:14px}
+  .co{font-family:"Bodoni Moda",serif;font-style:italic;font-size:21px;margin-top:4px;color:var(--deep-2)}
+  .quals{font-weight:400;font-size:13px;letter-spacing:.04em;line-height:1.75;color:#3d5a5f;margin-top:20px}
+  .quals span{color:var(--copper);padding:0 6px}
+  .exp{list-style:none;margin-top:22px;padding-top:18px;border-top:1px solid rgba(14,43,48,.15);display:flex;flex-direction:column;gap:7px}
+  .exp li{font-size:13.5px;letter-spacing:.03em;color:var(--deep);display:flex;gap:14px;align-items:baseline}
+  .exp li::before{content:"";width:16px;height:1px;background:var(--copper);flex:none;transform:translateY(-4px)}
+  .divider{position:absolute;left:600px;top:66px;bottom:66px;width:1px;background:linear-gradient(var(--copper),rgba(184,115,74,.15))}
+  .right{position:absolute;left:640px;top:66px;right:60px}
+  .rows{display:grid;grid-template-columns:34px 1fr;row-gap:12px;align-items:baseline}
+  .rows dt{font-weight:500;font-size:11px;letter-spacing:.2em;color:var(--copper)}
+  .rows dd{font-size:15.5px;letter-spacing:.01em;color:var(--deep)}
+  .foot{position:absolute;left:640px;right:60px;bottom:58px;display:flex;align-items:flex-end;gap:20px}
+  .qr{width:104px;height:104px;padding:8px;background:#fff;border:1px solid rgba(184,115,74,.6);flex:none}
+  .qr img{width:100%;height:100%;display:block}
+  .addr{font-size:12px;letter-spacing:.2em;line-height:1.85;color:#3d5a5f;text-transform:uppercase}
+  .addr b{display:block;font-weight:500;color:var(--copper);font-size:10.5px;letter-spacing:.3em;margin-bottom:2px}
+
   @media print{
     @page{size:3.5in 2in;margin:0}
     body{background:none;padding:0;gap:0;display:block}
@@ -75,136 +68,75 @@
 
 <p class="label">Front</p>
 <section class="card front" id="front">
-  <svg class="compass" viewBox="-280 -280 560 560" id="compass">
-    <defs>
-      <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F6E7B0"/><stop offset=".5" stop-color="#D2AE58"/><stop offset="1" stop-color="#8E6A22"/></linearGradient>
-      <linearGradient id="g2" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B88C35"/><stop offset="1" stop-color="#6E5019"/></linearGradient>
-    </defs>
-    <g fill="none" stroke="#C9A24B">
-      <circle r="268" stroke-opacity=".25" stroke-width="1"/>
-      <circle r="250" stroke-opacity=".55" stroke-width="1.4"/>
-      <circle r="236" stroke-opacity=".35" stroke-width=".8"/>
-      <circle r="180" stroke-opacity=".3" stroke-width=".8" stroke-dasharray="2 6"/>
-      <circle r="120" stroke-opacity=".45" stroke-width="1"/>
-      <circle r="40" stroke-opacity=".6" stroke-width="1"/>
-    </g>
-    <g id="ticks" stroke="#C9A24B"></g>
-    <!-- intercardinal points -->
-    <g id="minor" opacity=".75"></g>
-    <!-- cardinal points -->
-    <g id="major"></g>
-    <circle r="9" fill="url(#g1)" stroke="#0A1830" stroke-width="2"/>
-    <g font-family="Cinzel" font-weight="600" font-size="26" fill="#E7CC85" text-anchor="middle">
-      <text y="-200">N</text><text x="-204" y="9">W</text><text y="218">S</text><text x="204" y="9">E</text>
-    </g>
-  </svg>
-
-  <div class="f-body">
-    <div class="eyebrow"><i></i>KUWAIT OFFSHORE SERVICES</div>
-    <h1 class="name foil">Dr. Raja Rathinam<sup>FIII</sup></h1>
-    <p class="quals">PhD<b>|</b>MBA (Shipping &amp; Logistics)<b>|</b>B.E. (Marine Engineering)<br>Maritime Auditing<b>|</b>Maritime Law<b>|</b>Marine Surveying – Lloyd’s</p>
-    <div class="rule"><span></span><em></em><span style="background:linear-gradient(270deg,var(--gold),rgba(201,162,75,.15))"></span></div>
-    <p class="role">MANAGING DIRECTOR</p>
-    <p class="co foil">Kuwait Offshore Services</p>
+  <svg class="contours" viewBox="0 0 1050 600" data-cx="980" data-cy="640" data-n="17" data-color="#C98558" data-op=".5"></svg>
+  <div class="coords">29°22′ N<br>47°58′ E</div>
+  <div class="brand">
+    <div class="mono foil">K<i>o</i>S</div>
+    <div class="hair"></div>
+    <div class="wm">KUWAIT OFFSHORE<span>SERVICES</span></div>
+    <p class="tag">Certified marine &amp; offshore expertise<br>with clustered solutions</p>
   </div>
-
-  <ul class="spec">
-    <li>Fellow, Insurance Institute of India</li>
-    <li>Marine Insurance &amp; Claims Specialist</li>
-    <li>Cert. Principal Marine Surveyor</li>
-    <li>Maritime Risk &amp; Compliance Support</li>
-    <li style="grid-column:1 / -1">Offshore &amp; Marine Technical Consultant</li>
-  </ul>
 </section>
 
 <p class="label">Back</p>
 <section class="card back" id="back">
-  <svg class="skyline" viewBox="0 0 1050 190" fill="none" stroke="#B48A36" stroke-linecap="round" stroke-linejoin="round">
-    <!-- horizon -->
-    <path d="M70 150 H980" stroke-width="1.2"/>
-    <!-- tanker -->
-    <g stroke-width="1.5">
-      <path d="M150 150 L138 122 H452 L440 150"/>
-      <path d="M142 131 H448" stroke-width=".8"/>
-      <path d="M170 122 V100 H230 V122 M180 100 V82 H222 V100 M188 82 V68 H214 V82 M198 68 V52 M194 58 H204"/>
-      <path d="M186 92 H218 M186 110 H226" stroke-width=".7"/>
-      <path d="M236 122 V112 H252 V122 M260 116 H420 M290 116 V108 M330 116 V108 M370 116 V108 M410 116 V108"/>
-      <path d="M430 122 V110 H446"/>
-    </g>
-    <!-- quay -->
-    <path d="M470 150 V140 H960 V150" stroke-width="1.2"/>
-    <!-- STS cranes -->
-    <g stroke-width="1.4" id="cranes"></g>
-    <!-- light masts -->
-    <g stroke-width="1" id="masts"></g>
-    <!-- reflections -->
-    <g stroke-width=".9" stroke-opacity=".55" id="refl"></g>
-  </svg>
+  <svg class="contours" viewBox="0 0 1050 600" data-cx="1080" data-cy="-60" data-n="9" data-color="#B8734A" data-op=".22"></svg>
+  <div class="bar"></div>
 
-  <ul class="contacts">
-    <li><span class="ic"><svg viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18.5h2"/></svg></span>+965 9745 5756</li>
-    <li><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 3.5h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6.4 6.4l1.5-2.3 4.6 1.8V19a1.6 1.6 0 0 1-1.7 1.6A16.5 16.5 0 0 1 3.4 5.2 1.6 1.6 0 0 1 5 3.5z"/></svg></span>+965 9406 0642 / 0649 / 0650</li>
-    <li><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="1.5"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg></span>info@kuwaitoffshoreservices.com</li>
-    <li><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="1.5"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg></span>kuwaitoffshoreservices@gmail.com</li>
-    <li><span class="ic"><svg viewBox="0 0 24 24"><path d="M6 10v8M6 6.2v.1M10.5 18v-8M10.5 13.5c0-2 1.3-3.6 3.3-3.6s3.2 1.4 3.2 3.6V18"/></svg></span>linkedin.com/in/raja-rathinam-27414a20a</li>
-    <li><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3z"/></svg></span>www.kuwaitoffshoreservices.com</li>
-  </ul>
-
-  <div class="qrbox">
-    <div class="frame"><img src="qr-website.svg" alt="QR code linking to kuwaitoffshoreservices.com"></div>
-    <p>SCAN TO VISIT</p>
+  <div class="left">
+    <h1 class="name">Dr. Raja Rathinam<small>FIII</small></h1>
+    <p class="role">MANAGING DIRECTOR</p>
+    <p class="co">Kuwait Offshore Services</p>
+    <p class="quals">PhD<span>/</span>MBA (Shipping &amp; Logistics)<span>/</span>B.E. (Marine Engineering)<br>Maritime Auditing<span>/</span>Maritime Law<span>/</span>Marine Surveying – Lloyd’s</p>
+    <ul class="exp">
+      <li>Fellow, Insurance Institute of India</li>
+      <li>Certified Principal Marine Surveyor</li>
+      <li>Marine Insurance &amp; Claims Specialist</li>
+      <li>Maritime Risk &amp; Compliance Support</li>
+      <li>Offshore &amp; Marine Technical Consultant</li>
+    </ul>
   </div>
 
-  <div class="addr">
-    <div class="rule"><span></span><em></em><span style="background:linear-gradient(90deg,var(--gold),rgba(201,162,75,.1))"></span></div>
-    <p>P.O. BOX 12075 · SHAMIYA 71651 · KUWAIT</p>
+  <div class="divider"></div>
+
+  <div class="right">
+    <dl class="rows">
+      <dt>M</dt><dd>+965 9745 5756</dd>
+      <dt>T</dt><dd>+965 9406 0642 / 0649 / 0650</dd>
+      <dt>E</dt><dd>info@kuwaitoffshoreservices.com</dd>
+      <dt>E</dt><dd>kuwaitoffshoreservices@gmail.com</dd>
+      <dt>IN</dt><dd>linkedin.com/in/raja-rathinam-27414a20a</dd>
+      <dt>W</dt><dd>www.kuwaitoffshoreservices.com</dd>
+    </dl>
+  </div>
+
+  <div class="foot">
+    <div class="qr"><img src="qr-website.svg" alt="QR code linking to kuwaitoffshoreservices.com"></div>
+    <p class="addr"><b>ADDRESS</b>P.O. Box 12075<br>Shamiya 71651<br>Kuwait</p>
   </div>
 </section>
 
 <script>
+/* Bathymetric depth contours: nested, organically warped rings */
 const NS="http://www.w3.org/2000/svg";
-const el=(tag,attrs,parent)=>{const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);parent.appendChild(e);return e;};
-
-/* compass ticks */
-const ticks=document.getElementById('ticks');
-for(let i=0;i<360;i+=2){
-  const a=i*Math.PI/180, long=i%30===0, mid=i%10===0;
-  const r1=250, r2=long?228:mid?236:242;
-  el('line',{x1:r1*Math.sin(a),y1:-r1*Math.cos(a),x2:r2*Math.sin(a),y2:-r2*Math.cos(a),
-    'stroke-width':long?1.6:.8,'stroke-opacity':long?.9:.5},ticks);
-}
-/* star points: two-tone facets for a foil-embossed look */
-function point(g,angle,len,w){
-  const a=angle*Math.PI/180, c=Math.cos(a), s=Math.sin(a);
-  const tip=[len*s,-len*c], L=[-w*c,-w*s], R=[w*c,w*s];
-  el('path',{d:`M0 0 L${tip} L${L}Z`,fill:'url(#g1)'},g);
-  el('path',{d:`M0 0 L${tip} L${R}Z`,fill:'url(#g2)'},g);
-}
-const minor=document.getElementById('minor'), major=document.getElementById('major');
-for(const a of [22.5,67.5,112.5,157.5,202.5,247.5,292.5,337.5]) point(minor,a,120,10);
-for(const a of [45,135,225,315]) point(minor,a,165,18);
-for(const a of [0,90,180,270]) point(major,a,a===0?236:226,26);
-
-/* port skyline: cranes, masts, reflections */
-const cranes=document.getElementById('cranes');
-[[520,1],[640,1.15],[760,1],[860,.9]].forEach(([x,k])=>{
-  const h=92*k, top=140-h;
-  const d=`M${x} 140 V${top} M${x+28*k} 140 V${top} M${x} ${top+h*.45} H${x+28*k} M${x} 140 L${x+28*k} ${top+h*.45} M${x+28*k} 140 L${x} ${top+h*.45}`
-   +` M${x-46*k} ${top+10} H${x+86*k} M${x-46*k} ${top+16} H${x+86*k} M${x+14*k} ${top} V${top-22*k} L${x-40*k} ${top+10} M${x+14*k} ${top-22*k} L${x+80*k} ${top+10}`
-   +` M${x+4*k} ${top+16} V${top+30} H${x+22*k} V${top+16}`;
-  el('path',{d},cranes);
-});
-const masts=document.getElementById('masts');
-[488,580,700,820,910,940].forEach(x=>el('path',{d:`M${x} 140 V${92+(x%3)*6} M${x-4} ${92+(x%3)*6} H${x+4}`},masts));
-[120,960,990].forEach(x=>el('path',{d:`M${x} 150 V${132} M${x-3} 132 H${x+3}`},masts));
-const refl=document.getElementById('refl');
-for(let i=0;i<14;i++){
-  const y=156+i*2.4, spread=1-i/16;
-  for(let x=140;x<960;x+=34+((i*7+x)%23)){
-    const len=(8+((x*i)%18))*spread;
-    if(len>3) el('path',{d:`M${x} ${y} h${len}`,'stroke-opacity':(.55*spread).toFixed(2)},refl);
+document.querySelectorAll('svg.contours').forEach(svg=>{
+  const cx=+svg.dataset.cx, cy=+svg.dataset.cy, n=+svg.dataset.n;
+  for(let i=0;i<n;i++){
+    const base=46+i*i*2.2+i*30;
+    let d="";
+    for(let s=0;s<=240;s++){
+      const t=s/240*Math.PI*2;
+      const r=base*(1+.13*Math.sin(3*t+.8)+.07*Math.sin(5*t+2+i*.22)+.04*Math.sin(9*t+i*.5));
+      d+=(s?"L":"M")+(cx+r*Math.cos(t)*1.35).toFixed(1)+" "+(cy+r*Math.sin(t)).toFixed(1);
+    }
+    const p=document.createElementNS(NS,'path');
+    p.setAttribute('d',d+"Z");p.setAttribute('fill','none');
+    p.setAttribute('stroke',svg.dataset.color);
+    p.setAttribute('stroke-width',i%4===3?1.4:.8);
+    p.setAttribute('stroke-opacity',(svg.dataset.op*(1-i/(n*1.25))).toFixed(3));
+    svg.appendChild(p);
   }
-}
+});
 </script>
 </body>
 </html>
