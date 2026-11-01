@@ -5,53 +5,55 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kuwait Offshore Services Card</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   /* Card = 3.5in x 2in -> 1050 x 600 CSS px (300 px/in) */
   :root{
-    --char:#15181C; --graph:#22272E; --pearl:#F5F5F2; --pearl-2:#E9EAE7;
-    --steel:#6F93B0; --steel-dk:#46677F; --ash:#5B6168; --silver:#C4C8CD;
-    --plat:linear-gradient(105deg,#7D838A 0%,#D9DCDF 20%,#FFFFFF 34%,#B4B9BF 52%,#80868D 68%,#E6E8EA 86%,#9AA0A6 100%);
+    --emerald:#0F4538; --emerald-lt:#17604D; --emerald-dk:#0A2E26; --ink:#0C3A30;
+    --ivory:#F8F3E8; --ivory-2:#EFE6D2; --cream-txt:#EDE4CF;
+    --champ:#C9AA6B; --champ-dk:#9C7C3E; --sea:#7FA99A;
+    --foil:linear-gradient(105deg,#9C7C3E 0%,#D8BE84 22%,#F7E9C4 38%,#C9AA6B 55%,#A3843F 72%,#E8D29C 88%,#B8964F 100%);
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{background:#2b2e33;font-family:"Manrope",sans-serif;display:flex;flex-direction:column;align-items:center;gap:48px;padding:48px 16px}
-  .label{color:#aab0b6;font-size:13px;letter-spacing:.3em;text-transform:uppercase;margin-bottom:-36px}
+  body{background:#2c302e;font-family:"Raleway",sans-serif;font-variant-numeric:lining-nums;display:flex;flex-direction:column;align-items:center;gap:48px;padding:48px 16px}
+  .label{color:#b3b8b4;font-size:13px;letter-spacing:.3em;text-transform:uppercase;margin-bottom:-36px}
   .card{width:1050px;height:600px;position:relative;overflow:hidden;flex:none;box-shadow:0 30px 60px rgba(0,0,0,.45)}
-  .plat{background:var(--plat);-webkit-background-clip:text;background-clip:text;color:transparent}
-  .chart{position:absolute;inset:0;width:100%;height:100%}
+  .foil{background:var(--foil);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .frame{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 
-  /* ---------- SIDE 1 : contact (pearl) ---------- */
-  .contact{background:linear-gradient(165deg,#FBFBF9 0%,var(--pearl) 55%,var(--pearl-2) 100%);color:var(--char)}
-  .rows{position:absolute;left:104px;top:72px;display:grid;grid-template-columns:50px 1fr;row-gap:20px;align-items:baseline}
-  .rows dt{font-weight:600;font-size:11.5px;letter-spacing:.22em;color:var(--steel-dk)}
-  .rows dd{font-weight:400;font-size:21.5px;letter-spacing:.005em;color:var(--char)}
-  .rows dd.sep{grid-column:1/-1;height:1px;background:linear-gradient(90deg,var(--silver),transparent);margin:-6px 0}
-  .qr{position:absolute;right:90px;top:104px;width:196px}
-  .qr .box{padding:14px;background:#fff;outline:1px solid var(--silver);outline-offset:6px}
+  /* ---------- SIDE 1 : contact (ivory) ---------- */
+  .contact{background:
+      repeating-linear-gradient(90deg,rgba(156,124,62,.025) 0 1px,transparent 1px 4px),
+      radial-gradient(120% 120% at 50% 0%,#FFFCF5 0%,var(--ivory) 50%,var(--ivory-2) 100%);color:var(--ink)}
+  .rows{position:absolute;left:100px;top:84px;display:grid;grid-template-columns:52px 1fr;row-gap:24px;align-items:baseline}
+  .rows dt{font-weight:600;font-size:11.5px;letter-spacing:.24em;color:var(--champ-dk)}
+  .rows dd{font-weight:500;font-size:21px;letter-spacing:.01em;color:var(--ink)}
+  .rows dd.sep{grid-column:1/-1;height:1px;background:linear-gradient(90deg,rgba(156,124,62,.55),transparent);margin:-5px 0}
+  .qr{position:absolute;right:96px;top:118px;width:190px}
+  .qr .box{padding:13px;background:#fff;border:1px solid var(--champ);box-shadow:0 0 0 5px var(--ivory),0 0 0 6px rgba(156,124,62,.45)}
   .qr img{display:block;width:100%}
-  .addr{position:absolute;left:0;right:0;bottom:0;height:84px;background:linear-gradient(180deg,var(--graph),var(--char));display:flex;align-items:center;justify-content:center;border-top:2px solid var(--steel)}
-  .addr p{font-weight:500;font-size:16px;letter-spacing:.44em}
+  .addr{position:absolute;left:0;right:0;bottom:62px;text-align:center}
+  .addr .wave{display:block;margin:0 auto 12px;width:300px;height:12px}
+  .addr p{font-weight:600;font-size:15.5px;letter-spacing:.42em;color:var(--emerald)}
 
-  /* ---------- SIDE 2 : profile (charcoal) ---------- */
-  .profile{background:radial-gradient(90% 110% at 50% 0%, #2A3038 0%, var(--graph) 40%, var(--char) 100%);color:#E9EBED;text-align:center}
-  .p-body{position:absolute;left:70px;right:70px;top:88px}
-  .name{font-family:"Marcellus",serif;font-weight:400;font-size:70px;line-height:1.05;letter-spacing:.02em}
-  .name small{font-family:"Manrope";font-weight:500;font-size:19px;letter-spacing:.22em;margin-left:4px}
-  .quals{font-weight:300;font-size:14.5px;letter-spacing:.06em;line-height:1.8;color:#BFC5CB;margin-top:12px}
-  .quals span{color:var(--steel);padding:0 9px}
-  .orn{display:flex;align-items:center;justify-content:center;gap:12px;margin:24px auto 18px;width:420px}
-  .orn i{flex:1;height:1px}
-  .orn i:first-child{background:linear-gradient(90deg,transparent,var(--silver))}
-  .orn i:last-child{background:linear-gradient(270deg,transparent,var(--silver))}
-  .orn b{width:7px;height:7px;border:1px solid var(--steel);transform:rotate(45deg)}
-  .role{font-weight:500;font-size:17px;letter-spacing:.26em;text-transform:uppercase}
-  .role span{color:var(--steel)}
-  .exp{list-style:none;margin-top:24px;display:flex;flex-wrap:wrap;justify-content:center;gap:12px 0;padding:0 30px}
-  .exp li{font-weight:300;font-size:15px;letter-spacing:.04em;color:#E1E4E7;display:flex;align-items:center}
-  .exp li+li::before{content:"";width:4px;height:4px;border-radius:50%;background:var(--steel);margin:0 16px}
+  /* ---------- SIDE 2 : profile (emerald) ---------- */
+  .profile{background:
+      repeating-linear-gradient(90deg,rgba(255,255,255,.012) 0 1px,transparent 1px 4px),
+      radial-gradient(80% 95% at 50% 40%,var(--emerald-lt) 0%,var(--emerald) 45%,var(--emerald-dk) 100%);color:var(--cream-txt);text-align:center}
+  .p-body{position:absolute;left:70px;right:70px;top:96px}
+  .name{font-family:"Playfair Display",serif;font-weight:500;font-size:66px;line-height:1.05;letter-spacing:.005em}
+  .name small{font-family:"Raleway";font-weight:500;font-size:19px;letter-spacing:.22em;margin-left:6px}
+  .quals{font-weight:400;font-size:14.5px;letter-spacing:.06em;line-height:1.85;color:rgba(237,228,207,.86);margin-top:12px}
+  .quals span{color:var(--champ);padding:0 9px}
+  .orn{display:block;margin:24px auto 18px;width:360px;height:14px}
+  .role{font-weight:500;font-size:16.5px;letter-spacing:.26em;text-transform:uppercase;color:#F6EFDD}
+  .role span{color:var(--champ)}
+  .exp{list-style:none;margin-top:24px;display:flex;flex-wrap:wrap;justify-content:center;gap:14px 0;padding:0 30px}
+  .exp li{font-weight:400;font-size:15px;letter-spacing:.04em;color:var(--cream-txt);display:flex;align-items:center}
+  .exp li+li::before{content:"";width:5px;height:5px;transform:rotate(45deg);background:var(--champ);margin:0 16px}
   .exp li.nl::before,.exp li.br::before{display:none}
   .exp .br{flex-basis:100%;height:0}
-  .tag{position:absolute;left:0;right:0;bottom:60px;font-weight:500;font-size:12px;letter-spacing:.38em;color:#8E969E}
+  .tag{position:absolute;left:0;right:0;bottom:62px;font-weight:600;font-size:11.5px;letter-spacing:.36em;color:var(--champ)}
 
   @media print{
     @page{size:3.5in 2in;margin:0}
@@ -63,9 +65,23 @@
 </head>
 <body>
 
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <linearGradient id="gfoil" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9C7C3E"/><stop offset=".3" stop-color="#E8D29C"/><stop offset=".5" stop-color="#F7E9C4"/>
+      <stop offset=".7" stop-color="#C9AA6B"/><stop offset="1" stop-color="#A3843F"/>
+    </linearGradient>
+    <symbol id="wave" viewBox="0 0 360 14">
+      <path d="M0 7 H140" stroke="currentColor" stroke-width="1"/>
+      <path d="M220 7 H360" stroke="currentColor" stroke-width="1"/>
+      <path d="M146 7 q8 -8 17 0 t17 0 t17 0 t17 0" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+</svg>
+
 <p class="label">Side 1 — Contact</p>
 <section class="card contact" id="side1">
-  <svg class="chart" viewBox="0 0 1050 600" id="grid1"></svg>
+  <svg class="frame" viewBox="0 0 1050 600" data-frame data-stroke="#B8964F" data-op=".9"></svg>
   <dl class="rows">
     <dt>M</dt><dd>+965 9745 5756</dd>
     <dt>T</dt><dd>+965 9406 0642 / 0649 / 0650</dd>
@@ -77,16 +93,19 @@
     <dt>W</dt><dd>www.kuwaitoffshoreservices.com</dd>
   </dl>
   <div class="qr"><div class="box"><img src="qr-website.svg" alt="QR code linking to kuwaitoffshoreservices.com"></div></div>
-  <div class="addr"><p style="color:#DCDFE2">P.O. BOX 12075, SHAMIYA 71651, KUWAIT</p></div>
+  <div class="addr">
+    <svg class="wave" style="color:#B8964F"><use href="#wave"/></svg>
+    <p>P.O. BOX 12075, SHAMIYA 71651, KUWAIT</p>
+  </div>
 </section>
 
 <p class="label">Side 2 — Profile</p>
 <section class="card profile" id="side2">
-  <svg class="chart" viewBox="0 0 1050 600" id="frame2"></svg>
+  <svg class="frame" viewBox="0 0 1050 600" data-frame data-stroke="url(#gfoil)" data-op="1"></svg>
   <div class="p-body">
-    <h1 class="name plat">Dr. Raja Rathinam,<small>FIII</small></h1>
+    <h1 class="name foil">Dr. Raja Rathinam,<small>FIII</small></h1>
     <p class="quals">PhD<span>|</span>MBA (Shipping and Logistics)<span>|</span>B.E. (Marine Engineering)<br>Maritime Auditing<span>|</span>Maritime Law<span>|</span>Marine Surveying – Lloyd’s</p>
-    <div class="orn"><i></i><b></b><i></i></div>
+    <svg class="orn" style="color:#C9AA6B"><use href="#wave"/></svg>
     <p class="role">Managing Director <span>–</span> Kuwait Offshore Services</p>
     <ul class="exp">
       <li>Fellow, Insurance Institute of India</li>
@@ -102,35 +121,24 @@
 </section>
 
 <script>
+/* Art-deco double frame: concave (scooped) corners, outer bold line + inner hairline,
+   with a small corner jewel tucked into each scoop. */
 const NS="http://www.w3.org/2000/svg";
 const el=(t,a,p)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);p.appendChild(e);return e};
-
-/* Nautical-chart neat line: thin frame with alternating graduated scale bars */
-function chartFrame(svg,{x,y,w,h,band,seg,dark,light,line,op}){
-  const g=el('g',{opacity:op},svg);
-  el('rect',{x,y,width:w,height:h,fill:'none',stroke:line,'stroke-width':1},g);
-  el('rect',{x:x+band,y:y+band,width:w-2*band,height:h-2*band,fill:'none',stroke:line,'stroke-width':.8},g);
-  const bars=(x0,y0,len,horiz)=>{
-    const n=Math.round(len/seg), s=len/n;
-    for(let i=0;i<n;i++) if(i%2===0)
-      el('rect',horiz?{x:x0+i*s,y:y0,width:s,height:band,fill:dark}:{x:x0,y:y0+i*s,width:band,height:s,fill:dark},g);
-  };
-  bars(x+band,y,w-2*band,true); bars(x+band,y+h-band,w-2*band,true);
-  bars(x,y+band,h-2*band,false); bars(x+w-band,y+band,h-2*band,false);
-  [[x,y],[x+w-band,y],[x,y+h-band],[x+w-band,y+h-band]].forEach(([a,b])=>el('rect',{x:a,y:b,width:band,height:band,fill:light},g));
+function scoop(x,y,w,h,r){
+  return `M${x+r} ${y} H${x+w-r} A${r} ${r} 0 0 0 ${x+w} ${y+r} V${y+h-r} A${r} ${r} 0 0 0 ${x+w-r} ${y+h}`+
+         ` H${x+r} A${r} ${r} 0 0 0 ${x} ${y+h-r} V${y+r} A${r} ${r} 0 0 0 ${x+r} ${y} Z`;
 }
-/* Side 2: platinum chart frame */
-chartFrame(document.getElementById('frame2'),{x:26,y:26,w:998,h:548,band:7,seg:38,dark:'#AEB4BA',light:'#6F93B0',line:'#AEB4BA',op:.32});
-
-/* Side 1: faint lat/long grid with a graduated scale strip on the left */
-const g1=document.getElementById('grid1');
-const grid=el('g',{stroke:'#46677F','stroke-opacity':.07,'stroke-width':1},g1);
-for(let x=70;x<1050;x+=140) el('line',{x1:x,y1:0,x2:x,y2:516},grid);
-for(let y=60;y<516;y+=120) el('line',{x1:0,y1:y,x2:1050,y2:y},grid);
-const strip=el('g',{},g1);
-el('rect',{x:34,y:0,width:10,height:516,fill:'none',stroke:'#46677F','stroke-opacity':.5},strip);
-for(let i=0,s=516/14;i<14;i++) if(i%2===0) el('rect',{x:34,y:i*s,width:10,height:s,fill:'#22272E'},strip);
-for(let y=0;y<516;y+=9.2) el('line',{x1:44,y1:y,x2:(Math.round(y/9.2)%5===0)?56:50,y2:y,stroke:'#46677F','stroke-opacity':.55,'stroke-width':.8},strip);
+document.querySelectorAll('svg[data-frame]').forEach(svg=>{
+  const st=svg.dataset.stroke, g=el('g',{fill:'none',stroke:st,opacity:svg.dataset.op},svg);
+  el('path',{d:scoop(24,24,1002,552,30),'stroke-width':2.2},g);
+  el('path',{d:scoop(33,33,984,534,24),'stroke-width':.8},g);
+  /* corner jewels: small diamond sitting in each scoop */
+  [[24,24,1,1],[1026,24,-1,1],[24,576,1,-1],[1026,576,-1,-1]].forEach(([cx,cy,sx,sy])=>{
+    const x=cx+sx*11, y=cy+sy*11;
+    el('path',{d:`M${x} ${y-5} L${x+5} ${y} L${x} ${y+5} L${x-5} ${y} Z`,fill:st,stroke:'none'},g);
+  });
+});
 </script>
 </body>
 </html>
