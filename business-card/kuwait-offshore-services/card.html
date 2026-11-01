@@ -5,56 +5,56 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kuwait Offshore Services Card</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   /* Card = 3.5in x 2in -> 1050 x 600 CSS px (300 px/in) */
   :root{
-    --emerald:#0D3F63; --emerald-lt:#17608F; --emerald-dk:#072640; --ink:#0B3352;
-    --ivory:#F6F8F8; --ivory-2:#E6ECEF; --cream-txt:#E4ECF2;
-    --champ:#CBA35C; --champ-dk:#9A7535; --sea:#8FB3CC;
-    --foil:linear-gradient(105deg,#9C7C3E 0%,#D8BE84 22%,#F7E9C4 38%,#C9AA6B 55%,#A3843F 72%,#E8D29C 88%,#B8964F 100%);
+    --abyss:#071B1D; --deep:#0B2A2C; --teal:#12403F; --teal-lt:#1B5755;
+    --ivory:#F1EEE6; --seaglass:#86B5A6; --mute:rgba(241,238,230,.74);
+    --copper:#C27B4F;
+    /* textured copper foil: grain noise over a metallic gradient */
+    --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' seed='4'/%3E%3CfeColorMatrix values='0 0 0 0 .35  0 0 0 0 .18  0 0 0 0 .08  0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    --foil:linear-gradient(112deg,#7A4126 0%,#B86B40 16%,#F0BE97 30%,#D08A5E 44%,#8E4F2C 58%,#E3A57A 74%,#A85E36 88%,#E9B28A 100%);
+    --paper:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' seed='9'/%3E%3CfeColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23p)'/%3E%3C/svg%3E");
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{background:#2b2f35;font-family:"Raleway",sans-serif;font-variant-numeric:lining-nums;display:flex;flex-direction:column;align-items:center;gap:48px;padding:48px 16px}
-  .label{color:#b3b8b4;font-size:13px;letter-spacing:.3em;text-transform:uppercase;margin-bottom:-36px}
-  .card{width:1050px;height:600px;position:relative;overflow:hidden;flex:none;box-shadow:0 30px 60px rgba(0,0,0,.45)}
-  .foil{background:var(--foil);-webkit-background-clip:text;background-clip:text;color:transparent}
-  .frame{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+  body{background:#1b1f20;font-family:"Jost",sans-serif;font-variant-numeric:lining-nums;display:flex;flex-direction:column;align-items:center;gap:48px;padding:48px 16px}
+  .label{color:#a9b1af;font-size:13px;letter-spacing:.3em;text-transform:uppercase;margin-bottom:-36px}
+  .card{width:1050px;height:600px;position:relative;overflow:hidden;flex:none;box-shadow:0 30px 60px rgba(0,0,0,.5);color:var(--ivory);
+    background:var(--paper),radial-gradient(120% 130% at 100% 100%,var(--teal-lt) 0%,var(--teal) 30%,var(--deep) 62%,var(--abyss) 100%)}
+  .card.flip{background:var(--paper),radial-gradient(120% 130% at 100% 0%,var(--teal-lt) 0%,var(--teal) 30%,var(--deep) 62%,var(--abyss) 100%)}
+  .foil{background:var(--grain),var(--foil);-webkit-background-clip:text;background-clip:text;color:transparent;
+    filter:drop-shadow(0 1px 0 rgba(0,0,0,.35))}
+  .contours{position:absolute;inset:0;width:100%;height:100%}
+  .coords{position:absolute;right:56px;top:46px;font-weight:400;font-size:13px;letter-spacing:.34em;color:var(--seaglass)}
 
-  /* ---------- SIDE 1 : contact (ivory) ---------- */
-  .contact{background:
-      repeating-linear-gradient(90deg,rgba(156,124,62,.025) 0 1px,transparent 1px 4px),
-      radial-gradient(120% 120% at 50% 0%,#FFFFFF 0%,var(--ivory) 50%,var(--ivory-2) 100%);color:var(--ink)}
-  .rows{position:absolute;left:100px;top:110px;display:grid;grid-template-columns:52px 1fr;row-gap:30px;align-items:baseline}
-  .rows dt{font-weight:600;font-size:11.5px;letter-spacing:.24em;color:var(--champ-dk)}
-  .rows dd{font-weight:500;font-size:22.5px;letter-spacing:.01em;color:var(--ink)}
-  .rows dd.sep{grid-column:1/-1;height:1px;background:linear-gradient(90deg,rgba(156,124,62,.55),transparent);margin:-5px 0}
-  .qr{position:absolute;right:96px;top:118px;width:190px}
-  .qr .box{padding:13px;background:#fff;border:1px solid var(--champ);box-shadow:0 0 0 5px var(--ivory),0 0 0 6px rgba(156,124,62,.45)}
+  /* ---------- SIDE 1 : contact ---------- */
+  .rows{position:absolute;left:76px;top:120px;display:grid;grid-template-columns:52px 1fr;row-gap:26px;align-items:baseline}
+  .rows dt{font-weight:500;font-size:12px;letter-spacing:.26em;color:var(--copper)}
+  .rows dd{font-weight:300;font-size:22px;letter-spacing:.03em;color:var(--ivory)}
+  .qr{position:absolute;right:76px;top:132px;width:178px;padding:12px;background:#F4F1EA;border-radius:3px;box-shadow:0 0 0 1px rgba(194,123,79,.7),0 12px 30px rgba(0,0,0,.35)}
   .qr img{display:block;width:100%}
-  .addr{position:absolute;left:0;right:0;bottom:62px;text-align:center}
-  .addr .wave{display:block;margin:0 auto 12px;width:300px;height:12px}
-  .addr p{font-weight:600;font-size:15.5px;letter-spacing:.42em;color:var(--emerald)}
+  .addr{position:absolute;left:76px;bottom:58px;display:flex;align-items:center;gap:22px}
+  .addr i{width:70px;height:2px;background:var(--grain),var(--foil)}
+  .addr p{font-weight:400;font-size:14px;letter-spacing:.4em;color:var(--mute)}
 
-  /* ---------- SIDE 2 : profile (emerald) ---------- */
-  .profile{background:
-      repeating-linear-gradient(90deg,rgba(255,255,255,.012) 0 1px,transparent 1px 4px),
-      radial-gradient(80% 95% at 50% 40%,var(--emerald-lt) 0%,var(--emerald) 45%,var(--emerald-dk) 100%);color:var(--cream-txt);text-align:center}
-  .p-body{position:absolute;left:70px;right:70px;top:66px}
-  .anchor{display:block;width:38px;height:46px;margin:0 auto 14px}
-  .name{font-family:"Playfair Display",serif;font-weight:500;font-size:66px;line-height:1.05;letter-spacing:.005em}
-  .name small{font-family:"Raleway";font-weight:500;font-size:19px;letter-spacing:.22em;margin-left:6px}
-  .quals{font-weight:400;font-size:14.5px;letter-spacing:.06em;line-height:1.85;color:rgba(228,236,242,.86);margin-top:12px}
-  .quals span{color:var(--champ);padding:0 9px}
-  .orn{display:block;margin:24px auto 18px;width:360px;height:14px}
-  .role{font-weight:500;font-size:16.5px;letter-spacing:.26em;text-transform:uppercase;color:#F4F7FA}
-  .role span{color:var(--champ)}
-  .exp{list-style:none;margin-top:24px;display:flex;flex-wrap:wrap;justify-content:center;gap:14px 0;padding:0 30px}
-  .exp li{font-weight:400;font-size:15px;letter-spacing:.04em;color:var(--cream-txt);display:flex;align-items:center}
-  .exp li+li::before{content:"";width:5px;height:5px;transform:rotate(45deg);background:var(--champ);margin:0 16px}
+  /* ---------- SIDE 2 : profile ---------- */
+  .p-body{position:absolute;left:60px;right:60px;top:74px;text-align:center}
+  .mono{font-family:"Bodoni Moda",serif;font-weight:500;font-size:46px;line-height:1;letter-spacing:.03em}
+  .mono i{font-style:italic}
+  .name{font-family:"Bodoni Moda",serif;font-weight:500;font-size:64px;line-height:1.05;margin-top:18px;letter-spacing:.005em}
+  .name small{font-family:"Jost";font-weight:500;font-size:18px;letter-spacing:.24em;margin-left:6px}
+  .quals{font-weight:300;font-size:14.5px;letter-spacing:.07em;line-height:1.85;color:var(--mute);margin-top:12px}
+  .quals span{color:var(--copper);padding:0 9px}
+  .bar{width:90px;height:2px;margin:20px auto 16px;background:var(--grain),var(--foil)}
+  .role{font-weight:400;font-size:17px;letter-spacing:.3em;text-transform:uppercase}
+  .role span{color:var(--seaglass)}
+  .exp{list-style:none;margin-top:18px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 0}
+  .exp li{font-weight:300;font-size:15px;letter-spacing:.05em;color:var(--ivory);display:flex;align-items:center}
+  .exp li+li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--copper);margin:0 16px}
   .exp li.nl::before,.exp li.br::before{display:none}
   .exp .br{flex-basis:100%;height:0}
-  .tag{position:absolute;left:0;right:0;bottom:62px;font-weight:600;font-size:11.5px;letter-spacing:.36em;color:var(--champ)}
+  .tag{position:absolute;left:0;right:0;bottom:44px;text-align:center;font-weight:400;font-size:11.5px;letter-spacing:.42em;color:var(--mute)}
 
   @media print{
     @page{size:3.5in 2in;margin:0}
@@ -66,33 +66,9 @@
 </head>
 <body>
 
-<svg width="0" height="0" style="position:absolute">
-  <defs>
-    <linearGradient id="gfoil" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#9C7C3E"/><stop offset=".3" stop-color="#E8D29C"/><stop offset=".5" stop-color="#F7E9C4"/>
-      <stop offset=".7" stop-color="#C9AA6B"/><stop offset="1" stop-color="#A3843F"/>
-    </linearGradient>
-    <symbol id="wave" viewBox="0 0 360 14">
-      <path d="M0 7 H140" stroke="currentColor" stroke-width="1"/>
-      <path d="M220 7 H360" stroke="currentColor" stroke-width="1"/>
-      <path d="M146 7 q8 -8 17 0 t17 0 t17 0 t17 0" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-    </symbol>
-    <symbol id="anchor" viewBox="0 0 60 72">
-      <g fill="none" stroke="#D6B572" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="30" cy="8" r="5.5"/>
-        <path d="M30 13.5 V64"/>
-        <path d="M17 22 H43"/>
-        <path d="M7 44 Q10 63 30 65 Q50 63 53 44"/>
-        <path d="M3 49 L7 42 L13 47"/><path d="M57 49 L53 42 L47 47"/>
-      </g>
-    </symbol>
-  </defs>
-</svg>
-
 <p class="label">Side 1 — Contact</p>
-<section class="card contact" id="side1">
-  <svg class="frame" viewBox="0 0 1050 600" data-rose data-cx="868" data-cy="418" data-r="66" data-color="#9A7535" data-op=".34" data-n="0"></svg>
-  <svg class="frame" viewBox="0 0 1050 600" data-frame data-stroke="#B8964F" data-op=".9"></svg>
+<section class="card flip" id="side1">
+  <svg class="contours" viewBox="0 0 1050 600" data-cx="1060" data-cy="-70" data-n="16" data-mask="left"></svg>
   <dl class="rows">
     <dt>M</dt><dd>+965 9745 5756</dd>
     <dt>T</dt><dd>+965 9406 0642 / 0649 / 0650</dd>
@@ -100,22 +76,19 @@
     <dt>IN</dt><dd>linkedin.com/in/raja-rathinam-27414a20a/</dd>
     <dt>W</dt><dd>www.kuwaitoffshoreservices.com</dd>
   </dl>
-  <div class="qr"><div class="box"><img src="qr-website.svg" alt="QR code linking to kuwaitoffshoreservices.com"></div></div>
-  <div class="addr">
-    <svg class="wave" style="color:#B8964F"><use href="#wave"/></svg>
-    <p>P.O. BOX 12075, SHAMIYA 71651, KUWAIT</p>
-  </div>
+  <div class="qr"><img src="qr-website.svg" alt="QR code linking to kuwaitoffshoreservices.com"></div>
+  <div class="addr"><i></i><p>P.O. BOX 12075, SHAMIYA 71651, KUWAIT</p></div>
 </section>
 
 <p class="label">Side 2 — Profile</p>
-<section class="card profile" id="side2">
-  <svg class="frame" viewBox="0 0 1050 600" data-rose data-cx="525" data-cy="310" data-r="232" data-color="#CBA35C" data-op=".09" data-n="0"></svg>
-  <svg class="frame" viewBox="0 0 1050 600" data-frame data-stroke="url(#gfoil)" data-op="1"></svg>
+<section class="card" id="side2">
+  <svg class="contours" viewBox="0 0 1050 600" data-cx="1070" data-cy="680" data-n="18" data-mask="center"></svg>
+  <div class="coords">29°22′ N / 47°58′ E</div>
   <div class="p-body">
-    <svg class="anchor"><use href="#anchor"/></svg>
+    <div class="mono foil">K<i>o</i>S</div>
     <h1 class="name foil">Dr. Raja Rathinam,<small>FIII</small></h1>
     <p class="quals">PhD<span>|</span>MBA (Shipping and Logistics)<span>|</span>B.E. (Marine Engineering)<br>Maritime Auditing<span>|</span>Maritime Law<span>|</span>Marine Surveying – Lloyd’s</p>
-    <svg class="orn" style="color:#C9AA6B"><use href="#wave"/></svg>
+    <div class="bar"></div>
     <p class="role">Managing Director <span>–</span> Kuwait Offshore Services</p>
     <ul class="exp">
       <li>Cert. Principal Marine Surveyor</li>
@@ -129,39 +102,34 @@
 </section>
 
 <script>
-/* Art-deco double frame: concave (scooped) corners, outer bold line + inner hairline,
-   with a small corner jewel tucked into each scoop. */
+/* Bathymetric depth contours in copper: nested, organically warped rings
+   that tighten toward one corner and sweep across the card as open curves. */
 const NS="http://www.w3.org/2000/svg";
-const el=(t,a,p)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);p.appendChild(e);return e};
-function scoop(x,y,w,h,r){
-  return `M${x+r} ${y} H${x+w-r} A${r} ${r} 0 0 0 ${x+w} ${y+r} V${y+h-r} A${r} ${r} 0 0 0 ${x+w-r} ${y+h}`+
-         ` H${x+r} A${r} ${r} 0 0 0 ${x} ${y+h-r} V${y+r} A${r} ${r} 0 0 0 ${x+r} ${y} Z`;
-}
-document.querySelectorAll('svg[data-frame]').forEach(svg=>{
-  const st=svg.dataset.stroke, g=el('g',{fill:'none',stroke:st,opacity:svg.dataset.op},svg);
-  el('path',{d:scoop(24,24,1002,552,30),'stroke-width':2.2},g);
-  el('path',{d:scoop(33,33,984,534,24),'stroke-width':.8},g);
-  /* corner jewels: small diamond sitting in each scoop */
-  [[24,24,1,1],[1026,24,-1,1],[24,576,1,-1],[1026,576,-1,-1]].forEach(([cx,cy,sx,sy])=>{
-    const x=cx+sx*11, y=cy+sy*11;
-    el('path',{d:`M${x} ${y-5} L${x+5} ${y} L${x} ${y+5} L${x-5} ${y} Z`,fill:st,stroke:'none'},g);
-  });
-});
-/* Compass rose line-art */
-document.querySelectorAll('svg[data-rose]').forEach(svg=>{
-  const cx=+svg.dataset.cx, cy=+svg.dataset.cy, R=+svg.dataset.r, c=svg.dataset.color;
-  const g=el('g',{fill:'none',stroke:c,opacity:svg.dataset.op,'stroke-linejoin':'round'},svg);
-  el('circle',{cx,cy,r:R,'stroke-width':1.6},g);
-  el('circle',{cx,cy,r:R*.9,'stroke-width':.8},g);
-  el('circle',{cx,cy,r:R*.34,'stroke-width':.8},g);
-  for(let a=0;a<360;a+=5){const t=a*Math.PI/180, l=a%45===0?.8:a%15===0?.85:.87;
-    el('line',{x1:cx+R*.9*Math.sin(t),y1:cy-R*.9*Math.cos(t),x2:cx+R*l*Math.sin(t),y2:cy-R*l*Math.cos(t),'stroke-width':a%45===0?1.4:.7},g);}
-  const pt=(deg,len,w)=>{const t=deg*Math.PI/180,s=Math.sin(t),k=Math.cos(t);
-    const tip=[cx+len*s,cy-len*k],L=[cx-w*k,cy-w*s],Rr=[cx+w*k,cy+w*s];
-    el('path',{d:`M${L} L${tip} L${Rr} Z M${cx} ${cy} L${tip}`,'stroke-width':1.1},g);};
-  [45,135,225,315].forEach(d=>pt(d,R*.55,R*.07));
-  [0,90,180,270].forEach(d=>pt(d,R*.86,R*.11));
-  if(svg.dataset.n!=='0') el('text',{x:cx,y:cy-R-10,'text-anchor':'middle','font-family':'Playfair Display','font-size':R*.16,fill:c,stroke:'none'},g).textContent='N';
+document.querySelectorAll('svg.contours').forEach(svg=>{
+  const cx=+svg.dataset.cx, cy=+svg.dataset.cy, n=+svg.dataset.n;
+  const defs=document.createElementNS(NS,'defs');
+  defs.innerHTML='<linearGradient id="cg'+cy+'" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#E6A47A"/><stop offset=".5" stop-color="#C27B4F"/><stop offset="1" stop-color="#F0BE97"/></linearGradient>';
+  const id='m'+cy;
+  defs.innerHTML+= svg.dataset.mask==='left'
+    ? `<linearGradient id="${id}g" x1="0" x2="1"><stop offset=".08" stop-color="#000"/><stop offset=".62" stop-color="#fff"/></linearGradient><mask id="${id}"><rect width="1050" height="600" fill="url(#${id}g)"/></mask>`
+    : `<radialGradient id="${id}g" cx="525" cy="270" r="560" gradientUnits="userSpaceOnUse" gradientTransform="translate(525 270) scale(1 .62) translate(-525 -270)"><stop offset=".42" stop-color="#000"/><stop offset=".78" stop-color="#fff"/></radialGradient><mask id="${id}"><rect width="1050" height="600" fill="url(#${id}g)"/></mask>`;
+  svg.appendChild(defs);
+  const grp=document.createElementNS(NS,'g'); grp.setAttribute('mask',`url(#${id})`); svg.appendChild(grp);
+  for(let i=0;i<n;i++){
+    const base=30+i*i*2.6+i*26;
+    let d="";
+    for(let s=0;s<=300;s++){
+      const t=s/300*Math.PI*2;
+      const r=base*(1+.15*Math.sin(3*t+.6)+.08*Math.sin(5*t+1.7+i*.2)+.035*Math.sin(11*t+i*.4));
+      d+=(s?"L":"M")+(cx+r*Math.cos(t)*1.55).toFixed(1)+" "+(cy+r*Math.sin(t)*.95).toFixed(1);
+    }
+    const p=document.createElementNS(NS,'path');
+    p.setAttribute('d',d+"Z");p.setAttribute('fill','none');
+    p.setAttribute('stroke','url(#cg'+cy+')');
+    p.setAttribute('stroke-width',i%5===4?1.3:.8);
+    p.setAttribute('stroke-opacity',(.62*(1-i/(n*1.15))).toFixed(3));
+    grp.appendChild(p);
+  }
 });
 </script>
 </body>
