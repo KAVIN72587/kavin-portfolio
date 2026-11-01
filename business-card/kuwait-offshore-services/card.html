@@ -40,7 +40,8 @@
   .profile{background:
       repeating-linear-gradient(90deg,rgba(255,255,255,.012) 0 1px,transparent 1px 4px),
       radial-gradient(80% 95% at 50% 40%,var(--emerald-lt) 0%,var(--emerald) 45%,var(--emerald-dk) 100%);color:var(--cream-txt);text-align:center}
-  .p-body{position:absolute;left:70px;right:70px;top:128px}
+  .p-body{position:absolute;left:70px;right:70px;top:66px}
+  .anchor{display:block;width:38px;height:46px;margin:0 auto 14px}
   .name{font-family:"Playfair Display",serif;font-weight:500;font-size:66px;line-height:1.05;letter-spacing:.005em}
   .name small{font-family:"Raleway";font-weight:500;font-size:19px;letter-spacing:.22em;margin-left:6px}
   .quals{font-weight:400;font-size:14.5px;letter-spacing:.06em;line-height:1.85;color:rgba(228,236,242,.86);margin-top:12px}
@@ -76,11 +77,21 @@
       <path d="M220 7 H360" stroke="currentColor" stroke-width="1"/>
       <path d="M146 7 q8 -8 17 0 t17 0 t17 0 t17 0" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
     </symbol>
+    <symbol id="anchor" viewBox="0 0 60 72">
+      <g fill="none" stroke="#D6B572" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="30" cy="8" r="5.5"/>
+        <path d="M30 13.5 V64"/>
+        <path d="M17 22 H43"/>
+        <path d="M7 44 Q10 63 30 65 Q50 63 53 44"/>
+        <path d="M3 49 L7 42 L13 47"/><path d="M57 49 L53 42 L47 47"/>
+      </g>
+    </symbol>
   </defs>
 </svg>
 
 <p class="label">Side 1 — Contact</p>
 <section class="card contact" id="side1">
+  <svg class="frame" viewBox="0 0 1050 600" data-rose data-cx="868" data-cy="418" data-r="66" data-color="#9A7535" data-op=".34" data-n="0"></svg>
   <svg class="frame" viewBox="0 0 1050 600" data-frame data-stroke="#B8964F" data-op=".9"></svg>
   <dl class="rows">
     <dt>M</dt><dd>+965 9745 5756</dd>
@@ -98,8 +109,10 @@
 
 <p class="label">Side 2 — Profile</p>
 <section class="card profile" id="side2">
+  <svg class="frame" viewBox="0 0 1050 600" data-rose data-cx="525" data-cy="310" data-r="232" data-color="#CBA35C" data-op=".09" data-n="0"></svg>
   <svg class="frame" viewBox="0 0 1050 600" data-frame data-stroke="url(#gfoil)" data-op="1"></svg>
   <div class="p-body">
+    <svg class="anchor"><use href="#anchor"/></svg>
     <h1 class="name foil">Dr. Raja Rathinam,<small>FIII</small></h1>
     <p class="quals">PhD<span>|</span>MBA (Shipping and Logistics)<span>|</span>B.E. (Marine Engineering)<br>Maritime Auditing<span>|</span>Maritime Law<span>|</span>Marine Surveying – Lloyd’s</p>
     <svg class="orn" style="color:#C9AA6B"><use href="#wave"/></svg>
@@ -133,6 +146,22 @@ document.querySelectorAll('svg[data-frame]').forEach(svg=>{
     const x=cx+sx*11, y=cy+sy*11;
     el('path',{d:`M${x} ${y-5} L${x+5} ${y} L${x} ${y+5} L${x-5} ${y} Z`,fill:st,stroke:'none'},g);
   });
+});
+/* Compass rose line-art */
+document.querySelectorAll('svg[data-rose]').forEach(svg=>{
+  const cx=+svg.dataset.cx, cy=+svg.dataset.cy, R=+svg.dataset.r, c=svg.dataset.color;
+  const g=el('g',{fill:'none',stroke:c,opacity:svg.dataset.op,'stroke-linejoin':'round'},svg);
+  el('circle',{cx,cy,r:R,'stroke-width':1.6},g);
+  el('circle',{cx,cy,r:R*.9,'stroke-width':.8},g);
+  el('circle',{cx,cy,r:R*.34,'stroke-width':.8},g);
+  for(let a=0;a<360;a+=5){const t=a*Math.PI/180, l=a%45===0?.8:a%15===0?.85:.87;
+    el('line',{x1:cx+R*.9*Math.sin(t),y1:cy-R*.9*Math.cos(t),x2:cx+R*l*Math.sin(t),y2:cy-R*l*Math.cos(t),'stroke-width':a%45===0?1.4:.7},g);}
+  const pt=(deg,len,w)=>{const t=deg*Math.PI/180,s=Math.sin(t),k=Math.cos(t);
+    const tip=[cx+len*s,cy-len*k],L=[cx-w*k,cy-w*s],Rr=[cx+w*k,cy+w*s];
+    el('path',{d:`M${L} L${tip} L${Rr} Z M${cx} ${cy} L${tip}`,'stroke-width':1.1},g);};
+  [45,135,225,315].forEach(d=>pt(d,R*.55,R*.07));
+  [0,90,180,270].forEach(d=>pt(d,R*.86,R*.11));
+  if(svg.dataset.n!=='0') el('text',{x:cx,y:cy-R-10,'text-anchor':'middle','font-family':'Playfair Display','font-size':R*.16,fill:c,stroke:'none'},g).textContent='N';
 });
 </script>
 </body>
