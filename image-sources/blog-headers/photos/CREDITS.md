@@ -120,23 +120,121 @@ All photos from Unsplash under the Unsplash License (free to use, no permission 
 | video-retainer-vs-per-video | Amy Hirschi | https://unsplash.com/photos/1551836022-d5d88e9218df |
 | website-copy-mistakes | Josh Duke | https://unsplash.com/photos/1598221860132-5eab9a635a42 |
 | youtube-retention-editing | Mark Cruz | https://unsplash.com/photos/1490810194309-344b3661ba39 |
+| about-page-small-business (mid-article) | Sithamshu Manoj | https://unsplash.com/photos/1553009338-80e505b3f61b |
+| builder-website-must-haves (mid-article) | Omkar Jadhav | https://unsplash.com/photos/1559998852-f8ab898d889e |
+| business-email-on-domain (mid-article) | CHUTTERSNAP | https://unsplash.com/photos/1556204975-1851fadab092 |
+| ca-firm-website (mid-article) | Pyx Photography | https://unsplash.com/photos/1666718622024-dc6bdc808bda |
+| clinic-website-must-haves (mid-article) | Unsplash contributor | https://unsplash.com/photos/1758691462651-611d730c5272 |
+| coaching-centre-website (mid-article) | Unsplash contributor | https://unsplash.com/photos/1692269725836-fbd72e98883f |
 | compare-web-design-quotes (mid-article) | Vitaly Gariev | https://unsplash.com/photos/1758518730327-98070967caab |
+| contact-form-not-working (mid-article) | Bluestonex | https://unsplash.com/photos/1759752393975-7ca7b302fcc6 |
+| domain-expired-what-happens (mid-article) | Maddi Bazzocco | https://unsplash.com/photos/1543168256-4ae2229821f1 |
+| google-analytics-small-business (mid-article) | Campaign Creators | https://unsplash.com/photos/1542744173-05336fcc7ad4 |
+| google-business-profile-vs-website (mid-article) | Vojtech Bruzek | https://unsplash.com/photos/1585060282215-39a72f82385c |
+| google-reviews-on-website (mid-article) | Unsplash contributor | https://unsplash.com/photos/1483478550801-ceba5fe50e8e |
+| gym-website-must-haves (mid-article) | Frederick Shaw | https://unsplash.com/photos/1693214674451-2111f7690877 |
+| homepage-structure (mid-article) | Compagnons | https://unsplash.com/photos/1600132806608-231446b2e7af |
+| homestay-website-direct-booking (mid-article) | ar.sanjana marrapu | https://unsplash.com/photos/1592295512743-4825f2b7dbc3 |
 | how-many-pages-website (mid-article) | Unsplash contributor | https://unsplash.com/photos/1758786971029-d7187161e626 |
+| in-vs-com-domain (mid-article) | Unsplash contributor | https://unsplash.com/photos/1554672408-730436b60dde |
+| interior-designer-website (mid-article) | Kam Idris | https://unsplash.com/photos/1586023492125-27b2c045efd7 |
+| is-instagram-enough (mid-article) | Unsplash contributor | https://unsplash.com/photos/1593733925160-6f78dc0be8b6 |
 | landing-page-vs-website (mid-article) | Unsplash contributor | https://unsplash.com/photos/1514575110897-1253ff7b2ccb |
+| local-seo-near-me (mid-article) | Raajit Sharma | https://unsplash.com/photos/1695834195972-9fd5877b8ad0 |
+| ngo-website-donations (mid-article) | amol sonar | https://unsplash.com/photos/1609252509229-364936a1d1a2 |
+| online-appointment-booking (mid-article) | Rodrigo Rodrigues | https://unsplash.com/photos/1771054243991-e7b2d194ac96 |
+| pagespeed-score-explained (mid-article) | Visual Design | https://unsplash.com/photos/1597534458220-9fb4969f2df5 |
+| redesign-without-losing-seo (mid-article) | Merakist | https://unsplash.com/photos/1562577309-2592ab84b1bc |
+| restaurant-website-must-haves (mid-article) | Shawn | https://unsplash.com/photos/1555396273-367ea4eb4db5 |
+| salon-website-booking (mid-article) | Adam Winger | https://unsplash.com/photos/1580618672591-eb180b1a973f |
+| school-website-must-haves (mid-article) | Unsplash contributor | https://unsplash.com/photos/1692269725911-87697c558be1 |
+| search-console-setup (mid-article) | 1981 Digital | https://unsplash.com/photos/1686061594225-3e92c0cd51b0 |
 | shopify-vs-woocommerce-india (mid-article) | Vitaly Gariev | https://unsplash.com/photos/1758874573126-cf93a36261e8 |
 | signs-website-needs-redesign (mid-article) | Unsplash contributor | https://unsplash.com/photos/1678690832311-bb6e361989ca |
+| slow-website-mobile (mid-article) | Daniel Korpai | https://unsplash.com/photos/1545235617-9465d2a55698 |
+| ssl-https-not-secure (mid-article) | Unsplash contributor | https://unsplash.com/photos/1614797091730-e2a6121aaa60 |
+| stock-photos-vs-own-photos (mid-article) | Michael Guertin | https://unsplash.com/photos/1772987438485-ac832640c8a5 |
+| tamil-english-website (mid-article) | Kelly Sikkema | https://unsplash.com/photos/1581291518633-83b4ebd1d83e |
+| too-many-wordpress-plugins (mid-article) | Daniil Komov | https://unsplash.com/photos/1763568258367-1c52beb60be7 |
+| upi-payments-on-website (mid-article) | Markus Winkler | https://unsplash.com/photos/1595079835357-a94a13cab10c |
 | web-design-brief-template (mid-article) | Kelly Sikkema | https://unsplash.com/photos/1612367980327-7454a7276aa7 |
+| web-hosting-explained (mid-article) | Unsplash contributor | https://unsplash.com/photos/1785682231847-93265d8e633d |
+| website-accessibility-basics (mid-article) | ZBRA Marketing | https://unsplash.com/photos/1657727534668-4104c475b292 |
+| website-backups (mid-article) | William Warby | https://unsplash.com/photos/1704265586128-7fc54dcc774f |
 | website-build-timeline (mid-article) | Kyrie kim | https://unsplash.com/photos/1611988615248-5d4f0b9ac31e |
+| website-call-to-action (mid-article) | Balazs Ketyi | https://unsplash.com/photos/1551650975-87deedd944c3 |
+| website-content-what-to-write (mid-article) | New Data Services | https://unsplash.com/photos/1603975711481-18b7aaca4caa |
+| website-faq-section (mid-article) | Compagnons | https://unsplash.com/photos/1600132806370-bf17e65e942f |
+| website-image-sizes (mid-article) | Olga Kovalski | https://unsplash.com/photos/1709907325875-c91985344a47 |
 | website-maintenance-cost (mid-article) | Unsplash contributor | https://unsplash.com/photos/1695668548342-c0c1ad479aee |
+| website-not-showing-on-google (mid-article) | Sasun Bughdaryan | https://unsplash.com/photos/1768839722142-a980c55e994b |
+| website-privacy-policy-india (mid-article) | Olena Kholina | https://unsplash.com/photos/1775163024488-e88e4a71179f |
+| whatsapp-button-on-website (mid-article) | Brett Wharton | https://unsplash.com/photos/1776797391265-01a0490d4c99 |
+| who-owns-your-website (mid-article) | Jakub Żerdzicki | https://unsplash.com/photos/1759428679273-11d914866394 |
+| wordpress-hacked-signs (mid-article) | Unsplash contributor | https://unsplash.com/photos/1586661615438-349a276d098b |
 | wordpress-vs-wix-vs-custom (mid-article) | Mohammad Rahmani | https://unsplash.com/photos/1607706189992-eae578626c86 |
+| ai-video-editing-tools (mid-article) | Daniil Komov | https://unsplash.com/photos/1763568258129-3e019ef91b75 |
+| b-roll-explained (mid-article) | Andri Aeschlimann | https://unsplash.com/photos/1780642208543-7a84b61f13ca |
+| colour-correction-vs-grading (mid-article) | Yosuke Ota | https://unsplash.com/photos/1774967550635-182fb37cf31f |
+| corporate-video-brief (mid-article) | Product School | https://unsplash.com/photos/1582192730841-2a682d7375f9 |
 | corporate-video-length (mid-article) | Carlos Gil | https://unsplash.com/photos/1769798643655-e0f10f62c3fd |
 | diy-editing-vs-hiring (mid-article) | Flipsnack | https://unsplash.com/photos/1668605335684-c97ce92cbd76 |
+| drone-footage-editing (mid-article) | Unsplash contributor | https://unsplash.com/photos/1488263590619-bc1fff43b6c1 |
+| event-recap-video (mid-article) | Headway | https://unsplash.com/photos/1540575467063-178a50c2df87 |
+| explainer-animated-vs-live (mid-article) | KOBU Agency | https://unsplash.com/photos/1647427854253-b92bb40c9330 |
+| footage-backup-storage (mid-article) | Maurice Garlet | https://unsplash.com/photos/1613826591816-1b80e944fc2d |
+| instagram-export-settings (mid-article) | Unsplash contributor | https://unsplash.com/photos/1560305527-51dc8ad5a8f8 |
+| interview-video-editing (mid-article) | Vadim Yefremov | https://unsplash.com/photos/1768818928341-3b31b8965c6d |
+| lighting-video-at-home (mid-article) | aranprime | https://unsplash.com/photos/1599696848652-f0ff23bc911f |
+| linkedin-video-tips (mid-article) | The Yardcoworking | https://unsplash.com/photos/1765366417030-16d9765d920a |
+| motion-graphics-vs-editing (mid-article) | Fotis Fotopoulos | https://unsplash.com/photos/1605379399642-870262d3d051 |
+| music-copyright-reels (mid-article) | Austin Distel | https://unsplash.com/photos/1556761175-129418cb2dfe |
+| phone-footage-for-editing (mid-article) | Joel Mott | https://unsplash.com/photos/1606259831476-aebb5e657aff |
+| podcast-to-shorts (mid-article) | Will Francis | https://unsplash.com/photos/1589903308904-1010c2294adc |
+| pre-wedding-video-editing (mid-article) | iKshana Productions | https://unsplash.com/photos/1735052712489-f45220126a0c |
+| product-video-for-ads (mid-article) | Zoshua Colah | https://unsplash.com/photos/1744298975062-7b1f1939f652 |
+| real-estate-walkthrough-video (mid-article) | Francesca Tosolini | https://unsplash.com/photos/1560448204-e02f11c3d0e2 |
+| reel-cover-images (mid-article) | Mediamodifier | https://unsplash.com/photos/1629697777394-e0b3103903bd |
+| reel-ideas-local-business (mid-article) | Zoren Tan | https://unsplash.com/photos/1785068540682-6917367db28e |
 | reels-editing-price (mid-article) | Videodeck | https://unsplash.com/photos/1664277497095-424e085175e8 |
+| school-annual-day-video (mid-article) | YiChuan Li | https://unsplash.com/photos/1769432902785-b17b57e67de0 |
+| shorts-vs-reels (mid-article) | Daniel Korpai | https://unsplash.com/photos/1551721434-8b94ddff0e6d |
+| stock-footage-licensing (mid-article) | Night Owl | https://unsplash.com/photos/1768150082786-980039ae5ae9 |
+| subtitles-srt-vs-burned-in (mid-article) | Jacob Miller | https://unsplash.com/photos/1501780392773-287d506245a5 |
+| talking-head-video-tips (mid-article) | dar der | https://unsplash.com/photos/1782274265689-4f10a91d4abb |
+| teleprompter-tips (mid-article) | Soundsitive Studio | https://unsplash.com/photos/1760780567530-389d8a3fba75 |
+| testimonial-video-tips (mid-article) | Vitaly Gariev | https://unsplash.com/photos/1758691736979-ff263c04b3d1 |
+| video-aspect-ratios (mid-article) | Walling | https://unsplash.com/photos/1597740985671-2a8a3b80502e |
+| video-audio-cleanup (mid-article) | Jukka Aalho | https://unsplash.com/photos/1590602847861-f357a9332bbc |
+| video-captions (mid-article) | Julio Lopez | https://unsplash.com/photos/1760199789464-7d3989e22758 |
+| video-editing-revisions (mid-article) | Jefferson Sees | https://unsplash.com/photos/1767126600994-e509dacc967c |
 | video-editing-turnaround (mid-article) | Behnam Norouzi | https://unsplash.com/photos/1560420025-9453f02b4751 |
+| video-file-formats (mid-article) | William Warby | https://unsplash.com/photos/1703756291643-df456ffc8079 |
+| video-hook-first-seconds (mid-article) | Davin Naziel | https://unsplash.com/photos/1771257807757-287b4f6edda1 |
+| video-project-files-ownership (mid-article) | William Warby | https://unsplash.com/photos/1703319952940-ec62d23def39 |
+| video-script-60-seconds (mid-article) | Kelly Sikkema | https://unsplash.com/photos/1698434156088-a80e7bcdd198 |
+| website-background-video (mid-article) | Unsplash contributor | https://unsplash.com/photos/1479152471347-3f2e62a2b2a7 |
+| wedding-editor-brief (mid-article) | Aayush Rawat | https://unsplash.com/photos/1600685890506-593fdf55949b |
+| wedding-teaser-highlight-full-film (mid-article) | ARTO SURAJ | https://unsplash.com/photos/1722952908609-4b57e23da1ee |
 | wedding-video-editing-time (mid-article) | Vidit Goswami | https://unsplash.com/photos/1772127822525-7eda37383b9f |
 | what-to-send-video-editor (mid-article) | Denny Müller | https://unsplash.com/photos/1589995186011-a7b485edc4bf |
+| youtube-chapters-end-screens (mid-article) | Sarath P Raj | https://unsplash.com/photos/1628494391268-c9935bc384d5 |
 | youtube-editor-cost-per-video (mid-article) | Jesus Loves Austin | https://unsplash.com/photos/1594394489098-74ac04c0fc2e |
+| youtube-thumbnail-tips (mid-article) | Jakub Żerdzicki | https://unsplash.com/photos/1787839227786-17f3149942a5 |
+| youtube-video-length (mid-article) | Leo Wieling | https://unsplash.com/photos/1531651008558-ed1740375b39 |
 | how-many-logo-concepts (mid-article) | Sunil kumar | https://unsplash.com/photos/1748326650737-33500fdfda30 |
+| instagram-grid (mid-article) | Unsplash contributor | https://unsplash.com/photos/1513595207829-9f414c0665f6 |
+| photos-for-print (mid-article) | Jacqueline Brandwayn | https://unsplash.com/photos/1750537735437-847075c29538 |
+| tamil-english-design (mid-article) | Lucas George Wendt | https://unsplash.com/photos/1787580113284-1ebd249eb2dc |
 | what-to-send-for-a-quote (mid-article) | Leon Seibert | https://unsplash.com/photos/1564846824194-346b7871b855 |
+| print-file-basics (mid-article) | Anthony Roberts | https://unsplash.com/photos/1773525912476-213bff96b8a4 |
+| logo-signboard-problems (mid-article) | Anees Ahmed | https://unsplash.com/photos/1643625801401-f6a17d1debe3 |
+| video-podcast-setup (mid-article) | The Grid Rooms | https://unsplash.com/photos/1783067091773-fc175ae0dbfb |
+| small-business-blog-worth-it (mid-article) | Kelly Sikkema | https://unsplash.com/photos/1634245482394-1bcf5ccffcc0 |
+| restaurant-food-reels (mid-article) | Pylyp Sukhenko | https://unsplash.com/photos/1622021142947-da7dedc7c39a |
+| website-launch-checklist (mid-article) | Amper | https://unsplash.com/photos/1680016661694-1cd3faf31c3a |
+| clinic-video-content (mid-article) | Unsplash contributor | https://unsplash.com/photos/1622253692010-333f2da6031d |
+| contact-form-spam (mid-article) | Unsplash contributor | https://unsplash.com/photos/1555529902-5261145633bf |
 | video-retainer-vs-per-video (mid-article) | Vitaly Gariev | https://unsplash.com/photos/1758518731462-d091b0b4ed0d |
 | website-copy-mistakes (mid-article) | Cytonn Photography | https://unsplash.com/photos/1521791055366-0d553872125f |
+| youtube-retention-editing (mid-article) | Myriam Jessier | https://unsplash.com/photos/1599658880436-c61792e70672 |
