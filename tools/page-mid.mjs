@@ -41,7 +41,7 @@ for (const page of list) {
   const file = join(SITE, `${page}.html`);
   let html = readFileSync(file, 'utf8');
   if (html.includes(`/assets/slots/${page}-mid.webp`)) { console.log('done already', page); continue; }
-  await (await grade(join(SRC, `${page}.jpg`), 2100, 900)).webp({ quality: 80 }).toFile(join(SITE, 'assets', 'slots', `${page}-mid.webp`));
+  await (await grade(join(SRC, `${page}.jpg`), 2100, 900)).webp({ quality: 72, effort: 6 }).toFile(join(SITE, 'assets', 'slots', `${page}-mid.webp`));
 
   // content sections with a heading, minus the closing call to action; insert before the middle one
   const main0 = html.indexOf('<main'), main1 = html.indexOf('</main>');

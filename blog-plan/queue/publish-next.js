@@ -59,6 +59,8 @@ if (!sm.includes(loc)) {
   sm = sm.replace(blogEntry[0], blogEntry[0].replace(/<lastmod>[^<]+</, `<lastmod>${today}<`) + `  <url><loc>${loc}</loc><lastmod>${today}</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>\r\n`);
   fs.writeFileSync(smPath, sm);
 }
+// image sitemap entries (header and mid photos) for every page, including this post
+require("../../tools/sitemap-images").run();
 
 // plan row
 let plan = fs.readFileSync(PLAN, "utf8");

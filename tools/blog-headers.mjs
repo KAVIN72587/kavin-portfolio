@@ -47,7 +47,7 @@ for (const slug of slugs) {
     }
     if (existsSync(mid)) {
       mkdirSync(join(SITE, 'assets', 'blog', 'mid'), { recursive: true });
-      await (await grade(mid, 1500, 1000, e.mid.pos)).webp({ quality: 80 }).toFile(join(SITE, 'assets', 'blog', 'mid', `${slug}.webp`));
+      await (await grade(mid, 1500, 1000, e.mid.pos)).webp({ quality: 72, effort: 6 }).toFile(join(SITE, 'assets', 'blog', 'mid', `${slug}.webp`));
     }
   }
   // Designed headers (photo + type) are rendered from image-sources/blog-headers/designed/template.html instead.
@@ -62,7 +62,7 @@ for (const slug of slugs) {
       if (!res?.ok) { console.log('download failed', slug, res?.status); continue; }
       writeFileSync(input, Buffer.from(await res.arrayBuffer()));
     }
-    await (await grade(input, 1600, 900, e.pos)).webp({ quality: 80 }).toFile(join(SITE, 'assets', 'blog', `${slug}.webp`));
+    await (await grade(input, 1600, 900, e.pos)).webp({ quality: 72, effort: 6 }).toFile(join(SITE, 'assets', 'blog', `${slug}.webp`));
   }
   await (await grade(input, 1200, 630, e.pos)).jpeg({ quality: 82, mozjpeg: true }).toFile(join(SITE, 'assets', 'blog', 'og', `${slug}.jpg`));
   done.push(slug);
