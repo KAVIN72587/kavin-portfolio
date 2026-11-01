@@ -29,17 +29,18 @@
   .coords{position:absolute;right:56px;top:46px;font-weight:400;font-size:13px;letter-spacing:.34em;color:var(--seaglass)}
 
   /* ---------- SIDE 1 : contact ---------- */
-  .rows{position:absolute;left:76px;top:120px;display:grid;grid-template-columns:52px 1fr;row-gap:26px;align-items:baseline}
+  .mid{position:absolute;left:76px;right:76px;top:20px;bottom:72px;display:flex;align-items:center;justify-content:space-between}
+  .rows{display:grid;grid-template-columns:52px 1fr;row-gap:26px;align-items:baseline}
   .rows dt{font-weight:500;font-size:12px;letter-spacing:.26em;color:var(--copper)}
   .rows dd{font-weight:300;font-size:22px;letter-spacing:.03em;color:var(--ivory)}
-  .qr{position:absolute;right:76px;top:132px;width:178px;padding:12px;background:#F4F1EA;border-radius:3px;box-shadow:0 0 0 1px rgba(194,123,79,.7),0 12px 30px rgba(0,0,0,.35)}
+  .qr{width:178px;flex:none;padding:12px;background:#F4F1EA;border-radius:3px;box-shadow:0 0 0 1px rgba(194,123,79,.7),0 12px 30px rgba(0,0,0,.35)}
   .qr img{display:block;width:100%}
   .addr{position:absolute;left:76px;bottom:58px;display:flex;align-items:center;gap:22px}
   .addr i{width:70px;height:2px;background:var(--grain),var(--foil)}
   .addr p{font-weight:400;font-size:14px;letter-spacing:.4em;color:var(--mute)}
 
   /* ---------- SIDE 2 : profile ---------- */
-  .p-body{position:absolute;left:60px;right:60px;top:116px;text-align:center}
+  .p-body{position:absolute;left:60px;right:60px;top:40px;bottom:96px;text-align:center;display:flex;flex-direction:column;justify-content:center}
   .mono{font-family:"Bodoni Moda",serif;font-weight:500;font-size:46px;line-height:1;letter-spacing:.03em}
   .mono i{font-style:italic}
   .name{font-family:"Bodoni Moda",serif;font-weight:500;font-size:68px;line-height:1.05;margin-top:0;letter-spacing:.005em}
@@ -69,6 +70,7 @@
 <p class="label">Side 1 — Contact</p>
 <section class="card flip" id="side1">
   <svg class="contours" viewBox="0 0 1050 600" data-cx="1060" data-cy="-70" data-n="16" data-mask="left"></svg>
+  <div class="mid">
   <dl class="rows">
     <dt>M</dt><dd>+965 9745 5756</dd>
     <dt>T</dt><dd>+965 9406 0642 / 0649 / 0650</dd>
@@ -77,6 +79,7 @@
     <dt>W</dt><dd>www.kuwaitoffshoreservices.com</dd>
   </dl>
   <div class="qr"><img src="qr-website.svg" alt="QR code linking to kuwaitoffshoreservices.com"></div>
+  </div>
   <div class="addr"><i></i><p>P.O. BOX 12075, SHAMIYA 71651, KUWAIT</p></div>
 </section>
 
