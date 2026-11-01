@@ -1,12 +1,12 @@
 # Vector image tracker
 
-Generated 2026-10-31 by `node tools/vector-audit.mjs`. Goal: replace drawn (vector) artwork with real free stock photos (Unsplash License). Re-run after each conversion; an image moves to "Photographic" once its source in `image-sources/` uses real photos.
+Generated 2026-11-01 by `node tools/vector-audit.mjs`. Goal: replace drawn (vector) artwork with real free stock photos (Unsplash License). Re-run after each conversion; an image moves to "Photographic" once its source in `image-sources/` uses real photos.
 
 | Group | Count |
 |---|---|
 | ⬜ Drawn / vector, to convert | 0 |
 | 🟨 Flat UI screen boards (interface designs, optional) | 0 |
-| ✅ Photographic | 433 |
+| ✅ Photographic | 462 |
 
 ## ⬜ Drawn images to convert
 
@@ -73,6 +73,7 @@ Older assets showing app and web screens. The screens are the deliverable, so th
 | `brochure-design-chennai.jpg` | /brochure-design-chennai/ | older photo mockup |
 | `brochure-design-cost-chennai-band-phone.webp` | /brochure-design-cost-chennai/ | older photo mockup |
 | `brochure-design-cost-chennai-band.webp` | /brochure-design-cost-chennai/ | older photo mockup |
+| `brochure-design-cost-chennai-mid.webp` | /brochure-design-cost-chennai/ | older photo mockup |
 | `brochure-design-cost-chennai.jpg` | /brochure-design-cost-chennai/ | older photo mockup |
 | `builder-website-must-haves.jpg` | /blog/builder-website-must-haves/ | older photo mockup |
 | `builder-website-must-haves.webp` | /blog/builder-website-must-haves/ | older photo mockup |
@@ -116,6 +117,7 @@ Older assets showing app and web screens. The screens are the deliverable, so th
 | `colour-correction-vs-grading.webp` | /blog/colour-correction-vs-grading/ | older photo mockup |
 | `compare-web-design-quotes.jpg` | /blog/compare-web-design-quotes/ | older photo mockup |
 | `compare-web-design-quotes.webp` | /blog/compare-web-design-quotes/ | older photo mockup |
+| `compare-web-design-quotes.webp` | /blog/compare-web-design-quotes/ | older photo mockup |
 | `contact-band-phone.webp` | /contact/ | older photo mockup |
 | `contact-band.webp` | /contact/ | older photo mockup |
 | `contact-form-not-working.jpg` | /blog/contact-form-not-working/ | older photo mockup |
@@ -134,7 +136,9 @@ Older assets showing app and web screens. The screens are the deliverable, so th
 | `corporate-video-editing-chennai.jpg` | /corporate-video-editing-chennai/ | older photo mockup |
 | `corporate-video-length.jpg` | /blog/corporate-video-length/ | older photo mockup |
 | `corporate-video-length.webp` | /blog/corporate-video-length/ | older photo mockup |
+| `corporate-video-length.webp` | /blog/corporate-video-length/ | older photo mockup |
 | `diy-editing-vs-hiring.jpg` | /blog/diy-editing-vs-hiring/ | older photo mockup |
+| `diy-editing-vs-hiring.webp` | /blog/diy-editing-vs-hiring/ | older photo mockup |
 | `diy-editing-vs-hiring.webp` | /blog/diy-editing-vs-hiring/ | older photo mockup |
 | `domain-expired-what-happens.jpg` | /blog/domain-expired-what-happens/ | older photo mockup |
 | `domain-expired-what-happens.webp` | /blog/domain-expired-what-happens/ | older photo mockup |
@@ -154,6 +158,7 @@ Older assets showing app and web screens. The screens are the deliverable, so th
 | `footage-backup-storage.webp` | /blog/footage-backup-storage/ | older photo mockup |
 | `freelancer-vs-agency-chennai-band-phone.webp` | /freelancer-vs-agency-chennai/ | older photo mockup |
 | `freelancer-vs-agency-chennai-band.webp` | /freelancer-vs-agency-chennai/ | older photo mockup |
+| `freelancer-vs-agency-chennai-mid.webp` | /freelancer-vs-agency-chennai/ | older photo mockup |
 | `freelancer-vs-agency-chennai.jpg` | /freelancer-vs-agency-chennai/ | older photo mockup |
 | `google-analytics-small-business.jpg` | /blog/google-analytics-small-business/ | older photo mockup |
 | `google-analytics-small-business.webp` | /blog/google-analytics-small-business/ | older photo mockup |
@@ -177,7 +182,9 @@ Older assets showing app and web screens. The screens are the deliverable, so th
 | `homestay-website-direct-booking.webp` | /blog/homestay-website-direct-booking/ | older photo mockup |
 | `how-many-logo-concepts.jpg` | /blog/how-many-logo-concepts/ | older photo mockup |
 | `how-many-logo-concepts.webp` | /blog/how-many-logo-concepts/ | older photo mockup |
+| `how-many-logo-concepts.webp` | /blog/how-many-logo-concepts/ | older photo mockup |
 | `how-many-pages-website.jpg` | /blog/how-many-pages-website/ | older photo mockup |
+| `how-many-pages-website.webp` | /blog/how-many-pages-website/ | older photo mockup |
 | `how-many-pages-website.webp` | /blog/how-many-pages-website/ | older photo mockup |
 | `in-vs-com-domain.jpg` | /blog/in-vs-com-domain/ | older photo mockup |
 | `in-vs-com-domain.webp` | /blog/in-vs-com-domain/ | older photo mockup |
@@ -194,6 +201,7 @@ Older assets showing app and web screens. The screens are the deliverable, so th
 | `kavin-portrait.jpg` | /about/, / | older photo mockup |
 | `landing-page-vs-website.jpg` | /blog/landing-page-vs-website/ | older photo mockup |
 | `landing-page-vs-website.webp` | /blog/landing-page-vs-website/ | older photo mockup |
+| `landing-page-vs-website.webp` | /blog/landing-page-vs-website/ | older photo mockup |
 | `lighting-video-at-home.jpg` | /blog/lighting-video-at-home/ | older photo mockup |
 | `lighting-video-at-home.webp` | /blog/lighting-video-at-home/ | older photo mockup |
 | `linkedin-video-tips.jpg` | /blog/linkedin-video-tips/ | older photo mockup |
@@ -208,10 +216,12 @@ Older assets showing app and web screens. The screens are the deliverable, so th
 | `logo-design-chennai.jpg` | /logo-design-chennai/ | older photo mockup |
 | `logo-design-cost-chennai-band-phone.webp` | /logo-design-cost-chennai/ | older photo mockup |
 | `logo-design-cost-chennai-band.webp` | /logo-design-cost-chennai/ | older photo mockup |
+| `logo-design-cost-chennai-mid.webp` | /logo-design-cost-chennai/ | older photo mockup |
 | `logo-design-cost-chennai.jpg` | /logo-design-cost-chennai/ | older photo mockup |
 | `logo-signboard-problems.jpg` | /blog/logo-signboard-problems/ | older photo mockup |
 | `low-cost-website-design-chennai-band-phone.webp` | /low-cost-website-design-chennai/ | older photo mockup |
 | `low-cost-website-design-chennai-band.webp` | /low-cost-website-design-chennai/ | older photo mockup |
+| `low-cost-website-design-chennai-mid.webp` | /low-cost-website-design-chennai/ | older photo mockup |
 | `low-cost-website-design-chennai.jpg` | /low-cost-website-design-chennai/ | older photo mockup |
 | `motion-graphics-vs-editing.jpg` | /blog/motion-graphics-vs-editing/ | older photo mockup |
 | `motion-graphics-vs-editing.webp` | /blog/motion-graphics-vs-editing/ | older photo mockup |
@@ -266,6 +276,7 @@ Older assets showing app and web screens. The screens are the deliverable, so th
 | `pre-wedding-video-editing.webp` | /blog/pre-wedding-video-editing/ | older photo mockup |
 | `pricing-band-phone.webp` | /pricing/ | older photo mockup |
 | `pricing-band.webp` | /pricing/ | older photo mockup |
+| `pricing-mid.webp` | /pricing/ | older photo mockup |
 | `pricing.jpg` | /pricing/ | older photo mockup |
 | `print-file-basics.jpg` | /blog/print-file-basics/ | older photo mockup |
 | `print-noyyal-export-catalogue.webp` | /portfolio/print/ | `image-sources/11-textile-catalogue` |
@@ -284,6 +295,7 @@ Older assets showing app and web screens. The screens are the deliverable, so th
 | `reel-ideas-local-business.webp` | /blog/reel-ideas-local-business/ | older photo mockup |
 | `reels-editing-price.jpg` | /blog/reels-editing-price/ | older photo mockup |
 | `reels-editing-price.webp` | /blog/reels-editing-price/ | older photo mockup |
+| `reels-editing-price.webp` | /blog/reels-editing-price/ | older photo mockup |
 | `reels-shorts-editing-chennai-1.webp` | /portfolio/video/, /reels-shorts-editing-chennai/, /video-editing-chennai/ | older photo mockup |
 | `reels-shorts-editing-chennai-2.webp` | /reels-shorts-editing-chennai/, /video-editing-chennai/ | older photo mockup |
 | `reels-shorts-editing-chennai.jpg` | /reels-shorts-editing-chennai/ | older photo mockup |
@@ -301,9 +313,11 @@ Older assets showing app and web screens. The screens are the deliverable, so th
 | `search-console-setup.webp` | /blog/search-console-setup/ | older photo mockup |
 | `shopify-vs-woocommerce-india.jpg` | /blog/shopify-vs-woocommerce-india/ | older photo mockup |
 | `shopify-vs-woocommerce-india.webp` | /blog/shopify-vs-woocommerce-india/ | older photo mockup |
+| `shopify-vs-woocommerce-india.webp` | /blog/shopify-vs-woocommerce-india/ | older photo mockup |
 | `shorts-vs-reels.jpg` | /blog/shorts-vs-reels/ | older photo mockup |
 | `shorts-vs-reels.webp` | /blog/shorts-vs-reels/ | older photo mockup |
 | `signs-website-needs-redesign.jpg` | /blog/signs-website-needs-redesign/ | older photo mockup |
+| `signs-website-needs-redesign.webp` | /blog/signs-website-needs-redesign/ | older photo mockup |
 | `signs-website-needs-redesign.webp` | /blog/signs-website-needs-redesign/ | older photo mockup |
 | `slow-website-mobile.jpg` | /blog/slow-website-mobile/ | older photo mockup |
 | `slow-website-mobile.webp` | /blog/slow-website-mobile/ | older photo mockup |
@@ -313,6 +327,7 @@ Older assets showing app and web screens. The screens are the deliverable, so th
 | `social-media-creatives-chennai-2.webp` | /social-media-creatives-chennai/ | older photo mockup |
 | `social-media-creatives-chennai-3.webp` | /social-media-creatives-chennai/ | older photo mockup |
 | `social-media-creatives-chennai-4.webp` | /social-media-creatives-chennai/ | older photo mockup |
+| `social-media-creatives-chennai-mid.webp` | /social-media-creatives-chennai/ | older photo mockup |
 | `social-media-creatives-chennai.jpg` | /social-media-creatives-chennai/ | older photo mockup |
 | `ssl-https-not-secure.jpg` | /blog/ssl-https-not-secure/ | older photo mockup |
 | `ssl-https-not-secure.webp` | /blog/ssl-https-not-secure/ | older photo mockup |
@@ -356,11 +371,13 @@ Older assets showing app and web screens. The screens are the deliverable, so th
 | `video-captions.webp` | /blog/video-captions/ | older photo mockup |
 | `video-editing-charges-chennai-band-phone.webp` | /video-editing-charges-chennai/ | older photo mockup |
 | `video-editing-charges-chennai-band.webp` | /video-editing-charges-chennai/ | older photo mockup |
+| `video-editing-charges-chennai-mid.webp` | /video-editing-charges-chennai/ | older photo mockup |
 | `video-editing-charges-chennai.jpg` | /video-editing-charges-chennai/ | older photo mockup |
 | `video-editing-chennai.jpg` | /corporate-video-editing-chennai/, /video-editing-chennai/, /wedding-video-editing-chennai/, /youtube-video-editing-chennai/ | older photo mockup |
 | `video-editing-revisions.jpg` | /blog/video-editing-revisions/ | older photo mockup |
 | `video-editing-revisions.webp` | /blog/video-editing-revisions/ | older photo mockup |
 | `video-editing-turnaround.jpg` | /blog/video-editing-turnaround/ | older photo mockup |
+| `video-editing-turnaround.webp` | /blog/video-editing-turnaround/ | older photo mockup |
 | `video-editing-turnaround.webp` | /blog/video-editing-turnaround/ | older photo mockup |
 | `video-file-formats.jpg` | /blog/video-file-formats/ | older photo mockup |
 | `video-file-formats.webp` | /blog/video-file-formats/ | older photo mockup |
@@ -370,11 +387,13 @@ Older assets showing app and web screens. The screens are the deliverable, so th
 | `video-podcast-setup.webp` | /blog/video-podcast-setup/ | older photo mockup |
 | `video-project-files-ownership.jpg` | /blog/video-project-files-ownership/ | older photo mockup |
 | `video-project-files-ownership.webp` | /blog/video-project-files-ownership/ | older photo mockup |
-| `video-retainer-vs-per-video.jpg` | (unused) | older photo mockup |
-| `video-retainer-vs-per-video.webp` | (unused) | older photo mockup |
+| `video-retainer-vs-per-video.jpg` | /blog/video-retainer-vs-per-video/ | older photo mockup |
+| `video-retainer-vs-per-video.webp` | /blog/video-retainer-vs-per-video/ | older photo mockup |
+| `video-retainer-vs-per-video.webp` | /blog/video-retainer-vs-per-video/ | older photo mockup |
 | `video-script-60-seconds.jpg` | /blog/video-script-60-seconds/ | older photo mockup |
 | `video-script-60-seconds.webp` | /blog/video-script-60-seconds/ | older photo mockup |
 | `web-design-brief-template.jpg` | /blog/web-design-brief-template/ | older photo mockup |
+| `web-design-brief-template.webp` | /blog/web-design-brief-template/ | older photo mockup |
 | `web-design-brief-template.webp` | /blog/web-design-brief-template/ | older photo mockup |
 | `web-design-chennai-1.webp` | /web-design-chennai/ | older photo mockup |
 | `web-design-chennai-2.webp` | /web-design-chennai/ | older photo mockup |
@@ -390,14 +409,17 @@ Older assets showing app and web screens. The screens are the deliverable, so th
 | `website-backups.webp` | /blog/website-backups/ | older photo mockup |
 | `website-build-timeline.jpg` | /blog/website-build-timeline/ | older photo mockup |
 | `website-build-timeline.webp` | /blog/website-build-timeline/ | older photo mockup |
+| `website-build-timeline.webp` | /blog/website-build-timeline/ | older photo mockup |
 | `website-call-to-action.jpg` | /blog/website-call-to-action/ | older photo mockup |
 | `website-call-to-action.webp` | /blog/website-call-to-action/ | older photo mockup |
 | `website-content-what-to-write.jpg` | /blog/website-content-what-to-write/ | older photo mockup |
 | `website-content-what-to-write.webp` | /blog/website-content-what-to-write/ | older photo mockup |
-| `website-copy-mistakes.jpg` | (unused) | older photo mockup |
-| `website-copy-mistakes.webp` | (unused) | older photo mockup |
+| `website-copy-mistakes.jpg` | /blog/website-copy-mistakes/ | older photo mockup |
+| `website-copy-mistakes.webp` | /blog/website-copy-mistakes/ | older photo mockup |
+| `website-copy-mistakes.webp` | /blog/website-copy-mistakes/ | older photo mockup |
 | `website-design-cost-chennai-band-phone.webp` | /website-design-cost-chennai/ | older photo mockup |
 | `website-design-cost-chennai-band.webp` | /website-design-cost-chennai/ | older photo mockup |
+| `website-design-cost-chennai-mid.webp` | /website-design-cost-chennai/ | older photo mockup |
 | `website-design-cost-chennai.jpg` | /website-design-cost-chennai/ | older photo mockup |
 | `website-faq-section.jpg` | /blog/website-faq-section/ | older photo mockup |
 | `website-faq-section.webp` | /blog/website-faq-section/ | older photo mockup |
@@ -406,6 +428,7 @@ Older assets showing app and web screens. The screens are the deliverable, so th
 | `website-launch-checklist.jpg` | /blog/website-launch-checklist/ | older photo mockup |
 | `website-launch-checklist.webp` | /blog/website-launch-checklist/ | older photo mockup |
 | `website-maintenance-cost.jpg` | /blog/website-maintenance-cost/ | older photo mockup |
+| `website-maintenance-cost.webp` | /blog/website-maintenance-cost/ | older photo mockup |
 | `website-maintenance-cost.webp` | /blog/website-maintenance-cost/ | older photo mockup |
 | `website-not-showing-on-google.jpg` | /blog/website-not-showing-on-google/ | older photo mockup |
 | `website-not-showing-on-google.webp` | /blog/website-not-showing-on-google/ | older photo mockup |
@@ -426,9 +449,12 @@ Older assets showing app and web screens. The screens are the deliverable, so th
 | `wedding-video-editing-chennai.jpg` | /wedding-video-editing-chennai/ | older photo mockup |
 | `wedding-video-editing-time.jpg` | /blog/wedding-video-editing-time/ | older photo mockup |
 | `wedding-video-editing-time.webp` | /blog/wedding-video-editing-time/ | older photo mockup |
+| `wedding-video-editing-time.webp` | /blog/wedding-video-editing-time/ | older photo mockup |
 | `what-to-send-for-a-quote.jpg` | /blog/what-to-send-for-a-quote/ | older photo mockup |
 | `what-to-send-for-a-quote.webp` | /blog/what-to-send-for-a-quote/ | older photo mockup |
+| `what-to-send-for-a-quote.webp` | /blog/what-to-send-for-a-quote/ | older photo mockup |
 | `what-to-send-video-editor.jpg` | /blog/what-to-send-video-editor/ | older photo mockup |
+| `what-to-send-video-editor.webp` | /blog/what-to-send-video-editor/ | older photo mockup |
 | `what-to-send-video-editor.webp` | /blog/what-to-send-video-editor/ | older photo mockup |
 | `whatsapp-button-on-website.jpg` | /blog/whatsapp-button-on-website/ | older photo mockup |
 | `whatsapp-button-on-website.webp` | /blog/whatsapp-button-on-website/ | older photo mockup |
@@ -437,6 +463,7 @@ Older assets showing app and web screens. The screens are the deliverable, so th
 | `wordpress-hacked-signs.jpg` | /blog/wordpress-hacked-signs/ | older photo mockup |
 | `wordpress-hacked-signs.webp` | /blog/wordpress-hacked-signs/ | older photo mockup |
 | `wordpress-vs-wix-vs-custom.jpg` | /blog/wordpress-vs-wix-vs-custom/ | older photo mockup |
+| `wordpress-vs-wix-vs-custom.webp` | /blog/wordpress-vs-wix-vs-custom/ | older photo mockup |
 | `wordpress-vs-wix-vs-custom.webp` | /blog/wordpress-vs-wix-vs-custom/ | older photo mockup |
 | `wordpress-website-design-chennai-1.webp` | /wordpress-website-design-chennai/ | older photo mockup |
 | `wordpress-website-design-chennai-2.webp` | /portfolio/web-ui/, /wordpress-website-design-chennai/ | older photo mockup |
@@ -448,12 +475,14 @@ Older assets showing app and web screens. The screens are the deliverable, so th
 | `youtube-chapters-end-screens.webp` | /blog/youtube-chapters-end-screens/ | older photo mockup |
 | `youtube-editor-cost-per-video.jpg` | /blog/youtube-editor-cost-per-video/ | older photo mockup |
 | `youtube-editor-cost-per-video.webp` | /blog/youtube-editor-cost-per-video/ | older photo mockup |
-| `youtube-retention-editing.jpg` | (unused) | older photo mockup |
-| `youtube-retention-editing.webp` | (unused) | older photo mockup |
+| `youtube-editor-cost-per-video.webp` | /blog/youtube-editor-cost-per-video/ | older photo mockup |
+| `youtube-retention-editing.jpg` | /blog/youtube-retention-editing/ | older photo mockup |
+| `youtube-retention-editing.webp` | /blog/youtube-retention-editing/ | older photo mockup |
 | `youtube-thumbnail-tips.jpg` | /blog/youtube-thumbnail-tips/ | older photo mockup |
 | `youtube-thumbnail-tips.webp` | /blog/youtube-thumbnail-tips/ | older photo mockup |
 | `youtube-video-editing-chennai-band-phone.webp` | /youtube-video-editing-chennai/ | older photo mockup |
 | `youtube-video-editing-chennai-band.webp` | /youtube-video-editing-chennai/ | older photo mockup |
+| `youtube-video-editing-chennai-mid.webp` | /youtube-video-editing-chennai/ | older photo mockup |
 | `youtube-video-editing-chennai.jpg` | /youtube-video-editing-chennai/ | older photo mockup |
 | `youtube-video-length.jpg` | /blog/youtube-video-length/ | older photo mockup |
 | `youtube-video-length.webp` | /blog/youtube-video-length/ | older photo mockup |

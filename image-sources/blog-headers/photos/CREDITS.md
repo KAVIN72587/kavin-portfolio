@@ -120,3 +120,23 @@ All photos from Unsplash under the Unsplash License (free to use, no permission 
 | video-retainer-vs-per-video | Amy Hirschi | https://unsplash.com/photos/1551836022-d5d88e9218df |
 | website-copy-mistakes | Josh Duke | https://unsplash.com/photos/1598221860132-5eab9a635a42 |
 | youtube-retention-editing | Mark Cruz | https://unsplash.com/photos/1490810194309-344b3661ba39 |
+| compare-web-design-quotes (mid-article) | Vitaly Gariev | https://unsplash.com/photos/1758518730327-98070967caab |
+| how-many-pages-website (mid-article) | Unsplash contributor | https://unsplash.com/photos/1758786971029-d7187161e626 |
+| landing-page-vs-website (mid-article) | Unsplash contributor | https://unsplash.com/photos/1514575110897-1253ff7b2ccb |
+| shopify-vs-woocommerce-india (mid-article) | Vitaly Gariev | https://unsplash.com/photos/1758874573126-cf93a36261e8 |
+| signs-website-needs-redesign (mid-article) | Unsplash contributor | https://unsplash.com/photos/1678690832311-bb6e361989ca |
+| web-design-brief-template (mid-article) | Kelly Sikkema | https://unsplash.com/photos/1612367980327-7454a7276aa7 |
+| website-build-timeline (mid-article) | Kyrie kim | https://unsplash.com/photos/1611988615248-5d4f0b9ac31e |
+| website-maintenance-cost (mid-article) | Unsplash contributor | https://unsplash.com/photos/1695668548342-c0c1ad479aee |
+| wordpress-vs-wix-vs-custom (mid-article) | Mohammad Rahmani | https://unsplash.com/photos/1607706189992-eae578626c86 |
+| corporate-video-length (mid-article) | Carlos Gil | https://unsplash.com/photos/1769798643655-e0f10f62c3fd |
+| diy-editing-vs-hiring (mid-article) | Flipsnack | https://unsplash.com/photos/1668605335684-c97ce92cbd76 |
+| reels-editing-price (mid-article) | Videodeck | https://unsplash.com/photos/1664277497095-424e085175e8 |
+| video-editing-turnaround (mid-article) | Behnam Norouzi | https://unsplash.com/photos/1560420025-9453f02b4751 |
+| wedding-video-editing-time (mid-article) | Vidit Goswami | https://unsplash.com/photos/1772127822525-7eda37383b9f |
+| what-to-send-video-editor (mid-article) | Denny Müller | https://unsplash.com/photos/1589995186011-a7b485edc4bf |
+| youtube-editor-cost-per-video (mid-article) | Jesus Loves Austin | https://unsplash.com/photos/1594394489098-74ac04c0fc2e |
+| how-many-logo-concepts (mid-article) | Sunil kumar | https://unsplash.com/photos/1748326650737-33500fdfda30 |
+| what-to-send-for-a-quote (mid-article) | Leon Seibert | https://unsplash.com/photos/1564846824194-346b7871b855 |
+| video-retainer-vs-per-video (mid-article) | Vitaly Gariev | https://unsplash.com/photos/1758518731462-d091b0b4ed0d |
+| website-copy-mistakes (mid-article) | Cytonn Photography | https://unsplash.com/photos/1521791055366-0d553872125f |

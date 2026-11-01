@@ -37,6 +37,19 @@ const done = [];
 for (const slug of slugs) {
   const e = MAP[slug];
   if (!e) { console.log('no entry', slug); continue; }
+  // optional second photo halfway through the article: assets/blog/mid/<slug>.webp, 3:2
+  if (e.mid) {
+    const mid = join(SRC, `${slug}-mid.jpg`);
+    if (!existsSync(mid)) {
+      let res;
+      for (let t = 0; t < 3 && !res?.ok; t++) res = await fetch(`https://images.unsplash.com/${e.mid.id}?fm=jpg&q=82&w=2000&fit=max`).catch(() => null);
+      if (res?.ok) writeFileSync(mid, Buffer.from(await res.arrayBuffer())); else console.log('mid download failed', slug);
+    }
+    if (existsSync(mid)) {
+      mkdirSync(join(SITE, 'assets', 'blog', 'mid'), { recursive: true });
+      await (await grade(mid, 1500, 1000, e.mid.pos)).webp({ quality: 80 }).toFile(join(SITE, 'assets', 'blog', 'mid', `${slug}.webp`));
+    }
+  }
   // Designed headers (photo + type) are rendered from image-sources/blog-headers/designed/template.html instead.
   if (e.designed) { console.log('designed, skipped', slug); continue; }
   let input;
@@ -59,7 +72,8 @@ console.log(`\n${done.length} built`);
 
 // CREDITS.md for every photo in the map
 const credits = Object.entries(MAP).filter(([k, v]) => !k.startsWith('_') && v.id)
-  .map(([k, v]) => `| ${k} | ${v.by} | https://unsplash.com/photos/${v.id.replace(/^photo-/, '')} |`);
+  .map(([k, v]) => `| ${k} | ${v.by} | https://unsplash.com/photos/${v.id.replace(/^photo-/, '')} |`)
+  .concat(Object.entries(MAP).filter(([k, v]) => !k.startsWith('_') && v.mid).map(([k, v]) => `| ${k} (mid-article) | ${v.mid.by} | https://unsplash.com/photos/${v.mid.id.replace(/^photo-/, '')} |`));
 writeFileSync(join(SRC, 'CREDITS.md'), ['# Blog header photos', '', 'All photos from Unsplash under the Unsplash License (free to use, no permission needed). Graded and cropped by tools/blog-headers.mjs.',
   '', '| Post | Photographer | Source (image id) |', '|---|---|---|', ...credits, ''].join('\n'));
 

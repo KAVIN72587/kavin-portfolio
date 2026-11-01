@@ -18,7 +18,7 @@ const esc = (s) => s.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g
 function check(slug) {
   const e = MAP[slug];
   if (!e) return [`no header photo for "${slug}" in header-photos.json (add one, then run node tools/blog-headers.mjs ${slug})`];
-  const need = [`assets/blog/og/${slug}.jpg`, e.file || `assets/blog/${slug}.webp`];
+  const need = [`assets/blog/og/${slug}.jpg`, e.file || `assets/blog/${slug}.webp`].concat(e.mid ? [`assets/blog/mid/${slug}.webp`] : []);
   return need.filter((f) => !fs.existsSync(path.join(SITE, f))).map((f) => `missing ${f} (run node tools/blog-headers.mjs ${slug})`);
 }
 
@@ -40,6 +40,26 @@ function apply(html, slug) {
       </div>
     </section>`;
     html = html.slice(0, end) + (html.includes("\r\n") ? hero.replace(/\n/g, "\r\n") : hero) + html.slice(end);
+  }
+  // second photo with a caption, just before the article's middle heading
+  if (e.mid && !html.includes(`/assets/blog/mid/${slug}.webp`)) {
+    const a0 = html.indexOf("<article"), a1 = html.indexOf("</article>");
+    // headings on the dark page only (not inside the light cream callout sections), nearest the middle first
+    const light = (i) => /background: oklch\(0\.9\d/.test(html.slice(html.lastIndexOf("<section", i), i));
+    const heads = [...html.slice(a0, a1).matchAll(/<h2\b/g)].map((m) => a0 + m.index).filter((i) => !light(i));
+    if (heads.length >= 2) {
+      const at = heads[Math.floor(heads.length / 2)];
+      let line = html.lastIndexOf("\n", at) + 1;
+      const pad = html.slice(line, at);
+      // keep a section's small number label ("03") with its heading: go above it
+      const prev = html.lastIndexOf("\n", line - 2) + 1;
+      if (/^\s*<p [^>]*IBM Plex Mono[^>]*>[^<]{0,40}<\/p>\s*$/.test(html.slice(prev, line))) line = prev;
+      const fig = [`<figure style="margin: 8px 0 44px;">`,
+        `  <div style="aspect-ratio: 3 / 2; border-radius: 16px; border: 1px solid oklch(0.34 0.01 60); overflow: hidden; background: oklch(0.2 0.01 60);"><img src="/assets/blog/mid/${slug}.webp" alt="${esc(e.mid.alt)}" width="1500" height="1000" loading="lazy" decoding="async" style="display: block; width: 100%; height: 100%; object-fit: cover;" /></div>`,
+        `  <figcaption style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; line-height: 1.5; color: oklch(0.66 0.01 85); margin-top: 12px;">${e.mid.caption}</figcaption>`,
+        `</figure>`].map((l) => pad + l).join(html.includes("\r\n") ? "\r\n" : "\n") + (html.includes("\r\n") ? "\r\n" : "\n");
+      html = html.slice(0, line) + fig + html.slice(line);
+    }
   }
   return html;
 }
