@@ -9,13 +9,13 @@
 <style>
   /* Card = 3.5in x 2in -> 1050 x 600 CSS px (300 px/in) */
   :root{
-    --emerald:#0F4538; --emerald-lt:#17604D; --emerald-dk:#0A2E26; --ink:#0C3A30;
-    --ivory:#F8F3E8; --ivory-2:#EFE6D2; --cream-txt:#EDE4CF;
-    --champ:#C9AA6B; --champ-dk:#9C7C3E; --sea:#7FA99A;
+    --emerald:#0D3F63; --emerald-lt:#17608F; --emerald-dk:#072640; --ink:#0B3352;
+    --ivory:#F6F8F8; --ivory-2:#E6ECEF; --cream-txt:#E4ECF2;
+    --champ:#CBA35C; --champ-dk:#9A7535; --sea:#8FB3CC;
     --foil:linear-gradient(105deg,#9C7C3E 0%,#D8BE84 22%,#F7E9C4 38%,#C9AA6B 55%,#A3843F 72%,#E8D29C 88%,#B8964F 100%);
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{background:#2c302e;font-family:"Raleway",sans-serif;font-variant-numeric:lining-nums;display:flex;flex-direction:column;align-items:center;gap:48px;padding:48px 16px}
+  body{background:#2b2f35;font-family:"Raleway",sans-serif;font-variant-numeric:lining-nums;display:flex;flex-direction:column;align-items:center;gap:48px;padding:48px 16px}
   .label{color:#b3b8b4;font-size:13px;letter-spacing:.3em;text-transform:uppercase;margin-bottom:-36px}
   .card{width:1050px;height:600px;position:relative;overflow:hidden;flex:none;box-shadow:0 30px 60px rgba(0,0,0,.45)}
   .foil{background:var(--foil);-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -24,7 +24,7 @@
   /* ---------- SIDE 1 : contact (ivory) ---------- */
   .contact{background:
       repeating-linear-gradient(90deg,rgba(156,124,62,.025) 0 1px,transparent 1px 4px),
-      radial-gradient(120% 120% at 50% 0%,#FFFCF5 0%,var(--ivory) 50%,var(--ivory-2) 100%);color:var(--ink)}
+      radial-gradient(120% 120% at 50% 0%,#FFFFFF 0%,var(--ivory) 50%,var(--ivory-2) 100%);color:var(--ink)}
   .rows{position:absolute;left:100px;top:110px;display:grid;grid-template-columns:52px 1fr;row-gap:30px;align-items:baseline}
   .rows dt{font-weight:600;font-size:11.5px;letter-spacing:.24em;color:var(--champ-dk)}
   .rows dd{font-weight:500;font-size:22.5px;letter-spacing:.01em;color:var(--ink)}
@@ -43,10 +43,10 @@
   .p-body{position:absolute;left:70px;right:70px;top:128px}
   .name{font-family:"Playfair Display",serif;font-weight:500;font-size:66px;line-height:1.05;letter-spacing:.005em}
   .name small{font-family:"Raleway";font-weight:500;font-size:19px;letter-spacing:.22em;margin-left:6px}
-  .quals{font-weight:400;font-size:14.5px;letter-spacing:.06em;line-height:1.85;color:rgba(237,228,207,.86);margin-top:12px}
+  .quals{font-weight:400;font-size:14.5px;letter-spacing:.06em;line-height:1.85;color:rgba(228,236,242,.86);margin-top:12px}
   .quals span{color:var(--champ);padding:0 9px}
   .orn{display:block;margin:24px auto 18px;width:360px;height:14px}
-  .role{font-weight:500;font-size:16.5px;letter-spacing:.26em;text-transform:uppercase;color:#F6EFDD}
+  .role{font-weight:500;font-size:16.5px;letter-spacing:.26em;text-transform:uppercase;color:#F4F7FA}
   .role span{color:var(--champ)}
   .exp{list-style:none;margin-top:24px;display:flex;flex-wrap:wrap;justify-content:center;gap:14px 0;padding:0 30px}
   .exp li{font-weight:400;font-size:15px;letter-spacing:.04em;color:var(--cream-txt);display:flex;align-items:center}
