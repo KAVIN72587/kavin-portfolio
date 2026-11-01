@@ -132,9 +132,9 @@ Owner asked for more posts per day for the rest of October; agreed on 3 a day (3
 | 121 | done 2026-10-30 | website-launch-checklist | website launch checklist small business | Web | Before your website goes live | /web-design-chennai/, /website-design-cost-chennai/ |
 | 122 | done 2026-10-30 | clinic-video-content | video content for doctors and clinics | Video | Videos that help patients choose your clinic | /corporate-video-editing-chennai/, /video-editing-charges-chennai/ |
 | 123 | done 2026-10-30 | contact-form-spam | stop contact form spam website | Web | Stopping form spam without losing customers | /web-design-chennai/, /website-design-cost-chennai/ |
-| 124 | queued 2026-10-31 | video-retainer-vs-per-video | video editing monthly retainer vs per video | Video | Monthly retainer or pay per video? | /youtube-video-editing-chennai/, /video-editing-charges-chennai/ |
-| 125 | queued 2026-10-31 | website-copy-mistakes | common website copy mistakes small business | Web | The words on your website are losing you customers | /web-design-chennai/, /website-design-cost-chennai/ |
-| 126 | queued 2026-10-31 | youtube-retention-editing | editing for audience retention YouTube | Video | Editing that keeps viewers watching | /youtube-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 124 | done 2026-11-01 | video-retainer-vs-per-video | video editing monthly retainer vs per video | Video | Monthly retainer or pay per video? | /youtube-video-editing-chennai/, /video-editing-charges-chennai/ |
+| 125 | done 2026-11-01 | website-copy-mistakes | common website copy mistakes small business | Web | The words on your website are losing you customers | /web-design-chennai/, /website-design-cost-chennai/ |
+| 126 | done 2026-11-01 | youtube-retention-editing | editing for audience retention YouTube | Video | Editing that keeps viewers watching | /youtube-video-editing-chennai/, /video-editing-charges-chennai/ |
 
 ## Later (November onwards) — Design, Print, Business
 
