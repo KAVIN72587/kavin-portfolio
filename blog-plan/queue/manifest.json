@@ -1221,6 +1221,83 @@
     "words": 929
   },
   {
+    "row": 146,
+    "date": "2026-11-25",
+    "slug": "pongal-creatives-early",
+    "cat": "Design",
+    "title": "Pongal Posts and Offers: Plan Them in December",
+    "cardTitle": "Plan your Pongal posts before the New Year rush",
+    "card": "Pongal arrives right after the year-end rush. How to plan offers and creatives in December so they go out on time.",
+    "minutes": 5,
+    "words": 918
+  },
+  {
+    "row": 154,
+    "date": "2026-11-25",
+    "slug": "ecommerce-packaging-design",
+    "cat": "Print",
+    "title": "Packaging Design for Online Selling: Survive the Courier",
+    "cardTitle": "Packaging that survives the courier and still looks good",
+    "card": "A beautiful box that arrives crushed helps nobody. How to design packaging for products sold online.",
+    "minutes": 5,
+    "words": 915
+  },
+  {
+    "row": 176,
+    "date": "2026-11-25",
+    "slug": "restaurant-branding-checklist",
+    "cat": "Design",
+    "title": "Restaurant Branding Checklist: Everything to Design",
+    "cardTitle": "Everything a new restaurant needs designed",
+    "card": "Logo, board, menu, takeaway boxes, delivery app photos. The full design checklist for opening a restaurant or café.",
+    "minutes": 5,
+    "words": 909
+  },
+  {
+    "row": 144,
+    "date": "2026-11-26",
+    "slug": "ecommerce-product-photo-banners",
+    "cat": "Design",
+    "title": "E-commerce Banner Design: Homepage and Sale Banners",
+    "cardTitle": "Homepage and sale banners that actually sell",
+    "card": "Most shop banners are too busy for a phone screen. How to design banners that make the offer clear and get tapped.",
+    "minutes": 5,
+    "words": 905
+  },
+  {
+    "row": 165,
+    "date": "2026-11-26",
+    "slug": "company-profile-design",
+    "cat": "Print",
+    "title": "Company Profile Design: Win More Tenders and Clients",
+    "cardTitle": "A company profile that wins tenders and clients",
+    "card": "Many B2B decisions start with your company profile. What to include and how to design one that builds trust.",
+    "minutes": 5,
+    "words": 903
+  },
+  {
+    "row": 177,
+    "date": "2026-11-26",
+    "slug": "clinic-branding-checklist",
+    "cat": "Design",
+    "title": "Clinic Branding Checklist: Design That Builds Trust",
+    "cardTitle": "Branding that makes patients trust a clinic",
+    "card": "Patients judge a clinic before they meet the doctor. The design checklist for clinics, dental practices and diagnostic centres.",
+    "minutes": 5,
+    "words": 902
+  },
+  {
+    "row": 141,
+    "date": "2026-11-27",
+    "slug": "ui-ux-designer-small-business",
+    "cat": "Design",
+    "title": "Do You Need a UI/UX Designer for Your App or Website?",
+    "cardTitle": "When you need a UI/UX designer, and when a template is fine",
+    "card": "Not every project needs custom UX work. How to tell when design will save your app, and when a template will do.",
+    "minutes": 5,
+    "words": 952
+  },
+  {
     "row": 20,
     "date": "2026-10-20",
     "slug": "music-copyright-reels",
@@ -1232,6 +1309,116 @@
     "words": 925
   },
   {
+    "row": 166,
+    "date": "2026-11-27",
+    "slug": "catalogue-design-tips",
+    "cat": "Print",
+    "title": "Product Catalogue Design: Make Ordering Easy",
+    "cardTitle": "Catalogues that make ordering easy",
+    "card": "A confusing catalogue means phone calls and wrong orders. How to design one buyers can browse and order from quickly.",
+    "minutes": 5,
+    "words": 912
+  },
+  {
+    "row": 138,
+    "date": "2026-11-27",
+    "slug": "wedding-invitation-digital-vs-print",
+    "cat": "Print",
+    "title": "Digital vs Printed Wedding Invitations: Which to Choose?",
+    "cardTitle": "E-invites, video invites or printed cards?",
+    "card": "Most families now use both. How digital and printed wedding invitations compare, and how to design each well.",
+    "minutes": 5,
+    "words": 920
+  },
+  {
+    "row": 167,
+    "date": "2026-11-28",
+    "slug": "rollup-standee-design",
+    "cat": "Print",
+    "title": "Roll-Up Standee Design: Readable From Across the Room",
+    "cardTitle": "Roll-up standees readable from across the room",
+    "card": "Most standees are read from three metres away in a few seconds. How to design one that people actually notice.",
+    "minutes": 5,
+    "words": 917
+  },
+  {
+    "row": 168,
+    "date": "2026-11-28",
+    "slug": "exhibition-stall-graphics",
+    "cat": "Print",
+    "title": "Exhibition Stall Graphics That Pull Visitors In",
+    "cardTitle": "Stall graphics that pull visitors in",
+    "card": "At a busy expo, you have seconds to catch attention. How to plan backdrop, fascia and stall graphics that work.",
+    "minutes": 5,
+    "words": 901
+  },
+  {
+    "row": 169,
+    "date": "2026-11-28",
+    "slug": "shop-signboard-design-tips",
+    "cat": "Print",
+    "title": "Shop Signboard Design Tips: Readable From the Road",
+    "cardTitle": "A shop board people can read from the road",
+    "card": "Most signboards say too much, too small. How to design a board that passers-by understand in a glance.",
+    "minutes": 5,
+    "words": 900
+  },
+  {
+    "row": 170,
+    "date": "2026-11-29",
+    "slug": "vehicle-branding-design",
+    "cat": "Print",
+    "title": "Vehicle Branding Design: Turn Your Van Into an Advert",
+    "cardTitle": "Turning your van or auto into a moving advert",
+    "card": "Your delivery vehicle is seen by thousands every day. How to design branding that's readable in traffic.",
+    "minutes": 5,
+    "words": 902
+  },
+  {
+    "row": 171,
+    "date": "2026-11-29",
+    "slug": "uniform-logo-embroidery-vs-print",
+    "cat": "Print",
+    "title": "Logo Embroidery vs Printing on Uniforms and Caps",
+    "cardTitle": "Getting your logo onto uniforms and caps",
+    "card": "Embroidered or printed? Each suits different logos, fabrics and budgets. How to choose and prepare your logo.",
+    "minutes": 5,
+    "words": 916
+  },
+  {
+    "row": 172,
+    "date": "2026-11-29",
+    "slug": "certificate-design",
+    "cat": "Print",
+    "title": "Certificate Design: Certificates People Are Proud to Frame",
+    "cardTitle": "Certificates people are proud to frame",
+    "card": "A certificate is often framed, shared and kept for years. How to design one that looks worthy of the achievement.",
+    "minutes": 5,
+    "words": 908
+  },
+  {
+    "row": 173,
+    "date": "2026-11-30",
+    "slug": "event-backdrop-design",
+    "cat": "Print",
+    "title": "Event Stage Backdrop Design That Looks Good in Photos",
+    "cardTitle": "Stage backdrops that look good in every photo",
+    "card": "Your backdrop appears in hundreds of event photos. How to design one that works behind speakers, on stage and online.",
+    "minutes": 5,
+    "words": 934
+  },
+  {
+    "row": 174,
+    "date": "2026-11-30",
+    "slug": "school-prospectus-design",
+    "cat": "Print",
+    "title": "School Prospectus Design That Helps Parents Decide",
+    "cardTitle": "A prospectus that helps parents decide",
+    "card": "Parents compare several schools before admissions. How to design a prospectus that answers their questions clearly.",
+    "minutes": 5,
+    "words": 901
+  },
+  {
     "row": 21,
     "date": "2026-10-21",
     "slug": "restaurant-website-must-haves",
@@ -1241,6 +1428,17 @@
     "card": "A menu people can read on a phone, real photos, timings, maps, and a sensible plan for delivery apps and direct orders.",
     "minutes": 5,
     "words": 969
+  },
+  {
+    "row": 175,
+    "date": "2026-11-30",
+    "slug": "real-estate-brochure-design",
+    "cat": "Print",
+    "title": "Real Estate Brochure Design: Brochures Buyers Keep",
+    "cardTitle": "Property brochures buyers actually keep",
+    "card": "Buyers compare several projects at home. How to design a property brochure that answers their questions and stays on the table.",
+    "minutes": 5,
+    "words": 905
   },
   {
     "row": 22,
