@@ -418,6 +418,39 @@
     "words": 911
   },
   {
+    "row": 34,
+    "date": "2026-11-03",
+    "slug": "logo-files-to-ask-for",
+    "cat": "Design",
+    "title": "Logo Files to Ask Your Designer For: The Handover Checklist",
+    "cardTitle": "The logo files you should get before you pay the balance",
+    "card": "One JPG is not a logo handover. The formats, versions and details you need for print, web and signboards.",
+    "minutes": 6,
+    "words": 1140
+  },
+  {
+    "row": 36,
+    "date": "2026-11-03",
+    "slug": "brochure-paper-gsm",
+    "cat": "Print",
+    "title": "Brochure Paper GSM Guide: 130 vs 170 vs 300 GSM",
+    "cardTitle": "130, 170 or 300 GSM? Choosing paper for your brochure",
+    "card": "The same design can feel cheap or premium depending on the paper. What each GSM is right for, and what to ask your printer.",
+    "minutes": 5,
+    "words": 996
+  },
+  {
+    "row": 38,
+    "date": "2026-11-03",
+    "slug": "choosing-brand-colours",
+    "cat": "Design",
+    "title": "How to Choose Brand Colours for a Small Business",
+    "cardTitle": "Brand colours that survive print, screen and signboard",
+    "card": "A colour that looks great on your phone can turn muddy on a flex board. How to pick a palette that works everywhere.",
+    "minutes": 5,
+    "words": 969
+  },
+  {
     "row": 13,
     "date": "2026-10-13",
     "slug": "clinic-website-must-haves",
@@ -427,6 +460,39 @@
     "card": "Timings, location, doctor details and an easy way to book. What a clinic website needs, and what it should avoid.",
     "minutes": 5,
     "words": 953
+  },
+  {
+    "row": 37,
+    "date": "2026-11-04",
+    "slug": "visiting-card-size-india",
+    "cat": "Print",
+    "title": "Visiting Card Size in India: mm, Inches and Print Setup",
+    "cardTitle": "Visiting card size in India, and the setup printers expect",
+    "card": "The standard size in mm and inches, plus bleed, safe zone and paper, so nothing important gets trimmed off.",
+    "minutes": 5,
+    "words": 986
+  },
+  {
+    "row": 128,
+    "date": "2026-11-04",
+    "slug": "brand-kit-small-business",
+    "cat": "Design",
+    "title": "What Goes in a Brand Kit for a Small Business",
+    "cardTitle": "The brand kit that keeps everything looking like you",
+    "card": "Logo files, colours, fonts and a few templates. The small kit that stops every printer and freelancer guessing.",
+    "minutes": 5,
+    "words": 933
+  },
+  {
+    "row": 130,
+    "date": "2026-11-04",
+    "slug": "brochure-vs-flyer-vs-leaflet",
+    "cat": "Print",
+    "title": "Brochure vs Flyer vs Leaflet: Which Should You Print?",
+    "cardTitle": "Brochure, flyer or leaflet: which one should you print?",
+    "card": "They are often used as if they mean the same thing. What each is for, and which one fits your next print run.",
+    "minutes": 5,
+    "words": 973
   },
   {
     "row": 14,

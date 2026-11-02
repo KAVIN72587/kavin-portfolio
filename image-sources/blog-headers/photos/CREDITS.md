@@ -120,6 +120,12 @@ All photos from Unsplash under the Unsplash License (free to use, no permission 
 | video-retainer-vs-per-video | Amy Hirschi | https://unsplash.com/photos/1551836022-d5d88e9218df |
 | website-copy-mistakes | Josh Duke | https://unsplash.com/photos/1598221860132-5eab9a635a42 |
 | youtube-retention-editing | Mark Cruz | https://unsplash.com/photos/1490810194309-344b3661ba39 |
+| logo-files-to-ask-for | Kelly Sikkema | https://unsplash.com/photos/1611532736597-de2d4265fba3 |
+| brochure-paper-gsm | Julian Tong | https://unsplash.com/photos/1718670013939-954787e56385 |
+| choosing-brand-colours | Andy Brown | https://unsplash.com/photos/1716471330475-f0669db8947a |
+| visiting-card-size-india | Mediamodifier | https://unsplash.com/photos/1623305463957-df17547327cb |
+| brand-kit-small-business | Mohammad Lotfian | https://unsplash.com/photos/1664638413302-d1ca29ac885b |
+| brochure-vs-flyer-vs-leaflet | Mediamodifier | https://unsplash.com/photos/1661523892054-dace70bcb092 |
 | about-page-small-business (mid-article) | Sithamshu Manoj | https://unsplash.com/photos/1553009338-80e505b3f61b |
 | builder-website-must-haves (mid-article) | Omkar Jadhav | https://unsplash.com/photos/1559998852-f8ab898d889e |
 | business-email-on-domain (mid-article) | CHUTTERSNAP | https://unsplash.com/photos/1556204975-1851fadab092 |
@@ -238,3 +244,9 @@ All photos from Unsplash under the Unsplash License (free to use, no permission 
 | video-retainer-vs-per-video (mid-article) | Vitaly Gariev | https://unsplash.com/photos/1758518731462-d091b0b4ed0d |
 | website-copy-mistakes (mid-article) | Cytonn Photography | https://unsplash.com/photos/1521791055366-0d553872125f |
 | youtube-retention-editing (mid-article) | Myriam Jessier | https://unsplash.com/photos/1599658880436-c61792e70672 |
+| logo-files-to-ask-for (mid-article) | Theme Photos | https://unsplash.com/photos/1572044162444-ad60f128bdea |
+| brochure-paper-gsm (mid-article) | Alexander Grey | https://unsplash.com/photos/1562240020-ce31ccb0fa7d |
+| choosing-brand-colours (mid-article) | Andy Brown | https://unsplash.com/photos/1716471330459-063b3baf247e |
+| visiting-card-size-india (mid-article) | Van Tay Media | https://unsplash.com/photos/1565688842882-e0b2693d349a |
+| brand-kit-small-business (mid-article) | Mediamodifier | https://unsplash.com/photos/1623305466040-b753da413c9b |
+| brochure-vs-flyer-vs-leaflet (mid-article) | Indieground Design | https://unsplash.com/photos/1695041713023-c08f364a4ea2 |

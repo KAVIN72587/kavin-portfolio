@@ -1,4 +1,4 @@
-# Blog keyword plan — kavinarulraj.com
+| 130 | queued 2026-11-04 | brochure-vs-flyer-vs-leaflet || 128 | queued 2026-11-04 | brand-kit-small-business || 38 | queued 2026-11-03 | choosing-brand-colours || 37 | queued 2026-11-04 | visiting-card-size-india || 36 | queued 2026-11-03 | brochure-paper-gsm || 34 | queued 2026-11-03 | logo-files-to-ask-for |# Blog keyword plan — kavinarulraj.com
 
 Audience: small-business owners in Chennai / India hiring for design, web and video, plus buyers comparing freelancers on Upwork/Fiverr.
 Voice: first person (Kavin), plain, practical, no jargon, British spelling ("colour"), rupee figures. No invented client stories presented as real.
@@ -135,6 +135,8 @@ Owner asked for more posts per day for the rest of October; agreed on 3 a day (3
 | 124 | done 2026-11-01 | video-retainer-vs-per-video | video editing monthly retainer vs per video | Video | Monthly retainer or pay per video? | /youtube-video-editing-chennai/, /video-editing-charges-chennai/ |
 | 125 | done 2026-11-01 | website-copy-mistakes | common website copy mistakes small business | Web | The words on your website are losing you customers | /web-design-chennai/, /website-design-cost-chennai/ |
 | 126 | done 2026-11-01 | youtube-retention-editing | editing for audience retention YouTube | Video | Editing that keeps viewers watching | /youtube-video-editing-chennai/, /video-editing-charges-chennai/ |
+
+**November 2026 focus (owner, 2026-11-02): Design & Print, three posts a day.** Pick from rows 32–48 and 127–146; Business rows only where they support design or print. Queue files continue from src/127-…
 
 ## Later (November onwards) — Design, Print, Business
 

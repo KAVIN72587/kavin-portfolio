@@ -1,0 +1,62 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 130, date: "2026-11-04", slug: "brochure-vs-flyer-vs-leaflet", cat: "Print",
+  keyword: "brochure vs flyer vs leaflet difference",
+  title: "Brochure vs Flyer vs Leaflet: Which Should You Print?",
+  desc: "The difference between a brochure, flyer and leaflet, what each is best for, typical sizes and paper, and how to pick the right one for an event, shop or door drop.",
+  short: "The difference between brochures, flyers and leaflets, typical sizes and paper, and when to use each.",
+  headline: "Brochure vs flyer vs leaflet: the difference and which one to print",
+  crumb: "Brochure vs flyer vs leaflet",
+  cardTitle: "Brochure, flyer or leaflet: which one should you print?",
+  card: "They are often used as if they mean the same thing. What each is for, and which one fits your next print run.",
+  h1: ["Brochure, flyer or leaflet:", "which do you need?"],
+  lede: "Ask three printers in Chennai for a quote on \"pamphlets\" and you may get prices for three different things. Flyers, leaflets, brochures and pamphlets are often used as if they mean the same, but they do different jobs, and choosing the wrong one can waste money on paper nobody keeps.",
+  intro: [
+    "Here is the practical difference between them, what each is best at, the usual sizes and paper, and how to decide which one your business should print next.",
+  ],
+  sections: [
+    { h: "Flyer: one message, read in seconds",
+      p: ["A flyer is a single sheet, usually printed on one side or both, with no folds. Common sizes are A5 (148 × 210 mm) and A4. Its job is to deliver one clear message quickly: a sale, an opening, an event, a new menu.", "Flyers are handed out at signals, tucked into newspapers, dropped in letterboxes and pinned to notice boards. Most people look at them for a few seconds, so the headline, offer and contact details must be readable instantly. They are usually printed on 130 GSM paper, because quantities are large and lifespans are short."] },
+    { h: "Leaflet: a little more information",
+      p: ["In everyday use, a leaflet is very close to a flyer: a single sheet, sometimes folded once. The difference is mostly in intent. A leaflet usually carries more detail, such as a list of services, a price list, a timetable or instructions, and is meant to be kept for a little longer.", "Clinics, coaching centres and service businesses often use leaflets to explain what they offer. A folded A4 into A5, or a single A5 printed on both sides, are common formats."] },
+    { h: "Brochure: tells the full story",
+      p: ["A brochure is folded or bound and has several panels or pages. The trifold, an A4 sheet folded into three, is the most common in India. Larger brochures have 4, 8 or more pages stapled together.", "Brochures are for customers who are considering a bigger decision: a school admission, a property, a wedding venue, a manufacturing supplier. They have room for photos, detailed services, pricing, testimonials and a strong call to action. They are usually printed on thicker paper, 170 GSM inside and sometimes 300 GSM for the cover, because they should feel worth keeping."],
+      note: "A pamphlet usually means a small unbound booklet or a folded leaflet. If a printer says pamphlet, ask exactly what size, folds and paper they mean." },
+    { h: "How to choose",
+      p: ["Ask yourself two questions: how much does the customer need to know, and how long should they keep it? If the answer is one offer and a few seconds, print a flyer. If it is a short list of services or prices, a leaflet works. If they are comparing options and need to trust you before spending a significant amount, a brochure is worth the extra cost.", "Also consider where it will be seen. Flyers suit mass distribution. Brochures suit counters, meetings, exhibitions and follow-up after an enquiry."] },
+    { h: "Design differences",
+      p: ["A flyer design should be bold and simple: big headline, one image, one offer, contact details and maybe a QR code. Too much text and it gets ignored.", "A brochure needs a clear flow across its panels. On a trifold, the front panel attracts attention, the inside panels explain, and the back panel carries contact details and a map. Designers need to know the fold type before starting, because panel widths are not all the same."] },
+    { h: "Think about digital versions too",
+      p: ["Most printed pieces now get shared on WhatsApp as well. Ask your designer for a digital version: a flyer as a square or portrait image, a brochure as a lightweight PDF. It costs little extra and reaches people who never see the printed copy."] },
+  ],
+  callout: {
+    h: "Choose by purpose, not by habit",
+    p: "Many businesses reprint the same pamphlet every year because that is what they did last time. Before your next order, decide what you want the customer to do after reading it, then pick the format that makes that easiest. Sometimes a smaller, cheaper flyer works better. Sometimes the bigger investment in a brochure finally pays off.",
+    quote: "A flyer gets attention. A brochure earns trust.",
+    after: "If budget is tight, print a short run of brochures for serious enquiries and a larger run of flyers for general awareness.",
+  },
+  extras: [
+    { h: "Quick comparison",
+      list: [
+        ["Flyer.", "Single sheet, A5 or A4, 130 GSM, one message, mass distribution."],
+        ["Leaflet.", "Single sheet or one fold, more detail, kept a little longer."],
+        ["Brochure.", "Folded or bound, several panels or pages, 170–300 GSM, for bigger decisions."],
+        ["Pamphlet.", "Loose term. Confirm the exact size, folds and paper."],
+      ],
+      paras: ["Whichever you choose, send your designer the size, fold and paper before work starts, so the layout is built for the final format."] },
+  ],
+  faq: [
+    ["What is the difference between a brochure and a flyer?", "A flyer is a single unfolded sheet with one message. A brochure is folded or bound with several panels or pages, and carries detailed information for customers making a bigger decision."],
+    ["Is a leaflet the same as a flyer?", "They are very similar. A leaflet usually contains more detail and may have one fold, while a flyer focuses on a single message for quick reading."],
+    ["What size is a standard flyer in India?", "A5 (148 × 210 mm) and A4 (210 × 297 mm) are the most common flyer sizes in India."],
+  ],
+  related: [
+    ["/brochure-design-chennai/", "Brochure design in Chennai", "service"],
+    ["/brochure-design-cost-chennai/", "Brochure design cost in Chennai", "pricing"],
+    ["/blog/brochure-paper-gsm/", "130, 170 or 300 GSM? Choosing brochure paper", "5 min"],
+  ],
+  cta: {
+    h: "The right format, designed for print and WhatsApp.",
+    p: `I design ${ctaLink("/poster-flyer-design-chennai/", "flyers")} and ${ctaLink("/brochure-design-chennai/", "brochures")} for print, with a digital version for sharing. Flyers start at ₹1,500 per design and brochures at ₹1,500 per page. Tell me what you want to print.`,
+  },
+};
