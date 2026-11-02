@@ -1,0 +1,63 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 178, date: "2026-11-21", slug: "startup-branding-on-budget", cat: "Design",
+  keyword: "startup branding on a budget",
+  title: "Startup Branding on a Budget: What to Spend On First",
+  desc: "Startup branding on a budget: what to invest in first, what can wait, where cheap shortcuts cost more later, and a practical order for building your brand.",
+  short: "What to invest in first, what can wait, where shortcuts cost more later, and a practical order.",
+  headline: "Startup branding on a budget: what to spend on first, and what can wait",
+  crumb: "Startup branding budget",
+  cardTitle: "Branding on a budget: what to pay for first",
+  card: "You don't need a full brand book on day one. What's worth paying for at the start, and what can safely wait.",
+  h1: ["Branding on a budget:", "what comes first"],
+  lede: "New business owners often face two bad options: spend lakhs on a full brand identity before earning anything, or make everything themselves and end up looking amateur. There is a sensible middle path. Some branding decisions are expensive to change later and worth getting right now. Others can wait until the business has customers and income.",
+  intro: [
+    "Here is how I would spend a limited branding budget, in order, so a new business looks credible from day one without overspending.",
+  ],
+  sections: [
+    { h: "First: a proper logo",
+      p: ["The logo goes on everything: signboards, packaging, social profiles, invoices, uniforms. Changing it later means replacing all of those. That makes it the one item worth investing in properly at the start.", "You do not need a huge agency fee. You need an original, simple logo that works at all sizes, with vector files and clear ownership. For many startups, this is a few thousand to a couple of tens of thousands of rupees. My logo design starts at ₹8,000."] },
+    { h: "Second: colours and fonts",
+      p: ["Choose a small palette of two or three colours and one or two fonts, ideally free fonts you can use everywhere. Write the colour codes down. This costs little and gives every future item a consistent look. Most logo designers can provide this as part of the logo work."] },
+    { h: "Third: the essentials customers touch",
+      p: ["Visiting cards, a simple signboard if you have a physical location, social media profile images and a WhatsApp Business profile. These are where customers first meet your brand.", "A basic website or a well-built Google Business Profile comes next, depending on your business. Many local businesses can start with a strong Google profile and WhatsApp, and add a website a few months later."],
+      note: "Do not print large quantities of anything at the start. Business details change often in the first year." },
+    { h: "What can wait",
+      p: ["A thick brand guideline book. Custom illustrations. Elaborate packaging with special finishes. A large website with many pages. Branded merchandise. These are valuable later, but they are not needed to start selling.", "Templates for social media can also start simple: a few editable designs in your colours are enough for the first months."] },
+    { h: "Where shortcuts cost more",
+      p: ["A template logo that cannot be trademarked. A logo with only a JPG file. Colours chosen on a phone that do not print well. A signboard made from a low-resolution image. Each saves a little at the start and costs much more when it has to be redone.", "Spending carefully on a few foundations is cheaper overall than spending a little on many things that need replacing."] },
+    { h: "Grow the brand with the business",
+      p: ["As income grows, add items in order of impact: better packaging if you sell products, a proper website, a monthly social media plan, professional photography, brochures for sales meetings. Each builds on the foundation of the logo, colours and fonts you set at the beginning."] },
+  ],
+  callout: {
+    h: "Invest in the foundation, build the rest over time",
+    p: "A strong logo, a consistent palette and a few essential items make a new business look credible from day one. Everything else can be added as the business proves itself. The key is not spending a lot, but spending first on the things that are hardest to change later.",
+    quote: "Spend on what's expensive to change. Save on what's easy to add later.",
+    after: "Keep all your brand files organised from the start. It makes every future design job faster and cheaper.",
+  },
+  extras: [
+    { h: "Startup branding order",
+      list: [
+        ["1. Logo.", "Original, simple, vector files, clear ownership."],
+        ["2. Colours and fonts.", "Small palette, free fonts, codes written down."],
+        ["3. Essentials.", "Visiting cards, signboard, social profiles, WhatsApp."],
+        ["4. Online presence.", "Google Business Profile, then a simple website."],
+        ["5. Later.", "Packaging upgrades, brochures, photography, merchandise."],
+      ],
+      paras: ["Adjust the order to your business. A product brand may need packaging before a website; a consultant may need a website before a signboard.", "Whatever your order, keep receipts and files from every step in one place. When you later apply for a trademark, raise funding or hire a marketing person, having your brand history and assets organised saves time and shows that the business has been run carefully from the beginning.", "Above all, be consistent from the very first day, even with a small budget.", "Consistency costs nothing and builds trust with every customer."] },
+  ],
+  faq: [
+    ["How much should a startup spend on branding?", "It depends on the business, but most small startups can begin with a professional logo, colours and essential items, then add more as income grows."],
+    ["What branding does a new business need first?", "A proper logo with vector files, a small colour palette and fonts, and essentials like visiting cards, social profiles and signage if you have a location."],
+    ["Can I design my own logo to save money?", "You can for a very early test, but a logo you will use on boards and packaging for years is worth investing in, because changing it later is expensive."],
+  ],
+  related: [
+    ["/logo-design-chennai/", "Logo design in Chennai", "service"],
+    ["/pricing/", "Design and video pricing", "pricing"],
+    ["/blog/logo-mistakes-small-business/", "Logo mistakes that cost you years later", "5 min"],
+  ],
+  cta: {
+    h: "The right foundation, at a startup budget.",
+    p: `I help new businesses start with a solid ${ctaLink("/logo-design-chennai/", "logo")}, colours and essential items, then grow the brand over time. Logo design starts at ₹8,000. Tell me about your startup.`,
+  },
+};

@@ -1,0 +1,63 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 182, date: "2026-11-23", slug: "free-fonts-commercial-use", cat: "Design",
+  keyword: "free fonts for commercial use",
+  title: "Free Fonts for Commercial Use: What's Safe to Use",
+  desc: "Which free fonts are safe for business use: commercial licences explained, trusted sources, Tamil fonts, and the font mistakes that cause problems later on.",
+  short: "Commercial licences explained, trustworthy sources, Tamil fonts, and mistakes that cause problems later.",
+  headline: "Free fonts for commercial use: what small businesses can safely use",
+  crumb: "Free fonts for business",
+  cardTitle: "Which free fonts you can safely use",
+  card: "\"Free\" doesn't always mean free for business. How font licences work and where to find fonts you can use anywhere.",
+  h1: ["Free fonts you can", "safely use"],
+  lede: "Free font websites list thousands of attractive fonts, and many small businesses download one for their logo, menu or packaging without a second thought. Often that is fine. But some \"free\" fonts are free only for personal use, and using them on products, signboards or a logo can technically break the licence, which matters more as the business grows.",
+  intro: [
+    "I am not a lawyer, so check each licence yourself or with a professional. But here is a practical overview of font licences, safe sources and how to avoid problems.",
+  ],
+  sections: [
+    { h: "Fonts are licensed, not owned",
+      p: ["When you download a font, you receive a licence to use it under certain conditions. The licence says whether you can use it commercially, on products for sale, in logos, on websites or in apps. Different fonts have very different licences, even on the same website."] },
+    { h: "Personal use vs commercial use",
+      p: ["Many fonts on free font sites are marked \"free for personal use\". That usually means school projects, personal invitations or non-commercial experiments. Using them for a business logo, packaging, advertising or a product you sell normally requires a commercial licence, which may cost money.", "Read the licence or the \"license\" section on the download page every time. If it is unclear, assume it is not free for commercial use."] },
+    { h: "Open-source fonts",
+      p: ["Fonts released under open licences, such as the SIL Open Font License, can generally be used commercially, including in logos, print and websites, with few restrictions. Google Fonts hosts a large collection of such fonts, which is why designers often recommend it to small businesses.", "Open licences usually allow use but may restrict selling the font files themselves. Check the specific licence of each font."],
+      note: "Even with open fonts, keep a note of the font name and licence in your brand kit. It helps if questions ever come up." },
+    { h: "Tamil fonts",
+      p: ["Several good Tamil fonts are available under open licences, including on Google Fonts. Older Tamil fonts shared freely online may have unclear licences or poor Unicode support, which can cause characters to display incorrectly on websites and phones.", "Choose Unicode-compatible Tamil fonts from reputable sources, and test them in the software your team uses."] },
+    { h: "Fonts in logos",
+      p: ["Logos are a special case because they are used everywhere and often trademarked. Most open-source and commercial licences allow fonts to be used in logo artwork, especially when the text is converted to outlines. But some licences restrict logo use or require an extended licence. Check before finalising the logo."] },
+    { h: "Mistakes to avoid",
+      p: ["Downloading fonts from unofficial sites that redistribute paid fonts without permission. Using personal-use-only fonts on packaging or signboards. Sending font files to printers or developers without checking that the licence allows it. Not keeping any record of which fonts were used."] },
+  ],
+  callout: {
+    h: "Check once, use with confidence",
+    p: "Font licences are easy to ignore and occasionally expensive to get wrong. Choosing fonts from trusted sources with clear commercial licences, especially open-source fonts, removes the worry. Write down the names and licences in your brand kit, and you will never need to think about it again.",
+    quote: "If the licence isn't clear, choose a different font.",
+    after: "Ask your designer to list every font used in your brand and where it came from. A good designer will already have this information.",
+  },
+  extras: [
+    { h: "Font licence checklist",
+      list: [
+        ["Source.", "Official site or reputable library, not random downloads."],
+        ["Licence.", "Commercial use clearly allowed."],
+        ["Logo use.", "No restrictions on logo or trademark use."],
+        ["Tamil.", "Unicode-compatible, from a trusted source."],
+        ["Record.", "Font names and licences saved in your brand kit."],
+      ],
+      paras: ["This is general information, not legal advice. For important brand decisions, check each licence carefully or ask a professional.", "If you love a font that requires a paid licence, it may be worth buying. Many commercial fonts are reasonably priced for small businesses, and a distinctive typeface can set your brand apart. Just buy the right licence for how you will use it: desktop for print, web for your website, and app or extended licences where needed.", "Keep the original font files and licence documents in your brand folder, not just the names. If you change designers or printers in future, you can hand everything over together, and nobody needs to hunt for the right version of a font or wonder whether it was ever licensed properly. It is a small habit that saves real headaches later.", "A few minutes of checking now protects the brand you are building."] },
+  ],
+  faq: [
+    ["Can I use Google Fonts for commercial purposes?", "Most Google Fonts are released under open licences that allow commercial use, including print, logos and websites. Check each font's licence to be sure."],
+    ["What does 'free for personal use' mean for fonts?", "It usually means you can use the font for non-commercial personal projects only. Business use typically needs a commercial licence."],
+    ["Can I use a free font in my logo?", "Often yes with open-source fonts, but some licences restrict logo use. Check the licence before finalising your logo."],
+  ],
+  related: [
+    ["/graphic-design-chennai/", "Graphic design in Chennai", "service"],
+    ["/pricing/", "Design and video pricing", "pricing"],
+    ["/blog/font-pairing-for-business/", "Choosing two fonts that work together", "5 min"],
+  ],
+  cta: {
+    h: "Brand fonts you're free to use everywhere.",
+    p: `I choose ${ctaLink("/graphic-design-chennai/", "brand fonts")} with clear commercial licences and record them in your brand kit, including Tamil fonts where needed. Logo design starts at ₹8,000. Let's talk.`,
+  },
+};

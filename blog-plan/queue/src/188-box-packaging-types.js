@@ -1,0 +1,61 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 155, date: "2026-11-23", slug: "box-packaging-types", cat: "Print",
+  keyword: "mono carton vs corrugated vs rigid box",
+  title: "Mono Carton vs Corrugated vs Rigid Box: Which to Choose",
+  desc: "Mono cartons, corrugated boxes and rigid boxes compared: how each is made, cost level, strength, look and feel, and which suits retail, shipping or premium gifting.",
+  short: "How each box type is made, cost, strength, look and feel, and which suits retail, shipping or gifting.",
+  headline: "Mono carton vs corrugated vs rigid box: choosing the right packaging",
+  crumb: "Box packaging types",
+  cardTitle: "Choosing the right box for your product",
+  card: "A sweet box, a shipping carton and a luxury gift box are built very differently. How to pick the right one.",
+  h1: ["Choosing the right box", "for your product"],
+  lede: "When a small brand asks for \"a box\", printers often reply with a list of questions: mono carton or corrugated? Rigid or folding? What board? It can feel overwhelming. But the box type affects everything: cost, how the product is protected, how it looks on a shelf and how it feels to open.",
+  intro: [
+    "Here are the three box types small businesses in India use most, what each is good for and how the choice affects your packaging design.",
+  ],
+  sections: [
+    { h: "Mono cartons",
+      p: ["A mono carton is a folding box made from a single layer of paperboard, the kind used for medicines, cosmetics, tea, sweets, spices and small electronics. It is printed flat, cut and creased, then folded into shape.", "Mono cartons are affordable at volume, print beautifully and are light to store and ship flat. They protect against dust and light handling, but not heavy impact. They are ideal for retail shelves."] },
+    { h: "Corrugated boxes",
+      p: ["Corrugated board has a wavy fluted layer between flat liners, which makes it strong and shock-absorbing. Brown corrugated cartons are used for shipping, but printed corrugated boxes, often in thinner flute types, are increasingly used for e-commerce products, subscription boxes and heavier items.", "Corrugated boxes protect products in courier and transport. Printing on them can be simpler, especially on brown kraft, though high-quality printed corrugated boxes are available at higher cost."] },
+    { h: "Rigid boxes",
+      p: ["Rigid boxes are made from thick, stiff board wrapped in printed or textured paper. They do not fold flat. Think of premium gift boxes, jewellery boxes, luxury sweets, corporate gift sets and high-end electronics.", "They feel substantial and premium, and the unboxing experience is part of the appeal. They are also the most expensive, take longer to produce and take up more space in storage and shipping."],
+      note: "Rigid boxes are often assembled by hand, so minimum quantities and lead times can be higher. Plan early for festive gifting." },
+    { h: "Which to choose",
+      p: ["For products sold on shop shelves, a mono carton is usually the right balance of cost and presentation. For products shipped directly to customers, a corrugated box, or a mono carton inside a corrugated shipper, protects the product. For premium gifts and luxury products, a rigid box creates the experience customers expect at that price.", "Many brands use more than one: a mono carton for retail, a corrugated outer for shipping and a rigid box for festive gift sets."] },
+    { h: "How box type affects design",
+      p: ["Each box type has its own dieline and printing considerations. Mono cartons allow detailed full-colour printing. Corrugated boards can show slight texture and absorb ink differently. Rigid boxes may use printed wrapping paper, foil, embossing or textured stocks.", "Your designer needs to know the box type, material and printer before starting, so the artwork suits the production method."] },
+    { h: "Sustainability",
+      p: ["Customers increasingly notice excessive packaging. Choosing the right size, avoiding unnecessary layers and using recyclable materials where possible helps both costs and perception. Kraft corrugated and simple mono cartons can look stylish with good design."] },
+  ],
+  callout: {
+    h: "Choose the box for how the product travels",
+    p: "The right box depends on where your product goes: a shop shelf, a courier van or a gift table. Decide that first, then choose the box type, then design for it. Getting this order right avoids paying for packaging that is either too weak or more expensive than it needs to be.",
+    quote: "Shelf: mono carton. Courier: corrugated. Gift: rigid.",
+    after: "Ask your printer for physical samples of each type in a similar size. Holding them makes the choice much easier.",
+  },
+  extras: [
+    { h: "Box types at a glance",
+      list: [
+        ["Mono carton.", "Single-layer folding box, affordable, ideal for retail shelves."],
+        ["Corrugated.", "Fluted board, strong and protective, ideal for shipping and e-commerce."],
+        ["Rigid.", "Thick wrapped board, premium feel, ideal for gifts and luxury."],
+      ],
+      paras: ["Get quotes for your quantity in each type before deciding. Costs vary widely by size, board and finish.", "Remember that the inside of the box matters too. Inserts, trays and dividers keep products in place and improve the unboxing experience, especially for gift sets and fragile items. They add cost, so ask your printer to include them in the quote from the start rather than adding them later.", "Finally, think about the full journey of the box: from your printer to your storeroom, through packing, into a courier bag or onto a shelf, and finally into the customer's hands. Each stage puts different demands on the packaging. A box that survives all of them while still looking good when opened is worth more than one that only looks good in a photo."] },
+  ],
+  faq: [
+    ["What is a mono carton box?", "A folding box made from a single layer of paperboard, commonly used for retail products like cosmetics, medicines, tea and sweets."],
+    ["Is corrugated or mono carton better for shipping?", "Corrugated is better for shipping because its fluted layer absorbs shocks. Mono cartons are better for shelf display."],
+    ["Why are rigid boxes expensive?", "They use thick board, are often assembled by hand, do not fold flat and usually include premium wrapping and finishes."],
+  ],
+  related: [
+    ["/packaging-design-chennai/", "Packaging design in Chennai", "service"],
+    ["/pricing/", "Design and video pricing", "pricing"],
+    ["/blog/packaging-dieline-explained/", "Why your printer asks for a dieline first", "5 min"],
+  ],
+  cta: {
+    h: "Box artwork for any packaging type.",
+    p: `I design ${ctaLink("/packaging-design-chennai/", "packaging")} for mono cartons, corrugated boxes and rigid gift boxes, working from your printer's dieline. Packaging design starts at ₹8,000 per SKU. Tell me about your product.`,
+  },
+};

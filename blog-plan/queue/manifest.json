@@ -1034,6 +1034,28 @@
     "words": 904
   },
   {
+    "row": 160,
+    "date": "2026-11-20",
+    "slug": "youtube-channel-art-size",
+    "cat": "Design",
+    "title": "YouTube Channel Banner Size: Safe Area Explained",
+    "cardTitle": "Channel banners that fit phones, laptops and TVs",
+    "card": "Your YouTube banner is cropped differently on every device. How the safe area works and what to put inside it.",
+    "minutes": 5,
+    "words": 904
+  },
+  {
+    "row": 192,
+    "date": "2026-11-20",
+    "slug": "print-proof-checklist",
+    "cat": "Print",
+    "title": "Print Proof Checklist: What to Check Before You Approve",
+    "cardTitle": "What to check before you approve a print proof",
+    "card": "A wrong phone number on 5,000 flyers is an expensive lesson. The checklist that catches mistakes before printing.",
+    "minutes": 5,
+    "words": 901
+  },
+  {
     "row": 18,
     "date": "2026-10-18",
     "slug": "corporate-video-length",
@@ -1045,6 +1067,116 @@
     "words": 917
   },
   {
+    "row": 180,
+    "date": "2026-11-20",
+    "slug": "logo-mistakes-small-business",
+    "cat": "Design",
+    "title": "Common Logo Mistakes That Cost Small Businesses Later",
+    "cardTitle": "Logo mistakes that cost you years later",
+    "card": "A logo that looks fine on day one can cause problems for years. The most common mistakes, and how to avoid them.",
+    "minutes": 5,
+    "words": 929
+  },
+  {
+    "row": 161,
+    "date": "2026-11-21",
+    "slug": "whatsapp-status-creatives",
+    "cat": "Design",
+    "title": "WhatsApp Status Creatives for Business: What Works",
+    "cardTitle": "WhatsApp status updates customers actually tap",
+    "card": "Your customers check WhatsApp status more than Instagram. How to design status updates that bring in enquiries.",
+    "minutes": 5,
+    "words": 905
+  },
+  {
+    "row": 152,
+    "date": "2026-11-21",
+    "slug": "product-label-design-tips",
+    "cat": "Print",
+    "title": "Product Label Design Tips: Stand Out on a Crowded Shelf",
+    "cardTitle": "Labels that stand out on a crowded shelf",
+    "card": "Customers decide in seconds. How to design a product label that gets noticed, read and picked up.",
+    "minutes": 5,
+    "words": 900
+  },
+  {
+    "row": 178,
+    "date": "2026-11-21",
+    "slug": "startup-branding-on-budget",
+    "cat": "Design",
+    "title": "Startup Branding on a Budget: What to Spend On First",
+    "cardTitle": "Branding on a budget: what to pay for first",
+    "card": "You don't need a full brand book on day one. What's worth paying for at the start, and what can safely wait.",
+    "minutes": 5,
+    "words": 904
+  },
+  {
+    "row": 162,
+    "date": "2026-11-22",
+    "slug": "ad-creative-design-tips",
+    "cat": "Design",
+    "title": "Ad Creative Design Tips for Instagram and Facebook",
+    "cardTitle": "Ad creatives that stop the scroll",
+    "card": "Your ad has about a second to get noticed. How to design Instagram and Facebook ads that people stop for.",
+    "minutes": 5,
+    "words": 921
+  },
+  {
+    "row": 153,
+    "date": "2026-11-22",
+    "slug": "sticker-label-printing-types",
+    "cat": "Print",
+    "title": "Sticker and Label Types: Paper, Vinyl, Clear and Die-Cut",
+    "cardTitle": "Paper, vinyl, clear or die-cut: choosing your stickers",
+    "card": "A paper sticker on an oil bottle won't last a week. How to choose the right sticker material and cut for each use.",
+    "minutes": 5,
+    "words": 923
+  },
+  {
+    "row": 181,
+    "date": "2026-11-22",
+    "slug": "font-pairing-for-business",
+    "cat": "Design",
+    "title": "Font Pairing for Business: Choosing Two Fonts That Work",
+    "cardTitle": "Choosing two fonts that work together",
+    "card": "Five fonts on one flyer looks messy. How to choose a heading and body font that make everything look consistent.",
+    "minutes": 5,
+    "words": 913
+  },
+  {
+    "row": 163,
+    "date": "2026-11-23",
+    "slug": "infographic-design-tips",
+    "cat": "Design",
+    "title": "Infographic Design for Small Businesses: A Simple Guide",
+    "cardTitle": "Turning information into a graphic people share",
+    "card": "A process, a comparison or a checklist is easier to understand as a picture. How to plan an infographic that gets shared.",
+    "minutes": 5,
+    "words": 912
+  },
+  {
+    "row": 155,
+    "date": "2026-11-23",
+    "slug": "box-packaging-types",
+    "cat": "Print",
+    "title": "Mono Carton vs Corrugated vs Rigid Box: Which to Choose",
+    "cardTitle": "Choosing the right box for your product",
+    "card": "A sweet box, a shipping carton and a luxury gift box are built very differently. How to pick the right one.",
+    "minutes": 5,
+    "words": 916
+  },
+  {
+    "row": 182,
+    "date": "2026-11-23",
+    "slug": "free-fonts-commercial-use",
+    "cat": "Design",
+    "title": "Free Fonts for Commercial Use: What's Safe to Use",
+    "cardTitle": "Which free fonts you can safely use",
+    "card": "\"Free\" doesn't always mean free for business. How font licences work and where to find fonts you can use anywhere.",
+    "minutes": 5,
+    "words": 906
+  },
+  {
     "row": 19,
     "date": "2026-10-19",
     "slug": "whatsapp-button-on-website",
@@ -1054,6 +1186,39 @@
     "card": "The click-to-chat link, a prefilled first message, where to put the button, and how to tell which pages bring chats.",
     "minutes": 5,
     "words": 961
+  },
+  {
+    "row": 164,
+    "date": "2026-11-24",
+    "slug": "pitch-deck-design",
+    "cat": "Design",
+    "title": "Pitch Deck Design Tips: Slides That Are Easy to Follow",
+    "cardTitle": "A pitch deck that's easy to follow",
+    "card": "Crowded slides lose investors and clients in minutes. How to design a deck that tells your story clearly.",
+    "minutes": 5,
+    "words": 928
+  },
+  {
+    "row": 156,
+    "date": "2026-11-24",
+    "slug": "pouch-packaging-design",
+    "cat": "Print",
+    "title": "Pouch Packaging Design for Snacks, Spices and Powders",
+    "cardTitle": "Pouch packaging for snacks, spices and powders",
+    "card": "Stand-up pouches are everywhere on Indian shelves. How to design one that stands out, holds the details and prints right.",
+    "minutes": 5,
+    "words": 952
+  },
+  {
+    "row": 183,
+    "date": "2026-11-24",
+    "slug": "design-mockups-explained",
+    "cat": "Design",
+    "title": "What Is a Design Mockup, and Why Should You Ask for One?",
+    "cardTitle": "Mockups: seeing the design before it's printed",
+    "card": "A logo on a white page tells you little. How mockups show your design in real life before you spend on printing.",
+    "minutes": 5,
+    "words": 929
   },
   {
     "row": 20,
