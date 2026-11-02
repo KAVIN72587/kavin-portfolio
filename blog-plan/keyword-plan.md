@@ -1,4 +1,4 @@
-| 130 | queued 2026-11-04 | brochure-vs-flyer-vs-leaflet || 128 | queued 2026-11-04 | brand-kit-small-business || 38 | queued 2026-11-03 | choosing-brand-colours || 37 | queued 2026-11-04 | visiting-card-size-india || 36 | queued 2026-11-03 | brochure-paper-gsm || 34 | queued 2026-11-03 | logo-files-to-ask-for |# Blog keyword plan — kavinarulraj.com
+# Blog keyword plan — kavinarulraj.com
 
 Audience: small-business owners in Chennai / India hiring for design, web and video, plus buyers comparing freelancers on Upwork/Fiverr.
 Voice: first person (Kavin), plain, practical, no jargon, British spelling ("colour"), rupee figures. No invented client stories presented as real.
@@ -144,11 +144,11 @@ Owner asked for more posts per day for the rest of October; agreed on 3 a day (3
 |---|---|---|---|---|---|---|
 | 32 |  | canva-logo-trademark | can I trademark a Canva logo India | Design | When a Canva logo is yours and when it legally isn't | /logo-design-chennai/, /logo-design-cost-chennai/ |
 | 33 |  | fiverr-vs-local-designer | Fiverr vs local designer India | Business | Resold logos, time zones, and what you actually own | /freelancer-vs-agency-chennai/, /pricing/ |
-| 34 |  | logo-files-to-ask-for | what logo files should I get from my designer | Design | SVG, PDF, PNG, colour codes — the handover checklist | /logo-design-chennai/ |
+| 34 | queued 2026-11-03 | logo-files-to-ask-for | what logo files should I get from my designer | Design | SVG, PDF, PNG, colour codes — the handover checklist | /logo-design-chennai/ |
 | 35 |  | how-long-does-a-logo-take | how long does logo design take | Business | Realistic timelines and what slows them | /logo-design-chennai/ |
-| 36 |  | brochure-paper-gsm | brochure paper GSM guide | Print | 130 vs 170 vs 300 GSM, matt vs gloss | /brochure-design-chennai/, /brochure-design-cost-chennai/ |
-| 37 |  | visiting-card-size-india | visiting card size in India | Print | Size in mm/inches, safe zone, finishes | /business-card-design-chennai/ |
-| 38 |  | choosing-brand-colours | how to choose brand colours small business | Design | Colour that survives print, screen and signboard | /graphic-design-chennai/ |
+| 36 | queued 2026-11-03 | brochure-paper-gsm | brochure paper GSM guide | Print | 130 vs 170 vs 300 GSM, matt vs gloss | /brochure-design-chennai/, /brochure-design-cost-chennai/ |
+| 37 | queued 2026-11-04 | visiting-card-size-india | visiting card size in India | Print | Size in mm/inches, safe zone, finishes | /business-card-design-chennai/ |
+| 38 | queued 2026-11-03 | choosing-brand-colours | how to choose brand colours small business | Design | Colour that survives print, screen and signboard | /graphic-design-chennai/ |
 | 39 |  | freelancer-red-flags | red flags hiring freelance designer Upwork Fiverr | Business | Signs to walk away before paying an advance | /freelancer-vs-agency-chennai/ |
 | 40 |  | how-many-revisions | how many design revisions are normal | Business | What "unlimited revisions" really means | /pricing/ |
 | 41 |  | food-label-design-checklist | FSSAI label requirements design | Print | What must be on the pack before artwork is final (verify current FSSAI rules) | /packaging-design-chennai/ |
@@ -167,9 +167,9 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | # | Status | Slug | Target keyword | Category | Angle | Links to |
 |---|---|---|---|---|---|---|
 | 127 |  | logo-design-price-explained | logo design price India ₹2,000 vs ₹50,000 | Design | What actually changes between a cheap and an expensive logo quote | /logo-design-cost-chennai/, /logo-design-chennai/ |
-| 128 |  | brand-kit-small-business | brand kit for small business what's included | Design | Logo, colours, fonts, templates — the kit that keeps everything consistent | /graphic-design-chennai/, /pricing/ |
+| 128 | queued 2026-11-04 | brand-kit-small-business | brand kit for small business what's included | Design | Logo, colours, fonts, templates — the kit that keeps everything consistent | /graphic-design-chennai/, /pricing/ |
 | 129 |  | logo-design-brief | logo design brief questions | Design | The 10 answers to give a designer before the first concept | /logo-design-chennai/, /logo-design-cost-chennai/ |
-| 130 |  | brochure-vs-flyer-vs-leaflet | brochure vs flyer vs leaflet difference | Print | Which one to print for an event, a shop counter or a door drop | /brochure-design-chennai/, /brochure-design-cost-chennai/ |
+| 130 | queued 2026-11-04 | brochure-vs-flyer-vs-leaflet | brochure vs flyer vs leaflet difference | Print | Which one to print for an event, a shop counter or a door drop | /brochure-design-chennai/, /brochure-design-cost-chennai/ |
 | 131 |  | brochure-design-cost-india | brochure design cost India per page | Print | Bifold, trifold, 8-page — what drives the quote | /brochure-design-cost-chennai/, /brochure-design-chennai/ |
 | 132 |  | product-packaging-design-cost | packaging design cost India small brand | Print | Label, box, pouch — design fees vs printing costs | /packaging-design-chennai/, /pricing/ |
 | 133 |  | packaging-dieline-explained | what is a dieline packaging | Print | Why your printer asks for a dieline before any artwork | /packaging-design-chennai/ |
