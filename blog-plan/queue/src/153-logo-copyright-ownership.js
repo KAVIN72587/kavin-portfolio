@@ -1,0 +1,63 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 143, date: "2026-11-11", slug: "logo-copyright-ownership", cat: "Business",
+  keyword: "who owns the copyright of my logo India",
+  title: "Who Owns the Copyright in Your Logo?",
+  desc: "Who owns the copyright in a logo designed by a freelancer or agency in India, why written assignment matters, what to ask for, and how ownership links to trademarks.",
+  short: "Who owns a logo made by a freelancer or agency, why written assignment matters, and how it links to trademarks.",
+  headline: "Who owns the copyright in your logo, and how to make sure it's you",
+  crumb: "Logo copyright ownership",
+  cardTitle: "Paying for a logo doesn't always mean you own it",
+  card: "Ownership should be in writing. What to ask your designer so the logo on your board is legally yours.",
+  h1: ["Paying for a logo doesn't", "always mean owning it"],
+  lede: "Most business owners assume that once they pay for a logo, it belongs to them. In practice, ownership depends on what was agreed, and many small projects agree nothing at all. Usually this never matters. But when it does, during a trademark application, a dispute with a former designer or the sale of the business, the lack of a simple written note can become a real headache.",
+  intro: [
+    "As before, this is practical guidance from a designer, not legal advice. For anything high-stakes, speak to an intellectual property lawyer. Here is what small business owners should understand about logo ownership.",
+  ],
+  sections: [
+    { h: "Why ownership is not automatic",
+      p: ["Under copyright law in many countries, including India, the creator of an original artistic work is generally the first owner of its copyright, unless there is an agreement saying otherwise or the work was made by an employee in the course of employment. A freelancer or agency is usually not your employee.", "That means, in principle, a freelance designer may own the copyright in the logo unless rights are transferred to you. Paying the invoice shows you commissioned it, but a written assignment of rights is the clearest way to make ownership certain."] },
+    { h: "What a written assignment does",
+      p: ["An assignment is a written document, or a clause in your agreement or invoice, where the designer transfers the copyright in the final logo to you. It should identify the work, state that the rights are transferred, and be signed or clearly accepted by the designer.", "This does not need to be complicated for a small project. A clear paragraph in the agreement, plus confirmation on the final invoice, is often enough. A lawyer can advise on the exact wording for valuable brands."],
+      note: "Ask for the assignment to cover the final approved logo and its versions. Unused concepts usually remain with the designer unless agreed otherwise." },
+    { h: "Ownership and trademarks",
+      p: ["Copyright and trademark are different. Copyright protects the artistic work. A trademark protects your use of a mark to identify your goods or services. When you file a trademark for your logo, it helps to be able to show that you own the artwork, especially if a dispute ever arises.", "A logo built from templates or stock elements causes problems here too, because neither you nor the designer can transfer rights to elements that belong to someone else."] },
+    { h: "What designers usually keep",
+      p: ["Most designers keep the right to show the work in their portfolio, which is reasonable. They also keep ownership of rejected concepts and their general techniques. If your project is confidential, ask for portfolio use to be delayed until after launch."] },
+    { h: "Fonts and stock content",
+      p: ["If the logo uses a commercial font, the font is licensed, not owned. The logo artwork can still be yours, but you may need a licence to use the font elsewhere, such as on your website. Ask the designer which fonts were used and how they are licensed.", "The same applies to stock illustrations or icons: they come with licence terms, and they cannot be exclusively yours."] },
+    { h: "What to ask before you start",
+      p: ["Ask three simple questions: Will the final logo be original, without templates or stock elements? Will you transfer full rights to me once the project is paid? Can that be written into the quote or invoice? A professional designer will say yes to all three without hesitation."] },
+  ],
+  callout: {
+    h: "One paragraph now saves trouble later",
+    p: "Logo ownership disputes are rare, but when they happen, they are stressful and expensive. A short written transfer of rights, agreed at the start and confirmed on the final invoice, removes the question entirely. It costs nothing and protects the business you are building.",
+    quote: "Get ownership in writing while everyone is still friendly.",
+    after: "If you already have a logo with no paperwork, it is worth contacting the original designer and asking for a simple written assignment now.",
+  },
+  extras: [
+    { h: "Logo ownership checklist",
+      list: [
+        ["Originality.", "No templates, clip art or stock icons in the logo."],
+        ["Assignment.", "Written transfer of rights in the final logo."],
+        ["Invoice.", "Final invoice mentions the transfer on full payment."],
+        ["Fonts.", "Names and licence terms of every font used."],
+        ["Portfolio.", "Agreed timing if the project is confidential."],
+      ],
+      paras: ["This is general information, not legal advice. For trademark filings or valuable brands, consult a qualified intellectual property professional."] },
+  ],
+  faq: [
+    ["Do I own the logo my designer created?", "Not automatically in every case. Copyright often starts with the creator, so a written transfer of rights from the designer is the clearest way to make sure you own it."],
+    ["How do I get the copyright of my logo transferred to me?", "Include a clause in your design agreement or final invoice stating that the designer assigns all rights in the final logo to you on full payment, and keep it with your records."],
+    ["Can my designer use my logo in their portfolio?", "Usually yes, and it is common practice. If your project is confidential, agree a later date for portfolio use."],
+  ],
+  related: [
+    ["/logo-design-chennai/", "Logo design in Chennai", "service"],
+    ["/freelancer-vs-agency-chennai/", "Freelancer vs agency in Chennai", "guide"],
+    ["/blog/design-contract-checklist/", "The design agreement that prevents most arguments", "5 min"],
+  ],
+  cta: {
+    h: "Original logos, with rights transferred in writing.",
+    p: `Every ${ctaLink("/logo-design-chennai/", "logo I design")} is original, and full rights in the final logo pass to you in writing on full payment. Logo design starts at ₹8,000. Tell me about your business.`,
+  },
+};

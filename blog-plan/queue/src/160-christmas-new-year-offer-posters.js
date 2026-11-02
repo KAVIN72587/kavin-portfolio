@@ -1,0 +1,63 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 193, date: "2026-11-14", slug: "christmas-new-year-offer-posters", cat: "Design",
+  keyword: "Christmas New Year offer poster ideas",
+  title: "Christmas and New Year Offer Posters: Plan Them Now",
+  desc: "Ideas and a timeline for Christmas and New Year offer posters and social posts: what to offer, what to design, when to start and how to stand out in December.",
+  short: "What to offer, what to design, when to start and how to stand out in the December rush.",
+  headline: "Christmas and New Year offer posters: ideas and a timeline that works",
+  crumb: "Year-end offer posters",
+  cardTitle: "Year-end offer posters, planned before December",
+  card: "December is busy for everyone. How to plan Christmas and New Year offers and creatives so they go out on time.",
+  h1: ["Year-end offers, planned", "before December"],
+  lede: "December in Chennai is packed: Christmas, New Year, the wedding season, Margazhi music season and year-end sales all overlap. Customers are spending, but they are also flooded with offers. Businesses that plan their year-end creatives in November get noticed. Those that start on 20 December mostly get lost.",
+  intro: [
+    "Here are practical ideas for Christmas and New Year offers, what to design, and a simple timeline so everything is ready before the rush.",
+  ],
+  sections: [
+    { h: "Decide the offer first",
+      p: ["A good year-end campaign starts with a reason to buy, not a decoration. Options include a percentage discount, a gift with purchase, a combo or hamper, a free service with a booking, or a New Year package for the coming year.", "Think about what your customers actually want in December. A bakery might offer Christmas cake pre-orders. A salon might offer party-ready packages. A gym might offer a New Year membership starting in January but booked in December."] },
+    { h: "Ideas by business type",
+      p: ["Food businesses: pre-order hampers, plum cakes, party platters, New Year's Eve specials. Retail: gift guides, gift wrapping, year-end clearance. Services: New Year packages, annual maintenance plans, booking discounts for January. Clinics and wellness: health check packages to start the new year.", "Corporate customers also buy gifts in December. If you sell products that suit corporate gifting, a simple catalogue or poster aimed at businesses can bring in bulk orders."] },
+    { h: "What to design",
+      p: ["Plan a small set of matching creatives: an announcement post, the main offer post, story versions, a reminder post close to the deadline, a Christmas greeting and a New Year greeting. Add a printed counter poster or standee if you have a shop, and a WhatsApp-friendly image for broadcasting to your customer list.", "Keep the design in your brand style with seasonal touches, such as a few festive elements and warm colours, rather than a generic template full of snowflakes that do not fit Chennai."],
+      note: "If your customers are not mostly Christian, a general \"Season's greetings\" or \"Year-end celebration\" theme can feel more inclusive while still being festive." },
+    { h: "The timeline",
+      p: ["Mid November: decide the offer and channels. Late November: brief your designer with offer details and photos. Early December: approve designs and print any posters. From the first or second week of December: share the announcement and offer. Christmas week and New Year week: reminders, greetings and last-chance posts.", "Pre-order offers, like cakes and hampers, need even earlier promotion, ideally from the beginning of December."] },
+    { h: "Stand out in a crowded month",
+      p: ["Use real photos of your products and shop rather than stock images. Be clear and specific: \"Plum cake 1 kg, ₹650, pre-order by 20 December\" works better than \"Special Christmas offers available\". Include an end date to create urgency, and make it easy to order with a WhatsApp number or QR code."] },
+    { h: "After the season",
+      p: ["Note which posts brought enquiries and orders, which offers worked and what customers asked about. Save the designs. Next year, you can start from them and improve rather than starting again."] },
+  ],
+  callout: {
+    h: "December rewards early planners",
+    p: "Year-end is one of the best sales periods for many businesses, but it is also the most crowded. A clear offer, planned in November, with matching creatives ready to go in early December, puts you in front of customers before they have spent their budget elsewhere.",
+    quote: "Offer first, design second, post early.",
+    after: "Book your designer and printer early. Both get very busy in December, and rush charges add up quickly.",
+  },
+  extras: [
+    { h: "Year-end campaign checklist",
+      list: [
+        ["Offer.", "Clear, specific, with an end date."],
+        ["Creatives.", "Announcement, offer, stories, reminders, greetings."],
+        ["Print.", "Counter poster or standee for the shop."],
+        ["Channels.", "Instagram, WhatsApp, Google Business Profile, SMS."],
+        ["Timeline.", "Designs ready by early December."],
+      ],
+      paras: ["A monthly social media plan makes this easy, because year-end campaigns are scheduled alongside regular posts.", "If you also send greetings to corporate clients, plan a separate, simpler design for that: a clean card or digital greeting with your logo, rather than an offer post. Mixing sales messages into client greetings can feel pushy, while a warm thank-you note is remembered.", "Think about January too. Many customers spend heavily in December and look for value in the new year. A follow-up offer for existing customers in January, or a reminder about a New Year package they saw in December, can extend the season and smooth out the quieter weeks that usually follow. Planning both together costs very little extra design time.", "Keep the January designs in the same style, so the campaign feels continuous."] },
+  ],
+  faq: [
+    ["When should I start promoting Christmas offers?", "From the first or second week of December, with designs ready by then. Pre-order offers like cakes and hampers should be promoted earlier."],
+    ["What are good New Year offers for small businesses?", "New Year packages, annual plans, booking discounts for January, combo deals and gift-with-purchase offers work well for many businesses."],
+    ["Should I use Christmas themes if my customers don't celebrate Christmas?", "A general season's greetings or year-end celebration theme can feel festive and inclusive for a mixed audience."],
+  ],
+  related: [
+    ["/social-media-creatives-chennai/", "Social media creatives in Chennai", "service"],
+    ["/pricing/", "Design and video pricing", "pricing"],
+    ["/blog/festival-creatives-planning/", "Festival posts planned three weeks early", "5 min"],
+  ],
+  cta: {
+    h: "Year-end creatives ready before the rush.",
+    p: `I design ${ctaLink("/social-media-creatives-chennai/", "offer posts")}, stories and counter posters as one matching set. Posters start at ₹1,500 per design and monthly social packs at ₹9,000. Let's plan your December.`,
+  },
+};

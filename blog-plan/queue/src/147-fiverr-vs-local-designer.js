@@ -1,0 +1,63 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 33, date: "2026-11-09", slug: "fiverr-vs-local-designer", cat: "Business",
+  keyword: "Fiverr vs local designer India",
+  title: "Online Marketplace or Local Designer: Which to Hire?",
+  desc: "Hiring a designer on Fiverr or Upwork versus a local freelancer in India: price, communication, originality, files, ownership and when each option makes most sense.",
+  short: "Price, communication, originality, files and ownership compared, and when each option makes sense.",
+  headline: "Fiverr vs a local designer: which should a small business hire?",
+  crumb: "Marketplace vs local designer",
+  cardTitle: "Fiverr or a local designer: what you actually get",
+  card: "Cheaper, faster, closer, more accountable? An honest comparison of marketplace and local designers for small businesses.",
+  h1: ["Marketplace or local", "designer?"],
+  lede: "Many business owners in Chennai try a global marketplace like Fiverr or Upwork before looking for a local designer. Some have great experiences. Others end up with a logo they later find on a stock site, files they cannot use, or long delays across time zones. Both options can work. The trick is knowing which suits your project.",
+  intro: [
+    "I am a local freelancer, so I am not neutral. But I want to give an honest comparison, because the right choice depends on what you need, and sometimes a marketplace is genuinely the better fit.",
+  ],
+  sections: [
+    { h: "Price",
+      p: ["Marketplaces offer a huge range of prices, from very cheap gigs to premium specialists. The lowest prices are tempting, but they often come with templates, limited files and minimal revisions. Mid-range and top-rated sellers charge rates similar to, or higher than, experienced local freelancers.", "Local freelancers usually quote per project after a conversation. The price may look higher than the cheapest gigs, but it typically includes more research, original work and a complete file handover."] },
+    { h: "Communication",
+      p: ["On a marketplace, communication is mostly text messages through the platform, sometimes across time zones and languages. That works well for clear, simple tasks. It becomes harder for projects that need a real understanding of your business, local culture or bilingual Tamil and English design.", "A local designer can meet you, visit your shop, see your product, understand your customers and pick up the phone. For brand work, that context often makes the difference between a generic design and one that fits."] },
+    { h: "Originality and legal risk",
+      p: ["Marketplace communities themselves have discussed resold and copied logos. Some low-cost sellers reuse the same designs for many buyers or rely on stock icons. If you later try to trademark that logo, you may run into problems.", "Any designer, local or online, can do this. The safeguards are the same: check the portfolio, ask about originality, and get ownership in writing."],
+      note: "Do a reverse image search on any logo you receive before you print it widely. It takes a minute and can save a lot of trouble." },
+    { h: "Files and handover",
+      p: ["Many gigs offer source files and vector formats only in higher packages. Read exactly what is included before ordering. A local designer usually discusses files in the quote, but you should still ask specifically for vector files, colour versions and fonts."] },
+    { h: "Accountability",
+      p: ["Marketplaces offer buyer protection, reviews and dispute resolution, which is a real advantage. On the other hand, once the order is closed, it can be hard to get help with a file problem months later.", "A local designer's reputation depends on referrals and reviews in your city. You can find them again, and most are happy to help with small file requests long after the project."] },
+    { h: "When a marketplace makes sense",
+      p: ["For quick, well-defined tasks like a simple illustration, resizing graphics, a specific technical job or when you need a niche specialist not available locally, marketplaces work well. They are also fine when you already have a clear brand and need production help.", "For your core brand, such as a logo, packaging or signboard you will live with for years, the extra understanding of a local designer is often worth it."] },
+  ],
+  callout: {
+    h: "Choose by project, not by habit",
+    p: "There is no single right answer. Marketplaces are good for defined tasks and specialist skills. Local designers are good for brand work that needs context, conversation and long-term support. Many businesses use both: a local designer for the brand, and online help for small production jobs.",
+    quote: "The cheapest option is the one you don't have to redo in a year.",
+    after: "Whatever you choose, get a clear scope, check originality, make sure you receive full files and keep written proof that the design is yours.",
+  },
+  extras: [
+    { h: "Quick comparison",
+      list: [
+        ["Price.", "Marketplaces vary widely; local quotes include more context."],
+        ["Communication.", "Text across time zones vs calls and meetings."],
+        ["Local knowledge.", "Tamil, local customers and culture are easier locally."],
+        ["Originality.", "Check either way, especially very cheap gigs."],
+        ["Support.", "Platform protection vs ongoing local relationship."],
+      ],
+      paras: ["Read reviews carefully on any platform. Look for comments about communication, originality and files, not just star ratings.", "If you do use a marketplace, write the same kind of brief you would give a local designer: what your business does, who your customers are, where the design will be used and which files you need at the end. Sellers who ask good questions in return are usually the ones worth hiring, wherever they happen to be based."] },
+  ],
+  faq: [
+    ["Is Fiverr good for logo design?", "It can be, especially with experienced, well-reviewed sellers. Very cheap gigs often rely on templates and limited files, so read what is included and check originality."],
+    ["Why hire a local designer instead of an online freelancer?", "A local designer can understand your customers, language and market, meet you in person and offer ongoing support, which helps with brand work you will use for years."],
+    ["Can I trademark a logo bought online?", "Only if it is original and you own the rights. Logos built from templates or stock icons can cause problems, so get written confirmation of originality and ownership."],
+  ],
+  related: [
+    ["/freelancer-vs-agency-chennai/", "Freelancer vs agency in Chennai", "guide"],
+    ["/pricing/", "Design and video pricing", "pricing"],
+    ["/blog/freelancer-red-flags/", "Red flags to spot before paying an advance", "5 min"],
+  ],
+  cta: {
+    h: "A local designer you can actually call.",
+    p: `I'm based in Chennai and work with businesses here and across India, in Tamil and English. ${ctaLink("/logo-design-chennai/", "Logo design")} starts at ₹8,000 with original concepts and a full file pack. Let's talk.`,
+  },
+};

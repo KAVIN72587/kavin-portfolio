@@ -1,0 +1,63 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 137, date: "2026-11-08", slug: "letterhead-invoice-design", cat: "Print",
+  keyword: "letterhead and invoice design GST India",
+  title: "Letterhead and Invoice Design for Indian Businesses",
+  desc: "How to design a professional letterhead and invoice for an Indian business: the details to include, GST information, layout, digital templates and printing choices.",
+  short: "What to include, GST details, layout, digital templates and printing choices for letterheads and invoices.",
+  headline: "Letterhead and invoice design for Indian businesses: what to include and how",
+  crumb: "Letterhead and invoice design",
+  cardTitle: "Letterheads and invoices that make you look established",
+  card: "Your invoice is the last thing a client sees. How to design stationery that looks professional and holds the right details.",
+  h1: ["Letterheads and invoices that look", "professional"],
+  lede: "Many small businesses put real care into their logo and signboard, then send quotations on a plain Word page and invoices from a generic billing app template. Clients notice. A quotation on a clean letterhead and a clear, branded invoice make a business look established, and they reduce the questions and payment delays that come from confusing documents.",
+  intro: [
+    "Here is what a good letterhead and invoice should include for an Indian business, how to lay them out, and how to set them up so your team can use them every day without breaking the design.",
+  ],
+  sections: [
+    { h: "What goes on a letterhead",
+      p: ["A letterhead needs your logo, business name and contact details: address, phone, email and website. Many businesses also include their GSTIN, CIN for registered companies, or registration numbers relevant to their profession.", "Keep the header compact, so most of the page is available for the letter itself. A thin footer with the address and registration details is a common and tidy alternative to cramming everything at the top."] },
+    { h: "Design principles for letterheads",
+      p: ["A letterhead should feel calm and confident. Use your brand colours sparingly, perhaps a coloured logo and a thin line, rather than large blocks of colour that make printing expensive and text hard to read. Use the same fonts as the rest of your brand.", "Leave generous margins. Letters are often printed on office printers that cannot print right to the edge, and documents may be punched, filed or stapled."] },
+    { h: "What an invoice must show",
+      p: ["For GST-registered businesses, a tax invoice needs certain details, including the supplier's name, address and GSTIN, invoice number and date, the customer's details and GSTIN where applicable, a description of goods or services with HSN or SAC codes, quantity, value, tax rates and amounts, and place of supply.", "Rules can change and depend on your type of business, so confirm the exact requirements with your accountant. The designer's job is to arrange all of this so it is clear and easy to read, not to decide what is legally required."],
+      note: "Ask your accountant for a list of mandatory invoice fields before the design starts. Adding missing fields later can break the layout." },
+    { h: "Make the important things obvious",
+      p: ["The most important information on an invoice is the total amount due, the due date and how to pay. Make these stand out: larger text, a highlighted box, or a clear position at the bottom right. Include bank details, UPI ID or a payment QR code, so the client does not need to ask.", "Use a clean table for line items with clear column headings and enough space for long descriptions. Avoid tiny fonts and cramped columns."] },
+    { h: "Digital templates first",
+      p: ["Most letterheads and invoices today are filled in digitally and sent as PDFs. The design should be delivered as an editable template your team can actually use: a Word or Google Docs letterhead, and an invoice template in Excel, Google Sheets or your billing software if it allows custom layouts.", "Lock the header and footer so they cannot be moved accidentally, and set the fonts as defaults in the template."] },
+    { h: "Printed stationery",
+      p: ["If you print letterheads, 90 to 100 GSM bond or maplitho paper is standard and works in office printers. For premium stationery, slightly heavier paper with a subtle texture feels good, but test that it feeds through your printer first.", "Print a small batch initially. Addresses and phone numbers change, and a thousand outdated letterheads are a common waste."] },
+  ],
+  callout: {
+    h: "Small details, big impression",
+    p: "Letterheads and invoices are seen by every client, often at important moments: when they receive a quotation, sign a contract or pay. Clear, branded documents show that your business is organised and trustworthy, and a well-designed invoice is simply easier to pay.",
+    quote: "An invoice that is easy to read is an invoice that gets paid sooner.",
+    after: "Once the templates are ready, set them as the default in your email and billing tools so nobody slips back to the old plain versions.",
+  },
+  extras: [
+    { h: "Stationery checklist",
+      list: [
+        ["Letterhead.", "Logo, name, address, phone, email, website, registration numbers."],
+        ["Invoice.", "All fields your accountant confirms, clearly arranged."],
+        ["Payment.", "Total, due date, bank details, UPI ID or QR code."],
+        ["Templates.", "Editable Word, Docs or spreadsheet versions with locked headers."],
+        ["Print.", "90–100 GSM paper, small first batch."],
+      ],
+      paras: ["Add matching quotation and receipt templates while you are at it. Using the same layout for every document makes your paperwork feel like one system."] },
+  ],
+  faq: [
+    ["What should be included on a business letterhead in India?", "Your logo, business name, address, phone, email and website, along with GSTIN or company registration numbers if relevant."],
+    ["What details are required on a GST invoice?", "Typically supplier and customer details with GSTIN, invoice number and date, description with HSN or SAC codes, values, tax rates and amounts, and place of supply. Confirm the current requirements with your accountant."],
+    ["Can I get my letterhead as a Word template?", "Yes. Most businesses need an editable Word or Google Docs letterhead for everyday use, as well as a print-ready PDF for printed stationery."],
+  ],
+  related: [
+    ["/business-card-design-chennai/", "Business card and stationery design", "service"],
+    ["/pricing/", "Design and video pricing", "pricing"],
+    ["/blog/brand-kit-small-business/", "The brand kit that keeps everything consistent", "5 min"],
+  ],
+  cta: {
+    h: "Stationery your team can use every day.",
+    p: `I design ${ctaLink("/business-card-design-chennai/", "letterheads, invoices and visiting cards")} as editable templates and print-ready files that match your brand. Stationery design starts at ₹1,500 per design. Send me your current documents.`,
+  },
+};

@@ -1,0 +1,62 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 184, date: "2026-11-12", slug: "design-feedback-how-to-give", cat: "Business",
+  keyword: "how to give feedback to a designer",
+  title: "How to Give Feedback to a Designer",
+  desc: "How to give useful feedback to a graphic designer: describe problems not solutions, be specific, collect opinions first and review designs at their real size.",
+  short: "Describe problems not solutions, be specific, collect opinions first and review designs at real size.",
+  headline: "How to give feedback to a designer and get the design you want",
+  crumb: "Giving design feedback",
+  cardTitle: "Feedback that gets you the design you actually want",
+  card: "\"Make it pop\" doesn't help anyone. How to give feedback that leads to a better design in fewer rounds.",
+  h1: ["Feedback that gets you", "the right design"],
+  lede: "Most business owners have never been taught how to give design feedback, so they do what feels natural: \"I don't like it\", \"make it more modern\", \"can you try red?\" Designers do their best to interpret it, but vague feedback leads to guessing, and guessing leads to more rounds and frustration on both sides.",
+  intro: [
+    "Giving good feedback is a skill anyone can learn in a few minutes. Here is the approach I suggest to clients, and it consistently leads to better designs in fewer revisions.",
+  ],
+  sections: [
+    { h: "Start with what is working",
+      p: ["Begin by saying what you like. It is not just politeness. It tells the designer what to keep, so they do not accidentally remove the parts that were right while fixing the parts that were not.", "Even \"I like the colours and the overall layout\" is useful information."] },
+    { h: "Describe the problem, not the solution",
+      p: ["\"Make the logo bigger\" is a solution. \"I'm worried people won't notice our name from a distance\" is a problem. When you describe the problem, the designer can choose the best solution, which might be a bigger logo, but might also be stronger contrast, a different position or less clutter around it.", "You are the expert on your business and customers. The designer is the expert on visual solutions. Feedback works best when each side does their part."] },
+    { h: "Be specific",
+      p: ["Point to the exact element: \"the phone number at the bottom\", \"the photo on the second panel\", \"the tagline under the logo\". Numbered lists and screenshots with arrows or circles help a lot.", "Replace vague words with what you mean. Instead of \"make it pop\", try \"it feels a bit quiet; can the offer be more noticeable?\" Instead of \"more modern\", try \"it reminds me of older brands; can it feel cleaner and simpler?\""],
+      note: "If you cannot explain why something feels wrong, say so honestly. A good designer will ask questions to find the cause." },
+    { h: "Collect opinions before sending",
+      p: ["If several people are involved, gather everyone's feedback first, resolve disagreements internally and send one combined message. Contradictory feedback from different people, arriving at different times, is the fastest way to lose a week.", "Decide who has the final say. Opinions from friends and family can be helpful, but they should not replace your judgement about your own customers."] },
+    { h: "Review designs at real size and in context",
+      p: ["Look at designs the way customers will see them. Print a flyer at actual size. View an Instagram post on your phone, not a big monitor. Hold a visiting card in your hand. Imagine the signboard from across the road.", "Many concerns that seem important on screen disappear at real size, and some real problems only appear there."] },
+    { h: "Keep your customers in mind",
+      p: ["It is natural to judge a design by personal taste: \"I don't like green.\" But the real question is whether the design works for your customers and your goals. Ask yourself: will this help the right people notice us, understand us and trust us? Personal preference still matters, but it should not be the only test."] },
+  ],
+  callout: {
+    h: "Good feedback is a gift to your designer",
+    p: "Designers do their best work when they understand what is working, what is not and why. Clear, specific feedback, collected in one place and focused on your customers, turns the revision process into a collaboration rather than a guessing game.",
+    quote: "Tell the designer what's wrong. Let them work out how to fix it.",
+    after: "After the project, a short note on what went well also helps. It shapes how the designer works with you next time.",
+  },
+  extras: [
+    { h: "Feedback examples, before and after",
+      list: [
+        ["Instead of \"I don't like it\".", "\"The layout is good, but the photo feels dark and unwelcoming.\""],
+        ["Instead of \"Make it pop\".", "\"The discount is the main message; it needs to stand out more.\""],
+        ["Instead of \"More modern\".", "\"It feels old-fashioned; can we try cleaner fonts and more space?\""],
+        ["Instead of \"Try red\".", "\"It needs to feel more energetic, like our food.\""],
+      ],
+      paras: ["Notice how each improved version explains the goal. That gives the designer room to find the best solution.", "Finally, give feedback in writing where possible, even after a call. A short numbered list sent after the conversation makes sure nothing is forgotten or misunderstood, and both of you can tick items off as they are done.", "It is fine to change your mind, too. Just say so clearly and explain what changed."] },
+  ],
+  faq: [
+    ["How do I give feedback on a logo design?", "Start with what works, describe problems rather than solutions, point to specific elements, review it at real sizes and send one combined set of comments."],
+    ["What if I don't know why I don't like a design?", "Say so honestly and describe how it makes you feel. A good designer will ask questions to identify the problem and suggest options."],
+    ["Should I ask friends and family for design feedback?", "Their opinions can help, but make the final decision based on your customers and goals, not just personal taste."],
+  ],
+  related: [
+    ["/pricing/", "Design and video pricing", "pricing"],
+    ["/graphic-design-chennai/", "Graphic design in Chennai", "service"],
+    ["/blog/how-many-revisions/", "What unlimited revisions really means", "5 min"],
+  ],
+  cta: {
+    h: "A designer who asks the right questions.",
+    p: `I help you shape clear feedback at every stage, so each revision round moves us closer. All ${ctaLink("/graphic-design-chennai/", "design projects")} include two revision rounds. Tell me what you need designed.`,
+  },
+};

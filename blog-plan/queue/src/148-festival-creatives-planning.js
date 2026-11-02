@@ -1,0 +1,63 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 43, date: "2026-11-10", slug: "festival-creatives-planning", cat: "Design",
+  keyword: "Diwali Pongal social media posts planning",
+  title: "Plan Festival Social Media Posts Weeks in Advance",
+  desc: "How to plan festival social media posts early: a yearly festival calendar, what to design, when to start, and how to avoid the generic last-minute greeting.",
+  short: "A yearly festival calendar, what to design, when to start, and how to avoid last-minute generic greetings.",
+  headline: "Festival creatives: how to plan social media posts weeks in advance",
+  crumb: "Festival creatives planning",
+  cardTitle: "Festival posts planned three weeks early, not the night before",
+  card: "Last-minute festival greetings all look the same. How to plan a year of festival creatives that actually bring in customers.",
+  h1: ["Festival posts, planned", "properly"],
+  lede: "On the morning of every major festival, thousands of Chennai businesses post nearly identical greetings: a stock image of lamps or kolam, \"Happy Diwali from all of us\" and a logo in the corner. They are posted in a rush the night before, and most customers scroll straight past them.",
+  intro: [
+    "Festivals are some of the best selling seasons of the year, but only if you plan. Here is how I help clients plan festival creatives weeks in advance, so they stand out, support real offers and do not cause late-night panic.",
+  ],
+  sections: [
+    { h: "Build a yearly festival calendar",
+      p: ["Start by listing every festival and occasion that matters to your customers. For many Tamil Nadu businesses, that includes Pongal, Tamil New Year, Ramzan, Vinayagar Chathurthi, Ayudha Pooja, Deepavali, Karthigai Deepam, Christmas and New Year, plus national days and wedding seasons.", "Add business-specific dates too: your anniversary, back-to-school season for stationery shops, exam results for coaching centres, monsoon for repair services. Not every festival needs a post. Choose the ones that fit your customers."] },
+    { h: "Decide what each festival is for",
+      p: ["Some festivals are for selling: Deepavali for sweets, clothes and electronics; Pongal for groceries and home goods; wedding season for jewellery and catering. Others are for goodwill: a simple greeting that keeps your brand visible.", "For selling festivals, plan the offer first, then the creatives. A beautiful greeting without a reason to buy rarely brings anyone into the shop."] },
+    { h: "Start three weeks before",
+      p: ["Customers start planning purchases for big festivals well before the day. Offer posts should go out one to two weeks before, with reminders closer to the date. That means the design should be ready about three weeks before the festival.", "Starting early also avoids the rush. Designers and printers are busiest in the days before Deepavali and Pongal, and last-minute work often costs more."],
+      note: "Festival dates for Tamil festivals vary each year. Check the official calendar for the year when you plan." },
+    { h: "Plan a small set, not one post",
+      p: ["For a major selling festival, plan a set: a teaser or announcement, the main offer post, a story version, a reminder a few days before, a festival-day greeting and perhaps a thank-you afterwards. Matching designs make the campaign feel planned and professional.", "For goodwill festivals, a single greeting post and a story are usually enough."] },
+    { h: "Make it look like your brand",
+      p: ["Generic festival templates make every business look the same. Use your own brand colours, fonts and photos, and include something specific to your business: your sweets arranged for Deepavali, your team in traditional clothes for Pongal, your products as gifts.", "Real photos of your shop and products during festival preparations are often more engaging than polished stock images."] },
+    { h: "Think beyond Instagram",
+      p: ["The same campaign can work across WhatsApp status, Google Business Profile posts, printed counter posters and SMS. Ask your designer for versions in different sizes at the same time. It costs less than ordering each one separately at the last minute."] },
+  ],
+  callout: {
+    h: "Festivals reward the businesses that plan",
+    p: "Festival seasons bring customers who are ready to spend. The businesses that benefit most are not those with the biggest budgets, but those who decide on an offer early, prepare matching creatives and share them before customers have already made their plans.",
+    quote: "Plan the offer, then the design, then the posting dates. In that order.",
+    after: "After each festival, note what worked: which post got the most enquiries, which offer sold best. Use those notes when you plan the same festival next year.",
+  },
+  extras: [
+    { h: "Festival planning timeline",
+      list: [
+        ["4 weeks before.", "Decide the offer and which channels to use."],
+        ["3 weeks before.", "Brief your designer with photos and offer details."],
+        ["2 weeks before.", "Approve designs, print counter posters if needed."],
+        ["1–2 weeks before.", "Post announcements and offers."],
+        ["Festival week.", "Reminders, stories and the festival-day greeting."],
+      ],
+      paras: ["A monthly social media retainer makes this easier, because festivals are planned as part of the regular calendar rather than as emergency jobs.", "It also helps to keep a folder of photos taken during each festival: your decorated shop, customers collecting orders, your team preparing. Those real images make next year's posts far more personal than anything from a stock library, and they cost nothing. Over two or three years, you build a festival look that customers start to recognise as yours.", "Start small if this feels like a lot: pick the two festivals that matter most to your sales this year and plan just those properly."] },
+  ],
+  faq: [
+    ["When should I post festival offers on social media?", "Post offers one to two weeks before the festival, when customers are planning purchases, with reminders a few days before and a greeting on the day."],
+    ["How early should I get festival creatives designed?", "About three weeks before the festival. That leaves time for revisions, printing and posting the offer early enough to matter."],
+    ["Which festivals should my business post about?", "Choose festivals your customers celebrate and those that fit your products. Not every occasion needs a post, but major local festivals usually do."],
+  ],
+  related: [
+    ["/social-media-creatives-chennai/", "Social media creatives in Chennai", "service"],
+    ["/pricing/", "Design and video pricing", "pricing"],
+    ["/blog/social-media-post-sizes/", "The social media sizes your business actually needs", "5 min"],
+  ],
+  cta: {
+    h: "Festival creatives ready weeks ahead.",
+    p: `My ${ctaLink("/social-media-creatives-chennai/", "social media packs")} include festival creatives planned into your monthly calendar, so nothing is rushed. Packs start at ₹9,000 a month for 12 posts and 4 story templates. Let's plan your next festival.`,
+  },
+};

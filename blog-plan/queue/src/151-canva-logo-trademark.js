@@ -1,0 +1,63 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 32, date: "2026-11-11", slug: "canva-logo-trademark", cat: "Design",
+  keyword: "can I trademark a Canva logo India",
+  title: "Can You Trademark a Logo Made in Canva?",
+  desc: "Can a logo made in Canva be trademarked in India? Why template elements cause problems, what to check in the licence and how to make your logo truly your own.",
+  short: "Why template elements cause problems, what to check in the licence, and how to make a logo truly yours.",
+  headline: "Can you trademark a logo made in Canva? What small businesses should know",
+  crumb: "Canva logo trademark",
+  cardTitle: "When a Canva logo is yours, and when it isn't",
+  card: "A logo from a template might not be yours to protect. What to check before you put it on boards and packaging.",
+  h1: ["Can you trademark a", "Canva logo?"],
+  lede: "Canva has made design accessible to everyone, and many small businesses start with a logo made there in an evening. That is a perfectly reasonable way to begin. The trouble comes later, when the business grows, the logo is on boards and packaging, and the owner applies for a trademark, only to discover that parts of the logo were never theirs to protect.",
+  intro: [
+    "I am a designer, not a lawyer, so treat this as practical guidance and speak to a trademark professional for your specific case. But here is what every business owner should understand about template-based logos and trademarks.",
+  ],
+  sections: [
+    { h: "The problem is templates and stock elements",
+      p: ["A trademark gives you exclusive rights to a mark for your goods or services. To get that, the mark needs to be distinctive, and you need the right to claim it as yours.", "Canva logo templates and design elements are available to millions of users. If your logo uses a template or a stock icon from the library, someone else can legally use the same elements in their own designs. That makes it difficult, often impossible, to claim exclusive rights."] },
+    { h: "What the licence says",
+      p: ["Design tools and stock libraries have licence terms that set out how their content can be used. Canva's terms have historically restricted using its stock content as part of a trademark or logo you want to register. These terms can change, so read the current licence agreement on Canva's website before relying on any template or element in a logo.", "The general principle applies to most stock sources: stock icons and templates are licensed for use, not sold for exclusive ownership."],
+      note: "If you used only basic shapes and text that you arranged yourself, the situation may be different. A trademark professional can advise on your specific logo." },
+    { h: "Fonts matter less than you think",
+      p: ["Using a common font for your business name is not usually a problem for trademark purposes, because the protection often covers the word itself and its distinctive presentation together. But a name set in a common font with a stock icon is not very distinctive, which can weaken your application."] },
+    { h: "Risks beyond trademarks",
+      p: ["Even if you never apply for a trademark, a template logo has practical risks. Other businesses, even in your own city or field, can use the same design. Customers may confuse you with them. And if a competitor registers a similar mark first, you could be forced to change your logo after investing in signboards and packaging."] },
+    { h: "How to make a logo truly yours",
+      p: ["The safest route is an original logo designed specifically for your business, with no stock templates or icons, and written confirmation from the designer that the work is original and that rights pass to you.", "If you already have a Canva logo that customers recognise, a designer can often create an original version that keeps the familiar feel, colours and layout while replacing template elements with custom work. That preserves recognition while giving you something you can protect."] },
+    { h: "When a Canva logo is fine",
+      p: ["For a hobby project, a short-term event, or a very early business still testing its idea, a quick Canva logo can be perfectly sensible. Just know that it is a starting point. Before investing heavily in signboards, packaging and trademark filings, replace it with something original."] },
+  ],
+  callout: {
+    h: "Start simple, but own what you build on",
+    p: "There is nothing wrong with starting small. The mistake is building years of recognition on a logo you cannot protect. Once your business is real enough to print boards, packaging and uniforms, it is real enough to have a logo that is truly yours.",
+    quote: "A template logo is borrowed. A trademark needs something you own.",
+    after: "If you plan to file a trademark, do it before or soon after launching the logo, and get a professional search done first to avoid conflicts.",
+  },
+  extras: [
+    { h: "Before you file a trademark",
+      list: [
+        ["Originality.", "No templates, stock icons or clip art in the logo."],
+        ["Rights.", "Written confirmation from the designer that rights are yours."],
+        ["Search.", "A trademark search for similar existing marks."],
+        ["Classes.", "The right classes for your goods or services."],
+        ["Advice.", "A trademark attorney or agent for the filing."],
+      ],
+      paras: ["This article is general information, not legal advice. Trademark rules are specific and change over time, so consult a qualified professional before filing."] },
+  ],
+  faq: [
+    ["Can I trademark a logo I made in Canva?", "If it uses Canva templates or stock elements, it is usually difficult because those elements are not exclusively yours. Check Canva's current licence and consult a trademark professional."],
+    ["Is it legal to use a Canva logo for my business?", "Using it generally follows Canva's licence terms, but you may not be able to claim exclusive rights, and others can use similar designs."],
+    ["How do I make my Canva logo trademarkable?", "Have an original version designed without template or stock elements, ideally keeping the familiar look, and get written confirmation of ownership."],
+  ],
+  related: [
+    ["/logo-design-chennai/", "Logo design in Chennai", "service"],
+    ["/logo-design-cost-chennai/", "Logo design cost in Chennai", "pricing"],
+    ["/blog/logo-design-price-explained/", "Why one logo costs ₹2,000 and another ₹50,000", "5 min"],
+  ],
+  cta: {
+    h: "An original logo you can actually protect.",
+    p: `I design original ${ctaLink("/logo-design-chennai/", "logos")} with no templates or stock icons, and can redraw an existing Canva logo into something truly yours. Logo design starts at ₹8,000. Send me what you have.`,
+  },
+};

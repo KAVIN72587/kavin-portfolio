@@ -1,0 +1,63 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 142, date: "2026-11-08", slug: "design-advance-payment", cat: "Business",
+  keyword: "design advance payment how much freelancer",
+  title: "Why Designers Ask for an Advance, and How Much Is Fair",
+  desc: "Why freelance designers ask for an advance payment, how much is normal in India, how staged payments protect both sides, and what to check before you pay anything.",
+  short: "Why designers ask for an advance, what is normal in India, how staged payments work and what to check first.",
+  headline: "Why designers ask for an advance payment, and how much is fair",
+  crumb: "Design advance payment",
+  cardTitle: "Why designers ask for 50% upfront, and when to worry",
+  card: "An advance is normal. Paying everything to a stranger isn't. How payment stages protect you and your designer.",
+  h1: ["Why designers ask for", "an advance"],
+  lede: "Some business owners are uncomfortable when a designer asks for money before any work is shown. It can feel like a risk, especially after hearing stories of freelancers who disappeared. But from the designer's side, starting work with no commitment is also a risk, and it is one they face on every new project.",
+  intro: [
+    "Here is why advances exist, what is normal for design work in India, how staged payments protect both sides, and the checks worth doing before you pay anyone.",
+  ],
+  sections: [
+    { h: "Why designers ask for an advance",
+      p: ["When a designer accepts a project, they block time in their schedule and often turn other work away. Research, sketches and concepts happen before you see anything, and that is real work. Without an advance, a client can disappear after seeing concepts, or simply change their mind, and the designer has nothing to show for days of effort.", "An advance confirms that both sides are committed. It also filters out casual enquiries, which allows designers to give serious clients proper attention."] },
+    { h: "What is normal in India",
+      p: ["For small design projects such as logos, brochures and packaging, a 50% advance with the balance on delivery of final files is common. I work this way: 50% to book the slot, and the balance when the final files are ready.", "Larger projects are often split into three or more stages, such as 40% to start, 30% after concepts are approved and 30% on completion. Monthly retainers, like social media packs, are usually paid at the start of each month."] },
+    { h: "Why staged payments protect you",
+      p: ["Paying in stages means you never pay for work you have not seen progress on. If something goes wrong after concepts, you have only paid the first part. And because the final payment is due on delivery, the designer has every reason to complete the work and hand over all the files.", "Staged payments also make the project feel like a partnership. Each stage is a checkpoint where both sides confirm they are on track."],
+      note: "Always link the final payment to the delivery of final files. Paying everything before you receive the vector files removes your leverage if anything is missing." },
+    { h: "When to be cautious",
+      p: ["Be careful if someone asks for 100% upfront with no written scope, especially if they are a new contact with no verifiable work. Be careful if the payment details belong to a different name from the person you are speaking to, or if you are pushed to pay quickly with a special discount that expires today.", "A professional designer will explain their terms calmly and put them in writing before asking for any money."] },
+    { h: "What to check before paying",
+      p: ["Make sure you have a written quote or message stating the deliverables, timeline, number of revisions, files you will receive and payment stages. Check the designer's portfolio and, if possible, speak to a past client or read reviews that mention delivery.", "Ask for an invoice or receipt for every payment, even small ones. It creates a clear record and is useful for your own accounts."] },
+    { h: "What happens if the project is cancelled",
+      p: ["Agree on this at the start. Usually, if you cancel after work has begun, the advance covers the time spent and is not refunded. If the designer cannot complete the work, a fair designer will refund or hand over what has been done. Having this in writing avoids awkward conversations later."] },
+  ],
+  callout: {
+    h: "Clear terms make advances comfortable",
+    p: "An advance is not a sign of distrust. It is a normal part of professional service work, just like a deposit for a caterer or a booking fee for a wedding photographer. What makes it comfortable is clarity: knowing exactly what you are paying for, when the rest is due and what you will receive at the end.",
+    quote: "Pay in stages, get everything in writing, and link the final payment to the final files.",
+    after: "If a designer's payment terms do not suit you, discuss them before starting. Many are flexible on stages for larger projects, as long as the commitment is clear.",
+  },
+  extras: [
+    { h: "Payment checklist",
+      list: [
+        ["Quote.", "Deliverables, timeline, revisions and files in writing."],
+        ["Stages.", "Advance amount and when the balance is due."],
+        ["Final files.", "Balance paid on delivery of the complete file pack."],
+        ["Invoices.", "A receipt or invoice for every payment."],
+        ["Cancellation.", "What happens to the advance if plans change."],
+      ],
+      paras: ["UPI and bank transfers leave a clear record. Avoid cash payments for project work unless you get a written receipt."] },
+  ],
+  faq: [
+    ["How much advance should I pay a freelance designer?", "A 50% advance with the balance on delivery is common for small design projects in India. Larger projects are often split into three or more stages."],
+    ["Is it normal for designers to ask for payment upfront?", "Yes, a partial advance is normal. It confirms the booking and covers early work. Paying the full amount upfront to an unknown contact is riskier."],
+    ["Will I get my advance back if I cancel?", "Usually not once work has started, because it covers the designer's time. Agree on cancellation terms in writing before you begin."],
+  ],
+  related: [
+    ["/pricing/", "Design and video pricing", "pricing"],
+    ["/hire-me/", "How to hire me", "guide"],
+    ["/blog/freelancer-red-flags/", "Red flags to spot before paying an advance", "5 min"],
+  ],
+  cta: {
+    h: "50% to start, balance on final files.",
+    p: `My ${ctaLink("/pricing/", "payment terms")} are simple: half to book, the rest when you receive the final files, with an invoice for every payment. The brief call is free. Tell me about your project.`,
+  },
+};

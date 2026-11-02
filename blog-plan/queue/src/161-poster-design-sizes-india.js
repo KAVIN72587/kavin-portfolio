@@ -1,0 +1,63 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 140, date: "2026-11-14", slug: "poster-design-sizes-india", cat: "Print",
+  keyword: "poster sizes India A3 A2 flex",
+  title: "Poster and Banner Sizes in India: A Practical Guide",
+  desc: "Common poster and banner sizes in India, from A4 to A0 and flex banners in feet, with resolution, bleed and readability tips so your print comes out sharp.",
+  short: "A4 to A0 and flex banners in feet, with resolution, bleed and readability tips for sharp printing.",
+  headline: "Poster and banner sizes in India: dimensions, resolution and bleed",
+  crumb: "Poster and banner sizes",
+  cardTitle: "Poster and banner sizes, resolution and bleed in one place",
+  card: "A3, A2, 3×6 feet? The common print sizes in India and how to prepare files that print sharp at each one.",
+  h1: ["Poster and banner sizes,", "explained"],
+  lede: "\"Make it A3\" and \"make it 4 by 3 feet\" are two very different jobs, but they often arrive as the same request: \"Can you design a poster?\" Designing at the wrong size, or at the right size but low resolution, is one of the most common reasons posters and banners come back blurry, stretched or with text cut off.",
+  intro: [
+    "Here are the poster and banner sizes most often used in India, plus the resolution, bleed and readability guidelines that make each one print well.",
+  ],
+  sections: [
+    { h: "Paper poster sizes",
+      p: ["The A series is standard for paper posters in India. A4 is 210 × 297 mm, the size of normal printer paper, used for notices and small posters. A3 is 297 × 420 mm, common for shop posters and notice boards. A2 is 420 × 594 mm and A1 is 594 × 841 mm, used for larger posters in shops, schools and events. A0 is 841 × 1189 mm, often for exhibitions and research posters.", "Each size is exactly double the one before it, which makes it easy to scale designs between them while keeping the same proportions."] },
+    { h: "Flex and vinyl banners",
+      p: ["Large banners in India are usually specified in feet. Common sizes include 2 × 3, 3 × 6, 4 × 6, 6 × 4 and 10 × 4 feet for shop fronts, event backdrops and hoardings. Roll-up standees are often around 2.5 × 6.5 or 3 × 6 feet.", "There is no single standard, because banners are sized to fit the space. Always measure the actual location and confirm the dimensions with your printer before design starts."] },
+    { h: "Resolution for each size",
+      p: ["For small posters viewed up close, like A4 and A3, images should be around 300 pixels per inch at the final size. For larger posters, 150 to 200 PPI is usually enough. For big flex banners seen from several metres away, 72 to 100 PPI at full size often works well, and printers may prefer smaller files.", "Logos and text should always be vector, so they stay sharp at any size. Photos are where resolution matters most."],
+      note: "A phone photo can look fine on an A4 poster but soft on a 6-foot banner. Check photo resolution before choosing a large size." },
+    { h: "Bleed and safe margins",
+      p: ["For paper posters printed edge to edge, add 3 mm bleed on every side and keep text at least 5 mm inside the edge. For flex banners, printers often ask for extra margin, sometimes several centimetres, for eyelets, stitching or wrapping around a frame.", "Ask your printer how they finish the banner, because it changes how much space to leave around the edges."] },
+    { h: "Design for viewing distance",
+      p: ["The bigger the poster, the further away people usually stand. A rough rule is that text should be at least 2.5 cm tall for every 3 metres of viewing distance. A banner on a shop front read from across the road needs very large, simple text.", "Keep the message short: a headline, one key detail, and a contact method or QR code. Long paragraphs belong in brochures, not posters."] },
+    { h: "Orientation and proportion",
+      p: ["Portrait posters suit walls, doors and notice boards. Landscape banners suit shop fronts, stage backdrops and fences. If you need both, plan the design so the key elements can be rearranged rather than simply stretched, which distorts everything."] },
+  ],
+  callout: {
+    h: "Size first, design second",
+    p: "The size and viewing distance decide almost everything about a poster: how much text fits, how big it must be, what image resolution you need and how the file should be prepared. Confirming the size before design starts avoids the most common print problems.",
+    quote: "Measure the wall, then design the poster.",
+    after: "If you need the same poster in several sizes, ask for a master design that can be adapted to each, rather than one design stretched to fit.",
+  },
+  extras: [
+    { h: "Quick size reference",
+      list: [
+        ["A4.", "210 × 297 mm. Notices, small posters, 300 PPI."],
+        ["A3.", "297 × 420 mm. Shop and notice board posters, 300 PPI."],
+        ["A2 and A1.", "420 × 594 and 594 × 841 mm. Larger indoor posters, 150–200 PPI."],
+        ["Flex banners.", "Measured in feet, sized to the space, around 72–100 PPI at full size."],
+        ["Standees.", "Around 2.5 × 6.5 or 3 × 6 feet, confirm with printer."],
+      ],
+      paras: ["Always confirm the exact final size, bleed and finishing with your printer before artwork is prepared.", "When you send a poster to print, include a small JPG preview along with the print PDF. It helps the printer check quickly that they have the right file and orientation, and avoids mix-ups when several jobs are being printed for the same business."] },
+  ],
+  faq: [
+    ["What is the size of an A3 poster?", "An A3 poster is 297 × 420 mm, or about 11.7 × 16.5 inches."],
+    ["What resolution is needed for a flex banner?", "For large flex banners viewed from a distance, around 72 to 100 PPI at full size usually works. Logos and text should be vector."],
+    ["What size is a standard roll-up standee in India?", "Common sizes are around 2.5 × 6.5 feet or 3 × 6 feet, but confirm the exact size with your printer as stands vary."],
+  ],
+  related: [
+    ["/poster-flyer-design-chennai/", "Poster and flyer design in Chennai", "service"],
+    ["/pricing/", "Design and video pricing", "pricing"],
+    ["/blog/flex-vs-vinyl-vs-acp-signboard/", "Flex, vinyl or ACP: choosing your signboard", "5 min"],
+  ],
+  cta: {
+    h: "Posters prepared for the exact size you need.",
+    p: `I design ${ctaLink("/poster-flyer-design-chennai/", "posters and banners")} at the correct size and resolution, with bleed and margins your printer expects. Poster design starts at ₹1,500 per design, with two sizes included. Send me your measurements.`,
+  },
+};
