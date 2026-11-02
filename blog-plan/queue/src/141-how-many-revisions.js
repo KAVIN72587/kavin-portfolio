@@ -1,0 +1,63 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 40, date: "2026-11-07", slug: "how-many-revisions", cat: "Business",
+  keyword: "how many design revisions are normal",
+  title: "How Many Design Revisions Are Normal?",
+  desc: "How many design revisions are normal, what counts as a revision round, why unlimited revisions is a warning sign, and how to give feedback that needs fewer rounds.",
+  short: "What counts as a revision round, why unlimited revisions is a warning sign, and how to need fewer rounds.",
+  headline: "How many design revisions are normal, and what unlimited revisions really means",
+  crumb: "Design revisions",
+  cardTitle: "What \"unlimited revisions\" really means",
+  card: "Two rounds is normal. Ten is a sign something went wrong. How revisions work, and how to get it right sooner.",
+  h1: ["How many revisions", "are normal?"],
+  lede: "Some design offers promise \"unlimited revisions\" as if it were a guarantee of quality. Others include two rounds and charge for more. Business owners are understandably unsure which is fairer. In my experience, the number of revisions a project needs says more about the brief and the process than about the designer's generosity.",
+  intro: [
+    "Here is what a revision round actually is, how many are normal for common design jobs, why unlimited revisions often works against you, and how to get to a final design faster.",
+  ],
+  sections: [
+    { h: "What counts as a revision round",
+      p: ["A revision round is one consolidated set of feedback from you, applied by the designer in one pass. For example: \"Make the logo icon smaller, try the darker blue, and change the font of the tagline.\" That is one round, even though it includes three changes.", "Sending one change on Monday, another on Tuesday and a third on Thursday is usually three rounds, because the designer opens, edits and exports the file three times. Collecting feedback first makes each round count."] },
+    { h: "What is normal for common jobs",
+      p: ["For a logo, two revision rounds after choosing a concept is standard and usually enough. For a brochure or flyer, one or two rounds covers text corrections and layout tweaks. For social media posts, small corrections are normal, but big changes to an approved template should be rare.", "My standard terms include two revision rounds on every project. Most clients use one or two. Very few need more, and when they do, it is usually because the brief changed."] },
+    { h: "Revisions are not new concepts",
+      p: ["A revision refines an existing design. Asking for a completely different direction after concepts are presented, such as switching from a modern minimal logo to a traditional emblem, is a new concept, not a revision. Good designers will tell you when a request crosses that line and offer options, rather than quietly absorbing it or refusing."] },
+    { h: "Why \"unlimited revisions\" is a warning sign",
+      p: ["It sounds generous, but in practice, unlimited revisions often means the designer starts with a weak, quick concept and expects you to steer it through many small changes. The final design is shaped by trial and error rather than by thinking and research.", "It can also be a way of avoiding clear terms. When nothing is limited, nothing is defined, and both sides can end up frustrated after the twentieth round of tiny changes."],
+      note: "A designer who limits revisions is not being stingy. They are planning to get close on the first attempt." },
+    { h: "Why projects need too many rounds",
+      p: ["The usual causes are a vague brief, feedback from several people arriving separately, decision makers seeing the work only at the end, and feedback that describes feelings without direction, like \"it's not popping\".", "Each of these can be fixed before the project starts: a clear brief, one point of contact, all decision makers involved from the first round, and specific feedback."] },
+    { h: "How to give feedback that works",
+      p: ["Be specific about what you like as well as what you do not. Explain the problem rather than prescribing the solution: \"The phone number is hard to read from a distance\" is more useful than \"make it red\". Number your points, send them in one message and attach screenshots with notes if it helps.", "If you are not sure why something feels wrong, say so. A good designer will ask questions and help you put it into words."] },
+  ],
+  callout: {
+    h: "Fewer revisions usually means a better process",
+    p: "Two well-used revision rounds with clear feedback produce better work than ten rounds of guesswork. The goal is not to squeeze as many changes as possible from a designer, but to reach a design that works for your business as directly as possible.",
+    quote: "Clear feedback is worth more than unlimited revisions.",
+    after: "If you need extra rounds, ask for a price before they start. A fair designer will quote them openly rather than rushing or refusing.",
+  },
+  extras: [
+    { h: "Feedback checklist for each round",
+      list: [
+        ["Collect.", "Gather feedback from everyone involved first."],
+        ["Number.", "List each point separately and clearly."],
+        ["Explain.", "Describe the problem, not just the fix."],
+        ["Praise.", "Say what is working, so it stays."],
+        ["Send once.", "One message per round, with screenshots if useful."],
+      ],
+      paras: ["Following these five steps usually cuts the number of rounds in half, and the designer will thank you for it.", "It also helps to look at the design in the place it will be used before you send feedback. Print the flyer at actual size, view the social post on your phone, or hold the visiting card in your hand. Many changes that seem important on a large monitor disappear at real size, and some real problems only show up there."] },
+  ],
+  faq: [
+    ["How many revisions should a logo designer offer?", "Two revision rounds after you choose a concept is standard and usually enough for a small business logo."],
+    ["Are unlimited revisions a good deal?", "Not usually. They often lead to weak first concepts and many small changes. Clear limits with a thoughtful first round tend to give better results."],
+    ["What is the difference between a revision and a new concept?", "A revision refines an existing design. A new concept is a different direction altogether, which normally needs fresh design time and is often charged separately."],
+  ],
+  related: [
+    ["/pricing/", "Design and video pricing", "pricing"],
+    ["/freelancer-vs-agency-chennai/", "Freelancer vs agency in Chennai", "guide"],
+    ["/blog/freelancer-red-flags/", "Red flags to spot before paying an advance", "5 min"],
+  ],
+  cta: {
+    h: "Two revision rounds, done properly.",
+    p: `Every project includes two revision rounds, and I help you shape clear feedback so each round counts. See all my ${ctaLink("/pricing/", "rates and terms")} on the pricing page. Tell me what you need designed.`,
+  },
+};

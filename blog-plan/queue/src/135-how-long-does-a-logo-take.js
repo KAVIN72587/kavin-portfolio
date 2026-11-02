@@ -1,0 +1,63 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 35, date: "2026-11-05", slug: "how-long-does-a-logo-take", cat: "Business",
+  keyword: "how long does logo design take",
+  title: "How Long Does Logo Design Take? Realistic Timelines",
+  desc: "How long logo design really takes, from brief to final files: a realistic week-by-week timeline, what slows projects down, and how to have it ready for a launch.",
+  short: "A realistic timeline from brief to final files, what slows logo projects down, and how to stay on schedule.",
+  headline: "How long does logo design take? A realistic timeline from brief to files",
+  crumb: "Logo design timeline",
+  cardTitle: "How long a logo really takes, and what slows it down",
+  card: "Five days of design can turn into five weeks of waiting. A realistic timeline and how to keep your logo on schedule.",
+  h1: ["How long a logo really", "takes"],
+  lede: "\"Can you do the logo by Friday?\" is a question I hear a lot, usually because a signboard, a GST registration or an opening date is already fixed. Sometimes it is possible. Often, the design is not the slow part at all. The waiting between rounds is.",
+  intro: [
+    "Here is a realistic timeline for a small business logo, what each stage involves, the things that usually cause delays, and how to plan if you have a firm launch date.",
+  ],
+  sections: [
+    { h: "The design time itself",
+      p: ["For a typical small business logo, the actual design work, from understanding the brief to presenting concepts, takes about three to five working days. My standard timeline for a logo is five days for the first concepts.", "That time includes research on your industry and competitors, sketching many rough ideas, developing the strongest few on screen and preparing a presentation that shows each concept in real use, such as on a signboard or a visiting card."] },
+    { h: "Revisions",
+      p: ["After the first presentation, you choose a direction and send feedback. Each revision round usually takes one to three days on the designer's side, depending on how big the changes are. Most projects need one or two rounds.", "On your side, a round takes as long as it takes to collect feedback. If two partners need to discuss and agree, this can easily add a week."] },
+    { h: "Final files",
+      p: ["Once the design is approved, preparing the final file pack, with vector and PNG files, colour and single-colour versions and a short usage guide, takes another day or two. Rushing this stage is a mistake: it is the part you will use for years."] },
+    { h: "A realistic total",
+      p: ["Put together, a straightforward logo takes about two to three weeks from brief to final files. That allows five days for concepts, two revision rounds with time for your feedback, and final file preparation.", "It can be faster if feedback is quick and decisive. It can be much slower if decision makers are unavailable, the brief changes halfway or the business name is still being finalised."],
+      note: "Do not order signboards, printed bags or uniforms until the logo files are final. Changing a logo after printing is the most expensive delay of all." },
+    { h: "What slows logo projects down",
+      p: ["A vague brief, which leads to concepts that miss the mark. Feedback arriving in pieces over many days. New decision makers joining late and wanting to start again. Changing the business name or adding a tagline after concepts are done. Waiting for a trademark search result. None of these are unusual, but each can add a week."] },
+    { h: "If you have a fixed launch date",
+      p: ["Tell your designer the date at the start, and work backwards. Allow at least a week after the final files for printing signboards, cards and packaging. If the timeline is tight, agree on fewer concepts, quick feedback within 24 hours and a single decision maker.", "Rush work is possible and I charge 25% extra for it, because it moves other projects. If you plan three to four weeks ahead, you never need it."] },
+  ],
+  callout: {
+    h: "Speed comes from clear decisions",
+    p: "The fastest logo projects are not the ones where the designer works hardest. They are the ones with a clear brief, one decision maker and quick, consolidated feedback. You control more of the timeline than you might think.",
+    quote: "Five days of design, two weeks of decisions. Plan for both.",
+    after: "If you are opening a shop or launching a product, start the logo first, before the website, packaging or signboard. Everything else depends on it.",
+  },
+  extras: [
+    { h: "Typical logo timeline",
+      list: [
+        ["Day 1.", "Brief and questions answered."],
+        ["Days 2–5.", "Research, sketches and first concepts."],
+        ["Week 2.", "Your feedback and first revision."],
+        ["Week 2–3.", "Second revision if needed, approval."],
+        ["Final 1–2 days.", "Complete file pack and usage guide."],
+      ],
+      paras: ["Add printing time after this for anything physical, such as boards, cards and packaging.", "A good way to protect your schedule is to agree on feedback dates at the start, not just delivery dates. If the designer commits to concepts on Friday and you commit to feedback by Monday, both sides know exactly when the next step happens. Most logo projects that drag on for months have no dates on the client side at all, so every round waits until someone finds time."] },
+  ],
+  faq: [
+    ["How long does it take to design a logo?", "The design work for a small business logo takes about three to five working days. Including revisions and final files, most projects take two to three weeks."],
+    ["Can a logo be designed in one day?", "A simple logo can be produced quickly, but there is little time for research, options or revisions. For a logo you will use for years, a week or two is a safer plan."],
+    ["What delays a logo design project?", "Unclear briefs, slow or scattered feedback, decision makers joining late and changes to the business name or tagline are the most common causes."],
+  ],
+  related: [
+    ["/logo-design-chennai/", "Logo design in Chennai", "service"],
+    ["/pricing/", "Design and video pricing", "pricing"],
+    ["/blog/logo-files-to-ask-for/", "The logo files you should get before you pay", "6 min"],
+  ],
+  cta: {
+    h: "A clear timeline, agreed before we start.",
+    p: `For every ${ctaLink("/logo-design-chennai/", "logo project")} I give you a written schedule with dates for concepts, revisions and final files. Logo design starts at ₹8,000, with first concepts in five days. Tell me your launch date.`,
+  },
+};

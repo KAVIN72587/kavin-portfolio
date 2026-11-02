@@ -1,0 +1,63 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 147, date: "2026-11-06", slug: "logo-types-explained", cat: "Design",
+  keyword: "logo types wordmark symbol emblem",
+  title: "Logo Types Explained: Wordmark, Symbol or Emblem?",
+  desc: "The main types of logo explained simply: wordmarks, lettermarks, symbols, combination marks and emblems, with the pros and cons of each for a small business.",
+  short: "Wordmarks, lettermarks, symbols, combination marks and emblems, and which suits a small business.",
+  headline: "Logo types explained: which kind of logo suits your business",
+  crumb: "Logo types",
+  cardTitle: "Wordmark, symbol or emblem: which logo type suits you?",
+  card: "Five kinds of logo, what each is good at, and the one most small businesses should start with.",
+  h1: ["Which type of logo suits", "your business?"],
+  lede: "When people imagine a logo, they usually picture a symbol: an apple, a tick, a swoosh. But many of the most recognisable logos are just a name written in a distinctive way. For a small business, choosing the right type of logo matters more than choosing the right colour, because it decides how the logo works on a signboard, a profile picture and a rubber stamp.",
+  intro: [
+    "Here are the five main types of logo, what each one is good at, where each struggles, and how to decide which suits your business.",
+  ],
+  sections: [
+    { h: "Wordmark: the name is the logo",
+      p: ["A wordmark is the business name set in a carefully chosen or custom-drawn typeface, sometimes with small details added to the letters. Think of the way many fashion labels and tech companies simply write their name.", "Wordmarks are excellent for new businesses because they build name recognition from day one. Customers see the name every time. They work well when the name is short and distinctive. They struggle when the name is very long, or when you need a small square icon for an app or Instagram profile, where a long name becomes unreadable."] },
+    { h: "Lettermark: initials only",
+      p: ["A lettermark uses initials, such as two or three letters, designed into a compact mark. It is useful for businesses with long names, like \"Sri Lakshmi Engineering Works\", which become SLEW or SL.", "The risk is that initials mean nothing to a new customer. Lettermarks work best for established businesses whose initials people already know, or when they are used alongside the full name."] },
+    { h: "Symbol or pictorial mark",
+      p: ["A symbol is an image on its own, either a recognisable object, like a leaf or a bird, or an abstract shape. Large global brands can use a symbol alone because they have spent years and huge budgets teaching people what it means.", "For a small business, a symbol on its own is rarely enough at the start. Nobody knows what your leaf stands for yet. Symbols are powerful later, once the business is known, and very useful as a profile picture or favicon."] },
+    { h: "Combination mark: symbol plus name",
+      p: ["A combination mark pairs a symbol or icon with the business name. This is the most common and most flexible choice for small businesses. You can use the full version on signboards, letterheads and websites, and the icon alone where space is small.", "The key is that both parts must work on their own. The name should be readable without the icon, and the icon should still look good without the name."],
+      note: "If you choose a combination mark, ask for horizontal, stacked and icon-only versions in the final files. You will need all three." },
+    { h: "Emblem: the name inside a shape",
+      p: ["An emblem places the name inside a badge, crest, circle or seal. Schools, colleges, clubs, cafés and craft brands often use emblems because they feel established and traditional.", "Emblems look great on packaging, uniforms and stamps. Their weakness is detail: at small sizes, the text inside the badge becomes hard to read, and they can feel heavy on a website header. A good emblem has a simplified version for small uses."] },
+    { h: "How to choose",
+      p: ["Start with three questions. How long is your name? Short names suit wordmarks; long ones may need a lettermark or a combination mark. Where will the logo be seen most? Square spaces like profile pictures need an icon. Is your business new? New businesses benefit from having the name in the logo.", "For most small businesses in Chennai, a combination mark, a clear name with a simple icon that can stand alone, is the safest and most practical choice."] },
+  ],
+  callout: {
+    h: "The type is a practical decision, not a style choice",
+    p: "Each type of logo solves different problems. Choosing well means thinking about your name, your customers and the places your logo must work. A beautiful emblem that becomes a blur on a phone screen, or a symbol nobody connects to your business, costs you recognition every day.",
+    quote: "Get the name known first. The symbol can earn its place later.",
+    after: "Many businesses evolve: they start with a combination mark and, years later, use the icon alone once customers recognise it. Planning for that from the start makes the logo last longer.",
+  },
+  extras: [
+    { h: "Logo types at a glance",
+      list: [
+        ["Wordmark.", "Name only. Best for short, distinctive names and new businesses."],
+        ["Lettermark.", "Initials. Best for long names that people already shorten."],
+        ["Symbol.", "Image only. Best for established brands and as an icon."],
+        ["Combination mark.", "Symbol plus name. The flexible choice for most small businesses."],
+        ["Emblem.", "Name inside a badge. Best for schools, cafés and traditional brands."],
+      ],
+      paras: ["When you brief a designer, you do not need to decide the type yourself. But knowing the options helps you understand why they suggest one over another, and helps you judge concepts by how they will actually be used."] },
+  ],
+  faq: [
+    ["What are the main types of logos?", "The five main types are wordmarks, lettermarks, symbols or pictorial marks, combination marks and emblems."],
+    ["Which type of logo is best for a small business?", "A combination mark, with a clear name and a simple icon that can be used on its own, suits most small businesses because it builds name recognition and works in small spaces."],
+    ["Should my logo include the business name?", "For a new business, yes. Customers need to learn your name. Symbol-only logos work best once the business is already well known."],
+  ],
+  related: [
+    ["/logo-design-chennai/", "Logo design in Chennai", "service"],
+    ["/logo-design-cost-chennai/", "Logo design cost in Chennai", "pricing"],
+    ["/blog/logo-design-brief/", "The 10 answers to give a designer first", "5 min"],
+  ],
+  cta: {
+    h: "A logo built for the places you'll use it.",
+    p: `When I design a ${ctaLink("/logo-design-chennai/", "logo")}, I show every concept on a signboard, a profile picture and a card, so you can see how it works before choosing. Logo design starts at ₹8,000. Tell me about your business.`,
+  },
+};

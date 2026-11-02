@@ -142,23 +142,23 @@ Owner asked for more posts per day for the rest of October; agreed on 3 a day (3
 
 | # | Status | Slug | Target keyword | Category | Angle | Links to |
 |---|---|---|---|---|---|---|
-| 32 |  | canva-logo-trademark | can I trademark a Canva logo India | Design | When a Canva logo is yours and when it legally isn't | /logo-design-chennai/, /logo-design-cost-chennai/ |
-| 33 |  | fiverr-vs-local-designer | Fiverr vs local designer India | Business | Resold logos, time zones, and what you actually own | /freelancer-vs-agency-chennai/, /pricing/ |
+| 32 | queued 2026-11-11 | canva-logo-trademark | can I trademark a Canva logo India | Design | When a Canva logo is yours and when it legally isn't | /logo-design-chennai/, /logo-design-cost-chennai/ |
+| 33 | queued 2026-11-09 | fiverr-vs-local-designer | Fiverr vs local designer India | Business | Resold logos, time zones, and what you actually own | /freelancer-vs-agency-chennai/, /pricing/ |
 | 34 | queued 2026-11-03 | logo-files-to-ask-for | what logo files should I get from my designer | Design | SVG, PDF, PNG, colour codes — the handover checklist | /logo-design-chennai/ |
-| 35 |  | how-long-does-a-logo-take | how long does logo design take | Business | Realistic timelines and what slows them | /logo-design-chennai/ |
+| 35 | queued 2026-11-05 | how-long-does-a-logo-take | how long does logo design take | Business | Realistic timelines and what slows them | /logo-design-chennai/ |
 | 36 | queued 2026-11-03 | brochure-paper-gsm | brochure paper GSM guide | Print | 130 vs 170 vs 300 GSM, matt vs gloss | /brochure-design-chennai/, /brochure-design-cost-chennai/ |
 | 37 | queued 2026-11-04 | visiting-card-size-india | visiting card size in India | Print | Size in mm/inches, safe zone, finishes | /business-card-design-chennai/ |
 | 38 | queued 2026-11-03 | choosing-brand-colours | how to choose brand colours small business | Design | Colour that survives print, screen and signboard | /graphic-design-chennai/ |
-| 39 |  | freelancer-red-flags | red flags hiring freelance designer Upwork Fiverr | Business | Signs to walk away before paying an advance | /freelancer-vs-agency-chennai/ |
-| 40 |  | how-many-revisions | how many design revisions are normal | Business | What "unlimited revisions" really means | /pricing/ |
-| 41 |  | food-label-design-checklist | FSSAI label requirements design | Print | What must be on the pack before artwork is final (verify current FSSAI rules) | /packaging-design-chennai/ |
-| 42 |  | whatsapp-business-catalogue | WhatsApp Business catalogue design | Design | Product photos and covers that sell in chat | /social-media-creatives-chennai/ |
-| 43 |  | festival-creatives-planning | Diwali Pongal social media posts planning | Design | Plan festival creatives 3 weeks early | /social-media-creatives-chennai/ |
-| 44 |  | when-to-redesign-logo | when should I redesign my logo | Design | Refresh vs rebrand | /logo-design-chennai/ |
-| 45 |  | flex-vs-vinyl-vs-acp-signboard | flex vs vinyl vs ACP signboard | Print | Which material, and what the file needs | /logo-design-chennai/ |
-| 46 |  | design-contract-checklist | freelance design contract what to include | Business | Scope, rights, deadlines, payment stages | /hire-me/ |
-| 47 |  | ai-logo-generator-vs-designer | AI logo generator vs designer | Design | What AI logos are fine for, and where they fail | /logo-design-chennai/ |
-| 48 |  | google-review-qr-standee | Google review QR code standee design | Print | Counter standee that actually gets scanned | /poster-flyer-design-chennai/ |
+| 39 | queued 2026-11-06 | freelancer-red-flags | red flags hiring freelance designer Upwork Fiverr | Business | Signs to walk away before paying an advance | /freelancer-vs-agency-chennai/ |
+| 40 | queued 2026-11-07 | how-many-revisions | how many design revisions are normal | Business | What "unlimited revisions" really means | /pricing/ |
+| 41 | queued 2026-11-11 | food-label-design-checklist | FSSAI label requirements design | Print | What must be on the pack before artwork is final (verify current FSSAI rules) | /packaging-design-chennai/ |
+| 42 | queued 2026-11-15 | whatsapp-business-catalogue | WhatsApp Business catalogue design | Design | Product photos and covers that sell in chat | /social-media-creatives-chennai/ |
+| 43 | queued 2026-11-10 | festival-creatives-planning | Diwali Pongal social media posts planning | Design | Plan festival creatives 3 weeks early | /social-media-creatives-chennai/ |
+| 44 | queued 2026-11-17 | when-to-redesign-logo | when should I redesign my logo | Design | Refresh vs rebrand | /logo-design-chennai/ |
+| 45 | queued 2026-11-06 | flex-vs-vinyl-vs-acp-signboard | flex vs vinyl vs ACP signboard | Print | Which material, and what the file needs | /logo-design-chennai/ |
+| 46 | queued 2026-11-10 | design-contract-checklist | freelance design contract what to include | Business | Scope, rights, deadlines, payment stages | /hire-me/ |
+| 47 | queued 2026-11-16 | ai-logo-generator-vs-designer | AI logo generator vs designer | Design | What AI logos are fine for, and where they fail | /logo-design-chennai/ |
+| 48 | queued 2026-11-17 | google-review-qr-standee | Google review QR code standee design | Print | Counter standee that actually gets scanned | /poster-flyer-design-chennai/ |
 
 ## November 2026 — new ideas (added 2026-11-02, end of October queue)
 
@@ -166,26 +166,73 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 
 | # | Status | Slug | Target keyword | Category | Angle | Links to |
 |---|---|---|---|---|---|---|
-| 127 |  | logo-design-price-explained | logo design price India ₹2,000 vs ₹50,000 | Design | What actually changes between a cheap and an expensive logo quote | /logo-design-cost-chennai/, /logo-design-chennai/ |
+| 127 | queued 2026-11-09 | logo-design-price-explained | logo design price India ₹2,000 vs ₹50,000 | Design | What actually changes between a cheap and an expensive logo quote | /logo-design-cost-chennai/, /logo-design-chennai/ |
 | 128 | queued 2026-11-04 | brand-kit-small-business | brand kit for small business what's included | Design | Logo, colours, fonts, templates — the kit that keeps everything consistent | /graphic-design-chennai/, /pricing/ |
-| 129 |  | logo-design-brief | logo design brief questions | Design | The 10 answers to give a designer before the first concept | /logo-design-chennai/, /logo-design-cost-chennai/ |
+| 129 | queued 2026-11-05 | logo-design-brief | logo design brief questions | Design | The 10 answers to give a designer before the first concept | /logo-design-chennai/, /logo-design-cost-chennai/ |
 | 130 | queued 2026-11-04 | brochure-vs-flyer-vs-leaflet | brochure vs flyer vs leaflet difference | Print | Which one to print for an event, a shop counter or a door drop | /brochure-design-chennai/, /brochure-design-cost-chennai/ |
-| 131 |  | brochure-design-cost-india | brochure design cost India per page | Print | Bifold, trifold, 8-page — what drives the quote | /brochure-design-cost-chennai/, /brochure-design-chennai/ |
-| 132 |  | product-packaging-design-cost | packaging design cost India small brand | Print | Label, box, pouch — design fees vs printing costs | /packaging-design-chennai/, /pricing/ |
-| 133 |  | packaging-dieline-explained | what is a dieline packaging | Print | Why your printer asks for a dieline before any artwork | /packaging-design-chennai/ |
-| 134 |  | social-media-templates-canva | Canva social media templates for business | Design | Editable post templates you can update yourself | /social-media-creatives-chennai/, /pricing/ |
-| 135 |  | instagram-post-design-cost | Instagram post design cost India monthly | Design | Per post vs monthly packs, and what 30 posts should include | /social-media-creatives-chennai/, /pricing/ |
-| 136 |  | menu-card-design-tips | restaurant menu card design tips | Print | Menus that are easy to read and push your best dishes | /poster-flyer-design-chennai/, /graphic-design-chennai/ |
-| 137 |  | letterhead-invoice-design | letterhead and invoice design GST India | Print | Business stationery that looks professional and holds the right details | /business-card-design-chennai/, /graphic-design-chennai/ |
-| 138 |  | wedding-invitation-digital-vs-print | digital wedding invitation vs printed | Print | E-invites, video invites and printed cards — what each costs | /graphic-design-chennai/, /wedding-video-editing-chennai/ |
-| 139 |  | t-shirt-print-file-guide | t-shirt design file for printing DTF screen print | Print | Getting merch artwork right for DTF, screen and sublimation | /t-shirt-design-chennai/ |
-| 140 |  | poster-design-sizes-india | poster sizes India A3 A2 flex | Print | Poster and banner sizes, resolution and bleed in one table | /poster-flyer-design-chennai/ |
-| 141 |  | ui-ux-designer-small-business | do I need a UI UX designer for my app | Design | When a startup needs UX work and when a template is fine | /ui-ux-design-chennai/, /pricing/ |
-| 142 |  | design-advance-payment | design advance payment how much freelancer | Business | Why designers ask 50% upfront and how stages protect both sides | /pricing/, /hire-me/ |
-| 143 |  | logo-copyright-ownership | who owns the copyright of my logo India | Business | Getting the rights in writing when the work is done | /logo-design-chennai/, /freelancer-vs-agency-chennai/ |
-| 144 |  | ecommerce-product-photo-banners | ecommerce banner design that sells | Design | Homepage and sale banners for small online shops | /ecommerce-website-design-chennai/, /social-media-creatives-chennai/ |
-| 145 |  | year-end-calendar-diary-design | company calendar diary design 2027 | Print | Branded calendars and diaries — order dates for January delivery | /graphic-design-chennai/, /brochure-design-chennai/ |
-| 146 |  | pongal-creatives-early | Pongal 2027 social media posts | Design | Plan January festival creatives in December (pairs with row 43) | /social-media-creatives-chennai/ |
+| 131 | queued 2026-11-12 | brochure-design-cost-india | brochure design cost India per page | Print | Bifold, trifold, 8-page — what drives the quote | /brochure-design-cost-chennai/, /brochure-design-chennai/ |
+| 132 | queued 2026-11-10 | product-packaging-design-cost | packaging design cost India small brand | Print | Label, box, pouch — design fees vs printing costs | /packaging-design-chennai/, /pricing/ |
+| 133 | queued 2026-11-09 | packaging-dieline-explained | what is a dieline packaging | Print | Why your printer asks for a dieline before any artwork | /packaging-design-chennai/ |
+| 134 | queued 2026-11-12 | social-media-templates-canva | Canva social media templates for business | Design | Editable post templates you can update yourself | /social-media-creatives-chennai/, /pricing/ |
+| 135 | queued 2026-11-13 | instagram-post-design-cost | Instagram post design cost India monthly | Design | Per post vs monthly packs, and what 30 posts should include | /social-media-creatives-chennai/, /pricing/ |
+| 136 | queued 2026-11-07 | menu-card-design-tips | restaurant menu card design tips | Print | Menus that are easy to read and push your best dishes | /poster-flyer-design-chennai/, /graphic-design-chennai/ |
+| 137 | queued 2026-11-08 | letterhead-invoice-design | letterhead and invoice design GST India | Print | Business stationery that looks professional and holds the right details | /business-card-design-chennai/, /graphic-design-chennai/ |
+| 138 | queued 2026-11-27 | wedding-invitation-digital-vs-print | digital wedding invitation vs printed | Print | E-invites, video invites and printed cards — what each costs | /graphic-design-chennai/, /wedding-video-editing-chennai/ |
+| 139 | queued 2026-11-18 | t-shirt-print-file-guide | t-shirt design file for printing DTF screen print | Print | Getting merch artwork right for DTF, screen and sublimation | /t-shirt-design-chennai/ |
+| 140 | queued 2026-11-14 | poster-design-sizes-india | poster sizes India A3 A2 flex | Print | Poster and banner sizes, resolution and bleed in one table | /poster-flyer-design-chennai/ |
+| 141 | queued 2026-11-27 | ui-ux-designer-small-business | do I need a UI UX designer for my app | Design | When a startup needs UX work and when a template is fine | /ui-ux-design-chennai/, /pricing/ |
+| 142 | queued 2026-11-08 | design-advance-payment | design advance payment how much freelancer | Business | Why designers ask 50% upfront and how stages protect both sides | /pricing/, /hire-me/ |
+| 143 | queued 2026-11-11 | logo-copyright-ownership | who owns the copyright of my logo India | Business | Getting the rights in writing when the work is done | /logo-design-chennai/, /freelancer-vs-agency-chennai/ |
+| 144 | queued 2026-11-26 | ecommerce-product-photo-banners | ecommerce banner design that sells | Design | Homepage and sale banners for small online shops | /ecommerce-website-design-chennai/, /social-media-creatives-chennai/ |
+| 145 | queued 2026-11-05 | year-end-calendar-diary-design | company calendar diary design 2027 | Print | Branded calendars and diaries — order dates for January delivery | /graphic-design-chennai/, /brochure-design-chennai/ |
+| 146 | queued 2026-11-25 | pongal-creatives-early | Pongal 2027 social media posts | Design | Plan January festival creatives in December (pairs with row 43) | /social-media-creatives-chennai/ |
+| 147 | queued 2026-11-06 | logo-types-explained | logo types wordmark symbol emblem | Design | Wordmark, symbol, combination or emblem: which suits your business | /logo-design-chennai/, /logo-design-cost-chennai/ |
+| 148 | queued 2026-11-07 | vector-vs-raster | vector vs raster image difference | Design | Why your printer keeps asking for a vector file | /graphic-design-chennai/ |
+| 149 | queued 2026-11-15 | why-print-colours-look-different | why printed colours look different from screen | Print | RGB, CMYK and why your print looks duller than your phone | /brochure-design-chennai/ |
+| 150 | queued 2026-11-16 | brochure-content-what-to-write | what to write in a brochure | Print | Brochure copy that gets read, panel by panel | /brochure-design-chennai/, /brochure-design-cost-chennai/ |
+| 151 | queued 2026-11-13 | trifold-brochure-layout | trifold brochure layout panel order | Print | Which panel is read first, and how to plan the fold | /brochure-design-chennai/ |
+| 152 | queued 2026-11-21 | product-label-design-tips | product label design tips | Print | Labels that stand out on a crowded shelf | /packaging-design-chennai/ |
+| 153 | queued 2026-11-22 | sticker-label-printing-types | sticker label printing types vinyl paper | Print | Paper, vinyl, transparent and die-cut stickers | /packaging-design-chennai/ |
+| 154 | queued 2026-11-25 | ecommerce-packaging-design | packaging design for online selling | Print | Packaging that survives the courier and still looks good | /packaging-design-chennai/ |
+| 155 | queued 2026-11-23 | box-packaging-types | mono carton vs corrugated vs rigid box | Print | Choosing the right box for your product | /packaging-design-chennai/ |
+| 156 | queued 2026-11-24 | pouch-packaging-design | standup pouch packaging design | Print | Pouch packaging for snacks, spices and powders | /packaging-design-chennai/ |
+| 157 | queued 2026-11-08 | social-media-post-sizes | social media post sizes 2026 | Design | Post, story, cover and profile sizes in one place | /social-media-creatives-chennai/ |
+| 158 | queued 2026-11-18 | carousel-post-design | carousel post design tips | Design | Carousels people swipe to the end | /social-media-creatives-chennai/ |
+| 159 | queued 2026-11-19 | linkedin-banner-design | LinkedIn banner design size | Design | A LinkedIn banner that works for you | /graphic-design-chennai/ |
+| 160 | queued 2026-11-20 | youtube-channel-art-size | YouTube channel art size safe area | Design | Channel banners that fit every screen | /youtube-video-editing-chennai/, /graphic-design-chennai/ |
+| 161 | queued 2026-11-21 | whatsapp-status-creatives | WhatsApp status creatives for business | Design | Status updates customers actually tap | /social-media-creatives-chennai/ |
+| 162 | queued 2026-11-22 | ad-creative-design-tips | ad creative design tips Instagram Facebook | Design | Ad creatives that stop the scroll | /social-media-creatives-chennai/ |
+| 163 | queued 2026-11-23 | infographic-design-tips | infographic design for small business | Design | Turning information into a graphic people share | /graphic-design-chennai/ |
+| 164 | queued 2026-11-24 | pitch-deck-design | pitch deck design tips | Design | A pitch deck that is easy to follow | /graphic-design-chennai/, /ui-ux-design-chennai/ |
+| 165 | queued 2026-11-26 | company-profile-design | company profile design | Print | A company profile that wins tenders and clients | /brochure-design-chennai/ |
+| 166 | queued 2026-11-27 | catalogue-design-tips | product catalogue design tips | Print | Catalogues that make ordering easy | /brochure-design-chennai/ |
+| 167 | queued 2026-11-28 | rollup-standee-design | roll up standee size design | Print | Roll-up standees readable from across the room | /poster-flyer-design-chennai/ |
+| 168 | queued 2026-11-28 | exhibition-stall-graphics | exhibition stall graphics design | Print | Stall graphics that pull visitors in | /graphic-design-chennai/ |
+| 169 | queued 2026-11-28 | shop-signboard-design-tips | shop signboard design tips | Print | A shop board people can read from the road | /logo-design-chennai/ |
+| 170 | queued 2026-11-29 | vehicle-branding-design | vehicle branding design | Print | Turning your van or auto into an advert | /graphic-design-chennai/ |
+| 171 | queued 2026-11-29 | uniform-logo-embroidery-vs-print | logo embroidery vs printing uniforms | Print | Getting your logo onto uniforms and caps | /t-shirt-design-chennai/ |
+| 172 | queued 2026-11-29 | certificate-design | certificate design template | Print | Certificates people are proud to frame | /graphic-design-chennai/ |
+| 173 | queued 2026-11-30 | event-backdrop-design | event stage backdrop design | Print | Stage backdrops that look good in photos | /poster-flyer-design-chennai/ |
+| 174 | queued 2026-11-30 | school-prospectus-design | school prospectus design | Print | A prospectus that helps parents decide | /brochure-design-chennai/ |
+| 175 | queued 2026-11-30 | real-estate-brochure-design | real estate brochure design | Print | Property brochures buyers keep | /brochure-design-chennai/, /brochure-design-cost-chennai/ |
+| 176 | queued 2026-11-25 | restaurant-branding-checklist | restaurant branding checklist | Design | Everything a new restaurant needs designed | /graphic-design-chennai/, /logo-design-chennai/ |
+| 177 | queued 2026-11-26 | clinic-branding-checklist | clinic branding checklist | Design | Branding that makes patients trust a clinic | /graphic-design-chennai/, /logo-design-chennai/ |
+| 178 | queued 2026-11-21 | startup-branding-on-budget | startup branding on a budget | Design | What to spend on first, and what can wait | /logo-design-chennai/, /pricing/ |
+| 179 | queued 2026-11-19 | rebrand-checklist | rebrand checklist what to update | Design | Everything to update when your logo changes | /logo-design-chennai/ |
+| 180 | queued 2026-11-20 | logo-mistakes-small-business | common logo mistakes small business | Design | Logo mistakes that cost you later | /logo-design-chennai/, /logo-design-cost-chennai/ |
+| 181 | queued 2026-11-22 | font-pairing-for-business | font pairing for business | Design | Choosing two fonts that work together | /graphic-design-chennai/ |
+| 182 | queued 2026-11-23 | free-fonts-commercial-use | free fonts for commercial use | Design | Which free fonts you can safely use | /graphic-design-chennai/ |
+| 183 | queued 2026-11-24 | design-mockups-explained | what is a design mockup | Design | Mockups: seeing the design before it is printed | /graphic-design-chennai/ |
+| 184 | queued 2026-11-12 | design-feedback-how-to-give | how to give feedback to a designer | Business | Feedback that gets you the design you want | /pricing/ |
+| 185 | queued 2026-11-13 | graphic-design-brief-template | graphic design brief template | Business | The brief that saves a revision round | /hire-me/, /pricing/ |
+| 186 | queued 2026-11-14 | how-to-choose-freelance-designer | how to choose a freelance graphic designer | Business | Portfolio, process and price: what to check | /freelancer-vs-agency-chennai/, /pricing/ |
+| 187 | queued 2026-11-15 | design-turnaround-times | how long does graphic design take | Business | Realistic timelines for common design jobs | /pricing/ |
+| 188 | queued 2026-11-16 | design-retainer-vs-per-project | design retainer vs per project | Business | Monthly design retainer or one-off jobs? | /social-media-creatives-chennai/, /pricing/ |
+| 189 | queued 2026-11-17 | print-vs-digital-marketing | print vs digital marketing small business | Business | Where print still beats a social post | /poster-flyer-design-chennai/ |
+| 190 | queued 2026-11-18 | printing-cost-factors | why printing quotes differ | Print | What changes a printing quote | /brochure-design-cost-chennai/ |
+| 191 | queued 2026-11-19 | offset-vs-digital-printing | offset vs digital printing | Print | Which printing method for which quantity | /brochure-design-chennai/ |
+| 192 | queued 2026-11-20 | print-proof-checklist | print proof checklist | Print | What to check before you approve a print proof | /brochure-design-chennai/ |
+| 193 | queued 2026-11-14 | christmas-new-year-offer-posters | Christmas New Year offer poster ideas | Design | Year-end offer posters planned early | /social-media-creatives-chennai/, /poster-flyer-design-chennai/ |
 
 ## Publishing checklist (per post)
 1. Create `Portfolio redesign and SEO structure/blog/<slug>.html` using an existing post as the template (same header/footer/CTA, BlogPosting + BreadcrumbList JSON-LD, canonical `https://kavinarulraj.com/blog/<slug>/`, datePublished = today).

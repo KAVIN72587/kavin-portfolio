@@ -1,0 +1,63 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 45, date: "2026-11-06", slug: "flex-vs-vinyl-vs-acp-signboard", cat: "Print",
+  keyword: "flex vs vinyl vs ACP signboard",
+  title: "Flex vs Vinyl vs ACP Signboard: Which Should You Choose?",
+  desc: "Flex, vinyl, ACP, acrylic and LED letter signboards compared: how long each lasts, rough cost levels, where each works best and what file your sign maker needs.",
+  short: "Flex, vinyl, ACP, acrylic and LED letters compared: lifespan, cost level, best use and file needs.",
+  headline: "Flex vs vinyl vs ACP signboards: choosing the right material for your shop",
+  crumb: "Signboard materials",
+  cardTitle: "Flex, vinyl or ACP: choosing your shop signboard",
+  card: "A cheap board that fades in a year can cost more than a good one. How the common signboard materials compare.",
+  h1: ["Flex, vinyl or ACP:", "choosing your signboard"],
+  lede: "Walk down any busy road in Chennai and you will see the full range: faded flex boards curling at the edges, crisp ACP fronts with raised letters, glowing acrylic signs and hand-painted walls. The signboard is often the first thing a customer sees, and the material you choose decides how it looks on day one and how it looks two monsoons later.",
+  intro: [
+    "Here is a practical comparison of the common signboard materials, what each is good for, how long you can expect it to last and what your designer needs to prepare for each.",
+  ],
+  sections: [
+    { h: "Flex: cheap, quick and temporary",
+      p: ["Flex is a printed PVC banner material stretched over a metal frame, often backlit with tube lights inside a box. It is the cheapest and fastest option, and you can get a large board printed and fixed within a day or two.", "The downside is lifespan. Under Chennai sun and rain, colours fade and the material sags, often within one to two years. Flex is a good choice for temporary signs, new businesses testing a location, event banners and seasonal offers. It is not ideal as a permanent shop front."] },
+    { h: "Vinyl: printed or cut on a rigid surface",
+      p: ["Vinyl is a thin adhesive film, either printed or cut into letters, applied to a board, glass or wall. Printed vinyl on a sunboard or ACP backing looks sharper than flex. Cut vinyl lettering on glass is common for shop windows, office doors and timings.", "Good-quality vinyl with lamination can last several years outdoors. Cheaper vinyl can peel or fade faster, so ask your sign maker which grade they use."] },
+    { h: "ACP: the clean, modern shop front",
+      p: ["ACP, or aluminium composite panel, is a rigid sheet with a solid colour finish. It is used as a clean background for a shop front, with letters added on top in acrylic, steel or vinyl. It does not sag or fade the way flex does and gives a premium, built look.", "ACP boards cost more than flex and take longer to fabricate, but they last many years with little maintenance. For a permanent shop, clinic or showroom, ACP with raised letters is one of the best long-term investments."] },
+    { h: "Acrylic and LED letters",
+      p: ["Acrylic letters, cut from coloured or clear sheet, can be fixed flat or raised on spacers for a 3D effect. With LED modules inside, they glow at night without the box look of a backlit flex board.", "LED letter signs are the most visible after dark and look very professional, but they are also the most expensive and need a reliable electrician for installation and maintenance."],
+      note: "Thin lines and small details in a logo can be difficult to cut in acrylic or fit with LEDs. Ask your designer for a simplified signboard version of the logo if needed." },
+    { h: "What your sign maker needs",
+      p: ["For printed flex and vinyl, the sign maker needs a high-resolution or vector file at the correct proportions, with your logo, name, phone number and any other text. For cut letters in acrylic, steel or vinyl, they need a clean vector file with outlined text, because the machine cuts directly from the shapes.", "Always give the actual board measurements to your designer before the artwork is made. A design made for a square board will not fit a long narrow shop front without being redesigned."] },
+    { h: "Design for distance",
+      p: ["Whatever the material, a signboard is read from across the road or from a moving vehicle. Keep the text to the essentials: business name, what you do in a few words, and perhaps a phone number. Large, simple letters with strong contrast work better than detailed images and long lists of services."] },
+  ],
+  callout: {
+    h: "Match the material to how long you'll stay",
+    p: "If you are testing a location or running a short-term offer, flex makes sense. If this is your long-term shop, a better material pays for itself by looking good for years instead of needing a new board every monsoon. Either way, the design should be prepared for the material from the start.",
+    quote: "A faded signboard tells customers the business might be fading too.",
+    after: "Ask two or three sign makers for quotes on the same specification, and compare not just price but material grade, lighting and warranty.",
+  },
+  extras: [
+    { h: "Signboard materials compared",
+      list: [
+        ["Flex.", "Lowest cost, fastest, fades in about 1–2 years outdoors."],
+        ["Printed vinyl.", "Sharper than flex, lasts several years with good grade and lamination."],
+        ["Cut vinyl.", "Clean lettering for glass, doors and timings."],
+        ["ACP.", "Rigid, modern, long-lasting background for letters."],
+        ["Acrylic and LED letters.", "Premium look, most visible at night, highest cost."],
+      ],
+      paras: ["Lifespans depend on sun exposure, material quality and installation. These are typical ranges, not guarantees, so confirm with your sign maker."] },
+  ],
+  faq: [
+    ["Which is better, flex or ACP signboard?", "ACP lasts much longer and looks more premium, but costs more. Flex is cheaper and quicker, and suits temporary or short-term signs."],
+    ["How long does a flex signboard last?", "Outdoors in Chennai's sun and rain, a flex board typically starts fading within one to two years, depending on material quality and exposure."],
+    ["What file format does a signboard maker need?", "A vector file such as PDF, AI or SVG with text converted to outlines, prepared at the correct proportions for your board size."],
+  ],
+  related: [
+    ["/logo-design-chennai/", "Logo design in Chennai", "service"],
+    ["/pricing/", "Design and video pricing", "pricing"],
+    ["/blog/logo-signboard-problems/", "Why your logo looks wrong on the signboard", "5 min"],
+  ],
+  cta: {
+    h: "Signboard artwork ready for any material.",
+    p: `I prepare signboard files sized to your board, with a simplified ${ctaLink("/logo-design-chennai/", "logo")} version for cut letters if needed. Poster and sign artwork starts at ₹1,500 per design. Send me your board size.`,
+  },
+};
