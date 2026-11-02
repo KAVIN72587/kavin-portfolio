@@ -1,0 +1,63 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 47, date: "2026-11-16", slug: "ai-logo-generator-vs-designer", cat: "Design",
+  keyword: "AI logo generator vs designer",
+  title: "AI Logo Generator or a Designer: What's the Difference?",
+  desc: "AI logo generators compared with hiring a designer: speed and cost, originality, file quality, ownership questions and when an AI logo is good enough for now.",
+  short: "Speed and cost, originality, file quality, ownership questions and when an AI logo is good enough.",
+  headline: "AI logo generator vs designer: what each is good for, and where AI falls short",
+  crumb: "AI logos vs designers",
+  cardTitle: "What AI logos are fine for, and where they fail",
+  card: "AI can make a logo in seconds. Whether that logo works on a signboard, a trademark form or a rubber stamp is another question.",
+  h1: ["AI logos: what they're good", "for, and where they fail"],
+  lede: "AI tools can now produce dozens of logo options in seconds for very little money. Some look surprisingly good. Business owners reasonably ask: why pay a designer when an AI can do it instantly? It is a fair question, and the honest answer is that AI logos are useful for some situations and risky for others.",
+  intro: [
+    "I use AI tools in parts of my own work, so I am not against them. But a logo has jobs to do beyond looking nice on a screen. Here is where AI logo generators help, where they fall short and how to decide.",
+  ],
+  sections: [
+    { h: "Where AI logo tools help",
+      p: ["Speed and cost. If you need something quickly for a short-term project, a test idea, an event or an internal team, an AI-generated logo can be good enough.", "AI tools are also useful for exploring ideas. Generating a few options can help you discover what you like and do not like, which makes a later brief to a designer clearer."] },
+    { h: "Originality is uncertain",
+      p: ["AI image tools learn from enormous collections of existing images. Their results can resemble existing logos, fonts or symbols, sometimes closely. Many AI logos also look similar to each other, because many people use the same tools and prompts.", "If your logo looks like someone else's, you may face confusion with another business or problems when applying for a trademark."] },
+    { h: "File quality is often poor",
+      p: ["Most AI image tools produce raster images, made of pixels. A logo needs clean vector files for signboards, printing, embroidery and cutting. AI images often have uneven lines, strange details and text that is slightly wrong.", "Turning an AI image into a usable vector logo usually means redrawing it by hand, which is design work anyway."],
+      note: "Check the text closely. AI tools still often misspell words or create letters that look almost right but not quite." },
+    { h: "Ownership and trademarks are unclear",
+      p: ["The legal position of AI-generated images is still developing in many countries. Questions include who owns the output and whether it can be protected. Each tool also has its own terms of use.", "If you plan to trademark your logo, discuss AI-generated elements with a trademark professional before relying on them."] },
+    { h: "A logo is more than an image",
+      p: ["A designer does more than draw. They research your business and competitors, think about where the logo will be used, test it at small and large sizes, create versions for different spaces, choose print and screen colours, and prepare files for every use.", "AI tools generate images. They do not understand that your logo must work on a WhatsApp profile picture, a flex board on Anna Salai and a rubber stamp."] },
+    { h: "Using AI and a designer together",
+      p: ["A sensible approach for many businesses: use AI to explore directions and collect ideas you like, then share them with a designer as references. The designer creates an original logo inspired by the directions you liked, with proper files and ownership.", "This often makes projects faster, because you arrive with a clearer sense of what you want."] },
+  ],
+  callout: {
+    h: "Fine for a start, risky for a foundation",
+    p: "An AI logo can be a reasonable placeholder while you test an idea. But once your logo goes on signboards, packaging, uniforms and trademark applications, you need originality, clean files and clear ownership. That is where a designer's work matters.",
+    quote: "AI can make an image. A logo has to do a job.",
+    after: "If you already use an AI-generated logo that customers recognise, a designer can usually redraw it into an original, clean version that keeps the familiar feel.",
+  },
+  extras: [
+    { h: "AI logo or designer?",
+      list: [
+        ["Short-term project or test idea.", "AI logo can be enough."],
+        ["Exploring styles.", "AI is useful for ideas and references."],
+        ["Signboards, packaging, printing.", "Needs clean vector files from a designer."],
+        ["Trademark plans.", "Needs originality and clear ownership."],
+        ["Long-term brand.", "Worth investing in original design."],
+      ],
+      paras: ["Whichever route you choose, check that the final logo is readable at small sizes and does not resemble an existing brand.", "Also consider how the logo will grow with you. A designer can build a family of versions, icon, stacked, horizontal, single colour, that work together for years. An AI tool gives you a single image, and every new use means starting again or editing pixels by hand.", "Use AI where it saves you time, and a designer where the result has to last."] },
+  ],
+  faq: [
+    ["Are AI-generated logos good enough for a business?", "They can work for short-term or test projects. For a long-term brand that needs printing, signage and trademark protection, a designed original logo is safer."],
+    ["Can I trademark an AI-generated logo?", "The legal position is still developing and depends on the tool's terms and local law. Consult a trademark professional before relying on an AI logo."],
+    ["Can a designer improve my AI logo?", "Yes. A designer can redraw it as an original vector logo with proper versions and files, keeping the parts you like."],
+  ],
+  related: [
+    ["/logo-design-chennai/", "Logo design in Chennai", "service"],
+    ["/logo-design-cost-chennai/", "Logo design cost in Chennai", "pricing"],
+    ["/blog/canva-logo-trademark/", "When a Canva logo is yours, and when it isn't", "5 min"],
+  ],
+  cta: {
+    h: "Bring your AI ideas, leave with a real logo.",
+    p: `Share the AI options you liked, and I'll design an original ${ctaLink("/logo-design-chennai/", "logo")} with clean vector files and full rights. Logo design starts at ₹8,000. Send me your references.`,
+  },
+};

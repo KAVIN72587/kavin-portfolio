@@ -858,6 +858,83 @@
     "words": 912
   },
   {
+    "row": 42,
+    "date": "2026-11-15",
+    "slug": "whatsapp-business-catalogue",
+    "cat": "Design",
+    "title": "WhatsApp Business Catalogue: Photos and Design That Sell",
+    "cardTitle": "A WhatsApp catalogue customers actually browse",
+    "card": "For many small shops, WhatsApp is the real storefront. How to set up a catalogue with photos and details that sell.",
+    "minutes": 5,
+    "words": 910
+  },
+  {
+    "row": 149,
+    "date": "2026-11-15",
+    "slug": "why-print-colours-look-different",
+    "cat": "Print",
+    "title": "Why Printed Colours Look Different From Your Screen",
+    "cardTitle": "Why your print looks duller than your phone",
+    "card": "That bright blue on screen came back dull on paper. Why it happens and how to get print colours you're happy with.",
+    "minutes": 5,
+    "words": 914
+  },
+  {
+    "row": 187,
+    "date": "2026-11-15",
+    "slug": "design-turnaround-times",
+    "cat": "Business",
+    "title": "How Long Does Graphic Design Take? Typical Timelines",
+    "cardTitle": "How long common design jobs really take",
+    "card": "A flyer in two days, packaging in two weeks. Realistic timelines for common design jobs, and how to plan around them.",
+    "minutes": 5,
+    "words": 913
+  },
+  {
+    "row": 47,
+    "date": "2026-11-16",
+    "slug": "ai-logo-generator-vs-designer",
+    "cat": "Design",
+    "title": "AI Logo Generator or a Designer: What's the Difference?",
+    "cardTitle": "What AI logos are fine for, and where they fail",
+    "card": "AI can make a logo in seconds. Whether that logo works on a signboard, a trademark form or a rubber stamp is another question.",
+    "minutes": 5,
+    "words": 911
+  },
+  {
+    "row": 150,
+    "date": "2026-11-16",
+    "slug": "brochure-content-what-to-write",
+    "cat": "Print",
+    "title": "What to Write in a Brochure: Content That Gets Read",
+    "cardTitle": "Brochure copy that gets read, panel by panel",
+    "card": "Most brochures say too much and explain too little. What to write, how much, and in what order.",
+    "minutes": 5,
+    "words": 918
+  },
+  {
+    "row": 188,
+    "date": "2026-11-16",
+    "slug": "design-retainer-vs-per-project",
+    "cat": "Business",
+    "title": "Monthly Design Retainer or Pay Per Project?",
+    "cardTitle": "Monthly design retainer or one-off jobs?",
+    "card": "If you need design every month, paying job by job can cost more and look less consistent. How to choose.",
+    "minutes": 5,
+    "words": 900
+  },
+  {
+    "row": 44,
+    "date": "2026-11-17",
+    "slug": "when-to-redesign-logo",
+    "cat": "Design",
+    "title": "When Should You Redesign Your Logo? Refresh vs Rebrand",
+    "cardTitle": "Refresh or rebrand: when your logo needs to change",
+    "card": "Not every old logo needs replacing. The signs it's holding you back, and how to update it without confusing customers.",
+    "minutes": 5,
+    "words": 924
+  },
+  {
     "row": 17,
     "date": "2026-10-17",
     "slug": "contact-form-not-working",
@@ -867,6 +944,94 @@
     "card": "Forms break silently, and nobody notices for months. Where the enquiries go, and a five-minute test to run monthly.",
     "minutes": 5,
     "words": 913
+  },
+  {
+    "row": 48,
+    "date": "2026-11-17",
+    "slug": "google-review-qr-standee",
+    "cat": "Print",
+    "title": "Google Review QR Code Standee: Design That Gets Scanned",
+    "cardTitle": "A review standee that customers actually scan",
+    "card": "Most QR standees are ignored. How size, wording and placement turn a small counter sign into steady Google reviews.",
+    "minutes": 5,
+    "words": 907
+  },
+  {
+    "row": 189,
+    "date": "2026-11-17",
+    "slug": "print-vs-digital-marketing",
+    "cat": "Business",
+    "title": "Print vs Digital Marketing for Small Businesses",
+    "cardTitle": "Where print still beats a social post",
+    "card": "Digital is cheaper to share, but print still wins in some places. How to split your effort between the two.",
+    "minutes": 5,
+    "words": 908
+  },
+  {
+    "row": 158,
+    "date": "2026-11-18",
+    "slug": "carousel-post-design",
+    "cat": "Design",
+    "title": "Carousel Post Design Tips: Posts People Swipe Through",
+    "cardTitle": "Carousels people swipe all the way through",
+    "card": "The first slide decides everything. How to design carousel posts that hold attention and get saved and shared.",
+    "minutes": 5,
+    "words": 933
+  },
+  {
+    "row": 139,
+    "date": "2026-11-18",
+    "slug": "t-shirt-print-file-guide",
+    "cat": "Print",
+    "title": "T-Shirt Print Files: DTF, Screen Print and Sublimation",
+    "cardTitle": "Getting t-shirt artwork right for each printing method",
+    "card": "DTF, screen print or sublimation? Each needs a different file. How to prepare merch artwork that prints sharp.",
+    "minutes": 5,
+    "words": 916
+  },
+  {
+    "row": 190,
+    "date": "2026-11-18",
+    "slug": "printing-cost-factors",
+    "cat": "Print",
+    "title": "Why Printing Quotes Differ: What Changes the Price",
+    "cardTitle": "Why one printer quotes double the other",
+    "card": "Same brochure, very different prices. The factors that change a printing quote, and how to compare them properly.",
+    "minutes": 5,
+    "words": 911
+  },
+  {
+    "row": 159,
+    "date": "2026-11-19",
+    "slug": "linkedin-banner-design",
+    "cat": "Design",
+    "title": "LinkedIn Banner Design: Size, Safe Area and What to Say",
+    "cardTitle": "A LinkedIn banner that actually works for you",
+    "card": "Most LinkedIn banners are a stock photo or blank. How to use that space to tell people what you do in seconds.",
+    "minutes": 5,
+    "words": 920
+  },
+  {
+    "row": 191,
+    "date": "2026-11-19",
+    "slug": "offset-vs-digital-printing",
+    "cat": "Print",
+    "title": "Offset vs Digital Printing: Which One Should You Choose?",
+    "cardTitle": "Offset or digital printing: which for which quantity?",
+    "card": "100 brochures or 10,000? The printing method changes the price and the result. How to choose between offset and digital.",
+    "minutes": 5,
+    "words": 936
+  },
+  {
+    "row": 179,
+    "date": "2026-11-19",
+    "slug": "rebrand-checklist",
+    "cat": "Design",
+    "title": "Rebrand Checklist: Everything to Update With a New Logo",
+    "cardTitle": "Everything to update when your logo changes",
+    "card": "A new logo on Instagram but the old one on the invoice? The full list of places to update, and the order to do it in.",
+    "minutes": 5,
+    "words": 904
   },
   {
     "row": 18,

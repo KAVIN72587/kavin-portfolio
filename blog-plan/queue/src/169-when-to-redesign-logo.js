@@ -1,0 +1,61 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 44, date: "2026-11-17", slug: "when-to-redesign-logo", cat: "Design",
+  keyword: "when should I redesign my logo",
+  title: "When Should You Redesign Your Logo? Refresh vs Rebrand",
+  desc: "When to redesign your logo, the difference between a refresh and a full rebrand, signs your logo is holding you back, and how to change it without losing customers.",
+  short: "Signs your logo is holding you back, refresh vs full rebrand, and changing it without losing customers.",
+  headline: "When should you redesign your logo? Refresh or rebrand",
+  crumb: "When to redesign a logo",
+  cardTitle: "Refresh or rebrand: when your logo needs to change",
+  card: "Not every old logo needs replacing. The signs it's holding you back, and how to update it without confusing customers.",
+  h1: ["When your logo needs", "to change"],
+  lede: "Some business owners want a new logo every few years because they are bored of the old one. Others keep a logo from 1998 that no longer prints properly, cannot be read on a phone and looks nothing like the business they run today. Neither is ideal. A logo should change when it stops doing its job, not just when the owner wants something new.",
+  intro: [
+    "Here are the signs that a logo needs updating, the difference between a refresh and a full rebrand, and how to make the change without confusing customers who already know you.",
+  ],
+  sections: [
+    { h: "Signs your logo is holding you back",
+      p: ["It does not work at small sizes: on Instagram profile pictures, WhatsApp, favicons or embroidery, the details blur and the name cannot be read. It only exists as a low-resolution image, so every printer struggles with it. It looks dated compared with competitors, making the business seem older or less professional than it is.", "Other signs: your business has changed, perhaps from a small shop to a manufacturer, or from one service to many, and the logo no longer fits. It looks similar to another business. Or it uses fonts and effects, like gradients, shadows and outlines, that make it hard to reproduce consistently."] },
+    { h: "A refresh: modernise what people know",
+      p: ["A refresh keeps the core of your logo, the recognisable shape, colour or name style, while cleaning it up. The designer might simplify details, update the font, adjust colours for print and screen, create an icon version and redraw it as a proper vector.", "Customers still recognise the business, but it looks sharper and works better everywhere. For most established small businesses, a refresh is the right choice."] },
+    { h: "A rebrand: a new identity",
+      p: ["A rebrand replaces the logo, and often the colours, fonts and even the name, with something new. It makes sense when the business has changed fundamentally, merged with another, moved into a different market, or when the old identity carries negative associations.", "Rebrands take more time and money, and they need careful communication so customers understand the change."],
+      note: "If customers recognise your logo and like it, be careful. Recognition takes years to build and can be lost quickly." },
+    { h: "When not to redesign",
+      p: ["If the logo works well at all sizes, prints cleanly, is recognised by customers and still fits your business, you probably do not need a new one. Being tired of seeing it every day is not a reason; customers see it far less than you do.", "Sometimes the real problem is inconsistency: the logo is fine, but it is used differently everywhere. A brand kit and proper files can solve that without any redesign."] },
+    { h: "How to change without losing customers",
+      p: ["Keep familiar elements where possible, such as a colour, a shape or the way the name is written. Roll the change out across all touchpoints within a short period: signboard, social profiles, website, packaging and stationery. Tell customers about it, especially if the change is significant.", "Plan the cost of replacing signboards, printed materials and uniforms, and phase it if needed, starting with the most visible items."] },
+  ],
+  callout: {
+    h: "Change for a reason, not for novelty",
+    p: "A logo is a tool for recognition. Updating it makes sense when it stops working: when it cannot be read, cannot be printed, no longer fits the business or looks out of place. In most cases, a thoughtful refresh gives you a modern, practical logo while keeping the recognition you have built.",
+    quote: "Refresh what people know before you replace it.",
+    after: "Before deciding, ask a few loyal customers what they think of when they see your logo. Their answers will tell you what to keep.",
+  },
+  extras: [
+    { h: "Refresh or rebrand?",
+      list: [
+        ["Logo blurry or hard to print.", "Refresh and redraw as vector."],
+        ["Looks dated but well recognised.", "Refresh, keep key elements."],
+        ["Business has fundamentally changed.", "Consider a rebrand."],
+        ["Confused with another business.", "Rebrand or significant refresh."],
+        ["Owner just bored of it.", "Probably neither."],
+      ],
+      paras: ["A designer can show you refresh options side by side with your current logo, so you can see how much change feels right.", "Timing matters too. A logo change works best alongside something customers will notice anyway: a new branch, a renovated shop, a new product range or an anniversary. It gives you a natural story to tell, so the new look feels like progress rather than a confusing switch. Changing everything quietly in an ordinary month often leaves customers wondering whether you are the same business."] },
+  ],
+  faq: [
+    ["How often should a business redesign its logo?", "There is no fixed schedule. Many logos last ten years or more with occasional small refreshes. Redesign when the logo stops working, not on a timetable."],
+    ["What is the difference between a logo refresh and a rebrand?", "A refresh updates and cleans up the existing logo while keeping it recognisable. A rebrand replaces the identity with something new, often including colours and fonts."],
+    ["Will changing my logo confuse my customers?", "It can if the change is sudden and drastic. Keeping familiar elements and rolling the change out consistently helps customers follow it."],
+  ],
+  related: [
+    ["/logo-design-chennai/", "Logo design in Chennai", "service"],
+    ["/logo-design-cost-chennai/", "Logo design cost in Chennai", "pricing"],
+    ["/blog/logo-types-explained/", "Wordmark, symbol or emblem: which suits you?", "5 min"],
+  ],
+  cta: {
+    h: "A refreshed logo that keeps your recognition.",
+    p: `I refresh existing ${ctaLink("/logo-design-chennai/", "logos")} into clean, modern versions with every file you need, keeping what customers already know. Logo design starts at ₹8,000. Send me your current logo.`,
+  },
+};

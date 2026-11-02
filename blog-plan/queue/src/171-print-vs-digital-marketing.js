@@ -1,0 +1,63 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 189, date: "2026-11-17", slug: "print-vs-digital-marketing", cat: "Business",
+  keyword: "print vs digital marketing small business",
+  title: "Print vs Digital Marketing for Small Businesses",
+  desc: "Print vs digital marketing for small businesses: where flyers, brochures and boards still beat social posts, where digital wins, and how to make both work together.",
+  short: "Where print still beats social posts, where digital wins, and how to make both work together.",
+  headline: "Print vs digital marketing: where each works best for a small business",
+  crumb: "Print vs digital",
+  cardTitle: "Where print still beats a social post",
+  card: "Digital is cheaper to share, but print still wins in some places. How to split your effort between the two.",
+  h1: ["Print or digital:", "where each wins"],
+  lede: "It is easy to assume print is finished. Everyone is on their phone, social posts cost nothing to share and printed flyers often end up in the bin. Yet walk into any successful local business in Chennai and you will still see signboards, menu cards, brochures on the counter and visiting cards in every pocket. Print has not disappeared. Its role has changed.",
+  intro: [
+    "Here is where print still works better than digital for small businesses, where digital is clearly stronger, and how to use both together rather than choosing one.",
+  ],
+  sections: [
+    { h: "Where print still wins",
+      p: ["Physical presence: a signboard, a standee or a poster in a shop window reaches everyone who passes, every day, without an algorithm deciding who sees it. For local businesses, that visibility is hard to replace.", "Trust and permanence: a well-printed brochure or company profile handed over in a meeting feels substantial. It stays on a desk, gets passed to a colleague and is still there next week, unlike a WhatsApp forward that disappears in the chat.", "Moments of decision: menu cards, price lists, counter posters and packaging influence people right when they are choosing. A good menu sells your signature dish at the table more effectively than any Instagram post."] },
+    { h: "Where digital wins",
+      p: ["Reach and cost: social posts, WhatsApp broadcasts and Google Business Profile updates reach many people for little or no cost. Changing a digital post is instant; changing a printed one means reprinting.", "Targeting and timing: digital ads can reach specific locations, ages and interests, and you can post a same-day offer within minutes. Measurement is easier too: you can see views, clicks and messages."] },
+    { h: "Print that drives people online",
+      p: ["The strongest approach links the two. A QR code on a flyer leading to your WhatsApp or menu. A review standee that sends customers to Google. A visiting card with your Instagram and website. Packaging that invites customers to reorder online.", "Each printed piece becomes a doorway into your digital channels, where you can keep in touch with customers long after they have left the shop."],
+      note: "Make QR codes large enough to scan, link them to useful pages and test them before printing hundreds of copies." },
+    { h: "Digital that brings people in",
+      p: ["Equally, digital channels can drive people to physical locations: a Google Maps listing with good photos, an Instagram post about a weekend offer that requires a visit, a WhatsApp message to regulars about new stock. The aim is customers through the door or orders placed, whichever channel starts the journey."] },
+    { h: "Keep the look consistent",
+      p: ["Customers should recognise your business whether they see a flyer, a post or your shop front. Use the same logo, colours, fonts and style in print and digital. A brand kit and matching templates make this easy and save design time."] },
+    { h: "How to split your budget",
+      p: ["Start with the print essentials that every customer touches: signboard, visiting cards, menu or price list, packaging. Then add digital for regular communication: social posts, WhatsApp, Google. Use targeted print, such as brochures, flyers and event standees, for specific campaigns, and measure what brings enquiries."] },
+  ],
+  callout: {
+    h: "It's not print or digital, it's both",
+    p: "Print gives you presence, trust and influence at the moment of decision. Digital gives you reach, speed and ongoing contact. The businesses that do best use each for what it does well, and connect them so customers move easily from one to the other.",
+    quote: "Print gets you noticed nearby. Digital keeps you remembered.",
+    after: "Ask new customers how they heard about you. After a few months, you will know which print and digital channels are worth more of your budget.",
+  },
+  extras: [
+    { h: "What to use where",
+      list: [
+        ["Shop front and counter.", "Signboard, standees, posters, menu cards."],
+        ["Meetings and tenders.", "Brochure or company profile, visiting cards."],
+        ["Regular updates.", "Social posts, WhatsApp, Google Business Profile."],
+        ["Local campaigns.", "Flyers with QR codes linking online."],
+        ["After the sale.", "Packaging and inserts that invite reorders and reviews."],
+      ],
+      paras: ["Design print and digital together whenever possible. One campaign idea, adapted to each format, is cheaper and more effective than separate efforts.", "Do not underestimate the small printed items either. A thank-you card in a delivery box, a sticker on packaging or a neat receipt with your social handles costs very little and is seen by every single customer. These details quietly build the impression of a careful, professional business.", "Start with what you already have and improve it before adding anything new."] },
+  ],
+  faq: [
+    ["Is print marketing still effective for small businesses?", "Yes, especially for local visibility, trust and influencing customers at the point of decision, such as signboards, menus, brochures and packaging."],
+    ["Should I spend more on print or digital marketing?", "Most small businesses benefit from print essentials plus regular digital communication. Measure enquiries from each and adjust over time."],
+    ["How can print and digital marketing work together?", "Use QR codes, social handles and websites on printed materials, and use digital channels to promote in-store visits and offers."],
+  ],
+  related: [
+    ["/poster-flyer-design-chennai/", "Poster and flyer design in Chennai", "service"],
+    ["/pricing/", "Design and video pricing", "pricing"],
+    ["/blog/brochure-vs-flyer-vs-leaflet/", "Brochure, flyer or leaflet: which to print?", "5 min"],
+  ],
+  cta: {
+    h: "One look across print and digital.",
+    p: `I design ${ctaLink("/graphic-design-chennai/", "print and social creatives")} as matching sets, so your flyers, posts and shop materials all look like one brand. Posters start at ₹1,500 and social packs at ₹9,000 a month. Let's talk.`,
+  },
+};

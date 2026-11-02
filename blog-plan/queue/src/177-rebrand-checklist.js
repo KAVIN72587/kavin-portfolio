@@ -1,0 +1,63 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 179, date: "2026-11-19", slug: "rebrand-checklist", cat: "Design",
+  keyword: "rebrand checklist what to update",
+  title: "Rebrand Checklist: Everything to Update With a New Logo",
+  desc: "A rebrand checklist for small businesses: every place your logo appears, from signboards and social profiles to invoices and packaging, and how to roll it out.",
+  short: "Every place your logo appears, from signboards and social profiles to invoices and packaging.",
+  headline: "Rebrand checklist: everything to update when your logo changes",
+  crumb: "Rebrand checklist",
+  cardTitle: "Everything to update when your logo changes",
+  card: "A new logo on Instagram but the old one on the invoice? The full list of places to update, and the order to do it in.",
+  h1: ["Everything to update when", "your logo changes"],
+  lede: "A new logo is exciting. The designer delivers the files, the owner posts it on Instagram and then, months later, the old logo is still on the signboard, the invoice template, the delivery bags, the WhatsApp profile and the Google listing. Customers see two different brands and wonder which is real.",
+  intro: [
+    "A rebrand only works when the new identity appears consistently everywhere. Here is a checklist of places to update and a sensible order for rolling it out.",
+  ],
+  sections: [
+    { h: "Digital: update first",
+      p: ["Digital places are quick and cheap to update, so start there. Social media profile pictures and banners on Instagram, Facebook, LinkedIn and YouTube. WhatsApp Business profile and catalogue cover. Google Business Profile logo and cover photo. Website logo, favicon and social share images. Email signatures for everyone in the team.", "Update them all on the same day if possible, so customers see a clear switch rather than a mix."] },
+    { h: "Documents and templates",
+      p: ["Letterheads, invoice and quotation templates, receipts, proposals, presentation templates, email newsletter templates and any forms customers fill in. These are often forgotten because they live inside software or shared folders.", "Replace old templates in every location, and delete or archive the old versions so nobody uses them by mistake."] },
+    { h: "Physical: plan and budget",
+      p: ["Signboards, shop fronts, window graphics, standees, uniforms, vehicle branding, packaging, labels, bags, visiting cards, stamps and printed stationery. These cost money and take time, so plan them in order of visibility.", "The shop signboard and packaging are usually the most visible. Visiting cards and stationery can often be replaced as current stock runs out, as long as that happens within a few months."],
+      note: "Do not throw away large stocks of old packaging overnight unless necessary. A short, planned transition is fine, as long as everything new uses the new logo." },
+    { h: "Listings and partners",
+      p: ["Online marketplaces, delivery apps, directories, industry associations, partner websites, sponsorship banners and anywhere else your logo appears that you do not control directly. Send partners the new logo files and ask them to update.", "Search your business name online and look through image results to find places you may have forgotten."] },
+    { h: "Tell your customers",
+      p: ["A short announcement helps customers connect the old and new identities: a social post showing the change, a message to your WhatsApp list, a note on your website. If the change is significant, explain why: growth, new services, a new location.", "Keeping a familiar element, such as a colour or name style, also helps people recognise you."] },
+    { h: "Give everyone the new brand kit",
+      p: ["Share a folder with the new logo files, colours, fonts and templates with your team, printers, web developer and anyone who creates material for you. Clear guidelines prevent the old logo from creeping back in."] },
+  ],
+  callout: {
+    h: "A rebrand is a rollout, not a reveal",
+    p: "Designing the new logo is only the first step. The real work is replacing the old identity everywhere customers see it, in a planned order. Done well, customers notice a fresh, confident business. Done halfway, they notice confusion.",
+    quote: "One brand, everywhere, within a few weeks.",
+    after: "Keep a shared checklist and tick items off as they are updated. It is easy to lose track of small items like stamps and email signatures.",
+  },
+  extras: [
+    { h: "Rebrand rollout checklist",
+      list: [
+        ["Week 1: digital.", "Social profiles, WhatsApp, Google, website, email signatures."],
+        ["Week 1–2: documents.", "Letterheads, invoices, quotations, presentations."],
+        ["Weeks 2–6: physical.", "Signboard, packaging, uniforms, vehicles, stationery."],
+        ["Ongoing: partners.", "Marketplaces, directories, partner websites."],
+        ["Launch: announce.", "Post, message customers, explain the change."],
+      ],
+      paras: ["Adjust the timeline to your budget, but keep the gap between first and last updates as short as possible.", "Keep a few examples of the old branding for your own records too. Photos of the old signboard, a sample of old packaging and the old logo files are useful later, for anniversary posts, for showing how far the business has come, or simply to remember the journey. Just keep them out of the shared folders your team uses every day.", "Budget for the rollout before you start the logo, not after. Many businesses spend their whole branding budget on the design and then cannot afford to replace the signboard or packaging for a year. A rough list of physical items and their costs helps you plan the rebrand as one project, so the new look appears everywhere within a reasonable time.", "If budget is limited, prioritise the items most customers see first, and set a date for replacing the rest."] },
+  ],
+  faq: [
+    ["What should I update after changing my logo?", "Social profiles, website, Google listing, WhatsApp, email signatures, documents and templates, signboards, packaging, uniforms, vehicles, stationery and partner listings."],
+    ["How long does a rebrand rollout take?", "Digital updates can be done in a day. Physical items like signboards and packaging may take a few weeks to a couple of months, depending on budget."],
+    ["Should I announce a new logo to customers?", "Yes. A short announcement explaining the change helps customers recognise you and avoids confusion."],
+  ],
+  related: [
+    ["/logo-design-chennai/", "Logo design in Chennai", "service"],
+    ["/pricing/", "Design and video pricing", "pricing"],
+    ["/blog/when-to-redesign-logo/", "Refresh or rebrand: when your logo needs to change", "5 min"],
+  ],
+  cta: {
+    h: "A new logo, rolled out everywhere.",
+    p: `I help with the whole ${ctaLink("/logo-design-chennai/", "rebrand")}: new logo, brand kit, social profiles, stationery and signboard files, so everything changes together. Logo design starts at ₹8,000. Let's plan your rollout.`,
+  },
+};

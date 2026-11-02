@@ -1,0 +1,62 @@
+const { ctaLink } = require("../h");
+module.exports = {
+  row: 158, date: "2026-11-18", slug: "carousel-post-design", cat: "Design",
+  keyword: "carousel post design tips",
+  title: "Carousel Post Design Tips: Posts People Swipe Through",
+  desc: "How to design carousel posts people swipe to the end: a strong first slide, one idea per slide, visual continuity, readable text and a clear final call to action.",
+  short: "A strong first slide, one idea per slide, visual continuity, readable text and a clear final action.",
+  headline: "Carousel post design: how to make posts people swipe to the end",
+  crumb: "Carousel post design",
+  cardTitle: "Carousels people swipe all the way through",
+  card: "The first slide decides everything. How to design carousel posts that hold attention and get saved and shared.",
+  h1: ["Carousels people swipe", "to the end"],
+  lede: "Carousel posts, with several images people swipe through, are one of the most useful formats for small businesses on Instagram and LinkedIn. They let you explain a process, show a range of products or share tips in a way a single image cannot. They also tend to be saved and shared more. But only if people swipe past the first slide.",
+  intro: [
+    "Here is how I design carousels that people actually swipe through, from the first slide to the last, and how to plan the content before any design starts.",
+  ],
+  sections: [
+    { h: "The first slide is the hook",
+      p: ["The first slide appears in the feed like a normal post, so it must stop the scroll and make people want to see more. Use a clear, specific headline: \"5 mistakes that make your signboard hard to read\" works better than \"Signboard tips\".", "Keep it simple: a bold headline, perhaps a strong image, and a small visual cue like an arrow or \"swipe\" to show there is more."] },
+    { h: "One idea per slide",
+      p: ["Each slide should carry one point: one tip, one step, one product. Too much text on a slide makes people skip it. A short heading and one or two lines of supporting text is usually enough.", "If a point needs more explanation, split it across two slides or put the detail in the caption."] },
+    { h: "Visual continuity",
+      p: ["Carousels feel more satisfying when the slides clearly belong together: the same background, layout, fonts and colours throughout. Some designers use elements that continue across slides, such as a line or shape that runs from one to the next, to encourage swiping.", "Number the slides, like 1/6, 2/6, so people know how many are left. It makes them more likely to finish."],
+      note: "Keep text away from the edges. Apps crop slightly differently on different phones, and the slide indicator dots can cover the bottom area." },
+    { h: "Readable on a phone",
+      p: ["Design for a phone screen. Use large fonts, high contrast and short lines. Check every slide on your own phone before posting. If you have to zoom in to read it, the text is too small.", "Portrait size, 1080 × 1350 pixels, gives more room than square and fills more of the screen."] },
+    { h: "Plan the content first",
+      p: ["Write the carousel as a short list before designing: the hook, the points in order and the ending. Good carousel topics for small businesses include step-by-step processes, common mistakes, before and after, product ranges, frequently asked questions and simple checklists.", "Six to eight slides is a comfortable length for most topics. More can work if every slide earns its place."] },
+    { h: "End with a clear next step",
+      p: ["The last slide should tell people what to do: save the post, share it with someone who needs it, message you on WhatsApp, visit the shop or book a consultation. Include your logo and handle so shared carousels still lead back to you."] },
+  ],
+  callout: {
+    h: "Make every swipe worth it",
+    p: "A good carousel feels like a short, useful conversation: it promises something on the first slide, delivers it clearly one point at a time and ends with an easy next step. When people get value from it, they save it, share it and remember who made it.",
+    quote: "Promise on slide one, deliver on every slide after.",
+    after: "Turn your most common customer questions into carousels. They are useful, easy to plan and show your expertise naturally.",
+  },
+  extras: [
+    { h: "Carousel planning template",
+      list: [
+        ["Slide 1.", "Hook headline and swipe cue."],
+        ["Slides 2–6.", "One point per slide, short heading, one or two lines."],
+        ["Slide 7.", "Summary or key takeaway."],
+        ["Final slide.", "Call to action, logo and handle."],
+      ],
+      paras: ["Design a carousel template in your brand style once, and you can produce new ones quickly by changing the text.", "On LinkedIn, the same idea works as a PDF document post, where each page becomes a slide. Many businesses design one carousel and export it in both formats, getting twice the use from the same content. Just check that page sizes and text margins suit both platforms before exporting.", "Do not forget the caption. A carousel caption can expand on the slides, add context and ask a question that invites comments. Start it with a line that matches the first slide, so people who read the caption first are also drawn into swiping. Hashtags and location tags still help local businesses be discovered, as long as they are relevant.", "Finally, look at your insights after a week. Carousels show how many people swiped to each slide. If many people drop off at slide two, the hook promised something the next slide did not deliver. Use that information to make the next carousel tighter and more focused."] },
+  ],
+  faq: [
+    ["How many slides should an Instagram carousel have?", "Six to eight slides works well for most topics. You can use more if every slide adds value."],
+    ["What size should carousel posts be?", "Portrait 1080 × 1350 pixels is a good choice, as it fills more of the screen than square."],
+    ["What makes people swipe through a carousel?", "A clear, specific hook on the first slide, one point per slide, consistent design and numbered slides that show progress."],
+  ],
+  related: [
+    ["/social-media-creatives-chennai/", "Social media creatives in Chennai", "service"],
+    ["/pricing/", "Design and video pricing", "pricing"],
+    ["/blog/social-media-post-sizes/", "The social media sizes your business actually needs", "5 min"],
+  ],
+  cta: {
+    h: "Carousels planned and designed for you.",
+    p: `My ${ctaLink("/social-media-creatives-chennai/", "social media packs")} include carousel posts and reusable carousel templates in your brand style. Monthly packs start at ₹9,000. Send me your most common customer questions.`,
+  },
+};
