@@ -158,6 +158,33 @@ Owner asked for more posts per day for the rest of October; agreed on 3 a day (3
 | 47 |  | ai-logo-generator-vs-designer | AI logo generator vs designer | Design | What AI logos are fine for, and where they fail | /logo-design-chennai/ |
 | 48 |  | google-review-qr-standee | Google review QR code standee design | Print | Counter standee that actually gets scanned | /poster-flyer-design-chennai/ |
 
+## November 2026 — new ideas (added 2026-11-02, end of October queue)
+
+Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides quote ₹2,000 freelancer to ₹2,00,000 agency, so price-explainer intent is strong); Upwork 2026 In-Demand Skills report (web design #2 in its coding/web list, AI-assisted video and design work rising fast); Fiverr 2026 gig-demand roundups (logo, brand kit, social templates, UX still top sellers); Contra/Twine India packaging listings (buyers asked about Indian label rules and file formats). Not yet written into the queue. Use these together with rows 32–48 above; the owner still has to choose November's services and posts per day.
+
+| # | Status | Slug | Target keyword | Category | Angle | Links to |
+|---|---|---|---|---|---|---|
+| 127 |  | logo-design-price-explained | logo design price India ₹2,000 vs ₹50,000 | Design | What actually changes between a cheap and an expensive logo quote | /logo-design-cost-chennai/, /logo-design-chennai/ |
+| 128 |  | brand-kit-small-business | brand kit for small business what's included | Design | Logo, colours, fonts, templates — the kit that keeps everything consistent | /graphic-design-chennai/, /pricing/ |
+| 129 |  | logo-design-brief | logo design brief questions | Design | The 10 answers to give a designer before the first concept | /logo-design-chennai/, /logo-design-cost-chennai/ |
+| 130 |  | brochure-vs-flyer-vs-leaflet | brochure vs flyer vs leaflet difference | Print | Which one to print for an event, a shop counter or a door drop | /brochure-design-chennai/, /brochure-design-cost-chennai/ |
+| 131 |  | brochure-design-cost-india | brochure design cost India per page | Print | Bifold, trifold, 8-page — what drives the quote | /brochure-design-cost-chennai/, /brochure-design-chennai/ |
+| 132 |  | product-packaging-design-cost | packaging design cost India small brand | Print | Label, box, pouch — design fees vs printing costs | /packaging-design-chennai/, /pricing/ |
+| 133 |  | packaging-dieline-explained | what is a dieline packaging | Print | Why your printer asks for a dieline before any artwork | /packaging-design-chennai/ |
+| 134 |  | social-media-templates-canva | Canva social media templates for business | Design | Editable post templates you can update yourself | /social-media-creatives-chennai/, /pricing/ |
+| 135 |  | instagram-post-design-cost | Instagram post design cost India monthly | Design | Per post vs monthly packs, and what 30 posts should include | /social-media-creatives-chennai/, /pricing/ |
+| 136 |  | menu-card-design-tips | restaurant menu card design tips | Print | Menus that are easy to read and push your best dishes | /poster-flyer-design-chennai/, /graphic-design-chennai/ |
+| 137 |  | letterhead-invoice-design | letterhead and invoice design GST India | Print | Business stationery that looks professional and holds the right details | /business-card-design-chennai/, /graphic-design-chennai/ |
+| 138 |  | wedding-invitation-digital-vs-print | digital wedding invitation vs printed | Print | E-invites, video invites and printed cards — what each costs | /graphic-design-chennai/, /wedding-video-editing-chennai/ |
+| 139 |  | t-shirt-print-file-guide | t-shirt design file for printing DTF screen print | Print | Getting merch artwork right for DTF, screen and sublimation | /t-shirt-design-chennai/ |
+| 140 |  | poster-design-sizes-india | poster sizes India A3 A2 flex | Print | Poster and banner sizes, resolution and bleed in one table | /poster-flyer-design-chennai/ |
+| 141 |  | ui-ux-designer-small-business | do I need a UI UX designer for my app | Design | When a startup needs UX work and when a template is fine | /ui-ux-design-chennai/, /pricing/ |
+| 142 |  | design-advance-payment | design advance payment how much freelancer | Business | Why designers ask 50% upfront and how stages protect both sides | /pricing/, /hire-me/ |
+| 143 |  | logo-copyright-ownership | who owns the copyright of my logo India | Business | Getting the rights in writing when the work is done | /logo-design-chennai/, /freelancer-vs-agency-chennai/ |
+| 144 |  | ecommerce-product-photo-banners | ecommerce banner design that sells | Design | Homepage and sale banners for small online shops | /ecommerce-website-design-chennai/, /social-media-creatives-chennai/ |
+| 145 |  | year-end-calendar-diary-design | company calendar diary design 2027 | Print | Branded calendars and diaries — order dates for January delivery | /graphic-design-chennai/, /brochure-design-chennai/ |
+| 146 |  | pongal-creatives-early | Pongal 2027 social media posts | Design | Plan January festival creatives in December (pairs with row 43) | /social-media-creatives-chennai/ |
+
 ## Publishing checklist (per post)
 1. Create `Portfolio redesign and SEO structure/blog/<slug>.html` using an existing post as the template (same header/footer/CTA, BlogPosting + BreadcrumbList JSON-LD, canonical `https://kavinarulraj.com/blog/<slug>/`, datePublished = today).
 2. Add a card at the TOP of the list in `blog.html` (correct `data-cat`, "N min · Mon YYYY") and update the "N posts" count.
