@@ -144,11 +144,11 @@ Owner asked for more posts per day for the rest of October; agreed on 3 a day (3
 |---|---|---|---|---|---|---|
 | 32 | queued 2026-11-11 | canva-logo-trademark | can I trademark a Canva logo India | Design | When a Canva logo is yours and when it legally isn't | /logo-design-chennai/, /logo-design-cost-chennai/ |
 | 33 | queued 2026-11-09 | fiverr-vs-local-designer | Fiverr vs local designer India | Business | Resold logos, time zones, and what you actually own | /freelancer-vs-agency-chennai/, /pricing/ |
-| 34 | queued 2026-11-03 | logo-files-to-ask-for | what logo files should I get from my designer | Design | SVG, PDF, PNG, colour codes — the handover checklist | /logo-design-chennai/ |
+| 34 | done 2026-11-03 | logo-files-to-ask-for | what logo files should I get from my designer | Design | SVG, PDF, PNG, colour codes — the handover checklist | /logo-design-chennai/ |
 | 35 | queued 2026-11-05 | how-long-does-a-logo-take | how long does logo design take | Business | Realistic timelines and what slows them | /logo-design-chennai/ |
-| 36 | queued 2026-11-03 | brochure-paper-gsm | brochure paper GSM guide | Print | 130 vs 170 vs 300 GSM, matt vs gloss | /brochure-design-chennai/, /brochure-design-cost-chennai/ |
+| 36 | done 2026-11-03 | brochure-paper-gsm | brochure paper GSM guide | Print | 130 vs 170 vs 300 GSM, matt vs gloss | /brochure-design-chennai/, /brochure-design-cost-chennai/ |
 | 37 | queued 2026-11-04 | visiting-card-size-india | visiting card size in India | Print | Size in mm/inches, safe zone, finishes | /business-card-design-chennai/ |
-| 38 | queued 2026-11-03 | choosing-brand-colours | how to choose brand colours small business | Design | Colour that survives print, screen and signboard | /graphic-design-chennai/ |
+| 38 | done 2026-11-03 | choosing-brand-colours | how to choose brand colours small business | Design | Colour that survives print, screen and signboard | /graphic-design-chennai/ |
 | 39 | queued 2026-11-06 | freelancer-red-flags | red flags hiring freelance designer Upwork Fiverr | Business | Signs to walk away before paying an advance | /freelancer-vs-agency-chennai/ |
 | 40 | queued 2026-11-07 | how-many-revisions | how many design revisions are normal | Business | What "unlimited revisions" really means | /pricing/ |
 | 41 | queued 2026-11-11 | food-label-design-checklist | FSSAI label requirements design | Print | What must be on the pack before artwork is final (verify current FSSAI rules) | /packaging-design-chennai/ |

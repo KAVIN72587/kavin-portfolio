@@ -126,6 +126,84 @@ All photos from Unsplash under the Unsplash License (free to use, no permission 
 | visiting-card-size-india | Mediamodifier | https://unsplash.com/photos/1623305463957-df17547327cb |
 | brand-kit-small-business | Mohammad Lotfian | https://unsplash.com/photos/1664638413302-d1ca29ac885b |
 | brochure-vs-flyer-vs-leaflet | Mediamodifier | https://unsplash.com/photos/1661523892054-dace70bcb092 |
+| year-end-calendar-diary-design | Behnam Norouzi | https://unsplash.com/photos/1631972757546-a9c28c924c2b |
+| logo-design-brief | Mike Tinnion | https://unsplash.com/photos/1501618669935-18b6ecb13d6d |
+| how-long-does-a-logo-take | Nathan Dumlao | https://unsplash.com/photos/1518281361980-b26bfd556770 |
+| logo-types-explained | Brett Jordan | https://unsplash.com/photos/1610454059909-f9a5a6eb4e58 |
+| flex-vs-vinyl-vs-acp-signboard | T | https://unsplash.com/photos/1762424361024-766d1a44f54e |
+| freelancer-red-flags | bilge tekin | https://unsplash.com/photos/1604327236000-ab0188ab8d2a |
+| vector-vs-raster | Vadim Bogulov | https://unsplash.com/photos/1650963310446-011fc6a28367 |
+| menu-card-design-tips | Lily Banse | https://unsplash.com/photos/1504674900247-0877df9cc836 |
+| how-many-revisions | Eduardo Casajús Gorostiaga | https://unsplash.com/photos/1617620188695-e515d56025a6 |
+| social-media-post-sizes | ROBIN WORRALL | https://unsplash.com/photos/1532356884227-66d7c0e9e4c2 |
+| letterhead-invoice-design | Brandi Redd | https://unsplash.com/photos/1470790376778-a9fbc86d70e2 |
+| design-advance-payment | Aaron Lefler | https://unsplash.com/photos/1648201637025-1c77b9be3013 |
+| logo-design-price-explained | Angèle Kamp | https://unsplash.com/photos/1571907483086-3c0ea40cc16d |
+| brochure-design-cost-india | Wesley Tingey | https://unsplash.com/photos/1583521214690-73421a1829a9 |
+| trifold-brochure-layout | Ivan Gromov | https://unsplash.com/photos/1519972064555-542444e71b54 |
+| graphic-design-brief-template | 2H Media | https://unsplash.com/photos/1632772998001-cc9bf6f7c852 |
+| christmas-new-year-offer-posters | Morgane Le Breton | https://unsplash.com/photos/1612979168796-bcae1575b8c5 |
+| poster-design-sizes-india | Mika Ruusunen | https://unsplash.com/photos/1596221780522-71f822d9f63b |
+| how-to-choose-freelance-designer | Faizur Rehman | https://unsplash.com/photos/1690228254548-31ef53e40cd1 |
+| whatsapp-business-catalogue | V H | https://unsplash.com/photos/1768987439370-bd60d3d0b28b |
+| why-print-colours-look-different | Nathaniel Sison | https://unsplash.com/photos/1558704164-ab7a0016c1f3 |
+| design-turnaround-times | Ocean Ng | https://unsplash.com/photos/1563861826100-9cb868fdbe1c |
+| ai-logo-generator-vs-designer | Kaizen Nguyễn | https://unsplash.com/photos/1505569127510-bde1536937bc |
+| brochure-content-what-to-write | Unseen Studio | https://unsplash.com/photos/1434030216411-0b793f4b4173 |
+| design-retainer-vs-per-project | Towfiqu barbhuiya | https://unsplash.com/photos/1633526543814-9718c8922b7a |
+| when-to-redesign-logo | chris robert | https://unsplash.com/photos/1693173509659-98992bc44d09 |
+| google-review-qr-standee | Mitya Ivanov | https://unsplash.com/photos/1550482768-88b710a445fd |
+| print-vs-digital-marketing | Roman Kraft | https://unsplash.com/photos/1495020689067-958852a7765e |
+| sticker-label-printing-types | MK +2 | https://unsplash.com/photos/1633533452206-8ab246b00e30 |
+| font-pairing-for-business | Iana Klimenko | https://unsplash.com/photos/1778167093244-33d90e4f76c2 |
+| infographic-design-tips | Ngital | https://unsplash.com/photos/1781246435700-afec19012b45 |
+| box-packaging-types | Kadarius Seegars | https://unsplash.com/photos/1624137527136-66e631bdaa0e |
+| free-fonts-commercial-use | Declan Sun | https://unsplash.com/photos/1776320267046-48aad358db5b |
+| pitch-deck-design | Vitaly Gariev | https://unsplash.com/photos/1758691736490-03d39c292d7a |
+| pouch-packaging-design | Vitalii Abakumov | https://unsplash.com/photos/1780586585172-dcdead6332c4 |
+| design-mockups-explained | Vitalii Abakumov | https://unsplash.com/photos/1790861286814-0fcb8ed0a4c9 |
+| pongal-creatives-early | Ngoc Nguyen Phuong | https://unsplash.com/photos/1775619427924-16ff07cf2f2e |
+| ecommerce-packaging-design | RoseBox | https://unsplash.com/photos/1566576721346-d4a3b4eaeb55 |
+| restaurant-branding-checklist | Antonio Araujo | https://unsplash.com/photos/1776763255189-3c8237aec808 |
+| ecommerce-product-photo-banners | Birgith Roosipuu | https://unsplash.com/photos/1616750819456-5cdee9b85d22 |
+| company-profile-design | kaleb tapp | https://unsplash.com/photos/1574958269340-fa927503f3dd |
+| clinic-branding-checklist | Benyamin Bohlouli | https://unsplash.com/photos/1629909614456-6b1c5c94cecc |
+| catalogue-design-tips | Erol Ahmed | https://unsplash.com/photos/1511721285502-9f81e79be874 |
+| wedding-invitation-digital-vs-print | Fiona Murray-deGraaff | https://unsplash.com/photos/1632610992723-82d7c212f6d7 |
+| rollup-standee-design | Alexandre Pellaes | https://unsplash.com/photos/1587825140708-dfaf72ae4b04 |
+| exhibition-stall-graphics | Margo Evardson | https://unsplash.com/photos/1778402566957-c21d77a67d0d |
+| shop-signboard-design-tips | Annie Spratt | https://unsplash.com/photos/1775743093104-d8e53e5ed250 |
+| vehicle-branding-design | Mathias Reding | https://unsplash.com/photos/1641199788912-9a7385a35c82 |
+| uniform-logo-embroidery-vs-print | Trương Tuyết Ly | https://unsplash.com/photos/1771409046893-d5c43a196743 |
+| certificate-design | Dragos Blaga | https://unsplash.com/photos/1636231945376-3d40fdcbc462 |
+| school-prospectus-design | 2y.kang | https://unsplash.com/photos/1635424239131-32dc44986b56 |
+| real-estate-brochure-design | SM Rodriguez | https://unsplash.com/photos/1784853879843-f3c5aacf2569 |
+| packaging-dieline-explained | Giorgio Trovato | https://unsplash.com/photos/1656543802898-41c8c46683a7 |
+| fiverr-vs-local-designer | Christin Hume | https://unsplash.com/photos/1515378791036-0648a3ef77b2 |
+| festival-creatives-planning | Udayaditya Barua | https://unsplash.com/photos/1577083753695-e010191bacb5 |
+| product-packaging-design-cost | Tarah Dane | https://unsplash.com/photos/1617825295690-28ae56c56135 |
+| canva-logo-trademark | Ales Nesetril | https://unsplash.com/photos/1531297484001-80022131f5a1 |
+| food-label-design-checklist | Yosuke Ota | https://unsplash.com/photos/1697294872375-9942fd94d2a7 |
+| logo-copyright-ownership | Rock Staar | https://unsplash.com/photos/1638262052640-82e94d64664a |
+| social-media-templates-canva | Andrea Zanenga | https://unsplash.com/photos/1606512070436-b56e3105bbf7 |
+| design-feedback-how-to-give | Vadim Bozhko | https://unsplash.com/photos/1615914143778-1a1a6e50c5dd |
+| instagram-post-design-cost | Videodeck .co | https://unsplash.com/photos/1673767298248-b128f17f89af |
+| event-backdrop-design | Elijah Ekdahl | https://unsplash.com/photos/1576514129883-2f1d47a65da6 |
+| t-shirt-print-file-guide | emarts emarts | https://unsplash.com/photos/1456456496250-d5e7c0a9b44d |
+| printing-cost-factors | Bank Phrom | https://unsplash.com/photos/1503694978374-8a2fa686963a |
+| linkedin-banner-design | Justus Menke | https://unsplash.com/photos/1604074131228-9d48b811bd80 |
+| offset-vs-digital-printing | Aleksandr Galichkin | https://unsplash.com/photos/1758183961426-88d64eb5f787 |
+| rebrand-checklist | chansu shin | https://unsplash.com/photos/1772331274672-a5eecb4c6498 |
+| youtube-channel-art-size | Thomas William | https://unsplash.com/photos/1493804714600-6edb1cd93080 |
+| print-proof-checklist | Jakub Żerdzicki | https://unsplash.com/photos/1768055104910-8c8d213835fb |
+| logo-mistakes-small-business | Compagnons | https://unsplash.com/photos/1776278515793-c4d7fbf04369 |
+| whatsapp-status-creatives | freestocks | https://unsplash.com/photos/1526045612212-70caf35c14df |
+| product-label-design-tips | Kier in Sight Archives | https://unsplash.com/photos/1622428051717-dcd8412959de |
+| startup-branding-on-budget | Uneebo Office Design | https://unsplash.com/photos/1594235048794-fae8583a5af5 |
+| ad-creative-design-tips | kaffie.co | https://unsplash.com/photos/1726594701749-04cfbc6e2007 |
+| design-contract-checklist | Aaron Burden | https://unsplash.com/photos/1455390582262-044cdead277a |
+| ui-ux-designer-small-business | Paper Textures | https://unsplash.com/photos/1580934174026-8142803ebb5b |
+| carousel-post-design | Jakub Żerdzicki | https://unsplash.com/photos/1759296844873-e0c694c24284 |
 | about-page-small-business (mid-article) | Sithamshu Manoj | https://unsplash.com/photos/1553009338-80e505b3f61b |
 | builder-website-must-haves (mid-article) | Omkar Jadhav | https://unsplash.com/photos/1559998852-f8ab898d889e |
 | business-email-on-domain (mid-article) | CHUTTERSNAP | https://unsplash.com/photos/1556204975-1851fadab092 |
@@ -250,3 +328,81 @@ All photos from Unsplash under the Unsplash License (free to use, no permission 
 | visiting-card-size-india (mid-article) | Van Tay Media | https://unsplash.com/photos/1565688842882-e0b2693d349a |
 | brand-kit-small-business (mid-article) | Mediamodifier | https://unsplash.com/photos/1623305466040-b753da413c9b |
 | brochure-vs-flyer-vs-leaflet (mid-article) | Indieground Design | https://unsplash.com/photos/1695041713023-c08f364a4ea2 |
+| year-end-calendar-diary-design (mid-article) | Marissa Grootes | https://unsplash.com/photos/1507831273071-5db7707d651b |
+| logo-design-brief (mid-article) | Kelly Sikkema | https://unsplash.com/photos/1623697899811-f2403f50685e |
+| how-long-does-a-logo-take (mid-article) | Aron Visuals | https://unsplash.com/photos/1501139083538-0139583c060f |
+| logo-types-explained (mid-article) | Phương Anh | https://unsplash.com/photos/1760594419767-1c65048d3d86 |
+| flex-vs-vinyl-vs-acp-signboard (mid-article) | chris robert | https://unsplash.com/photos/1693259074195-4235f7946471 |
+| freelancer-red-flags (mid-article) | Maaz Khan | https://unsplash.com/photos/1774686251372-33e8fae4faef |
+| vector-vs-raster (mid-article) | Amal S | https://unsplash.com/photos/1636215096587-21982fbf5843 |
+| menu-card-design-tips (mid-article) | Clay Banks | https://unsplash.com/photos/1556742205-e10c9486e506 |
+| how-many-revisions (mid-article) | DHANYA A V | https://unsplash.com/photos/1602738328654-51ab2ae6c4ff |
+| social-media-post-sizes (mid-article) | Vojtech Bruzek | https://unsplash.com/photos/1585060544812-6b45742d762f |
+| letterhead-invoice-design (mid-article) | Volodymyr Hryshchenko | https://unsplash.com/photos/1654931800100-2ecf6eee7c64 |
+| design-advance-payment (mid-article) | charlesdeluvio | https://unsplash.com/photos/1587145820266-a5951ee6f620 |
+| logo-design-price-explained (mid-article) | Brett Jordan | https://unsplash.com/photos/1550490652-ce6a20d4ee76 |
+| brochure-design-cost-india (mid-article) | Christa Dodoo | https://unsplash.com/photos/1513705153361-9bc726c8db67 |
+| trifold-brochure-layout (mid-article) | Kiwihug | https://unsplash.com/photos/1615800098779-1be32e60cca3 |
+| graphic-design-brief-template (mid-article) | Kelly Sikkema | https://unsplash.com/photos/1654124803453-5bb8819e1524 |
+| christmas-new-year-offer-posters (mid-article) | Karine Germain | https://unsplash.com/photos/1519580930435-fbfc9e7ecf26 |
+| poster-design-sizes-india (mid-article) | Jazmin Quaynor | https://unsplash.com/photos/1618327907215-4e514efabd41 |
+| how-to-choose-freelance-designer (mid-article) | TourBox | https://unsplash.com/photos/1744686909434-fd158fca1c35 |
+| whatsapp-business-catalogue (mid-article) | Ruan Richard Rodrigues | https://unsplash.com/photos/1689799514696-b16af9b53753 |
+| why-print-colours-look-different (mid-article) | Jakub Żerdzicki | https://unsplash.com/photos/1706895040634-62055892cbbb |
+| design-turnaround-times (mid-article) | Jianfeng Yang | https://unsplash.com/photos/1763218772915-e72a516812f6 |
+| ai-logo-generator-vs-designer (mid-article) | Lesia and Serhii Artymovych | https://unsplash.com/photos/1635183783375-98e857771351 |
+| brochure-content-what-to-write (mid-article) | Aaron Burden | https://unsplash.com/photos/1462642109801-4ac2971a3a51 |
+| design-retainer-vs-per-project (mid-article) | Road Ahead | https://unsplash.com/photos/1649298173603-9c95aa950879 |
+| when-to-redesign-logo (mid-article) | Clem Onojeghuo | https://unsplash.com/photos/1482539259217-f31001045448 |
+| google-review-qr-standee (mid-article) | David Dvořáček | https://unsplash.com/photos/1571867424488-4565932edb41 |
+| print-vs-digital-marketing (mid-article) | Laura Chouette | https://unsplash.com/photos/1596382940920-9f73b2d15901 |
+| sticker-label-printing-types (mid-article) | Laura Cleffmann | https://unsplash.com/photos/1654363529505-028513de9c2d |
+| font-pairing-for-business (mid-article) | Smithsonian | https://unsplash.com/photos/1777428411919-7e758bc373b4 |
+| infographic-design-tips (mid-article) | Алекс Арцибашев | https://unsplash.com/photos/1634117622592-114e3024ff27 |
+| box-packaging-types (mid-article) | Andrew Bright | https://unsplash.com/photos/1773625706534-4cfa0e74f229 |
+| free-fonts-commercial-use (mid-article) | Egor Myznik | https://unsplash.com/photos/1792978081628-4cc533b2ef74 |
+| pitch-deck-design (mid-article) | ThisisEngineering | https://unsplash.com/photos/1580894732444-8ecded7900cd |
+| pouch-packaging-design (mid-article) | Tina Guina | https://unsplash.com/photos/1524350876685-274059332603 |
+| design-mockups-explained (mid-article) | Hansheng Zhao | https://unsplash.com/photos/1761793126810-58e0cd971057 |
+| pongal-creatives-early (mid-article) | Victoria Priessnitz | https://unsplash.com/photos/1585155113372-6c1808141bf3 |
+| ecommerce-packaging-design (mid-article) | Claudio Schwarz | https://unsplash.com/photos/1580674285054-bed31e145f59 |
+| restaurant-branding-checklist (mid-article) | Archee Lal | https://unsplash.com/photos/1765360773028-6affda725695 |
+| ecommerce-product-photo-banners (mid-article) | Content Pixie | https://unsplash.com/photos/1576426863848-c21f53c60b19 |
+| company-profile-design (mid-article) | Aalo Lens | https://unsplash.com/photos/1758448721149-aa0ce8e1b2c9 |
+| clinic-branding-checklist (mid-article) | Enio Pereira da Silva | https://unsplash.com/photos/1787496994323-59ac5cff09f9 |
+| catalogue-design-tips (mid-article) | Daniel Forsman | https://unsplash.com/photos/1747147292047-7c61f1110897 |
+| wedding-invitation-digital-vs-print (mid-article) | Annie Spratt | https://unsplash.com/photos/1516617442634-75371039cb3a |
+| rollup-standee-design (mid-article) | The Climate Reality Project | https://unsplash.com/photos/1503428593586-e225b39bddfe |
+| exhibition-stall-graphics (mid-article) | Julia Taubitz | https://unsplash.com/photos/1774021792660-52381ac54949 |
+| shop-signboard-design-tips (mid-article) | Marcus Loke | https://unsplash.com/photos/1580554430120-94cfcb3adf25 |
+| vehicle-branding-design (mid-article) | Claudio Schwarz | https://unsplash.com/photos/1620455800201-7f00aeef12ed |
+| uniform-logo-embroidery-vs-print (mid-article) | Elio Santos | https://unsplash.com/photos/1568288796918-03e7d93306bd |
+| certificate-design (mid-article) | Albert Vincent Wu | https://unsplash.com/photos/1623461487986-9400110de28e |
+| school-prospectus-design (mid-article) | Quilia | https://unsplash.com/photos/1509062522246-3755977927d7 |
+| real-estate-brochure-design (mid-article) | Marlene Céline Nordvik | https://unsplash.com/photos/1545324418-cc1a3fa10c00 |
+| packaging-dieline-explained (mid-article) | Christopher Bill | https://unsplash.com/photos/1607166452427-7e4477079cb9 |
+| fiverr-vs-local-designer (mid-article) | Andrii Solok | https://unsplash.com/photos/1775513999069-318837c9b21b |
+| festival-creatives-planning (mid-article) | Ritabrata Das | https://unsplash.com/photos/1605455021703-13b57dcb9efa |
+| product-packaging-design-cost (mid-article) | Mildlee | https://unsplash.com/photos/1595246135406-803418233494 |
+| canva-logo-trademark (mid-article) | Alexey Demidov | https://unsplash.com/photos/1658988332863-0461ddfb6341 |
+| food-label-design-checklist (mid-article) | Zed Can | https://unsplash.com/photos/1754513345664-7b8df119ceb7 |
+| logo-copyright-ownership (mid-article) | Cytonn Photography | https://unsplash.com/photos/1521791136064-7986c2920216 |
+| social-media-templates-canva (mid-article) | Mantas Hesthaven | https://unsplash.com/photos/1500763702684-af70eba9a9f1 |
+| design-feedback-how-to-give (mid-article) | Kaleidico | https://unsplash.com/photos/1532620651297-482fe21279f2 |
+| instagram-post-design-cost (mid-article) | Andrés | https://unsplash.com/photos/1630797160666-38e8c5ba44c1 |
+| event-backdrop-design (mid-article) | Rob Laughter | https://unsplash.com/photos/1514306191717-452ec28c7814 |
+| t-shirt-print-file-guide (mid-article) | Anthony Roberts | https://unsplash.com/photos/1663433567177-9f94be0bff4c |
+| printing-cost-factors (mid-article) | Lennert Naessens | https://unsplash.com/photos/1581508512961-0e3b9524db40 |
+| linkedin-banner-design (mid-article) | Nahima Aparicio | https://unsplash.com/photos/1651169610763-fddf392fadb4 |
+| offset-vs-digital-printing (mid-article) | Pierre Bamin | https://unsplash.com/photos/1565562141896-9e2423ad19b5 |
+| rebrand-checklist (mid-article) | Taylor Vick | https://unsplash.com/photos/1571974448718-ac26a9af7d8b |
+| youtube-channel-art-size (mid-article) | Denny Müller | https://unsplash.com/photos/1619099619226-f96e319e3732 |
+| print-proof-checklist (mid-article) | Jakub Żerdzicki | https://unsplash.com/photos/1764231467852-b609a742e082 |
+| logo-mistakes-small-business (mid-article) | Olga Thelavart | https://unsplash.com/photos/1601662528567-526cd06f6582 |
+| whatsapp-status-creatives (mid-article) | Darya Ezerskaya | https://unsplash.com/photos/1616422403639-282145aa3e73 |
+| product-label-design-tips (mid-article) | Darío Méndez | https://unsplash.com/photos/1594813591867-02e797aa4581 |
+| startup-branding-on-budget (mid-article) | Mario Gogh | https://unsplash.com/photos/1541746972996-4e0b0f43e02a |
+| ad-creative-design-tips (mid-article) | Major Tom Agency | https://unsplash.com/photos/1566514883564-c4cdfa535113 |
+| design-contract-checklist (mid-article) | Art Lasovsky | https://unsplash.com/photos/1518674660708-0e2c0473e68e |
+| ui-ux-designer-small-business (mid-article) | Akinyemi Gbadamosi | https://unsplash.com/photos/1759868937753-34859b641bc1 |
+| carousel-post-design (mid-article) | Gilles Lambert | https://unsplash.com/photos/1423784346385-c1d4dac9893a |
