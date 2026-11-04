@@ -322,6 +322,16 @@
       "source": "/editing{/}?",
       "destination": "/video-editing-chennai/",
       "permanent": true
+    },
+    {
+      "source": "/designs{/}?",
+      "destination": "/portfolio/",
+      "permanent": true
+    },
+    {
+      "source": "/comments/feed{/}?",
+      "destination": "/blog/",
+      "permanent": true
     }
   ]
 }
