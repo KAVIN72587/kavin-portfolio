@@ -149,13 +149,13 @@ Owner asked for more posts per day for the rest of October; agreed on 3 a day (3
 | 36 | done 2026-11-03 | brochure-paper-gsm | brochure paper GSM guide | Print | 130 vs 170 vs 300 GSM, matt vs gloss | /brochure-design-chennai/, /brochure-design-cost-chennai/ |
 | 37 | done 2026-11-04 | visiting-card-size-india | visiting card size in India | Print | Size in mm/inches, safe zone, finishes | /business-card-design-chennai/ |
 | 38 | done 2026-11-03 | choosing-brand-colours | how to choose brand colours small business | Design | Colour that survives print, screen and signboard | /graphic-design-chennai/ |
-| 39 | queued 2026-11-06 | freelancer-red-flags | red flags hiring freelance designer Upwork Fiverr | Business | Signs to walk away before paying an advance | /freelancer-vs-agency-chennai/ |
+| 39 | done 2026-11-06 | freelancer-red-flags | red flags hiring freelance designer Upwork Fiverr | Business | Signs to walk away before paying an advance | /freelancer-vs-agency-chennai/ |
 | 40 | queued 2026-11-07 | how-many-revisions | how many design revisions are normal | Business | What "unlimited revisions" really means | /pricing/ |
 | 41 | queued 2026-11-11 | food-label-design-checklist | FSSAI label requirements design | Print | What must be on the pack before artwork is final (verify current FSSAI rules) | /packaging-design-chennai/ |
 | 42 | queued 2026-11-15 | whatsapp-business-catalogue | WhatsApp Business catalogue design | Design | Product photos and covers that sell in chat | /social-media-creatives-chennai/ |
 | 43 | queued 2026-11-10 | festival-creatives-planning | Diwali Pongal social media posts planning | Design | Plan festival creatives 3 weeks early | /social-media-creatives-chennai/ |
 | 44 | queued 2026-11-17 | when-to-redesign-logo | when should I redesign my logo | Design | Refresh vs rebrand | /logo-design-chennai/ |
-| 45 | queued 2026-11-06 | flex-vs-vinyl-vs-acp-signboard | flex vs vinyl vs ACP signboard | Print | Which material, and what the file needs | /logo-design-chennai/ |
+| 45 | done 2026-11-06 | flex-vs-vinyl-vs-acp-signboard | flex vs vinyl vs ACP signboard | Print | Which material, and what the file needs | /logo-design-chennai/ |
 | 46 | queued 2026-11-10 | design-contract-checklist | freelance design contract what to include | Business | Scope, rights, deadlines, payment stages | /hire-me/ |
 | 47 | queued 2026-11-16 | ai-logo-generator-vs-designer | AI logo generator vs designer | Design | What AI logos are fine for, and where they fail | /logo-design-chennai/ |
 | 48 | queued 2026-11-17 | google-review-qr-standee | Google review QR code standee design | Print | Counter standee that actually gets scanned | /poster-flyer-design-chennai/ |
@@ -186,7 +186,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 144 | queued 2026-11-26 | ecommerce-product-photo-banners | ecommerce banner design that sells | Design | Homepage and sale banners for small online shops | /ecommerce-website-design-chennai/, /social-media-creatives-chennai/ |
 | 145 | done 2026-11-05 | year-end-calendar-diary-design | company calendar diary design 2027 | Print | Branded calendars and diaries — order dates for January delivery | /graphic-design-chennai/, /brochure-design-chennai/ |
 | 146 | queued 2026-11-25 | pongal-creatives-early | Pongal 2027 social media posts | Design | Plan January festival creatives in December (pairs with row 43) | /social-media-creatives-chennai/ |
-| 147 | queued 2026-11-06 | logo-types-explained | logo types wordmark symbol emblem | Design | Wordmark, symbol, combination or emblem: which suits your business | /logo-design-chennai/, /logo-design-cost-chennai/ |
+| 147 | done 2026-11-06 | logo-types-explained | logo types wordmark symbol emblem | Design | Wordmark, symbol, combination or emblem: which suits your business | /logo-design-chennai/, /logo-design-cost-chennai/ |
 | 148 | queued 2026-11-07 | vector-vs-raster | vector vs raster image difference | Design | Why your printer keeps asking for a vector file | /graphic-design-chennai/ |
 | 149 | queued 2026-11-15 | why-print-colours-look-different | why printed colours look different from screen | Print | RGB, CMYK and why your print looks duller than your phone | /brochure-design-chennai/ |
 | 150 | queued 2026-11-16 | brochure-content-what-to-write | what to write in a brochure | Print | Brochure copy that gets read, panel by panel | /brochure-design-chennai/, /brochure-design-cost-chennai/ |
