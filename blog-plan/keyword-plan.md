@@ -153,10 +153,10 @@ Owner asked for more posts per day for the rest of October; agreed on 3 a day (3
 | 40 | done 2026-11-09 | how-many-revisions | how many design revisions are normal | Business | What "unlimited revisions" really means | /pricing/ |
 | 41 | queued 2026-11-11 | food-label-design-checklist | FSSAI label requirements design | Print | What must be on the pack before artwork is final (verify current FSSAI rules) | /packaging-design-chennai/ |
 | 42 | queued 2026-11-15 | whatsapp-business-catalogue | WhatsApp Business catalogue design | Design | Product photos and covers that sell in chat | /social-media-creatives-chennai/ |
-| 43 | queued 2026-11-10 | festival-creatives-planning | Diwali Pongal social media posts planning | Design | Plan festival creatives 3 weeks early | /social-media-creatives-chennai/ |
+| 43 | done 2026-11-10 | festival-creatives-planning | Diwali Pongal social media posts planning | Design | Plan festival creatives 3 weeks early | /social-media-creatives-chennai/ |
 | 44 | queued 2026-11-17 | when-to-redesign-logo | when should I redesign my logo | Design | Refresh vs rebrand | /logo-design-chennai/ |
 | 45 | done 2026-11-06 | flex-vs-vinyl-vs-acp-signboard | flex vs vinyl vs ACP signboard | Print | Which material, and what the file needs | /logo-design-chennai/ |
-| 46 | queued 2026-11-10 | design-contract-checklist | freelance design contract what to include | Business | Scope, rights, deadlines, payment stages | /hire-me/ |
+| 46 | done 2026-11-10 | design-contract-checklist | freelance design contract what to include | Business | Scope, rights, deadlines, payment stages | /hire-me/ |
 | 47 | queued 2026-11-16 | ai-logo-generator-vs-designer | AI logo generator vs designer | Design | What AI logos are fine for, and where they fail | /logo-design-chennai/ |
 | 48 | queued 2026-11-17 | google-review-qr-standee | Google review QR code standee design | Print | Counter standee that actually gets scanned | /poster-flyer-design-chennai/ |
 
@@ -171,7 +171,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 129 | done 2026-11-05 | logo-design-brief | logo design brief questions | Design | The 10 answers to give a designer before the first concept | /logo-design-chennai/, /logo-design-cost-chennai/ |
 | 130 | done 2026-11-04 | brochure-vs-flyer-vs-leaflet | brochure vs flyer vs leaflet difference | Print | Which one to print for an event, a shop counter or a door drop | /brochure-design-chennai/, /brochure-design-cost-chennai/ |
 | 131 | queued 2026-11-12 | brochure-design-cost-india | brochure design cost India per page | Print | Bifold, trifold, 8-page — what drives the quote | /brochure-design-cost-chennai/, /brochure-design-chennai/ |
-| 132 | queued 2026-11-10 | product-packaging-design-cost | packaging design cost India small brand | Print | Label, box, pouch — design fees vs printing costs | /packaging-design-chennai/, /pricing/ |
+| 132 | done 2026-11-10 | product-packaging-design-cost | packaging design cost India small brand | Print | Label, box, pouch — design fees vs printing costs | /packaging-design-chennai/, /pricing/ |
 | 133 | done 2026-11-09 | packaging-dieline-explained | what is a dieline packaging | Print | Why your printer asks for a dieline before any artwork | /packaging-design-chennai/ |
 | 134 | queued 2026-11-12 | social-media-templates-canva | Canva social media templates for business | Design | Editable post templates you can update yourself | /social-media-creatives-chennai/, /pricing/ |
 | 135 | queued 2026-11-13 | instagram-post-design-cost | Instagram post design cost India monthly | Design | Per post vs monthly packs, and what 30 posts should include | /social-media-creatives-chennai/, /pricing/ |
