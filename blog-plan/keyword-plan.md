@@ -142,7 +142,7 @@ Owner asked for more posts per day for the rest of October; agreed on 3 a day (3
 
 | # | Status | Slug | Target keyword | Category | Angle | Links to |
 |---|---|---|---|---|---|---|
-| 32 | queued 2026-11-11 | canva-logo-trademark | can I trademark a Canva logo India | Design | When a Canva logo is yours and when it legally isn't | /logo-design-chennai/, /logo-design-cost-chennai/ |
+| 32 | done 2026-11-11 | canva-logo-trademark | can I trademark a Canva logo India | Design | When a Canva logo is yours and when it legally isn't | /logo-design-chennai/, /logo-design-cost-chennai/ |
 | 33 | done 2026-11-09 | fiverr-vs-local-designer | Fiverr vs local designer India | Business | Resold logos, time zones, and what you actually own | /freelancer-vs-agency-chennai/, /pricing/ |
 | 34 | done 2026-11-03 | logo-files-to-ask-for | what logo files should I get from my designer | Design | SVG, PDF, PNG, colour codes — the handover checklist | /logo-design-chennai/ |
 | 35 | done 2026-11-05 | how-long-does-a-logo-take | how long does logo design take | Business | Realistic timelines and what slows them | /logo-design-chennai/ |
@@ -151,7 +151,7 @@ Owner asked for more posts per day for the rest of October; agreed on 3 a day (3
 | 38 | done 2026-11-03 | choosing-brand-colours | how to choose brand colours small business | Design | Colour that survives print, screen and signboard | /graphic-design-chennai/ |
 | 39 | done 2026-11-06 | freelancer-red-flags | red flags hiring freelance designer Upwork Fiverr | Business | Signs to walk away before paying an advance | /freelancer-vs-agency-chennai/ |
 | 40 | done 2026-11-09 | how-many-revisions | how many design revisions are normal | Business | What "unlimited revisions" really means | /pricing/ |
-| 41 | queued 2026-11-11 | food-label-design-checklist | FSSAI label requirements design | Print | What must be on the pack before artwork is final (verify current FSSAI rules) | /packaging-design-chennai/ |
+| 41 | done 2026-11-11 | food-label-design-checklist | FSSAI label requirements design | Print | What must be on the pack before artwork is final (verify current FSSAI rules) | /packaging-design-chennai/ |
 | 42 | queued 2026-11-15 | whatsapp-business-catalogue | WhatsApp Business catalogue design | Design | Product photos and covers that sell in chat | /social-media-creatives-chennai/ |
 | 43 | done 2026-11-10 | festival-creatives-planning | Diwali Pongal social media posts planning | Design | Plan festival creatives 3 weeks early | /social-media-creatives-chennai/ |
 | 44 | queued 2026-11-17 | when-to-redesign-logo | when should I redesign my logo | Design | Refresh vs rebrand | /logo-design-chennai/ |
@@ -182,7 +182,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 140 | queued 2026-11-14 | poster-design-sizes-india | poster sizes India A3 A2 flex | Print | Poster and banner sizes, resolution and bleed in one table | /poster-flyer-design-chennai/ |
 | 141 | queued 2026-11-27 | ui-ux-designer-small-business | do I need a UI UX designer for my app | Design | When a startup needs UX work and when a template is fine | /ui-ux-design-chennai/, /pricing/ |
 | 142 | done 2026-11-09 | design-advance-payment | design advance payment how much freelancer | Business | Why designers ask 50% upfront and how stages protect both sides | /pricing/, /hire-me/ |
-| 143 | queued 2026-11-11 | logo-copyright-ownership | who owns the copyright of my logo India | Business | Getting the rights in writing when the work is done | /logo-design-chennai/, /freelancer-vs-agency-chennai/ |
+| 143 | done 2026-11-11 | logo-copyright-ownership | who owns the copyright of my logo India | Business | Getting the rights in writing when the work is done | /logo-design-chennai/, /freelancer-vs-agency-chennai/ |
 | 144 | queued 2026-11-26 | ecommerce-product-photo-banners | ecommerce banner design that sells | Design | Homepage and sale banners for small online shops | /ecommerce-website-design-chennai/, /social-media-creatives-chennai/ |
 | 145 | done 2026-11-05 | year-end-calendar-diary-design | company calendar diary design 2027 | Print | Branded calendars and diaries — order dates for January delivery | /graphic-design-chennai/, /brochure-design-chennai/ |
 | 146 | queued 2026-11-25 | pongal-creatives-early | Pongal 2027 social media posts | Design | Plan January festival creatives in December (pairs with row 43) | /social-media-creatives-chennai/ |
