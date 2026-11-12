@@ -170,10 +170,10 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 128 | done 2026-11-04 | brand-kit-small-business | brand kit for small business what's included | Design | Logo, colours, fonts, templates — the kit that keeps everything consistent | /graphic-design-chennai/, /pricing/ |
 | 129 | done 2026-11-05 | logo-design-brief | logo design brief questions | Design | The 10 answers to give a designer before the first concept | /logo-design-chennai/, /logo-design-cost-chennai/ |
 | 130 | done 2026-11-04 | brochure-vs-flyer-vs-leaflet | brochure vs flyer vs leaflet difference | Print | Which one to print for an event, a shop counter or a door drop | /brochure-design-chennai/, /brochure-design-cost-chennai/ |
-| 131 | queued 2026-11-12 | brochure-design-cost-india | brochure design cost India per page | Print | Bifold, trifold, 8-page — what drives the quote | /brochure-design-cost-chennai/, /brochure-design-chennai/ |
+| 131 | done 2026-11-12 | brochure-design-cost-india | brochure design cost India per page | Print | Bifold, trifold, 8-page — what drives the quote | /brochure-design-cost-chennai/, /brochure-design-chennai/ |
 | 132 | done 2026-11-10 | product-packaging-design-cost | packaging design cost India small brand | Print | Label, box, pouch — design fees vs printing costs | /packaging-design-chennai/, /pricing/ |
 | 133 | done 2026-11-09 | packaging-dieline-explained | what is a dieline packaging | Print | Why your printer asks for a dieline before any artwork | /packaging-design-chennai/ |
-| 134 | queued 2026-11-12 | social-media-templates-canva | Canva social media templates for business | Design | Editable post templates you can update yourself | /social-media-creatives-chennai/, /pricing/ |
+| 134 | done 2026-11-12 | social-media-templates-canva | Canva social media templates for business | Design | Editable post templates you can update yourself | /social-media-creatives-chennai/, /pricing/ |
 | 135 | queued 2026-11-13 | instagram-post-design-cost | Instagram post design cost India monthly | Design | Per post vs monthly packs, and what 30 posts should include | /social-media-creatives-chennai/, /pricing/ |
 | 136 | done 2026-11-09 | menu-card-design-tips | restaurant menu card design tips | Print | Menus that are easy to read and push your best dishes | /poster-flyer-design-chennai/, /graphic-design-chennai/ |
 | 137 | done 2026-11-09 | letterhead-invoice-design | letterhead and invoice design GST India | Print | Business stationery that looks professional and holds the right details | /business-card-design-chennai/, /graphic-design-chennai/ |
@@ -223,7 +223,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 181 | queued 2026-11-22 | font-pairing-for-business | font pairing for business | Design | Choosing two fonts that work together | /graphic-design-chennai/ |
 | 182 | queued 2026-11-23 | free-fonts-commercial-use | free fonts for commercial use | Design | Which free fonts you can safely use | /graphic-design-chennai/ |
 | 183 | queued 2026-11-24 | design-mockups-explained | what is a design mockup | Design | Mockups: seeing the design before it is printed | /graphic-design-chennai/ |
-| 184 | queued 2026-11-12 | design-feedback-how-to-give | how to give feedback to a designer | Business | Feedback that gets you the design you want | /pricing/ |
+| 184 | done 2026-11-12 | design-feedback-how-to-give | how to give feedback to a designer | Business | Feedback that gets you the design you want | /pricing/ |
 | 185 | queued 2026-11-13 | graphic-design-brief-template | graphic design brief template | Business | The brief that saves a revision round | /hire-me/, /pricing/ |
 | 186 | queued 2026-11-14 | how-to-choose-freelance-designer | how to choose a freelance graphic designer | Business | Portfolio, process and price: what to check | /freelancer-vs-agency-chennai/, /pricing/ |
 | 187 | queued 2026-11-15 | design-turnaround-times | how long does graphic design take | Business | Realistic timelines for common design jobs | /pricing/ |
