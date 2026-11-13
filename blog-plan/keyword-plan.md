@@ -174,7 +174,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 132 | done 2026-11-10 | product-packaging-design-cost | packaging design cost India small brand | Print | Label, box, pouch — design fees vs printing costs | /packaging-design-chennai/, /pricing/ |
 | 133 | done 2026-11-09 | packaging-dieline-explained | what is a dieline packaging | Print | Why your printer asks for a dieline before any artwork | /packaging-design-chennai/ |
 | 134 | done 2026-11-12 | social-media-templates-canva | Canva social media templates for business | Design | Editable post templates you can update yourself | /social-media-creatives-chennai/, /pricing/ |
-| 135 | queued 2026-11-13 | instagram-post-design-cost | Instagram post design cost India monthly | Design | Per post vs monthly packs, and what 30 posts should include | /social-media-creatives-chennai/, /pricing/ |
+| 135 | done 2026-11-13 | instagram-post-design-cost | Instagram post design cost India monthly | Design | Per post vs monthly packs, and what 30 posts should include | /social-media-creatives-chennai/, /pricing/ |
 | 136 | done 2026-11-09 | menu-card-design-tips | restaurant menu card design tips | Print | Menus that are easy to read and push your best dishes | /poster-flyer-design-chennai/, /graphic-design-chennai/ |
 | 137 | done 2026-11-09 | letterhead-invoice-design | letterhead and invoice design GST India | Print | Business stationery that looks professional and holds the right details | /business-card-design-chennai/, /graphic-design-chennai/ |
 | 138 | queued 2026-11-27 | wedding-invitation-digital-vs-print | digital wedding invitation vs printed | Print | E-invites, video invites and printed cards — what each costs | /graphic-design-chennai/, /wedding-video-editing-chennai/ |
@@ -190,7 +190,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 148 | done 2026-11-09 | vector-vs-raster | vector vs raster image difference | Design | Why your printer keeps asking for a vector file | /graphic-design-chennai/ |
 | 149 | queued 2026-11-15 | why-print-colours-look-different | why printed colours look different from screen | Print | RGB, CMYK and why your print looks duller than your phone | /brochure-design-chennai/ |
 | 150 | queued 2026-11-16 | brochure-content-what-to-write | what to write in a brochure | Print | Brochure copy that gets read, panel by panel | /brochure-design-chennai/, /brochure-design-cost-chennai/ |
-| 151 | queued 2026-11-13 | trifold-brochure-layout | trifold brochure layout panel order | Print | Which panel is read first, and how to plan the fold | /brochure-design-chennai/ |
+| 151 | done 2026-11-13 | trifold-brochure-layout | trifold brochure layout panel order | Print | Which panel is read first, and how to plan the fold | /brochure-design-chennai/ |
 | 152 | queued 2026-11-21 | product-label-design-tips | product label design tips | Print | Labels that stand out on a crowded shelf | /packaging-design-chennai/ |
 | 153 | queued 2026-11-22 | sticker-label-printing-types | sticker label printing types vinyl paper | Print | Paper, vinyl, transparent and die-cut stickers | /packaging-design-chennai/ |
 | 154 | queued 2026-11-25 | ecommerce-packaging-design | packaging design for online selling | Print | Packaging that survives the courier and still looks good | /packaging-design-chennai/ |
@@ -224,7 +224,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 182 | queued 2026-11-23 | free-fonts-commercial-use | free fonts for commercial use | Design | Which free fonts you can safely use | /graphic-design-chennai/ |
 | 183 | queued 2026-11-24 | design-mockups-explained | what is a design mockup | Design | Mockups: seeing the design before it is printed | /graphic-design-chennai/ |
 | 184 | done 2026-11-12 | design-feedback-how-to-give | how to give feedback to a designer | Business | Feedback that gets you the design you want | /pricing/ |
-| 185 | queued 2026-11-13 | graphic-design-brief-template | graphic design brief template | Business | The brief that saves a revision round | /hire-me/, /pricing/ |
+| 185 | done 2026-11-13 | graphic-design-brief-template | graphic design brief template | Business | The brief that saves a revision round | /hire-me/, /pricing/ |
 | 186 | queued 2026-11-14 | how-to-choose-freelance-designer | how to choose a freelance graphic designer | Business | Portfolio, process and price: what to check | /freelancer-vs-agency-chennai/, /pricing/ |
 | 187 | queued 2026-11-15 | design-turnaround-times | how long does graphic design take | Business | Realistic timelines for common design jobs | /pricing/ |
 | 188 | queued 2026-11-16 | design-retainer-vs-per-project | design retainer vs per project | Business | Monthly design retainer or one-off jobs? | /social-media-creatives-chennai/, /pricing/ |
