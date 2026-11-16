@@ -157,7 +157,7 @@ Owner asked for more posts per day for the rest of October; agreed on 3 a day (3
 | 44 | queued 2026-11-17 | when-to-redesign-logo | when should I redesign my logo | Design | Refresh vs rebrand | /logo-design-chennai/ |
 | 45 | done 2026-11-06 | flex-vs-vinyl-vs-acp-signboard | flex vs vinyl vs ACP signboard | Print | Which material, and what the file needs | /logo-design-chennai/ |
 | 46 | done 2026-11-10 | design-contract-checklist | freelance design contract what to include | Business | Scope, rights, deadlines, payment stages | /hire-me/ |
-| 47 | queued 2026-11-16 | ai-logo-generator-vs-designer | AI logo generator vs designer | Design | What AI logos are fine for, and where they fail | /logo-design-chennai/ |
+| 47 | done 2026-11-16 | ai-logo-generator-vs-designer | AI logo generator vs designer | Design | What AI logos are fine for, and where they fail | /logo-design-chennai/ |
 | 48 | queued 2026-11-17 | google-review-qr-standee | Google review QR code standee design | Print | Counter standee that actually gets scanned | /poster-flyer-design-chennai/ |
 
 ## November 2026 — new ideas (added 2026-11-02, end of October queue)
@@ -189,7 +189,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 147 | done 2026-11-06 | logo-types-explained | logo types wordmark symbol emblem | Design | Wordmark, symbol, combination or emblem: which suits your business | /logo-design-chennai/, /logo-design-cost-chennai/ |
 | 148 | done 2026-11-09 | vector-vs-raster | vector vs raster image difference | Design | Why your printer keeps asking for a vector file | /graphic-design-chennai/ |
 | 149 | done 2026-11-15 | why-print-colours-look-different | why printed colours look different from screen | Print | RGB, CMYK and why your print looks duller than your phone | /brochure-design-chennai/ |
-| 150 | queued 2026-11-16 | brochure-content-what-to-write | what to write in a brochure | Print | Brochure copy that gets read, panel by panel | /brochure-design-chennai/, /brochure-design-cost-chennai/ |
+| 150 | done 2026-11-16 | brochure-content-what-to-write | what to write in a brochure | Print | Brochure copy that gets read, panel by panel | /brochure-design-chennai/, /brochure-design-cost-chennai/ |
 | 151 | done 2026-11-13 | trifold-brochure-layout | trifold brochure layout panel order | Print | Which panel is read first, and how to plan the fold | /brochure-design-chennai/ |
 | 152 | queued 2026-11-21 | product-label-design-tips | product label design tips | Print | Labels that stand out on a crowded shelf | /packaging-design-chennai/ |
 | 153 | queued 2026-11-22 | sticker-label-printing-types | sticker label printing types vinyl paper | Print | Paper, vinyl, transparent and die-cut stickers | /packaging-design-chennai/ |
@@ -227,7 +227,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 185 | done 2026-11-13 | graphic-design-brief-template | graphic design brief template | Business | The brief that saves a revision round | /hire-me/, /pricing/ |
 | 186 | done 2026-11-15 | how-to-choose-freelance-designer | how to choose a freelance graphic designer | Business | Portfolio, process and price: what to check | /freelancer-vs-agency-chennai/, /pricing/ |
 | 187 | done 2026-11-15 | design-turnaround-times | how long does graphic design take | Business | Realistic timelines for common design jobs | /pricing/ |
-| 188 | queued 2026-11-16 | design-retainer-vs-per-project | design retainer vs per project | Business | Monthly design retainer or one-off jobs? | /social-media-creatives-chennai/, /pricing/ |
+| 188 | done 2026-11-16 | design-retainer-vs-per-project | design retainer vs per project | Business | Monthly design retainer or one-off jobs? | /social-media-creatives-chennai/, /pricing/ |
 | 189 | queued 2026-11-17 | print-vs-digital-marketing | print vs digital marketing small business | Business | Where print still beats a social post | /poster-flyer-design-chennai/ |
 | 190 | queued 2026-11-18 | printing-cost-factors | why printing quotes differ | Print | What changes a printing quote | /brochure-design-cost-chennai/ |
 | 191 | queued 2026-11-19 | offset-vs-digital-printing | offset vs digital printing | Print | Which printing method for which quantity | /brochure-design-chennai/ |
