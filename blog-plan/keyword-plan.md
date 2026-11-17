@@ -154,11 +154,11 @@ Owner asked for more posts per day for the rest of October; agreed on 3 a day (3
 | 41 | done 2026-11-11 | food-label-design-checklist | FSSAI label requirements design | Print | What must be on the pack before artwork is final (verify current FSSAI rules) | /packaging-design-chennai/ |
 | 42 | done 2026-11-15 | whatsapp-business-catalogue | WhatsApp Business catalogue design | Design | Product photos and covers that sell in chat | /social-media-creatives-chennai/ |
 | 43 | done 2026-11-10 | festival-creatives-planning | Diwali Pongal social media posts planning | Design | Plan festival creatives 3 weeks early | /social-media-creatives-chennai/ |
-| 44 | queued 2026-11-17 | when-to-redesign-logo | when should I redesign my logo | Design | Refresh vs rebrand | /logo-design-chennai/ |
+| 44 | done 2026-11-17 | when-to-redesign-logo | when should I redesign my logo | Design | Refresh vs rebrand | /logo-design-chennai/ |
 | 45 | done 2026-11-06 | flex-vs-vinyl-vs-acp-signboard | flex vs vinyl vs ACP signboard | Print | Which material, and what the file needs | /logo-design-chennai/ |
 | 46 | done 2026-11-10 | design-contract-checklist | freelance design contract what to include | Business | Scope, rights, deadlines, payment stages | /hire-me/ |
 | 47 | done 2026-11-16 | ai-logo-generator-vs-designer | AI logo generator vs designer | Design | What AI logos are fine for, and where they fail | /logo-design-chennai/ |
-| 48 | queued 2026-11-17 | google-review-qr-standee | Google review QR code standee design | Print | Counter standee that actually gets scanned | /poster-flyer-design-chennai/ |
+| 48 | done 2026-11-17 | google-review-qr-standee | Google review QR code standee design | Print | Counter standee that actually gets scanned | /poster-flyer-design-chennai/ |
 
 ## November 2026 — new ideas (added 2026-11-02, end of October queue)
 
@@ -228,7 +228,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 186 | done 2026-11-15 | how-to-choose-freelance-designer | how to choose a freelance graphic designer | Business | Portfolio, process and price: what to check | /freelancer-vs-agency-chennai/, /pricing/ |
 | 187 | done 2026-11-15 | design-turnaround-times | how long does graphic design take | Business | Realistic timelines for common design jobs | /pricing/ |
 | 188 | done 2026-11-16 | design-retainer-vs-per-project | design retainer vs per project | Business | Monthly design retainer or one-off jobs? | /social-media-creatives-chennai/, /pricing/ |
-| 189 | queued 2026-11-17 | print-vs-digital-marketing | print vs digital marketing small business | Business | Where print still beats a social post | /poster-flyer-design-chennai/ |
+| 189 | done 2026-11-17 | print-vs-digital-marketing | print vs digital marketing small business | Business | Where print still beats a social post | /poster-flyer-design-chennai/ |
 | 190 | queued 2026-11-18 | printing-cost-factors | why printing quotes differ | Print | What changes a printing quote | /brochure-design-cost-chennai/ |
 | 191 | queued 2026-11-19 | offset-vs-digital-printing | offset vs digital printing | Print | Which printing method for which quantity | /brochure-design-chennai/ |
 | 192 | queued 2026-11-20 | print-proof-checklist | print proof checklist | Print | What to check before you approve a print proof | /brochure-design-chennai/ |
