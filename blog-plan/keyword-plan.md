@@ -198,7 +198,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 156 | queued 2026-11-24 | pouch-packaging-design | standup pouch packaging design | Print | Pouch packaging for snacks, spices and powders | /packaging-design-chennai/ |
 | 157 | done 2026-11-09 | social-media-post-sizes | social media post sizes 2026 | Design | Post, story, cover and profile sizes in one place | /social-media-creatives-chennai/ |
 | 158 | done 2026-11-18 | carousel-post-design | carousel post design tips | Design | Carousels people swipe to the end | /social-media-creatives-chennai/ |
-| 159 | queued 2026-11-19 | linkedin-banner-design | LinkedIn banner design size | Design | A LinkedIn banner that works for you | /graphic-design-chennai/ |
+| 159 | done 2026-11-19 | linkedin-banner-design | LinkedIn banner design size | Design | A LinkedIn banner that works for you | /graphic-design-chennai/ |
 | 160 | queued 2026-11-20 | youtube-channel-art-size | YouTube channel art size safe area | Design | Channel banners that fit every screen | /youtube-video-editing-chennai/, /graphic-design-chennai/ |
 | 161 | queued 2026-11-21 | whatsapp-status-creatives | WhatsApp status creatives for business | Design | Status updates customers actually tap | /social-media-creatives-chennai/ |
 | 162 | queued 2026-11-22 | ad-creative-design-tips | ad creative design tips Instagram Facebook | Design | Ad creatives that stop the scroll | /social-media-creatives-chennai/ |
@@ -218,7 +218,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 176 | queued 2026-11-25 | restaurant-branding-checklist | restaurant branding checklist | Design | Everything a new restaurant needs designed | /graphic-design-chennai/, /logo-design-chennai/ |
 | 177 | queued 2026-11-26 | clinic-branding-checklist | clinic branding checklist | Design | Branding that makes patients trust a clinic | /graphic-design-chennai/, /logo-design-chennai/ |
 | 178 | queued 2026-11-21 | startup-branding-on-budget | startup branding on a budget | Design | What to spend on first, and what can wait | /logo-design-chennai/, /pricing/ |
-| 179 | queued 2026-11-19 | rebrand-checklist | rebrand checklist what to update | Design | Everything to update when your logo changes | /logo-design-chennai/ |
+| 179 | done 2026-11-19 | rebrand-checklist | rebrand checklist what to update | Design | Everything to update when your logo changes | /logo-design-chennai/ |
 | 180 | queued 2026-11-20 | logo-mistakes-small-business | common logo mistakes small business | Design | Logo mistakes that cost you later | /logo-design-chennai/, /logo-design-cost-chennai/ |
 | 181 | queued 2026-11-22 | font-pairing-for-business | font pairing for business | Design | Choosing two fonts that work together | /graphic-design-chennai/ |
 | 182 | queued 2026-11-23 | free-fonts-commercial-use | free fonts for commercial use | Design | Which free fonts you can safely use | /graphic-design-chennai/ |
@@ -230,7 +230,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 188 | done 2026-11-16 | design-retainer-vs-per-project | design retainer vs per project | Business | Monthly design retainer or one-off jobs? | /social-media-creatives-chennai/, /pricing/ |
 | 189 | done 2026-11-17 | print-vs-digital-marketing | print vs digital marketing small business | Business | Where print still beats a social post | /poster-flyer-design-chennai/ |
 | 190 | done 2026-11-18 | printing-cost-factors | why printing quotes differ | Print | What changes a printing quote | /brochure-design-cost-chennai/ |
-| 191 | queued 2026-11-19 | offset-vs-digital-printing | offset vs digital printing | Print | Which printing method for which quantity | /brochure-design-chennai/ |
+| 191 | done 2026-11-19 | offset-vs-digital-printing | offset vs digital printing | Print | Which printing method for which quantity | /brochure-design-chennai/ |
 | 192 | queued 2026-11-20 | print-proof-checklist | print proof checklist | Print | What to check before you approve a print proof | /brochure-design-chennai/ |
 | 193 | done 2026-11-15 | christmas-new-year-offer-posters | Christmas New Year offer poster ideas | Design | Year-end offer posters planned early | /social-media-creatives-chennai/, /poster-flyer-design-chennai/ |
 
