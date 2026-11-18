@@ -178,7 +178,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 136 | done 2026-11-09 | menu-card-design-tips | restaurant menu card design tips | Print | Menus that are easy to read and push your best dishes | /poster-flyer-design-chennai/, /graphic-design-chennai/ |
 | 137 | done 2026-11-09 | letterhead-invoice-design | letterhead and invoice design GST India | Print | Business stationery that looks professional and holds the right details | /business-card-design-chennai/, /graphic-design-chennai/ |
 | 138 | queued 2026-11-27 | wedding-invitation-digital-vs-print | digital wedding invitation vs printed | Print | E-invites, video invites and printed cards — what each costs | /graphic-design-chennai/, /wedding-video-editing-chennai/ |
-| 139 | queued 2026-11-18 | t-shirt-print-file-guide | t-shirt design file for printing DTF screen print | Print | Getting merch artwork right for DTF, screen and sublimation | /t-shirt-design-chennai/ |
+| 139 | done 2026-11-18 | t-shirt-print-file-guide | t-shirt design file for printing DTF screen print | Print | Getting merch artwork right for DTF, screen and sublimation | /t-shirt-design-chennai/ |
 | 140 | done 2026-11-15 | poster-design-sizes-india | poster sizes India A3 A2 flex | Print | Poster and banner sizes, resolution and bleed in one table | /poster-flyer-design-chennai/ |
 | 141 | queued 2026-11-27 | ui-ux-designer-small-business | do I need a UI UX designer for my app | Design | When a startup needs UX work and when a template is fine | /ui-ux-design-chennai/, /pricing/ |
 | 142 | done 2026-11-09 | design-advance-payment | design advance payment how much freelancer | Business | Why designers ask 50% upfront and how stages protect both sides | /pricing/, /hire-me/ |
@@ -197,7 +197,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 155 | queued 2026-11-23 | box-packaging-types | mono carton vs corrugated vs rigid box | Print | Choosing the right box for your product | /packaging-design-chennai/ |
 | 156 | queued 2026-11-24 | pouch-packaging-design | standup pouch packaging design | Print | Pouch packaging for snacks, spices and powders | /packaging-design-chennai/ |
 | 157 | done 2026-11-09 | social-media-post-sizes | social media post sizes 2026 | Design | Post, story, cover and profile sizes in one place | /social-media-creatives-chennai/ |
-| 158 | queued 2026-11-18 | carousel-post-design | carousel post design tips | Design | Carousels people swipe to the end | /social-media-creatives-chennai/ |
+| 158 | done 2026-11-18 | carousel-post-design | carousel post design tips | Design | Carousels people swipe to the end | /social-media-creatives-chennai/ |
 | 159 | queued 2026-11-19 | linkedin-banner-design | LinkedIn banner design size | Design | A LinkedIn banner that works for you | /graphic-design-chennai/ |
 | 160 | queued 2026-11-20 | youtube-channel-art-size | YouTube channel art size safe area | Design | Channel banners that fit every screen | /youtube-video-editing-chennai/, /graphic-design-chennai/ |
 | 161 | queued 2026-11-21 | whatsapp-status-creatives | WhatsApp status creatives for business | Design | Status updates customers actually tap | /social-media-creatives-chennai/ |
@@ -229,7 +229,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 187 | done 2026-11-15 | design-turnaround-times | how long does graphic design take | Business | Realistic timelines for common design jobs | /pricing/ |
 | 188 | done 2026-11-16 | design-retainer-vs-per-project | design retainer vs per project | Business | Monthly design retainer or one-off jobs? | /social-media-creatives-chennai/, /pricing/ |
 | 189 | done 2026-11-17 | print-vs-digital-marketing | print vs digital marketing small business | Business | Where print still beats a social post | /poster-flyer-design-chennai/ |
-| 190 | queued 2026-11-18 | printing-cost-factors | why printing quotes differ | Print | What changes a printing quote | /brochure-design-cost-chennai/ |
+| 190 | done 2026-11-18 | printing-cost-factors | why printing quotes differ | Print | What changes a printing quote | /brochure-design-cost-chennai/ |
 | 191 | queued 2026-11-19 | offset-vs-digital-printing | offset vs digital printing | Print | Which printing method for which quantity | /brochure-design-chennai/ |
 | 192 | queued 2026-11-20 | print-proof-checklist | print proof checklist | Print | What to check before you approve a print proof | /brochure-design-chennai/ |
 | 193 | done 2026-11-15 | christmas-new-year-offer-posters | Christmas New Year offer poster ideas | Design | Year-end offer posters planned early | /social-media-creatives-chennai/, /poster-flyer-design-chennai/ |
