@@ -192,7 +192,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 150 | done 2026-11-16 | brochure-content-what-to-write | what to write in a brochure | Print | Brochure copy that gets read, panel by panel | /brochure-design-chennai/, /brochure-design-cost-chennai/ |
 | 151 | done 2026-11-13 | trifold-brochure-layout | trifold brochure layout panel order | Print | Which panel is read first, and how to plan the fold | /brochure-design-chennai/ |
 | 152 | done 2026-11-21 | product-label-design-tips | product label design tips | Print | Labels that stand out on a crowded shelf | /packaging-design-chennai/ |
-| 153 | queued 2026-11-22 | sticker-label-printing-types | sticker label printing types vinyl paper | Print | Paper, vinyl, transparent and die-cut stickers | /packaging-design-chennai/ |
+| 153 | done 2026-11-22 | sticker-label-printing-types | sticker label printing types vinyl paper | Print | Paper, vinyl, transparent and die-cut stickers | /packaging-design-chennai/ |
 | 154 | queued 2026-11-25 | ecommerce-packaging-design | packaging design for online selling | Print | Packaging that survives the courier and still looks good | /packaging-design-chennai/ |
 | 155 | queued 2026-11-23 | box-packaging-types | mono carton vs corrugated vs rigid box | Print | Choosing the right box for your product | /packaging-design-chennai/ |
 | 156 | queued 2026-11-24 | pouch-packaging-design | standup pouch packaging design | Print | Pouch packaging for snacks, spices and powders | /packaging-design-chennai/ |
@@ -201,7 +201,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 159 | done 2026-11-19 | linkedin-banner-design | LinkedIn banner design size | Design | A LinkedIn banner that works for you | /graphic-design-chennai/ |
 | 160 | done 2026-11-20 | youtube-channel-art-size | YouTube channel art size safe area | Design | Channel banners that fit every screen | /youtube-video-editing-chennai/, /graphic-design-chennai/ |
 | 161 | done 2026-11-21 | whatsapp-status-creatives | WhatsApp status creatives for business | Design | Status updates customers actually tap | /social-media-creatives-chennai/ |
-| 162 | queued 2026-11-22 | ad-creative-design-tips | ad creative design tips Instagram Facebook | Design | Ad creatives that stop the scroll | /social-media-creatives-chennai/ |
+| 162 | done 2026-11-22 | ad-creative-design-tips | ad creative design tips Instagram Facebook | Design | Ad creatives that stop the scroll | /social-media-creatives-chennai/ |
 | 163 | queued 2026-11-23 | infographic-design-tips | infographic design for small business | Design | Turning information into a graphic people share | /graphic-design-chennai/ |
 | 164 | queued 2026-11-24 | pitch-deck-design | pitch deck design tips | Design | A pitch deck that is easy to follow | /graphic-design-chennai/, /ui-ux-design-chennai/ |
 | 165 | queued 2026-11-26 | company-profile-design | company profile design | Print | A company profile that wins tenders and clients | /brochure-design-chennai/ |
@@ -220,7 +220,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 178 | done 2026-11-21 | startup-branding-on-budget | startup branding on a budget | Design | What to spend on first, and what can wait | /logo-design-chennai/, /pricing/ |
 | 179 | done 2026-11-19 | rebrand-checklist | rebrand checklist what to update | Design | Everything to update when your logo changes | /logo-design-chennai/ |
 | 180 | done 2026-11-20 | logo-mistakes-small-business | common logo mistakes small business | Design | Logo mistakes that cost you later | /logo-design-chennai/, /logo-design-cost-chennai/ |
-| 181 | queued 2026-11-22 | font-pairing-for-business | font pairing for business | Design | Choosing two fonts that work together | /graphic-design-chennai/ |
+| 181 | done 2026-11-22 | font-pairing-for-business | font pairing for business | Design | Choosing two fonts that work together | /graphic-design-chennai/ |
 | 182 | queued 2026-11-23 | free-fonts-commercial-use | free fonts for commercial use | Design | Which free fonts you can safely use | /graphic-design-chennai/ |
 | 183 | queued 2026-11-24 | design-mockups-explained | what is a design mockup | Design | Mockups: seeing the design before it is printed | /graphic-design-chennai/ |
 | 184 | done 2026-11-12 | design-feedback-how-to-give | how to give feedback to a designer | Business | Feedback that gets you the design you want | /pricing/ |
