@@ -195,7 +195,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 153 | done 2026-11-22 | sticker-label-printing-types | sticker label printing types vinyl paper | Print | Paper, vinyl, transparent and die-cut stickers | /packaging-design-chennai/ |
 | 154 | queued 2026-11-25 | ecommerce-packaging-design | packaging design for online selling | Print | Packaging that survives the courier and still looks good | /packaging-design-chennai/ |
 | 155 | done 2026-11-23 | box-packaging-types | mono carton vs corrugated vs rigid box | Print | Choosing the right box for your product | /packaging-design-chennai/ |
-| 156 | queued 2026-11-24 | pouch-packaging-design | standup pouch packaging design | Print | Pouch packaging for snacks, spices and powders | /packaging-design-chennai/ |
+| 156 | done 2026-11-24 | pouch-packaging-design | standup pouch packaging design | Print | Pouch packaging for snacks, spices and powders | /packaging-design-chennai/ |
 | 157 | done 2026-11-09 | social-media-post-sizes | social media post sizes 2026 | Design | Post, story, cover and profile sizes in one place | /social-media-creatives-chennai/ |
 | 158 | done 2026-11-18 | carousel-post-design | carousel post design tips | Design | Carousels people swipe to the end | /social-media-creatives-chennai/ |
 | 159 | done 2026-11-19 | linkedin-banner-design | LinkedIn banner design size | Design | A LinkedIn banner that works for you | /graphic-design-chennai/ |
@@ -203,7 +203,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 161 | done 2026-11-21 | whatsapp-status-creatives | WhatsApp status creatives for business | Design | Status updates customers actually tap | /social-media-creatives-chennai/ |
 | 162 | done 2026-11-22 | ad-creative-design-tips | ad creative design tips Instagram Facebook | Design | Ad creatives that stop the scroll | /social-media-creatives-chennai/ |
 | 163 | done 2026-11-23 | infographic-design-tips | infographic design for small business | Design | Turning information into a graphic people share | /graphic-design-chennai/ |
-| 164 | queued 2026-11-24 | pitch-deck-design | pitch deck design tips | Design | A pitch deck that is easy to follow | /graphic-design-chennai/, /ui-ux-design-chennai/ |
+| 164 | done 2026-11-24 | pitch-deck-design | pitch deck design tips | Design | A pitch deck that is easy to follow | /graphic-design-chennai/, /ui-ux-design-chennai/ |
 | 165 | queued 2026-11-26 | company-profile-design | company profile design | Print | A company profile that wins tenders and clients | /brochure-design-chennai/ |
 | 166 | queued 2026-11-27 | catalogue-design-tips | product catalogue design tips | Print | Catalogues that make ordering easy | /brochure-design-chennai/ |
 | 167 | queued 2026-11-28 | rollup-standee-design | roll up standee size design | Print | Roll-up standees readable from across the room | /poster-flyer-design-chennai/ |
@@ -222,7 +222,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 180 | done 2026-11-20 | logo-mistakes-small-business | common logo mistakes small business | Design | Logo mistakes that cost you later | /logo-design-chennai/, /logo-design-cost-chennai/ |
 | 181 | done 2026-11-22 | font-pairing-for-business | font pairing for business | Design | Choosing two fonts that work together | /graphic-design-chennai/ |
 | 182 | done 2026-11-23 | free-fonts-commercial-use | free fonts for commercial use | Design | Which free fonts you can safely use | /graphic-design-chennai/ |
-| 183 | queued 2026-11-24 | design-mockups-explained | what is a design mockup | Design | Mockups: seeing the design before it is printed | /graphic-design-chennai/ |
+| 183 | done 2026-11-24 | design-mockups-explained | what is a design mockup | Design | Mockups: seeing the design before it is printed | /graphic-design-chennai/ |
 | 184 | done 2026-11-12 | design-feedback-how-to-give | how to give feedback to a designer | Business | Feedback that gets you the design you want | /pricing/ |
 | 185 | done 2026-11-13 | graphic-design-brief-template | graphic design brief template | Business | The brief that saves a revision round | /hire-me/, /pricing/ |
 | 186 | done 2026-11-15 | how-to-choose-freelance-designer | how to choose a freelance graphic designer | Business | Portfolio, process and price: what to check | /freelancer-vs-agency-chennai/, /pricing/ |
