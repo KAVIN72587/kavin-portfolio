@@ -185,7 +185,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 143 | done 2026-11-11 | logo-copyright-ownership | who owns the copyright of my logo India | Business | Getting the rights in writing when the work is done | /logo-design-chennai/, /freelancer-vs-agency-chennai/ |
 | 144 | queued 2026-11-26 | ecommerce-product-photo-banners | ecommerce banner design that sells | Design | Homepage and sale banners for small online shops | /ecommerce-website-design-chennai/, /social-media-creatives-chennai/ |
 | 145 | done 2026-11-05 | year-end-calendar-diary-design | company calendar diary design 2027 | Print | Branded calendars and diaries — order dates for January delivery | /graphic-design-chennai/, /brochure-design-chennai/ |
-| 146 | queued 2026-11-25 | pongal-creatives-early | Pongal 2027 social media posts | Design | Plan January festival creatives in December (pairs with row 43) | /social-media-creatives-chennai/ |
+| 146 | done 2026-11-25 | pongal-creatives-early | Pongal 2027 social media posts | Design | Plan January festival creatives in December (pairs with row 43) | /social-media-creatives-chennai/ |
 | 147 | done 2026-11-06 | logo-types-explained | logo types wordmark symbol emblem | Design | Wordmark, symbol, combination or emblem: which suits your business | /logo-design-chennai/, /logo-design-cost-chennai/ |
 | 148 | done 2026-11-09 | vector-vs-raster | vector vs raster image difference | Design | Why your printer keeps asking for a vector file | /graphic-design-chennai/ |
 | 149 | done 2026-11-15 | why-print-colours-look-different | why printed colours look different from screen | Print | RGB, CMYK and why your print looks duller than your phone | /brochure-design-chennai/ |
@@ -193,7 +193,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 151 | done 2026-11-13 | trifold-brochure-layout | trifold brochure layout panel order | Print | Which panel is read first, and how to plan the fold | /brochure-design-chennai/ |
 | 152 | done 2026-11-21 | product-label-design-tips | product label design tips | Print | Labels that stand out on a crowded shelf | /packaging-design-chennai/ |
 | 153 | done 2026-11-22 | sticker-label-printing-types | sticker label printing types vinyl paper | Print | Paper, vinyl, transparent and die-cut stickers | /packaging-design-chennai/ |
-| 154 | queued 2026-11-25 | ecommerce-packaging-design | packaging design for online selling | Print | Packaging that survives the courier and still looks good | /packaging-design-chennai/ |
+| 154 | done 2026-11-25 | ecommerce-packaging-design | packaging design for online selling | Print | Packaging that survives the courier and still looks good | /packaging-design-chennai/ |
 | 155 | done 2026-11-23 | box-packaging-types | mono carton vs corrugated vs rigid box | Print | Choosing the right box for your product | /packaging-design-chennai/ |
 | 156 | done 2026-11-24 | pouch-packaging-design | standup pouch packaging design | Print | Pouch packaging for snacks, spices and powders | /packaging-design-chennai/ |
 | 157 | done 2026-11-09 | social-media-post-sizes | social media post sizes 2026 | Design | Post, story, cover and profile sizes in one place | /social-media-creatives-chennai/ |
@@ -215,7 +215,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 173 | queued 2026-11-30 | event-backdrop-design | event stage backdrop design | Print | Stage backdrops that look good in photos | /poster-flyer-design-chennai/ |
 | 174 | queued 2026-11-30 | school-prospectus-design | school prospectus design | Print | A prospectus that helps parents decide | /brochure-design-chennai/ |
 | 175 | queued 2026-11-30 | real-estate-brochure-design | real estate brochure design | Print | Property brochures buyers keep | /brochure-design-chennai/, /brochure-design-cost-chennai/ |
-| 176 | queued 2026-11-25 | restaurant-branding-checklist | restaurant branding checklist | Design | Everything a new restaurant needs designed | /graphic-design-chennai/, /logo-design-chennai/ |
+| 176 | done 2026-11-25 | restaurant-branding-checklist | restaurant branding checklist | Design | Everything a new restaurant needs designed | /graphic-design-chennai/, /logo-design-chennai/ |
 | 177 | queued 2026-11-26 | clinic-branding-checklist | clinic branding checklist | Design | Branding that makes patients trust a clinic | /graphic-design-chennai/, /logo-design-chennai/ |
 | 178 | done 2026-11-21 | startup-branding-on-budget | startup branding on a budget | Design | What to spend on first, and what can wait | /logo-design-chennai/, /pricing/ |
 | 179 | done 2026-11-19 | rebrand-checklist | rebrand checklist what to update | Design | Everything to update when your logo changes | /logo-design-chennai/ |
