@@ -183,7 +183,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 141 | queued 2026-11-27 | ui-ux-designer-small-business | do I need a UI UX designer for my app | Design | When a startup needs UX work and when a template is fine | /ui-ux-design-chennai/, /pricing/ |
 | 142 | done 2026-11-09 | design-advance-payment | design advance payment how much freelancer | Business | Why designers ask 50% upfront and how stages protect both sides | /pricing/, /hire-me/ |
 | 143 | done 2026-11-11 | logo-copyright-ownership | who owns the copyright of my logo India | Business | Getting the rights in writing when the work is done | /logo-design-chennai/, /freelancer-vs-agency-chennai/ |
-| 144 | queued 2026-11-26 | ecommerce-product-photo-banners | ecommerce banner design that sells | Design | Homepage and sale banners for small online shops | /ecommerce-website-design-chennai/, /social-media-creatives-chennai/ |
+| 144 | done 2026-11-26 | ecommerce-product-photo-banners | ecommerce banner design that sells | Design | Homepage and sale banners for small online shops | /ecommerce-website-design-chennai/, /social-media-creatives-chennai/ |
 | 145 | done 2026-11-05 | year-end-calendar-diary-design | company calendar diary design 2027 | Print | Branded calendars and diaries — order dates for January delivery | /graphic-design-chennai/, /brochure-design-chennai/ |
 | 146 | done 2026-11-25 | pongal-creatives-early | Pongal 2027 social media posts | Design | Plan January festival creatives in December (pairs with row 43) | /social-media-creatives-chennai/ |
 | 147 | done 2026-11-06 | logo-types-explained | logo types wordmark symbol emblem | Design | Wordmark, symbol, combination or emblem: which suits your business | /logo-design-chennai/, /logo-design-cost-chennai/ |
@@ -204,7 +204,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 162 | done 2026-11-22 | ad-creative-design-tips | ad creative design tips Instagram Facebook | Design | Ad creatives that stop the scroll | /social-media-creatives-chennai/ |
 | 163 | done 2026-11-23 | infographic-design-tips | infographic design for small business | Design | Turning information into a graphic people share | /graphic-design-chennai/ |
 | 164 | done 2026-11-24 | pitch-deck-design | pitch deck design tips | Design | A pitch deck that is easy to follow | /graphic-design-chennai/, /ui-ux-design-chennai/ |
-| 165 | queued 2026-11-26 | company-profile-design | company profile design | Print | A company profile that wins tenders and clients | /brochure-design-chennai/ |
+| 165 | done 2026-11-26 | company-profile-design | company profile design | Print | A company profile that wins tenders and clients | /brochure-design-chennai/ |
 | 166 | queued 2026-11-27 | catalogue-design-tips | product catalogue design tips | Print | Catalogues that make ordering easy | /brochure-design-chennai/ |
 | 167 | queued 2026-11-28 | rollup-standee-design | roll up standee size design | Print | Roll-up standees readable from across the room | /poster-flyer-design-chennai/ |
 | 168 | queued 2026-11-28 | exhibition-stall-graphics | exhibition stall graphics design | Print | Stall graphics that pull visitors in | /graphic-design-chennai/ |
@@ -216,7 +216,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 174 | queued 2026-11-30 | school-prospectus-design | school prospectus design | Print | A prospectus that helps parents decide | /brochure-design-chennai/ |
 | 175 | queued 2026-11-30 | real-estate-brochure-design | real estate brochure design | Print | Property brochures buyers keep | /brochure-design-chennai/, /brochure-design-cost-chennai/ |
 | 176 | done 2026-11-25 | restaurant-branding-checklist | restaurant branding checklist | Design | Everything a new restaurant needs designed | /graphic-design-chennai/, /logo-design-chennai/ |
-| 177 | queued 2026-11-26 | clinic-branding-checklist | clinic branding checklist | Design | Branding that makes patients trust a clinic | /graphic-design-chennai/, /logo-design-chennai/ |
+| 177 | done 2026-11-26 | clinic-branding-checklist | clinic branding checklist | Design | Branding that makes patients trust a clinic | /graphic-design-chennai/, /logo-design-chennai/ |
 | 178 | done 2026-11-21 | startup-branding-on-budget | startup branding on a budget | Design | What to spend on first, and what can wait | /logo-design-chennai/, /pricing/ |
 | 179 | done 2026-11-19 | rebrand-checklist | rebrand checklist what to update | Design | Everything to update when your logo changes | /logo-design-chennai/ |
 | 180 | done 2026-11-20 | logo-mistakes-small-business | common logo mistakes small business | Design | Logo mistakes that cost you later | /logo-design-chennai/, /logo-design-cost-chennai/ |
