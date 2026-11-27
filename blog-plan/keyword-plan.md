@@ -177,10 +177,10 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 135 | done 2026-11-13 | instagram-post-design-cost | Instagram post design cost India monthly | Design | Per post vs monthly packs, and what 30 posts should include | /social-media-creatives-chennai/, /pricing/ |
 | 136 | done 2026-11-09 | menu-card-design-tips | restaurant menu card design tips | Print | Menus that are easy to read and push your best dishes | /poster-flyer-design-chennai/, /graphic-design-chennai/ |
 | 137 | done 2026-11-09 | letterhead-invoice-design | letterhead and invoice design GST India | Print | Business stationery that looks professional and holds the right details | /business-card-design-chennai/, /graphic-design-chennai/ |
-| 138 | queued 2026-11-27 | wedding-invitation-digital-vs-print | digital wedding invitation vs printed | Print | E-invites, video invites and printed cards — what each costs | /graphic-design-chennai/, /wedding-video-editing-chennai/ |
+| 138 | done 2026-11-27 | wedding-invitation-digital-vs-print | digital wedding invitation vs printed | Print | E-invites, video invites and printed cards — what each costs | /graphic-design-chennai/, /wedding-video-editing-chennai/ |
 | 139 | done 2026-11-18 | t-shirt-print-file-guide | t-shirt design file for printing DTF screen print | Print | Getting merch artwork right for DTF, screen and sublimation | /t-shirt-design-chennai/ |
 | 140 | done 2026-11-15 | poster-design-sizes-india | poster sizes India A3 A2 flex | Print | Poster and banner sizes, resolution and bleed in one table | /poster-flyer-design-chennai/ |
-| 141 | queued 2026-11-27 | ui-ux-designer-small-business | do I need a UI UX designer for my app | Design | When a startup needs UX work and when a template is fine | /ui-ux-design-chennai/, /pricing/ |
+| 141 | done 2026-11-27 | ui-ux-designer-small-business | do I need a UI UX designer for my app | Design | When a startup needs UX work and when a template is fine | /ui-ux-design-chennai/, /pricing/ |
 | 142 | done 2026-11-09 | design-advance-payment | design advance payment how much freelancer | Business | Why designers ask 50% upfront and how stages protect both sides | /pricing/, /hire-me/ |
 | 143 | done 2026-11-11 | logo-copyright-ownership | who owns the copyright of my logo India | Business | Getting the rights in writing when the work is done | /logo-design-chennai/, /freelancer-vs-agency-chennai/ |
 | 144 | done 2026-11-26 | ecommerce-product-photo-banners | ecommerce banner design that sells | Design | Homepage and sale banners for small online shops | /ecommerce-website-design-chennai/, /social-media-creatives-chennai/ |
@@ -205,7 +205,7 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 163 | done 2026-11-23 | infographic-design-tips | infographic design for small business | Design | Turning information into a graphic people share | /graphic-design-chennai/ |
 | 164 | done 2026-11-24 | pitch-deck-design | pitch deck design tips | Design | A pitch deck that is easy to follow | /graphic-design-chennai/, /ui-ux-design-chennai/ |
 | 165 | done 2026-11-26 | company-profile-design | company profile design | Print | A company profile that wins tenders and clients | /brochure-design-chennai/ |
-| 166 | queued 2026-11-27 | catalogue-design-tips | product catalogue design tips | Print | Catalogues that make ordering easy | /brochure-design-chennai/ |
+| 166 | done 2026-11-27 | catalogue-design-tips | product catalogue design tips | Print | Catalogues that make ordering easy | /brochure-design-chennai/ |
 | 167 | queued 2026-11-28 | rollup-standee-design | roll up standee size design | Print | Roll-up standees readable from across the room | /poster-flyer-design-chennai/ |
 | 168 | queued 2026-11-28 | exhibition-stall-graphics | exhibition stall graphics design | Print | Stall graphics that pull visitors in | /graphic-design-chennai/ |
 | 169 | queued 2026-11-28 | shop-signboard-design-tips | shop signboard design tips | Print | A shop board people can read from the road | /logo-design-chennai/ |
