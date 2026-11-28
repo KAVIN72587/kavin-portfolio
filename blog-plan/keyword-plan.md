@@ -206,9 +206,9 @@ Research (Nov 2 2026): Google results for "logo design cost India 2026" (guides 
 | 164 | done 2026-11-24 | pitch-deck-design | pitch deck design tips | Design | A pitch deck that is easy to follow | /graphic-design-chennai/, /ui-ux-design-chennai/ |
 | 165 | done 2026-11-26 | company-profile-design | company profile design | Print | A company profile that wins tenders and clients | /brochure-design-chennai/ |
 | 166 | done 2026-11-27 | catalogue-design-tips | product catalogue design tips | Print | Catalogues that make ordering easy | /brochure-design-chennai/ |
-| 167 | queued 2026-11-28 | rollup-standee-design | roll up standee size design | Print | Roll-up standees readable from across the room | /poster-flyer-design-chennai/ |
-| 168 | queued 2026-11-28 | exhibition-stall-graphics | exhibition stall graphics design | Print | Stall graphics that pull visitors in | /graphic-design-chennai/ |
-| 169 | queued 2026-11-28 | shop-signboard-design-tips | shop signboard design tips | Print | A shop board people can read from the road | /logo-design-chennai/ |
+| 167 | done 2026-11-28 | rollup-standee-design | roll up standee size design | Print | Roll-up standees readable from across the room | /poster-flyer-design-chennai/ |
+| 168 | done 2026-11-28 | exhibition-stall-graphics | exhibition stall graphics design | Print | Stall graphics that pull visitors in | /graphic-design-chennai/ |
+| 169 | done 2026-11-28 | shop-signboard-design-tips | shop signboard design tips | Print | A shop board people can read from the road | /logo-design-chennai/ |
 | 170 | queued 2026-11-29 | vehicle-branding-design | vehicle branding design | Print | Turning your van or auto into an advert | /graphic-design-chennai/ |
 | 171 | queued 2026-11-29 | uniform-logo-embroidery-vs-print | logo embroidery vs printing uniforms | Print | Getting your logo onto uniforms and caps | /t-shirt-design-chennai/ |
 | 172 | queued 2026-11-29 | certificate-design | certificate design template | Print | Certificates people are proud to frame | /graphic-design-chennai/ |
